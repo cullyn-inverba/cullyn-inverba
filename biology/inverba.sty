@@ -1,13 +1,13 @@
 \ProvidesPackage{inverba}
 
-%%%%%%%%%%%%%% _PACKAGES_ %%%%%%%%%%%%%%%%
+% vvvvvvvvvvvvvvv PACKAGES vvvvvvvvvvvvvvv %
 \usepackage[hmargin=1cm,vmargin=2cm]{geometry}
 \usepackage{fancyhdr}
     \pagestyle{fancy}
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{enumitem}
-\setlist[itemize]{label=\textendash}
+    \setlist[itemize]{label=\textendash}
 \usepackage{graphicx}
 \usepackage{chemfig}
 \usepackage[many,vignette]{tcolorbox}
@@ -40,24 +40,25 @@
         linkcolor=diblue,  
     }
 \usepackage[all]{hypcap}
-%%%%%%%%%%%%%% ^PACKAGES^ %%%%%%%%%%%%%%%%
+% ^^^^^^^^^^^^^^^ PACKAGES ^^^^^^^^^^^^^^^ %
 
-%%%%%%%%%%%% _PARAMETERS_ %%%%%%%%%%%%%%%%
+
+% vvvvvvvvvvvvvvv PERAMETERS vvvvvvvvvvvvvvv %
 \setlength\parindent{0in}
 \setlength\parskip{0.1in}
 \setlength\headheight{15pt}
-
 \numberwithin{equation}{section}
-%%%%%%%%%%%% ^PARAMETERS^ %%%%%%%%%%%%%%%%
+% ^^^^^^^^^^^^^^^ PERAMETERS ^^^^^^^^^^^^^^^ %
 
-%%%%%%%%%%% _HEADER / FOOTER_ %%%%%%%%%%%%
+% vvvvvvvvvvvvvvv HEADER / FOOTER vvvvvvvvvvvvvvv %
 \rhead{\today}
 \lhead{\userName}
+\chead{\textsc{\thetitle}}
 \cfoot{\textsc{\institution}}
 \lfoot{\class}
-%%%%%%%%%%% ^HEADER / FOOTER^ %%%%%%%%%%%%
+% ^^^^^^^^^^^^^^^ HEADER / FOOTER ^^^^^^^^^^^^^^^ %
 
-%%%%%%%%%%%%%%% _COLORS_ %%%%%%%%%%%%%%%%
+% vvvvvvvvvvvvvvv MY COLORS vvvvvvvvvvvvvvv %
 \definecolor {Diblue}{HTML}{050E44}
 \definecolor {diblue}{HTML}{002083}
 \definecolor {iblue}{HTML}{1A5CB0}
@@ -71,36 +72,47 @@
 \definecolor {dipink}{HTML}{601145}
 \definecolor {ipink}{HTML}{7D3966}
 \definecolor {lipink}{HTML}{C985A1}
-%%%%%%%%%%%%%%% ^COLORS^ %%%%%%%%%%%%%%%%
+% ^^^^^^^^^^^^^^^ MY COLORS ^^^^^^^^^^^^^^^ %
 
-%%%%%%%%%%% GRADIENTS %%%%%%%%%%%%%%%%%
+% vvvvvvvvvvvvvvv GRADIENT COLORS vvvvvvvvvvvvvvv %
 \definecolor {Lush1}{HTML}{FF9A9E}
 \definecolor {Lush2}{HTML}{FAD0C4}
+
 \definecolor {Haze1}{HTML}{A18CD1}
 \definecolor {Haze2}{HTML}{FBC2EB}
+
 \definecolor {Lip1}{HTML}{FF9A9D}
 \definecolor {Lip2}{HTML}{FECFEF}
+
 \definecolor {Sun1}{HTML}{FDA085}
 \definecolor {Sun2}{HTML}{F6D365}
+
 \definecolor {Leaf1}{HTML}{D4FC79}
 \definecolor {Leaf2}{HTML}{96E6A1}
+
 \definecolor {Winter1}{HTML}{C2E9FB}
 \definecolor {Winter2}{HTML}{A1C4FD}
+
 \definecolor {Moon1}{HTML}{E2EBF0}
 \definecolor {Moon2}{HTML}{CFD9DF}
+
 \definecolor {Ocean1}{HTML}{330867}
 \definecolor {Ocean2}{HTML}{30CFD0}
+
 \definecolor {Fire1}{HTML}{FF0844}
 \definecolor {Fire2}{HTML}{FFB199}
+
 \definecolor {Fresh1}{HTML}{38F9D7}
 \definecolor {Fresh2}{HTML}{43E97B}
+
 \definecolor {Tux1}{HTML}{434343}
 \definecolor {Tux2}{HTML}{000001}
+
 \definecolor {Phoenix1}{HTML}{F83600}
 \definecolor {Phoenix2}{HTML}{F9D423}
-%%%%%%%%%%% GRADIENTS %%%%%%%%%%%%%%%%%
+% ^^^^^^^^^^^^^^^ GRADIENT COLORS ^^^^^^^^^^^^^^^ %
 
-%%%%%%%%%%%%%% _BOXES_ %%%%%%%%%%%%%%%%%
+% vvvvvvvvvvvvvvv BOX STYLES vvvvvvvvvvvvvvv %
 \newtcolorbox{chapbox}[2][]{
 enforce breakable,
 enhanced jigsaw,
@@ -213,33 +225,17 @@ boxrule=1mm,
 }
 
 \newtcbox{look}{
-on line,
-enhanced,
-size=minimal,
-colframe=white,
-interior style={left color=Leaf2!20!white, right color=Leaf1!30!white}
+    on line,
+    enhanced,
+    size=minimal,
+    colframe=white,
+    interior style={left color=Leaf2!20!white, right color=Leaf1!30!white}
 }
-%%%%%%%%%%%%%% _BOXES_ %%%%%%%%%%%%%%%%%
+% ^^^^^^^^^^^^^^^ BOX STYLES ^^^^^^^^^^^^^^^ %
 
 
 
-%%%%%%%%%%% _MATHEMATICS_ %%%%%%%%%%%%%%%
-\newcommand{\paren}[1]{\left( {#1}_{{}_{}}\,\negthickspace\right)}
-\newcommand{\bracket}[1]{\left[ {#1}_{{}_{}}\,\negthickspace\right]}
-\newcommand{\pfrac}[2]{\paren{\frac{#1}{#2}}}
-\DeclareMathOperator{\arcsec}{arcsec}
-\DeclareMathOperator{\arccot}{arccot}
-\DeclareMathOperator{\arccsc}{arccsc}
-\newcommand{\evat}[2]{\bigg|_{#1}^{#2}}
-\newcommand{\dint}[4]{\int_{#1}^{#2}{#3}{#4}}
-\newcommand{\inv}[1]{#1^{-1}}
-\newcommand{\answ}[2]{\boxed{\SI{#1}{#2}}}
-\newcommand{\deriv}[2]{\frac{d #1}{d #2}}
-\newcommand{\bigO}{\mathcal{O}}
-\DeclareMathSymbol{\umu}{\mathalpha}{operators}{0}
-%%%%%%%%%%% ^MATHEMATICS^ %%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%% NEW ENVIRONMENTS %%%%%%%%%%%%
+%%%%%%%%%%%%%%%% NEW ENVIRONMENTS %%%%%%%%%%%% I will figure out how to do this differently one day lol.
 %\begin{table}[h]
     %\centering
     %\caption{Caption}
