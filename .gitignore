@@ -274,3 +274,8 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+#pdfs of textbooks
+Biological Science, 6th Eddition.pdf
+Molecular Biology of the Cell (6 edition).pdf
+Essential Genetics and Genomics 2020.pdf
