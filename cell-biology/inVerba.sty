@@ -146,7 +146,7 @@ enforce breakable,
 pad at break*=0mm,
 }
 
-\newtcolorbox[auto counter,number within=section]{secbox}[2][]{
+\newtcolorbox{secbox}[2][]{
 enforce breakable,
 enhanced jigsaw,
 before skip=5mm,after skip=2mm,
@@ -173,7 +173,7 @@ attach boxed title to top left={
             },interior engine=empty,
         },
 fonttitle=\bfseries\large,
-title=\thetcbcounter~{#2},
+title={#2},
 enforce breakable,
 pad at break*=0mm,
 }
