@@ -17,6 +17,8 @@
 %                               %   %   %   %   %   %   %                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\begingroup
+
 \begin{chapbox}{Cellular Biology}{ 
 \begin{enumerate}[font=\bfseries, wide]
     \setcounter{enumi}{9}
@@ -75,6 +77,8 @@
     \end{itemize}
 \end{enumerate}
 }\end{chapbox}
+\clearpage
+%\endgroup
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                               %   %   %   %   %   %   %                               %
@@ -86,8 +90,11 @@
 %                               %   %   %   %   %   %   %                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv   Section 10.1   vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv  %
+%\begingroup
+
 
 \renewcommand{\thetitle}{\hypertarget{10}{The Genetic Code of Genes
 and Genomes}}
@@ -103,8 +110,6 @@ and Genomes}}
     \end{enumerate}
 \end{chapbox}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv   Section 10.1   vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv  %
 \hypertarget{10.1}{}
 \begin{secbox}{\hyperlink{10}{The Lipid Bilayer}}{
     \subsection*{Phosphoglycerides, Sphingolipids, and Sterols Are the Major
@@ -217,7 +222,7 @@ and Genomes}}
     \begin{itemize}
         \item \textbf{Carbohydrate layer}: also known as, glycocalyx or the pericellular matrix, is a glycoprotein and glycolipid covering that surrounds the cell membranes of some bacteria, epithelia, and other cells.
         \begin{center}
-            \includegraphics[scale=0.30]{images/figure_10_25.png}
+            \includegraphics[scale=0.45]{images/figure_10_25.png}
         \end{center}
         \vspace{-20pt}
         \item The carbohydrate layer is made up of the oligosaccharide side chains of membrane glycolipids and membrane glycoproteins and the polysaccharide chains on membrane proteoglycans. In addition, adsorbed glycoproteins, and adsorbed proteoglycans (not shown), contribute to the carbohydrate layer in many cells.
@@ -229,6 +234,8 @@ and Genomes}}
     \begin{itemize}
         \item \textbf{Detergents}: are small amphiphilic molecules of variable structure that disrupt hydrophobic associations and destroy the lipid bilayer, which can solubilize membrane proteins.
         \item At low concentration, detergents are monomeric in solution, but when their concentration is increased above a threshold, called the critical micelle concentration (CMC), they aggregate to form micelles.
+        \item When mixed with membranes, the hydrophobic ends of detergents bind to the
+        hydrophobic regions of the membrane proteins, where they displace lipid molecules with a collar of detergent molecules.
     \end{itemize}
 
     \subsection*{Bacteriorhodopsin Is a Light-driven Proton H\bfg{^+} Pump That
@@ -267,6 +274,7 @@ and Genomes}}
         Whereas the lipid bilayer determines the basic structure of biological membranes, proteins are responsible for most membrane functions, serving as specific receptors, enzymes, transporters, and so on. Transmembrane proteins extend across the lipid bilayer. Some of these membrane proteins are single-pass proteins, in which the polypeptide chain crosses the bilayer as a single \(\alpha\)-helix. Others are multipass proteins, in which the polypeptide chain crosses the bilayer multiple times---either as a series of \(\alpha\)-helices or as a \(\beta\)-sheet rolled up into the shape of a barrel. All proteins responsible for the transport of ions and other small water-soluble molecules through the membrane are multipass proteins. Some membrane proteins do not span the bilayer but instead are attached to either side of the membrane: some are attached to the cytosolic side by an amphipathic a helix on the protein surface or by the covalent attachment of one or more lipid chains, others are attached to the noncytosolic side by a GPI anchor. Some membrane-associated proteins are bound by noncovalent interactions with transmembrane proteins. In the plasma membrane of all eukaryotic cells, most of the proteins exposed on the cell surface and some of the lipid molecules in the outer lipid monolayer have oligosaccharide chains covalently attached to them. Like the lipid molecules in the bilayer, many membrane proteins are able to diffuse rapidly in the plane of the membrane. However, cells have ways of immobilizing specific membrane proteins, as well as ways of confining both membrane protein and lipid molecules to particular domains in a continuous lipid bilayer. The dynamic association of membrane-bending proteins confers on membranes their characteristic three-dimensional shapes.
     \end{probbox}
 }\end{secbox}
-%  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   Section 10.2   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  %  
+%\endgroup
+%  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   Section 10.2   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  %  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
