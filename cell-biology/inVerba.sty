@@ -14,8 +14,6 @@
 \usepackage{xcolor}
 \usepackage{varwidth}
 \usepackage{booktabs}
-%\usepackage[document]{ragged2e}
-%\usepackage[none]{hyphenat}
 \usepackage{siunitx}
     \sisetup{
     inter-unit-product=\ensuremath{{\cdot}},
@@ -181,11 +179,12 @@ pad at break*=0mm,
 }
 
 \newtcolorbox{probbox}[2][]{
-enhanced,
+enforce breakable,
+enhanced jigsaw,
 before skip=5mm,after skip=2mm,
 colback=white,
-boxrule=-1pt,
-toprule=1pt,
+boxrule=1pt,
+rightrule=-0.5pt,
 frame style={right color = white, left color=dipink},
 attach boxed title to top left={
     xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
@@ -235,9 +234,7 @@ boxrule=1mm,
 }
 % ^^^^^^^^^^^^^^^ BOX STYLES ^^^^^^^^^^^^^^^ %
 
-%%%%%%%%%%%%%%
-\newcommand{\bfg}[1]{\(\bm{#1}\)}
-%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%% NEW ENVIRONMENTS %%%%%%%%%%%% I will figure out how to do this differently one day lol.
 %\begin{table}[h]
