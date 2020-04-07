@@ -113,6 +113,39 @@
 % ^^^^^^^^^^^^^^^ GRADIENT COLORS ^^^^^^^^^^^^^^^ %
 
 % vvvvvvvvvvvvvvv BOX STYLES vvvvvvvvvvvvvvv %
+\newtcolorbox{contbox}[2][]{
+enforce breakable,
+enhanced jigsaw,
+colback=white,
+after skip=1mm,
+boxrule=1pt,
+toprule=1.5pt,
+rightrule=-1.5pt,
+frame style={left color= iorange!10!Fire1, right color= white},
+attach boxed title to top left ={
+    xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={
+        frame code={
+            \path[fill=black!30!black] 
+            ([yshift=-1mm,xshift=-1mm]frame.north west)
+            arc[start angle=0,end angle=180,radius=1mm]
+            ([yshift=-1mm,xshift=1mm]frame.north east)
+            arc[start angle=180,end angle=0,radius=1mm];
+            \path[bottom color=Fire1!90!diorange, middle color=Fire1!50!iorange, top color=liorange!30!Fire2]
+            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+            -- (frame.south east) -- (frame.south west)
+            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+            [sharp corners]-- cycle;
+            },interior engine=empty,
+    },
+fonttitle=\bfseries\Large,
+title={#2},
+enforce breakable,
+pad at break*=0mm,
+}
+
 \newtcolorbox{chapbox}[2][]{
 enforce breakable,
 enhanced jigsaw,
@@ -120,8 +153,8 @@ colback=white,
 after skip=1mm,
 boxrule=1pt,
 toprule=1.5pt,
-rightrule=-1pt,
-frame style={left color= iorange!90!Fire1, right color= white},
+rightrule=-1.5pt,
+frame style={left color= iorange!90!Fire1, right color=white},
 attach boxed title to top left ={
     xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
     varwidth boxed title*=-3cm,
@@ -152,7 +185,7 @@ enhanced jigsaw,
 before skip=5mm,after skip=2mm,
 colback=white,
 boxrule=1pt,
-rightrule=-0.5pt,
+rightrule=-1.2pt,
 frame style={right color = white, left color=diblue},
 attach boxed title to top left={
     xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
