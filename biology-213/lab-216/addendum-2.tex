@@ -1,0 +1,102 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{inverba}
+\newcommand{\userName}{Cullyn Newman} 
+\newcommand{\class}{BI 216} 
+\newcommand{\institution}{Portland State University} 
+\newcommand{\thetitle}{\hypertarget{home}{Lab 2 Addendum: Using R}}
+\rfoot{\hyperlink{home}{\thepage}}
+
+\begin{document}
+
+\section*{Part 1. Getting Started}
+\begin{enumerate}[font=\bfseries, wide]
+    \item Set and check your current working directory. A working directory can be thought of as a “folder” that you would normally find on your computer. Copy and paste your output from the console when running the getwd() function. \textbf{(1 pt)}\par 
+    
+    /cloud/project
+
+    \item Save the Elwha estuary dataset in your R environment by following the example code provided. Check the structure using str(), and then preview the first 5 rows and 6 columns. Copy and paste your output from the console when running the str() function. \textbf{(1 pt)}
+    \begin{center}
+        \includegraphics[scale=0.35]{images/a2-qst2.png}
+    \end{center}
+
+    \item Provide the longitudinal and latitudinal coordinates for a Field-ID of your choice below. Make sure to include the Field-Activity-Number in your answer! \textbf{(1 pt)}\par
+
+    Field-ID 4: 48.14827 -123.5616
+\end{enumerate}
+
+\section*{Part 2. Descriptive Statistics}
+\begin{enumerate}[font=\bfseries, wide, resume]
+    \item Walk through generating the descriptive statistics for pH values. Next, create similar R code to generate descriptive statistics (five-point summary) for both temperature and turbidity. Fill in the tables below and add descriptive table title descriptions to each. \textbf{(2 pts)}\par
+    [1] 13.11597
+    [1] 5.79
+    [1] 20.98
+    [1] 3.289619
+
+    [1] 63.23206
+    [1] 13.9
+    [1] 0.3
+    [1] 305.6
+    [1] 88.97956 
+    
+    \item Calculate the 95\% confidence interval for temperature ($^\circ$C) and write a statement below including these values to assess our confidence in the temperature mean. \textbf{(2 pts)}\par 
+    
+    [1] 12.58419
+    [1] 13.64775
+
+\end{enumerate}
+
+\section*{Part 3. Statistical Analyses in R}
+\begin{enumerate}[font=\bfseries, wide, resume]
+    \item Walk through the t-test determining if the mean pH values are significantly different before and during dam removal. Next, determine if there is a significant difference in the mean turbidity values before and during dam removal by conducting your own t-test. Report your results in the context of the study by interpreting the p-value and variables used. \textbf{(2 pts)}\par 
+
+    Before removal: 13.10526              
+    After removal: 71.73571 
+
+    \item Walk through the example ANOVA determining if the mean pH values are significantly different between different testing sites. Next, conduct your own ANOVA to determine if there are site differences in temperature during dam removal. Report your results in the context of the study by interpreting the p-value and variables used. \textbf{(2 pts)}
+    
+    \begin{center}
+        \includegraphics[scale=0.5]{images/a2-qst7.png}
+    \end{center}
+
+    There was no significant difference in temperature among sampling sites during dam removal (F=1.862; df=4,113; p=0.122).
+
+    \item Produce a boxplot to help illustrate your results from AQ-7. Export the image (copy to clipboard), paste below, and include a descriptive figure caption. \textbf{(2 pts)}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.35]{images/qst8.png}
+        \caption{Boxplot that shows outliers (the two open circles in ES1), medians (thick black lines in the middle of the boxes), quartiles (outer bounds of the boxes), and minimum and maximum values (excluding outliers; the lines at the end of the dotted-line arms) for turbidity before and after dam removal.}
+        \label{}
+    \end{figure}
+
+    \item What are the null hypotheses for each of the analyses (t-test; ANOVA) that you conducted above? \textbf{(1 pt)}\par 
+    \begin{itemize}
+        \item There is no significant difference turbidity before and after dam removal.
+        \item There is no significant difference in temperature before and after dam removal. 
+    \end{itemize}
+\end{enumerate}
+
+\section*{Part 4. Water quality}
+\begin{enumerate}[font=\bfseries, wide, resume]
+    \item Why do you think dam removal would affect water quality parameters in a river? \textbf{(1 pt)}\par
+
+    Removal of the damn could change water flow which could introduce a wide range of effects, one being the water quality. 
+
+    \item What is turbidity? Why do you think it is an important parameter to consider when measuring water quality? Can you think of an example of very high turbidity? \textbf{(1 pt)}\par
+
+    Turbidity is how clear or transparent the water is. Higher turbidity means increased particles and lower visibility. Turbidity is important to consider because it lets you know how much of the water, isn't actually water. You want lower turbidity. An example of high turbidity would be a river during a flood, where there is an abnormally high amount of additional materiel flowing with the water. 
+
+    \item Why do you think water quality is important? Find an example from the primary literature to support your argument. What happens when there is poor water quality? What are some of the factors that contribute to poor water quality? \textbf{(2 pts)}\par
+
+
+
+    - K.E. Wiemer, A. Anderson, B. Stewart, The importance of water quality for media preparation, Human Reproduction, Volume 13, Issue suppl\_4, December 1998, Pages 166–172
+    
+    \item Think about a data-driven question that you would like to answer using RStudio. Find a potential dataset and describe it—what kind of variables it contains, what it measured, and what question you would like to use the data to answer. \textbf{(1 pt)}\par
+
+
+    \item What statistical test from the lab today would you use to analyze your data and why? What would be your null hypothesis? \textbf{(1 pt)}\par
+
+
+\end{enumerate}
+\end{document}
