@@ -1,0 +1,119 @@
+{
+	"Table": {
+	  "prefix": "\\table",
+	  "body": [
+		"\\begin{table}[h]",
+		"\t\\centering",
+		"\t\\caption{$1 \\strut}",
+		"\t\\label{tab:$2}",
+		"\t\\begin{tabular}{ccc}",
+		"\t\t\\toprule",
+		"\t\t$3 & $4 & $5 \\\\\\",
+		"\t\t\\midrule",
+		"\t\t & & \\\\\\",
+		"\t\t & & \\\\\\",
+		"\t\t\\bottomrule",
+		"\t\t\\end{tabular}",
+		"\\end{table}",
+		"$0"
+	  ],
+	  "description": "Add a table"
+	},
+
+	"New Chapter":{
+		"prefix": "New Chapter",
+		"body": [
+			"\\clearpage",
+			"\\renewcommand{\\thetitle}{\\hypertarget{$1}{$2}}",
+			"\\rfoot{\\hyperlink{$3}{$4 --- \\thepage}}",
+			"\\hypertarget{$5}{}",
+			"$0"
+		]
+	},
+
+	"Chapter Box": {
+		"prefix": "Chapter Box",
+		"body": [
+			"\\begin{chapbox}{\\hyperlink{home}{Chapter xx: $1}}",
+			"\t\\begin{enumerate}",
+			"\t\t\\item \\hyperlink{xx.1}{}",
+			"\t\t\\item \\hyperlink{xx.2}{}",
+			"\t\t\\item \\hyperlink{xx.3}{}",
+			"\t\t\\item \\hyperlink{xx.4}{}",
+			"\t\t\\item \\hyperlink{xx.5}{}",
+			"\t\t\\item \\hyperlink{xx.6}{}",
+			"\t\t\\item \\hyperlink{xx.7}{}",
+			"\t\t\\item \\hyperlink{xx.8}{}",
+			"\t\t\\item \\hyperlink{xx.9}{}",
+			"\t\t\\item \\hyperlink{xx.10}{}",
+			"\t\t\\item \\hyperlink{xx.r}{Summary}",
+			"\t\\end{enumerate}",
+			"\\end{chapbox}",
+		]
+	},
+
+	"Section Box": {
+		"prefix": "Section Box",
+		"body": [
+			"\\hypertarget{xx.yy}{}",
+			"\\begin{secbox}{\\hyperlink{xx}{$1}}{",
+			"\t\\hypertarget{xx.yy.1}{\\subsection*{}}",
+			"\t\\begin{itemize}",
+			"\t\t\\item",
+			"\t\\end{itemize}", 
+			"",
+			"\t\\hypertarget{xx.yy.2}{\\subsection*{}}",
+			"\t\\begin{itemize}",
+			"\t\t\\item",
+			"\t\\end{itemize}", 
+			"",
+			"\t\\hypertarget{xx.yy.3}{\\subsection*{}}",
+			"\t\\begin{itemize}",
+			"\t\t\\item",
+			"\t\\end{itemize}", 
+			"",
+			"}\\end{secbox}",
+			"",
+		]
+	},
+
+	"Targeted Subsection*": {
+		"prefix": "tarsubsec",
+		"body": [
+			"\\hypertarget{$1.$2.$3}{\\subsection*{$4}}",
+			"\\begin{itemize}",
+			"\t\\item",
+			"\\end{itemize}", 
+			"",
+		]
+	},
+	
+	"Graphic Scaling": {"prefix": "scale", "body": "scale=0.$1"},
+
+	"Graphic Width": {"prefix": "linewidth", "body": "width=\\linewidth"},
+	
+	"Center Graphic": {
+		"prefix": "Centered Graphic", 
+		"body": [
+			"\\begin{center}",
+        	"\t\\includegraphics[scale=0.$1]{images\/$2.png}",
+			"\\end{center}",
+			"\\vspace{-1cm}",
+		]
+	},
+
+	"Subsection Link": {
+		"prefix": "Subsec Link",
+		"body": [
+			"\\begin{itemize}",
+				"\t\\item \\hyperlink{xx.yy.1}{}",
+				"\t\\item \\hyperlink{xx.yy.2}{}",
+				"\t\\item \\hyperlink{xx.yy.3}{}",
+				"\t\\item \\hyperlink{xx.yy.4}{}",
+				"\t\\item \\hyperlink{xx.yy.5}{}",
+				"\t\\item \\hyperlink{xx.yy.6}{}",
+				"\t\\item \\hyperlink{xx.yy.r}{}",
+            "\\end{itemize}",
+		]
+	}
+  }
