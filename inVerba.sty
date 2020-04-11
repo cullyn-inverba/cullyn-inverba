@@ -115,7 +115,6 @@
 
 % vvvvvvvvvvvvvvv BOX STYLES vvvvvvvvvvvvvvv %
 \newtcolorbox{contbox}[2][]{
-enforce breakable,
 enhanced jigsaw,
 colback=white,
 after skip=1mm,
@@ -148,7 +147,6 @@ pad at break*=0mm,
 }
 
 \newtcolorbox{chapbox}[2][]{
-enforce breakable,
 enhanced jigsaw,
 colback=white,
 after skip=1mm,
@@ -208,16 +206,15 @@ attach boxed title to top left={
         },
 fonttitle=\bfseries\large,
 title={#2},
-enforce breakable,
 pad at break*=0mm,
 }
 
 \newtcolorbox{probbox}[2][]{
-enhanced,
+enhanced jigsaw,
 size=small,
 before skip=5mm,after skip=2mm,
 colback=white,
-boxrule=-0.2pt,
+boxrule=0pt,
 toprule=1pt,
 frame style={right color = white, left color=dipink},
 attach boxed title to top left={
@@ -240,6 +237,7 @@ attach boxed title to top left={
     },
 fonttitle=\bfseries\small,
 title={#2},#1,
+enforce breakable,
 }
 
 \newtcolorbox{defbox}{
