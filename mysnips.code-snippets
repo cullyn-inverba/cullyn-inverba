@@ -115,5 +115,9 @@
 				"\t\\item \\hyperlink{xx.yy.r}{}",
             "\\end{itemize}",
 		]
-	}
+	},
+
+	"Cations": { "prefix": "cation", "body": "\\ch{$1^+}"},
+
+	"Anions": { "prefix": "anion", "body": "\\ch{$1^-}"},
   }
