@@ -178,13 +178,16 @@ pad at break*=0mm,
 }
 
 \newtcolorbox{probbox}[2][]{
-enhanced jigsaw,
+enhanced,
 size=small,
 before skip=5mm,after skip=2mm,
 colback=white,
 boxrule=0pt,
-toprule=1pt,
 frame style={right color = white, left color=dipink},
+toprule=1pt,
+bottomrule=-0.2pt,
+leftrule=-0.2pt,
+rightrule=-0.2pt,
 attach boxed title to top left={
     xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
     varwidth boxed title*=-3cm,
@@ -205,7 +208,6 @@ attach boxed title to top left={
     },
 fonttitle=\bfseries\small,
 title={#2},#1,
-enforce breakable,
 }
 
 \newtcolorbox{defbox}{
