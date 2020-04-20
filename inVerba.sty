@@ -5,6 +5,10 @@
 \usepackage{fancyhdr}
     \pagestyle{fancy}
 \usepackage{amsmath}
+\usepackage{sansmathfonts}
+\usepackage[sfdefault, light]{roboto}
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
 \usepackage{mathtools}
 \usepackage{enumitem}
     \setlist[itemize]{label=\textendash}
@@ -47,6 +51,9 @@
 
 % vvvvvvvvvvvvvvv PERAMETERS vvvvvvvvvvvvvvv %
 \setlength\headheight{15pt}
+\renewcommand{\baselinestretch}{1.5} 
+\definecolor{default}{HTML}{303030}
+\color{default}
 \numberwithin{equation}{section}
 % ^^^^^^^^^^^^^^^ PERAMETERS ^^^^^^^^^^^^^^^ %
 
@@ -78,6 +85,7 @@
 
 \definecolor{Fresh1}{HTML}{38F9D7}  \definecolor{Tux1}{HTML}{434343}    \definecolor{Phoenix1}{HTML}{F83600}
 \definecolor{Fresh2}{HTML}{43E97B}  \definecolor{Tux2}{HTML}{000001}    \definecolor{Phoenix2}{HTML}{F9D423}
+
 % ^^^^^^^^^^^^^^^ GRADIENT COLORS ^^^^^^^^^^^^^^^ %
 
 % vvvvvvvvvvvvvvv BOX STYLES vvvvvvvvvvvvvvv %
