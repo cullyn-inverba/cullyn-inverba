@@ -10,13 +10,14 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\familydefault{\sfdefault}
 \usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{pagecolor}
 \usepackage{enumitem}
     \setlist[itemize]{label=\textendash}
 \usepackage{graphicx}
 \usepackage{chemfig}
 \usepackage{chemformula}
 \usepackage[many,vignette]{tcolorbox}
-\usepackage{xcolor}
 \usepackage{varwidth}
 \usepackage{booktabs}
 \usepackage{siunitx}
@@ -52,8 +53,18 @@
 % vvvvvvvvvvvvvvv PERAMETERS vvvvvvvvvvvvvvv %
 \setlength\headheight{15pt}
 \renewcommand{\baselinestretch}{1.5} 
-\definecolor{default}{HTML}{303030}
-\color{default}
+\definecolor{lightmode}{HTML}{ededed}
+\definecolor{lightmodetext}{HTML}{303030}
+\definecolor{darkmode}{HTML}{212121}
+\definecolor{darkmodetext}{HTML}{d1d1d1}
+
+%\color{lightmodetext}
+%\pagecolor{lightmode}
+%\definecolor{under}{HTML}{adadad} % light mode understatement
+\color{darkmodetext}
+\pagecolor{darkmode}
+\definecolor{under}{HTML}{525252} % dark mode understatement
+ 
 \numberwithin{equation}{section}
 % ^^^^^^^^^^^^^^^ PERAMETERS ^^^^^^^^^^^^^^^ %
 
@@ -71,6 +82,8 @@
 \definecolor {iblue}{HTML}{1A5CB0}   \definecolor {iorange}{HTML}{FF6420}  \definecolor {ipink}{HTML}{7D3966}
 \definecolor {liblue}{HTML}{359BE2}  \definecolor {liorange}{HTML}{FF9646} \definecolor {lipink}{HTML}{C985A1}
 \definecolor {Liblue}{HTML}{4EB9FF} 
+
+
 % ^^^^^^^^^^^^^^^ MY COLORS ^^^^^^^^^^^^^^^ %
 
 % vvvvvvvvvvvvvvv GRADIENT COLORS vvvvvvvvvvvvvvv %
