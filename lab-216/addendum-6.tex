@@ -44,7 +44,7 @@
     \begin{enumerate}[font=\bfseries, wide]
         {\color{under}\item A snowball rolling down a hill becomes larger and larger, making it roll faster and become larger still. \textbf{(1 pt)}}
 
-        Positive, the more it moves the larger it gets which makes it more likely to move and gain more snow.
+        Positive, the more it moves the larger it gets which makes it more likely to move and gain more snow and wouldn't stop unless influenced by something else.
 
         {\color{under}\item  You are determined to earn an A in Biology. You decide to seek help from a tutor. The tutor is helpful, but very expensive. In order to pay the tutor, you must start working nights. Working reduces your study time, and your grades fall in the course. Thus, you spend more time with the tutor, meaning you have to earn more money. As a result of working more, your grades in the course fall even more. You decide to spend even more time with the tutor. \textbf{(1 pt)}}
 
@@ -55,10 +55,26 @@
         Negative, a decrease in hormones results in a reduced production of hormones which will continue until it no longer has an effect.
     \end{enumerate}
 \end{enumerate}
+\newpage 
 
 \section*{Part II: Resting and Active Heart Rates}
 \begin{enumerate}[font=\bfseries, wide, resume]
     {\color{under}\item Create a whole class data table using Google Sheets. Insert the data table, make sure it’s formatted properly, and include a descriptive table title. \textbf{(1 pt)}}
+    
+    \begin{table}[h]
+        \centering
+        \caption{Average resting/active heart rate and recovery time between various groups with different normal activity habits, from most active to least. N = 10, 5, 3}
+        \begin{tabular}{rccc}
+            \toprule
+             & Hummingbirds  &  Butterflies  & Tech Guru  \\
+            \midrule
+            Resting HR (BPM) & 61.8 & 77.4 & 69.0 \\
+            Active HR (BPM) & 110.2 & 138.6 & 77.7 \\
+            $\Delta$ HR (BPM) & 48.4 & 61.2 & 8.7 \\
+            Recovery (s)& 324 & 672 & 61.8 \\
+            \bottomrule
+            \end{tabular}
+    \end{table}
     
     
     {\color{under}\item What do you hypothesize regarding recovery times between the high and low activity groups?  State the null and alternative hypotheses. \textbf{(0.5 pt)}}
@@ -70,10 +86,80 @@
     Alternative: The less active group will have faster recovery times.
     
     {\color{under}\item  Use the appropriate statistical test to determine if there is a significant difference in recovery times between athletes and non-athletes.  What test did you use?  What are the results?  Include the test statistic and p value. \textbf{(1 pt)}}
+
+    \begin{lstlisting}
+    from scipy.stats import ttest_ind
+
+    hummingbirds = [360, 480, 360, 600, 240, 240,
+    120, 360, 240]
+    butterflies = [840, 240, 960, 720, 600]
+    stat, p = ttest_ind(hummingbirds, butterflies)
+    print('stat=%.3f, p=%.3f' % (stat, p))
+    if p > 0.05:
+        print('Probably the same distribution')
+    else:
+        print('Probably different distributions')
+    \end{lstlisting}
     
+    \textbf{stat=-3.063, p=0.010}\\
+    Probably different distributions based off usage of the \textit{student's t-test} statistical analysis, which tests whether two independent samples are significantly different. 
+
     {\color{under}\item Create a graph that shows a comparison between the heart rates of active students and non-active students for each of the time intervals measured.  Represent the 95\% confidence intervals around each of the mean heart rates and include a descriptive figure caption. \textbf{(1 pt)}}
 
+    \begin{figure}[h]
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel=Time (min),
+                scale only axis,
+                width=0.6\textwidth,
+                legend style={fill=none, draw=none, },
+                legend style={at={(0.5,-0.15)}},
+                ylabel=Heart Rate (BPM),
+                axis lines = middle,]
+            \addplot[mark=*, color=liorange, error bars/.cd, y dir=both, y explicit,] coordinates {
+                (0,61.8) +- (0,5.48)
+                (5,110.2) +- (0,18.10)
+                (7,75.3) +- (0, 6.87)
+                (9,67) +- (0,8.512)
+                (11,69.6) +- (0,10.1)
+                (13,67) 
+                (15,68) 
+            };   
+            \addplot[color=Haze2,mark=*, error bars/.cd, y dir=both, y explicit,] coordinates {
+                (0,77.4) +- (0,7.63)
+                (4.7,138.6) +- (0,29.48) 
+                (6.7,103.6) +- (0,17.4)
+                (9,100.8) +- (0,17.8)
+                (11,96.2) +- (0,13)
+                (13,87.2) +- (0,6.5)
+                (15,85.4) 
+            };
+            \addplot[color=Liblue,mark=*, error bars/.cd, y dir=both, y explicit,] coordinates {
+                (0,69) +- (0,23.6)
+                (5.2,77.7) +- (0,29)
+                (7.2,72) +- (0,26)
+                (9,72) 
+            };
+            \legend{Hummingbirds~~~,Butterflies~~~,Tech Guru}
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Mean resting (0 min), active (5 min), and recovery (every 2 min after active) heart rates among groups of varying daily activity levels outlined in Table 1. Some confidence intervals omitted due to lack of data at those recovery times}
+    \end{figure}
+    Sample calculation to find 95\% confidence interval: [5.48751231 -5.48751231]
+    \begin{lstlisting}
+    import statsmodels.stats.api as sms
+    import numpy as np
+
+    data=[58,78,57,64,60,56,56,68,68,53]
+    ci=sms.DescrStatsW(data).tconfint_mean()
+    avg=np.mean(data)
+
+    print(np.subtract((avg), ci))
+    \end{lstlisting}
     {\color{under}\item Why does heart rate return back to normal BPM quickly after exercise ends? \textbf{(1 pt)}}
+
+    Rapid transport of oxygen is no longer needed; it would be a waste and would over stress the heart to continue.
 \end{enumerate}
     
 \section*{Part III: Meditation and Neuroscience}
@@ -84,20 +170,48 @@
 
     {\color{under}\item Is there a connection between meditation and heart rate? \textbf{(1 pt)}}
     
-    
-    {\color{under}\item Now, take your resting heart rate and record your BPM: {\color{darkmodetext} 78}
+    The paper does not mention any correlation between heart rates and meditation, but does mention heart rate variability in Zen meditators. Based on previous knowledge I have heard heart rate can be affected by rate of breath, so it's possible types of mediation might.
+
+    {\color{under}\item Now, take your resting heart rate and record your BPM: {\color{darkmodetext} 80}
     
     As a class you will participate in Day 1 of Waking Up.  When the audio ends, take your resting heart rate (BPM) again: {\color{darkmodetext} 78}
 
     Was there a difference? \textbf{(1 pt)}}
 
+    Not a significant difference.
     
-    
+    \newpage
+
     {\color{under}\item Create a whole class data table using Google Sheets. Create a graph that shows a comparison between the average heart rates before and after the guided meditation. Represent the 95\% confidence intervals for each of the mean heart rates and include a descriptive figure caption. \textbf{(1 pt)}}
     
-    
+    \begin{figure}[h]
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel=Time (min),
+                scale only axis,
+                xmax=12,
+                xmin=-2,
+                ymax=80, 
+                ymin=55,
+                width=0.6\textwidth,
+                legend style={fill=none, draw=none, },
+                legend style={at={(0.5,-0.15)}},
+                ylabel=Heart Rate (BPM),
+                axis lines = middle,]
+            \addplot[mark=*, color=Lip1, error bars/.cd, y dir=both, y explicit,] coordinates {
+                (2,69.1) +- (0,4.1)
+                (10,67.5) +- (0,4.3)
+            };   
+            \legend{Hummingbirds~~~,}
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Mean heart rate for individuals in class (N=19) before and a Some confidence intervals omitted due to lack of data at those recovery times after mediation session.}
+    \end{figure}
     {\color{under}\item Use the appropriate statistical test to determine if there is a significant difference in recovery times between athletes and non-athletes. What test did you use? What are the results? Include the test statistic and p value. \textbf{(1 pt)}}
     
+    stat=0.366, p=0.717
+    Probably the same distribution, based off usage of the \textit{student's t-test} statistical analysis.
     
 \end{enumerate}
 
