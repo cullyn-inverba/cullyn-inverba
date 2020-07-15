@@ -1,0 +1,58 @@
+
+{
+	"Table": {
+	  "prefix": "my table",
+	  "body": [
+		"\\begin{table}[h]",
+		"\t\\centering",
+		"\t\\caption{$1 \\strut}",
+		"\t\\label{tab:$2}",
+		"\t\\begin{tabular}{ccc}",
+		"\t\t\\toprule",
+		"\t\t$3 & $4 & $5 \\\\\\",
+		"\t\t\\midrule",
+		"\t\t & & \\\\\\",
+		"\t\t & & \\\\\\",
+		"\t\t\\bottomrule",
+		"\t\t\\end{tabular}",
+		"\\end{table}",
+		"$0"
+	  ],
+	  "description": "Template for a nice table"
+	},
+	
+	"Graphic Scaling": {"prefix": "scale", "body": "scale=0.$1"},
+
+	"Graphic Width": {"prefix": "linewidth", "body": "width=\\linewidth"},
+	
+	"Center Graphic": {
+		"prefix": "Centered Graphic", 
+		"body": [
+			"\\begin{center}",
+        	"\t\\includegraphics[scale=0.$1]{images\/$2.png}",
+			"\\end{center}",
+			"\\vspace{-1cm}",
+		]
+	},
+
+	"Cations": { "prefix": "cation", "body": "\\ch{$1^+}"},
+	"Anions": { "prefix": "anion", "body": "\\ch{$1^-}"},
+
+	"alpha": { "prefix": "alpha", "body": "$\\alpha$"},
+	"beta": { "prefix": "beta", "body": "$\\beta$"},
+	"gamma": { "prefix": "gamma", "body": "$\\gamma$"},
+
+	"_": {"prefix": "_", "body": "$2\\(_{$1}\\)$0"},
+	"^": {"prefix": "^", "body": "$2\\(^{$1}\\)$0"},
+
+	"subsec": {
+		"prefix": "Subsec notes", 
+		"body": [
+			"\\subsection{$1}",
+			"\\being{itemize}",
+			"\t\\item $0",
+			"\\end{itemize}",
+		]
+	},
+
+  }
