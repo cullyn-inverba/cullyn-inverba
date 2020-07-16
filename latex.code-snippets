@@ -49,7 +49,7 @@
 		"prefix": "Subsec notes", 
 		"body": [
 			"\\subsection{$1}",
-			"\\being{itemize}",
+			"\\begin{itemize}",
 			"\t\\item $0",
 			"\\end{itemize}",
 		]
