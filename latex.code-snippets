@@ -61,7 +61,7 @@
 			"%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter $1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
 			"%\\begingroup",
 			"\\clearpage",
-			"\\section{$3}",
+			"\\section{$3}\\phantomsection",
 			"\\subsection{$4}",
 			"\\begin{itemize}",
 			"\t\\item $0",
