@@ -4,3 +4,4 @@ import tensorflow as tf3
 
 # %%
 pd.read_csv('data/titanic.csv')
+    
