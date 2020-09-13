@@ -35,3 +35,5 @@ summer.loc['PHELPS, Michael', "Medal"]
 summer.loc[['PHELPS, Michael', 'LEWIS, Carl'], ["Medal", "Event"]]
 summer.loc[:, ["Medal", "Event"]]
 # %%
+# Re-indexing 
+summer.reindex()
