@@ -1,6 +1,6 @@
 
 {
-	"Table": {
+	"My Table": {
 	  "prefix": "my table",
 	  "body": [
 		"\\begin{table}[h]",
@@ -42,11 +42,11 @@
 	"beta": { "prefix": "beta", "body": "$\\beta$"},
 	"gamma": { "prefix": "gamma", "body": "$\\gamma$"},
 
-	"_": {"prefix": "_", "body": "$2\\(_{$1}\\)$0"},
-	"^": {"prefix": "^", "body": "$2\\(^{$1}\\)$0"},
+	"Root": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
+	"Power": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
 
-	"subsec": {
-		"prefix": "Subsec notes", 
+	"Subsection": {
+		"prefix": "Subsection", 
 		"body": [
 			"\\subsection{$1}",
 			"\\begin{itemize}",
@@ -70,5 +70,16 @@
 			"%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter $2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
 		]
 	},
+
+	"New Part": {
+		"prefix": "Part",
+		"body": [
+			"\\clearpage",
+			"\\fancyhead[L]{Part $1: $2}",
+			"%\\begingroup",
+			"",
+			"%\\endgroup",
+		]
+	}
 
   }
