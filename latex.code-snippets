@@ -42,8 +42,10 @@
 	"beta": { "prefix": "beta", "body": "$\\beta$"},
 	"gamma": { "prefix": "gamma", "body": "$\\gamma$"},
 
-	"Root": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
-	"Power": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
+	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
+	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
+
+	"Inline Hat": {"prefix": "hat", "body": "\\(\\hat{$1}\\)$0"},
 
 	"Subsection": {
 		"prefix": "Subsection", 
