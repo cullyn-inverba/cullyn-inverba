@@ -21,11 +21,32 @@
 \section{Vectors}\phantomsection
 \subsection{Interpretations of Vectors}
 \begin{itemize}
-    \item 
+    \item \textbf{Vector}: an ordered list of numbers. 
+    \item Possible notations: \(\vec{v}=\bm{v}\) are most common.
+    \item \textbf{Dimensionality}: the number of the elements in a vector.
+    \item \textbf{Geometric vector}: an object with a magnitude and direction.
+    \item \textit{Standard position}: when the vector beings at the origin.
 \end{itemize}
-\subsection{Vector Addition and Subtraction}
+\subsection{Vector Addition, Subtraction, and Multiplication}
 \begin{itemize}
-    \item 
+    \item Vectors must have same dimensionality for addition and subtraction.
+    \item Geometric and algebraic have same results.
+    \item \textbf{Scalar}: scales each element in a vector, does not change direction. Generally represented with greek letters.
+    \item \textbf{Dot product}: a single number that provides information about the relationship between two vectors. Must have same dimensionality.
+    \item Notation for dot product: \(a\cdot b = a^Tb = \left\langle ab\right\rangle = \sum a_i b_i\)
+    \item \textit{Algebraic} dot product properties:
+        \begin{itemize}
+            \item \textbf{Associative: {\color{r-Lush}False}}; \(a^T(b^Tc) \neq (a^Tb)^Tc\)
+            \item \textbf{Distributive: {\color{G-Leaf}True}}; \(a^T(b+c) = a^Tb + a^Tc\)
+            \item \textbf{Commutative}: 
+            \item Vector magnitude/length: \(\left\lVert \bm{v}\right\rVert = \sqrt{\bm{v}^T\bm{v}}\)
+        \end{itemize}
+    \item \textit{Geometric} dot product properties:
+        \begin{itemize}
+            \item Magnitudes of vectors scaled by angle between them.
+            \item \(\vec{a} = |a||b|\cos(\theta_{ab})\)
+            \item Geometric and algebraic are really the same. The above equation can be rewritten as the algebraic vector length, i.e.  \(a^Tb = \cos(\theta_{ab})|a||b|\)
+        \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
