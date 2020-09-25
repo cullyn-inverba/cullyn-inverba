@@ -35,6 +35,12 @@
 		]
 	},
 
+	"Positive": { "prefix": "pos", "body": "{\\color{pos}$1}", "scope": "latex"},
+	"Negative": { "prefix": "neg", "body": "{\\color{neg}$1}", "scope": "latex"},
+	"True": { "prefix": "true", "body": "{\\color{true}$1}", "scope": "latex"},
+	"False": { "prefix": "false", "body": "{\\color{false}$1}", "scope": "latex"},
+
+
 	"Cations": { "prefix": "cation", "body": "\\ch{$1^+}"},
 	"Anions": { "prefix": "anion", "body": "\\ch{$1^-}"},
 
