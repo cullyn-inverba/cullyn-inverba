@@ -35,6 +35,7 @@
 		]
 	},
 
+	"Color": { "prefix": "color", "body": "{\\color{$1}$2}", "scope": "latex"},
 	"Positive": { "prefix": "pos", "body": "{\\color{pos}$1}", "scope": "latex"},
 	"Negative": { "prefix": "neg", "body": "{\\color{neg}$1}", "scope": "latex"},
 	"True": { "prefix": "true", "body": "{\\color{true}$1}", "scope": "latex"},
