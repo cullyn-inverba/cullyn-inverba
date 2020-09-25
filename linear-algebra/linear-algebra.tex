@@ -26,27 +26,45 @@
     \item \textbf{Dimensionality}: the number of the elements in a vector.
     \item \textbf{Geometric vector}: an object with a magnitude and direction.
     \item \textit{Standard position}: when the vector beings at the origin.
-\end{itemize}
-\subsection{Vector Addition, Subtraction, and Multiplication}
-\begin{itemize}
     \item Vectors must have same dimensionality for addition and subtraction.
-    \item Geometric and algebraic have same results.
+    \item \textbf{Unit vector}: a vector with a \textit{norm} (length) of 1. Notation: \(\hat{u}=\dfrac{\bm{u}}{|\bm{u}|}\) 
+\end{itemize}
+\subsection{Vector Multiplication}
+\begin{itemize}
     \item \textbf{Scalar}: scales each element in a vector, does not change direction. Generally represented with greek letters.
     \item \textbf{Dot product}: a single number that provides information about the relationship between two vectors. Must have same dimensionality.
-    \item Notation for dot product: \(a\cdot b = a^Tb = \left\langle ab\right\rangle = \sum a_i b_i\)
+    \item Notation for dot product: \(\bm{a}\cdot \bm{b} = \bm{a}^T\bm{b} = \left\langle \bm{ab} \right\rangle = \sum a_i b_i\)
     \item \textit{Algebraic} dot product properties:
         \begin{itemize}
-            \item \textbf{Associative: {\color{r-Lush}False}}; \(a^T(b^Tc) \neq (a^Tb)^Tc\)
-            \item \textbf{Distributive: {\color{G-Leaf}True}}; \(a^T(b+c) = a^Tb + a^Tc\)
-            \item \textbf{Commutative}: 
+            \item \textbf{Associative: {\color{false}False}}; \(\bm{a}^T(\bm{b}^T\bm{c}) \neq (\bm{a}^T\bm{b})^T\bm{c}\)
+            \item \textbf{Distributive: {\color{true}True}}; \(\bm{a}^T(\bm{b}+\bm{c}) = \bm{a}^T\bm{b} + \bm{a}^T\bm{c}\)
+            \item \textbf{Commutative: {\color{true}True}}; \(\bm{a}^T\bm{b} = \bm{b}^T\bm{a}\)
             \item Vector magnitude/length: \(\left\lVert \bm{v}\right\rVert = \sqrt{\bm{v}^T\bm{v}}\)
         \end{itemize}
     \item \textit{Geometric} dot product properties:
         \begin{itemize}
             \item Magnitudes of vectors scaled by angle between them.
             \item \(\vec{a} = |a||b|\cos(\theta_{ab})\)
-            \item Geometric and algebraic are really the same. The above equation can be rewritten as the algebraic vector length, i.e.  \(a^Tb = \cos(\theta_{ab})|a||b|\)
+            \item Geometric and algebraic are really the same. The above equation can be rewritten as the algebraic vector length, i.e.  \(\bm{a}^T\bm{b} = \cos(\theta_{ab})|a||b|\)
         \end{itemize}
+    \item Dot product features based on \(\theta\):
+        \begin{itemize}
+            \item If {\color{pos}\(\cos(\theta) > 0\)} then {\color{pos}\(\alpha > 0\)}
+            \item If {\color{neg}\(\cos(\theta) < 0\)} then {\color{neg}\(\alpha < 0\)}
+            \item If \(\cos(\theta) = 0\) then \(\alpha = 0\); termed \textbf{Orthogonal}
+            \item If \(\cos(\theta) = 1\) then \(\alpha = |a||b|\)
+        \end{itemize}
+    \item \textit{Hadamard vector multiplication}: elementwise multiplication of two vectors of equal dimensionality.
+    \item \textbf{Outer product}: \(\bm{vw}^T = n \times m\) matrix resulting from vectors with dimensions \(n\) and \(m\).
+    \item \textbf{Cross product}: defined only for two 3D vectors; produces another 3D vector that is perpendicular to both original vectors, or \textit{normal}, to the plane containing them.
+    \item \textit{Complex conjugate}: inverse sign of imaginary componenet of a number.
+    \item \textbf{Hermitian transpose}: or conjugate transpose, is transpose of a vector or matrix containing imaginary numbers using the complex conjugate. 
+    \item Notation for Hermitian transpose on a matrix: \(\bm{M}^H\) or \(\bm{M}^*\)
+\end{itemize}
+
+\subsection{Vector Space}
+\begin{itemize}
+    \item 
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
