@@ -3,7 +3,7 @@
 
 \newcommand{\userName}{Cullyn Newman} 
 \newcommand{\class}{Cohen} 
-\newcommand{\institution}{\color{r-Sun}Udemy} 
+\newcommand{\institution}{Udemy} 
 \newcommand{\theTitle}{\color{r-Sun}Linear Algebra}
 
 \begin{document}
@@ -25,27 +25,26 @@
     \item Possible notations: \(\vec{v}=\bm{v}\) are most common.
     \item \textbf{Dimensionality}: the number of the elements in a vector.
     \item \textbf{Geometric vector}: an object with a magnitude and direction.
-    \item \textit{Standard position}: when the vector beings at the origin.
+    \item {\color{o-Sun}Standard position}: when the vector beings at the origin.
     \item Vectors must have same dimensionality for addition and subtraction.
-    \item \textbf{Unit vector}: a vector with a \textit{norm} (length) of 1. Notation: \(\hat{u}=\dfrac{\bm{u}}{|\bm{u}|}\) 
+    \item \textbf{Unit vector}: a vector with a {\color{o-Sun}norm} (length) of 1. Notation: \(\hat{u}=\dfrac{\bm{u}}{|\bm{u}|}\) 
 \end{itemize}
 \subsection{Vector Multiplication}
 \begin{itemize}
     \item \textbf{Scalar}: scales each element in a vector, does not change direction. Generally represented with greek letters.
-    \item \textbf{Dot product}: a single number that provides information about the relationship between two vectors. Must have same dimensionality.
+    \item \textbf{Dot product}: a single number that provides information about the relationship between two vectors. Must have {\color{o-Sun}same dimensionality}.
     \item Notation for dot product: \(\bm{a}\cdot \bm{b} = \bm{a}^T\bm{b} = \left\langle \bm{ab} \right\rangle = \sum a_i b_i\)
     \item \textit{Algebraic} dot product properties:
         \begin{itemize}
-            \item \textbf{Associative: {\color{false}False}}; \(\bm{a}^T(\bm{b}^T\bm{c}) \neq (\bm{a}^T\bm{b})^T\bm{c}\)
-            \item \textbf{Distributive: {\color{true}True}}; \(\bm{a}^T(\bm{b}+\bm{c}) = \bm{a}^T\bm{b} + \bm{a}^T\bm{c}\)
-            \item \textbf{Commutative: {\color{true}True}}; \(\bm{a}^T\bm{b} = \bm{b}^T\bm{a}\)
-            \item Vector magnitude/length: \(\left\lVert \bm{v}\right\rVert = \sqrt{\bm{v}^T\bm{v}}\)
+            \item {\color{false}\textit{Associative:}} \(\bm{a}^T(\bm{b}^T\bm{c})~{\color{false}\neq}~(\bm{a}^T\bm{b})^T\bm{c}\)
+            \item {\color{true}\textit{Distributive: }} \(\bm{a}^T(\bm{b}+\bm{c})~{\color{true}=}~\bm{a}^T\bm{b} + \bm{a}^T\bm{c}\)
+            \item  {\color{true}\textit{Commutative:}} \(\bm{a}^T\bm{b} ~{\color{true}=}~\bm{b}^T\bm{a}\)
+            \item Vector magnitude/length: {\color{o-Sun}\(\left\lVert \bm{v}\right\rVert = \sqrt{\bm{v}^T\bm{v}}\)}
         \end{itemize}
     \item \textit{Geometric} dot product properties:
         \begin{itemize}
-            \item Magnitudes of vectors scaled by angle between them.
-            \item \(\vec{a} = |a||b|\cos(\theta_{ab})\)
-            \item Geometric and algebraic are really the same. The above equation can be rewritten as the algebraic vector length, i.e.  \(\bm{a}^T\bm{b} = \cos(\theta_{ab})|a||b|\)
+            \item Magnitudes of vectors scaled by angle between them. i.e. {\color{o-Sun}\(\vec{a} = |a||b|\cos(\theta_{ab})\)}
+            \item Geometric and algebraic are really the same. The above equation can be rewritten as the algebraic vector length, i.e.  {\color{o-Sun}\(\bm{a}^T\bm{b} = \cos(\theta_{ab})|a||b|\)}
         \end{itemize}
     \item Dot product features based on \(\theta\):
         \begin{itemize}
@@ -55,18 +54,44 @@
             \item If \(\cos(\theta) = 1\) then \(\alpha = |a||b|\)
         \end{itemize}
     \item \textit{Hadamard vector multiplication}: elementwise multiplication of two vectors of equal dimensionality.
-    \item \textbf{Outer product}: \(\bm{vw}^T = n \times m\) matrix resulting from vectors with dimensions \(n\) and \(m\).
-    \item \textbf{Cross product}: defined only for two 3D vectors; produces another 3D vector that is perpendicular to both original vectors, or \textit{normal}, to the plane containing them.
-    \item \textit{Complex conjugate}: inverse sign of imaginary componenet of a number.
+    \item \textbf{Outer product}: {\color{o-Sun}\(\bm{vw}^T = n \times m\)}; a matrix resulting from the product of vectors with dimensions \(n\) and \(m\).
+    \item \textbf{Cross product}: defined only between {\color{o-Sun}two 3D} vectors; produces another 3D vector that is perpendicular to both original vectors, or {\color{o-Sun}normal}, to the plane containing them.
+    \item \textit{Complex conjugate}: the inverse sign of imaginary componenet of a number.
     \item \textbf{Hermitian transpose}: or conjugate transpose, is transpose of a vector or matrix containing imaginary numbers using the complex conjugate. 
     \item Notation for Hermitian transpose on a matrix: \(\bm{M}^H\) or \(\bm{M}^*\)
 \end{itemize}
 
 \subsection{Vector Space}
 \begin{itemize}
-    \item 
+    \item \textbf{Dimension}: in linear algebra dimension represnets a {\color{o-Sun}new element} of infomation about a vector. Geometrically, each dimension represent a {\color{o-Sun}new direction}.
+    \item \textbf{Fields}: a set of numbers on which a set of arithmetic are valid.
+    \item Field notations:
+        \begin{itemize}
+            \item $\mathbb{R}$: real numbers.
+            \item $\mathbb{C}$: complex numbers.
+            \item $\mathbb{K}$: real complex numbers.
+            \item $\mathbb{Z}$: integers.
+            \item $\mathbb{N}$: poisite integers.
+            \item $\mathbb{Q}$: rational numbers.
+            \item Dimensionality in fields is written with superscripts, e.g. \(\mathbb{R}^{\color{o-Sun}N}\)
+        \end{itemize}
+    \item \textbf{Subspace}: The set of all vectors that can be created by a linear combination of some vectors or a set of vectors, i.e. {\color{o-Sun}\(\lambda\bm{v},~\lambda\in\mathbb{R}\)}
+    \begin{itemize}
+        \item More formal definition: a vector subspace (\(V\)) must be closed under addition and scalar multiplication, and must contain the zero vector.
+        \item {\color{o-Sun}\(\forall\bm{v}, \bm{w} \in V;~ \forall\lambda,\alpha\in\mathbb{R};~ \lambda\bm{v}+\alpha\bm{w}\in V\)}
+        \item Geometric: all possible scaled versions of vector produces a line for a single vector, and a 2d plane between two linear independent vectors.
+    \end{itemize}
+    \item \textbf{Subset}: a set of points that satisfies some conditions; doesn't need to include toe origin, doesn't need to be closed, and can have boundaries.
+    \item \textbf{Span}: all possible linear combinations of vectors within a subspace. 
+    \item \textbf{Linear Independence}: a property of an entire set of vectors that is true only if no vector in the set can be written as a linear combination of the others.
+        \begin{itemize}
+            \item Geometric perspective: a set of M vectors is independent if each vector points in a geometric dimension not reachable using other vectors in the set.
+            \item Any set of \({\color{pos}M>N}\) vectors in \(\mathbb{R}^N\) is {\color{o-Sun}dependent}.
+            \item Any set of \({\color{neg}M\leq N}\) vectors in \(\mathbb{R}^N\) \textit{could be} {\color{o-Sun}independent}.
+        \end{itemize}
+    \item \textbf{Basis}: a combination of span and independence. More formally: if every element of a vector space \(V\) over a field is a {\color{o-Sun}linearly independent subset} of \(V\) that {\color{o-Sun}spans} \(V\).
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
-\end{document}
+\end{document}\newcommand{\vect}[1]{\boldsymbol{#1}}
