@@ -36,7 +36,7 @@
 \subsection{Visualizing Data}
 \begin{itemize}
     \item \textbf{Bar plots}: used to represnet {\color{o-Sun}categorical} (nominal and ordinal) and {\color{o-Sun}discrete numerical} data.
-    \item \textbf{Box plots}: collection of a data that is split into separate quatiles in order to illustrate {\color{o-Sun}overall distribution} of data and its potential outliers.
+    \item \textbf{Box plots}: collection of a data that is split into separate quartiles (the box) and data min/max points (whiskers) in order to illustrate {\color{o-Sun}overall distribution} of data and its potential outliers (often denoted by **). 
     \item \textbf{Histograms}: similar to bar plots, but with binned continuous data on the x-axis. {\color{o-Sun}Shape} and {\color{o-Sun}order} is meaningful.
         \begin{itemize}
             \item Histograms of \textbf{counts}: 
@@ -101,19 +101,49 @@
 \begin{itemize}
     \item \textbf{Central tendency}: the center of typical value for a probability distribution. 
     \item Common measures of central tendency: {\color{o-Sun}mean, median, mode}.
-    \item Mean, aka average or arithmetic mean: 
+    \item {\color{o-Sun}Mean}, aka average or arithmetic mean: 
     \begin{itemize}
         \item Formula: {\color{o-Sun}\(\bar{x}=n^{-1}\sum{x_i}\)}.
         \item Alternate notations for mean: \(\mu,\,\mu_x\).
         \item The mean is most suitable for normally distributed interval and ratio data.
         \item Discrete and ordinal data can be useful, but must be carefully interpreted.
     \end{itemize}
-    \item Median:
+    \item {\color{o-Sun}Median}:
         \begin{itemize}
             \item {\color{o-Sun}\(x_i,~i=\dfrac{n+1}{2}\)}
             \item Most suitable for unimodal distributed interval and ratio data.
         \end{itemize}
-    \item Mode: the most common value that is suitable for any distribution and data type, though mostly used for nominal.
+    \item {\color{o-Sun}Mode}: the most common value that is suitable for any distribution and data type, though mostly used for nominal.
+\end{itemize}
+
+\subsection{Measures of Disperion}
+\begin{itemize}
+    \item \textbf{Dispersion}: also called variability, scatter, or spread; a single number that describes how dispersed the data is around the central tendency. 
+    \item Main measures of dispersion: {\color{o-Sun}standard deviation} and {\color{o-Sun}variance}.
+    \item {\color{o-Sun}Variance}: indicates dispersion around the mean.
+        \begin{itemize}
+            \item Formula: {\color{o-Sun}\(\sigma^2=\dfrac{1}{n-1}\sum(x_i-\bar{x})^2\)}
+            \item Suitable for any distribution. 
+            \item Works best with numerical data, or ordinal data with a mean.
+            \item Taking the absolute value instead of the square of the mean difference results in the \textit{mean absolute difference (MAD)}.
+            \item Squaring emphasizes large values; better for optimization; closer to euclidean distance; is the second "moment"; better link to least-squares regression; and more.
+            \item MAd is robust to outliers, though less commonly used. 
+            \item Dividing by \(N-1\) is for sample variance, while \(N\) is for population.
+        \end{itemize}
+    \item {\color{o-Sun}Standard deviation}: simply the square root of variance. 
+    \item Knowing the standard deivation gives you variance and vice versa. Variance is more useful mathematically, while standard deviation has convenience of being expressed in units of the original variable.
+    \item There other related measures such as \textit{Fano factor} and \textit{Coefficient of variation}, which are normalized measures of variability. Sensible only for datasets with positive values. 
+    \item \textit{Fano factor}: \(F = \dfrac{\sigma^2}{\mu}\); variance divided by the mean.
+    \item \textit{Coefficient of variation}: \(CV= \dfrac{\sigma}{\mu}\); standard deviation divided by the mean. 
+\end{itemize}
+
+\subsection{Interquartile Range and QQ Plots}
+\begin{itemize}
+    \item Each half of the data made by the median can be divided further by taking the median again, resulting in 3 boundary points, or {\color{o-Sun}quartiles}
+    \item Quartile 1 is the "left"; quatile 2 is the middle, or "global median", and quartile 3 is the right.
+    \item \textbf{Interquartile range (IQR)}: the range between quartile 1 and 2 that represnets 50\% of the data.
+    \item \textit{Revisiting box plots}: IQR is represented by the box of the plot. 
+    \item \textbf{QQ plots}: aka quantile-quantile plots; a diagnostic scatter plot that compares two probability distributions by plotting their quantiles against each other in order to determin if it comes from a normal distribution.
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
