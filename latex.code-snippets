@@ -43,12 +43,13 @@
 	"False": { "prefix": "false", "body": "{\\color{false}$1}", "scope": "latex"},
 
 
-	"Cations": { "prefix": "cation", "body": "\\ch{$1^+}"},
-	"Anions": { "prefix": "anion", "body": "\\ch{$1^-}"},
+	"Cations": { "prefix": "cation", "body": "{\\color{pos}\\ch{$1^+}}"},
+	"Anions": { "prefix": "anion", "body": "{\\color{neg}\\ch{$1^-}}"},
 
-	"alpha": { "prefix": "alpha", "body": "$\\alpha$"},
-	"beta": { "prefix": "beta", "body": "$\\beta$"},
-	"gamma": { "prefix": "gamma", "body": "$\\gamma$"},
+	"Inline alpha": { "prefix": "alpha", "body": "$\\alpha$"},
+	"Inline beta": { "prefix": "beta", "body": "$\\beta$"},
+	"Inline gamma": { "prefix": "gamma", "body": "$\\gamma$"},
+	"Inline delta": { "prefix": "delta", "body": "$\\delta$"},
 
 	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
 	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
