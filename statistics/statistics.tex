@@ -58,13 +58,39 @@
     \item \textbf{Pie charts}: representation of nominal, ordinal, or discrete data that must sum up to 1.
 \end{itemize}
 
+\subsection{Visualizing Data: Revisited (Post-Chapter 2)}
+\begin{itemize}
+    \item Determining {\color{o-Sun}number of bins} for historgrams: 
+        \begin{itemize}
+            \item Number of bins (\(k\)) can be specified directly of calculated from width of bins \(h\):
+                \begin{itemize}
+                    \item \(k = \left\lceil \dfrac{\Delta x}{h} \right\rceil \)
+                    \item \(\lceil \rceil \) represnets the ceiling, our rounding up to nearest int.
+                \end{itemize}
+            \item \textbf{Sturges} guideline: \(k=\left\lceil \log2(n)\right\rceil +1 \)
+                \begin{itemize}
+                    \item Advantage: relates to the data count.
+                \end{itemize}
+            \item \textbf{Freedman-Diaconis}: \(h = 2\dfrac{IQR}{\sqrt[3]{n}}\)
+                \begin{itemize}
+                    \item Advantage: relates to both the data count and data spread.
+                \end{itemize}
+            \item Arbitrary choices, or other methods, often are decent enough and easier to implement, though Freedman-Diaconis is usually the best choice.
+        \end{itemize}
+    \item \textbf{Violin plots}: a {\color{o-Sun}rotated} and {\color{o-Sun}mirrored} historgram. 
+        \begin{itemize}
+            \item IQR, mean, median, and distribution can all be easily represented.
+            \item Usually symmetric, but can comopare two similar datasets asymmetrically.
+        \end{itemize}
+\end{itemize}
+
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
-\section{Descriptive Statistics}\phantomsection
+\section{Describing Statistics}\phantomsection
 \subsection{Descriptive vs. Inferential}
 \begin{itemize}
     \item \textbf{Descriptive}:
@@ -144,6 +170,33 @@
     \item \textbf{Interquartile range (IQR)}: the range between quartile 1 and 2 that represnets 50\% of the data.
     \item \textit{Revisiting box plots}: IQR is represented by the box of the plot. 
     \item \textbf{QQ plots}: aka quantile-quantile plots; a diagnostic scatter plot that compares two probability distributions by plotting their quantiles against each other in order to determin if it comes from a normal distribution.
+\end{itemize}
+
+\subsection{Statistical Moments}
+\begin{itemize}
+    \item Unstandardized statiscal moments:
+        \begin{itemize}
+            \item 
+            \item General formula: {\color{o-Sun}\(m_k = n^{-1}\sum(x_i-\bar{x})^k\)}
+            \item \textit{First moment}: the {\color{o-Sun}mean}, with a \(k\) value of 1.
+            \item \textit{Second moment}: the {\color{o-Sun}variance}, with \(k\) value of 1.
+            \item Further moments are increments of k.
+        \end{itemize}
+    \item Standardized statiscal moments:
+        \begin{itemize}
+            \item Third and fourth moments are standardized with additional variance terms, {\color{o-Sun}\((n\sigma^k)^{-1}\)} insted of just \(n\).
+            \item \textbf{Skewness}: the \textit{third moment}; dispersion asymmetry around the mean.
+                \begin{itemize}
+                    \item {\color{pos}positive skew}; the range of outliers pulled to right.
+                    \item {\color{neg}negative skew}; the range of outliers pulled to the left. 
+                \end{itemize}
+            \item \textbf{Kurtosis}: the \textit{fourth moment}; the length of the distribution from the mean, heavy-tailed or light-tailed, relative to the normal distribution.
+                \begin{itemize}
+                    \item Data with {\color{o-Sun}low} kurtosis have light tails, or {\color{o-Sun}lack of outliers}.
+                    \item Data with {\color{o-Sun}high} kurtosis have heavy tails, or {\color{o-Sun}more outliers}.
+                \end{itemize}
+        \end{itemize}
+    \item There are further moments, but generally lack significance.
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
