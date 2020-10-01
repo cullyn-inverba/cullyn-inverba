@@ -88,7 +88,7 @@
 		"prefix": "Part",
 		"body": [
 			"\\clearpage",
-			"\\fancyhead[L]{Part $1: $2}",
+			"\\fancyhead[L]{$1}",
 			"%\\begingroup",
 			"",
 			"%\\endgroup",
