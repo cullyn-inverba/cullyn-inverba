@@ -50,6 +50,7 @@
 	"Inline beta": { "prefix": "beta", "body": "$\\beta$"},
 	"Inline gamma": { "prefix": "gamma", "body": "$\\gamma$"},
 	"Inline delta": { "prefix": "delta", "body": "$\\delta$"},
+	"Inline sigma": { "prefix": "sigma", "body": "$\\sigma$"},
 
 	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
 	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
