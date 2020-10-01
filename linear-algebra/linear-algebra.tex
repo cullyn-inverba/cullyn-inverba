@@ -14,7 +14,6 @@
 \fancyhead[R]{\hyperlink{home}{\nouppercase\leftmark}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\begingroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
@@ -93,5 +92,49 @@
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{Introcution to Matrices}\phantomsection
+\subsection{Terminology and Dimensionality}
+\begin{itemize}
+    \item Matrix notation: 
+        \begin{itemize}
+            \item \textbf{M} for reference to entire matrix.
+            \item m\(_{M,N}\) represnets an individual element in a matrix.
+            \item \textbf{Block matrix}: a matrix that includes matrices itself; useful for matrices with higher level structure and can have computational benifits. e.g:
+            $ 
+            M =
+            \begin{bmatrix}
+                {\color{p-Haze}\bm{D}} & {\color{false}\bm{0}} \\
+                {\color{true}\bm{1}}  & {\color{p-Haze}\bm{D}}
+            \end{bmatrix} =
+            \begin{bmatrix}
+                {\color{p-Haze} 3} & {\color{p-Haze} 0} & {\color{false}\bm{0}} & {\color{false}\bm{0}} \\
+                {\color{p-Haze} 0} & {\color{p-Haze} 4} & {\color{false}\bm{0}} & {\color{false}\bm{0}} \\
+                {\color{true}\bm{1}} & {\color{true}\bm{1}} & {\color{p-Haze} 3} & {\color{p-Haze} 0} \\
+                {\color{true}\bm{1}} & {\color{true}\bm{1}} & {\color{p-Haze} 0} & {\color{p-Haze} 4} 
+            \end{bmatrix}
+            $
+            \item \textbf{Diagonal}: the diagonal elements of a matrix going form top left to bottom right.
+                \begin{itemize}
+                    \item \textit{Off-diagonal}: elements not in the diagonal elements.
+                    \item Works for nonsquare matrices.
+                \end{itemize}
+            \item Rows (M) first, then (N) columns when describing matrices. 
+            \item \textbf{Dimensionality}: more open to interpretations:
+                \begin{itemize}
+                    \item \(\mathbb{R}^{MN}\): simply the product, or total number of elements.
+                    \item \(\mathbb{R}^{M\times N}\): more explicit, not the product. \(M\times N\) could be different from \(N\times M\)
+                    \item \(C(M)\in \mathbb{R}^M\): \textit{column space} that is the collection of column vectors.
+                    \item \(C(M)\in \mathbb{R}^N\): \textit{row space} that is the collection of row vectors.
+                    \item Ambiguity opens up flexibility, but makes terminology more context dependent.
+                \end{itemize}
+            \item \textbf{Tensor}: higher dimensional cubes, won't be discussed much in early linear algebra.
+        \end{itemize}
+\end{itemize}
 %\endgroup
-\end{document}\newcommand{\vect}[1]{\boldsymbol{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
