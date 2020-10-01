@@ -35,12 +35,12 @@
 		]
 	},
 
-	"Color": { "prefix": "color", "body": "{\\color{$1}$2}", "scope": "latex"},
+	"Color": { "prefix": "color", "body": "{\\color{$1}", "scope": "latex"},
 	"Emph" : { "prefix": "emph", "body": "{\\color{o-Sun}", "scope": "latex"},
-	"Positive": { "prefix": "pos", "body": "{\\color{pos}$1}", "scope": "latex"},
-	"Negative": { "prefix": "neg", "body": "{\\color{neg}$1}", "scope": "latex"},
-	"True": { "prefix": "true", "body": "{\\color{true}$1}", "scope": "latex"},
-	"False": { "prefix": "false", "body": "{\\color{false}$1}", "scope": "latex"},
+	"Positive": { "prefix": "pos", "body": "{\\color{pos}", "scope": "latex"},
+	"Negative": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
+	"True": { "prefix": "true", "body": "{\\color{true}", "scope": "latex"},
+	"False": { "prefix": "false", "body": "{\\color{false}", "scope": "latex"},
 
 
 	"Cations": { "prefix": "cation", "body": "{\\color{pos}\\ch{$1^+}}"},
@@ -51,6 +51,7 @@
 	"Inline gamma": { "prefix": "gamma", "body": "$\\gamma$"},
 	"Inline delta": { "prefix": "delta", "body": "$\\delta$"},
 	"Inline sigma": { "prefix": "sigma", "body": "$\\sigma$"},
+	"Inline pi": { "prefix": "pi", "body": "$\\pi$"},
 
 	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
 	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
