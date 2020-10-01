@@ -81,6 +81,7 @@
         \begin{itemize}
             \item IQR, mean, median, and distribution can all be easily represented.
             \item Usually symmetric, but can comopare two similar datasets asymmetrically.
+            \item Swarm plots are similar, except you can see individual data points.
         \end{itemize}
 \end{itemize}
 
@@ -176,7 +177,6 @@
 \begin{itemize}
     \item Unstandardized statiscal moments:
         \begin{itemize}
-            \item 
             \item General formula: {\color{o-Sun}\(m_k = n^{-1}\sum(x_i-\bar{x})^k\)}
             \item \textit{First moment}: the {\color{o-Sun}mean}, with a \(k\) value of 1.
             \item \textit{Second moment}: the {\color{o-Sun}variance}, with \(k\) value of 1.
@@ -197,7 +197,23 @@
                 \end{itemize}
         \end{itemize}
     \item There are further moments, but generally lack significance.
+    \item \textbf{Shannon entropy}: entropy related to information processing that represnets the average level of information/uncertainty inherent in a variable possbile outcomes.
+        \begin{itemize}
+            \item Surprising events convey more information.
+            \item Formula: {\color{o-Sun}\(H = -\sum p(x_i)\log_2(p(x_i))\)}
+            \item x = data values, p = probability.
+            \item Used for nominal, ordinal, or discrete data.
+            \item Interval or ratio data must be coverted to discrete by binning; entropy is affected by bin width and number.
+            \item {\color{pos}High entropy} means the dataset has {\color{pos}high variability}.
+            \item {\color{neg}Low entropy} means most values repeat and offer {\color{neg}redundant} information.
+            \item Entropy is related to variance, though it is 
+            {\color{o-Sun}nonlinear} and makes {\color{o-Sun}no assumptions} about distribution.
+            \item \(\log_2\) entropy gives {\color{o-Sun}bit} based units.
+            \item \(\ln\) entropy accross datasets of consists units gives {\color{o-Sun}nat} based units.
+        \end{itemize}
 \end{itemize}
+
+
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
