@@ -34,7 +34,6 @@
     \item \textbf{Lewis structures}: drawings that show free electrons.
     \item Valence electrons are determined by the group, 1A--8A, of the periodic table.
     \item \textbf{Lone pair}: unshared, or nonbonding, electrons.
-    \item \textbf{F, O, N, Cl} (Br, I). Most electronegative elements, from left to right; hydrogen needs to bond to these elements.
     \item Examples: \ch{COF2}, \ch{H2O}, \ch{NO3-}, \ch{N2O}:
         \begin{align*}
             \chemfig{C(=[2,.8]O)(-[5]F)(-[7]F)}
@@ -189,21 +188,65 @@
     \item \textbf{Trigonal planar geometry}: three electron pairs forming three bond angles of \ang{120} and lie on the same plan. 
     \item \textbf{Linear geometry}: two electron pairs that oppose each other at \ang{180}, forming a linear structure.
     \item General method of determining structure:
-        \begin{itemize}
-            \item[1.] Count steric number (electron pairs, or the bonds/lonepairs).
-            \item[2.] Determine predicted geomterical structure predicted by VSEPR using steric number (tetrahedral:4, trigonal:3, linear:2).
-            \item[3.] Determin impact of lone pairs; more lone pairs results in less space between bonded pairs.
-        \end{itemize}
+    \begin{itemize}
+        \item[1.] Count steric number---the total number of electron pairs in a molecule. Can be bonds or lone pairs.
+        \item[2.] Determine predicted geomterical structure predicted (EDG) by VSEPR using steric number.
+            \begin{itemize}
+                \item Octahedral:6, Bipyramid:5, Tetrahedral:4, Trigonal:3, Linear:2
+            \end{itemize}
+        \item[3.] Determin impact (the MG) of lone pairs; more lone pairs results in less space between bonded pairs. Shape depends on EDG.
+    \end{itemize} 
 \end{itemize}
 
 \subsection{Dipole Moments and Molecular Polarity}
 \begin{itemize}
-    \item 
+    \item \textbf{Dipole moment} ($\bm{\mu}$): defined ast the amount of partial charge, $\delta$, on on either end of the dipole multiplied by the distance separtion, d:
+        \begin{itemize}
+            \item {\color{o-Sun}\(\mu=\delta d\)}
+            \item $\mu$ generally has an order of magnitude of {\color{o-Sun}\SI{e-18}{esu.cm}} due to general partial charge (esu) and distance (cm) values.
+            \item 1 {\color{o-Sun}debye (D)} = \SI{e-18}{esu.cm} 
+        \end{itemize}
+    \item \textbf{Molecular dipole moment}: the vector sum of the individual dipole moments.
+        \begin{itemize}
+            \item Lone pairs have significant effect on the molecular dipole moment.
+            \item Also called the net dipole moment.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Intermolecular Forces and Physical Properties}
 \begin{itemize}
-    \item 
+    \item \textbf{Intermolecular forces}: the attractive forces between individual molecules that determed the physical properties of a compound.
+    \item \textit{Electrostatic}: forces that occur as a result of the attraction between opposite charges. 
+    \item Electrostatic interactions for neutral molecules (no formal charge) are often classified as into the following categories:
+        \begin{itemize} 
+            \item \textbf{Dipole-dipole interaction}: Compounds with net dipole moments. 
+                \begin{itemize}
+                    \item In {\color{o-Sun}solid} space these intereactions either {\color{o-Sun}repel or attract} each other.
+                    \item In {\color{o-Sun}liquid} space these interactions tend to {\color{o-Sun}attract more often}, raising melting/boiling point.
+                \end{itemize}
+            \item \textbf{Hydrogen bonding}:
+                \begin{itemize}
+                    \item Not actually a bond, just an interaction.
+                    \item When hydrogen bonds to a electronegative atom, then the hydrogen will have a {\color{pos}$\delta^+$}.
+                    \item \textbf{F, O, N, Cl} (Br, I). Most electronegative elements, from left to right, that hydrogen most often bonds too.
+                    \item Hydrogen bonding is strong due to size of hydrogen atom, resulting in very close partial charge interactions.
+                    \item The {\color{o-Sun}more} hydrogen bonds, the {\color{o-Sun}higher} the boiling point tends to be.
+                \end{itemize}
+            \item \textbf{Fleeting dipole-dipole interactions}:
+                \begin{itemize}
+                    \item Electrons are considered to be in constant motion, which restult in the center of negative charge to vary.
+                    \item On average, the dipole moment is zero, though can experience transient dipole moments, initiating fleeting attraction/repulsion.
+                    \item Heavier hydrocarbons generally experience a stronger force due to increased surface area, and thus greater chance for non-zero dipole moments, which results in higher boling points.
+                    \item Branched hydrocarbons generally have decreased surface area, decreasing boiling point relative to others of similar weight.
+                \end{itemize}
+        \end{itemize}
+    \item When comparing boling points of compounds, look for following factors:
+        \begin{itemize}
+            \item Any dipole-dipole interactions?
+            \item Formation of hydrogen bonds?
+            \item Number of carbon atoms. (surface area)
+            \item Degree of branching of compound. (surface area)
+        \end{itemize}
 \end{itemize}
 
 \subsection{Solubility}
