@@ -56,7 +56,7 @@
     \item \textbf{Outer product}: {\color{o-Sun}\(\bm{vw}^T = n \times m\)}; a matrix resulting from the product of vectors with dimensions \(n\) and \(m\).
     \item \textbf{Cross product}: defined only between {\color{o-Sun}two 3D} vectors; produces another 3D vector that is perpendicular to both original vectors, or {\color{o-Sun}normal}, to the plane containing them.
     \item \textit{Complex conjugate}: the inverse sign of imaginary componenet of a number.
-    \item \textbf{Hermitian transpose}: or conjugate transpose, is transpose of a vector or matrix containing imaginary numbers using the complex conjugate. 
+    \item \textbf{Hermitian transpose}: or conjugate transpose, a transpose of a vector or matrix containing imaginary numbers using the complex conjugate. 
     \item Notation for Hermitian transpose on a matrix: \(\bm{M}^H\) or \(\bm{M}^*\)
 \end{itemize}
 
@@ -104,8 +104,8 @@
             \item \textbf{M} for reference to entire matrix.
             \item m\(_{M,N}\) represnets an individual element in a matrix.
             \item \textbf{Block matrix}: a matrix that includes matrices itself; useful for matrices with higher level structure and can have computational benifits. e.g:
-            $ 
-            M =
+            \begin{align*}
+            M=
             \begin{bmatrix}
                 {\color{p-Haze}\bm{D}} & {\color{false}\bm{0}} \\
                 {\color{true}\bm{1}}  & {\color{p-Haze}\bm{D}}
@@ -116,7 +116,7 @@
                 {\color{true}\bm{1}} & {\color{true}\bm{1}} & {\color{p-Haze} 3} & {\color{p-Haze} 0} \\
                 {\color{true}\bm{1}} & {\color{true}\bm{1}} & {\color{p-Haze} 0} & {\color{p-Haze} 4} 
             \end{bmatrix}
-            $
+            \end{align*}
             \item \textbf{Diagonal}: the diagonal elements of a matrix going form top left to bottom right.
                 \begin{itemize}
                     \item \textit{Off-diagonal}: elements not in the diagonal elements.
@@ -133,7 +133,78 @@
                 \end{itemize}
             \item \textbf{Tensor}: higher dimensional cubes, won't be discussed much in early linear algebra.
         \end{itemize}
+    \item Types of common matrices:
+        \begin{itemize}
+            \item \textbf{Square}: \(M\times M\)
+                \begin{itemize}
+                    \item \textbf{Symmetric}: a square matrix that is symmetric across the diagonal.
+                    \item \textbf{Skew-symmetric}: diagonal must be zero, and numbers must mirror signs across diagonal.
+                    \item \textbf{Identity}: square matrix with 1s across the diagonal and zeros everywhere elses.
+                    \begin{itemize}
+                        \item Notation: \(I_x\).
+                        \item x indicates size of matrix; no subscript means it is relevent size to matrix it is being applied to.
+                    \end{itemize}
+                \end{itemize}
+            \item \textbf{Rectangular}: non-square, \(M\times N\)
+            \item \textbf{Zero}: matrix consisting of only zeros.
+            \item \textbf{Diagonal}: all off diagonal elements are zero.
+                \begin{itemize}
+                    \item Identity matrix is a special case of diagonal.
+                \end{itemize}
+            \item \textbf{Triangular}:
+                \begin{itemize}
+                    \item \textit{Upper}: all elements {\color{o-Sun}below} diagonal are zero.
+                    \item \textit{Lower}: all elements {\color{o-Sun}above} diagonal are zero.
+                \end{itemize}
+            \item \textbf{Concatenated}: two matrices with same number of rows concatenated. Often a line is placed in the product matrix to indicate concatenation point.
+        \end{itemize}
 \end{itemize}
+
+\subsection{Basic Matrix Arithmetic}
+\begin{itemize}
+    \item Addition/subtraction is defined only for two matrices with same number of elements.
+        \begin{itemize}
+            \item Simply a-dd/subtract corresponding elements.
+            \item {\color{true}Commutative}: \(\textbf{A} + \textbf{B} = \textbf{B} + \textbf{A}\)
+            \item {\color{true}Associative}: \(\mathbf{A} + (\mathbf{B}+\mathbf{C}) = (\mathbf{A}+\mathbf{B}) + \mathbf{C}\)
+        \end{itemize}
+    \item \textbf{Shifting}:
+        \begin{itemize}
+            \item Adding a scaled version of identity matrix.
+            \item Formula: \(\textbf{A} + \lambda\bm{I} = \textbf{C}\)
+            \item Geometrically infats matrix, pushing it towards a sphere.
+            \item Tends to {\color{o-Sun}regularize} the matrix.
+        \end{itemize}
+    \item \textbf{Matrix-Scalar multiplication}:
+        \begin{itemize}
+            \item Elementwise multiplication by the scalar.
+            \item {\color{true}Commutative}: \(\delta\textbf{MA}=\textbf{M}\delta\textbf{A}=\textbf{MA}\delta\)
+            \item {\color{true}Distributive}: \(\delta(\textbf{MA}) = \delta\textbf{M} + \delta{\textbf{A}}\)
+            \item Distributive nature makes it a linear opperation.
+        \end{itemize}
+    \item \textbf{Matrix transpose}:
+        \begin{itemize}
+            \item \((\textbf{A}^{M\times N})^T = \textbf{A}^{N\times M}\)
+            \item First column becomes first row, and vice versa.
+            \item \(\textbf{A}^{TT} = \textbf{A}\)
+            \item \textit{Symmetric}: \(\textbf{A} = \textbf{A}^T\)
+            \item \textit{Skew-symmetric}: \(\textbf{A} = \textbf{-A}^T\)
+        \end{itemize}
+    \item \textbf{Complex matrices}: similar to vectors, a matrix containing at least one non-zero imaginary component.
+        \begin{itemize}
+            \item Hermitian transpose only changes the sign (the conjugate) of the complex parts, not the real numbers.
+        \end{itemize}
+    \item \textbf{Diagonal and trace}: extracts the diagonal as a vector.
+        \begin{itemize}
+            \item Defined both for square and rectangular.
+            \item Not the same as \textit{diagonalizing} a matrix.
+            \item \textbf{Trace}: the sum of the vector extracted from a matrix and is defined only for square matrices.
+            \item Diagonal formula: {\color{o-Sun}\(\textbf{v}_i = \textbf{A}_{i,i}~~ i = \{1,2,...,min(m,n)\}\)}
+            \item Trace formula: {\color{o-Sun}\(tr(\textbf{A})= \sum \textbf{A}_{i, i}\)}
+        \end{itemize}
+    \item \textbf{Broadcasting}: expand, or repeat, a vector until traditional arithmetic is valid between a matrix and the vector.
+\end{itemize}
+
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
