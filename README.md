@@ -17,6 +17,12 @@ These notes are a work in progress and I update often. They can be downladed (ea
 * [Organismal Physiology Notes](organismal-physiology/org-phys.pdf)
 * [Evolution Notes](evolution/evolution.pdf)
 
+Discord links for classes: 
+* [CH 334: Organic Chem](https://discord.gg/aVKvN48)
+* [BI 358: Evolution](https://discord.gg/Zk8GYGB)
+* [BI 320: Organismal Physiology](https://discord.gg/m5dYgGf)
+
+
 # Online Self Taught Notes
 
 Probably little use to anyone, but including just incase. Also a WIP. 
