@@ -25,7 +25,6 @@
 \begin{itemize}
     \item \textbf{Constitutional isomers}: same molecular formula, but different in the way the atoms are connect, i.e. their constitution is different.
     \item Each element forms a predictable number of bonds, from one to four.
-    \item \textbackslash ch\{x-x\} single: -, double: =, triple: +. e.g. \ch{CH3-CH3}, \ch{CH2=CH2}, \ch{CH+CH}
 \end{itemize}
 
 \subsection{Electrons, Bonds, and Lewis Structures}
@@ -36,38 +35,58 @@
     \item Valence electrons are determined by the group, 1A--8A, of the periodic table.
     \item \textbf{Lone pair}: unshared, or nonbonding, electrons.
     \item \textbf{F, O, N, Cl} (Br, I). Most electronegative elements, from left to right; hydrogen needs to bond to these elements.
-    \item Examples: \ch{COF2}, \ch{H2O}, \ch{NO3-}, \ch{N2O}
-        \begin{itemize}
-            \item \chemfig{C(=[2,.8]O)(-[5]F)(-[7]F)}
+    \item Examples: \ch{COF2}, \ch{H2O}, \ch{NO3-}, \ch{N2O}:
+        \begin{align*}
+            \chemfig{C(=[2,.8]O)(-[5]F)(-[7]F)}
             \hspace{1cm}
             \chemfig{[:40]H-\lewis{13,O}-[::-80]H} 
-        \end{itemize}
+            \hspace{1cm}
+            \left[\chemfig{N(=[2,.8]O)(-[5]O)(-[7]O)}\right]^{-1} 
+            \hspace{1cm}
+            \chemfig{N(~[4]N)(-[0]O)}
+        \end{align*}
+    \item \textbf{Resonance structures}: a set of two or more Lewis structures that collectively describe the electronic bonding of a single polyatomic species, including fractional bonds.
 \end{itemize}
 
 \subsection{Identifying Formal Charges}
 \begin{itemize}
-    \item \textbf{Formal charge}: any atom that does not exhibit the appropriate number of valance electrons. 
-    \item {\color{pos}Less} than expected results in {\color{pos} positive} charge.
+    \item \textbf{Formal charge}: any atom that does not exhibit the appropriate number of valance electrons.
+    \item Determing formal charge:
+        \begin{itemize}
+            \item Formula: {\color{o-Sun}\(FC = V - N - \dfrac{B}{2}\)}
+            \item V = valance electrons of element
+            \item N = lone pair electrons
+            \item B = bonded electrons
+        \end{itemize}
+    \item {\color{pos}Less} than expected number of valence electrons result in {\color{pos} positive} charge.
     \item {\color{neg}More} than expected results in {\color{neg}negative} charge.
+    \item The lower the {\color{o-Sun}magnitude} of formal charge, the {\color{o-Sun}greater the stability} of the whole molecule.
+    \item Atoms that are {\color{neg}more electronegative} hold {\color{neg}negative} formal charges better, which results in {\color{o-Sun}greater stability} vs when the negative charge is spread on less electronegative elements in a polyatomic species.
+        \begin{itemize}
+            \item The dominant resonance structure will be that of the greatest stability. 
+        \end{itemize}
 \end{itemize}
 
 \subsection{Induction and Polar Covalent Bonds}
 \begin{itemize}
-    \item Bonds are classified into three categories: covalent, polar covalent, ionic.
+    \item Bonds can classified into three categories: covalent, polar covalent, and ionic.
     \item The categories emerge from the electronegativity values of the atoms sharing a bond.
     \item \textbf{Electronegativity}: a measure of the ability of an atom to attract electrons.
     \item Electronegativity generally {\color{o-Sun}increases left to right}, and from the {\color{o-Sun}bottom to top} of the periodic table.
-    \item If the difference in electronegativity is {\color{o-Sun}less than 0.5}, then the electrons are considered equally shared, which is a {\color{o-Sun}\textbf{covalent bond}}.
-    \item If the difference in electronegativity is {\color{o-Sun}between 0.5 and 1.7}, then the electrons are not equally shared and thus a {\color{o-Sun}\textbf{polar covalent bond}}.
+    \item \textbf{Covalent bond}: when the difference in electronegativity is {\color{o-Sun}less than 0.5}.
+    \item \textbf{Polar covalent bond}: when the difference in electronegativity is {\color{o-Sun}between 0.5 and 1.7}, then the electrons are not equally shared and become polar.
     \item \textbf{Induction}: the withdrawl of electrons towards to more electronegative atom. {\color{pos}\ch{$\delta$^+}} represnets partial positive charged gained when electrons are pulled away, while {\color{neg}\ch{$\delta$^-}} represnets the partial negative charge pulled closer.
-    \item If the difference in electronegativity is {\color{o-Sun}greater than 1.7} then the electrons are not shared and results in an {\color{o-Sun}\textbf{ionic bond}}, which is really just a result of the force between two oppositely charged ions. 
+    \item \textbf{Ionic bond}: when the difference in electronegativity is {\color{o-Sun}greater than 1.7}.
+        \begin{itemize}
+            \item Electrons are not shared in this case, and attraction is insetsad just the result of oppositely charged ions.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Atomic Orbitals}
 \begin{itemize}
     \item \textbf{Atomic orbital (AO)}: \textit{s(1), p(3), d(5), f(7)}. 
-    \item Locations where $\psi$ is zero are called \textbf{nodes}.
-    \item The more nodes that an orbital has, the greater it's energy.
+    \item Locations where $\psi$ (quantum wave function) is zero are called \textbf{nodes}.
+    \item The {\color{o-Sun}more nodes} that an orbital has, the {\color{o-Sun}greater} it's energy.
     \item \textbf{Degenerate orbitals}: orbitals with the same energy level.
     \item Order in which orbitals are filled is determined by three principles:
         \begin{itemize}
@@ -76,7 +95,7 @@
             \item \textbf{Hund's rule}: electrons are placed in each degenerate orbital before being paired up.
         \end{itemize}
     \item Describing the nature of atomic orbital is done with two commoly used theories: \textit{Valence Bond Theory} and \textit{Molecular Orbital Theory}.
-    \item The commonly used theories give a deeper understanding of covalent bonds, which is essentially {\color{o-Sun}overlap of atomic orbitals}.
+    \item The commonly used theories give a deeper understanding of covalent bonds, which is essentially just the {\color{o-Sun}overlap of atomic orbitals}.
     \item \textbf{Constructive/destructive interference}: the result of two waves that approach each other, or overlap.
         \begin{itemize}
             \item Constructive interference produces a wave with larger amplitude.
@@ -86,7 +105,7 @@
 
 \subsection{Valence Bond Theory}
 \begin{itemize}
-    \item \textbf{Valence bond theory}: the sharing of electron density between two atoms as a result of the constructive interference of their atomic orbitals.
+    \item \textbf{Valence bond theory}: the sharing of electron density between two atoms is a result of the constructive interference of their atomic orbitals.
     \item \textit{Bond axis}: the line that can be drawn between two hydrogen atoms.
     \item \textbf{Sigma bond (\(\bm{\sigma}\))}: a particular type of covalent bond that has circular symmertry with respect to the bond axis.
         \begin{itemize}
