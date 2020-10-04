@@ -36,7 +36,8 @@
 	},
 
 	"Color": { "prefix": "color", "body": "{\\color{$1}", "scope": "latex"},
-	"Emph" : { "prefix": "emph", "body": "{\\color{o-Sun}", "scope": "latex"},
+	"Emphasise" : { "prefix": "emph", "body": "{\\color{o-Sun}", "scope": "latex"},
+	"Low Emphasise" : { "prefix": "lowcon", "body": "{\\color{darklc}", "scope": "latex"},
 	"Positive": { "prefix": "pos", "body": "{\\color{pos}", "scope": "latex"},
 	"Negative": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
 	"True": { "prefix": "true", "body": "{\\color{true}", "scope": "latex"},
