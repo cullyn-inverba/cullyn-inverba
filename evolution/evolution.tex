@@ -15,13 +15,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\fancyhead[L]{Introduction}
+\fancyhead[L]{Quiz 1}
 %\begingroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
 \section{Evolutionary Thinking}\phantomsection
-\subsection{Introduction}
+\subsection{Introduction (Lecture)}
 \begin{itemize}
     \item Essential questions of evolutionary biology: 
         \begin{itemize}
@@ -57,9 +57,10 @@
 %\begingroup
 \clearpage
 \setcounter{section}{9}
-\section{Adaptation}\phantomsection
+\section{Studying Adaptation}\phantomsection
 \subsection{Hypothesis Testing: Oxpeckers Reconsidered}
 \begin{itemize}
+    \item \textbf{Adaption}: a trait, or a suite of traits, that increases the fitness of its possessor.
     \item No hypothesis for the adaptive value of a trait should be accepted simply because of its plausibility.
     \item Oxpeckers and impalas traditionally were thought to have a mutally beneficial existence; oxpeckers ate ticks and impalas provided a safe environment.
     \item Experiments on cattle were done to test whether this observation was true:
@@ -73,13 +74,19 @@
         \begin{itemize}
             \item Differences among populations or species are not always adaptive.
             \item Not every trait is adaptive.
-            \item Not every adaptation is perfect. 
+            \item Not every adaptation is perfect, often the adaption just happened to work well enough or by chance better than other adaptations.
         \end{itemize} 
 \end{itemize}
 
-\subsection{Experiments}
+\subsection{Experimental Design}
 \begin{itemize}
-    \item 
+    \item Defining and testing effective control groups is critical.
+    \item Treatments of controls and experimental measures must be handled as close to exactly alike as possible.
+    \item Randomization is a key technique for equalizing miscellaneous effects and a tool to avoid bias.
+    \item Reproduction is essential in order to help remove potential outlier effects.
+        \begin{itemize}
+            \item Allows for greater understanding of precision, accuracy, and variation by providing more data for statistical tests.
+        \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,9 +96,71 @@
 \clearpage
 \setcounter{section}{3}
 \section{Evolutionary Trees}\phantomsection
-\subsection{}
+\subsection{How to Read an Evolutionary Tree}
 \begin{itemize}
-    \item 
+    \item \textbf{Phylogeny}: aka evolutionary tree or phylogenetic tree, is a diaggram showing the history of divergence and evolutionary change. Essentially, it's the {\color{o-Sun}genealogical relationships} of organisms based on descent with modification.
+        \begin{itemize}
+            \item \textbf{Taxa}: the units you are analyzing, e.g. certain species or DNA sequences.
+                \begin{itemize}
+                    \item \textbf{Character}: a feature or trait present among the taxa of interest, e.g. teeth of mammals or nucleotides of DNA sequences.
+                        \begin{itemize}
+                            \item \textit{Character {\color{o-Sun}state(s)}}: an {\color{o-Sun}alternative condition} of a character, which are able to evolve one to another, e.g. pointed/flat teeth of mammals.
+                        \end{itemize}
+                    \item \textit{{\color{true}Ancestral} character}: a trait that was {\color{true}possessed by the common ancestor}.
+                    \item \textit{{\color{false}Derived} character}: a trait the was {\color{false}not possessed by the common ancestor} and instead {\color{o-Sun}evolved} in at least one of the descendants.
+                        \begin{itemize}
+                            \item \textbf{Synapomorphy}: derived character state shared by {\color{o-Sun} two or more} taxa and used to define a clade of taxa.
+                            \item \textbf{Autapomorphy}: derived character state in only {\color{o-Sun}one} taxon.
+                        \end{itemize}
+                    \item \textbf{Outgroup}: a taxon or taxa that are used to root the phylogeny or determine ancestral character states.
+                    \item \textbf{Ingroup}: the set of taxa that are the focus of the phylogeny.
+                \end{itemize}
+            \item \textbf{Nodes}: points at which the tree splits; represents mutations, speciation events, or {\color{o-Sun}character changes}.
+        \item {\color{false}\textbf{Anagensis}}: descent with modification, but {\color{false}no speciation}.
+        \item {\color{true}\textbf{Cladogenesis}}: {\color{true}speciation}, origin of clades.
+        \begin{itemize}
+            \item \textbf{Clade}: also known as a {\color{o-Sun}monophyletic group}, an ancestor and {\color{o-Sun}all} of its descendants.
+            \item \textbf{Paraphyletic group}: a group of organisms consisting of an ancestor and {\color{o-Sun}some} of its descendants.
+        \end{itemize}
+        \item \textbf{Sister}: a taxa or clade that are most closely related to each other; they {\color{o-Sun}share the most recent} common ancestor. 
+    \end{itemize}
+    \item \textbf{Homology}: similarity due to common descent; {\color{true}continuity} of a trait, character, or character state through time.
+        \begin{itemize}
+            \item \textit{Homologous trait}: found in a taxa that inherited the trait from a common ancestor.
+        \end{itemize}
+    \item \textbf{Homoplasy}: or analogous, similarity in the characters or traits in different taxa due to convergent evolution, parallelism, or reversal, but {\color{false}not due to common descent}.
+        \begin{itemize}
+            \item \textbf{Convergent evolution}: similar traits due to selective forces and {\color{false}not shared ancestry}.
+            \item \textbf{Parallelism}: convergent evolution in {\color{o-Sun}recently diverged} taxa.
+            \item \textbf{Reversal}: derived traits or character states that revert to the ancestral form.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Inferring Phylogenetic Trees}
+\begin{itemize}    
+    \item \textbf{Parsimony}: the hypothesis of relationshipsthat requires the {\color{o-Sun}smallest number} of {\color{o-Sun} character changes} is most likely to be correct.
+        \begin{itemize}
+            \item Based on {\color{false}derived} traits(synapomorphies).
+            \item Reconstruction using parsimony:
+                \begin{itemize}
+                    \item[1.] Code characters.
+                    \item[2.] Make up a taxon x character matrix.
+                    \item[3.] Search for synapomorphies, and theshortest tree.
+                    \item Outgroups can help polarize the characters. 
+                \end{itemize}
+            \item \textbf{Treelength}: a measure of evolutionary change using parsimony. 
+                \begin{itemize}
+                    \item Shortest tree length produces most parsimonious tree.
+                    \item Length determined by number of synapomorphies.
+                    \item Homoplasious characters increase tree length.
+                \end{itemize}
+        \end{itemize}
+    \item \textbf{Distance Methods}: converts a sequence alignment to genetic distances between pairs of sequences.
+        \begin{itemize}
+            \item Branch length is proportional to genetic differences.
+        \end{itemize}
+    \item \textbf{Baysian}
+    \item \textbf{Bootstraping}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -101,17 +170,77 @@
 \clearpage
 \setcounter{section}{2}
 \section{Natural Selection}\phantomsection
-\subsection{}
+\subsection{Lecture Notes}
 \begin{itemize}
     \item 
+\end{itemize}
+
+\subsection{Discussion Questions: Dog Domestication}
+\begin{itemize}
+    \item Background and Goals
+        \begin{itemize}
+            {\color{darklc} \item What hypotheses about dog domestication are examined in this paper?}
+                \begin{itemize}
+                    \item The origin of domestic dogs was the main focus; genetic data suggested East Asia, but fossil data suggested Europe and Siberia. 
+                \end{itemize}
+            {\color{darklc} \item  What predictions do these hypotheses make? What would the expected phylogenetic trees look like under each of these hypotheses (i.e. what are the expected topologies)?}
+                \begin{itemize}
+                    \item Dogs and wolves would fall under a monophyletic group from a particular area indication origin.
+                \end{itemize}
+        \end{itemize}
+    \item Methods
+        \begin{itemize}
+            {\color{darklc} \item  What taxa were sampled for this study?} 
+                \begin{itemize}
+                    \item Hypothesis was tested using DNA extracted to trace mitochondrial genomes from 18 prehistoric canids and 20 modern wolves from Eurasian and American origin. 
+                \end{itemize}
+            {\color{darklc} \item  What gene sequences were used for this study?}
+                \begin{itemize}
+                    \item Wolves, dogs, including divergent breeds, recently published chinese indigenous dogs, and coyotes. (148 mitochondrial genomes)
+                \end{itemize}
+            {\color{darklc} \item  What phylogenetic methods were used to reconstruct the phylogenetic tree in Figure 1?}
+                \begin{itemize}
+                    \item Maximum likelyhood, coalescence, and bayesian.
+                \end{itemize}
+        \end{itemize}
+    \item Results and Discussion
+        \begin{itemize}
+            {\color{darklc} \item In Figure 1, which wolf sequence is most closely related to the extant dog clade A, and what geographic region is it from?}
+                \begin{itemize}
+                    \item Argentina (pre-Columbian within clade A)
+                \end{itemize}
+            {\color{darklc} \item In Figure 1, which clade of modern dog sequences has the oldest origin? Approximately how old is this clade?}
+                \begin{itemize}
+                    \item Dog clade C, Germany, ~14,700 years ago.
+                \end{itemize}
+            {\color{darklc} \item Based upon Figure 1, how many times does it appear that modern extant dogs could possibly have been domesticated?}
+                \begin{itemize}
+                    \item Figure 1 suggests 4, but the the authors state, {\color{G-Moon}"the inferred recent divergence of clade B from wolves now found in Sweden and Ukraine implies that is might represent a mitochondrial genome introgressed from wolves rather than one established by domestication."}
+                \end{itemize}
+            {\color{darklc} \item What was the topology of the phylogenetic tree that was recovered, and therefore, which hypothesis was supported?}
+                \begin{itemize}
+                    \item The findings support the conclusion that legacy of dogs derives from wolves of European origin.
+                    \item Analysis of coalescence times support divergence time of >15,000 years ago.
+                    \item Past mitochondrial and Y chromosome analysis suggestesd non-European, but had less supported data than these findings.
+                \end{itemize}
+        \end{itemize}
+    \item Conclusions
+        \begin{itemize}
+            {\color{darklc} \item  What are the major conclusions of the paper?}
+                \begin{itemize}
+                    \item Three of four modern dog clades are more closely related to sequences from ancient European rather than extant wolves with divergence times >15,000 years ago.
+                \end{itemize}
+            {\color{darklc} \item  Was the taxonomic sampling sufficient to rule out alternative hypotheses? }
+                \begin{itemize}
+                    \item Ancient panel did not contain specimens from Middle East or China. No, no ancient dog remains older than 13,000 years are known from those regions.
+                    \item The mtDNA sequence tree is well supported, but represents a single genetic locus. Independent loci could offer more power to resolve phylogenetic relations.
+                \end{itemize}
+        \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
 
-\clearpage
-\fancyhead[L]{Mechanisms of Evolution}
-%\begingroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
@@ -123,5 +252,163 @@
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\fancyhead[L]{Quiz 2}
+%\begingroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\endgroup
+
+\clearpage
+\fancyhead[L]{Quiz 3}
+%\begingroup
+
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\endgroup
+
+\clearpage
+\fancyhead[L]{Quiz 4}
+%\begingroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\setcounter{section}{10}
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\setcounter{section}{15}
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\endgroup
+
+\clearpage
+\fancyhead[L]{Quiz 5}
+%\begingroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\endgroup
+
+\clearpage
+\fancyhead[L]{Quiz 6}
+%\begingroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\setcounter{section}{19}
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\setcounter{section}{14}
+\section{}\phantomsection
+\subsection{}
+\begin{itemize}
+    \item 
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
 \end{document}
