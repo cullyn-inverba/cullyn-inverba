@@ -62,11 +62,12 @@
     \usepackage[all]{hypcap}
 
 % Section Formating: 
-\usepackage{titlesec}
+\usepackage{titlesec, titletoc}
     \titleformat{\subsection}{\normalfont\bfseries\color{B-Cold}}{}{0pt}{}
-    \setcounter{secnumdepth}{1}\usepackage{titlesec}
-    \titleformat{\subsection}{\normalfont\bfseries\color{B-Cold}}{}{0pt}{}
-    \setcounter{secnumdepth}{1}   
+    \titlecontents{section}[0 em]{\bfseries}{}{}{}
+    \titlecontents{subsection}
+    [1.618 em] {}{}{}
+    {\titlerule*[0.618 em]{.}\contentspage}
 
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
