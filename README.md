@@ -17,7 +17,7 @@ These notes are a work in progress and I update often. They can be downladed (ea
 
 * [Organic Chemistry Notes](organic-chemistry/org-chem.pdf) | [Apres Lectures Mini Quizzes](organic-chemistry/apres-lecture-quiz.pdf)
 * [Organismal Physiology Notes](organismal-physiology/org-phys.pdf)
-* [Evolution Notes](evolution/evolution.pdf)
+* [Evolution Notes](evolution/evolution.pdf) | [Discussion Questions](evolution/discussion-questions.pdf)
 
 Discord links for classes: 
 * [CH 334: Organic Chem](https://discord.gg/aVKvN48)
