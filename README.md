@@ -15,7 +15,7 @@ Also, some information could straight up be wrong &mdash; I'm learning too after
 
 These notes are a work in progress and I update often. They can be downladed (easier to navigate) but will mostly likely be changed one to two days later.
 
-* [Organic Chemistry Notes](organic-chemistry/org-chem.pdf) | [Apres Lectures Mini Quizzes](organic-chemistry/apres-lecture-quiz.pdf.pdf)
+* [Organic Chemistry Notes](organic-chemistry/org-chem.pdf) | [Apres Lectures Mini Quizzes](organic-chemistry/apres-lecture-quiz.pdf)
 * [Organismal Physiology Notes](organismal-physiology/org-phys.pdf)
 * [Evolution Notes](evolution/evolution.pdf)
 
