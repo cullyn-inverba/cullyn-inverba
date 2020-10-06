@@ -154,7 +154,7 @@
             \item Works best with numerical data, or ordinal data with a mean.
             \item Taking the absolute value instead of the square of the mean difference results in the \textit{mean absolute difference (MAD)}.
             \item Squaring emphasizes large values; better for optimization; closer to euclidean distance; is the second "moment"; better link to least-squares regression; and more.
-            \item MAd is robust to outliers, though less commonly used. 
+            \item MAD is robust to outliers, though less commonly used. 
             \item Dividing by \(N-1\) is for sample variance, while \(N\) is for population.
         \end{itemize}
     \item {\color{o-Sun}Standard deviation}: simply the square root of variance. 
@@ -216,4 +216,66 @@
 
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{Data Normalization}\phantomsection
+\subsection{Z-Score Normalization}
+\begin{itemize}
+    \item Problem: comparing two things of unrealted units.
+    \item Solution: normalize both measurements to a unit-less scale.
+    \item \textbf{Z-score}: or \textit{standard score}: the {\color{o-Sun}number of standard deviations} of a value from the mean.
+        \begin{itemize}
+            \item Formula: {\color{o-Sun}\(z_i = \dfrac{x_i - \bar{x}}{\sigma_x}\)}
+                \begin{itemize}
+                    \item Mean center: subtract the average from each value.
+                    \item Variance-normalize: divide by the standard deviation.
+                \end{itemize}
+            \item Shifts and stretches, but doesn't change shape.
+            \item The distributions should be {\color{o-Sun}roughly Gaussian}.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Min-Max Scaling}
+\begin{itemize}
+    \item Scale data into any arbitrary range, usually 0--1.
+        \begin{itemize}
+            \item 0--1 scaled is often called unity-normalized.
+        \end{itemize}
+    \item No relative information is loss.
+    \item Formula: {\color{o-Sun}\(\tilde{x_i}=\dfrac{x_i-min(x)}{max(x)-min(x)}\)}
+    \item Scale to arbitrary range: \(x^* = a + \tilde{x}(b-a)\)
+\end{itemize}
+
+\subsection{Outliers}
+\begin{itemize}
+    \item Names for outlier: anomaly, extreme (deviant) data, non-representative data, noise, etc.
+    \item Multi-dimensional data can make it very hard to determin outliers.
+    \item \textbf{Leverage}: measure of how far away an independent variable value differs from other variables.
+    \item Dealing with outliers:
+        \begin{itemize}
+            \item Identify and remove outliers, assuming they are invalid.
+            \item Leave outliers in but use \textit{other methods} that reduce negative impact of the outliers, assuming they are unusual but valid.
+        \end{itemize}
+    \item Outliers must be investigated; don't ignore or remove without thought.
+    \item Using z-score method:
+        \begin{itemize}
+            \item Convert data to z-score.
+            \item Set a standard deviation threshold (usually 3), then remove outliers.
+            \item Can iterate over same steps after removing an outlier.
+        \end{itemize}
+    \item Modified z-score method for non-normal distributions:
+        \begin{itemize}
+            \item Formula: \(M_i = \dfrac{0.6745(x_i-\tilde{x})}{MAD}\)
+            \item MAD: median absolute deviation (vs mean absolute deivation)
+                \begin{itemize}
+                    \item \(MAD = median(|x_i-\tilde{x})|\)
+                    \item \(\tilde{x}=median(x)\)
+                    \item 0.6745 is the standard deviation units for 3rd quartile.
+                \end{itemize}
+        \end{itemize}
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
