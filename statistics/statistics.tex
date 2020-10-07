@@ -259,21 +259,43 @@
             \item Leave outliers in but use \textit{other methods} that reduce negative impact of the outliers, assuming they are unusual but valid.
         \end{itemize}
     \item Outliers must be investigated; don't ignore or remove without thought.
-    \item Using z-score method:
+    \item Removing outliers {\color{o-Sun}using z-score normalization}:
         \begin{itemize}
-            \item Convert data to z-score.
-            \item Set a standard deviation threshold (usually 3), then remove outliers.
-            \item Can iterate over same steps after removing an outlier.
+            \item[1.] Convert data to z-score.
+            \item[2.] Set a standard deviation threshold (usually 3), then remove outliers.
+            \item Can also iterate over steps 1--2 after removing an outlier.
         \end{itemize}
-    \item Modified z-score method for non-normal distributions:
+    \item\textbf{Modified z-score}: method for non-normal distributions that uses the median rather than the mean for the central tendency.
         \begin{itemize}
             \item Formula: \(M_i = \dfrac{0.6745(x_i-\tilde{x})}{MAD}\)
             \item MAD: median absolute deviation (vs mean absolute deivation)
                 \begin{itemize}
-                    \item \(MAD = median(|x_i-\tilde{x})|\)
+                    \item \(MAD = median(|x_i-\tilde{x}|)\)
                     \item \(\tilde{x}=median(x)\)
                     \item 0.6745 is the standard deviation units for 3rd quartile.
                 \end{itemize}
+        \end{itemize}
+    \item Multivariate outlier detection: an extension of z-score normalization for multivariable datasets.
+        \begin{itemize}
+            \item[1.] Compute the multivariate data mean.
+            \item[2.] Compute the distance from each point to the mean.
+            \item[3.] Convert distances to z-score.
+            \item[4.] Then use z-score method for removing outliers.
+        \end{itemize}
+    \item Removing outliers {\color{o-Sun}using data trimming}: 
+        \begin{enumerate}
+            \item Sort and mean center the data.
+            \item Remove the most extreme \textit{k} (selected perameter) values or \textit{k}\%
+        \end{enumerate}
+        \begin{itemize}
+            \item Advantages: easy to implement and can work well enough.
+            \item Disadvantages: subjective threshold that may more readily remove non-outliers.
+        \end{itemize}
+    \item Non-parmetric solutions for removing outliers:
+        \begin{itemize}
+            \item \textbf{Nonparametric data}: data that does not fit a well-understood distribution. 
+            \item Most tests (detailed later) sensitive to outliers have a nonparametric test.
+            \item More robust to outliers since they are based on medians or ranks, which are not sensitive to outliers.
         \end{itemize}
 \end{itemize}
 %\endgroup
