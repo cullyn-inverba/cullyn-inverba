@@ -208,4 +208,36 @@
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section{Matrix Multiplications}\phantomsection
+\subsection{Standard Matrix Multiplication}
+\begin{itemize}
+    \item Order of multiplication often matters and is generally {\color{false}not communitive}.
+        \begin{itemize}
+            \item i.e. \textbf{AB} $\neq$ \textbf{BA}.
+        \end{itemize}
+    \item Rules for validity:
+        \begin{itemize}
+            \item Multiplication is {\color{o-Sun}valid} only when the {\color{o-Sun}inner dimensions} match.
+            \item Resulting matrix {\color{o-Sun}size} corresponds to the {\color{o-Sun}outer dimensions}.
+            \item i.e. \(\textbf{M}\times {\color{true}\textbf{N}} \cdot {\color{true}\textbf{N}}\times\textbf{K}= \textbf{M}\times\textbf{K}\) 
+        \end{itemize}
+    \item Methods of multiplication:
+        \begin{itemize}
+            \item \textbf{Element perspective}: an order collection of dot products; each element is a dot product between {\color{o-Sun}rows of the left} and {\color{o-Sun}columns of the right} matrix. 
+            \item \textbf{Layer perspective}: outer products summed between columns of the left matrix and rows of the right matrix.
+                \begin{itemize}
+                    \item or the sum of \textit{rank 1 matrices}.
+                \end{itemize}
+            \item \textbf{Column perspective}: columns of the left matrix scaled then summed by the elements of the right matrix to make a column in the product matrix.
+                \begin{itemize}
+                    \item or a \textit{linear weighted combination} of the columns in the left, weighted by the columns in the right.
+                \end{itemize}
+            \item \textbf{Rows perspective}: rows of the left matrix scales the rows of right matrix then summed to make a row in the product matrix.
+        \end{itemize}
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
