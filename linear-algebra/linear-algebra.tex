@@ -238,6 +238,29 @@
             \item \textbf{Rows perspective}: rows of the left matrix scales the rows of right matrix then summed to make a row in the product matrix.
         \end{itemize}
 \end{itemize}
+
+\subsection{Diagonal Matrix Multiplication}
+\begin{itemize}
+    \item \textbf{A{\color{o-Sun}D}} \(\rightarrow\) Post-multiplying by a diagonal.
+    \item \textbf{{\color{o-Sun}D}A} \(\rightarrow\) Pre-multiplying by a diagonal.
+    \item Post-multiplication results in the dense matrix's columns being weighted by the diagonal elements, while pre-multiplation scales the rows.
+\end{itemize}
+
+\subsection{Order of Operations}
+\begin{itemize}
+    \item \((\textbf{LIVE})^T = \textbf{E}^T\textbf{V}^T\textbf{I}^T\textbf{L}^T\)
+    \item Matrices multipied then transposed is equal to the same matrices transposed then multiplied in reverse direction.
+\end{itemize}
+
+\subsection{Matrix-Vector Multiplication}
+\begin{itemize}
+    \item The result is always vector when multiplying by a matrix by a vector.
+    \item The product vector always has the same orientation as the intput vector.
+    \item The length of the vector is determined by the length of the matrix. 
+    \item \textbf{Aw} \(\rightarrow\) a weighted combination of the {\color{o-Sun}columns} of \textbf{A}.
+    \item \textbf{w}\(^{T}\textbf{A} \rightarrow\) a weighted combination of the {\color{o-Sun}rows} of \textbf{A}.
+    \item Symmetric matrices have the same result.
+\end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
