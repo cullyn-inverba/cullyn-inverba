@@ -261,6 +261,28 @@
     \item \textbf{w}\(^{T}\textbf{A} \rightarrow\) a weighted combination of the {\color{o-Sun}rows} of \textbf{A}.
     \item Symmetric matrices have the same result.
 \end{itemize}
+
+\subsection{Additive and Multiplicative Matrix Identities}
+\begin{itemize}
+    \item Pre or post multiplication of an identity matrix gives you the same matrix, i.e. \textbf{AI} = \textbf{IA} = \textbf{A}
+        \begin{itemize}
+            \item This is the {\color{o-Sun}multiplicative indentity}, which is often just called the identity matrix.
+        \end{itemize}
+    \item Adding a zeros matrix is the {\color{o-Sun}additive identity}, i.e. \textbf{A} + \textbf{0} = \textbf{A}
+    \item Methods of creating symmetric matrices from non-symmetric matrices:
+        \begin{itemize}
+            \item Additive method: \(\textbf{S} = (\textbf{A}+\textbf{A}^T)/2\) 
+                \begin{itemize}
+                    \item Works only if \textbf{A} is a square matrix.
+                \end{itemize}
+            \item Multiplicative method: 
+                \begin{itemize}
+                    \item \(\textbf{A}^T\textbf{A}=\textbf{S}\) that is \(n\times n\)
+                    \item \(\textbf{A}\textbf{A}^T=\textbf{S}\) that is \(m\times m\)
+                    \item Always produces a {\color{o-Sun}symmetric square} matrix.
+                \end{itemize}
+        \end{itemize}
+\end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
