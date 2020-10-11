@@ -63,11 +63,13 @@
 
 % Section Formating: 
 \usepackage{titlesec, titletoc}
-    \titleformat{\subsection}{\normalfont\bfseries\color{B-Cold}}{}{0pt}{}
+    \titleformat{\subsection}{\large\bfseries\color{B-Cold}}{}{0pt}{}
+    \titleformat{\subsubsection}{\normalfont\bfseries\color{b-Cold}}{}{0pt}{}
     \titlecontents{section}[0 em]{\bfseries}{}{}{}
     \titlecontents{subsection}
-    [1.618 em] {}{}{}
-    {\titlerule*[0.618 em]{.}\contentspage}
+    [1.618 em] {}{}{}{\titlerule*[0.618 em]{.}\contentspage}
+    \titlecontents{subsubsection}
+    [3.236 em] {}{}{}{\titlerule*[0.618 em]{.}\contentspage}
 
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,7 +78,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 
-% Blue: #050E44 → #002083 → #1A5CB0 → #359BE2 → #4EB9FF
+% Blue: #050E44 → #002083 → #1A5CB0 → #359BE2 → #4EB9FF 
     \definecolor {Diblue}{HTML}{050E44}     
     \definecolor {diblue}{HTML}{002083}  
     \definecolor {iblue}{HTML}{1A5CB0}
@@ -135,9 +137,9 @@
     \definecolor{b-Ocean}{HTML}{45b4eb}  
     \definecolor{B-Ocean}{HTML}{2217da} 
 
-% Cold: #d6efff → #b3d5ff
-    \definecolor{b-Cold}{HTML}{d6efff}
-    \definecolor{B-Cold}{HTML}{b3d5ff}
+% Cold: #bcd8eb→ #98cbf5
+    \definecolor{b-Cold}{HTML}{bcd8eb}
+    \definecolor{B-Cold}{HTML}{98cbf5}
 
 % Moon:  #e6eef1 → #d0dae2 → #8d9194
     \definecolor{w-Moon}{HTML}{e6eef1}   
