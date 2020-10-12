@@ -284,8 +284,7 @@
         \end{itemize}
     \item When comparing boling points of compounds, look for following factors:
         \begin{itemize}
-            \item Any dipole-dipole interactions?
-            \item Formation of hydrogen bonds?
+            \item Any dipole-dipole interactions? Formation of hydrogen bonds?
             \item Number of carbon atoms. (surface area)
             \item Degree of branching of compound. (surface area)
         \end{itemize}
@@ -323,16 +322,108 @@
 \section{Molecular Representations}\phantomsection
 \subsection{Molecular Representations}
 \begin{itemize}
-    \item ({\color{o-Sun}CH\(_{3}\)})\(_{3}\){\color{true}CC}H\(_{2}\){\color{true}C}H({\color{o-Sun}CH\(_{3}\)}){\color{true}C}H({\color{o-Sun}CH\(_{3}\)}){\color{true}C}H({\color{o-Sun}CH\(_{3}\)})\(_{2}\)
-    \item $\chemfig{{\color{true}C}(-[4]{\color{o-Sun}CH_3})(-[6]{\color{o-Sun}CH_3})(-[2]{\color{o-Sun}CH_3})
-            (-[0]{\color{true}C}(-[6]H)(-[2]H)
-            (-[0]{\color{true}C}(-[6]{\color{o-Sun}CH_3})(-[2]H)
-            (-[0]{\color{true}C}(-[6]{\color{o-Sun}CH_3})(-[2]H)
-            (-[0]{\color{true}C}(-[6]{\color{o-Sun}CH_3})(-[2]H)(-[0]{\color{o-Sun}CH_3})
-            ))))}$
+    \item \textbf{Partially condensed structures}: the \ch{C-H} bonds are not always drawn, saving space.
+        \begin{itemize}
+            \item \small\chemfig{C(-[4]CH_3)(-[2]OH)(-[0]CH_3)(-[6]H)}
+        \end{itemize}
+    \item \textbf{Condensed structures}: single bonds are not drawn and groups of atoms are clustered when possbile.
+        \begin{itemize}
+            \item \ch{CH3CH3CHOH -> (CH3)2CHOH}
+        \end{itemize}
+    \item \textbf{Molecular formula}: simply shows number of each type of atom with no structural information.
+        \begin{itemize}
+            \item \ch{C3H8O}
+        \end{itemize}
+    \item Example of converting a condensed structure into a partially condensed structure:
+        \begin{itemize}
+            \item ({\color{o-Sun}CH\(_{3}\)})\(_{3}\){\color{Liblue}CC}H\(_{2}\){\color{Liblue}C}H({\color{o-Sun}CH\(_{3}\)}){\color{Liblue}C}H({\color{o-Sun}CH\(_{3}\)}){\color{Liblue}C}H({\color{o-Sun}CH\(_{3}\)})\(_{2}\)
+            \item \chemfig{{\color{Liblue}C}(-[4]{\color{o-Sun}CH_3})(-[6]{\color{o-Sun}CH_3})(-[2]{\color{o-Sun}CH_3})
+            (-[0]{\color{Liblue}C}(-[6]H)(-[2]H)
+            (-[0]{\color{Liblue}C}(-[6]{\color{o-Sun}CH_3})(-[2]H)
+            (-[0]{\color{Liblue}C}(-[6]{\color{o-Sun}CH_3})(-[2]H)
+            (-[0]{\color{Liblue}C}(-[6]{\color{o-Sun}CH_3})(-[2]H)(-[0]{\color{o-Sun}CH_3})
+            ))))}
+            \item This shows just one isomer, more partially condensed structures are possible.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Bond-Line Structures}
+\begin{itemize}
+    \item \textbf{Bond-line structures}; aka skeletal structures; simplify drawing process of chemical structures and are easier to read.
+        \begin{itemize}
+            \item Each corner or endpoint represents a carbon atom.
+                \begin{itemize}
+                     \item {\tiny\chemfig{-[:30]-[:-30]-[:30]-[:-30]-[:30]}
+                     \hspace{15pt}
+                     \chemfig{-[:30](-[:90])-[:-30]-[:30]-[:-30]}
+                     \hspace{15pt}
+                     \chemfig{-[:30](-[:90])-[:-30](-[:-90])-[:30]}}
+                     \item All examples have 6 carbon atoms
+                \end{itemize}
+            \item Double bonds are shown with two lines, triple with three.
+                \begin{itemize}
+                    \item {\tiny\chemfig{-[:30]=_[:-30]-[:30]}
+                    \hspace{15pt}
+                    \chemfig{-[:30]~[:30]-[:30]}}
+                    \item Triple bonds are drawn linearly due to sp-hybridization
+                \end{itemize}
+            \item Hydrogens are not shown; it is assumed that each carbon posses enough to satisfy octet rule.
+        \end{itemize}
+    \subsubsection{Notes on Drawing Bond-Line Structrues}
+    \begin{itemize}
+        \item Carbon atoms in a straight chain should be drawn in zigzag format in order to accurately show each carbon.
+        \item Double bonds should be drawn as far apart as possible:
+            \begin{itemize}
+                \item {\tiny\chemfig{-[:30](=[:90]O)-[:-30]}} = good
+                \hspace{20pt} {\tiny\chemfig{-[:30](=[:-90]O)-[:-30]}} = bad
+            \end{itemize}
+        \item Direction of a single bond is irrelevant:
+            \begin{itemize}
+                \item {\tiny\chemfig{-[:-30]-[:30](-[:90])-[:-30]-[:30]}}
+                \hspace{12pt} is the same as \hspace{12pt} {\tiny\chemfig{-[:-90]-[:30](-[:90])-[:-30]-[:90]}}
+            \end{itemize}
+        \item All {\color{o-Sun}heteroatoms} (atoms other than carbon and hydrogen) must be drawn.
+            \begin{itemize}
+                \item Hydrogens next to heteroatoms must be shown.
+            \end{itemize}
+        \item Carbons cannot have more than four bonds.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Hydrogen Deficiency Index: Degrees of Unsaturation}
+{\color{G-Moon}\textit{Excerpt from Chapter 14: Infrared Spectroscopy and Mass Spectrometry}}
+\begin{itemize}
+    \item \textbf{Saturated compounds}: the maximum number of hydrogen atoms possbile, relative to number of carbon present.
+        \begin{itemize}
+            \item Determining molecular formula: {\color{o-Sun}C\(_{n}\)H\(_{2n+2}\)}~~\(n=\) carbon atoms
+        \end{itemize}
+    \item \textbf{Unsaturated compounds}: a compound that contains at least one $\pi$ bond, resulting fewer than the maximum number of hydrogen atoms.
+        \begin{itemize}
+            \item Compounds with rings also result in an unsaturated compound.
+            \item \textbf{Degree of unsaturation}: a number that represnets {\color{o-Sun}half} the {\color{o-Sun}"missing"} number of hydrogen atoms when compared to a saturated compound.
+        \end{itemize}
+    \item \textbf{Hydrogen deficiency index (HDI)}: the measure of degrees of unsaturation. 
+        \begin{itemize}
+            \item e.g. two degrees of unsaturation results in HDI of 2.
+            \item Degrees of freedom help represent possbile structures, indicating possible double bounds, triple bounds, rings, or various combinations of each.
+        \end{itemize}
+    \subsubsection{Impact of Other Elements on HDI}
+    \begin{itemize}
+        \item \textbf{Halogens}: takes the place of a hydrogen atom; {\color{o-Sun}add one H} for each halogen.
+        \item \textbf{Oxygen}: no affect on saturation; {\color{o-Sun}ignore}.
+        \item \textbf{Nitrogen}: needs an extra hydrogen; {\color{o-Sun}subtract one H} for each nitrogen.
+        \item Formula: {\color{o-Sun}HDI = \(\frac{1}{2}(2C + 2 + N - H - X)\)}
+            \begin{itemize}
+                \item \(X\): halogen atoms.
+            \end{itemize}
+    \end{itemize}
+    \item Calculating HDI provides clues about the structural features of a compound.
+        \begin{itemize}
+            \item Only helpful when molecular formula is known for certainty.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Identifying Functional Groups}
 \begin{itemize}
     \item 
 \end{itemize}
