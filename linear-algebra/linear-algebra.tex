@@ -283,6 +283,36 @@
                 \end{itemize}
         \end{itemize}
 \end{itemize}
+
+\subsection{Multiplication of Symmetric Matrices}
+\begin{itemize}
+    \item The product of symmetric matrices is not itself symmetric.
+    \item A \(2\times2\) matrix with constant diagonals will produce symmetric matrix.
+\end{itemize}
+\newpage
+\subsection{Frobenius Dot Product}
+\begin{itemize}
+    \item There are three ways to calculate the Frobenius dot product:
+        \begin{enumerate}
+            \item Hadamard multiplation then sum all elements.
+                \begin{itemize}
+                    \item \textbf{Hadamard multiplation}: element wise multiplation; valid only with matrices of equal size.
+                    \begin{itemize}
+                        \item A diagonal matrix multiplied with its self has the same product using Hadamard or standard matrix multiplation.
+                    \end{itemize}
+                \end{itemize}
+            \item Vectorize both matrices then compute the vector dot product.
+                \begin{itemize}
+                    \item \textbf{Vectorizating a matrix}: creating a vector of matrix by concatenating column wise of a matrix.
+                \end{itemize}
+            \item Transpose and trace of the product.
+                \begin{itemize}
+                    \item Notation: \(\left\langle \textbf{A},\textbf{B}\right\rangle_F = tr(\textbf{A}^T\textbf{B}) \)
+                    \item \textbf{Trace}: the sum of the elements in the main diagonal. 
+                    \item The most efficient method of calculating the Frobenius dot product.
+                \end{itemize}
+        \end{enumerate}
+\end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
