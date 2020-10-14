@@ -72,7 +72,7 @@
 	},
 
 	"Subsubsection": {
-		"prefix": "sub2", 
+		"prefix": "Wubsection", 
 		"body": [
 			"\\subsubsection{$1}",
 			"\\begin{itemize}",
