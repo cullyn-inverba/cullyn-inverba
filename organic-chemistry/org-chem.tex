@@ -392,55 +392,78 @@
 
 \subsection{Hydrogen Deficiency Index: Degrees of Unsaturation}
 {\color{G-Moon}\textit{Excerpt from Chapter 14: Infrared Spectroscopy and Mass Spectrometry}}
+
+\subsubsection{Hydrogen Saturation}
 \begin{itemize}
     \item \textbf{Saturated compounds}: the maximum number of hydrogen atoms possbile, relative to number of carbon present.
         \begin{itemize}
             \item Determining saturation using molecular formula: {\color{o-Sun}C\(_{n}\)H\(_{2n+2}\)}~~\(n=\) carbon atoms
         \end{itemize}
+            \begin{itemize}
+                \item \textbf{Halogens}: takes the place of a hydrogen atom; {\color{o-Sun}add one H} for each halogen.
+                \item \textbf{Oxygen}: no affect on saturation; {\color{o-Sun}ignore}.
+                \item \textbf{Nitrogen}: needs an extra hydrogen; {\color{o-Sun}subtract one H} for each nitrogen. 
+            \end{itemize}
     \item \textbf{Unsaturated compounds}: a compound that contains at least one $\pi$ bond, resulting fewer than the maximum number of hydrogen atoms.
         \begin{itemize}
             \item Compounds with rings also result in an unsaturated compound.
             \item \textbf{Degree of unsaturation}: a number that represnets {\color{o-Sun}half} the {\color{o-Sun}"missing"} number of hydrogen atoms when compared to a saturated compound.
         \end{itemize}
+    \subsubsection{Hydrogen Deficiency Index}
+    \begin{itemize}
     \item \textbf{Hydrogen deficiency index (HDI)}: the measure of degrees of unsaturation. 
         \begin{itemize}
-            \item e.g. two degrees of unsaturation results in HDI of 2.
+            \item e.g. two degrees of unsaturation results in a HDI of 2.
             \item Degrees of freedom help represent possbile structures, indicating possible double bounds, triple bounds, rings, or various combinations of each.
-        \end{itemize}
-    \subsubsection{Impact of Other Elements on HDI}
-    \begin{itemize}
-        \item \textbf{Halogens}: takes the place of a hydrogen atom; {\color{o-Sun}add one H} for each halogen.
-        \item \textbf{Oxygen}: no affect on saturation; {\color{o-Sun}ignore}.
-        \item \textbf{Nitrogen}: needs an extra hydrogen; {\color{o-Sun}subtract one H} for each nitrogen.
-        \item Formula: {\color{o-Sun}HDI = \(\frac{1}{2}(2C + 2 + N - H - X)\)}
-            \begin{itemize}
-                \item \(X\): halogen atoms.
-            \end{itemize}
-    \end{itemize}
-    \item Calculating HDI provides clues about the structural features of a compound.
-        \begin{itemize}
             \item Only helpful when molecular formula is known for certainty.
         \end{itemize}
+    \item Formula: {\color{o-Sun}HDI = \(\frac{1}{2}(2C + 2 + N - H - X)\)}
+        \begin{itemize}
+                \item \(X\): halogen atoms.
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
 
 \subsection{Identifying Functional Groups}
 \begin{itemize}
-    \item 
+    \item \textbf{Functional group}: specific substituents or moieties within molecules that may be responsible for the characteristic chemical reactions.
+        \begin{itemize}
+            \item \textbf{Substituents}: an atom or group of atoms which replaces one or more hydrogen atoms on the parent hydrocarbon chain.
+            \item \textbf{Moiety}: a part of a molecule which is typically found within other molecules and often given a specific name.
+        \end{itemize}
 \end{itemize}
-
-\subsection{Carbon with Formal Charges}
-\begin{itemize}
-    \item 
-\end{itemize}
+ \begin{center}
+     \includegraphics[scale=0.34]{images/fig2-1.png}
+ \end{center}
 
 \subsection{Identifying Lone Pairs}
 \begin{itemize}
-    \item 
-\end{itemize}
-
-\subsection{Introduction to Resonance}
-\begin{itemize}
-    \item 
+    \item Formal charges must always be drawn on bond line structures, otherwise the resulting bond line strcutres would be inferred incorrectly.
+    \item Lone pairs do not have to be drawn and usually are omitted.
+    \item The formal charge allows you to determin lone pairs.
+        \begin{itemize}
+            \item Formula: \(FC = V - N - \dfrac{B}{2}\)
+            \item V = valance electrons of element
+            \item N = lone pair electrons
+            \item B = bonded electrons
+            \item Solve for lone pairs: {\color{o-Sun}\(N = V - FC - \dfrac{B}{2}\)}
+        \end{itemize}
+    \item Frequent usage will allow for intuition for lone pairs.
+    \subsubsection{Common Patterns Between Formal Charge and Lone Pairs}
+    \begin{itemize}
+        \item \textbf{Associated Patterns for Oxygen}
+            \begin{itemize}
+                \item A {\color{neg}negative ($\circleddash$)} charge corresponds with {\color{o-Sun}one bond} and {\color{o-Sun}three lone pairs}.
+                \item The {\color{G-Moon}absence} of charge corresponds with {\color{o-Sun}two bonds} and {\color{o-Sun}two lone pairs}.
+                \item A {\color{pos}positive ($\oplus$)} charge corresponds with {\color{o-Sun}three bonds} and {\color{o-Sun}one lone pair} 
+            \end{itemize}
+        \item \textbf{Associated Patterns for Nitrogen}
+            \begin{itemize}
+                \item A {\color{neg}negative} charge corresponds with {\color{o-Sun}two bond} and {\color{o-Sun}two lone pairs}.
+                \item The {\color{G-Moon}absence} of charge corresponds with {\color{o-Sun}three bonds} and {\color{o-Sun}one lone pair}.
+                \item A {\color{pos}positive} charge corresponds with {\color{o-Sun}four bonds} and {\color{o-Sun}no lone pairs} 
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -451,18 +474,57 @@
 \section{Acids and Bases}\phantomsection
 \subsection{Introduction to B{\o}nsted-Lowry Acids and Bases}
 \begin{itemize}
-    \item 
-\end{itemize}
-
-\subsection{Flow of Electron Density}
-\begin{itemize}
-    \item 
+    \item \textbf{Acid}: a {\color{o-Sun}proton donor}; i.e., a {\color{pos}\ch{H^+}} donor.
+    \item \textbf{Base}: a {\color{o-Sun}proton acceptor}; i.e., a {\color{neg}\ch{OH^-}} (hydroxide ion), which wants a {\color{pos}\ch{H^+}} to form the more stable \ch{H2O}.
+    \item General definition: {\color{pos}acid} + {\color{neg}base} \ch{<>} {\color{neg}conjugate base} + {\color{pos}conjugate acid}
+    \item Symbolically: {\color{pos}HA} + {\color{neg}B} \ch{<>} {\color{neg}\ch{A^-}} + {\color{pos}\ch{HB^+}}
+    \item Example using bond-line structures:
+        \begin{itemize}
+            \item 
+            \chemfig{{\color{pos}H}-[:30]O-[:-30]H}
+            \hspace{6pt}{\large+}\hspace{6pt}
+            \chemfig{-[:30](-[:120])(-[:60])-[:-30]\chemabove{\textcolor{neg}O}{{\color{neg}\scriptstyle\circleddash}}} 
+            \hspace{6pt}{\large\ch{<>}}\hspace{6pt}
+            {\color{neg}$^\circleddash$O}H
+            \hspace{6pt}{\large+}\hspace{6pt}
+            \chemfig{-[:30](-[:120])(-[:60])-[:-30]O-[:30]{\color{pos}H}}
+    \end{itemize}
 \end{itemize}
 
 \subsection{Lewis Acids and Bases}
 \begin{itemize}
-    \item 
+    \item The lewis definition is more broad than the Br{\o}nsted-Lowry definition.
+    \item Lewis describes acidity in terms of {\color{o-Sun}electrons}, rather than protons.
+    \item \textbf{Lewis acid}: electron-pair {\color{o-Sun}acceptor}.
+    \item \textbf{Lewis base}: electron-pair {\color{o-Sun}donor}.
+    \item Most reactions are described in terms of lewis base and acids, since Molecules without donatable protons are unable to be described by the Br{\o}nsted-Lowry definition.
 \end{itemize}
+
+\subsection{Nucleophiles and Electrophiles}
+{\color{darklc}\textit{Excerpt from Chapter 6: Chemical Reactivity and Mechanisms $\mapsto$}}
+\begin{itemize}
+    \item \textbf{Ionic reactions}, {\color{G-Moon}aka polar reactions}: reactions that involve the particpation of ions as reactants, intermediates, or products.
+        \begin{itemize}
+            \item Most cases ions act as intermediates.
+            \item Radical reactions and pericyclic reactions are also major categories, but are typically not discussed in undergraduate courses.
+            \item Ionic reactions occur when one reactant has a site of {\color{neg}high electron density} and the other reactant has a site of {\color{pos}low electron density}.
+        \end{itemize}
+    \item \textbf{Nucleophiles}: an electron rich atom that is capable of donating a pair of electrons.
+        \begin{itemize}
+            \item {\color{neg}Nucleophiles are Lewis bases}.
+            \item Any atom that possesses a localized lone pair can be nucleophilic.
+            \item $\pi$ bonds can also function as nucleophiles due to their region of space having high electron density.
+            \item \textbf{Polarizability}: the ability of an atom to distribute its electron density unevenly in response to external influences.
+                \begin{itemize}
+                    \item Correlated with size of the atom, which increases the number electrons that are distant from the nucleus.
+                \end{itemize}
+        \end{itemize}
+    \item \textbf{Electrophiles}: an electron-deficient atom that is capable of accepting a pair of electrons.
+        \begin{itemize}
+            \item {\color{pos}Electrophiles are Lewis acids}.
+        \end{itemize}
+\end{itemize}
+
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
