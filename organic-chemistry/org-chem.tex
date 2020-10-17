@@ -75,6 +75,7 @@
     \item \textbf{Electronegativity}: a measure of the ability of an atom to attract electrons.
         \begin{itemize}
             \item Electronegativity generally {\color{o-Sun}increases left to right}, and from the {\color{o-Sun}bottom to top} of the periodic table.
+            \item \textbf{F, O, N, Cl} (Br, I). Most electronegative elements, from left to right, that are often encountered.
         \end{itemize}
     \item \textbf{Covalent bond}: when the difference in electronegativity is {\color{o-Sun}less than 0.5}.
     \item \textbf{Polar covalent bond}: when the difference in electronegativity is {\color{o-Sun}between 0.5 and 1.9}, then the electrons are not equally shared and become polar.
@@ -123,6 +124,7 @@
             \item Destructive interference cancel each other out and produes a node.
         \end{itemize}
 \end{itemize}
+
 
 \subsection{Valence Bond Theory}
 \begin{itemize}
@@ -261,32 +263,40 @@
     \item \textit{Electrostatic}: forces that occur as a result of the attraction between opposite charges. 
     \item Electrostatic interactions for neutral molecules (no formal charge) are often classified as into the following categories:
         \begin{itemize} 
-            \item \textbf{Dipole-dipole interaction}: Compounds with net dipole moments. 
+            \item \textbf{Dipole-dipole interaction}: Compounds with  {\color{o-Sun}net dipole} moments. 
                 \begin{itemize}
                     \item In {\color{o-Sun}solid} space these intereactions either {\color{o-Sun}repel or attract} each other.
                     \item In {\color{o-Sun}liquid} space these interactions tend to {\color{o-Sun}attract more often}, raising melting/boiling point.
+                    \item \textbf{Ion-dipole}: electrostatic interaction between an ion and a molecule with a dipole.
                 \end{itemize}
-            \item \textbf{Hydrogen bonding}:
+            \item \textbf{Hydrogen bonding}: molecules with a hydrogen attached to an F, O, or N.
                 \begin{itemize}
                     \item Not actually a bond, just an interaction.
                     \item When hydrogen bonds to a electronegative atom, then the hydrogen will have a {\color{pos}$\delta^+$}.
-                    \item \textbf{F, O, N, Cl} (Br, I). Most electronegative elements, from left to right, that hydrogen most often bonds too.
                     \item Hydrogen bonding is strong due to size of hydrogen atom, resulting in very close partial charge interactions.
                     \item The {\color{o-Sun}more} hydrogen bonds, the {\color{o-Sun}higher} the boiling point tends to be.
+                    \item Stronger than dipole-dipole interactions.
                 \end{itemize}
             \item \textbf{Fleeting dipole-dipole interactions}:
                 \begin{itemize}
                     \item Electrons are considered to be in constant motion, which restult in the center of negative charge to vary.
-                    \item On average, the dipole moment is zero, though can experience transient dipole moments, initiating fleeting attraction/repulsion.
+                    \item \textbf{London Dispersion Forces (LDFs)}: On average, the dipole moment is zero, though it can experience transient dipole moments, initiating fleeting attraction/repulsion.
+                        \begin{itemize}
+                            \item All atoms and molecules have LDFs.
+                            \item Weakest, but the dominant force in non-polar molecules.
+                            \item Dispersion forces directly related to molar mass.
+                        \end{itemize}
                     \item Heavier hydrocarbons generally experience a stronger force due to increased surface area, and thus greater chance for non-zero dipole moments, which results in higher boling points.
                     \item Branched hydrocarbons generally have decreased surface area, decreasing boiling point relative to others of similar weight.
                 \end{itemize}
         \end{itemize}
     \item When comparing boling points of compounds, look for following factors:
         \begin{itemize}
-            \item Any dipole-dipole interactions? Formation of hydrogen bonds?
-            \item Number of carbon atoms. (surface area)
-            \item Degree of branching of compound. (surface area)
+            \item Any dipole-dipole interactions? (increases boiling point)
+            \item Formation of hydrogen bonds? (increase boling point)
+            \item Number of electrons. (more electrons, higher boiling point)
+            \item Number of carbon atoms. (more surface area, higher boiling point)
+            \item Degree of branching of compound. (more branching, more surface area)
         \end{itemize}
 \end{itemize}
 
@@ -392,7 +402,6 @@
 
 \subsection{Hydrogen Deficiency Index: Degrees of Unsaturation}
 {\color{G-Moon}\textit{Excerpt from Chapter 14: Infrared Spectroscopy and Mass Spectrometry}}
-
 \subsubsection{Hydrogen Saturation}
 \begin{itemize}
     \item \textbf{Saturated compounds}: the maximum number of hydrogen atoms possbile, relative to number of carbon present.
@@ -425,16 +434,48 @@
 \end{itemize}
 
 \subsection{Identifying Functional Groups}
+\begin{center}
+    \includegraphics[scale=0.41]{images/fig2-1.png}
+\end{center}
 \begin{itemize}
-    \item \textbf{Functional group}: specific substituents or moieties within molecules that may be responsible for the characteristic chemical reactions.
+    \item \textbf{Functional group (R)}: specific substituents or moieties within molecules that may be responsible for the characteristic chemical reactions.
         \begin{itemize}
             \item \textbf{Substituents}: an atom or group of atoms which replaces one or more hydrogen atoms on the parent hydrocarbon chain.
             \item \textbf{Moiety}: a part of a molecule which is typically found within other molecules and often given a specific name.
         \end{itemize}
+    \subsubsection{Characterizing Carbon Centers and Functional Groups}
+    \begin{itemize}
+        \item \textbf{Characterizing Carbon Centers}
+            \begin{itemize}
+                \item Primary \ang{1}: a carbon with only one carbon-carbon bond.
+                    \begin{itemize}
+                        \item \ch{H3C-CH3}\hspace{12pt}\chemfig{-[:30]\ang{1}}
+                    \end{itemize}
+                \item Secondary \ang{2}: a carbon with two carbon-carbon bonds.
+                    \begin{itemize}
+                        \item \ch{H3C-CH2-CH3}\hspace{12pt}\chemfig{-[:30]\ang{2}-[:-30]}
+                    \end{itemize}
+                \item Tertiary  \ang{3}: a carbon with 3 carbon-carbon bonds.
+                    \begin{itemize}
+                        \item \ch{(CH)3-CH}\hspace{12pt}\chemfig{-[:30]\ang{3}(-[:90])-[:-30]}
+                    \end{itemize}
+                \item Quaternary \ang{4}: a carbon with four carbon-carbon bonds.
+                    \begin{itemize}
+                        \item \ch{(CH)4-C}\hspace{12pt}\chemfig{-[:30]\ang{4}(-[:135])(-[:45])-[:-30]}
+                    \end{itemize}
+            \end{itemize}
+        \item \textbf{Characterizing Functional Groups}
+            \begin{itemize}
+                \item Certain functional groups can be characters as \ang{1}, \ang{2}, or \ang{3}, based on how many carbon bonds are attached to the carbon with the functional group.
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
- \begin{center}
-     \includegraphics[scale=0.34]{images/fig2-1.png}
- \end{center}
+
+
+\subsection{Carbocations}
+\begin{itemize}
+    \item 
+\end{itemize}
 
 \subsection{Identifying Lone Pairs}
 \begin{itemize}
@@ -464,6 +505,11 @@
                 \item A {\color{pos}positive} charge corresponds with {\color{o-Sun}four bonds} and {\color{o-Sun}no lone pairs} 
             \end{itemize}
     \end{itemize}
+\end{itemize}
+
+\subsection{Introduction to Resonance}
+\begin{itemize}
+    \item 
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
