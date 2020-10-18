@@ -169,7 +169,7 @@
             \item \textbf{Bayesian}: uses the likelihood function to create a quantity called the \textit{posterior probability} of trees using a model of evolution based on prior probabilities in order to produce the most likely tree.
             \item \textbf{Bootstraping}: creating a value that indicates how many times out of 100 (normally) that the same branch was observed when repeating the phylogenetic reconstruction on re-sampled (pseudoreplicated) set of dat.
         \end{itemize}
-    \item \textbf{Molecular clocks}: the average rate at which species' genomes accumulates mutations over time.
+    \item \textbf{Molecular clocks}: the average rate at which species' genomes accumulates {\color{o-Sun}neutral mutations} over time.
         \begin{itemize}
             \item Generally a linear rate.
             \item Used to measure evolutionary divergence.
@@ -252,11 +252,76 @@
                 \item \textbf{Underdominance}, \textit{aka heterozygote disadvantage}: when the heterozygote has lower fitness than either homozygote. 
             \end{itemize}
     \end{itemize}
-\end{itemize}  
-    
+    \subsubsection{By Life Cycle Stage}
+    \begin{itemize}
+        \item \textbf{Viability selection}: \textit{aka survival selection}: increases probability of survival. 
+            \begin{itemize}
+                \item Can act to improve probability of survival before and after reproduction.
+            \end{itemize}
+        \item \textbf{Fecundity selection}: increases the rate of reproduction given survival.
+            \begin{itemize}
+                \item May be split into sub-components including sexual selection, gametic selection, gamete viability, compatability selection, and zygote formation.
+            \end{itemize}
+    \end{itemize}
+\end{itemize}
+
 \subsection{Mutation}
 \begin{itemize}
-    \item 
+    \item \textbf{Mutation}: alteration in the nucleotide sequence of the genome of an organism.
+        \begin{itemize}
+            \item May not produce discernible phenotypic changes.
+            \item The ultimate source of genetic variation.
+            \item Have several types of changes, from no effect, to small changes, or complete loss of function.
+        \end{itemize}
+    \subsubsection{Large-Scale Structural Mutations}
+    \begin{itemize}
+        \item \textbf{Gene duplications}, \textit{aka amplifications}: repetition of a chromosomal segment or attachment of extra piece of chromosome to another, leading to multiple copies of chromosomal regions.
+        \item Deletions of large chromosmal regions.
+        \item \textbf{Fusion genes}: mutations that join previously separated genes into one new distinct gene.
+        \item \textbf{Chromosmal rearrangement}: large scale changes in structure of chromosomes, leading to speciation in isolated, inbred populations. Includes:
+            \begin{itemize}
+                \item \textbf{Chromosomal translocations}: interchange of genetic parts from nonhomologous chromosomes.
+                \item \textbf{Chromosomal inversions}: reversing the orientation of a chromosomal segment.
+                \item Non-homologous chromosomal crossover.
+                \item \textbf{Interstitial deletions}: inverse of fusion genes; removes a segment of DNA joining distant genes.
+            \end{itemize}
+        \item \textbf{Loss of heterozygosity}: loss of one allele, by deletion or genetic recombination, in a organism that previously had two different alleles. 
+    \end{itemize}
+    \subsubsection{Small-Scale Mutations}
+    \begin{itemize}
+        \item \textbf{Point mutation}: a single nucleotide base change, that can result in a variety of effects.
+        \item \textbf{Insertions}: add one or more extra nucleotides into the DNA.
+            \begin{itemize}
+                \item Usually caused by transposable elements, or errors during replication or repeating elements.
+                \item Can cause\textit{reading frame shift}, possibly effecting how many codons are read, and thus altering the gene product.
+            \end{itemize}
+        \item \textbf{Deletions}: remove one or more nucleotides from the DNA.
+            \begin{itemize}
+                \item Also can cause a reading frame shift like insertions.
+                \item Generally irreversible.
+            \end{itemize}
+        \item \textbf{Substitutions}: exchange of a single nucleotide for another.
+            \begin{itemize}
+                \item Often classified as transitions or transversions.
+                \item Generally a purine (A-G) for a purine, or a pyrimidine (C-T) for a pyrimidine.
+                \item Can be reversed by another point mutation.
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{Impact on Protein Sequence}
+    \begin{itemize}
+        \item Effect of mutation depends heavily on where it occurs, particularly in a coding or non-coding region.
+        \item Regulator sequences, e.g. promoters, enhancers, silencers, can alter gene expression but are less likely to alter protein sequence.
+        \item \textbf{Frameshift mutation}: caused by insertion or deletion of nucleotides that is not divisible by three, resulting in a different translation from the original.
+        \item \textbf{Synonymous substitution}: a condon replacement with another that codes for same amino acid. 
+            \begin{itemize}
+                \item \textbf{Silent substitution}: no phenotypic difference after a synonymous substitution.
+            \end{itemize}
+        \item \textbf{Nonsynonymous substitution}: a codon replacement that codes for a different amino acid.
+            \begin{itemize}
+                \item \textbf{Missense mutation}: codon replacement that renders the resulting protein nonfunctional.
+                \item \textbf{Nonsense mutation}: codon replacement that results in a premature stop codon that produces a truncated and often nunfunctional protein.
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -269,22 +334,94 @@
 \section{Mendelian Genetics II}\phantomsection
 \subsection{Migration}
 \begin{itemize}
-    \item 
+    \item \textbf{Gene flow}: movement of alleles, or genetic variation, between populations.
+        \begin{itemize}
+            \item If the rate of gene flow is high enough, then two populations are considered to have equivalent allele frequencies and thus a single population.
+            \item Constrains speciation by combining gene pools of the groups.
+            \item May result in the addition of novel genetic variants in the gene pool.
+        \end{itemize}
+    \subsubsection{Factors of Gene Flow}
+    \begin{itemize}
+        \item Gene flow is expected to be lower in species that:
+            \begin{itemize}
+                \item have low mobility or dispersal.
+                \item occur in fragmanted habits.
+                \item have long distances between populations.
+                \item have small population sizes.
+            \end{itemize}
+        \item \textbf{Allopatric speciation}: when gene flow is blocked by {\color{o-Sun}physical} barriers that inhibit gene flow.
+        \item \textbf{Sympatric speciation}: result of gene flow that is blocked due to {\color{o-Sun}non-physical} barriers that inhibit gene flow.
+            \begin{itemize}
+                \item Often reproduction barriers are the main factors.
+            \end{itemize}
+    \end{itemize} 
 \end{itemize}
 
 \subsection{Genetic Drift}
 \begin{itemize}
-    \item 
+    \item \textbf{Genetic drift}: the change in the {\color{o-Sun} allele frequencies} in a population due to {\color{o-Sun}random sampling}.
+        \begin{itemize}
+            \item Not influenced by environmental factors.
+        \end{itemize}
+    \item May cause certain gene variants to become fixed or lost by chance.
+    \item Generally drives populations towards genetic uniformity over time.
+    \item Only mutation or gene flow can introduce new alleles, which acts against genetic drift.
+    \item \textbf{Founder effect}: result of sampling error which has an increased likelyhood on populations with low numbers.
+        \begin{itemize}
+            \item By chance certain alleles can be dominant when they otherwise wouldn't be in a new founding population.
+            \item Often acts to increase rate of genetic drift.
+        \end{itemize}
+    \item \textbf{Genetic bottleneck}: a sharp reduction in the size of population due to environmental events. 
+        \begin{itemize}
+            \item Can essentially cause a founder effect, though it's not a new population.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Molecular Evolution}
 \begin{itemize}
-    \item 
+    \item \textbf{Molecular evolution}: the process of change in the sequence composision of cellular molecules across generations.
+    \item \textbf{Neutral theory of molecular evolution}: most evolutionary changes occur at the molecular level.
+        \begin{itemize}
+            \item Most variation is due to random genetic drift of mutant alleles that are selectively neutral.
+            \item Compatable with phenotypic evolution, as phenotypes are driven by molecular changes.
+        \end{itemize}
+    \item \textbf{Recombination}: the process that results in genetic exchange between chromosomes or chromosomal regions.
+        \begin{itemize}
+            \item Can also cause mutations due to misalignment after recombination.
+            \item \textbf{Gene repair}: a type of recombination that is the product of DNA repair that corrects damage using a homologous template. 
+                \begin{itemize}
+                    \item Often responsbile for homogenizing sequences of duplicate genes over long periods of time, which reduces nucleotide divergence.
+                \end{itemize}
+        \end{itemize}
+    \item \textbf{Genetic hithicking}: change in allele frequency not because of natural selection, but due to proximity to a gene undering selective sweep.
+        \begin{itemize}
+            \item \textbf{Selective sweep}: a beneficial mutation that increases frequency and generally becomes fixed. 
+        \end{itemize}
 \end{itemize}
 
 \subsection{Nonrandom Mating}
 \begin{itemize}
-    \item 
+    \item \textbf{Inbreeding}: production of offspring from closely genetically related individuals.
+        \begin{itemize}
+            \item Results in homozygosity, which can increase chances chances of offspring being affected by deleterious or recessive traits.
+            \item \textbf{Inbreeding depression}: the reduced fitness in a given population due to inbreeding.
+                \begin{itemize}
+                    \item Usually caused by population bottlenecks or the founder effect.
+                \end{itemize}
+            \item Can also result in purging of deleterious allels through purifying selection.
+            \item Can allow for the expression of advantageous phenotypes, which if outweighs the disadvantages, then could potentially lead to speciation.
+        \end{itemize}
+    \item \textbf{Coefficient of inbreeding}: the probability that two alleles at any locus in an individual are identical by descent.
+    \item Nonrandom mating does not alter allele frequencies and not a mechanism of evolution.
+        \begin{itemize}
+            \item Can alter the frequencies of genotypes, changing the distribution of phenotypes in a population, which can alter patters of natural selection.
+        \end{itemize}
+    \item \textbf{Assortative mating}: mating based on phenotypic factors.
+        \begin{itemize}
+            \item Can play a role in sympatric speciation.
+            \item A form of sexual selection.
+            \item Can be either positive of negative, selecting for similar or different phenotypes respectively.
+        \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
