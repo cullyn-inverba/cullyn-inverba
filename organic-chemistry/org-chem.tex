@@ -330,7 +330,7 @@
 %\begingroup
 \clearpage
 \section{Molecular Representations}\phantomsection
-\subsection{Molecular Representations}
+\subsection{Types of Molecular Representations}
 \begin{itemize}
     \item \textbf{Partially condensed structures}: the \ch{C-H} bonds are not always drawn, saving space.
         \begin{itemize}
@@ -355,30 +355,28 @@
             ))))}
             \item This shows just one isomer, more partially condensed structures are possible.
         \end{itemize}
-\end{itemize}
 
-\subsection{Bond-Line Structures}
-\begin{itemize}
-    \item \textbf{Bond-line structures}; aka skeletal structures; simplify drawing process of chemical structures and are easier to read.
-        \begin{itemize}
-            \item Each corner or endpoint represents a carbon atom.
-                \begin{itemize}
+    \subsubsection{Bond-Line Structures}
+    \begin{itemize}
+        \item \textbf{Bond-line structures}; aka skeletal structures; simplify drawing process of chemical structures and are easier to read.
+        \item Each corner or endpoint represents a carbon atom.
+            \begin{itemize}
                      \item {\tiny\chemfig{-[:30]-[:-30]-[:30]-[:-30]-[:30]}
                      \hspace{15pt}
                      \chemfig{-[:30](-[:90])-[:-30]-[:30]-[:-30]}
                      \hspace{15pt}
                      \chemfig{-[:30](-[:90])-[:-30](-[:-90])-[:30]}}
                      \item All examples have 6 carbon atoms
-                \end{itemize}
-            \item Double bonds are shown with two lines, triple with three.
-                \begin{itemize}
-                    \item {\tiny\chemfig{-[:30]=_[:-30]-[:30]}
-                    \hspace{15pt}
-                    \chemfig{-[:30]~[:30]-[:30]}}
-                    \item Triple bonds are drawn linearly due to sp-hybridization
-                \end{itemize}
-            \item Hydrogens are not shown; it is assumed that each carbon posses enough to satisfy octet rule.
-        \end{itemize}
+            \end{itemize}
+        \item Double bonds are shown with two lines, triple with three.
+            \begin{itemize}
+                \item {\tiny\chemfig{-[:30]=_[:-30]-[:30]}
+                \hspace{15pt}
+                \chemfig{-[:30]~[:30]-[:30]}}
+                \item Triple bonds are drawn linearly due to sp-hybridization
+            \end{itemize}
+        \item Hydrogens are not shown; it is assumed that each carbon posses enough to satisfy octet rule.
+    \end{itemize}
     \subsubsection{Notes on Drawing Bond-Line Structrues}
     \begin{itemize}
         \item Carbon atoms in a straight chain should be drawn in zigzag format in order to accurately show each carbon.
@@ -402,7 +400,6 @@
 
 \subsection{Hydrogen Deficiency Index: Degrees of Unsaturation}
 {\color{G-Moon}\textit{Excerpt from Chapter 14: Infrared Spectroscopy and Mass Spectrometry}}
-\subsubsection{Hydrogen Saturation}
 \begin{itemize}
     \item \textbf{Saturated compounds}: the maximum number of hydrogen atoms possbile, relative to number of carbon present.
         \begin{itemize}
@@ -418,16 +415,13 @@
             \item Compounds with rings also result in an unsaturated compound.
             \item \textbf{Degree of unsaturation}: a number that represnets {\color{o-Sun}half} the {\color{o-Sun}"missing"} number of hydrogen atoms when compared to a saturated compound.
         \end{itemize}
-    \subsubsection{Hydrogen Deficiency Index}
-    \begin{itemize}
     \item \textbf{Hydrogen deficiency index (HDI)}: the measure of degrees of unsaturation. 
         \begin{itemize}
             \item e.g. two degrees of unsaturation results in a HDI of 2.
             \item Degrees of freedom help represent possbile structures, indicating possible double bounds, triple bounds, rings, or various combinations of each.
             \item Only helpful when molecular formula is known for certainty.
-        \end{itemize}
-    \item Formula: {\color{o-Sun}HDI = \(\frac{1}{2}(2C + 2 + N - H - X)\)}
-        \begin{itemize}
+            \item Formula: {\color{o-Sun}HDI = \(\frac{1}{2}(2C + 2 + N - H - X)\)}
+            \begin{itemize}
                 \item \(X\): halogen atoms.
         \end{itemize}
     \end{itemize}
@@ -471,12 +465,6 @@
     \end{itemize}
 \end{itemize}
 
-
-\subsection{Carbocations}
-\begin{itemize}
-    \item 
-\end{itemize}
-
 \subsection{Identifying Lone Pairs}
 \begin{itemize}
     \item Formal charges must always be drawn on bond line structures, otherwise the resulting bond line strcutres would be inferred incorrectly.
@@ -507,9 +495,81 @@
     \end{itemize}
 \end{itemize}
 
-\subsection{Introduction to Resonance}
+\subsection{Resonance}
 \begin{itemize}
-    \item 
+    \item \textbf{Resonance}: description of bonding in molecules or ions by the combination of multiple contributing strcutres.
+            \begin{itemize}
+            \item \textbf{Resonance structures}: each contributing structure of the resonance hybrid.
+                \begin{itemize}
+                    \item Formal charges are important to include when drawing resonance structures as it clarifies where locations of lone pairs and movement of electrons.
+                    \item Total charge must remain the same between structures.
+                \end{itemize}
+        \end{itemize}
+    \item Resonance does not describe any real process, rather it's a method to overcome inadequacy of bond-line drawings.
+    \item Different from isomerism, which differs in arrangements of atomic nuclei in space, rather than how the electrons are assigned to the depictions.
+    \subsubsection{Resonance: Curved Arrows}
+    \begin{itemize}
+        \item \textbf{Curved arrows}: a tool used to help draw resonance strcutres by {\color{o-Sun}representing electrons as if} they were moving.
+            \begin{itemize}
+                \item Somwhat different from curved arrow notation in reactions, which actually represent the flow of electron density.
+                \item Can help shows how to change the formal charge:
+                    \begin{itemize}
+                        \item Formal charges at the {\color{o-Sun}tail} become more {\color{pos}positive}, since it's losing an electron.
+                        \item Formal charges at the {\color{o-Sun}head} more {\color{neg}negative}, since it's gaining an electron.
+                    \end{itemize}
+            \end{itemize}
+        \item {\color{o-Sun}Avoid breaking a single bond}.
+            \begin{itemize}
+                \item Structures must have atoms connected in same order, though there are minor exceptions that \textit{will be discussed later}.
+                \item This rule affects the placement of the {\color{o-Sun}tail} of the arrow, as it represents distribution of previous electrons.
+            \end{itemize}
+        \item {\color{o-Sun}Never exceed an octet for second-row elements}.
+            \begin{itemize}
+                \item Not a violation to have less than an octet. 
+                \item This rule affects the placement of the {\color{o-Sun}head} of the arrow, as it represents sharing of new electrons.
+            \end{itemize} 
+        \item Can only be used on adjcent atoms, though the electrons 
+        can be pushed multiple times.
+        \item "Legal" moves: 
+            \begin{itemize}
+                \item $\pi$ bond $\rightarrow$ lone pair. 
+                \item Lone pair $\rightarrow$ $\pi$ bond.
+                \item $\pi$ bond $\rightarrow$ $\pi$ bond.
+                \item Every resonance structure can be built through a combination of about three moves.
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{Patterns in Drawing Resonance Structures}
+    \begin{itemize}
+        \item \textbf{Vinylic}: two carbon atoms bearing the double of a carbon-carbon double bond.
+        \item \textbf{Allylic}: atoms connected directly to vinylic positions.
+        \item \textbf{Allylic lone pair}: an atom that contains lone pairs and adjacent to a carbon-carbon double bond.
+            \begin{itemize}
+                \item Any lone pair next to a $\pi$ bond can serve the same function for the purposes of drawing resonance structures.
+                \item Two pushes of electrons will be ultimately be needed. 
+            \end{itemize}
+        \item \textbf{Allylic carbocation}: a positive charge located in an allylic position.
+            \begin{itemize}
+                \item Only one arrow required, represents the $\pi$ bond $\rightarrow$ $\pi$ bond push.
+                \item \textbf{Conjugated}: when two $\pi$ bonds are separated by a single $\pi$ bond.
+            \end{itemize}
+        \item 
+    \end{itemize}
+    \subsubsection{Contributor Significance}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \subsubsection{Resonance Hybrid}
+    \begin{itemize}
+        \item \textbf{Resonance hybrid}: respresents the \textit{average} of the contributing structures, with bond lengths and partial charges taking on intermediate values.
+    \end{itemize}
+    \subsubsection{Delocalization}
+    \begin{itemize}
+        \item \textbf{Delocalization}: the spreading of electrons between multiple atoms or covalent bonds.
+        \begin{itemize}
+            \item \textbf{Resonance stabilization}: molecules and ions that are {\color{o-Sun}stabalized} by the delocalization of electrons.
+            \item Plays a major role in the outcome of many reactions.
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
