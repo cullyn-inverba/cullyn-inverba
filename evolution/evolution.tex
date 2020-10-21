@@ -62,7 +62,7 @@
 \begin{itemize}
     \item \textbf{Adaption}: a trait, or a suite of traits, that increases the fitness of its possessor.
     \item No hypothesis for the adaptive value of a trait should be accepted simply because of its plausibility.
-    \item Oxpeckers and impalas traditionally were thought to have a mutally beneficial existence; oxpeckers ate ticks and impalas provided a safe environment.
+    \item Oxpeckers and impalas traditionally were thought to have a mutually beneficial existence; oxpeckers ate ticks and impalas provided a safe environment.
     \item Experiments on cattle were done to test whether this observation was true:
         \begin{itemize}
             \item Results show red-billed oxpeckers have no effect tick loads of cattle.
@@ -227,6 +227,7 @@
         \item Can be members of the same of different species.
         \item Not always directional and adaptive, instead selection pressure is applied and removes the less fit variants.
         \item Can be classified in different ways, such as effect on a trait, on genetic diversity, by life cycle, by unit of selection, or by the resource in competition.
+        \item Most effective on large populations.
     \end{itemize}
     \subsubsection{By Effect on a Trait}
     \begin{itemize}
@@ -364,26 +365,57 @@
             \item Not influenced by environmental factors.
         \end{itemize}
     \item May cause certain gene variants to become fixed or lost by chance.
-    \item Generally drives populations towards genetic uniformity over time.
+    \item Generally drives populations towards genetic uniformity over time, {\color{o-Sun}decreasing heterozygosity}.
     \item Only mutation or gene flow can introduce new alleles, which acts against genetic drift.
     \item \textbf{Founder effect}: result of sampling error which has an increased likelyhood on populations with low numbers.
         \begin{itemize}
             \item By chance certain alleles can be dominant when they otherwise wouldn't be in a new founding population.
-            \item Often acts to increase rate of genetic drift.
+            \item Often acts to drastically increase rate of genetic drift.
         \end{itemize}
     \item \textbf{Genetic bottleneck}: a sharp reduction in the size of population due to environmental events. 
         \begin{itemize}
             \item Can essentially cause a founder effect, though it's not a new population.
         \end{itemize}
+    \subsubsection{Coalescent Theory}
+    \begin{itemize}
+        \item \textbf{Coalescent theory}: how gene variants sampled from a population may have {\color{o-Sun}originated} from a common ancestor.
+            \begin{itemize}
+                \item Assumes no recombination, no natural selection, no gene flow in the simpiliest case.
+            \end{itemize}
+        \item Aims to look backward in time by merging allels into a single ancestral copy according to a random process in coalescence events.
+        \item Many theoretical genealogies are made in order to compare to observed data in order to test assumptions about demographic history of a population.
+            \begin{itemize}
+                \item Used to make inference about population genetic parameters, such as migration, population size, and recombination.
+            \end{itemize}
+        \item \textbf{Coalescent time}: number of preceding generations where the coalescence took place, not calender time.
+            \begin{itemize}
+                \item Estimation of the time can be made multiplied by \(2N_e\) with the average time between generations.
+                \item Time to coalescence for a pair of allels at a locus is {\color{o-Sun}dependent} on population size.
+                \item Formula: \(P_c(t)=\left(1-\dfrac{1}{2N_e}\right)^{t-1}\left(\dfrac{1}{2N_e}\right)\)
+            \end{itemize}
+        \item Can also be used to model the amount of variation in DNA sequences expected from genetic drift and mutation.
+    \end{itemize}
 \end{itemize}
 
 \subsection{Molecular Evolution}
 \begin{itemize}
     \item \textbf{Molecular evolution}: the process of change in the sequence composision of cellular molecules across generations.
+    \item \textbf{Polymorphism}: occurrence of two of more clearly different morphs, or alternative phenotypes, in the population of a species.
+    \begin{itemize}
+        \item \textbf{Substitution}: when allels become fixed or lost in a population and polymorphism is ended.
+            \begin{itemize}
+                \item Substitution rate (\(k\)): \(k = sN\mu\)
+                \item \(s\) = probability of fixation.
+                \item \(N\mu\)= mutation rate of population.
+            \end{itemize}
+    \end{itemize}
     \item \textbf{Neutral theory of molecular evolution}: most evolutionary changes occur at the molecular level.
         \begin{itemize}
             \item Most variation is due to random genetic drift of mutant alleles that are selectively neutral.
             \item Compatable with phenotypic evolution, as phenotypes are driven by molecular changes.
+            \item Most mutations are neutral with respect to fitness.
+            \item A minority of mutation are advantageous.
+            \item Substitution rate predicted to be neutral, equal to per-individual mutation rate, {\color{o-Sun}independent} of population size.\Psi  
         \end{itemize}
     \item \textbf{Recombination}: the process that results in genetic exchange between chromosomes or chromosomal regions.
         \begin{itemize}
