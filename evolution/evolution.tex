@@ -173,6 +173,23 @@
             \item Generally a linear rate.
             \item Used to measure evolutionary divergence.
         \end{itemize}
+    \begin{align*}
+        \textbf{CHEETA EXAMPLE:}\\
+        \text{{\color{p-Lush}Divergence: 5.2\%} per 1mya, {\color{g-Fresh} Diversity for this locus: 0.182\%} per [x=time]}\\
+        \frac{{\color{g-Fresh}0.182}}{x} = \frac{{\color{p-Lush}5.2\%}}{\num{1e6}}\\
+        \num{1.82e5}= 5.2x\\
+        x = \frac{\num{1.82e5}}{5.2} = \SI{35000}{yrs}\\ 
+        \text{{\color{p-Lush}Divergence: 6.5\%} per 1mya, {\color{g-Fresh}Diversity for this locus: 0.182\%} per [x=time]}\\
+        \frac{{\color{g-Fresh}0.182}}{x} = \frac{{\color{p-Lush}6.5\%}}{\num{1e6}}\\
+        \num{1.82e5}= 6.5x\\
+        x = \frac{\num{1.82e5}}{6.5} = \SI{28000}{yrs}\\ 
+        \textbf{DOGS EXAMPLE:}\\
+        \text{{\color{p-Lush}Divergence: 7.5\%} per 1mya, {\color{g-Fresh}Diversity for this locus: 1\%} per [x=time]}\\
+        {\color{G-Moon}\text{Note: 0.075, and 0.01 converted to \%}}\\
+        \frac{{\color{g-Fresh}1}}{x} = \frac{{\color{p-Lush}7.5\%}}{\num{1e6}}\\
+        \num{1e6}= 7.5x\\
+        x = \frac{\num{1e6}}{7.5} = \SI{133333}{yrs}\\ 
+    \end{align*}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,7 +197,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
-\fancyhead[L]{Quiz 2}
 \setcounter{section}{5}
 \section{Mechanisms of Evolutionary Change}\phantomsection
 \subsection{Hardy-Weinberg Equilibrium}
@@ -399,6 +415,8 @@
                 \item \(N\mu\)= mutation rate of population.
             \end{itemize}
     \end{itemize}
+    \subsubsection{Recombination}
+    \begin{itemize}
     \item \textbf{Recombination}: the process that results in genetic exchange between chromosomes or chromosomal regions.
         \begin{itemize}
             \item Can also cause mutations due to misalignment after recombination.
@@ -411,6 +429,7 @@
         \begin{itemize}
             \item \textbf{Selective sweep}: a beneficial mutation that increases frequency and generally becomes fixed. 
         \end{itemize}
+    \end{itemize}
     \subsubsection{Neutral Theory}
         \begin{itemize}
         \item \textbf{Neutral theory of molecular evolution}: most evolutionary changes occur at the molecular level.
@@ -419,6 +438,13 @@
         \item Most mutations are neutral with respect to fitness.
         \item A minority of mutation are advantageous.
         \item Substitution rate predicted to be neutral, equal to per-individual mutation rate, {\color{o-Sun}independent} of population size. 
+        \item \(K_A / K_s\) test used to determin direction selection based on evolutionary history.
+            \begin{itemize}
+                \item \(K_A\): number of nonsynonymous substitutions (replacement).
+                \item \(K_S\): number of synonymous substitutions (silent).
+                \item {\color{pos}\(K_A > K_s\)} signals for {\color{pos}positive selection}.
+                \item {\color{neg}\(K_A < K_s\)} signals for {\color{neg}purifying selection}.
+            \end{itemize}
         \end{itemize}
 \end{itemize}
 
@@ -433,12 +459,12 @@
                 \end{itemize}
             \item Can also result in purging of deleterious allels through purifying selection.
             \item Can allow for the expression of advantageous phenotypes, which if outweighs the disadvantages, then could potentially lead to speciation.
-        \end{itemize}
     \item \textbf{Coefficient of inbreeding}: the probability that two alleles at any locus in an individual are identical by descent.
     \item Nonrandom mating does not alter allele frequencies and not a mechanism of evolution.
         \begin{itemize}
             \item Can alter the frequencies of genotypes, changing the distribution of phenotypes in a population, which can alter patters of natural selection.
         \end{itemize}
+    \end{itemize}
     \item \textbf{Assortative mating}: mating based on phenotypic factors.
         \begin{itemize}
             \item Can play a role in sympatric speciation.
@@ -461,7 +487,33 @@
 \section{Evolution at Multiple Loci}\phantomsection
 \subsection{Linkage Equilibrium and Diesquilibrium}
 \begin{itemize}
-    \item 
+    \item \textbf{Linkage equilibrium}: when the genotype of a chromosome at one locus is {\color{o-Sun}independent} of its genotype at another locus.
+    \item \textbf{Linkage disequilibrium}: the non-random association of alleles at different loci in a given population. 
+        \begin{itemize}
+            \item Occurs when frequency of the association between loci's different alleles is higher or lower than expected.
+        \end{itemize}
+    \item \textbf{Haplotype}: a group of alleles in an organism that are inherited together from a single parent.
+        \begin{itemize}
+            \item Used to mean the collection of specific alleles that represent a phenotype and likely to be conserved.
+            \item Also can be used to mean a set of linked single-nucleotide polymorphism alleles that are associated statistically.
+        \end{itemize}
+    \item Factors that influences disequilibrium: selection, rate or genetic recombination, mutation rate, genetic drift, system of mating, population structure.
+        \begin{itemize}
+            \item Undertanding linkage desequilibrium in a genome can be a powerful signal of the population genetic processes that structure it.
+            \item Selection, genetic drift and population admixture act to {\color{pos}create disequilibrium}. 
+            \item Recombination and outbreeding (sexual reproduction) act to {\color{neg}reduce disequilibrium}.
+        \end{itemize}
+    \item Level of linkage disequilibrium can between \(A\) and \(B\) can be quantified by the {\color{o-Sun}coefficient of linkage disequilibrium, \(D_{AB}\)}.
+        \begin{itemize}
+            \item Formula: \(D_{AB}=P_{AB} - P_{A}P_{B}\)
+            \item \(P_{AB}\): the frequency with which both occur together on same gamete, or the frequency of the \(AB\)haplotype.
+            \item \(P_AP_B\): product of the probabilities give the probability they occur together.
+            \item When there is a difference, the magnitude of the coefficient rises, indicating linkage disequilibrium.
+        \end{itemize}
+    \subsubsection{Recombination's Effect on Diesquilibrium}
+    \begin{itemize}
+        \item 
+    \end{itemize}
 \end{itemize}
 
 \subsection{Adaptive Significance of Sex}
