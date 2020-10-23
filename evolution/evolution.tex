@@ -168,28 +168,6 @@
             \item \textbf{Bayesian}: uses the likelihood function to create a quantity called the \textit{posterior probability} of trees using a model of evolution based on prior probabilities in order to produce the most likely tree.
             \item \textbf{Bootstraping}: creating a value that indicates how many times out of 100 (normally) that the same branch was observed when repeating the phylogenetic reconstruction on re-sampled (pseudoreplicated) set of dat.
         \end{itemize}
-    \item \textbf{Molecular clocks}: the average rate at which species' genomes accumulates {\color{o-Sun}neutral mutations} over time.
-        \begin{itemize}
-            \item Generally a linear rate.
-            \item Used to measure evolutionary divergence.
-        \end{itemize}
-    \begin{align*}
-        \textbf{CHEETA EXAMPLE:}\\
-        \text{{\color{p-Lush}Divergence: 5.2\%} per 1mya, {\color{g-Fresh} Diversity for this locus: 0.182\%} per [x=time]}\\
-        \frac{{\color{g-Fresh}0.182}}{x} = \frac{{\color{p-Lush}5.2\%}}{\num{1e6}}\\
-        \num{1.82e5}= 5.2x\\
-        x = \frac{\num{1.82e5}}{5.2} = \SI{35000}{yrs}\\ 
-        \text{{\color{p-Lush}Divergence: 6.5\%} per 1mya, {\color{g-Fresh}Diversity for this locus: 0.182\%} per [x=time]}\\
-        \frac{{\color{g-Fresh}0.182}}{x} = \frac{{\color{p-Lush}6.5\%}}{\num{1e6}}\\
-        \num{1.82e5}= 6.5x\\
-        x = \frac{\num{1.82e5}}{6.5} = \SI{28000}{yrs}\\ 
-        \textbf{DOGS EXAMPLE:}\\
-        \text{{\color{p-Lush}Divergence: 7.5\%} per 1mya, {\color{g-Fresh}Diversity for this locus: 1\%} per [x=time]}\\
-        {\color{G-Moon}\text{Note: 0.075, and 0.01 converted to \%}}\\
-        \frac{{\color{g-Fresh}1}}{x} = \frac{{\color{p-Lush}7.5\%}}{\num{1e6}}\\
-        \num{1e6}= 7.5x\\
-        x = \frac{\num{1e6}}{7.5} = \SI{133333}{yrs}\\ 
-    \end{align*}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -446,6 +424,14 @@
                 \item {\color{neg}\(K_A < K_s\)} signals for {\color{neg}purifying selection}.
             \end{itemize}
         \end{itemize}
+    \subsubsection{Molecular Clocks}
+    \begin{itemize}
+        \item \textbf{Molecular clocks}: the average rate at which species' genomes accumulates {\color{o-Sun}neutral mutations} over time.
+        \begin{itemize}
+            \item A linear rate is often easy to establish.
+            \item Used to measure evolutionary divergence.
+        \end{itemize}
+    \end{itemize}
 \end{itemize}
 
 \subsection{Nonrandom Mating}
