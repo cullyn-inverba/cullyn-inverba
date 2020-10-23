@@ -58,6 +58,9 @@
 	"Inline pi": { "prefix": "pi", "body": "$\\pi$"},
 	"Inline mu": { "prefix": "mu", "body": "$\\mu$"},
 
+	"Pka": { "prefix": "pka", "body": "\\(pK_a\\)"},
+	"Pkb": { "prefix": "pkb", "body": "\\(pK_b\\)"},
+
 	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
 	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
 
