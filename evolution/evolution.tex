@@ -486,15 +486,16 @@
     \item Factors that influences disequilibrium: selection, rate or genetic recombination, mutation rate, genetic drift, system of mating, population structure.
         \begin{itemize}
             \item Undertanding linkage desequilibrium in a genome can be a powerful signal of the population genetic processes that structure it.
-            \item Selection, genetic drift and population admixture act to {\color{pos}create disequilibrium}. 
-            \item Recombination and outbreeding (sexual reproduction) act to {\color{neg}reduce disequilibrium}.
+            \item Selection, genetic drift, assortative mating, and population admixture act to {\color{pos}create disequilibrium}. 
+            \item Recombination and outbreeding act to {\color{neg}reduce disequilibrium}.
         \end{itemize}
     \item Level of linkage disequilibrium can between \(A\) and \(B\) can be quantified by the {\color{o-Sun}coefficient of linkage disequilibrium, \(D_{AB}\)}.
         \begin{itemize}
             \item Formula: \(D_{AB}=P_{AB} - P_{A}P_{B}\)
-            \item \(P_{AB}\): the frequency with which both occur together on same gamete, or the frequency of the \(AB\)haplotype.
+            \item \(P_{AB}\): the frequency with which both occur together on same gamete, or the frequency of the \(AB\) haplotype.
             \item \(P_AP_B\): product of the probabilities give the probability they occur together.
             \item When there is a difference, the magnitude of the coefficient rises, indicating linkage disequilibrium.
+            \item Strong recent selection can be indicated by linkage disequilibrium of allels located next to neutral allels.
         \end{itemize}
     \subsubsection{Recombination's Effect on  Linkage Diesquilibrium}
     \begin{itemize}
@@ -519,8 +520,11 @@
 \subsection{The Nature of Quantitative Traits}
 \begin{itemize}
     \item \textbf{Quantitative genetics}: deals with phenotypes that vary continuosly due to multilocus traits and environmental factors.
-    \item \textbf{Qualitative traits}: traits that can be assigned individual categories by observation of simple genetic test.
-    \item \textbf{Quantitative traits:} determined by the combined influence of the genotype at multiple loci and the environment; the focus of quantitative genetics.
+        \begin{itemize}
+            \item Allows for the prediction of how a population will respond to selection, even when we do not know the genetic basis of the trait.
+        \end{itemize}
+    \item \textbf{Qualitative traits}: descrete traits that can be assigned individual categories by observation of simple genetic test.
+    \item \textbf{Quantitative traits}: continuous traits determined by the combined influence of the genotype at multiple loci and the environment; the focus of quantitative genetics.
         \begin{itemize}
             \item Study of continuous distribution requires many other statistical methods such as the effect size, mean, and variance, to link phenotypes to genotypes.
         \end{itemize}
@@ -528,12 +532,37 @@
 
 \subsection{Heritable Variation}
 \begin{itemize}
-    \item 
+    \item \textbf{Heritability}: the degree of variation in a phenotypic trait in a population that is due to genetic variation betwen individuals in that population.
+    \item \textbf{Phenotypic variance (V\(_{P}\))}: the genetic variance (V\(_{G}\)) combined with the environmental variance (V\(_{E}\)).
+        \begin{itemize}
+            \item {\color{o-Sun}\(V_P = V_G + V_E + V_{GE}\)}
+            \item \(V_{GE}\) represents variance associated with {\color{o-Sun}intereaction} of genetic and environmental factors. 
+        \end{itemize}
+    \subsubsection{Genetic Variance}
+    \begin{itemize}
+        \item \textbf{Additive genetic variance (V\(_{A}\))}: how much the phenotypic trait is influenced by traits that show an additive effect on the quantitative traits.
+            \begin{itemize}
+                \item Measures the magnitude to which individual phenotypic differences can be predicted due to additive effects of allelic substitutions.
+            \end{itemize}
+        \item \textbf{Dominance genetic variance (V\(_{D}\))}: associated with the dominant gene actions which cover the influence of the recessive alleles at the particular locus.
+        \item \textbf{Epistasis (V\(_{I}\))}: occurs due to statistical interaaction among loci, i.e., gene-by-gene modification.
+        \item  {\color{o-Sun}\(V_G = V_A + V_D + V_I\)}
+    \end{itemize}
+    \item \textbf{Broad-sense heritability (H\(^{2}\))}: all genetic contributions to a populations phenotypic variance, including additive, dominant, and epistatic, and maternal/paternal effects. 
+        \begin{itemize}
+            \item \(H^2 = \dfrac{V_G}{V_P}\)
+        \end{itemize}
+    \item \textbf{Narrow-sense heritability (h\(^{2}\))}: proportion of the total phenotypic varian that is due to the {\color{o-Sun}additive effects} of genes.
+        \begin{itemize}
+            \item \(h^2 = \dfrac{V_A}{V_P}\)
+            \item Allows prediction of how a population will respond to selection.
+            \item The greater the additive genetic variation for the trait, the greater its response to selection can be.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Measuring Differences in Survival and Reproductive Success}
 \begin{itemize}
-    \item 
+    \item Heritability is often estimated by measuring correlations between parents and offspring.
 \end{itemize}
 
 \subsection{Predicting Evolutionary Responses}
