@@ -65,7 +65,7 @@
 	"Inline Hat": {"prefix": "hat", "body": "\\(\\hat{$1}\\)$0"},
 
 	"Subsection": {
-		"prefix": "Subsection", 
+		"prefix": "Rubsection", 
 		"body": [
 			"\\subsection{$1}",
 			"\\begin{itemize}",
@@ -85,7 +85,7 @@
 	},
 
 	"New Chapter": {
-		"prefix": "New Chapter", 
+		"prefix": "\\New Chapter", 
 		"body": [
 			"%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter $1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
 			"%\\begingroup",
