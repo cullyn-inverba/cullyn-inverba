@@ -85,7 +85,7 @@
 	},
 
 	"New Chapter": {
-		"prefix": "\\New Chapter", 
+		"prefix": "New Chapter", 
 		"body": [
 			"%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter $1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
 			"%\\begingroup",
