@@ -204,7 +204,7 @@
         \begin{itemize}
             \item Allele frequencies do not change from one generation to the next.
             \item Genotypic frequencies after one generation of random mating: \(p^2 + 2pq + q^2\)
-            \item Evolutionary influences: genetic drift, mate choice, assortative mating, natural selection, sexual selection, mutation, gene flow, meiotic drive, genetic hitchhicking, population bottleneck, founder effect, and inbreeding.
+            \item Evolutionary influences: genetic drift, mate choice, assortative mating, natural selection, sexual selection, mutation, gene flow, meiotic drive, genetic hitchhiking, population bottleneck, founder effect, and inbreeding.
                 \begin{itemize}
                     \item \textit{Most of these influences will be discussed later}.
                 \end{itemize}
@@ -225,11 +225,21 @@
     \subsubsection{By Effect on a Trait}
     \begin{itemize}
         \item \textbf{Stablizing selection}: the simplies case in which selection acts to hold a trait at a stable optimum.
+            \begin{itemize}
+                \item Reduces the individuals in the trails of the trait's distribution, reducing variation.
+            \end{itemize}
         \item \textbf{Directional selection}: favours extreme values of a trait.
-        \item \textbf{Disruptive selection}: acts during transition periods when current mode is sub-optimal, but alters trait in more than one direction.
+            \begin{itemize}
+                \item Directional selection on a continuous trait changes the average value of the trait in the population.
+                \item Can reduce variation in the population, generally not by large amounts though.
+            \end{itemize}
+        \item \textbf{Disruptive selection (diversifying selection)}: acts during transition periods when current mode is sub-optimal, but alters trait in more than one direction.
             \begin{itemize}
                 \item \textbf{Univariate}: when the trait is both quantitatively favoured in either direction and can lead to speciation.
+                \item Generally {\color{o-Sun}increases the variance} on continuous traits. 
+                \item May be more common than generally recognized.
             \end{itemize}
+        \item All three increases the mean fitness of the population.
     \end{itemize}
     \subsubsection{By Effect on Genetic Diversity}
     \begin{itemize}
@@ -325,21 +335,15 @@
             \item Constrains speciation by combining gene pools of the groups.
             \item May result in the addition of novel genetic variants in the gene pool.
         \end{itemize}
-    \subsubsection{Factors of Gene Flow}
-    \begin{itemize}
         \item Gene flow is expected to be lower in species that:
             \begin{itemize}
                 \item have low mobility or dispersal.
                 \item occur in fragmanted habits.
-                \item have long distances between populations.
+                \item have long distances 2between populations.
                 \item have small population sizes.
             \end{itemize}
         \item \textbf{Allopatric speciation}: when gene flow is blocked by {\color{o-Sun}physical} barriers that inhibit gene flow.
         \item \textbf{Sympatric speciation}: result of gene flow that is blocked due to {\color{o-Sun}non-physical} barriers that inhibit gene flow.
-            \begin{itemize}
-                \item Often reproduction barriers are the main factors.
-            \end{itemize}
-    \end{itemize} 
 \end{itemize}
 
 \subsection{Genetic Drift}
@@ -403,7 +407,7 @@
                     \item Often responsbile for homogenizing sequences of duplicate genes over long periods of time, which reduces nucleotide divergence.
                 \end{itemize}
         \end{itemize}
-    \item \textbf{Genetic hithicking}: change in allele frequency not because of natural selection, but due to proximity to a gene undering selective sweep.
+    \item \textbf{Genetic hitchhiking}: change in allele frequency not because of natural selection, but due to proximity to a gene undering selective sweep.
         \begin{itemize}
             \item \textbf{Selective sweep}: a beneficial mutation that increases frequency and generally becomes fixed. 
         \end{itemize}
@@ -420,7 +424,7 @@
             \begin{itemize}
                 \item \(K_A\): number of nonsynonymous substitutions (replacement).
                 \item \(K_S\): number of synonymous substitutions (silent).
-                \item {\color{pos}\(K_A > K_s\)} signals for {\color{pos}positive selection}.
+                \item {\color{pos}\(K_A > K_s\)} signals for {\color{pos}diversifying selection}.
                 \item {\color{neg}\(K_A < K_s\)} signals for {\color{neg}purifying selection}.
             \end{itemize}
         \end{itemize}
@@ -508,6 +512,7 @@
 
 \subsection{Adaptive Significance of Sex}
 \begin{itemize}
+    \item \textbf{Parthenogenesis}: a natural form of {\color{o-Sun}asexual reproduction} in which growth and development of embryos occur without fertilization.
     \item 
 \end{itemize}
 %\endgroup
@@ -532,7 +537,7 @@
 
 \subsection{Heritable Variation}
 \begin{itemize}
-    \item \textbf{Heritability}: the degree of variation in a phenotypic trait in a population that is due to genetic variation betwen individuals in that population.
+    \item \textbf{Heritability}: the degree of {\color{o-Sun}variation} in a phenotypic trait in a population that is due to genetic variation betwen individuals in that population.
     \item \textbf{Phenotypic variance (V\(_{P}\))}: the genetic variance (V\(_{G}\)) combined with the environmental variance (V\(_{E}\)).
         \begin{itemize}
             \item {\color{o-Sun}\(V_P = V_G + V_E + V_{GE}\)}
@@ -543,32 +548,57 @@
         \item \textbf{Additive genetic variance (V\(_{A}\))}: how much the phenotypic trait is influenced by traits that show an additive effect on the quantitative traits.
             \begin{itemize}
                 \item Measures the magnitude to which individual phenotypic differences can be predicted due to additive effects of allelic substitutions.
+                \item The greater the additive genetic variation for the trait, the greater is response to selection can be.
             \end{itemize}
         \item \textbf{Dominance genetic variance (V\(_{D}\))}: associated with the dominant gene actions which cover the influence of the recessive alleles at the particular locus.
         \item \textbf{Epistasis (V\(_{I}\))}: occurs due to statistical interaaction among loci, i.e., gene-by-gene modification.
         \item  {\color{o-Sun}\(V_G = V_A + V_D + V_I\)}
     \end{itemize}
-    \item \textbf{Broad-sense heritability (H\(^{2}\))}: all genetic contributions to a populations phenotypic variance, including additive, dominant, and epistatic, and maternal/paternal effects. 
+    \item \textbf{Broad-sense heritability (H\(^{2}\))}: {\color{o-Sun}all genetic contributions} to a populations phenotypic variance, including additive, dominant, and epistatic, and maternal/paternal effects. 
         \begin{itemize}
             \item \(H^2 = \dfrac{V_G}{V_P}\)
         \end{itemize}
-    \item \textbf{Narrow-sense heritability (h\(^{2}\))}: proportion of the total phenotypic varian that is due to the {\color{o-Sun}additive effects} of genes.
+    \item \textbf{Narrow-sense heritability (h\(^{2}\))}: proportion of the total phenotypic variance that is due to the {\color{o-Sun}additive effects} of genes.
         \begin{itemize}
             \item \(h^2 = \dfrac{V_A}{V_P}\)
             \item Allows prediction of how a population will respond to selection.
             \item The greater the additive genetic variation for the trait, the greater its response to selection can be.
         \end{itemize}
+    \subsubsection{Estimating Heritability}
+    \begin{itemize}
+        \item Heritability is often estimated by measuring correlations between parents and offspring.
+        \item \textbf{Midparnet}: the average of the trait value between parents.
+            \begin{itemize}
+                \item The mother's value often has a scaling value applied to help account for developmental sex differences.
+            \end{itemize}
+        \item \textbf{Midoffspring}: the average value of a trait among offsping.
+        \item Correlations are determind through a line of best fit.
+            \begin{itemize}
+                \item Heritability of the trait is measued between 0 and 1 determind by the slope of the best fit line plotted against midparant and midoffsping values.
+                \item Using a method of {\color{o-Sun}least-squares linear regression}, which minimizes the sum of the squared vertical distances between points, the heritability slope represents {\color{o-Sun}narrow-sense heritability}.
+            \end{itemize}
+        \item If a trait is heritable, monozygotic twins will resemble each other more than dizygotic twins.
+    \end{itemize}
+    \subsubsection{Predicting Evolutionary Responses}
+    \begin{itemize}
+        \item \textbf{Selection differential (S)}: the difference between the mean of the selected individuals ($\bar{x}$) and the mean of the entire population ($\mu$)
+            \begin{itemize}
+                \item \(S=\bar{x}-\mu\)
+                \item Can be used to create a statical selection gradient, which is used to represent the strength of selection.
+            \end{itemize}
+        \item \textbf{Breeder's equation}: evolutionary response (R) can be predicted using narrow-sense heritability and the selection differential.
+            \begin{itemize}
+                \item {\color{o-Sun}\(R=h^2S\)}
+                \item The greater the heritability and selection differential, the greater the response to selection.
+            \end{itemize}
+        \item When characters are genetically correlated, selection for one can drag the other along through genetic hitchhiking.
+        \item Selection on the alleles at any single locus affecting a quantitative is often very weak; substantial genetic variation may persist at equilibrium between mutation and selection.
+        \item {\color{o-Sun}Low heritability} often represents populations effected by {\color{o-Sun}strong selection}, as selection removes variation.
+        \item {\color{o-Sun}Higher heritability} represents {\color{o-Sun}high variance} within the population. 
+    \end{itemize}
 \end{itemize}
 
-\subsection{Measuring Differences in Survival and Reproductive Success}
-\begin{itemize}
-    \item Heritability is often estimated by measuring correlations between parents and offspring.
-\end{itemize}
 
-\subsection{Predicting Evolutionary Responses}
-\begin{itemize}
-    \item 
-\end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
