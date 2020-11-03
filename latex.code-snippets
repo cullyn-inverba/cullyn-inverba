@@ -56,6 +56,8 @@
 	"Inline pi": { "prefix": "pi", "body": "$\\pi$"},
 	"Inline mu": { "prefix": "mu", "body": "$\\mu$"},
 
+	"oxygen": { "prefix": "oxygen", "body": "\\ch{O2}"},
+
 	"Pka": { "prefix": "pka", "body": "\\(pK_a\\)"},
 	"Pkb": { "prefix": "pkb", "body": "\\(pK_b\\)"},
 
