@@ -1037,7 +1037,8 @@
         \item All three-dimensional objects can be classified as either chiral or achiral.
         \item \textbf{Enantiomer}: the nonsuperimposable mirror image of a chiral compound.
             \begin{itemize}
-                \item Can be used in speech the same way {\color{o-Sun}twin} is used.
+                \item Can be used in speech the same way {\color{o-Sun}twin} is used
+                \item Easiest way to draw enatiomers is to just change wedges and dashes, but there are multiples ways to mirror a molecule, so it can be more complex.
             \end{itemize}
         \item The most common source of molecular chirality is the presence of a carbon bearing {\color{o-Sun}four different groups}.
             \begin{itemize}
@@ -1048,12 +1049,87 @@
 
 \subsection{Cahn-Ingold-Prelog System}
 \begin{itemize}
-    \item 
+    \item \textbf{Chan-Ingold-Prelog system}: a system of nomenclature for Identifying each enantiomer individually.
+        \begin{enumerate}
+            \item Assign priorties to each of the four groups based on atomic number; the highest atomic number has the highest priority.
+            \item Rotate the molecule so that the fourth priority group is on a dash (behind)
+            \item Determin the configuration, i.e., sequence of 1-2-3 groups is {\color{true}clockwise (R)} or {\color{false}counterclockwise (S)}.
+        \end{enumerate}
+    \item If there is a tie between the atoms connected, then continue outward until a difference is found.
+        \begin{itemize}
+            \item Do not add the sum all atomic numbers attached to each atom, just the first in which the atoms differ.
+            \item Any multiple bonded atom, (2 or 3) is treated as if connected to multiple atoms equal to number of bonds.
+        \end{itemize}
+    \item Switching any two groups on a chiral center will invert the configuration, e.g.,
+        \begin{itemize}
+            \item 
+            \schemestart
+            {\color{false}\chemfig{2-[:30](-[:-30]3)(<[:130]1)(<:[:50]4)}}
+            \arrow{->}
+            {\color{true}\chemfig{2-[:30](-[:-30]3)(<[:130]4)(<:[:50]1)}}
+            \schemestop
+            \item Can be done twice with out changing configuration, e.g.,
+            
+            \schemestart
+            {\color{true}\chemfig{
+                2-[:30](<[:130]1)(<:[:50]3)-[:-30]4
+                }}
+            \arrow{->}
+            {\color{false}\chemfig{
+                2-[:30](<[:130]1)(<:[:50]4)-[:-30]3
+                }}
+            \arrow{->}
+            {\color{true}\chemfig{
+                1-[:30](<[:130]2)(<:[:50]4)-[:-30]3
+                }}
+            \schemestop
+        \end{itemize}
+    \textbf{Configuration in IUPAC nomenclature}:
+    \begin{itemize}
+        \item The configuration of the chiral center is indicated at the begining of the name, italicized, and surrounded by parentheses.
+        \item When multiple centers are present, then each must be preceded by a locant.
+    \end{itemize}
 \end{itemize}
 
 \subsection{Optical Activity}
 \begin{itemize}
-    \item 
+    \item Enantiomers exhibit identical physical properties.
+    \item Enantiomers exhibit different behavior to plane-polarized light.
+        \begin{itemize}
+            \item \textbf{Polarization}: the orientation of electric field of the electromagnetic wave.
+            \item \textbf{Plane-polarized light}: a filter that only allows light of a particular polarization through.
+        \end{itemize}
+    \item \textbf{Optically active}: property of compounds that rotate the plane-polarized light.
+        \begin{itemize}
+            \item Can be measured using a polarimeter.
+            \item {\color{o-Sun}Chiral compounds are optically active}, while achiral compounds are not.
+        \end{itemize}
+    \item \textbf{Observed rotation ($\alpha$)}: the rotation of light due to chiral compounds, which depends on the number of molecules light encounters.
+        \begin{itemize}
+            \item Doubling the concentration or pathlength both double the observed rotation.
+        \end{itemize}
+    \item \textbf{Specific rotation [$\alpha$]}: a standard concentration (\SI{1}{g\per\mL}) and a standard pathlength (\SI{1}{dm}) that allows for meaningful comparion between compounds.
+        \begin{itemize}
+            \item \([\alpha]=\dfrac{\alpha}{cl}\)
+            \item c: concentration, l: pathlength
+            \item Temperature (T) and wavelength ($\lambda$) both have a nonlinear relationship, so it is often noted as: \([\alpha]^T_\lambda\)
+        \end{itemize}
+    \item Specific rotation for enantiomers are {\color{o-Sun}equal in magnitude} but {\color{o-Sun}opposite in direction}.
+        \begin{itemize}
+            \item {\color{pos}\textbf{dextrorotaory}}: a compound exhibiting {\color{pos}positive} rotation.
+            \item {\color{neg}\textbf{levorotatory}}: a compound exhibiting {\color{neg}negative} rotation.
+            \item No direct relationship between R/S system of nomenclature, as that is independent of conditions, but dependent on observation angle.
+            \item The direction of polarized light, however, is dependent on conditions, and can change based on temperature or wavelength even with the same given configuration.
+        \end{itemize}
+    \subsubsection{Enantiomeric Excess}
+    \begin{itemize}
+        \item \textbf{Optically (enantiomerically) pure}: a solution containing a single enantiomer.
+        \item \textbf{Racemic mixtrue}: a solution containing equal amounts of both enantiomers, resulting in an optically inactive appearance.
+        \item \textbf{Enantiomeric excess (\(ee\))}: when a solution containing both enantiomers in unequal amounts, appearing optically active.
+            \begin{itemize}
+                \item \(\%~ee = \dfrac{|\text{observed}~\alpha|}{|\text{pure}~\alpha|} \times 100\%\)
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
 
 \subsection{Enantiomers and Diastereoisomers}
