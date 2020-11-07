@@ -32,7 +32,7 @@
 
 % Chemistry:
     \usepackage{chemfig, chemformula}
-        \setchemfig{atom sep=2.5em}
+        \setchemfig{atom sep=2.5em, cram width=1ex}
 
 % Style:
     \usepackage{xcolor, pagecolor} 
@@ -44,7 +44,8 @@
 % Utility:
     \usepackage{graphicx, booktabs, multirow, multicol}
     \usepackage[justification=centering]{caption}
-        \captionsetup[table]{skip=5pt}
+        \captionsetup[table]{skip=3pt,labelformat=empty}
+        
 
     \usepackage{siunitx}
         \sisetup{
@@ -58,7 +59,7 @@
         \hypersetup{
             colorlinks=false,
             linktoc=all,     
-            linkcolor=diblue,  
+            linkcolor=b-Cold,  
         }
     \usepackage[all]{hypcap}
 
@@ -133,8 +134,8 @@
     \definecolor{G-Leaf}{HTML}{7eda8b}  
 
 % Fresh: #14e899 → #59eccf
-    \definecolor{g-Fresh}{HTML}{38F9D7}    
-    \definecolor{t-Fresh}{HTML}{43E97B}  
+    \definecolor{g-Fresh}{HTML}{14e899}    
+    \definecolor{t-Fresh}{HTML}{59eccf}  
 
 % Ocean: #45b4eb → #2217da
     \definecolor{b-Ocean}{HTML}{45b4eb}  

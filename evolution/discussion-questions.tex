@@ -13,6 +13,136 @@
 \fancyhead{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Week 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section*{Week 6}\phantomsection
+\addcontentsline{toc}{section}{\textbf{Week 6}}
+\fancyhead[R]{\hyperlink{home}{Week 6}}
+
+\fancyhead[L]{\hyperlink{home}{Whale Menopause}}
+\subsection{Whale Menopause}
+\subsubsection{Background}
+\begin{itemize}
+    {\color{G-Moon}\item Why is the evolution of postreproductive survival in females (menopause) unusual from an evolutionary perspective?}
+        \begin{itemize}
+            \item Limits ability to reproduce directly and pass on genes, despite being alive still.
+        \end{itemize}
+    {\color{G-Moon}\item What is meant by the term “inclusive fitness”?}
+        \begin{itemize}
+            \item Fitness increased via indirect benifits due to increasing fitness of kin, thus their own fitness.
+        \end{itemize}
+    {\color{G-Moon}\item What hypothesis did this study address?}
+        \begin{itemize}
+            \item The hypothesis that menopause evolved via inclusive fitness benefits gained by helping kin.
+        \end{itemize}
+\end{itemize}
+\subsubsection{Methods}
+\begin{itemize}
+    {\color{G-Moon}\item What data did the authors’ gather to test their hypothesis?}
+        \begin{itemize}
+            \item Analysis of 751 hrs of video footage to determin who leads the pod.
+            \item Multigenerational demographic records used to determin relatedness.
+            \item Total of 102 individuals, ranging from 0 to 91 years of age.
+        \end{itemize}
+\end{itemize}
+\subsubsection{Results}
+\begin{itemize}
+    {\color{G-Moon}\item What do Figures 1C and 1D depict?}
+        \begin{itemize}
+            \item 1C counts of leadership between male and female.
+            \item 1D counts of leadership between postreproductive and reproductive.
+            \item Show that both female and postreproductive females lead more often.
+        \end{itemize}
+    {\color{G-Moon}\item What does Figure 2 depict?}
+        \begin{itemize}
+            \item Depicts leadership score relative to salmon abundance.
+            \item Postreproductive had higher probability to lead in low salmon abundance.
+        \end{itemize}
+    {\color{G-Moon}\item What does Figure 3 depict?}
+        \begin{itemize}
+            \item Shows rate of following of males and female relative to non-mother and mother leaders, and reproductive and post-reproductive leaders.
+            \item Shows males were more likely to follow and postreproductive leaders had higher rates of following.
+            \item No overall difference in rate at which males followed their motheres compared to non-mothers.
+        \end{itemize}
+    {\color{G-Moon}\item What were the 3 major findings of the study?}
+        \begin{itemize}
+            \item Female and postreproductive females lead more often. 
+            \item Postreproductive had higher probability to lead in low salmon abundance.
+            \item Shows males were more likely to follow both mothers and non-mothers, and postreproductive leaders had higher rates of following in both sexes.
+        \end{itemize}
+\end{itemize}
+\subsubsection{Conclusions}
+\begin{itemize}
+    {\color{G-Moon}\item What was the major conclusion of this study?}
+        \begin{itemize}
+            \item That long live whales, even postreproduction, can act as repositories of ecological knowledge.
+            \item Postreproductive aged female killer whales tended to lead groups to sources of food in times when pressure to locate food was the highest. 
+            \item Supports hypothesis that menopause may actually be a adaptive trait.
+        \end{itemize}
+    {\color{G-Moon}\item Why do the authors’ hypothesize that male and female offspring differ in the benefits they receive from following their mother?}
+        \begin{itemize}
+            \item Due to observed differences in offspring survivorship after deaths of mothers. Males tended to die faster and more often, suggesting the inclusive benifit of following mothers were grater than in females.
+        \end{itemize}
+\end{itemize}
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Week 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Week 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begingroup
+\clearpage
+\section*{Week 5}\phantomsection
+\addcontentsline{toc}{section}{\textbf{Week 5}}
+\fancyhead[R]{\hyperlink{home}{Week 5}}
+
+\fancyhead[L]{\hyperlink{home}{Heritability Exercise}}
+\subsection{Heritability Exercise}
+\begin{enumerate}
+    {\color{G-Moon}\item Approximately, what is the heritability of running speed in the breeder’s dog population?}
+{\small\begin{lstlisting}
+# data given used to create dataframe
+d = {
+'Midoffspring':[10.8, 8, 8, 9.7, 6.6, 6.2, 12.5, 7.4,
+3.4, 6.7, 7.9, 13.6, 7.4, 12.1, 11.3], 
+'Midparent':[12.7, 7.6, 14.4, 4.3, 11.3, 12.5, 8.9,
+8.2, 6.3, 12.7, 13.9, 7.3, 5.9, 12.8, 12.5]
+}
+df = pd.DataFrame(data=d)
+
+# get coefficients of linear fit
+slope, intercept, r_value, p_value, std_err = 
+stats.linregress(df['Midparent'], df['Midoffspring'])
+
+# plot graph, make label for
+ax = sns.regplot(df['Midparent'], df['Midoffspring'], 
+line_kws={'label':
+"y={0:.1f}x+{1:.1f}".format(slope,intercept)})
+
+# plot legend
+ax.legend()
+plt.show()
+\end{lstlisting}}
+\begin{center}
+    \includegraphics[scale=0.35]{images/heritability.png}
+\end{center}
+    {\color{G-Moon}\item If she selectively breeds her dogs, will the next generation run substantially faster than the dogs she has now?}
+        \begin{itemize}
+            \item No, very low heritability, nearly 0. (y=0.0x+8.3)
+        \end{itemize}
+    {\color{G-Moon}\item What else would you suggest the breeder try if she wants to win more races?}
+        \begin{itemize}
+            \item Continue to track the midoffspring and midparent speeds, selectively breeding those who tend have a higher heritability ratio in regards to speed
+            \item Such a low slope could indicate low heritability of speed, so might be more useful to pursue environmental factors.
+        \end{itemize}
+\end{enumerate}
+
+
+
+%\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Week 5%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

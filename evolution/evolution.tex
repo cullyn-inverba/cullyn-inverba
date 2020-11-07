@@ -14,8 +14,6 @@
 \fancyhead[R]{\hyperlink{home}{\nouppercase\leftmark}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\clearpage
-%\begingroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
@@ -204,7 +202,7 @@
         \begin{itemize}
             \item Allele frequencies do not change from one generation to the next.
             \item Genotypic frequencies after one generation of random mating: \(p^2 + 2pq + q^2\)
-            \item Evolutionary influences: genetic drift, mate choice, assortative mating, natural selection, sexual selection, mutation, gene flow, meiotic drive, genetic hitchhicking, population bottleneck, founder effect, and inbreeding.
+            \item Evolutionary influences: genetic drift, mate choice, assortative mating, natural selection, sexual selection, mutation, gene flow, meiotic drive, genetic hitchhiking, population bottleneck, founder effect, and inbreeding.
                 \begin{itemize}
                     \item \textit{Most of these influences will be discussed later}.
                 \end{itemize}
@@ -224,12 +222,22 @@
     \end{itemize}
     \subsubsection{By Effect on a Trait}
     \begin{itemize}
-        \item \textbf{Stablizing selection}: the simplies case in which selection acts to hold a trait at a stable optimum.
+        \item \textbf{Stabilizing selection}: the simplies case in which selection acts to hold a trait at a stable optimum.
+            \begin{itemize}
+                \item Reduces the individuals in the trails of the trait's distribution, reducing variation.
+            \end{itemize}
         \item \textbf{Directional selection}: favours extreme values of a trait.
-        \item \textbf{Disruptive selection}: acts during transition periods when current mode is sub-optimal, but alters trait in more than one direction.
+            \begin{itemize}
+                \item Directional selection on a continuous trait changes the average value of the trait in the population.
+                \item Can reduce variation in the population, generally not by large amounts though.
+            \end{itemize}
+        \item \textbf{Disruptive selection (diversifying selection)}: acts during transition periods when current mode is sub-optimal, but alters trait in more than one direction.
             \begin{itemize}
                 \item \textbf{Univariate}: when the trait is both quantitatively favoured in either direction and can lead to speciation.
+                \item Generally {\color{o-Sun}increases the variance} on continuous traits. 
+                \item May be more common than generally recognized.
             \end{itemize}
+        \item All three increases the mean fitness of the population.
     \end{itemize}
     \subsubsection{By Effect on Genetic Diversity}
     \begin{itemize}
@@ -325,21 +333,15 @@
             \item Constrains speciation by combining gene pools of the groups.
             \item May result in the addition of novel genetic variants in the gene pool.
         \end{itemize}
-    \subsubsection{Factors of Gene Flow}
-    \begin{itemize}
         \item Gene flow is expected to be lower in species that:
             \begin{itemize}
                 \item have low mobility or dispersal.
                 \item occur in fragmanted habits.
-                \item have long distances between populations.
+                \item have long distances 2between populations.
                 \item have small population sizes.
             \end{itemize}
         \item \textbf{Allopatric speciation}: when gene flow is blocked by {\color{o-Sun}physical} barriers that inhibit gene flow.
         \item \textbf{Sympatric speciation}: result of gene flow that is blocked due to {\color{o-Sun}non-physical} barriers that inhibit gene flow.
-            \begin{itemize}
-                \item Often reproduction barriers are the main factors.
-            \end{itemize}
-    \end{itemize} 
 \end{itemize}
 
 \subsection{Genetic Drift}
@@ -403,7 +405,7 @@
                     \item Often responsbile for homogenizing sequences of duplicate genes over long periods of time, which reduces nucleotide divergence.
                 \end{itemize}
         \end{itemize}
-    \item \textbf{Genetic hithicking}: change in allele frequency not because of natural selection, but due to proximity to a gene undering selective sweep.
+    \item \textbf{Genetic hitchhiking}: change in allele frequency not because of natural selection, but due to proximity to a gene undering selective sweep.
         \begin{itemize}
             \item \textbf{Selective sweep}: a beneficial mutation that increases frequency and generally becomes fixed. 
         \end{itemize}
@@ -412,7 +414,7 @@
         \begin{itemize}
         \item \textbf{Neutral theory of molecular evolution}: most evolutionary changes occur at the molecular level.
         \item Most variation is due to random genetic drift of mutant alleles that are selectively neutral.
-        \item Compatable with phenotypic evolution, as phenotypes are driven by molecular changes.
+        \item Compatible with phenotypic evolution, as phenotypes are driven by molecular changes.
         \item Most mutations are neutral with respect to fitness.
         \item A minority of mutation are advantageous.
         \item Substitution rate predicted to be neutral, equal to per-individual mutation rate, {\color{o-Sun}independent} of population size. 
@@ -420,7 +422,7 @@
             \begin{itemize}
                 \item \(K_A\): number of nonsynonymous substitutions (replacement).
                 \item \(K_S\): number of synonymous substitutions (silent).
-                \item {\color{pos}\(K_A > K_s\)} signals for {\color{pos}positive selection}.
+                \item {\color{pos}\(K_A > K_s\)} signals for {\color{pos}diversifying selection}.
                 \item {\color{neg}\(K_A < K_s\)} signals for {\color{neg}purifying selection}.
             \end{itemize}
         \end{itemize}
@@ -462,10 +464,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
 
-\clearpage
-%\begingroup
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
@@ -486,25 +484,106 @@
     \item Factors that influences disequilibrium: selection, rate or genetic recombination, mutation rate, genetic drift, system of mating, population structure.
         \begin{itemize}
             \item Undertanding linkage desequilibrium in a genome can be a powerful signal of the population genetic processes that structure it.
-            \item Selection, genetic drift and population admixture act to {\color{pos}create disequilibrium}. 
-            \item Recombination and outbreeding (sexual reproduction) act to {\color{neg}reduce disequilibrium}.
+            \item Selection, genetic drift, assortative mating, and population admixture act to {\color{pos}create disequilibrium}. 
+            \item Recombination and outbreeding act to {\color{neg}reduce disequilibrium}.
         \end{itemize}
     \item Level of linkage disequilibrium can between \(A\) and \(B\) can be quantified by the {\color{o-Sun}coefficient of linkage disequilibrium, \(D_{AB}\)}.
         \begin{itemize}
             \item Formula: \(D_{AB}=P_{AB} - P_{A}P_{B}\)
-            \item \(P_{AB}\): the frequency with which both occur together on same gamete, or the frequency of the \(AB\)haplotype.
+            \item \(P_{AB}\): the frequency with which both occur together on same gamete, or the frequency of the \(AB\) haplotype.
             \item \(P_AP_B\): product of the probabilities give the probability they occur together.
             \item When there is a difference, the magnitude of the coefficient rises, indicating linkage disequilibrium.
+            \item Strong recent selection can be indicated by linkage disequilibrium of allels located next to neutral allels.
         \end{itemize}
-    \subsubsection{Recombination's Effect on Diesquilibrium}
+    \subsubsection{Recombination's Effect on  Linkage Diesquilibrium}
     \begin{itemize}
-        \item 
+        \item Linkage diesquilibrium (\(D\)) will converge to zero depending of the magnitude of the recombination rate (\(c\)) between two loci the absence of natural selection, inbreeding, and genetic drift.
+        \item The smaller the distance between the two loci, the smaller the rate of convergence of D to zero.
+        \item Genetic recombination tends to randomize genotypes, thus it tends to reduce frequency of overrespresented chromosome haplotypes and increases underrepresented haplotypes. 
+        \item In short, recombination reduces linkage disequilibrium.
     \end{itemize}
 \end{itemize}
 
 \subsection{Adaptive Significance of Sex}
 \begin{itemize}
-    \item 
+    \item \textbf{Parthenogenesis}: a natural form of {\color{o-Sun}asexual reproduction} in which growth and development of embryos occur without fertilization.
+    \item \textbf{Hermaphrodite}: an organism that has complete or partial reproductive organs and can produce gametes normally associated with both sexes.
+        \begin{itemize}
+            \item Allows the either partner to act as male of female in sexual reproduction.
+            \item \textbf{Sequential}: bon as one sex, but later changes into the opposite.
+            \item \textbf{Simultaneous}: fully functioning male and female genitalia.
+        \end{itemize}
+    \subsubsection{Maynard Smith Assumptions}
+    \begin{itemize}
+        \item[1.] A female's reproductive mode does not affect how many offsping she makes.
+        \item[2.] A female's reproductive mode does not affect the probability that her offspring will survive.
+        \item Designed to question advantage of either mode of reproduction (asexual vs sexual).
+        \item Predicts asexual females should be dominant reproduction form.
+            \begin{itemize}
+                \item Due to the {\color{o-Sun}two-fold cost of sex}: requires two individuals and some of the offspring are male.
+                \item Asexual reproduction of females would have all of the individuals reproduce and pass on genes, leading to quick dominance.
+            \end{itemize}
+        \item The prediction is not seen, so it raises question of what the benifits of sexual reproductive are.
+    \end{itemize}
+    \subsubsection{Violations of Maynard Smith Assumptions}
+    \begin{itemize}
+        \item[1.] Male parental care can influence how many offspring survives or can be made, though this violatin is rare.
+        \item[2.] Presence of self-compatible hermaphrodites and males in same organism means males must:
+            \begin{itemize}
+                \item collectively fertilize a proportion of eggs that exceed their own frequency in the population ($\alpha$);
+                \item and/or produce offsring that have a higher relative fitness (\(w\)).
+                \item Condition for male persistance: \(\alpha w>2\)
+            \end{itemize}
+        \item Raises the question how male fertilization increases relative fitness.
+    \end{itemize}
+    \subsubsection{Consequences of Sex}
+    \begin{itemize}
+        \item \textbf{Sexual reproduction}: meiosis with crossing over and mating between unrealted individuals.
+            \begin{itemize}
+                \item Meiosis results in genetic recombination.
+                \item Mating between unrealted individuals (outcrossing) results in allelic segregation.
+            \end{itemize}
+        \item {\color{o-Sun}Segregation} tends to restore the population to the {\color{o-Sun}Hardy-Weinberg equilibrium}.
+        \item {\color{o-Sun}Recombination} tends to restore the population to {\color{o-Sun}linkage equilibrium}.
+    \end{itemize}
+    \subsubsection{Maintenance of Sex}
+    \begin{itemize}
+        \item More attention is given to the maintenance of sex via its effects on linkage disequilibrium. 
+        \item Sex {\color{o-Sun}purges deleterious mutations}.
+            \begin{itemize}
+                \item \textbf{Genetic load}: the burden imposed by the accumulating mutations in a population.
+                \item \textbf{Muller's ratchet}: mutations should accumulate in asexual lineages.
+                    \begin{itemize}
+                        \item Lack of ability to purge mutations means that drift has higher chance of removing smaller proportion of mutation free individuals.
+                        \item Thus, number deleterious mutations increases in individuals remaining, overtime lowering fitness of lineage. 
+                    \end{itemize}
+                \item A higher mutation rate selects for more frequent outcrossing; thus more males (more sexual reproduction).
+                \item More frequent outcrossing results in more recombination, which opposes genetic drifts tendency of creating linkage disequilibrium.
+                    \begin{itemize}
+                        \item Recombination recreates lost genotypes caused by random chance due to drift.
+                    \end{itemize}
+                \item Even if two individuals mate carrying deleterious mutations, then there is still a chance that they can produce mutation free offsping.
+                \item Genes responsbile for sex are maintained because they help create zero-deleterious-mutation genotypes. 
+            \end{itemize}
+        \item Sex {\color{o-Sun}accelerates adaptive evolution}.
+            \begin{itemize}
+                \item Natural selection also helps creates linkage disequilibrium, creating chances at losing advantageous genotype.
+                    \begin{itemize}
+                        \item Sex again introduces recombination allowing for recovery of lost advantageous genotypes.
+                        \item Recombination can be can also disadvantageous once optimal genotypes arise, raising question how it remains useful.
+                    \end{itemize}
+                \item \textbf{Red Queen hypothesis}: sex remains beneficial indefintely in populations subject to ever-changing selection.
+                    \begin{itemize}
+                        \item Results in coevolutionary arms races.
+                        \item Genotypes in lower-than-equilibrium frequencies due to previous disadvantage may soon become advantageous.
+                    \end{itemize}
+                \item Thus, sex is continually selected for as recombination is continually favored in changing conditions.
+                    \begin{itemize}
+                        \item Creates an accelrated rate of adaptive evolution in genes that take advantage of changing fitness of genotypes relative eachother.
+                    \end{itemize}
+                \item Genes for sex are maintained in populations due to higher frequencies of genetic hitchhiking in genotypes they create.
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -515,38 +594,173 @@
 \section{Quantitative Genetics}\phantomsection
 \subsection{The Nature of Quantitative Traits}
 \begin{itemize}
-    \item 
+    \item \textbf{Quantitative genetics}: deals with phenotypes that vary continuosly due to multilocus traits and environmental factors.
+        \begin{itemize}
+            \item Allows for the prediction of how a population will respond to selection, even when we do not know the genetic basis of the trait.
+        \end{itemize}
+    \item \textbf{Qualitative traits}: descrete traits that can be assigned individual categories by observation of simple genetic test.
+    \item \textbf{Quantitative traits}: continuous traits determined by the combined influence of the genotype at multiple loci and the environment; the focus of quantitative genetics.
+        \begin{itemize}
+            \item Study of continuous distribution requires many other statistical methods such as the effect size, mean, and variance, to link phenotypes to genotypes.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Heritable Variation}
 \begin{itemize}
-    \item 
-\end{itemize}
-
-\subsection{Measuring Differences}
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\subsection{Predicting Evolutionary Responses}
-\begin{itemize}
-    \item 
+    \item \textbf{Heritability}: the degree of {\color{o-Sun}variation} in a phenotypic trait in a population that is due to genetic variation betwen individuals in that population.
+    \item \textbf{Phenotypic variance (V\(_{P}\))}: the genetic variance (V\(_{G}\)) combined with the environmental variance (V\(_{E}\)).
+        \begin{itemize}
+            \item {\color{o-Sun}\(V_P = V_G + V_E + V_{GE}\)}
+            \item \(V_{GE}\) represents variance associated with {\color{o-Sun}intereaction} of genetic and environmental factors. 
+        \end{itemize}
+    \subsubsection{Genetic Variance}
+    \begin{itemize}
+        \item \textbf{Additive genetic variance (V\(_{A}\))}: how much the phenotypic trait is influenced by traits that show an additive effect on the quantitative traits.
+            \begin{itemize}
+                \item Measures the magnitude to which individual phenotypic differences can be predicted due to additive effects of allelic substitutions.
+                \item The greater the additive genetic variation for the trait, the greater is response to selection can be.
+            \end{itemize}
+        \item \textbf{Dominance genetic variance (V\(_{D}\))}: associated with the dominant gene actions which cover the influence of the recessive alleles at the particular locus.
+        \item \textbf{Epistasis (V\(_{I}\))}: occurs due to statistical interaaction among loci, i.e., gene-by-gene modification.
+        \item  {\color{o-Sun}\(V_G = V_A + V_D + V_I\)}
+    \end{itemize}
+    \item \textbf{Broad-sense heritability (H\(^{2}\))}: {\color{o-Sun}all genetic contributions} to a populations phenotypic variance, including additive, dominant, and epistatic, and maternal/paternal effects. 
+        \begin{itemize}
+            \item \(H^2 = \dfrac{V_G}{V_P}\)
+        \end{itemize}
+    \item \textbf{Narrow-sense heritability (h\(^{2}\))}: proportion of the total phenotypic variance that is due to the {\color{o-Sun}additive effects} of genes.
+        \begin{itemize}
+            \item \(h^2 = \dfrac{V_A}{V_P}\)
+            \item Allows prediction of how a population will respond to selection.
+            \item The greater the additive genetic variation for the trait, the greater its response to selection can be.
+        \end{itemize}
+    \subsubsection{Estimating Heritability}
+    \begin{itemize}
+        \item Heritability is often estimated by measuring correlations between parents and offspring.
+        \item \textbf{Midparnet}: the average of the trait value between parents.
+            \begin{itemize}
+                \item The mother's value often has a scaling value applied to help account for developmental sex differences.
+            \end{itemize}
+        \item \textbf{Midoffspring}: the average value of a trait among offsping.
+        \item Correlations are determind through a line of best fit.
+            \begin{itemize}
+                \item Heritability of the trait is measued between 0 and 1 determind by the slope of the best fit line plotted against midparant and midoffsping values.
+                \item Using a method of {\color{o-Sun}least-squares linear regression}, which minimizes the sum of the squared vertical distances between points, the heritability slope represents {\color{o-Sun}narrow-sense heritability}.
+            \end{itemize}
+        \item If a trait is heritable, monozygotic twins will resemble each other more than dizygotic twins.
+    \end{itemize}
+    \subsubsection{Predicting Evolutionary Responses}
+    \begin{itemize}
+        \item \textbf{Selection differential (S)}: the difference between the mean of the selected individuals ($\bar{x}$) and the mean of the entire population ($\mu$)
+            \begin{itemize}
+                \item \(S=\bar{x}-\mu\)
+                \item Can be used to create a statical selection gradient, which is used to represent the strength of selection.
+            \end{itemize}
+        \item \textbf{Breeder's equation}: evolutionary response (R) can be predicted using narrow-sense heritability and the selection differential.
+            \begin{itemize}
+                \item {\color{o-Sun}\(R=h^2S\)}
+                \item The greater the heritability and selection differential, the greater the response to selection.
+            \end{itemize}
+        \item When characters are genetically correlated, selection for one can drag the other along through genetic hitchhiking.
+        \item Selection on the alleles at any single locus affecting a quantitative is often very weak; substantial genetic variation may persist at equilibrium between mutation and selection.
+        \item {\color{o-Sun}Low heritability} often represents populations effected by {\color{o-Sun}strong selection}, as selection removes variation.
+        \item {\color{o-Sun}Higher heritability} represents {\color{o-Sun}high variance} within the population. 
+    \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\endgroup
 
-\clearpage
-%\begingroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \setcounter{section}{10}
 \clearpage
-\section{}\phantomsection
-\subsection{}
+\section{Sexual Selection}\phantomsection
+\subsection{Sexual Dimorphism and Sex}
+\begin{itemize}
+    \item \textbf{Sexual Dimorphism}: when two sexes of the same species exhibit different characteristics beyond differences in sexual organs.
+        \begin{itemize}
+            \item \textbf{Primary sexual characteristics}: differences that contribute directly to reproduction and serve no purpose in courtship.
+            \item \textbf{Secondary sex characteristics}: traits that give advantage over rivals in courtship or competition and are not directly realted to reproduction.
+            \item Males and females often have different equilibrium strategies, due in large part to relative parental investment.
+        \end{itemize}
+    \subsubsection{Asymmetries Between the Sexes}
+        \begin{itemize}
+            \item \textbf{Parental investment}: the energy and time expended constructing and caring for the offspring.
+                \begin{itemize}
+                    \item Typically higher in females.
+                    \item Ultimately the investment is measured in fitness.
+                \end{itemize}
+            \item Females produce eggs which often require substantial investment; often limiting mating availability.
+            \item Males produce many small gametes; allowing for frequent and multiple mating.
+            \item Variation in mating success is predictied to be highest in males, as females are often the limiting factor and have no trouble reproducing.
+        \end{itemize}
+    \subsubsection{Sexual Dimorphism in Humans}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+\end{itemize}
+
+\subsection{Sexual Selection}
+\begin{itemize}
+    \item \textbf{Sexual selection}: differences in reproductive success due to variation among individuals in success at getting mates.
+    \begin{itemize}
+        \item \textbf{Intersexual selection}: when members of one sex choose mates of the other sex.
+        \item \textbf{Intrasexual selection}: when members of same sex compete for access to members of the opposite sex.
+    \end{itemize}
+    \item If sexual selection is strong for one sex, and weak for the other, then we predict that:
+    \begin{itemize}
+        \item members of the sex subject to strong sexual selection will be competitive (intersexual).
+        \item members of the sex subject to weak sexual selection will be choosy (interasexual).
+    \end{itemize}
+    \subsubsection{Selection on Males: Competition}
+    \begin{itemize}
+        \item Male-male competition results in mainly combat, alternate mating strategies, sperm competition, and infanticide.
+        \item \textbf{Combat}: fighting over access to mates that favours morphological traits such as body size, weaponry, armor, and tactical cunning.
+            \begin{itemize}
+                \item Typically leads to a select few dominant males mating with majority of females.
+            \end{itemize}
+        \item \textbf{Alternative strategies}: other strategies that are often employed by the less combat prone males.
+            \begin{itemize}
+                \item Variety of examples, such as pretendding to be female, sneaking, false displays of strength, and more.
+                \item Generally less successful, as it still requires the fooling of females or avoidance of dominant males and only works well in small relative frequency.
+            \end{itemize}
+        \item \textbf{Sperm competition}: competition between gametes can continue after physical mating is complete.
+            \begin{itemize}
+                \item Large quantities of ejaculation, guarding of mates, prolonged copulations, deposit of a copulatory plug, applications of disadvantage pheromones, and more.
+            \end{itemize}
+        \item \textbf{Infanticide}: improvement of males reproductive success at cost of females due to killing of previous males offspring.
+    \end{itemize}
+    \subsubsection{Selection on Males: Female Choice}
+    \begin{itemize}
+        \item Intrasexual selection that occurs when males cannot monopolize access to females, allowing for females to choose mates.
+        \item Models for female preference include: good genes, direct benefits, preexisting sensory bias, and runaway sexual selection.
+        \item \textbf{Good genes}: traits that code of ornamented displays can indicate higher fitness.
+            \begin{itemize}
+                \item Often causes a handicap, which may be due to preexisting sensory bias and runaway sexual selection, or just a further dispaly of fitness.
+                \item Sometimes displays end up being directly beneficial to reproduction or competition by chance.
+                \item Other times it's just clear evidence of direct fitness advantages for partners.
+            \end{itemize}
+        \item \textbf{Preexisting bias}: preexisting preference, which arose before male trait, selecting for further evolution of the trait.
+            \begin{itemize}
+                \item Different biases can help lead to speciation.
+            \end{itemize}
+        \item \textbf{Runaway sexual selection}: when a locus for a trait in males becomes linked to a trait that codes for mating preferences in females.
+            \begin{itemize}
+                \item Can be direct preferences, or indirect. Can lead to overrespresentions of a trait that does nothing, or even harms the fitness of males.
+            \end{itemize}
+        \item Gender roles can be reversed, but female choice is more common.
+    \end{itemize}
+    \subsubsection{Selection on Females}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+\end{itemize}
+
+\subsection{Sexual Selection in Plants}
 \begin{itemize}
     \item 
 \end{itemize}
+
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -596,9 +810,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
 
-\clearpage
-%\begingroup
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
@@ -622,8 +833,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\endgroup
 
-\clearpage
-%\begingroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begingroup
 \clearpage
@@ -647,5 +856,4 @@
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\endgroup
 \end{document}

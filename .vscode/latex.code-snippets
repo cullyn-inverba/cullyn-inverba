@@ -40,7 +40,11 @@
 	"Answer" : { "prefix": "answer", "body": "{\\color{o-Sun}\\textbf{$1}}", "scope": "latex"},
 	"Low Emphasis" : { "prefix": "lowcon", "body": "{\\color{darklc}", "scope": "latex"},
 	"Positive Emphasis": { "prefix": "pos", "body": "{\\color{pos}", "scope": "latex"},
+<<<<<<< HEAD:.vscode/latex.code-snippets
 	"Negative Embassies": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
+=======
+	"Negative Emphasis": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
+>>>>>>> 2250c16979d9a695107ac43bc5387ae926936184:latex.code-snippets
 	"True": { "prefix": "true", "body": "{\\color{true}", "scope": "latex"},
 	"False": { "prefix": "false", "body": "{\\color{false}", "scope": "latex"},
 
@@ -56,6 +60,8 @@
 	"Inline pi": { "prefix": "pi", "body": "$\\pi$"},
 	"Inline mu": { "prefix": "mu", "body": "$\\mu$"},
 
+	"oxygen": { "prefix": "oxygen", "body": "\\ch{O2}"},
+
 	"Pka": { "prefix": "pka", "body": "\\(pK_a\\)"},
 	"Pkb": { "prefix": "pkb", "body": "\\(pK_b\\)"},
 
@@ -65,7 +71,7 @@
 	"Inline Hat": {"prefix": "hat", "body": "\\(\\hat{$1}\\)$0"},
 
 	"Subsection": {
-		"prefix": "Subsection", 
+		"prefix": "Rubsection", 
 		"body": [
 			"\\subsection{$1}",
 			"\\begin{itemize}",
