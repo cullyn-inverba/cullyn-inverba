@@ -36,11 +36,11 @@
 	},
 
 	"Color": { "prefix": "color", "body": "{\\color{$1}", "scope": "latex"},
-	"Emphasise" : { "prefix": "emph", "body": "{\\color{o-Sun}", "scope": "latex"},
+	"Emphasis" : { "prefix": "emph", "body": "{\\color{o-Sun}", "scope": "latex"},
 	"Answer" : { "prefix": "answer", "body": "{\\color{o-Sun}\\textbf{$1}}", "scope": "latex"},
-	"Low Emphasise" : { "prefix": "lowcon", "body": "{\\color{darklc}", "scope": "latex"},
-	"Positive Emphasise": { "prefix": "pos", "body": "{\\color{pos}", "scope": "latex"},
-	"Negative Empasises": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
+	"Low Emphasis" : { "prefix": "lowcon", "body": "{\\color{darklc}", "scope": "latex"},
+	"Positive Emphasis": { "prefix": "pos", "body": "{\\color{pos}", "scope": "latex"},
+	"Negative Embassies": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
 	"True": { "prefix": "true", "body": "{\\color{true}", "scope": "latex"},
 	"False": { "prefix": "false", "body": "{\\color{false}", "scope": "latex"},
 
