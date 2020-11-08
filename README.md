@@ -1,6 +1,6 @@
 ## Hello!
 
-Initially made this to get a basic understanding of how to use git and a means for integrating latex into vscode using the fantstic latex workshop extension: https://github.com/James-Yu/LaTeX-Workshop
+Initially made this to get a basic understanding of how to use git and a means for integrating latex into vscode using the fantstic latex workshop extension: https://github.com/James-Yu/LaTeX-Workshop.
 
 Much of my previous school work, mostly just calculus and physics, was done on overleaf and is not included in this repository. Most university classes and various online notes will be located here going forward. Much of my old work, even in vscode, is depreciated. 
 
@@ -32,8 +32,3 @@ Probably little use to anyone, but including just incase. Also a WIP.
 * [Statistics](statistics/statistics.pdf)
 * [Linear Algebra](linear-algebra/linear-algebra.pdf)
 * [Python: Pandas](pandas/exercises)
-
-
-### Want to Help?
-
-If you would like to take notes with me, please do. I have yet to collaborate with anyone on github yet and don't know much about pull requests/merging. I would love to push on this boundary. I could try to make video on setting up vscode with latex, and and intro how to use my latex templates... but I'm a bit pressed for time right now. If anyone really wants some help, then create an issue and I'll do my best. 
