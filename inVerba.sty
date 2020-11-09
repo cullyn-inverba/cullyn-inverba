@@ -33,7 +33,7 @@
 % Font Realated:
     \usepackage[T1]{fontenc}
     \usepackage[utf8]{inputenc}
-        \renewcommand*\familydefault{\sfdefault} 
+    \usepackage[sfdefault, light]{roboto} 
     \usepackage{listings}
 
 % Chemistry:
@@ -71,15 +71,17 @@
 
 % Section Formating: 
     \usepackage{titlesec, titletoc}
-    \titleformat{\subsection}{\large\bfseries\color{B-Cold}}{}{0pt}{}
-    \titleformat{\subsubsection}{\normalfont\bfseries\color{b-Cold}}{}{0pt}{}
-    \titlecontents{section}[0 em]{\bfseries}{}{}{}
-    \titlecontents{subsection}
-    [1.618 em] {}{}{}{\titlerule*[0.618 em]{.}\contentspage}
-    \titlecontents{subsubsection}
-    [3.236 em] {}{\color{G-Moon}\small}{}{\titlerule*[0.618 em]{.}\contentspage}
-    \titlespacing*{\subsection}{0em}{3ex plus 9ex minus .2ex}{1ex plus .0ex minus .0ex}
-    \setlength{\parskip}{1ex plus 3ex minus 0ex}
+        \titleformat{\subsection}{\large\bfseries\color{B-Cold}}{}{0pt}{}
+        \titleformat{\subsubsection}{\normalfont\bfseries\color{b-Cold}}{}{0pt}{}
+        \titlecontents{section}[0 em]{\bfseries}{}{}{}
+        \titlecontents{subsection}
+        [1.618 em] {}{}{}{\titlerule*[0.618 em]{.}\contentspage}
+        \titlecontents{subsubsection}
+        [3.236 em] {}{\color{G-Moon}\small}{}{\titlerule*[0.618 em]{.}\contentspage}
+        \titlespacing*{\subsection}{0em}{3ex plus 9ex minus .2ex}{1ex plus .0ex minus .0ex}
+        \setlength{\parskip}{1ex plus 3ex minus 0ex}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%
 
 % Blue: #050E44 → #002083 → #1A5CB0 → #359BE2 → #4EB9FF 
