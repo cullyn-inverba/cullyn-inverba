@@ -1,9 +1,15 @@
 \ProvidesPackage{inverba}
+%     _     _    __          __                 __       
+%    (_)___| |  / /__  _____/ /_  ____ _  _____/ /___  __
+%   / / __ \ | / / _ \/ ___/ __ \/ __ `/ / ___/ __/ / / /
+%  / / / / / |/ /  __/ /  / /_/ / /_/ / (__  ) /_/ /_/ / 
+% /_/_/ /_/|___/\___/_/  /_.___/\__,_(_)____/\__/\__, /  
+%                                               /____/ 
+%     https://github.com/cullyn-inverba/Notes
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begingroup
+%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%
 
-% Page Formating:
+%Page Formating:
     \usepackage[hmargin=2.9cm,vmargin=2cm, headsep=1.2em,]{geometry} 
         \raggedright 
         \setlength\headheight{16pt}
@@ -26,8 +32,8 @@
 
 % Font Realated:
     \usepackage[T1]{fontenc}
-    \usepackage{sansmathfonts}
-    \usepackage[sfdefault, light]{roboto} 
+    \usepackage[utf8]{inputenc}
+        \renewcommand*\familydefault{\sfdefault} 
     \usepackage{listings}
 
 % Chemistry:
@@ -64,7 +70,7 @@
     \usepackage[all]{hypcap}
 
 % Section Formating: 
-\usepackage{titlesec, titletoc}
+    \usepackage{titlesec, titletoc}
     \titleformat{\subsection}{\large\bfseries\color{B-Cold}}{}{0pt}{}
     \titleformat{\subsubsection}{\normalfont\bfseries\color{b-Cold}}{}{0pt}{}
     \titlecontents{section}[0 em]{\bfseries}{}{}{}
@@ -74,13 +80,7 @@
     [3.236 em] {}{\color{G-Moon}\small}{}{\titlerule*[0.618 em]{.}\contentspage}
     \titlespacing*{\subsection}{0em}{3ex plus 9ex minus .2ex}{1ex plus .0ex minus .0ex}
     \setlength{\parskip}{1ex plus 3ex minus 0ex}
-
-%\endgroup
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begingroup
+%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%
 
 % Blue: #050E44 → #002083 → #1A5CB0 → #359BE2 → #4EB9FF 
     \definecolor {Diblue}{HTML}{050E44}     
@@ -114,7 +114,6 @@
     \color{darkText} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Gradients %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begingroup
 
 % Sun: #f98f7d → #ffb981 → #ffdb7b
     \definecolor{r-Sun}{HTML}{f98f7d}
@@ -157,7 +156,5 @@
 % Boolean: #36cfb8 -> #ff6b8b
     \definecolor{true}{HTML}{36cfb8}
     \definecolor{false}{HTML}{ff6b8b}
-%\endgroup
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Gradients %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
