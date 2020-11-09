@@ -23,12 +23,3 @@ Discord links for classes:
 * [CH 334: Organic Chem](https://discord.gg/aVKvN48)
 * [BI 358: Evolution](https://discord.gg/Zk8GYGB)
 * [BI 320: Organismal Physiology](https://discord.gg/m5dYgGf)
-
-
-# Online Self Taught Notes
-
-Probably little use to anyone, but including just incase. Also a WIP. 
-
-* [Statistics](statistics/statistics.pdf)
-* [Linear Algebra](linear-algebra/linear-algebra.pdf)
-* [Python: Pandas](pandas/exercises)
