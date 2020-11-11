@@ -36,7 +36,7 @@
 
 	"Color": { "prefix": "color", "body": "{\\color{$1}", "scope": "latex"},
 	"Emphasis" : { "prefix": "emph", "body": "{\\color{o-Sun}", "scope": "latex"},
-	"Answer" : { "prefix": "answer", "body": "{\\color{o-Sun}\\textbf{$1}}", "scope": "latex"},
+	"Answer" : { "prefix": "answ", "body": "{\\color{o-Sun}\\textbf{$1}}", "scope": "latex"},
 	"Low Emphasis" : { "prefix": "lowcon", "body": "{\\color{darklc}", "scope": "latex"},
 	"Positive Emphasis": { "prefix": "pos", "body": "{\\color{pos}", "scope": "latex"},
 	"Negative Emphasis": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
@@ -45,6 +45,7 @@
 
 
 	"Cations": { "prefix": "cation", "body": "{\\color{pos}\\ch{$1^+}}"},
+	"Hydrogen": { "prefix": "Hyd", "body": "{\\color{pos}\\ch{H^+}}"},
 	"Anions": { "prefix": "anion", "body": "{\\color{neg}\\ch{$1^-}}"},
 
 	"Inline alpha": { "prefix": "alpha", "body": "$\\alpha$"},
@@ -55,7 +56,11 @@
 	"Inline pi": { "prefix": "pi", "body": "$\\pi$"},
 	"Inline mu": { "prefix": "mu", "body": "$\\mu$"},
 
-	"oxygen": { "prefix": "oxygen", "body": "\\ch{O2}"},
+	"O2": { "prefix": "O2", "body": "\\ch{O2}"},
+	"CO2": { "prefix": "CO2", "body": "\\ch{CO2}"},
+	"H2O": { "prefix": "H2O", "body": "\\ch{H2O}"},
+
+	"UNIT": { "prefix": "sii", "body": "\\SI{$1}{$2}$0"},
 
 	"Pka": { "prefix": "pka", "body": "\\(pK_a\\)"},
 	"Pkb": { "prefix": "pkb", "body": "\\(pK_b\\)"},
