@@ -1273,8 +1273,7 @@
             \begin{align*}
                     \Delta S^\circ &= {\color{surr}-\dfrac{\Delta H^\circ}{T}} + \color{sys}\Delta S_{\text{sys}}\\
                     -T\Delta S^\circ &= {\color{surr}\Delta H^\circ} - \color{sys}T\Delta S_{\text{sys}}\\
-                    \Delta G^\circ &= {\color{surr}\Delta H^\circ} - {\color{sys}T\Delta S_{\text{sys}}}\\
-                    \Delta G^\circ &= {\color{surr}\Delta H^\circ} + {\color{sys}(- T\Delta S_{\text{sys}})}
+                    \Delta G^\circ &= {\color{surr}\Delta H^\circ} - {\color{sys}T\Delta S_{\text{sys}}}
             \end{align*}
             \begin{itemize}
                 \item \(\Delta H\) is then associated with {\color{o-Sun}the change in entropy of the surroundings}, as a transfer in energy to/from the surrondings from the system increases/decreases entropy of the surroundings.
@@ -1287,29 +1286,133 @@
             \item \(\Delta G^\circ\) is just \(\Delta S^\circ\) multiplied by the negative temperature in order to measure the entropy of the surroundings.
             \item Thus, {\color{o-Sun}\(\Delta G^\circ\) must be {\color{neg}negative} for  a reaction to be spontaneous.} (second law of thermodynamics)
         \end{itemize}
-    \item Often {\color{surr}\(\Delta H^\circ\)} is has a much greater contribution than {\color{sys}\(T\Delta S^\circ\)}, so enthalpy is commonly an indicator of the spontaneity.
+    \item Often {\color{surr}\(\Delta H^\circ\)} has a {\color{o-Sun}much greater contribution} than {\color{sys}\(T\Delta S^\circ\)}, so enthalpy is commonly an indicator of the spontaneity.
         \begin{itemize}
-            \item When more bond energy (\(\Delta H^\circ\)) is {\color{pos}broken} than formed, then the \(\Delta G^\circ\) is {\color{neg}decreased}, which {\color{pos}increases spontaneity}.
-            \item When more bond energy (\(\Delta H^\circ\)) is {\color{neg}formed} than released, then the \(\Delta G^\circ\) is {\color{pos}increased}, which {\color{neg}decreases spontaneity}.
+            \item When more bond energy is {\color{pos}broken (\(+\Delta H^\circ\)) }, then the \(\Delta G^\circ\) is {\color{neg}decreased}, which {\color{pos}increases spontaneity}.
+            \item When more bond energy is {\color{neg}formed (\(-\Delta H^\circ\))}, then the \(\Delta G^\circ\) is {\color{pos}increased}, which {\color{neg}decreases spontaneity}.
         \end{itemize}
-    \item However, temperature has great effect on entropy of the system:
+    \item However, temperature has a large influence on the entropy of the system:
         \begin{itemize}
-            \item An increase in temperature increases entropy of the system, which is {\color{o-Sun}not favorable}, as it {\color{pos}increases \(\Delta G^\circ\)}.
-            \item A {\color{neg}decrease in temperature} is leads to more bonds being {\color{neg}formed}, which {\color{neg}decreases} entropy of the system as energy is transferred to the surroundings.
+            \item An {\color{pos} \textbf{increase in temperature} (endothermic)} leads to more bond energy being {\color{pos}broken (+\(\Delta S_{\text{sys}}\))} since energy is transferred {\color{pos}from} the surroundings {\color{neg}(-\(\Delta S^\circ\))}, which is {\color{o-Sun}unfavorable}, as it {\color{pos}increases \(\Delta G^\circ\)}. 
                 \begin{itemize}
-                    \item This {\color{o-Sun}favorable}, as it {\color{neg}decreases \(\Delta G^\circ\)}.
+                    \item {\color{pos}\textbf{Endergonic}}: {\color{o-Sun}nonspontaneous} ({\color{pos}+\(\Delta G^\circ\)}) processes. 
+                \end{itemize}
+            \item A {\color{neg}\textbf{decrease in temperature} (exothermic)} leads to more bond energy being {\color{neg}formed (-\(\Delta S_{\text{sys}}\))} since energy is transferred {\color{neg}to} the surroundings \\ {\color{pos}(+\(\Delta S^\circ\))}, which is {\color{o-Sun}favorable}, as it {\color{neg}decreases \(\Delta G^\circ\)}.
+                \begin{itemize}
+                    \item {\color{neg}\textbf{Exergonic}}: {\color{o-Sun}spontaneous} ({\color{neg}-\(\Delta G^\circ\)}) processes.
                 \end{itemize}
         \end{itemize}
 \end{itemize}
 
 \subsection{Equilibria}
 \begin{itemize}
-    \item 
+    \item \textbf{Reaction quotient (\(Q_r, Q_c, Q\))}: a measurement of the relative quantities of products and reactants present in a reaction at a particular point in time.
+        \begin{itemize}
+            \item Defined as the the ratio of the effective (molar) concentrations of the product over the reactants.
+            \item General chemical reaction with $\alpha$ moles of reactant A and $\beta$ moles of reactant B to give $\rho$ moles of product R and $\sigma$ moles of product S:
+                \begin{itemize}
+                    \item \ch{$\alpha$ A + $\beta$ B <> $\rho$ R + $\sigma$ S}
+                \end{itemize}
+            \item Reaction quotient as a function of time:
+                \begin{itemize}
+                    \item \(Q_r(t)=\dfrac{R_t^\rho S_t^\sigma}{A_t^\alpha B_t^\beta}\)
+                \end{itemize}
+        \end{itemize}
+    \item \textbf{Equilibrium constant (\(K_{\text{eq}}, K^\circleddash\))}:  a chemical reaction's reaction quotient (\(Q_r\)) at chemical equilibrium given sufficient time.
+        \begin{itemize}
+            \item \(K_{\text{eq}} =\dfrac{R^\rho S^\sigma}{A^\alpha B^\beta}= \dfrac{\text{products}}{\text{reactants}}\) 
+            \item \(Q_r = K_{\text{eq}}\): the system is at equilibrium.
+            \item {\color{neg}\(Q_r < K_{\text{eq}}\)}: more reactants than products---reaction will shift towards the {\color{neg}products}. (right)
+                \begin{itemize}
+                    \item \(Q_r = 0\): \(Q_r\) << \(K_{\text{eq}}\)---reaction will shift towards products. 
+                \end{itemize}
+            \item {\color{pos}\(K_{\text{eq}} < Q_r \)}: more products than reactants---reaction will shift towards the {\color{pos}reactants}. (left)
+                \begin{itemize}
+                    \item \(Q_r = \infty\): \(Q_r\) >> \(K_{\text{eq}}\)---reaction will shift towards reactants. 
+                \end{itemize}
+        \end{itemize}
+    \item The ultimate direction of a reaction is governed by \(\Delta G^\circ\).
+        \begin{itemize}
+            \item \(\Delta G^\circ = -RT\ln{K_{eq}}\)
+                \begin{itemize}
+                    \item \(R\): gas constant \SI{8.314}{J\per\mol.K}
+                    \item \(T\): temperature in Kelvin (\(C^\circ-273.15\)). 
+                \end{itemize}
+            \item {\color{neg}-\(\Delta G^\circ\)}: the {\color{neg}products} are favored. (\(1 < K_{\text{eq}}\)) 
+            \item {\color{pos}+\(\Delta G^\circ\)}: the {\color{pos}reactants} are favored. (\(K_{\text{eq}} < 1\))
+            \item A small difference in \(\Delta G^\circ\) can have significant impact on the \(K_{\text{eq}}\) and ultimately determines the yield of products that can be expected from any reaction.
+        \end{itemize}
+    \item The relationship between \(\Delta G^\circ\) and equilibrium falls under the realm of {\color{o-Sun}thermodynamics}, i.e., the study of how energy is distributed under influence of entropy, i.e., the spontaneity/direction of reactions.
 \end{itemize}
 
 \subsection{Kinetics}
 \begin{itemize}
-    \item 
+    \item \textbf{Kinetics (reaction kinetics)}: the investigation of experimental condictions that influence the {\color{o-Sun}speed (rate)} of chemical reactions.
+        \begin{itemize}
+            \item Spontaneity has nothing to do with the rate of a reaction.
+            \item Reveals information about \textit{reaction mechanisms} and \textit{transition states}, as well as the construction of models that describe reactions.
+        \end{itemize}
+    \item \textbf{Rate equation (general)}: rate = k[reactants]
+        \begin{itemize}
+            \item \(k\): a constant value that is specific to each reaction and dependent on a number of factors, such as, substrate type, physical state, surface area, concentration, temperature, catalysts, pressure, and light absorption. 
+                \begin{itemize}
+                    \item Can be reduces to more general factors: {\color{o-Sun}concentration}, {\color{o-Sun}energy of activation}, {\color{o-Sun}temperature}, and {\color{o-Sun}steric considerations}.
+                \end{itemize}
+            \item Reaction speed is positively correlated with the rate of reaction.
+            \item The \textit{steric considerations}, or the geometry and orientation, of colllisions have an impact as well, and will be discussed later.
+        \end{itemize}
+    \subsubsection{Concentration}
+    \begin{itemize}
+        \item Reactions are result of collision between reactants, thus increases concentration should the rate of reactions.
+        \item Precise effect must be determined expirementally:
+            \begin{itemize}
+                \item Rate =\(k[A]^x[B]^y\)
+                \item \textbf{Rate order}: the sum of exponents of the reactants.
+                    \begin{itemize}
+                        \item E.g., \(kA=\) first, \(kAB=\) second, \(kA^2B=\) third.
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{Energy of Activtion}
+    \begin{itemize}
+        \item \textbf{Energy of activation (\(E_a\))}: the energy barrier between reactants and the products.
+            \begin{itemize}
+                \item Represents the minimum amount of energy required for a reaction to occur between two reactants that collide.
+                \item Number of successful intereactions depends on tue number of molecules that have more than a certain threshold kinetic energy required to form the products.
+                \item \textbf{Catalysts}: a compound that can speed the reaction up with out being consumed by lowering the activation energy of a reaction.
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{Temperature}
+    \begin{itemize}
+        \item Rasing the temperature causes the rate of the reaction to increases due to larger portion of molecules passing kinetic threshold for the reaction to occur.
+        \item Generally raising the temperature by \SI{10}{\celsius} double the rate.
+    \end{itemize} 
+\end{itemize}
+
+\subsection{Energy Diagrams}
+\begin{itemize}
+    \item Kinetics refers to the rate of a reaction, while thermodynamics refers to the equilibrium concentrations fo reactants and products.
+    \item Different sets of products can be favored from the reactants depending on activation energy, regardless of stability of the products.
+    \item Products that require lower activation energy will be favored when environmental potential energy is low.
+    \item More stable products will be favored when potential energy in the environment is high, or other means at overcoming the larger activation energy are present.
+    \item Reactions often require multiple steps:
+        \begin{itemize}
+            \item \textbf{Intermediates}: represent local minima of the reaction.
+                \begin{itemize}
+                    \item Have a certain, albeit short, lifetime.
+                    \item Very common in reactions and widely observed.
+                \end{itemize}
+            \item \textbf{Transition states}: represent local maxima of the reaction.
+                \begin{itemize}
+                    \item Cannot be isolated.
+                    \item Represents high-energy states where bonds are being simultanesously broken and formed.
+                \end{itemize}
+        \end{itemize}
+    \item \textbf{Hammond postulate}: states that the transition state of a reaction resembles either the reactants or the products depending on proximity in terms of potential energy.
+        \begin{itemize}
+            \item {\color{pos}Endothermic} reactions represent transition states that are closer to the products, since more energy {\color{pos}remains} in the system leaving {\color{pos}less stable} products. 
+            \item {\color{neg}Exothermic} reactions represent transition statets that are closer the the reactants, since more energy {\color{neg}leaves} the system leaving {\color{neg}more stable} products.
+        \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
