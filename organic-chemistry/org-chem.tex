@@ -1221,21 +1221,21 @@
     \begin{itemize}
         \item \textbf{Heat of reaction}: the total change in enthalpy (\(\Delta H^\circ\)). 
             \begin{itemize}
-                \item The signum (positive or negative) indicates the direction in which the energy is exchanged from the {\color{o-Sun}perspective of the system}.
+                \item The sign indicates the direction in which the energy is exchanged from the {\color{o-Sun}perspective of the system}.
                 \item A {\color{pos}positive \(\Delta H^\circ\)} indicates that the system {\color{pos}increased} in energy due to transfer {\color{pos}from the surroundings}.
-                    \item I.e., indicates an {\color{pos}\textbf{exothermic}} process.
+                    \item I.e., indicates an {\color{pos}\textbf{endothermic}} process.
                 \item A {\color{neg}negative \(\Delta H^\circ\)} indicates that the system {\color{neg}decreased} in energy due to transfer {\color{neg}to the surroundings}.
                     \begin{itemize}
-                        \item i.e., indicates an {\color{neg}\textbf{endothermic}} process.
+                        \item i.e., indicates an {\color{neg}\textbf{exothermic}} process.
                     \end{itemize}
                 \item Physicists think of \(\Delta H^\circ\) as moving from system \ch{->}surroundings
                 \item Chemists think of \(\Delta H^\circ\) as moving from the surroundings \ch{->} system.
             \end{itemize}
         \item Predicting sign and magnitude:
             \begin{enumerate}
-                \item Identify all bonds that are {\color{pos}broken} or {\color{neg}formed}.
+                \item Identify all bonds that are {\color{pos}broken (gained energy from surroundings)} or {\color{neg}formed (lost energy to the surroundings)}.
                 \item Then find the bond dissociation energies.
-                \item Apply the signum to the bonds in respect to the system based on {\color{pos}breakage} or {\color{neg}fromation}.
+                \item Apply the sign to the bonds in respect to the system based on {\color{pos}breakage (+)} or {\color{neg}formation (-)}.
                 \item Sum to find \(\Delta H^\circ\).
             \end{enumerate}
     \end{itemize}
@@ -1243,12 +1243,63 @@
 
 \subsection{Entropy}
 \begin{itemize}
-    \item 
+    \item \textbf{Entropy}: informally defined as the measure of disorder associated with a system.
+        \begin{itemize}
+            \item Essentially it represents the gradual decline towards disorder since random occurrences resulting order is less ultimately probable than disordered results.
+        \end{itemize}
+    \item \textbf{Spontaneous}: a process that involves an {\color{o-Sun}increase in entropy}, which will always occur given enough time.
+        \begin{itemize}
+            \item \(\Delta S^\circ = {\color{surr}\Delta S_{\text{surr}}} + {\color{sys}\Delta S_{\text{sys}}}\) 
+            \item \(\Delta S^\circ\) is the total change in entropy associated with the reaction. 
+                \begin{itemize}
+                    \item Sometimes referred to as just \(S\), \(\Delta S\),  or \(\Delta S_{\text{total}}\)
+                \end{itemize}
+        \end{itemize}
+    \item Entropy of the {\color{sys}system (reaction)} can decrease, as long as the entropy of the {\color{surr}surroundings} increases by a greater amount.
+    \item Thus, {\color{o-Sun}\(\Delta S^\circ\) must by {\color{pos}positive} for a reaction to be spontaneous}.
+    \item A larger number of possbile states corresponds with larger entropy.
+        \begin{itemize}
+            \item Acyclic compounds can adopt more conformations, so they have more entropy than cyclic compounds.
+        \end{itemize}
 \end{itemize}
 
 \subsection{Gibbs Free Energy}
 \begin{itemize}
-    \item 
+    \item Under constant pressure and temperature, {\color{surr}\(\Delta S_{\text{surr}}\)} can be mesesaured:
+        \begin{itemize}
+            \item \({\color{surr}\Delta S_{\text{surr}}} = -\dfrac{\Delta H^\circ}{T}\) 
+            \item Both \(\Delta H^\circ\) and temperature (in Kelvin) can be easily measured, which means {\color{surr}\(\Delta S_{\text{surr}}\)} can be mesesaured.
+            \item Applying this definition:
+            \begin{align*}
+                    \Delta S^\circ &= {\color{surr}-\dfrac{\Delta H^\circ}{T}} + \color{sys}\Delta S_{\text{sys}}\\
+                    -T\Delta S^\circ &= {\color{surr}\Delta H^\circ} - \color{sys}T\Delta S_{\text{sys}}\\
+                    \Delta G^\circ &= {\color{surr}\Delta H^\circ} - {\color{sys}T\Delta S_{\text{sys}}}\\
+                    \Delta G^\circ &= {\color{surr}\Delta H^\circ} + {\color{sys}(- T\Delta S_{\text{sys}})}
+            \end{align*}
+            \begin{itemize}
+                \item \(\Delta H\) is then associated with {\color{o-Sun}the change in entropy of the surroundings}, as a transfer in energy to/from the surrondings from the system increases/decreases entropy of the surroundings.
+                \item \(\Delta S^\circ\) is associated with {\color{o-Sun}the change of entropy of the system}. 
+            \end{itemize}
+        \end{itemize}
+    \item \textbf{Gibbs free energy (\(\Delta G^\circ\))}: the maximum amount of non-expansion work that can be extracted from a closed system.
+        \begin{itemize}
+            \item Essentially a repackaged way of expressing entropy in a closed system.
+            \item \(\Delta G^\circ\) is just \(\Delta S^\circ\) multiplied by the negative temperature in order to measure the entropy of the surroundings.
+            \item Thus, {\color{o-Sun}\(\Delta G^\circ\) must be {\color{neg}negative} for  a reaction to be spontaneous.} (second law of thermodynamics)
+        \end{itemize}
+    \item Often {\color{surr}\(\Delta H^\circ\)} is has a much greater contribution than {\color{sys}\(T\Delta S^\circ\)}, so enthalpy is commonly an indicator of the spontaneity.
+        \begin{itemize}
+            \item When more bond energy (\(\Delta H^\circ\)) is {\color{pos}broken} than formed, then the \(\Delta G^\circ\) is {\color{neg}decreased}, which {\color{pos}increases spontaneity}.
+            \item When more bond energy (\(\Delta H^\circ\)) is {\color{neg}formed} than released, then the \(\Delta G^\circ\) is {\color{pos}increased}, which {\color{neg}decreases spontaneity}.
+        \end{itemize}
+    \item However, temperature has great effect on entropy of the system:
+        \begin{itemize}
+            \item An increase in temperature increases entropy of the system, which is {\color{o-Sun}not favorable}, as it {\color{pos}increases \(\Delta G^\circ\)}.
+            \item A {\color{neg}decrease in temperature} is leads to more bonds being {\color{neg}formed}, which {\color{neg}decreases} entropy of the system as energy is transferred to the surroundings.
+                \begin{itemize}
+                    \item This {\color{o-Sun}favorable}, as it {\color{neg}decreases \(\Delta G^\circ\)}.
+                \end{itemize}
+        \end{itemize}
 \end{itemize}
 
 \subsection{Equilibria}
