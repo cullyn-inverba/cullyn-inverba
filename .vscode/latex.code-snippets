@@ -42,6 +42,8 @@
 	"Negative Emphasis": { "prefix": "neg", "body": "{\\color{neg}", "scope": "latex"},
 	"True": { "prefix": "true", "body": "{\\color{true}", "scope": "latex"},
 	"False": { "prefix": "false", "body": "{\\color{false}", "scope": "latex"},
+	"System": { "prefix": "sys", "body": "{\\color{sys}", "scope": "latex"},
+	"Surr": { "prefix": "surr", "body": "{\\color{surr}", "scope": "latex"},
 
 
 	"Cations": { "prefix": "cation", "body": "{\\color{pos}\\ch{$1^+}}"},
@@ -65,6 +67,8 @@
 	"Pka": { "prefix": "pka", "body": "\\(pK_a\\)"},
 	"Pkb": { "prefix": "pkb", "body": "\\(pK_b\\)"},
 	"Enthalpy": { "prefix": "bde", "body": "\\(\\Delta H^\\circ\\)"},
+	"Entropy": { "prefix": "rsm", "body": "\\(\\Delta S^\\circ\\)"},
+	"Gibbs Free Energy": { "prefix": "gfe", "body": "\\(\\Delta G^\\circ\\)"},
 
 	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
 	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
