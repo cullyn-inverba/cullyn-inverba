@@ -57,6 +57,7 @@
 	"Inline sigma": { "prefix": "sigma", "body": "$\\sigma$"},
 	"Inline pi": { "prefix": "pi", "body": "$\\pi$"},
 	"Inline mu": { "prefix": "mu", "body": "$\\mu$"},
+	"Inline rho": { "prefix": "rho", "body": "$\\rho$"},
 
 	"O2": { "prefix": "O2", "body": "\\ch{O2}"},
 	"CO2": { "prefix": "CO2", "body": "\\ch{CO2}"},
@@ -69,6 +70,7 @@
 	"Enthalpy": { "prefix": "bde", "body": "\\(\\Delta H^\\circ\\)"},
 	"Entropy": { "prefix": "rsm", "body": "\\(\\Delta S^\\circ\\)"},
 	"Gibbs Free Energy": { "prefix": "gfe", "body": "\\(\\Delta G^\\circ\\)"},
+	"Equilibirum constant": { "prefix": "keq", "body": "\\(K_{\\text{eq}}\\)"},
 
 	"Inline Subscript": {"prefix": "__t", "body": "\\(_{$1}\\)$0"},
 	"Inline Superscript": {"prefix": "**t", "body": "\\(^{$1}\\)$0"},
