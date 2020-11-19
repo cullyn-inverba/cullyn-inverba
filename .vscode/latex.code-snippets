@@ -72,6 +72,7 @@
 	"Gibbs Free Energy": { "prefix": "gfe", "body": "\\(\\Delta G^\\circ\\)"},
 	"Equilibirum constant": { "prefix": "keq", "body": "\\(K_{\\text{eq}}\\)"},
 	"Biomoleucar Reaction": { "prefix": "sn2", "body": "\\(S_N2\\) reactions"},
+	"Uniomoleucar Reaction": { "prefix": "sn1", "body": "\\(S_N1\\) reactions"},
 	"primary": { "prefix": "api", "body": "\\ang{1}"},
 	"secondary": { "prefix": "asec", "body": "\\ang{2}"},
 	"tertiary": { "prefix": "atert", "body": "\\ang{3}"},
