@@ -347,14 +347,15 @@
             \begin{itemize}
                 \item \schemestart
                 \chemfig{
-                    \ch{1}-[:30](-[:91]\ch{4})(<[:-60]\ch{3})(<:[:-10]\ch{2})
+                    \ch{1}-[:30](-[:91]\ch{4})(<[:-60]\ch{2})(<:[:-10]\ch{3})
                     }
                 \arrow{->}
-                {\color{true}\chemfig{
-                    \ch{1}-[:30](-[:91]\ch{2})(<[:-60]\ch{3})(<:[:-10]\ch{4})
+                {\color{false}\chemfig{
+                    \ch{1}-[:30](-[:91]\ch{3})(<[:-60]\ch{2})(<:[:-10]\ch{4})
                     }}
                 \schemestop
-                \item Once lowest priority is assigned to dashed wedge(aka cram), then one can tell sequence. Original is an S.
+                \item Once lowest priority is assigned to dashed wedge(aka cram), then one can tell sequence. 
+                \item The {\color{true} original (absolute) configuration is R} since the new configuration is {\color{false}S} due to the swap beteween positions 4 and 3.
             \end{itemize}
         \end{itemize}
 \end{enumerate}
