@@ -1674,6 +1674,9 @@
     \subsubsection{Regioselectivity and Stereospecificity of E2 Reactions}
     \begin{itemize}
         \item \textbf{Regiochemistry}: when a chemical reaction is said to produce two different regiochemical outcomes.
+            \begin{itemize}
+                \item \textbf{Regiochemical}: preference of chemical bonding or breaking {\color{o-Sun}direction}. 
+            \end{itemize}
         \item \textbf{Regioselective}: when there is a preference in products of a regiochemical reaction.
         \item \textbf{Zaitsev product}: name of the more substituted alkene that is generally observed to be the major product.
         \item \textbf{Hofmann product}: name of the less substituted alkene.
@@ -1780,7 +1783,102 @@
 
 \subsection{Predicting Products: Substitution vs Elimination}
 \begin{itemize}
-    \item 
+    \item Often elimination and substitution are in competition with each other, with sometimes one product dominanting, or reactions resulting in multiple products.
+    \item Main steps in determining products: 
+        \begin{itemize}
+            \item Determine the function of the reagent.
+            \item Analyze the substrate and determine the expected machanism(s).
+            \item Consider any relevant regiochemical and stereochemical requirements.
+        \end{itemize}
+    \subsubsection{Determining the Function of the Reagent}
+    \begin{itemize}
+        \item To recap: substitution occurs when the reagent functions as a nucleophile, while an elimination reactions occurs when the reagent functions as a base.
+        \item Major factors (not all) that determin nucleophilicity: presence of high electron density and polarizability, while basicity is determined by base stability.
+            \begin{itemize}
+                \item Strong acids have weaker conjugate bases. THe weaker the base, then the more stability the molecule has, and the less likely to act as base rather than nucleophile.
+                \item Often bases bear negative charges, allowing them to also function as nucleophiles.
+                \item Small size often decreases polarizability, which makes some weak bases unable to be nucleophiles.
+            \end{itemize}
+        \item Common reagents can be classified into four catagories, with two-dimensions based on base and nucleophile strength.
+            \begin{itemize}
+                \item \textbf{Strong base}, {\color{darklc}\textbf{weak nucleophile}}: \ch{NaH}, \ch{DBN}, \ch{DBU}
+                \begin{itemize}
+                    \item Strong tenency to give up hydrogens leads reagents functioning almost exclusively as bases, leading to the elimination reaction.
+                \end{itemize}
+                \item \textbf{Strong base}, \textbf{strong nucleophile}: {\color{neg}\ch{HO^-}}, {\color{neg}\ch{MeO^-}}, {\color{neg}\ch{EtO^-}}\begin{itemize}
+                    \item Can act as both, often producing mixture of products.
+                    \item Such reagents are generally used for biomolecular processes.
+                \end{itemize}
+                \item {\color{darklc}\textbf{Weak base}}, \textbf{strong nucleophile}: {\color{neg}\ch{I^-}}, {\color{neg}\ch{Br^-}}, {\color{neg}\ch{Cl^-}}, {\color{neg}\ch{RS^-}}, {\color{neg}\ch{HS^-}}, \ch{RSH}, \ch{H2S}
+                    \begin{itemize}
+                        \item Reagents mainly function as nucleophiles due to high polarizability, despite being weak bases, leading to substitution reactions.
+                    \end{itemize}
+                \item {\color{darklc}\textbf{Weak base}}, {\color{darklc}\textbf{weak nucleophile}}: \ch{H2O}, \ch{MeOH}, \ch{EtOH}
+                    \begin{itemize}
+                        \item Ban act as both a nucleophiles and base.
+                        \item Mainly used in unimolecular reactions. 
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{Determing the Expected Mechanism(s)}
+    \begin{itemize}
+        \item After determining catagories, then the next step is to identify likely mechansisms, which is done by analyzing the substrate (\ang{3}, \ang{2}, \ang{1}).
+        \begin{table}[h]
+            \centering
+            \caption{Expected Mechanism(s)\strut}
+            \label{tab:Expected Mechanisms}
+            \begin{tabular}{c|cccc}
+                \toprule
+                & \makecell{Strong Base\\{\color{darklc}Weak Nucleo}} 
+                & \makecell{Strong Base\\Strong Nucleo}
+                & \makecell{{\color{darklc}Weak Base}\\Strong Nucleo}
+                & \makecell{{\color{darklc}Weak Base}\\{\color{darklc}Weak Nucleo}} \\
+                \midrule
+                \ang{1}& E2 &{\tiny{\(E2\)}}, \(S_N2\) &  \(S_N2\) & --- \\
+                \ang{2}& E2 & E2, {\tiny{\(S_N2\)}}& \(S_N2\) & --- \\
+                \ang{3}& E2 & E2 & \(S_N1\) & E1, \(S_N1\) \\
+                \bottomrule
+                \end{tabular}
+        \end{table}
+        \item The identify of the substrate plays a vital role in determining reactions when the reagent is a strong nucleophile and a strong base.
+            \begin{itemize}
+                \item If both are weak, then substitution and elimination can only occur in \ang{3} due the need of carbocation intermediate (some rare exceptions with\ang{2} allylic and benzylic compounds).
+            \end{itemize}
+        \item Elimination is not hindered by steric interactions, so generally it will prevail long as substitution isn't favored.
+            \begin{itemize}
+                \item Except in unimolecular, where E1 is favored when the products is tri- or tetrasubstituted, and \(S_N1\) with mono- and disubstituted.
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{Considering Regiochemical and Stereochemical Outcomes}
+    \begin{itemize}
+        \item Much of follow information was already discussed, but will be recapped here.
+        \item \(S_N2\):
+            \begin{itemize}
+                \item Regiochemical: the nucleophile attacks the $\alpha$ position where the leaving group is connected.
+                \item Stereochemical: the nucleophile replaces the leaving group with inversion of configuration. 
+            \end{itemize}
+        \item E2: 
+            \begin{itemize}
+                \item Regiochemistry: The Zaitsev product (more hydrogen-dense) is generally favored over Hofmann product (less hydrogen-dense), unless sterically hindered, then Hofmann will be favored.
+                \item Stereochemical: stereoselective, with preference for \textit{trans} over \textit{cis} in disubstituted alkene.
+                    \begin{itemize}
+                        \item Also stereospecific: when the $\beta$ position has only one proton, then the stereoisomeric alkene resulting from the anti-periplanar elimination will be obtained.
+                    \end{itemize}
+            \end{itemize}
+        \item \(S_N1\):
+            \begin{itemize}
+                \item Regiochemical: nucleophile attacks the carbocation, which is where leaving group is origanally connected, unless carbocation rearrangement took place.
+                \item Stereochemical: nucleophile replaces the leaving group, giving a nearly racemic mixture of inverted and retained configurations.
+                    \begin{itemize}
+                        \item Often though there is slight preference on inversion as a result of the ion pairs effect.
+                    \end{itemize}
+            \end{itemize}
+        \item E1:
+            \begin{itemize}
+                \item Regiochemical: Zaitsev product will always be favored over the Hofmann product.
+                \item Stereochemical: Stereoselective, with the \textit{trans} disubstituted alkene often being favored.
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
