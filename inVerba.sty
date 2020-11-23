@@ -27,26 +27,25 @@
         \rfoot{\hyperlink{home}{\thepage}}
 
 % Math: 
-    \usepackage{amsmath, mathtools, bm, amssymb}
+    \usepackage{amsmath, mathtools, amssymb}
         \numberwithin{equation}{section}
 
 % Font Realated:
     \usepackage[T1]{fontenc}
-    \usepackage[utf8]{inputenc}
-    \usepackage{sansmathfonts}
-    \usepackage[sfdefault, light]{roboto} 
-    \usepackage{listings}
-
+    \usepackage{cmbright}
+    \SetSymbolFont{largesymbols}{normal}{OMX}{iwona}{m}{n}
+    \usepackage[sfdefault, light]{roboto}
 % Chemistry:
-    \usepackage{chemfig, chemformula}
+    \usepackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
         \setchemfig{atom sep=2.5em, cram width=1ex}
+        \chemsetup{ modules = all }
 
 % Style:
     \usepackage{xcolor, pagecolor} 
     \usepackage{enumitem}
-        \setlist[itemize,2]{label=$\circ$}
+        \setlist[itemize,2]{label=\(\circ\)}
         \setlist[itemize,3]{label=\textendash}
-        \setlist[itemize,1]{label=$\triangleright$}
+        \setlist[itemize,1]{label=\(\triangleright\)}
 
 % Utility:
     \usepackage{graphicx, booktabs, multirow, multicol, makecell}
