@@ -5,21 +5,29 @@
 %  / / / / / |/ /  __/ /  / /_/ / /_/ / (__  ) /_/ /_/ / 
 % /_/_/ /_/|___/\___/_/  /_.___/\__,_(_)____/\__/\__, /  
 %                                               /____/ 
-%     https://github.com/cullyn-inverba/Notes
+%  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
+% |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+% |::::.\::::https://github.com/cullyn-inverba/Notes:::::.\::::::::.\
+% |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+%         `--'      `.-'      `--'      `--'      `--'      `-.'      `
 
-%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%
+% ╔═╗┌─┐┌─┐┌─┐
+% ╠═╝├─┤│ ┬├┤ 
+% ╩  ┴ ┴└─┘└─┘
 
-%Page Formating:
-    \usepackage[hmargin=2.9cm,vmargin=2cm, headsep=1.2em,]{geometry} 
+    \usepackage[hmargin=2.9cm, vmargin=2cm, headsep=1.2em]{geometry} 
         \raggedright 
         \setlength\headheight{16pt}
         \setlength{\parskip}{1ex plus 2ex minus 0ex}
         \renewcommand{\baselinestretch}{1.2} 
     \usepackage[parfill]{parskip}
 
-% Section and ToC Formating: 
-    \usepackage{titlesec, titletoc}
-        \titleformat{\chapter}{\LARGE\bfseries\color{chapter}}{}{0pt}{\centering}
+% ╔═╗┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+% ╚═╗├┤ │   │ ││ ││││└─┐
+% ╚═╝└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
+
+    \usepackage{titlesec}
+        \titleformat{\chapter}{\LARGE\bfseries\color{chap}}{}{0pt}{\centering}
             \titlespacing*{\chapter}{0pt}{-64pt}{4pt} 
         \titleformat{\section}{\Large\bfseries\color{sec}}{}{0pt}{}
             \titlespacing*{\section}{0 em}
@@ -30,7 +38,11 @@
             {1ex plus 7ex minus 1ex}
             {1ex plus 0ex minus 0ex}
 
-        % Table of Contents
+% ╔═╗┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐
+% ║  │ ││││ │ ├┤ │││ │ └─┐
+% ╚═╝└─┘┘└┘ ┴ └─┘┘└┘ ┴ └─┘
+
+    \usepackage{titletoc}
         \renewcommand{\contentsname}{\color{stress}\theTitle}
         \titlecontents{chapter}[0 em]
             {\large\bfseries}{}{}
@@ -42,7 +54,10 @@
             {\color{minimal}}{}{}
             {\titlerule*[0.42 em]{.}\thecontentspage}
             
-% List Layout:
+%  ╦  ┬┌─┐┌┬┐┌─┐
+%  ║  │└─┐ │ └─┐
+%  ╩═╝┴└─┘ ┴ └─┘
+
     \usepackage{enumitem}
         \setlist[itemize,1]{
             label=\small\(\triangleright\), 
@@ -58,13 +73,19 @@
         }
         \setlist[itemize,4]{leftmargin=\dimexpr26pt -1 em}
 
-% Font:
+% ╔═╗┌─┐┌┐┌┌┬┐┌─┐
+% ╠╣ │ ││││ │ └─┐
+% ╚  └─┘┘└┘ ┴ └─┘
+
     \usepackage[T1]{fontenc}
     \usepackage{cmbright}
         \SetSymbolFont{largesymbols}{normal}{OMX}{iwona}{m}{n}
     \usepackage[sfdefault, light]{roboto}
 
-% Header and Footer:
+% ╦ ╦┌─┐┌─┐┌┬┐┌─┐┬─┐   ┬   ╔═╗┌─┐┌─┐┌┬┐┌─┐┬─┐
+% ╠═╣├┤ ├─┤ ││├┤ ├┬┘  ┌┼─  ╠╣ │ ││ │ │ ├┤ ├┬┘
+% ╩ ╩└─┘┴ ┴─┴┘└─┘┴└─  └┘   ╚  └─┘└─┘ ┴ └─┘┴└─
+
     \usepackage{fancyhdr}
         \pagestyle{fancy}
         \fancyhead{}
@@ -74,17 +95,26 @@
         \fancyhead[L]{\hyperlink{ToC}{\nouppercase\leftmark}}
         \cfoot{\hyperlink{ToC}{\thepage}}
         
-% Math: 
-    \usepackage{amsmath, mathtools, amssymb}
+% ╔╦╗┌─┐┌┬┐┬ ┬
+% ║║║├─┤ │ ├─┤
+% ╩ ╩┴ ┴ ┴ ┴ ┴
+
+    \usepackage{amsmath, mathtools, amssymb, MnSymbol}
         \numberwithin{equation}{section}
 
-% Chemistry:
+% ╔═╗┬ ┬┌─┐┌┬┐┬┌─┐┌┬┐┬─┐┬ ┬
+% ║  ├─┤├┤ ││││└─┐ │ ├┬┘└┬┘
+% ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
+
     \usepackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
         \setchemfig{atom sep=2.5em, cram width=1ex}
         \chemsetup{modules = all}
-    
-% Utility:
-    \usepackage{graphicx, booktabs, multirow, multicol, makecell}
+
+% ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
+% ║ ║ │ ││  │ │ └┬┘
+% ╚═╝ ┴ ┴┴─┘┴ ┴  ┴ 
+
+    \usepackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor}
     \usepackage[justification=centering]{caption}
         \captionsetup[table]{
             skip=3pt,
@@ -101,159 +131,106 @@
     \usepackage[hidelinks]{hyperref}
         \hypersetup{
             colorlinks=false,
-            linktoc=all,     
+            linktoc=all,    
+            linkcolor=link,
+            filecolor=link,      
+            urlcolor=link, 
         }
 
-% Commands: 
+% ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
+% ║  │ │││││││├─┤│││ ││└─┐
+% ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 
-\newcommand{\note}[1]{\begin{itemize}\item{#1}\end{itemize}}
+\newcommand{\note}[1]{
+    \begin{itemize}
+        \item{#1}
+    \end{itemize}
+}
 
-% Theme: 
-\usepackage{xcolor, pagecolor} 
+%   ________                   _            
+%  /_  __/ /_  ___  ____ ___  (_)___  ____ _
+%   / / / __ \/ _ \/ __ `__ \/ / __ \/ __ `/
+%  / / / / / /  __/ / / / / / / / / / /_/ / 
+% /_/ /_/ /_/\___/_/ /_/ /_/_/_/ /_/\__, /  
+%                                  /____/
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%              Base             %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ╔╗ ┌─┐┌─┐┌─┐
+% ╠╩╗├─┤└─┐├┤ 
+% ╚═╝┴ ┴└─┘└─┘
 
 % Background: #1f1f1f
     \definecolor{back}{HTML}{1f1f1f} 
         \pagecolor{back} 
-    
 
-% Text: #e0e0e0 #b0b0b0 #6b6b6b #f5b17a #ff9e4f
-    \definecolor{text}{HTML}{e0e0e0} 
+% Text: #e0e0e0 #b0b0b0 #6b6b6b 
+    \definecolor{text}{HTML}{e0e0e0}  
         \color{text} 
     \definecolor{minor}{HTML}{b0b0b0} 
     \definecolor{minimal}{HTML}{6b6b6b} 
+
+% Emphasis: #f5b17a #ff9e4f
     \definecolor{emph}{HTML}{f5b17a} 
-        \renewcommand{\emph}[1]{{\color{emph}#1}}
+        \renewcommand{\emph}[1]{{\color{emph}#1}} 
     \definecolor{stress}{HTML}{ff9e4f} 
         \newcommand{\stress}[1]{{\color{stress}#1}}
 
 % Titles: #4ca9f5 #7abef5 #b0d0eb #cedeeb
-    \definecolor{chapter}{HTML}{4ca9f5} 
+    \definecolor{chap}{HTML}{4ca9f5} 
     \definecolor{sec}{HTML}{7abef5} 
     \definecolor{ssec}{HTML}{b0d0eb} 
     \definecolor{jarg}{HTML}{cedeeb} 
         \newcommand{\jargon}[1]{{\color{jarg}\bfseries{#1}}}
 
-    
+% Links: #99e09b #78b07a #496b4a 
+    \definecolor{link}{HTML}{99e09b} 
+        \newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
+    \definecolor{ulink}{HTML}{78b07a} 
+        \newcommand{\ulink}[1]{{\color{ulink}{#1}\small\(\,^\rcurvearrowne\)}}
+    \definecolor{dlink}{HTML}{496b4a} 
+        \newcommand{\dlink}[1]{{\color{dlink}{#1}\small\(\,^\lcurvearrowse\)}}
 
-    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%         Complementary         %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
+%  ║║││  ├─┤│ │ │ │ ││││└┬┘
+% ═╩╝┴└─┘┴ ┴└─┘ ┴ └─┘┴ ┴ ┴ 
 
-% Charge: #f06767-> #406de3
-\definecolor{pos}{HTML}{f06767}
-\definecolor{neg}{HTML}{406de3}
+% Charge: #f5736c-> #5f89f5
+    \definecolor{rrr}{HTML}{f5736c}
+        \newcommand{\rrr}[1]{{\color{rrr}{#1}}}
+    \definecolor{eee}{HTML}{5f89f5}
+        \newcommand{\eee}[1]{{\color{eee}{#1}}}
 
-% Boolean: #36cfb8 -> #ff6b8b
-\definecolor{true}{HTML}{36cfb8}
-\definecolor{false}{HTML}{ff6b8b}
+% Boolean: #57d9c3 -> #ff8fc5
+    \definecolor{ttt}{HTML}{57d9c3}
+        \newcommand{\ttt}[1]{{\color{ttt}{#1}}}
+    \definecolor{fff}{HTML}{ff8fc5}
+        \newcommand{\fff}[1]{{\color{fff}{#1}}}
 
-% Relative: #bf88eb → #ffdb7b
-\definecolor{sys}{HTML}{bf88eb}   
-\definecolor{surr}{HTML}{ffdb7b}  
+% Relative: #c28bf0 → #f0dd86
+    \definecolor{xxx}{HTML}{c28bf0}  
+        \newcommand{\xxx}[1]{{\color{xxx}{#1}}}
+    \definecolor{yyy}{HTML}{f0dd86}  
+        \newcommand{\yyy}[1]{{\color{yyy}{#1}}}
 
+% ╦ ╦┬ ┬┌─┐┌─┐┬  
+% ║║║├─┤├┤ ├┤ │  
+% ╚╩╝┴ ┴└─┘└─┘┴─┘
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%             Triadic           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%            Tetradic           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%            Analogous          %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%             Neutral           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
-%%%%%%%%%%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%%%%%%%%%%%
-
-% Blue: #050E44 → #002083 → #1A5CB0 → #359BE2 → #4EB9FF 
-    \definecolor {Diblue}{HTML}{050E44}     
-    \definecolor {diblue}{HTML}{002083}  
-    \definecolor {iblue}{HTML}{1A5CB0}
-    \definecolor {liblue}{HTML}{359BE2}
-    \definecolor {Liblue}{HTML}{4EB9FF} 
-
-% Orange: #E24104→ #FF6420 → #FF9646
-    \definecolor {diorange}{HTML}{E24104} 
-    \definecolor {iorange}{HTML}{FF6420} 
-    \definecolor {liorange}{HTML}{FF9646} 
-
-% Pink: #601145 → #7D3966 → #C985A1
-    \definecolor {dipink}{HTML}{601145}
-    \definecolor {ipink}{HTML}{7D3966}
-    \definecolor {lipink}{HTML}{C985A1}
-
-% Light Mode: #FCFCFC → #242424 → #9e9e9e
-    \definecolor{light}{HTML}{FCFCFC} % background color
-    \definecolor{lightText}{HTML}{242424} % text color
-    \definecolor{lightlc}{HTML}{9e9e9e} % low contrast text
-
-% Dark Mode: #212121 → #dedede → #525252
-    \definecolor{dark}{HTML}{212121} % background color
-    \definecolor{darkText}{HTML}{dedede} % text color
-    \definecolor{darklc}{HTML}{525252} % low contrast text
-
-    % {dark} → {light} to change mode --- might break colors!
-    \pagecolor{dark} 
-    \color{darkText} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Gradients %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Sun: #f98f7d → #f5b17a → #ffdb7b
-    \definecolor{r-Sun}{HTML}{f98f7d}
-    \definecolor{o-Sun}{HTML}{f5b17a}
-    \definecolor{y-Sun}{HTML}{ffdb7b}
-
-% Lush: #ff8181 → #ff93ab
-    \definecolor{r-Lush}{HTML}{f99480}
-    \definecolor{p-Lush}{HTML}{ff93ab}
-
-% Haze: #bf88eb → #efb7f5
-    \definecolor{v-Haze}{HTML}{bf88eb}   
-    \definecolor{p-Haze}{HTML}{efb7f5}  
-
-% Leaf: #b1fe8a → #7eda8b
-    \definecolor{g-Leaf}{HTML}{b1fe8a}   
-    \definecolor{G-Leaf}{HTML}{7eda8b}  
-
-% Fresh: #14e899 → #59eccf
-    \definecolor{g-Fresh}{HTML}{14e899}    
-    \definecolor{t-Fresh}{HTML}{59eccf}  
-
-% Ocean: #45b4eb → #2217da
-    \definecolor{b-Ocean}{HTML}{45b4eb}  
-    \definecolor{B-Ocean}{HTML}{2217da} 
-
-% Cold: #bcd8eb→ #8fc2f7
-    \definecolor{b-Cold}{HTML}{bcd8eb}
-    \definecolor{B-Cold}{HTML}{8fc2f7}
-
-% Moon:  #e6eef1 → #d0dae2 → #8d9194
-    \definecolor{w-Moon}{HTML}{e6eef1}   
-    \definecolor{W-Moon}{HTML}{d0dae2}
-    \definecolor{G-Moon}{HTML}{8d9194}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Dichotomies %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Charge:  #f06767-> #406de3
-    \definecolor{pos}{HTML}{f06767}
-    \definecolor{neg}{HTML}{406de3}
-
-% Boolean: #36cfb8 -> #ff6b8b
-    \definecolor{true}{HTML}{36cfb8}
-    \definecolor{false}{HTML}{ff6b8b}
-
-% Relative: #bf88eb → #ffdb7b
-    \definecolor{sys}{HTML}{bf88eb}   
-    \definecolor{surr}{HTML}{ffdb7b}  
-
-
-
+%               fff #ff8fc5          #f5736c rrr
+%         
+%                          ____________
+%                         /\  ________ \         
+%    xxx #c28bf0         /  \ \______/\ \        #f5b17a  emph
+%                       / /\ \ \  / /\ \ \         #ff9e4f stress
+%                      / / /\ \ \/ / /\ \ \
+%                     / / /__\_\/ / /__\_\ \
+%                    / /_/_______/ /________\
+%   rrr  #5f89f5     \ \ \______ \ \______  /
+%                     \ \ \  / /\ \ \  / / /
+%                      \ \ \/ / /\ \ \/ / /      #f0dd86 yyy
+%                       \ \/ / /__\_\/ / /      
+%       chap #4ca9f5     \  / /______\/ /
+%      sec #7abef5        \/___________/
+%    ssec #b0d0eb        
+%  jarg #cedeeb                              #99e09b link
+%                         #57d9c3 ttt          #78b07a ulink
+%                                                #496b4a dlink

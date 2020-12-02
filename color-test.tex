@@ -2,19 +2,6 @@
 \usepackage{inverba-dark}
 \newcommand{\theTitle}{Class Name}
 
-
-
-
-
-
-
-
-% Links:
-
-
-
-
-
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{ToC}
@@ -34,7 +21,6 @@
 \chapter{Chapter}
 \section{Section}
 \begin{itemize}
-    \item Lorem ipsum dolor sit {\color{o-Sun}ametaee}, consectetur adipiscing elit. Maecenas consequat nulla sit amet mi dictum molestie. Fusce urna est, tempus eu mauris sit amet, interdum egestas sapien. Maecenas egestas varius elit, vitae vulputate risus ornare eu. Integer vel mollis eros. Etiam sed nunc ut turpis euismod auctor vitae quis enim.
         \item Cras ullamcorper auctor laoreet. 
         \item Nunc porta malesuada elementum. 
         \item Cras ullamcorper auctor laoreet.
@@ -54,6 +40,7 @@
             \begin{itemize}
                 \item yes
                 \note{yes}
+                \item \neg
             \end{itemize}
         \item  Cras faucibus gravida nibh.
         \item  Morbi felis nulla, gravida non blandit non, imperdiet ac purus.
@@ -71,15 +58,15 @@
 
 \section{Next Section}
 \begin{itemize}
-    \item Lorem ipsum dolor sit {\color{o-Sun}ametaee}, consectetur adipiscing elit. Maecenas consequat nulla sit amet mi dictum molestie. Fusce urna est, tempus eu mauris sit amet, interdum egestas sapien. Maecenas egestas varius elit, vitae vulputate risus ornare eu. Integer vel mollis eros. Etiam sed nunc ut turpis euismod auctor vitae quis enim.
-        \item Cras ullamcorper auctor laoreet. 
-        \item Nunc porta malesuada elementum. 
-        \item Cras ullamcorper auctor laoreet.
+        \item Cras ullamcorper auctor laoreet.\link{http://www.google.com}{google}
+        \item 
     \begin{itemize}
-    \subsection{Mini Section}
+    \subsection{Mini Section}\label{Mini Section1}
         \item \jargon{Definition}: Cras faucibus gravida nibh.
             \begin{itemize}
                 \item yes
+                \item \neg \ggg
+                \item 
                 \note{yes}
             \end{itemize}
         \item  Cras faucibus gravida nibh.
@@ -101,13 +88,13 @@
 \section{Big Section}
 \subsection{Mini Section}
 
-Duis d\emph{olor nibh, pretium eu magna ve}l, maximus pharetra arcu. Mauris non dapibus risus, at hendrerit nibh. Class aptent {\color{minor} taciti sociosqu ad lit    ora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Etiam }id nisi justo. Morbi vel ex nec eni\emph{m pulvinar tincidunt quis sed nibh. Maecenas varius nisl magna, ac varius justo egestas faucibus. Nulla blandit metus eu nulla malesuada, a malesuada diam elementum. Etiam dignissim sem in egestas efficitur. Mo}rbi malesuada velit non orci malesuada scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing {\color{minimal} elit. Nulla porttitor nulla ac metus interdum, nec tincidunt est finibus.}
+Duis d\emph{olor nibh, pretium eu magna ve}l, maximus pharetra arcu. Mauris non dapibus risus, at hendrerit nibh. Class aptent {\color{minor} taciti sociosqu \ulink{ad lit    ora torquent} per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Etiam }id nisi justo. Morbi vel ex nec eni\emph{m pulvinar tincidunt quis sed nibh. Maecenas varius nisl magna, ac varius justo egestas faucibus. Nulla blandit metus eu nulla malesuada, a malesuada diam elementum. Etiam dignissim sem in egestas efficitur. Mo}rbi malesuada velit non orci malesuada scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing {\color{minimal} elit. Nulla porttitor nulla ac metus interdum, nec tincidunt est finibus.}
 
 {\color{emph} Mauris id\textbf{ nisi }rutrum, porta enim eget,  {\color{stress} imperdiet luctus. Cras \textbf{lacinia} leo} vulputate purus. Proin sit amet mollis neque, sit} amet aliquet lectus. In id mauris et enim ullamcorper sagittis. In in lacinia risus. Phasellus viverra fringilla magna  nec quam porta, vitae fringilla felis aliquet. Nulla in diam dolor. Curabitur pulvinar nibh a eros malesuada, sit amet pharetra felis luctus. Fusce turpis quam, pulvinar sed mi sagittis, cursus vehicula mauris. Integer vel euismod nibh, at facilisis libero. Sed erat urna, iaculis at lacinia iaculis, consequat et libero. Cras faucibus, felis sed dapibus fermentum, nunc leo vulputate mauris, ac interdum mi leo vitae magna.
 \emph{
 Quisque ut arcu neque. Pellentesque non ante quam. Aenean purus sem, tincidunt at velit eget, tristique fringilla risus. Curabitur et pellentesque augue, et faucibus sem. Suspendisse potenti. Nulla sed nulla est. Morbi maximus neque et quam finibus facilisis. Ut metus dui, interdum a euismod vel, vulputate eget quam. Sed sed vehicula nulla, quis lobortis nibh. Etiam sed pellentesque nisl, id lacinia felis. Phasellus rutrum accumsan sem ac mollis. Donec arcu }sapien, pulvinar vitae faucibus et, pellentesque id ex. Sed iaculis euismod metus vel volutpat. Suspendisse commodo leo eget nulla tristique, at dignissim dui accumsan.
 
-Praesent lobortis turpis ac ligula congue dictum. Suspendisse sit amet varius tellus, sed venenatis velit. In consectetur massa consequat diam venenatis, tempor fringilla neque aliquet. Aliquam auctor ex vitae porttitor tincidunt. Mauris et diam tempus, auctor justo ut, dignissim velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed in finibus nunc, a blandit magna. 
+Praesent lobortis turpis ac ligula congue dictum. Suspendisse sit amet varius tellus, sed venenatis\underline{\ulink{Hello}} velit. In consectetur massa consequat diam venenatis, tempor fringilla neque aliquet. Aliquam auctor ex vitae porttitor tincidunt. Mauris et diam tempus, auctor justo ut, dignissim velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed in finibus nunc, a blandit magna. 
 
 \begin{itemize}
     \item Praesent ut semper urna, nec posuere odio
@@ -140,7 +127,8 @@ Praesent lobortis turpis ac ligula congue dictum. Suspendisse sit amet varius te
     \item Praesent ut semper urna, nec posuere odio
         \begin{itemize}
             \item  Cras faucibus gravida nibh.
-            \item  Morbi felis nulla, gravida non blandit non, imperdiet ac purus.
+            \item  \emph{Morbi felis nulla, gravida non blandit non, imp}erdiet ac purus.
+            \item \hyperref[Mini Section1]{\ulink{animals}}
             \item  In ac erat non est rutrum sodales eget nec nunc.
                 \begin{itemize}
                     \item  Morbi felis nulla, gravida non blandit non, imperdiet ac purus.
@@ -164,9 +152,8 @@ Praesent lobortis turpis ac ligula congue dictum. Suspendisse sit amet varius te
 \end{itemize}
 \section{Big Section}
 \begin{itemize}
-    \item Lorem ipsum dolor sit {\color{o-Sun}ametaee}, consectetur adipiscing elit. Maecenas consequat nulla sit amet mi dictum molestie. Fusce urna est, tempus eu mauris sit amet, interdum egestas sapien. Maecenas egestas varius elit, vitae vulputate risus ornare eu. Integer vel mollis eros. Etiam sed nunc ut turpis euismod auctor vitae quis enim.
-        \item Cras ullamcorper auctor laoreet. 
-        \item Nunc porta malesuada elementum. 
+        \item \ulink{Cras ullamcorper auctor} laoreet. 
+        \item \dlink{Nunc porta malesuada elementum}
         \item Cras ullamcorper auctor laoreet.
     \begin{itemize}
     \subsection{Mini Section}
