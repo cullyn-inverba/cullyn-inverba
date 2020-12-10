@@ -146,11 +146,7 @@
 % ║  │ │││││││├─┤│││ ││└─┐
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 
-\newcommand{\note}[1]{
-\begin{itemize}
-\item{#1}
-\end{itemize}
-}
+\newcommand{\textbfl}[2]{\textbf{#1}\label{#1}}
 
 
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
@@ -190,6 +186,7 @@
 % Links: #99e09b #78b07a #496b4a 
 \definecolor{link}{HTML}{99e09b} 
     \newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
+\definecolor{title-color}{HTML}{78b07a}
 \definecolor{ulink}{HTML}{78b07a} 
     \newcommand{\ulink}[1]{{\color{ulink}{#1}\small\(\,^\rcurvearrowne\)}}
 \definecolor{dlink}{HTML}{496b4a} 
