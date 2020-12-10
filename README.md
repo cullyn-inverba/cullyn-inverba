@@ -4,7 +4,8 @@ Fall Term has just ended. I am currently working on making these notes I take ev
 
 - [ ] Create cleaner, more stabilized versions of my custom class and style preferences.
     - [ ] Create custom classes for essays, articles, notes, and potentially others.
-    - [x] Clean up .sty file.
+        - [x] inVerba-notes done&mdash;report class modified for extensive notes.
+    - [x] ~~Clean up .sty file.~~ (I think it's better just to make separate custom classes)
     - [x] Establish primary dark-theme.
     - [ ] Create optional light-theme.
     - [ ] Leave sufficient comments for optional customization by others.
@@ -13,6 +14,7 @@ Fall Term has just ended. I am currently working on making these notes I take ev
     - [ ] Create a more detailed README for the repository in general.
     - [x] Establish a more standardized note taking structure.
     - [ ] Create detailed introduction to note structure.
+    - [ ] Create a discord for each winter term classes that is more friendly to first time users.
 - [ ] Make it easier for others to contribute.
     - [ ] Create more ways to easily share and discuss class problems.
     - [ ] Create videos tutorials about LateX.
