@@ -196,13 +196,13 @@
 %  ║║││  ├─┤│ │ │ │ ││││└┬┘
 % ═╩╝┴└─┘┴ ┴└─┘ ┴ └─┘┴ ┴ ┴ 
 
-% Charge: #f5736c-> #5f89f5
+% Charge: #f5736c → #5f89f5
 \definecolor{rrr}{HTML}{f5736c}
     \newcommand{\rrr}[1]{{\color{rrr}{#1}}}
 \definecolor{bbb}{HTML}{5f89f5}
     \newcommand{\bbb}[1]{{\color{bbb}{#1}}}
 
-% Boolean: #57d9c3 -> #eb4972
+% Boolean: #57d9c3 → #eb4972
 \definecolor{ttt}{HTML}{57d9c3}
     \newcommand{\ttt}[1]{{\color{ttt}{#1}}}
 \definecolor{fff}{HTML}{eb4972}
