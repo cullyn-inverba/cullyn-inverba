@@ -6,15 +6,15 @@
 Hello, and welcome. This repository is an attempt at increasing the effectivness of online learning, for myself and others. The main function of this repository will be a place to store and share notes I make, as well act as a means to hopefully encourage others to do the same.
 
 ## Discord Server Links
-[ﭮ  PHL: 331U - Philosophy of Education](https://discord.gg/FwJzW8WGAS)
+[PHL: 331U - Philosophy of Education](https://discord.gg/FwJzW8WGAS)
 
-[ﭮ  CH: 335 - Organic Chemsitry](https://discord.gg/MDR7ze9p2m)
+[CH: 335 - Organic Chemsitry](https://discord.gg/MDR7ze9p2m)
 
-[ﭮ  BI: 428 - Human Genetics](https://discord.gg/JHGNjnSdbB)
+[BI: 428 - Human Genetics](https://discord.gg/JHGNjnSdbB)
 
-[ﭮ  BI: 429 - Conservation Biology](https://discord.gg/r7jkUHNC6b)
+[BI: 429 - Conservation Biology](https://discord.gg/r7jkUHNC6b)
 
-[ﭮ  BI: 463 - Sensory and Motor Systems](https://discord.gg/PSTgxwwJ2N)
+[BI: 463 - Sensory and Motor Systems](https://discord.gg/PSTgxwwJ2N)
 
 ## Current Goals
 - [ ] Create cleaner, more stabilized versions of my custom class and style preferences.
