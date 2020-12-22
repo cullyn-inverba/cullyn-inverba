@@ -1,5 +1,14 @@
+<p align="center">
+  <img src="https://github.com/cullyn-inverba/notes/blob/master/misc/psu.jpg">
+</p>
+
 # Portland State University Class Resources
 
+## Discord Server Links
+[CH: 335 - Organic Chemsitry](https://discord.gg/MDR7ze9p2m)
+
+
+# 
 Fall Term has just ended. I am currently working on making these notes I take even more accessible for others in preparation for winter term. That being said, my current goals for this repository:
 
 - [ ] Create cleaner, more stabilized versions of my custom class and style preferences.
@@ -13,8 +22,8 @@ Fall Term has just ended. I am currently working on making these notes I take ev
 - [ ] Make the repository more accessible.
     - [ ] Create a more detailed README for the repository in general.
     - [x] Establish a more standardized note taking structure.
-    - [ ] Create detailed introduction to note structure.
-    - [ ] Create a discord for each winter term classes that is more friendly to first time users.
+    - [ ] Create introduction to note structure.
+    - [x] Create a discord server for each winter term classes.
 - [ ] Make it easier for others to contribute.
     - [ ] Create more ways to easily share and discuss class problems.
     - [ ] Create videos tutorials about LateX.
