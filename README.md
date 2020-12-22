@@ -6,7 +6,7 @@
 Hello, and welcome. This repository is an attempt at increasing the effectivness of online learning, for myself and others. The main function of this repository will be a place to store and share notes I make, as well act as a means to hopefully encourage others to do the same.
 
 ## Discord Server Links
-![my image](/assets/t-bi-428.png) [PHL: 331U - Philosophy of Education](https://discord.gg/FwJzW8WGAS)
+[PHL: 331U - Philosophy of Education](https://discord.gg/FwJzW8WGAS)
 
 [CH: 335 - Organic Chemsitry](https://discord.gg/MDR7ze9p2m)
 
