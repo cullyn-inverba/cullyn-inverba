@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=assests/psu.jpg>
+  <img src=https://github.com/cullyn-inverba/notes/blob/master/assets/psu.jpg>
 </p>
 
 # Portland State University Class Resources
