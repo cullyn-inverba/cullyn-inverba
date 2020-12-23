@@ -6,7 +6,7 @@
 # BI: 428: Human Genetics · Portland State University · Winter 2021
 
  <p align="center">
-    <a href="bi-428.pdf">
+    <a href="Human-Genetics-W21.pdf">
     <img src="https://img.shields.io/badge/BI: 428-Syllabus-informational?logo=adobe-acrobat-reader" >
     </a>
     <a href="https://discord.gg/JHGNjnSdbB">
@@ -34,6 +34,7 @@ The following schedule is tentative and may be changed. Originally made from the
 
 
 ### **Week 1** (Jan 4-6) **Pedigree Analysis, Mendelian Disorders**
+
 | | Krof & Irons | D2L | Assignment | Special Assignment | 
 |-|:---:|:---:|:---:|:---:|
 | | 1,2,*3* | *TBA* | Pedigree | [OMIM](https://omim.org/) |
@@ -42,72 +43,81 @@ The following schedule is tentative and may be changed. Originally made from the
 <br>
 
 ### **Week 2** (Jan 11-13) **Chromosome Structure and Nomenclature, Syndromes**
+
 | | Krof & Irons | D2L | Assignment | 
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 6,9 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm | 
 
 <br>
 
 ### **Week 3** (Jan 18-20) **Sex determination**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | --- | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
 <br>
 
 ### **Week 4** (Jan 25-27) **Development and Epigenetics/Imprinting**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 6,12| *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
 <br>
 
 ### **Week 5** (Feb 1-3) **Midterm and Metabolic Pathways/Inborn Errors of Metabolism**
+
 | | Krof & Irons | D2L | Midterm | 
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 11 | *TBA* | Midterm |
 |Due| --- | --- | Wed, 6:00 pm |
 
 <br>
 
 ### **Week 6** (Feb 8-10) **Metabolic Pathways/Inborn Errors of Metabolism (cont.)**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 10,11,13,14 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
 <br>
 
 ### **Week 7** (Feb 15-17) **Mapping &amp; Linkage Analysis, Mapping Complex Disease**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 4,5 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
 <br>
 
 ### **Week 8** (Feb 22-24) **The Human Genome and Genome-Wide Association Studies**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 4,14 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
 <br>
 
 ### **Week 9** (Mar 1-3) **Bioethics**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 10,13 | *TBA* | Bioethics Panel |
 |Due| --- | --- | --- |
 
 <br>
 
 ### **Week 10** (Mar 8-10) **Cancer Genetics**
+
 | | Krof & Irons | D2L | Assignment |
-|-|:---:|:---:|:---:|:---:|
+|-|:---:|:---:|:---:|
 | | 15,16,17 | *TBA* | What is CRISPR |
 |Due| --- | --- | Wed, 6:40 pm |
 
