@@ -2,3 +2,5 @@ LateX
 manim
 ToC
 recontextualization
+ResearchHub
+pdf

@@ -12,7 +12,7 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 |Syllabus|Syllabus|[Syllabus](bi-428/Human-Genetics-W21.pdf)|Syllabus|Syllabus|
 |Textbook|[Textbook (Klein)](https://1lib.us/book/2929062/c615a5)|[Textbook](https://1lib.us/book/2655250/afad73)|[Textbook](https://1lib.us/book/9325117/c16dec)|Textbook|
 |Resources|Resources|[Resources](/bi-428)|Resources|Resources|
-|Notes|Notes|Notes|Notes|Notes|
+|Notes|Notes|[Notes](/bi-428/bi-428.pdf)|Notes|Notes|
 
 </center>
 
@@ -24,26 +24,29 @@ It's not necessary to use git to get the most out of this repository, most of it
 
 **Steps to update your local files with this repository**
 
-1. Make sure you have [git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).  
+1. Make sure you have [**git** installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).  
 2. Open a terminal.  
 3. Download this repository onto your machine:
+
     ```
     git clone ghttps://github.com/cullyn-inverba/notes.git
     ```
-4. That's it. You now have a folder called &ldquo;notes&rdquo; that is a copy of the one I push to GitHub. You now have all resources I included in this repository. 
+4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository. 
 
 **Updating Files**
 
 1. Open a terminal.
-2. Enter folder:
+2. Change your directory (cd) to where you cloned the repository:
+
     ```
     cd notes
     ```
     or
+
     ```
     cd ~/path/to/folder
     ```
-3. Update the folder if you want there is something I added recently. 
+3. Update the folder if there is something I added recently. This will update your folder to match what is currently on GitHub. 
     ```
     git pull
     ```
@@ -67,7 +70,7 @@ And an extended and interactive tutorial:
     - [ ] Create custom classes for essays, articles, notes.
         - [x] inVerba-notes&mdash;report class modified for extensive notes.
         - [ ] inVerba-essay&mdash;article class modified for traditional essays.
-        - [ ] inVerba-artcile&mdash;article class modified for scientific papers/reports.
+        - [ ] inVerba-article&mdash;article class modified for scientific papers/reports.
     - [x] ~~Clean up .sty file.~~ (I think it's better just to make separate custom classes)
     - [x] Establish primary dark-theme.
     - [ ] Create optional light-theme.
@@ -78,14 +81,16 @@ And an extended and interactive tutorial:
     - [x] Establish a more standardized note taking structure.
     - [ ] Create introduction to note structure.
     - [x] Create a discord server for each winter term classes.
+    - [ ] Create READMEs for each class.
 - [ ] **Make it easier for others to contribute.**
     - [ ] Create more ways to easily share and discuss class problems.
         - [x] Hotkeys for screenshots, screenshares, and instant gifs complete.
         - [x] Create/find guide to help others use git.
-        - [ ] Create READMEs for each class.
+    - [ ] Create a guide on using latex templates for class assignments.
     - [ ] Create videos tutorials about LateX.
         - [ ] Learn basics of manim.
-        - [ ] Actually publish at least one video using manim.
+        - [ ] Publish at least one video, probably a getting started with latex tutorial.
+        - [ ] Figure out how to make videos super class for each class?
 - [ ] **Learn how to properly maintain a repository.**
     - [ ] Complete all prerequisite tasks above.
     - [ ] ????
