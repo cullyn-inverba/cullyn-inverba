@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 ![Portland State University](assets/images/psu.jpg)
 
 
 
 <center> <h1>拾 Winter 2021 Class Resources 拾</h1> </center>
  
+=======
+<p align="center">
+  <img src=https://github.com/cullyn-inverba/notes/blob/master/assets/images/psu.jpg>
+</p>
+>>>>>>> 2dd6db274dbb3525bcb423c737f0e47537a3a8e7
 
 Hello and welcome. This repository is an attempt at increasing the effectiveness of online learning, for myself and others. The main function of this repository will be a place to store and share notes I make&mdash;hopefully doing so will encourage others to do the same!
 
