@@ -9,11 +9,9 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 |[ﭮ Philosophy of Education](https://discord.gg/FwJzW8WGAS)| [ﭮ Organic Chemistry II](https://discord.gg/MDR7ze9p2m) | [ﭮ Human Genetics](https://discord.gg/JHGNjnSdbB) | [ﭮ Conservation Biology](https://discord.gg/r7jkUHNC6b) | [ﭮ Sensory & Motor Systems](https://discord.gg/PSTgxwwJ2N) |
 |:---:|:---:|:---:|:---:|:---:|
 |[![PLU: 331U](assets/images/phl-331U.ico)](https://discord.gg/FwJzW8WGAS "Join PHL: 331U Discord Server 🥳")|[![CH: 335](assets/images/ch-335.ico)](https://discord.gg/MDR7ze9p2m "Join CH: 335 Discord Server 🥳")|[![BI: 428](assets/images/bi-428.ico)](https://discord.gg/JHGNjnSdbB "Join BI: 428 Discord Server 🥳")|[![BI: 429](assets/images/bi-429.ico)](https://discord.gg/r7jkUHNC6b "Join BI: 429 Discord Server 🥳")|[![BI: 463](assets/images/bi-463.ico)](https://discord.gg/PSTgxwwJ2N "Join BI: 463 Discord Server 🥳")|
-|Syllabus|Syllabus|[Syllabus](bi-428/Human-Genetics-W21)|Syllabus|Syllabus|
+|Syllabus|Syllabus|[Syllabus](bi-428/Human-Genetics-W21.pdf)|Syllabus|Syllabus|
 |Textbook|[Textbook (Klein)](https://1lib.us/book/2929062/c615a5)|[Textbook](https://1lib.us/book/2655250/afad73)|[Textbook](https://1lib.us/book/9325117/c16dec)|Textbook|
-|Weekly Schedule|Weekly Schedule|Weekly Schedule|Weekly Schedule|Weekly Schedule|
-|Class Slides|Class Slides|Class Slides|Class Slides|Class Slides|
-|Exercises|Exercises|Exercises|Exercises|Exercises|
+|Resources|Resources|[Resources](/bi-428)|Resources|Resources|
 |Notes|Notes|Notes|Notes|Notes|
 
 </center>
