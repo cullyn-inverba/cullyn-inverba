@@ -30,7 +30,7 @@ It's not necessary to use git to get the most out of this repository, most of it
 3. Download this repository onto your machine:
 
     ```
-    git clone ghttps://github.com/cullyn-inverba/notes.git
+    git clone https://github.com/cullyn-inverba/notes.git
     ```
 4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository. 
 
@@ -53,17 +53,17 @@ It's not necessary to use git to get the most out of this repository, most of it
     ```
 4. You're all set. There are probably other ways of doing this, but this is the most basic way to do it.
 
+5. 
+
 <br>
 
-For those more curious, here's a quick video to get you started: 
+### For those more curious, here's a quick video to get you started: 
 
 [![Git explained in 100 seconds](http://img.youtube.com/vi/hwP7WQkmECE/0.jpg)](http://www.youtube.com/watch?v=hwP7WQkmECE "Git Explained in 100 Seconds")
 
-And an extended and interactive tutorial:
+### And here is an interactive tutorial:
 
 [![What is Git It? How to use Git and Github](http://img.youtube.com/vi/HkdAHXoRtos/0.jpg)](http://www.youtube.com/watch?v=HkdAHXoRtos "What is Git It? How to use Git and Github")
-
-<br>
 
 ## Personal Goals for this Repository
 
@@ -95,9 +95,3 @@ And an extended and interactive tutorial:
 - [ ] **Learn how to properly maintain a repository.**
     - [ ] Complete all prerequisite tasks above.
     - [ ] ????
-
-### Disclaimers
-
-- Some information could up be wrong&mdash;I'm learning too after all. Please don't be afraid to point out errors! It's part of the reason I'm making this public.
-
-- Most of old files are compressed and here just in case I need them, but once most of previously mentioned goals are complete, then most of my depreciated notes files will be gone. Only notes that I deem to be good enough will remain in the future.
