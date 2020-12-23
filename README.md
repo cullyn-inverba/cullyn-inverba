@@ -17,8 +17,6 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 </center>
 
-<br>
-
 ## Using Git
 
 It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be adding slides provided by instructors, other class dependent resources, and constant updates to notes as term progresses. Rather than download them all through d2l, or each thing one link at a time, you can instead just capitalize on the time I will take doing it for myself anyways. 
@@ -34,6 +32,8 @@ It's not necessary to use git to get the most out of this repository, most of it
     ```
 4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository. 
 
+5. *Optional:* Feel free to delete everything besides the class folder you need. However, if you plan on trying to use LateX yourself, then you might want to keep the &ldquo;assets&rdquo; folder since it has templates and custom class files that you can use.
+
 **Updating Files**
 
 1. Open a terminal.
@@ -42,18 +42,22 @@ It's not necessary to use git to get the most out of this repository, most of it
     ```
     cd notes
     ```
-    or
+    or if you cloned it into a different directory:
 
     ```
-    cd ~/path/to/folder
+    cd ~/path/to/notes
     ```
-3. Update the folder if there is something I added recently. This will update your folder to match what is currently on GitHub. 
+
+4. To update the folder to download any changes I have made recently: 
     ```
     git pull
     ```
-4. You're all set. There are probably other ways of doing this, but this is the most basic way to do it.
+5. *Optional:* The command prompt might be telling you that running git pull without a default option is bad and that it chose one for you. The one it chooses is what we want, but to set the default option, then do this:
+    ```
+    git config pull.rebase false
+    ```
+6. You're all set. There are probably other ways of doing this, but this is the most basic way to do it. Keeping running step #4 to update the repository when ever I add something you need. 
 
-5. 
 
 <br>
 
