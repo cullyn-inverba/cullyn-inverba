@@ -6,10 +6,10 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 <center> 
 
-|[ﭮ Philosophy of Education](https://discord.gg/FwJzW8WGAS)| [ﭮ Organic Chemistry II](https://discord.gg/MDR7ze9p2m) | [ﭮ Human Genetics](https://discord.gg/JHGNjnSdbB) | [ﭮ Conservation Biology](https://discord.gg/r7jkUHNC6b) | [ﭮ Sensory & Motor Systems](https://discord.gg/PSTgxwwJ2N) |
+|[Philosophy of Education](/phl-331 "Go to class page")| [Organic Chemistry II](/ch-335 "Go to class page") | [Human Genetics](/bi-428 "Go to class page") | [Conservation Biology](/bi-429 "Go to class page") | [Sensory & Motor Systems](/bi-463 "Go to class page") |
 |:---:|:---:|:---:|:---:|:---:|
 |[![PLU: 331U](assets/images/phl-331U.ico)](https://discord.gg/FwJzW8WGAS "Join PHL: 331U Discord Server 🥳")|[![CH: 335](assets/images/ch-335.ico)](https://discord.gg/MDR7ze9p2m "Join CH: 335 Discord Server 🥳")|[![BI: 428](assets/images/bi-428.ico)](https://discord.gg/JHGNjnSdbB "Join BI: 428 Discord Server 🥳")|[![BI: 429](assets/images/bi-429.ico)](https://discord.gg/r7jkUHNC6b "Join BI: 429 Discord Server 🥳")|[![BI: 463](assets/images/bi-463.ico)](https://discord.gg/PSTgxwwJ2N "Join BI: 463 Discord Server 🥳")|
-| | |<a href="https://discord.gg/JHGNjnSdbB"><img src="https://img.shields.io/discord/790762936234147860?logo=discord"></a>| | |
+|<a href="https://discord.gg/FwJzW8WGAS"><img src="https://img.shields.io/discord/790800309924528170?logo=discord"></a> |<a href="https://discord.gg/MDR7ze9p2m"><img src="https://img.shields.io/discord/760937229798604850?logo=discord"></a> |<a href="https://discord.gg/JHGNjnSdbB"><img src="https://img.shields.io/discord/790762936234147860?logo=discord"></a>|<a href="https://discord.gg/r7jkUHNC6b"><img src="https://img.shields.io/discord/790737836571492462?logo=discord"></a>|<a href="https://discord.gg/PSTgxwwJ2N"><img src="https://img.shields.io/discord/790760762418659349?logo=discord"></a>|
 |Syllabus|Syllabus|[Syllabus](bi-428/Human-Genetics-W21.pdf) |Syllabus|Syllabus|
 |Textbook|[Textbook (Klein)](https://1lib.us/book/2929062/c615a5)|[Textbook](https://1lib.us/book/2655250/afad73)|[Textbook](https://1lib.us/book/9325117/c16dec)|Textbook|
 |Resources|Resources|[Resources](/bi-428)|Resources|Resources|
