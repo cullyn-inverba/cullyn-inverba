@@ -17,6 +17,10 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 </center>
 
+## Notes Structure
+
+![notes](/assets/public/notes-preview.gif)
+
 ## Using Git
 
 It‘s not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be adding slides provided by instructors, other class dependent resources, and constant updates to notes as term progresses. Rather than download them all through d2l, or each thing one link at a time, you can instead just capitalize on the time I will take doing it for myself anyways.
@@ -77,7 +81,7 @@ It‘s not necessary to use git to get the most out of this repository, most of 
     - [x] inVerba-notes&mdash;report class modified for extensive notes.
     - [ ] inVerba-essay&mdash;article class modified for traditional essays.
     - [ ] inVerba-article&mdash;article class modified for scientific papers/reports.
-  - [x] ~~Clean up .sty file.~~ (I think it‘s better just to make separate custom classes)
+  - [x] ~~Clean up .sty file.~~ (I think it's better to make separate custom classes)
   - [x] Establish primary dark-theme.
   - [ ] Create optional light-theme.
   - [ ] Leave sufficient comments for optional customization by others.
