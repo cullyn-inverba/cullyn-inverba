@@ -19,7 +19,7 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 ## Notes Structure
 
-![notes](/assets/public/notes-preview.gif)
+![notes](/assets/public/test.gif)
 
 ## Using Git
 
