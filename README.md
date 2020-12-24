@@ -19,7 +19,9 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 ## Notes Structure
 
-![notes](/assets/public/test.gif) ![notes](/assets/public/test2.gif)
+|           Notes Example            |           Essay Example            |        Mini-Quiz Example         |
+| :--------------------------------: | :--------------------------------: | :------------------------------: |
+| ![notes](/assets/public/notes.gif) | ![essay](/assets/public/essay.gif) | ![quiz](/assets/public/quiz.gif) |
 
 ## Using Git
 
