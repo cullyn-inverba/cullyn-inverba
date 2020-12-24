@@ -19,13 +19,37 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 ## Notes Structure
 
-|           Notes Example            |           Essay Example            |        Mini-Quiz Example         |
-| :--------------------------------: | :--------------------------------: | :------------------------------: |
-| ![notes](/assets/public/notes.gif) | ![essay](/assets/public/essay.gif) | ![quiz](/assets/public/quiz.gif) |
+<center>
+
+|           Notes Example            |
+| :--------------------------------: |
+| ![notes](/assets/public/notes.gif) |
+
+</center>
+
+The above example was from my fall term in 2020. It's slightly out of date, so I will be updating the example with a more up to date version soon. However, it captures the essence of what I'm trying to accomplish with these note sheets.
+
+### My Philosophy on Notes
+- My use of a hierarchical structure is an attempt to:
+  - Encourage recontextualization and minimize the mindless copying of information.
+  - Chunk information down into smaller pieces that I then can use to build upon.
+  - Identify weak parts of my understanding.
+  - Makes incorporating multiple sources easier.
+- If I do a good job, then I aim to:
+  - Be as concise as possible.
+  - Include information that is regularly referenced.
+  - Have key information that is easily identifiable.
+  - Minimize creation time. More time should be spent on application of the information contained in the notes.
+  - Make something I'm proud of and want to share. It's incredible how much motivation can be generated from the focus on the craft, or quality, of your pursuits&mdash;especially if others find it useful.
+
+### Significance of Color Choice
+
+- [Screenshots of note structure to be made]
+
 
 ## Using Git
 
-It‘s not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be adding slides provided by instructors, other class dependent resources, and constant updates to notes as term progresses. Rather than download them all through d2l, or each thing one link at a time, you can instead just capitalize on the time I will take doing it for myself anyways.
+It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be adding slides provided by instructors, other class dependent resources, and constant updates to notes as the term progresses. Rather than having to tediously download them all through d2l, or having to constantly revisiting this page, you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
 
 **Steps to update your local files with this repository**
 
@@ -37,7 +61,7 @@ It‘s not necessary to use git to get the most out of this repository, most of 
    git clone https://github.com/cullyn-inverba/notes.git
    ```
 
-4. That‘s it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository.
+4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository.
 
 5. _Optional:_ Feel free to delete everything besides the class folder you need. However, if you plan on trying to use LateX yourself, then you might want to keep the &ldquo;assets&rdquo; folder since it has templates and custom class files that you can use.
 
@@ -56,25 +80,29 @@ It‘s not necessary to use git to get the most out of this repository, most of 
    cd ~/path/to/notes
    ```
 
-3. To update the folder to download any changes I have made recently:
+3. To update the folder to download any changes that I have made recently:
    ```
    git pull
    ```
-4. _Optional:_ The command prompt might be telling you that running git pull without a default option is bad and that it chose one for you. The one it chooses is what we want, but to set the default option, then do this:
+4. _Optional:_ The command prompt might be telling you that running git pull without a default option is bad and that it chose one for you. The option it chooses for us is what we want, but to set the default option, then run this:
    ```
    git config pull.rebase false
    ```
 5. You‘re all set. There are probably other ways of doing this, but this is the most basic way to do it. Keeping running step #4 to update the repository when ever I add something you need.
 
-<br>
-
-### For those more curious, here‘s a quick video to get you started:
+### For those still curious about git:
 
 [![Git explained in 100 seconds](http://img.youtube.com/vi/hwP7WQkmECE/0.jpg)](http://www.youtube.com/watch?v=hwP7WQkmECE "Git Explained in 100 Seconds")
 
 ### And here is an interactive tutorial:
 
 [![What is Git It? How to use Git and Github](http://img.youtube.com/vi/HkdAHXoRtos/0.jpg)](http://www.youtube.com/watch?v=HkdAHXoRtos "What is Git It? How to use Git and Github")
+
+## Using LaTeX
+
+- [Text instructions for the basics to be explained]
+
+- [Video guide to using my notes template]
 
 ## Personal Goals for this Repository
 
