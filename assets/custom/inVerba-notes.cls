@@ -4,7 +4,6 @@
 % ██║╚██╗██║██║   ██║   ██║   ██╔══╝  ╚════██║
 % ██║ ╚████║╚██████╔╝   ██║   ███████╗███████║
 % ╚═╝  ╚═══╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
-%   
 %  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
 % |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
 % |::::.\::: https://github.com/cullyn-inverba/Notes ::::.\::::::::.\
@@ -18,7 +17,6 @@
 % ╔═╗┌─┐┌─┐┌─┐
 % ╠═╝├─┤│ ┬├┤ 
 % ╩  ┴ ┴└─┘└─┘
-
 \RequirePackage[hmargin=2.4cm, vmargin=2cm, headsep=1.3em]{geometry} 
     \raggedright 
     \setlength\headheight{16pt}
@@ -29,7 +27,6 @@
 % ╔═╗┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
 % ╚═╗├┤ │   │ ││ ││││└─┐
 % ╚═╝└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
-
 \RequirePackage{titlesec}
     \titleformat{\chapter}{\LARGE\bfseries\color{chap}}{}{0pt}{\centering}
         \titlespacing*{\chapter}{0pt}{-64pt}{4pt} 
@@ -45,7 +42,6 @@
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ ││││ │ ├┤ │││ │ └─┐
 % ╚═╝└─┘┘└┘ ┴ └─┘┘└┘ ┴ └─┘
-
 \RequirePackage{titletoc}
     \renewcommand{\contentsname}{\color{title-color}\theTitle}
     \titlecontents{chapter}[0 em]
@@ -61,7 +57,6 @@
 %  ╦  ┬┌─┐┌┬┐┌─┐
 %  ║  │└─┐ │ └─┐
 %  ╩═╝┴└─┘ ┴ └─┘
-
 \RequirePackage{enumitem}
     \setlist[itemize,1]{
         label=\small\(\triangleright\), 
@@ -80,7 +75,6 @@
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐
 % ╠╣ │ ││││ │ └─┐
 % ╚  └─┘┘└┘ ┴ └─┘
-
 \RequirePackage[T1]{fontenc}
 \RequirePackage{cmbright}
     \SetSymbolFont{largesymbols}{normal}{OMX}{iwona}{m}{n}
@@ -89,7 +83,6 @@
 % ╦ ╦┌─┐┌─┐┌┬┐┌─┐┬─┐   ┬   ╔═╗┌─┐┌─┐┌┬┐┌─┐┬─┐
 % ╠═╣├┤ ├─┤ ││├┤ ├┬┘  ┌┼─  ╠╣ │ ││ │ │ ├┤ ├┬┘
 % ╩ ╩└─┘┴ ┴─┴┘└─┘┴└─  └┘   ╚  └─┘└─┘ ┴ └─┘┴└─
-
 \RequirePackage{fancyhdr}
     \pagestyle{fancy}
     \fancyhead{}
@@ -103,7 +96,6 @@
 % ╔╦╗┌─┐┌┬┐┬ ┬
 % ║║║├─┤ │ ├─┤
 % ╩ ╩┴ ┴ ┴ ┴ ┴
-
 \RequirePackage{amsmath, mathtools, amssymb, MnSymbol}
     \numberwithin{equation}{section}
 
@@ -118,7 +110,6 @@
 % ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
 % ║ ║ │ ││  │ │ └┬┘
 % ╚═╝ ┴ ┴┴─┘┴ ┴  ┴ 
-
 \RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage}
 \RequirePackage[justification=centering]{caption}
     \captionsetup[table]{
@@ -145,8 +136,17 @@
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ │││││││├─┤│││ ││└─┐
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
+\renewcommand{\emph}[1]{{\color{emph}#1}} 
+\newcommand{\stress}[1]{{\color{stress}#1}}
 
-\newcommand{\textbfl}[2]{\textbf{#1}\label{#1}}
+\newcommand{\textbfl}[1]{\textbf{#1}\label{#1}}
+\newcommand{\ddd}[1]{{\color{jarg}\textbfl{#1}}}
+
+\newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
+
+\newcommand{\ulink}[1]{{\color{ulink}{#1}\small\(\,^\rcurvearrowne\)}}
+\newcommand{\dlink}[1]{{\color{dlink}{#1}\small\(\,^\lcurvearrowse\)}}
+
 
 
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
@@ -155,11 +155,9 @@
 % ██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║
 % ╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║
 %  ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
-
 % ╔╗ ┌─┐┌─┐┌─┐
 % ╠╩╗├─┤└─┐├┤ 
 % ╚═╝┴ ┴└─┘└─┘
-
 % Background: #1f1f1f
 \definecolor{back}{HTML}{1f1f1f} 
 \pagecolor{back} 
@@ -169,33 +167,28 @@
 \color{text} 
 \definecolor{minor}{HTML}{b0b0b0} 
 \definecolor{minimal}{HTML}{6b6b6b} 
+\definecolor{title-color}{HTML}{78b07a}
 
 % Emphasis: #f5b17a #ff9e4f
 \definecolor{emph}{HTML}{f5b17a} 
-    \renewcommand{\emph}[1]{{\color{emph}#1}} 
 \definecolor{stress}{HTML}{ff9e4f} 
-    \newcommand{\stress}[1]{{\color{stress}#1}}
 
 % Titles: #4ca9f5 #7abef5 #b0d0eb #cedeeb
 \definecolor{chap}{HTML}{4ca9f5} 
 \definecolor{sec}{HTML}{7abef5} 
 \definecolor{ssec}{HTML}{b0d0eb} 
 \definecolor{jarg}{HTML}{cedeeb} 
-    \newcommand{\jargon}[1]{{\color{jarg}\bfseries{#1}}}
+    
 
 % Links: #99e09b #78b07a #496b4a 
 \definecolor{link}{HTML}{99e09b} 
-    \newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
-\definecolor{title-color}{HTML}{78b07a}
 \definecolor{ulink}{HTML}{78b07a} 
-    \newcommand{\ulink}[1]{{\color{ulink}{#1}\small\(\,^\rcurvearrowne\)}}
 \definecolor{dlink}{HTML}{496b4a} 
-    \newcommand{\dlink}[1]{{\color{dlink}{#1}\small\(\,^\lcurvearrowse\)}}
+    
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
 %  ║║││  ├─┤│ │ │ │ ││││└┬┘
 % ═╩╝┴└─┘┴ ┴└─┘ ┴ └─┘┴ ┴ ┴ 
-
 % Charge: #f5736c → #5f89f5
 \definecolor{rrr}{HTML}{f5736c}
     \newcommand{\rrr}[1]{{\color{rrr}{#1}}}

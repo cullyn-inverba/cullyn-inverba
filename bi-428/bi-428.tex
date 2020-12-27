@@ -5,22 +5,61 @@
 \begin{document}
 \tableofcontents
 
-\chapter{First Chapter}
-\section{Section}
-\begin{itemize}
-    \item Hello
-    \subsection{Subsection}
-    \begin{itemize}
-        \item 
-    \end{itemize}
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% DNA Structure and Function %%%%%%%%%%%
+
 %\begingroup
-\chapter{Chapter 2}
-\section{Section}
+\chapter{DNA Structure and Function}\label{DNA Basics}
+\begin{adjustwidth}{1cm}{1cm}
+  \dots
+\end{adjustwidth}
+
+\section{Deoxyribonucleic Acid}\label{DNA}
 \begin{itemize}
-    \item 
+    \item \ddd{Deoxyribonucleic Acid (DNA)}: a double helix containing two polynucleotide chains that carries the genetic instructions for all known organisms and many viruses.
+        \begin{itemize}
+            \item The bases are made of four bases:
+                \begin{itemize}
+                    \item The \yyy{purine} derivatives: \yyy{adenine (A) and guanine (G)}.
+                    \item The \xxx{pyrimidine} derivatives: \xxx{thymine (T) and cytosine (C)}.
+                \end{itemize} 
+            \item The backbone is made of \emph{alternating deoxyribose} molecules (a ribose missing its 2' oxygen) connected to phosphodiester bonds from \emph{5' \to\ 3'} positions---forming two \emph{antiparallel} strands.
+            
+                \centering
+                \schemestart{}
+                \chemname{\chemfig[cram width=2pt]{HO-[2,0.5,2]?<[7,0.7](-[6,0.5]OH)-[,,,,line width=2pt](-[6,0.5]\emph{OH})>[1,0.7](-[6,0.5]OH)-[3,0.7]O-[4]?}}{Ribose}
+                \arrow{}
+                \chemname{\chemfig[cram width=2pt]{HO-[2,0.5,2]?<[7,0.7](-[6,0.5]OH)-[,,,,line width=2pt](-[6,0.5]\emph{H})>[1,0.7](-[6,0.5]OH)-[3,0.7]O-[4]?}}{Deoxyribose}
+                \schemestop{}
+        \end{itemize}
+    \item Number of \yyy{adenines} = \xxx{thymines}. (A-T)
+    \item Number of \yyy{guanines} = \xxx{cytosines}. (C-G)
+        \begin{itemize}
+            \item Bonds between bases are \emph{noncovalent} (no electron sharing, weak).
+            \item C---G pairs form three hydrogen bonds, while A---T forms two; making G---C slightly more stable.
+            
+            \scriptsize
+            \yyy{\chemname%
+            {\chemfig{@{H1}H-[:180]N(-[:-120]H)-[:120]*6(-N(-@{H2}H)-(=@{O3}O)-(*5(-N=-N(-R)-))=-N=)}}
+            {\normalsize Guanine}}
+          \qquad
+          \xxx{\chemname%
+            {\chemfig{@{O1}O=[:60]*6(-N(-R)-=-(-N(-[::60]@{H3}H)-[::-60]H)=@{N2}N-)}}
+            {\normalsize Cytosine}}
+          \chemmove[dashed]{\draw (H1)--(O1) (H2)--(N2) (O3)--(H3) ;}
+          \hspace{18pt}
+          \yyy{\chemname%
+            {\chemfig{-[:120,,,,back]*6(-N(-@{H2}H)=(-NH-[:0]@{H4}H)-(*5(-N=-N(-R)-))=-N=)}}
+            {\normalsize Adenine}}
+          \qquad
+          \xxx{\chemname%
+            {\chemfig{O=[:60]*6(-N(-R)-=(-)-(=@{O}O)-@{N2}N-)}}
+            {\normalsize Thymine}}
+          \chemmove[dashed]{\draw (H2)--(N2) (H4)--(O) ;}
+        \end{itemize} 
 \end{itemize}
+
+
 %\endgroup
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% DNA Structure and Function %%%%%%%%%%%
+
 \end{document}
