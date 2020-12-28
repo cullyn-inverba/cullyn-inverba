@@ -23,7 +23,7 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 |           Notes Example            |
 | :--------------------------------: |
-| ![notes](/assets/public/notes.gif) |
+| ![notes](assets/images/gifs/notes.gif) |
 
 </center>
 
@@ -31,21 +31,20 @@ The above example was from my fall term in 2020. It's slightly out of date, so I
 
 ### My Philosophy on Notes
 - My use of a hierarchical structure is an attempt to:
-  - Encourage recontextualization and minimize the mindless copying of information.
+  - Encourage recontextualizing information and minimize mindless copying.
   - Chunk information down into smaller pieces that I then can use to build upon.
-  - Identify weak parts of my understanding.
-  - Makes incorporating multiple sources easier.
+  - Identify the weaker parts of my understanding holding me back.
+  - A means to make incorporating multiple sources and revision easier. 
 - If I do a good job, then I aim to:
   - Be as concise as possible.
   - Include information that is regularly referenced.
-  - Have key information that is easily identifiable.
-  - Minimize creation time. More time should be spent on application of the information contained in the notes.
+  - Have key pieces of information be easily identifiable.
+  - Minimize creation time; more time should be spent on application of the information contained in the notes.
   - Make something I'm proud of and want to share. It's incredible how much motivation can be generated from the focus on the craft, or quality, of your pursuits&mdash;especially if others find it useful.
 
 ### Significance of Color Choice
 
-- [Screenshots of note structure to be made]
-
+![colors](assets/images/colors.png)
 
 ## Using Git
 

@@ -138,6 +138,8 @@
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 \renewcommand{\emph}[1]{{\color{emph}#1}} 
 \newcommand{\stress}[1]{{\color{stress}#1}}
+\newcommand{\minor}[1]{{\color{minor}#1}}
+\newcommand{\minimal}[1]{{\color{minimal}#1}}
 
 \newcommand{\textbfl}[1]{\textbf{#1}\label{#1}}
 \newcommand{\ddd}[1]{{\color{jarg}\textbfl{#1}}}
