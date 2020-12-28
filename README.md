@@ -17,18 +17,6 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 </center>
 
-## Notes Structure
-
-<center>
-
-|           Notes Example            |
-| :--------------------------------: |
-| ![notes](assets/images/gifs/notes.gif) |
-
-</center>
-
-The above example was from my fall term in 2020. It's slightly out of date, so I will be updating the example with a more up to date version soon. However, it captures the essence of what I'm trying to accomplish with these note sheets.
-
 ### My Philosophy on Notes
 - My use of a hierarchical structure is an attempt to:
   - Encourage recontextualizing information and minimize mindless copying.
