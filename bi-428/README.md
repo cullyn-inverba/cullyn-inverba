@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.etsy.com/listing/567608817/dna-human-watercolor-print-dna-art">
+  <a title="Image source, no affiliation" href="https://www.etsy.com/listing/567608817/dna-human-watercolor-print-dna-art">
   <img src="../assets/images/bi-428.png" />
 </p>
 
@@ -14,7 +14,7 @@
    alt="chat on Discord">
     </a>
     <a href="bi-428.pdf">
-    <img src="https://img.shields.io/badge/notes-not started-important?logo=latex" >
+    <img src="https://img.shields.io/badge/notes-review done-important?logo=latex" >
     </a>
 </p>
 
