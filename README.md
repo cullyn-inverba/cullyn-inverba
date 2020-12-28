@@ -44,8 +44,7 @@ The above example was from my fall term in 2020. It's slightly out of date, so I
 
 A brief guide to my color choices:
 
-
-![colors](assets/images/colors.png)
+![colors](assets/images/color-guide.png)
 
 ## Using Git
 
