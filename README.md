@@ -42,7 +42,8 @@ The above example was from my fall term in 2020. It's slightly out of date, so I
   - Minimize creation time; more time should be spent on application of the information contained in the notes.
   - Make something I'm proud of and want to share. It's incredible how much motivation can be generated from the focus on the craft, or quality, of your pursuits&mdash;especially if others find it useful.
 
-### Significance of Color Choice
+A brief guide to my color choices:
+
 
 ![colors](assets/images/colors.png)
 
