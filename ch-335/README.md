@@ -38,23 +38,23 @@ The following schedule is tentative and may be changed. I originally generated i
 
 ### **Week 1** (Jan 4-10) **Alkenes**
 
-|     | Klein | Strongin |          Slides           |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :-----------------------: | :----------: | :----------: |
-|     |   ?   |    14    | [Alkenes](slides/Alkenes.pdf) | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    14    | Explanations | Explanations |
 
 Supplemental Materials
 - [Alkene Structure and Classification](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes-jay/v/alkene-intro-and-stability "Khan Academy")
 - [Naming Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/naming-alkenes-examples  "Khan Academy")
 - [E-Z Naming Scheme for Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/cis-trans-and-e-z-naming-scheme-for-alkenes  "Khan Academy")
 - [Markovnikov's Rule and Carbocations](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/markovnikov-s-rule-and-carbocations  "Khan Academy")
-- [Addtion of Water (acid-catalyzed) Mechanism](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/addition-of-water-acid-catalyzed-mechanism  "Khan Academy") 
+- [Addition of Water (acid-catalyzed) Mechanism](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/addition-of-water-acid-catalyzed-mechanism  "Khan Academy") 
   <br>
 
 ### **Week 2** (Jan 11-17) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    15    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    15    | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -63,9 +63,9 @@ Supplemental Materials
 
 ### **Week 3** (Jan 18-24) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   8   |    16    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   8   |    16    | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -74,9 +74,9 @@ Supplemental Materials
 
 ### **Week 4** (Jan 25-31) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    16, 17    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    16, 17A   | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -85,9 +85,9 @@ Supplemental Materials
 
 ### **Week 5** (Feb 1-7) **Midterm 1, ???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    17, 18    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    17, 18A   | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -96,9 +96,9 @@ Supplemental Materials
 
 ### **Week 6** (Feb 8-14) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    18, 19    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    18, 19   | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -107,9 +107,9 @@ Supplemental Materials
 
 ### **Week 7** (Feb 15-21) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    19, 20    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    19, 20   | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -118,9 +118,9 @@ Supplemental Materials
 
 ### **Week 8** (Feb 22-28) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    20    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    20    | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -129,9 +129,9 @@ Supplemental Materials
 
 ### **Week 9** (Mar 1-7) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    21    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    21    | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -140,9 +140,9 @@ Supplemental Materials
 
 ### **Week 10** (Mar 8-14) **???**
 
-|     | Klein | Strongin | Slides |  Mini Quiz   |   Practice   |
-| --- | :---: | :------: | :----: | :----------: | :----------: |
-|     |   ?   |    22    |  TBA   | Explanations | Explanations |
+|     | Klein | Strongin |  Mini Quiz   |   Practice   |
+| --- | :---: | :------: | :----------: | :----------: |
+|     |   ?   |    22    | Explanations | Explanations |
 
 Supplemental Materials
 
