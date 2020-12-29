@@ -1,9 +1,10 @@
 <p align="center">
-  <a title="Image source, no affiliation" href="https://www.etsy.com/listing/567608817/dna-human-watercolor-print-dna-art">
-  <img src="../assets/images/bi-428.png" />
+  <a title="Join BI: 428 Discord Server 🥳" href="https://discord.gg/JHGNjnSdbB">
+  <img src="../assets/images/bi-428.ico" />
+  </a>
 </p>
 
-# BI: 428: Human Genetics · Portland State University · Winter 2021
+# BI: 428 · Human Genetics · Portland State University · Winter 2021
 
  <p align="center">
     <a href="Human-Genetics-W21.pdf">
