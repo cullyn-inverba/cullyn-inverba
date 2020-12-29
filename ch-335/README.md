@@ -7,7 +7,7 @@
 # CH: 355 · Organic Chemistry II · Portland State University · Winter 2021
 
  <p align="center">
-    <a title="View class syllabus" href="Human-Genetics-W21.pdf">
+    <a title="View class syllabus" href="organic-chemistry-II-W21.pdf">
     <img src="https://img.shields.io/badge/CH: 355-Syllabus-informational?logo=adobe-acrobat-reader" >
     </a>
     <a title="Join CH: 335 Discord server 🥳" href="https://discord.gg/JHGNjnSdbB">
