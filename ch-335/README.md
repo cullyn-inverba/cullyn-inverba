@@ -30,7 +30,7 @@
 - A website that is useful for [memorizing the periodic](https://online.seterra.com/en-an/vgp/3824) table. Surprisingly helpful at times.
 - Can't forget [Crash Course Organic Chemistry](https://www.youtube.com/playlist?list=PL8dPuuaLjXtONguuhLdVmq0HTKS0jksS4), it's still being currently being made, but has plenty of content already.
 - [The Organic Chemistry Tutor](https://www.youtube.com/c/TheOrganicChemistryTutor/featured): a huge lifesaver for many subjects, not just organic chemistry. There is not really a single playlist that tracks our class content, but just look up his videos on YouTube for great practice problems and walk-through solutions.
-- My [notes](ch-334/organic-chem.pdf) from last term and my work on some [mini quizes](ch-334/apres-lecture-quiz.pdf) that were from Harry Davis's class. This was my first experiment with sharing my notes, so they are less structured (also didn't have working spell check at the time). Furthermore, I ran into some issues that started to become unmanageable the last two weeks of the term and it prompted a re-write of my custom LaTeX class. So, the last couple chapters and explanations to the mini quizzes were a mostly absent.
+- My [notes](ch-334/org-chem.pdf) from last term and my work on some [mini quizes](ch-334/apres-lecture-quiz.pdf) that were from Harry Davis's class. This was my first experiment with sharing my notes, so they are less structured (also didn't have working spell check at the time). Furthermore, I ran into some issues that started to become unmanageable the last two weeks of the term and it prompted a re-write of my custom LaTeX class. So, the last couple chapters and explanations to the mini quizzes were a mostly absent.
 
 ## **Weekly Schedule**
 
