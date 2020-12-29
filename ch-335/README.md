@@ -40,7 +40,7 @@ The following schedule is tentative and may be changed. I originally generated i
 
 |     | Klein | Strongin |          Slides           |  Mini Quiz   |   Practice   |
 | --- | :---: | :------: | :-----------------------: | :----------: | :----------: |
-|     |   ?   |    14    | [Alkenes](slides/Alkenes) | Explanations | Explanations |
+|     |   ?   |    14    | [Alkenes](slides/Alkenes.pdf) | Explanations | Explanations |
 
 Supplemental Materials
 - [Alkene Structure and Classification](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes-jay/v/alkene-intro-and-stability "Khan Academy")
