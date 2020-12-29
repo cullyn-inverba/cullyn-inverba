@@ -8,7 +8,7 @@
 
  <p align="center">
     <a href="Human-Genetics-W21.pdf">
-    <img src="https://img.shields.io/badge/BI: 428-Syllabus-informational?logo=adobe-acrobat-reader" >
+    <img src="https://img.shields.io/badge/BI: 428-Syllabus (updated 12/29)-informational?logo=adobe-acrobat-reader" >
     </a>
     <a href="https://discord.gg/JHGNjnSdbB">
   <img src="https://img.shields.io/discord/790762936234147860?logo=discord"
@@ -52,7 +52,7 @@ The following schedule is tentative and may be changed. Originally made from the
 
 <br>
 
-### **Week 3** (Jan 18-20) **Sex determination**
+### **Week 3** (Jan 18-20) **Sex Determination**
 
 | | Krof & Irons | D2L | Assignment |
 |-|:---:|:---:|:---:|
