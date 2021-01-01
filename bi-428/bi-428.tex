@@ -3,7 +3,7 @@
 \newcommand{\theTitle}{\href{https://github.com/cullyn-inverba/notes/tree/master/bi-428} {Human Genetics}}
 
 \begin{document}
-\tableofcontents
+\hypertarget{ToC}{\tableofcontents}
 
 %%%%%%%%%%% DNA Structure and Function %%%%%%%%%%%
 %\begingroup
@@ -60,7 +60,6 @@
 %%%%%%%%%%% DNA Structure and Function %%%%%%%%%%%
 
 %%%%%%%%%%% Genetic Variation %%%%%%%%%%%
-
 %\begingroup
 \chapter{Genetic Variation}\label{Genetic Variation}
 \begin{adjustwidth}{1cm}{1cm}
@@ -68,6 +67,7 @@
 \end{adjustwidth}
 
 \section{Mutation Nomenclature}\label{Mutation Nomenclature}
+\begin{multicols}{2}
 \begin{itemize}
   \item \textbf{Level of mutational change}:
     \begin{itemize}
@@ -76,6 +76,7 @@
       \item \emph{m} = Mitochondrial sequence
       \item \emph{r} = RNA sequence
       \item \emph{p} = Protein sequence
+      \item \emph{E+I or E-I} = Explained below
     \end{itemize}
   \item \textbf{Type of mutational change}:
     \begin{itemize}
@@ -86,8 +87,11 @@
       \item \emph{ins} = Insertion
       \item \emph{inv} = Inversion
     \end{itemize}
-  \item \emph{E+I} = The last nucleotide of preceding exon (E) for genomic mutations at the 5' (+) and number of nucleotides into the intron (I).
-  \item \emph{E-I} = The first nucleotide of the next exon (E) for mutations at the 3' end of an intron (-) and the number of nucleotides into the intron (I).
+  \end{itemize}
+  \end{multicols}
+  \begin{itemize}
+    \item \emph{E+I} = The last nucleotide of preceding exon (E) for genomic mutations at the 5' (+) and number of nucleotides into the intron (I).
+    \item \emph{E-I} = The first nucleotide of the next exon (E) for mutations at the 3' end of an intron (-) and the number of nucleotides into the intron (I).
   \subsection{Nomenclature Examples}
   \begin{itemize}
       \item \emph{g.1346A>C}: Change of A to C at position 1346 in the genomic DNA sequence.
@@ -100,5 +104,40 @@
 %\endgroup
 %%%%%%%%%%% Genetic Variation %%%%%%%%%%%
 
+%%%%%%%%%%% Patterns of Inheritance %%%%%%%%%%%
+%\begingroup
+\chapter{Patterns of Inheritance}\label{Patterns of Inheritance}
+\begin{adjustwidth}{1cm}{1cm}
+  Still, mostly basic review. Some fuzzier key terms were added in for quick reference, as well as a legend for pedigree analysis. Again, I will probably be revisiting this later.
+\end{adjustwidth}
 
+\begin{center}
+  \ddd{Pedigree Legend}
+  
+  \includegraphics[scale=0.35]{images/pedigree.png}
+\end{center}
+
+\section{Inheritance Review}\label{Inhertiance Review}
+\begin{itemize}
+    \item \ddd{Psudodominant}: when a condition generated from an autosomal recessive trait that is common and compatible with reproduction.
+      \begin{itemize}
+        \item A ``false'' dominance, due to higher frequencies of homozygous carriers of the recessive allele.
+      \end{itemize}
+    \item \ddd{Penetrance}: the proportion of individuals carrying a particular variant that also express the trait.
+      \begin{itemize}
+        \item E.g., 60\% penetrance of autosomal dominant allele means 60\% of the population will express the trait to some degree.
+      \end{itemize}
+    \item \ddd{Expressivity}: the degree of phenotypic expression, not to be confused with penetrance. 
+    \item \ddd{Allelic heterogeneity}: when different mutations at the same locus lead to the same or very similar phenotypes. 
+    \item \ddd{Mosaicism}: when two or more populations of cells with different genotypes in one individual who has developed from a fertilized egg.
+      \begin{itemize}
+        \item Germline mosaicism occurs during gem cell development, which means mutations can be passed on despite not being present one generating the germline.
+        \item Somatic mosaicism occurs when mutation occurs in early development, usually expressing mild or restricted manifestations of the phenotype. Only affects children if also present in germline.
+      \end{itemize}
+    \item \ddd{Trinucleotide repeat disorder}: a mutation in which repeats of three nucleotides increases until they cross a threshold above which they become unstable.
+\end{itemize}
+
+
+%\endgroup
+%%%%%%%%%%% Patterns of Inheritance %%%%%%%%%%%
 \end{document}

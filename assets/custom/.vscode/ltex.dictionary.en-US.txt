@@ -7,3 +7,12 @@ antiparallel
 adenines
 thymines
 Semiconservative
+Psudodominant
+Penetrance
+penetrance
+Expressivity
+Allelic
+Mosaicism
+germline
+mosaicism
+Trinucleotide
