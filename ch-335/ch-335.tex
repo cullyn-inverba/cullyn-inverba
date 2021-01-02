@@ -4,15 +4,377 @@
 \newcommand{\theTitle}{\href{https://github.com/cullyn-inverba/notes/tree/master/ch-335} {Organic Chemistry II}}
 
 \begin{document}
-\tableofcontents
+\hypertarget{ToC}{\tableofcontents}
+% chktex-file 36
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Reference Material %%%%%%%%%%%
 %\begingroup
-\chapter{Chapter 1}
-\section{Section}
+\chapter{Reference Material}\label{Reference Material}
+\begin{adjustwidth}{1cm}{1cm}
+  This section contains material from organic chemistry I. Any material I had to go back and reference at least once in order to complete a problem will be added, as well as some things I think might be useful. 
+\end{adjustwidth}
+
+\section{Common Patterns}
+    \begin{itemize}
+        \item \textbf{Associated Patterns for \emph{Oxygen}}
+            \begin{itemize}
+                \item A \bbb{negative (\(\circleddash \))} charge corresponds with \bbb{1 bond} and \bbb{3 lone pairs}.
+                \item The \minor{absence} of charge corresponds with \minor{2 bonds} and \minor{2 lone pairs}.
+                \item A \rrr{positive (\( \oplus \))} charge corresponds with \rrr{3 bonds} and \rrr{1 lone pair}.
+            \end{itemize}
+        \item \textbf{Associated Patterns for \emph{Nitrogen}}
+            \begin{itemize}
+                \item A \bbb{negative} charge corresponds with \bbb{2 bonds} and \bbb{2 lone pairs}.
+                \item The \minor{absence} of charge corresponds with \minor{3 bonds} and \minor{1 lone pair}.
+                \item A \rrr{positive} charge corresponds with \rrr{4 bonds} and \rrr{0 lone pairs}.
+            \end{itemize}
+        \subsection{Hydrogen Deficiency Index} 
+            \begin{itemize}
+                \item \ddd{Hydrogen deficiency index (HDI)}: the measure of degrees of unsaturation.
+                \begin{itemize}
+                    \item E.g., two degrees of unsaturation results in a HDI of 2.
+                    \item Degrees of freedom help represent possbile structures, indicating possible double bounds, triple bounds, rings, or various combinations of each.
+                    \item Only helpful when molecular formula is known for certainty.
+                \end{itemize}
+                \item Formula: \emph{HDI = \( \frac{1}{2}(2C + 2 + N - H - X) \)}
+                \begin{itemize}
+                    \item \(X\): halogen atoms.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+
+\section{Nomenclature of Alkanes}
 \begin{itemize}
-    \item 
+    \item \ddd{Alkane}: acyclic (linear structure) saturated hydrocarbons (no \(\pi \) bonds).
+        \begin{itemize}
+            \item General chemical formula: \emph{\ch{C_nH_{2n+2}}}
+        \end{itemize}
+    \subsection{Selecting the Parent Chain}
+    \begin{itemize}
+        \item \ddd{Parent chain}: the longest carbon chain in an alkane.
+        \begin{table}[ht]
+            \centering
+            \caption{Parent Names for Alkanes\strut}\label{tab:alkanes}
+            \begin{tabular}{ccc}
+                \toprule
+                Number of Carbons & Parent & Name \\
+                \midrule
+                1 & meth & methane \\
+                2 & eth & ethane \\
+                3 & pro & propane \\
+                4 & but & butane \\
+                5 & pent & pentane\\
+                6 & hex & hexane \\
+                7 & hept & heptane \\
+                8 & oct & octane \\
+                9 & non & nonane \\
+                10 & dec & decane \\
+                11 & undec & undecane \\
+                12 & dodec & dodecane \\
+                13 & tridec & tridecane \\
+                14 & tetradec & tetradecane \\
+                15 & pentadec & pentadecane\\
+                20 & eicos & eicosane \\
+                30 & triacont & triacontane \\
+                40 & tetracont & tetracontane \\
+                50 & pentacont & hectane \\
+                100 & hect & hectane \\
+                \bottomrule
+                \end{tabular}
+        \end{table}   
+    \item \ddd{Substituents}: branches connected to the parent chain, can be a single atom, groups of atoms, that replace one or more hydrogen atoms. 
+        \begin{itemize}
+            \item If there is competition between chains of \emph{equal length}, then \emph{choose the chain with the greatest number of substituents}.
+        \end{itemize}
+    \end{itemize}
+    \subsection{Naming Substituents}
+    \begin{itemize}
+        \item \ddd{Alkyl groups}: Substituents that are named the same as the parents, but with the added letters ``ly''.
+        \begin{table}[ht]
+            \centering
+            \caption{Names of Alkyl Groups\strut}\label{tab:substituents}
+            \begin{tabular}{ccc}
+                \toprule
+                Substituent Carbons&  Terminology\\
+                \midrule
+                1 & methyl\\
+                2 & ethyl \\
+                3 & propyl \\
+                4 & butyl \\
+                5 & pentyl \\
+                6 & hexyl \\
+                7 & heptyl \\
+                8 & octyl \\
+                9 & nonyl \\
+                10 & decyl \\
+                \bottomrule
+                \end{tabular}
+        \end{table}
+        \item When a group is connected to the ring, then the ring is generally treated as the parent.
+            \begin{itemize}
+                \item If the ring has fewer atoms than the rest of the structure, then it becomes a substituent.
+            \end{itemize}
+    \end{itemize}
+    \subsection{Naming Complex Substituents}
+    \begin{itemize}
+        \item \ddd{Complex substituents}: branched alkyl substituents.
+        \item Begin by numbering carbons going \emph{away} from the parent chain, then name it as if it's a parent chain itself.
+            \begin{itemize}
+                \item Complex substituent are placed in parentheses, indicating it as a single substituent of the parent chain.
+            \end{itemize}
+        \item Some complex substituents have common names that are so well established and allowed by IUPAC\@.
+            \begin{itemize}
+                \item An alkyl group bearing \emph{three} carbon atoms; only one way to branch it.
+                    \begin{itemize}
+                        \item \ddd{Isopropyl group}: (1-methylethyl): {\tiny\chemfig{-[:0](-[::60])-[::-60]}}
+                    \end{itemize}
+                \item Alkyl groups bearing \emph{four} carbon atoms, which can be branched three different ways:
+                    \begin{itemize}
+                        \item \ddd{sec-butyl} (1-methylpropyl): {\tiny\chemfig{-[:0](-[::60]-[:0])-[::-60]}}
+                        \item \ddd{isobutyl} (2-methylpropyl): {\tiny\chemfig{-[:0](-[::60](-[:120])-[:0])}}
+                        \item \ddd{tert-butyl} (1,1-dimethylethyl): {\tiny\chemfig{-[:0](-[::60])(-[:0])(-[::-60])}} 
+                    \end{itemize}
+                \item Alkyl groups bearing \emph{five} carbons, which can be branched many more ways. Two common ways:
+                    \begin{itemize}
+                        \item \ddd{isopentyl (isoamyl)} (3-methylbutyl): 
+                    {\tiny\chemfig{-[:0]-[::60]-[:0](-[:60])-[:-60]}}
+                        \item \ddd{neopentyl} (2,2-dimethylpropyl):
+                    {\tiny\chemfig{-[:0]-[::60](-[:-15])(-[:50])(-[:120])}}
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+    \subsection{Assembling the Systematic Name}
+    \begin{itemize}
+        \item \ddd{Locant}: the location of a carbon numbered parent chain.
+        \item Rules for assigning locant:
+            \begin{itemize}
+                \item If one substituent is present, then assign the lowest number possible.
+                \item When multiple substituents are present, then the first substituent receives the lowest number. 
+                    \begin{itemize}
+                        \item If there is a tie, the second locant should be as low as possible.
+                        \item If tie cannot be broken, then lowest number is assigned alphabetically.
+                    \end{itemize}
+                \item Prefixes are used when the same substituent appears more than once. 
+                    \begin{itemize}
+                        \item di: 2, tri: 3, tetra: 4, penta: 5, hexa: 6.
+                    \end{itemize}
+                \item Hyphens are used to separate numbers from letters, while commas are used to separate numbers from each other.
+                \item Substituents are alphabeticalized after all locants are correctly assigned.
+                    \begin{itemize}
+                        \item Prefixes are ignored during alphabeticalization.
+                    \end{itemize}
+            \end{itemize}
+        \item Summary of discrete steps:
+            \begin{enumerate}
+                \item \textbf{Identify parent chain.}
+                \item \textbf{Identify and name substituents.}
+                \item \textbf{Number the parent chain and assign a locant to each substituent.}
+                \item \textbf{Arrange the substituents alphabetically.}
+            \end{enumerate}
+    \end{itemize}
 \end{itemize}
-%\endgroup
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Chapter  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Drawing Chair Conformations}
+    \begin{center}
+        \chemfig{?-[:-50]-[:10]-[:-10]-[:130]-[:190]?} \hspace{20pt} \chemfig{?
+        (-[:90,0.7,,,rrr, line width=1pt])
+        (-[:190,0.7,,,bbb, line width=1pt])
+        -[:-50](-[:-90,0.7,,,rrr, line width=1pt])
+        (-[:170,0.7,,,bbb, line width=1pt])
+        -[:10](-[:90,0.7,,,rrr, line width=1pt])
+        (-[:300,0.7,,,bbb, line width=1pt])
+        -[:-10](-[:-90,0.7,,,rrr, line width=1pt])
+        (-[:10,0.7,,,bbb, line width=1pt])
+        -[:130](-[:90,0.7,,,rrr, line width=1pt])
+        (-[:-10,0.7,,,bbb, line width=1pt])
+        -[:190]
+        ?(-[:-90,0.7,,,rrr, line width=1pt])
+        (-[:120,0.7,,,bbb, line width=1pt])}
+    \end{center}
+    \begin{itemize}
+        \item \ddd{Axial position}: parallel to a vertical axis passing through the center of the ring.
+            \begin{itemize}
+                \item Axial positions are less stable than equatorial due to steric strain.
+            \end{itemize}
+        \item \ddd{Equatorial}: positioned approximately along the equator of the ring.
+        \item The chair is more stable when the methyl (substituent) group is in the \emph{equatorial} position.
+        \item The larger the substituent, the more equatorial-substituted conformer is favored.
+    \end{itemize}
+
+    \section{Overview of Stereoisomerism}
+    \begin{itemize}
+        \item \ddd{Constitutional isomers}: aka structural isomers; same \emph{chemical formula}, but different in the way the \emph{atoms are connected}, i.e., their constitution is different.
+        \item \ddd{Stereoisomers}: isomers that differ in \emph{spatial arrangement} of atoms, rather than connectivity.
+            \begin{itemize}
+                \item \ddd{Geometric isomerism}: aka cis--trans; \emph{locked into spatial positions} due to double bonds or a ring structure.
+                    \begin{itemize}
+                        \item \ddd{Cis}: functional groups that are on the \emph{ same side} of the carbon chain.
+                        \item \ddd{Trans}: functional groups on \emph{opposite sides} of the carbon chain.
+                        \item \textit{Cis-trans} terminology is used to describe disubstituted alkenes (carbon chain with \(\pi \) bond), even when the two substituents are different from each other.
+                            \begin{itemize}
+                                \item Does not apply to disubstituted alkenes in which the substituents are connected in the same position.
+                            \end{itemize}
+                    \end{itemize}
+            \end{itemize}
+        \subsection{Chirality}
+        \begin{itemize}
+            \item \ddd{Superimposable (achiral)}: when an object's \emph{mirrored version} is identical to the actual object.
+            \item \ddd{Chiral}: objects that are not superimposable.
+                \begin{itemize}
+                    \item The most common source of molecular chirality is the presence of a carbon bearing \emph{four different groups}. 
+                \end{itemize}
+            \item \ddd{Enantiomer}: the nonsuperimposable mirror image of a chiral compound.
+                \begin{itemize}
+                    \item Can be used in speech the same way \emph{twin} is used
+                    \item The easiest way to draw enantiomers is to just change wedges and dashes, but there are multiples ways to mirror a molecule, so it can be more complex.
+                \end{itemize}
+            \item \ddd{Diastereomers}: non-identical stereoisomers (nonsuperimposable) that are \emph{not mirror images} of one another. 
+                \begin{itemize}
+                        \item  Enantiomers have the same physical properties, while diastereomers have different physical properties.
+                        \item Differences between enantiomers and diastereomers are especially relevant when comparing compounds with \emph{more than one chiral center}.
+                        \item Maximum number of stereoisomers: \emph{\(2^n\)}
+                    \begin{itemize}
+                        \item \(n\): number of chiral centers
+                        \item \(\dfrac{2^n}{2}\): pairs of enantiomers.
+                    \end{itemize}
+                \end{itemize}
+        \end{itemize}
+    \end{itemize}
+
+\section{Cahn-Ingold-Prelog System}
+\begin{itemize}
+    \item \ddd{Cahn-Ingold-Prelog system}: a system of nomenclature for Identifying each enantiomer individually.
+        \begin{enumerate}
+            \item Assign priorities to each of the four groups based on atomic number; the highest atomic number has the highest priority.
+            \item Rotate the molecule so that the fourth priority group is on a dash (behind)
+            \item Determine the configuration, i.e., sequence of 1--2--3 groups.
+                \begin{itemize}
+                    \item \ttt{Clockwise (R)} or \fff{counterclockwise (S)}.
+                \end{itemize}
+        \end{enumerate}
+    \item If there is a tie between the atoms connected, then continue outward until a difference is found.
+        \begin{itemize}
+            \item Do not add the sum all atomic numbers attached to each atom, just the first in which the atoms differ.
+            \item Any multiple bonded atom, (2 or 3) is treated as if connected to multiple atoms equal to number of bonds.
+        \end{itemize}
+    \item Switching any two groups on a chiral center will invert the configuration, e.g.,
+        \begin{itemize}
+            \item 
+            \schemestart{}
+            \fff{\chemfig{2-[:30](-[:-30]3)(<[:130]1)(<:[:50]4)}}
+            \arrow{->}
+            \ttt{\chemfig{2-[:30](-[:-30]3)(<[:130]4)(<:[:50]1)}}
+            \schemestop{}
+            \item Can be done twice without changing configuration, e.g.,
+            
+            \schemestart{}
+            \ttt{\chemfig{
+                2-[:30](<[:130]1)(<:[:50]3)-[:-30]4
+                }}
+            \arrow{->}
+            \fff{\chemfig{
+                2-[:30](<[:130]1)(<:[:50]4)-[:-30]3
+                }}
+            \arrow{->}
+            \ttt{\chemfig{
+                1-[:30](<[:130]2)(<:[:50]4)-[:-30]3
+                }}
+            \schemestop{}
+        \end{itemize}
+    \subsection{Configuration in IUPAC nomenclature}
+    \begin{itemize}
+        \item The configuration of the chiral center is indicated at the beginning of the name, italicized, and surrounded by parentheses.
+        \item When multiple centers are present, then each must be preceded by a locant.
+    \end{itemize}
+\end{itemize}
+
+\section{Optical Activity}
+\begin{itemize}
+    \item Enantiomers exhibit identical physical properties, but different behavior to plane-polarized light.
+        \begin{itemize}
+            \item \ddd{Polarization}: the orientation of electric field of the electromagnetic wave.
+            \item \ddd{Plane-polarized light}: a filter that only allows light of a particular polarization through.
+        \end{itemize}
+    \item \ddd{Optically active}: property of compounds that rotate the plane-polarized light.
+        \begin{itemize}
+            \item Can be measured using a polarimeter.
+            \item \emph{Chiral} compounds are \emph{optically active}, while \emph{achiral} compounds \emph{are not} optically active.
+        \end{itemize}
+    \item \ddd{Observed rotation}:  \emph{(\(\alpha \))}; the rotation of light due to chiral compounds, which depends on the number of molecules light encounters.
+        \begin{itemize}
+            \item Doubling the concentration or pathlength both double the observed rotation.
+        \end{itemize}
+    \item \ddd{Specific rotation}: \emph{[\(\alpha \)]}; a standard concentration (\SI{1}{g\per\mL}) and a standard pathlength (\SI{1}{dm}) that allows for meaningful comparison between compounds.
+        \begin{itemize}
+            \item \([\alpha]=\dfrac{\alpha}{cl} \)
+            \item c: concentration, l: pathlength.
+            \item Temperature (T) and wavelength (\(\lambda \)) both have a nonlinear relationship, so it is often noted as: \( [\alpha]^T_\lambda \)
+        \end{itemize}
+    \item Specific rotation for enantiomers are \emph{equal in magnitude} but \emph{opposite in direction}.
+        \begin{itemize}
+            \item \rrr{\textbf{Dextrorotaory}}: a compound exhibiting \rrr{positive} rotation.
+            \item \bbb{\textbf{Levorotatory}}: a compound exhibiting \bbb{negative} rotation.
+            \item No direct relationship between R/S system of nomenclature, as that is independent of conditions, but dependent on observation angle.
+            \item The \emph{direction} of polarized light, however, is \emph{dependent on conditions}, and can change based on temperature or wavelength even with the same given configuration.
+        \end{itemize}
+    \subsection{Enantiomeric Excess}
+    \begin{itemize}
+        \item \ddd{Optically (enantiomerically) pure}: a solution containing a single enantiomer.
+        \item \ddd{Racemic mixture}: a solution containing equal amounts of both enantiomers, resulting in an optically inactive appearance.
+        \item \ddd{Enantiomeric excess (ee)}: when a solution containing both enantiomers in unequal amounts, appearing optically active.
+            \begin{itemize}
+                \item \( \%~ee = \dfrac{|\text{observed}~(\alpha)|}{|\text{specific}~[\alpha]|} \times 100\% \)
+            \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\section{Symmetry and Chirality}
+\begin{itemize}
+    \item Any compound with a single chiral center must be chiral, however, the same it not always true for two or more.
+    \item \ddd{Reflectional symmetry}: when an object has a \emph{plane of symmetry} that can be reflected across and still generate the same image.
+        \begin{itemize}
+            \item Any compound that posses a \emph{plane of symmetry} in any conformation will be \emph{achiral}.
+        \end{itemize}
+    \item \ddd{Rotational symmetry}: when an object has an \emph{axis of symmetry}, i.e., it can be rotated around a single point and appear 2 or more times.
+        \begin{itemize}
+            \item Order: how many times the object appears.
+            \item Chirality is \emph{not dependent} on rotational symmetry.
+        \end{itemize}
+    \item \ddd{Point symmetry (inversion)}: when every part of an object has a matching part, i.e., \emph{equal distance} from the \emph{central point}, but in \emph{opposite direction}.
+        \begin{itemize}
+            \item Absence of a plane of symmetry does not mean it is chiral.
+            \item If a compound exhibits \emph{inversion}, then it is \emph{achiral}.
+        \end{itemize}
+    \item Summary of relationship between symmetry and chirality:
+        \begin{itemize}
+            \item The presence of absence of rotational symmetry is irrelevant to chirality.
+            \item A compound that has a plane of symmetry will be achiral.
+            \item A compound that lacks a plane of symmetry will most likely be chiral, with some exceptions.
+        \end{itemize}
+    \item \ddd{Meso compounds}: achiral compounds (posses plane of symmetry or can be inverted) that have multiple chiral centers.
+        \begin{itemize}
+            \item A family of stereoisomers containing a meso compound will have less than \(2^n\) stereoisomers.
+        \end{itemize}
+    \subsection{Fischer Projections}
+    \begin{itemize}
+        \item \ddd{Fischer projections}: two-dimensional representations of organic molecules by projection.
+            \begin{itemize}
+                \item Limited to carbohydrates/sugars with multiple chiral centers.
+            \end{itemize}
+        \item \emph{Horizontal} lines are considered to be coming \emph{out} of the page.
+        \item \emph{Vertical} lines are considered to be going \emph{behind} the page.
+        \item Helpful for quickly comparing relationship between stereoisomers with multiple chiral centers;
+            \begin{itemize}
+                \item Enantiomers will have opposite configurations, while diastereomers will not.
+                \item Assuming the north is priority 2, and the south is priority 3:
+                    \begin{itemize}
+                        \item If the atom with priority 1 is on the \ttt{right}, then it will have an \ttt{R} configuration.
+                        \item If the atom with priority 1 is on the \fff{left}, then it will have an \fff{S} configuration.
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%% Reference Material %%%%%%%%%%%
 \end{document}
