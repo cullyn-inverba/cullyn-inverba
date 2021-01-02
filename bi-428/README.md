@@ -133,7 +133,8 @@ The following schedule is tentative and may be changed. Originally made from the
 ## **Journal Article Summaries**
 
 ### Useful Resources
-- Check out [ResearchHub](https://www.researchhub.com/referral/e83718f2-d378-474c-be30-a0e701b775f9)&mdash;an absolutely fantastic site aimed at accelerating the pace of scientific research by making science accessible to everyone, encouraging more collaborative environments, and bringing papers that matter to you to your attention. I am willing to bet that the way we do science will change dramatically when this site see's more mainstream adoption.
+- Check out [ResearchHub](https://www.researchhub.com/referral/e83718f2-d378-474c-be30-a0e701b775f9)&mdash;an absolutely fantastic site aimed at accelerating the pace of scientific research by making science accessible to everyone, encouraging more collaborative environments, and bringing papers that matter to you to your attention. I am willing to bet that the way we do science will change dramatically when this site see's more mainstream adoption. Signing up with the link I provided isn't necessary, but it does provide a nice little bonus that is pretty useful if you become a frequent user.
+
 - Tired of terrible UI and trouble accessing all the journals? Use [Sci-Hub](https://sci-hub.se/). I'm not sure if it's exactly legal, but we pay for the journals through our tuition, so it's more of just a better way of accessing them. Just search with the DOI and you'll probably find the paper your looking for&mdash;I have yet to come across that isn't available (preprint or published).
 
 ### My Journal Summaries
