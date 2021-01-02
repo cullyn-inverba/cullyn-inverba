@@ -22,8 +22,8 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 - My use of a hierarchical structure is an attempt to:
   - Encourage recontextualizing information and minimize mindless copying.
   - Chunk information down into smaller pieces that I then can use to build upon.
-  - Identify the weaker parts of my understanding holding me back.
-  - A means to make incorporating multiple sources and revision easier.
+  - Identify then expand on the weak points in my understanding of the subject.
+  - Make incorporating multiple sources easier.
 - If I do a good job, then I aim to:
   - Be as concise as possible.
   - Include information that is regularly referenced.
@@ -37,7 +37,7 @@ A brief guide to my color choices:
 
 ## Using Git
 
-It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be adding slides provided by instructors, other class dependent resources, and constant updates to notes as the term progresses. Rather than having to tediously download them all through d2l, or having to constantly revisiting this page, you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
+It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be ~~adding slides provided by instructors~~ (I have been requested not to do this), other class dependent resources, and constant updates to notes as the term progresses. Rather than having to tediously download needed resources through d2l, or having to constantly revisit this page, then you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
 
 **Steps to update your local files with this repository**
 
@@ -90,9 +90,9 @@ It's not necessary to use git to get the most out of this repository, most of it
 
 - [Text instructions for the basics to be explained]
 
-- [Video guide to using my notes template]
+- [Video guide to using my notes template to be made]
 
-## Personal Goals for this Repository
+## Personal Goals for This Repository
 
 - [ ] **Create cleaner, more stabilized versions of my custom class and style preferences.**
   - [ ] Create custom classes for essays, articles, notes.
