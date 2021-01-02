@@ -40,7 +40,7 @@ The following schedule is tentative and may be changed. I originally generated i
 
 |     | Klein | Strongin |  Mini Quiz   |   Practice   |
 | --- | :---: | :------: | :----------: | :----------: |
-|     |   ?   |    14    | Explanations | Explanations |
+|     |  7,8  |    14    | Explanations | Explanations |
 
 Supplemental Materials
 - [Alkene Structure and Classification](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes-jay/v/alkene-intro-and-stability "Khan Academy")
@@ -65,7 +65,7 @@ Supplemental Materials
 
 |     | Klein | Strongin |  Mini Quiz   |   Practice   |
 | --- | :---: | :------: | :----------: | :----------: |
-|     |   8   |    16    | Explanations | Explanations |
+|     |   ?   |    16    | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -76,7 +76,7 @@ Supplemental Materials
 
 |     | Klein | Strongin |  Mini Quiz   |   Practice   |
 | --- | :---: | :------: | :----------: | :----------: |
-|     |   ?   |    16, 17A   | Explanations | Explanations |
+|     |   ?   |    16, 17   | Explanations | Explanations |
 
 Supplemental Materials
 
@@ -87,7 +87,7 @@ Supplemental Materials
 
 |     | Klein | Strongin |  Mini Quiz   |   Practice   |
 | --- | :---: | :------: | :----------: | :----------: |
-|     |   ?   |    17, 18A   | Explanations | Explanations |
+|     |   ?   |    17, 18   | Explanations | Explanations |
 
 Supplemental Materials
 
