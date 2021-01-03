@@ -8,15 +8,16 @@
 
  <p align="center">
     <a href="Human-Genetics-W21.pdf">
-    <img src="https://img.shields.io/badge/BI: 428-Syllabus (updated 12/29)-informational?logo=adobe-acrobat-reader" >
+    <img title="View syllabus" src="https://img.shields.io/badge/BI: 428-Syllabus (updated 12/29)-informational?logo=adobe-acrobat-reader" >
     </a>
     <a href="https://discord.gg/JHGNjnSdbB">
-  <img src="https://img.shields.io/discord/790762936234147860?logo=discord"
+  <img title="Join BI: 428 Discord Server 🥳" src="https://img.shields.io/discord/790762936234147860?logo=discord"
    alt="chat on Discord">
     </a>
     <a href="bi-428.pdf">
-    <img src="https://img.shields.io/badge/notes-review done-important?logo=latex" >
+    <img title="View current state of my notes" src="https://img.shields.io/badge/notes-review done-important?logo=latex" >
     </a>
+    <--- useful links!
 </p>
 
 ## **Course Materials**
