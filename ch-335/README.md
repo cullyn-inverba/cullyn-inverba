@@ -14,10 +14,10 @@
   <img src="https://img.shields.io/discord/760937229798604850?logo=discord"
    alt="chat on Discord">
     </a>
-    <a title="View my notes" href="bi-428.pdf">
+    <a title="View my notes" href="ch-335.pdf">
     <img src="https://img.shields.io/badge/Notes-not started-important?logo=latex" >
     </a>
-     <a title="View my mini quiz explanations" href="bi-428.pdf">
+     <a title="View my mini quiz explanations" href="quizes.pdf">
     <img src="https://img.shields.io/badge/Mini Quiz-not started-important?logo=latex" >
     </a>
 </p>
