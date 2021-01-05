@@ -18,6 +18,24 @@
     </a>
 </p>
 
+## Suggested Readings 
+All books listed have a link to a free audiobook from Audible. I believe the first book you receive from a friend is free, even if you already have Audible, though it could be free only for new users. Regardless, I still encourage buying them to support the authors!
+- [Coddling of the American Mind](https://a.co/9TWg91G) (Suggested class text in syllabus)
+- [Cynical Theories](https://a.co/aW9H3gt) (Chapters 8-10 used for readings)
+
+And here are some books that are relevant to many of the topics discussed and are ones that I highly recommend, listed in no particular order.
+- ["The Tryanny of Merit" by Michael J. Sandel](https://a.co/hLyraxS)
+- ["Thinking in Systems" by Donella H. Meadows](https://a.co/at3nIcz)
+- ["The Madness of Crowds" by Douglas Murray](https://a.co/hzUaU9z)
+- ["How to Have Impossible Conversations" by Peter Boghossian, James Lindsay](https://a.co/4kUnZnW)
+- ["The Structure of Scientific Revolutions" by Thomas S. Kuhn](https://a.co/7nNDYGc)
+- ["The Moral Landscape" by Sam Harris](https://a.co/ex9466J) 
+- ["Justice" by Michael J. Sandel](https://a.co/ft9wfSx)
+- ["Behave" by Robert M. Sapolsky](https://a.co/4YYOFBh)
+- ["Blueprint" by Robert Plomin](https://a.co/1x0c9VX)
+
+I recommend buying the books to support the authors, which can be done cheaply through Audible. Once you are a member for 30 days, then you buy credits in packs of 3 for $35.88, so you can essentially buy any book for a max of $11.96. However, I have a 9/10 belief that educational material should be open source, so if you can't afford them right now, then [zlibrary](https://1lib.us/) has them all and more, just one search away from free downloads, no torrenting necessary. Textbooks for other classes can be found there too&mdash;it's a very useful site. 
+
 ## **Weekly Schedule**
 
 The following schedule is tentative and may be changed. Originally made from the syllabus. All changes will be noted here.
