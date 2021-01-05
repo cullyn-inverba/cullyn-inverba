@@ -11,8 +11,8 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 |      [![PLU: 331U](assets/images/phl-331U.ico)](https://discord.gg/FwJzW8WGAS "Join PHL: 331U Discord Server 🥳")      |         [![CH: 335](assets/images/ch-335.ico)](https://discord.gg/MDR7ze9p2m "Join CH: 335 Discord Server 🥳")         |         [![BI: 428](assets/images/bi-428.ico)](https://discord.gg/JHGNjnSdbB "Join BI: 428 Discord Server 🥳")         |         [![BI: 429](assets/images/bi-429.ico)](https://discord.gg/r7jkUHNC6b "Join BI: 429 Discord Server 🥳")         |         [![BI: 463](assets/images/bi-463.ico)](https://discord.gg/PSTgxwwJ2N "Join BI: 463 Discord Server 🥳")         |
 | <a href="https://discord.gg/FwJzW8WGAS"><img src="https://img.shields.io/discord/790800309924528170?logo=discord"></a> | <a href="https://discord.gg/MDR7ze9p2m"><img src="https://img.shields.io/discord/760937229798604850?logo=discord"></a> | <a href="https://discord.gg/JHGNjnSdbB"><img src="https://img.shields.io/discord/790762936234147860?logo=discord"></a> | <a href="https://discord.gg/r7jkUHNC6b"><img src="https://img.shields.io/discord/790737836571492462?logo=discord"></a> | <a href="https://discord.gg/PSTgxwwJ2N"><img src="https://img.shields.io/discord/790760762418659349?logo=discord"></a> |
 |                                  [Syllabus](phl-331/philosophy-of-education-W21.pdf)                                   |                                    [Syllabus](ch-335/organic-chemistry-II-W21.pdf)                                     |                                       [Syllabus](bi-428/Human-Genetics-W21.pdf)                                        |                                    [Syllabus](bi-429/conservation-biology-W21.pdf)                                     |                                      [Syllabus](bi-463/motor-and-sensory-W21.pdf)                                      |
-|                           [Resources](/phl-331#Course-materials "Jump to course materials")                            |                            [Resources](/ch-335#Course-materials "Jump to course materials")                            |                            [Resources](/bi-428#Course-materials "Jump to course materials")                            |                            [Resources](/bi-429#Course-materials "Jump to course materials")                            |                            [Resources](/bi-463#Course-materials "Jump to course materials")                            |
-|                                   [Notes](/phl-331/phl-331.pdf "Jump to notes pdf")                                    |                                    [Notes](/ch-335/ch-335.pdf "Jump to notes pdf")                                     |                                    [Notes](/bi-428/bi-428.pdf "Jump to notes pdf")                                     |                                    [Notes](/bi-429/bi-429.pdf "Jump to notes pdf")                                     |                                    [Notes](/bi-463/bi-463.pdf "Jump to notes pdf")                                     |
+|                           [Resources](/phl-331#weekly-schedule "Jump to course materials")                            |                            [Resources](/ch-335#Course-materials "Jump to course materials")                            |                            [Resources](/bi-428#Course-materials "Jump to course materials")                            |                            [Resources](/bi-429#Course-materials "Jump to course materials")                            |                            [Resources](/bi-463#Course-materials "Jump to course materials")                            |
+|                                   [Reflections](/phl-331/phl-331.pdf "Jump to my responses to weekly reflection question")                                    |                                    [Notes](/ch-335/ch-335.pdf "Jump to notes pdf")                                     |                                    [Notes](/bi-428/bi-428.pdf "Jump to notes pdf")                                     |                                    [Notes](/bi-429/bi-429.pdf "Jump to notes pdf")                                     |                                    [Notes](/bi-463/bi-463.pdf "Jump to notes pdf")                                     |
 
 </center>
 
@@ -48,7 +48,7 @@ It's not necessary to use git to get the most out of this repository, most of it
    git clone https://github.com/cullyn-inverba/notes.git
    ```
 
-4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository.
+4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository. However, the files you will be interested in will probably just be pdfs.
 
 5. _Optional:_ Feel free to delete everything besides the class folder you need. However, if you plan on trying to use LateX yourself, then you might want to keep the &ldquo;assets&rdquo; folder since it has templates and custom class files that you can use.
 
@@ -75,7 +75,7 @@ It's not necessary to use git to get the most out of this repository, most of it
    ```
    git config pull.rebase false
    ```
-5. You‘re all set. There are probably other ways of doing this, but this is the most basic way to do it. Keeping running step #4 to update the repository when ever I add something you need.
+5. You're all set. There are probably other ways of doing this, but this is the most basic way to do it. Keeping running step #4 to update the repository when ever I add something you need.
 
 ### For those still curious about git:
 
@@ -109,13 +109,13 @@ It's not necessary to use git to get the most out of this repository, most of it
   - [x] Establish a more standardized note taking structure.
   - [x] Create introduction to note structure.
   - [x] Create a discord server for each winter term classes.
-  - [ ] Create READMEs for each class (need syllabus for each class first).
+  - [x] Create READMEs for each class (need syllabus for each class first).
 - [ ] **Make it easier for others to contribute.**
   - [ ] Create more ways to easily share and discuss class problems.
     - [x] Hotkeys for screenshots, screenshares, and instant gifs complete.
     - [x] Create/find guide to help others use git.
-    - [ ] ??? More still needs to be done to achieve this but I'm not sure what yet.
-  - [ ] Create a guide on using latex templates for class assignments.
+    - [ ] ??? More still needs to be done to achieve this, but I'm not sure what yet.
+  - [ ] Create a text guide on using latex templates for class assignments, possibly using overleaf.
   - [ ] Create videos tutorials about LateX to encourage others to use it.
     - [ ] Learn basics of manim.
-    - [ ] Publish at least one video, probably a getting started with latex tutorial.
+    - [ ] Publish at least one video, probably a getting started with latex + vscode tutorial.

@@ -15,14 +15,13 @@
    alt="chat on Discord">
     </a>
     <a href="bi-428.pdf">
-    <img title="View current state of my notes" src="https://img.shields.io/badge/notes-review done-important?logo=latex" >
+    <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-week 1 started-important?logo=latex" >
     </a>
-    <--- useful links!
 </p>
 
 ## **Course Materials**
 
-- **Required Text**: [Korf & Irons &mdash; Human Genetics and Genomics (4th ed)](https://1lib.us/book/2655250/afad73)
+- **Class text**: [Korf & Irons &mdash; Human Genetics and Genomics (4th ed)](https://1lib.us/book/2655250/afad73)
 - Supplementary text: [Strachan &mdash; Human Molecular Genetics (5th ed)](https://1lib.us/book/5278782/fea561)
 
     ### Recommended Readings
