@@ -7,13 +7,76 @@
 \hypertarget{ToC}{\tableofcontents}
 % chktex-file 36
 
-%%%%%%%%%%% Alkenes %%%%%%%%%%%
+%%%%%%%%%%% Chapter 14: Alkenes %%%%%%%%%%%
 %\begingroup
-\chapter{Alkenes}\label{Alkenes}
-\begin{adjustwidth}{1cm}{1cm}
-  \dots
-\end{adjustwidth}
+\chapter{Chapter 14: Alkenes}\label{Chapter 14: Alkenes}
 
+\section{Alkenes}\label{Alkenes}
+\medskip
+  \begin{center}
+    \schemestart{}
+    \chemname{\chemfig{H-!\hch-!\hch-H}}{Saturated\\alk\emph{anes} eth\emph{ane}}
+    \qquad
+    \chemname{\chemfig{!\hhc=!\chh}}{Unsaturateed\\alk\emph{enes} eth\emph{ene}}
+    \qquad
+    \chemname{\chemfig{!\cu!\cd}}{prop\emph{ane}}
+    \qquad
+    \chemname{\chemfig{!\cu=[:-30]}}{prop\emph{ene}}
+    \schemestop{}
+  \end{center}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Electronegativity}: negative charges on atoms with lower hybridization result in greater stability due to proximity (overlap) to positive nucleus. More s character results in greater stability.
+  \begin{itemize}
+    \item I.e., \(\bbb{sp~(50\%~s)} > sp^2~(33\%~s) > \rrr{sp^3~(25\%~s)}\)
+    \item E.g., ethene has two carbons that are both \(sp^2\) due to one unhybridized p-orbital. This gives ethene a trigonal planar geometry.
+    \end{itemize}
+
+        \bigskip
+        \schemestart{}
+        \chemfig{!\hhc=!\chh}
+        \arrow{<->}
+        \quad
+        \chemfig{
+          \orbital{s}
+            -[:-30,.85]
+              {\orbital[scale=1.8]{p}}
+              {\orbital[angle=0,scale=1.6,half,color=dark]{p}}
+              {\orbital[angle=150,half]{p}}
+              {\orbital[angle=-150,half]{p}}
+              (-[:-150,.85]\orbital{s})
+            =[,.75]
+            =[,.75]
+            {\orbital[angle=180,scale=1.6, half, color=dark]{p}}
+            {\orbital[scale=1.8]{p}}
+            {\orbital[angle=30,half]{p}}
+            {\orbital[angle=-30,half]{p}}
+            (-[::30,.85]{\orbital{s}})(-[::-30,.85]{\orbital{s}})
+        }
+        \arrow{0}
+        \hspace{-8pt}
+        \orbital[scale=1.6]{p}
+        \quad (unhybridized p-orbital)
+        \schemestop{}
+        \medskip
+
+  \subsection{Practice}
+  \begin{itemize}
+    \item \textbf{Hydrogen deficiency index (HDI)}: the measure of degrees of unsaturation. 
+      \begin{itemize}
+        \item E.g., two degrees of unsaturation results in a HDI of 2.
+        \item Degrees of freedom help represent possible structures, indicating possible double bounds, triple bounds, rings, or various combinations of each.
+        \item Only helpful when molecular formula is known for certainty.
+        \item Formula: \emph{HDI = \(\frac{1}{2}(2C + 2 + N - H - X)\)}
+        \begin{itemize}
+            \item \(X\): halogen atoms.
+        \end{itemize}
+      \end{itemize}
+    \item 
+  \end{itemize}
+
+\end{itemize}
 %\endgroup
-%%%%%%%%%%% Alkenes %%%%%%%%%%%
+%%%%%%%%%%% Chapter 14: Alkenes %%%%%%%%%%%
 \end{document}

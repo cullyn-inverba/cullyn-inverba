@@ -106,6 +106,18 @@
 \RequirePackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
     \setchemfig{atom sep=2.5em, cram width=1ex}
     \chemsetup{modules = all}
+    \chemsetup[orbital]{
+        overlay,
+        p/color = rrr,
+        s/color = bbb!60,
+        s/scale = 1.2,
+        p/scale = 1.2
+    }
+    \definesubmol\hch{C(-[::+90]H)(-[::-90]H)}
+    \definesubmol\hhc{C(-[::150]H)(-[::-150]H)}
+    \definesubmol\chh{C(-[::+30]H)(-[::-30]H)}
+    \definesubmol\cu{-[:+30]}
+    \definesubmol\cd{-[:-30]}
 
 % ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
 % ║ ║ │ ││  │ │ └┬┘
@@ -161,9 +173,10 @@
 % ╔╗ ┌─┐┌─┐┌─┐
 % ╠╩╗├─┤└─┐├┤ 
 % ╚═╝┴ ┴└─┘└─┘
-% Background: #1f1f1f
+% Background: #1f1f1f #141414 
 \definecolor{back}{HTML}{1f1f1f} 
 \pagecolor{back} 
+\definecolor{dark}{HTML}{141414}
 
 % Text: #e0e0e0 #b0b0b0 #6b6b6b 
 \definecolor{text}{HTML}{e0e0e0}  
