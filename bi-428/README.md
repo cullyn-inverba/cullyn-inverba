@@ -17,6 +17,9 @@
     <a href="bi-428.pdf">
     <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-week 1 started-important?logo=latex" >
     </a>
+     <a href="journal-summaries.pdf">
+    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-not started-critical?logo=latex" >
+    </a>
 </p>
 
 ## **Course Materials**
@@ -28,6 +31,9 @@
     - [The Coming Plague: Newly Emerging Diseases in a World Out of Balance](https://1lib.us/book/3501748/56b790)
     - [Genome: The Autobiography of a Species in 23 Chapters](https://1lib.us/book/5281757/8db11f)
     - [Deadly Feasts](https://1lib.us/book/4793719/852983)
+    - My suggestoins:
+      - ["Blueprint" by Robert Plomin](https://a.co/1x0c9VX) 
+      - ["Behave" by Robert M. Sapolsky](https://a.co/4YYOFBh) 
  
 ##  **Weekly Schedule**
 
@@ -38,7 +44,7 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | | Krof & Irons | D2L | Assignment | Quiz |
 |-|:---:|:---:|:---:|:---:|
-| | 1,2,*3* | TBA | Pedigree | Pedigree Quiz |
+| | 1,2,*3* | TBA | [Pedigree](pedigree.pdf "View my submission") | Pedigree Quiz |
 |Due| --- | --- | Wed 6:40 pm | Monday (1/11) 6:00 pm |
 
 Resources for pedigree assignment: 
@@ -50,9 +56,8 @@ Resources for pedigree assignment:
   - the gene responsible and where it is located on the chromosomes
   - the frequency of occurrence (prevalence),
   - and if available, the molecular, developmental, and physiological consequences of the gene defect.
- 
-<br>
 
+___
 ### **Week 2** (Jan 11-13) **Chromosome Structure and Nomenclature, Syndromes**
 
 | | Krof & Irons | D2L | Assignment | 
@@ -60,7 +65,7 @@ Resources for pedigree assignment:
 | | 6,9 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm | 
 
-<br>
+___
 
 ### **Week 3** (Jan 18-20) **Sex Determination**
 
@@ -69,7 +74,7 @@ Resources for pedigree assignment:
 | | --- | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
-<br>
+___
 
 ### **Week 4** (Jan 25-27) **Development and Epigenetics/Imprinting**
 
@@ -78,7 +83,7 @@ Resources for pedigree assignment:
 | | 6,12| *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
-<br>
+___
 
 ### **Week 5** (Feb 1-3) **Midterm and Metabolic Pathways/Inborn Errors of Metabolism**
 
@@ -87,7 +92,7 @@ Resources for pedigree assignment:
 | | 11 | *TBA* | Midterm |
 |Due| --- | --- | Wed, 6:00 pm |
 
-<br>
+___
 
 ### **Week 6** (Feb 8-10) **Metabolic Pathways/Inborn Errors of Metabolism (cont.)**
 
@@ -96,7 +101,7 @@ Resources for pedigree assignment:
 | | 10,11,13,14 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
-<br>
+___
 
 ### **Week 7** (Feb 15-17) **Mapping &amp; Linkage Analysis, Mapping Complex Disease**
 
@@ -105,7 +110,7 @@ Resources for pedigree assignment:
 | | 4,5 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
-<br>
+___
 
 ### **Week 8** (Feb 22-24) **The Human Genome and Genome-Wide Association Studies**
 
@@ -114,7 +119,7 @@ Resources for pedigree assignment:
 | | 4,14 | *TBA* | Journal Article |
 |Due| --- | --- | Wed, 6:40 pm |
 
-<br>
+___
 
 ### **Week 9** (Mar 1-3) **Bioethics**
 
@@ -123,7 +128,7 @@ Resources for pedigree assignment:
 | | 10,13 | *TBA* | Bioethics Panel |
 |Due| --- | --- | --- |
 
-<br>
+___
 
 ### **Week 10** (Mar 8-10) **Cancer Genetics**
 
@@ -132,13 +137,13 @@ Resources for pedigree assignment:
 | | 15,16,17 | *TBA* | What is CRISPR |
 |Due| --- | --- | Wed, 6:40 pm |
 
-<br>
+___
 
 ### **Final Exam**
 - 9:00 am Monday (3/15) 
 - Due: Wednesday (3/17) by 6:00 pm
 
-<br>
+___
 
 ## **Journal Article Summaries**
 
@@ -149,16 +154,7 @@ Resources for pedigree assignment:
 
 ### My Journal Summaries
 
-<center>
-
 | Week 2 | Week 3 | Week 4 | Week 6 | Week 7 | Week 8 | Week 9 |
 |:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 |Not Determined|Not Determined|Not Determined|Not Determined|Not Determined|Not Determined|Not Determined|
 |view pdf|view pdf|view pdf|view pdf|view pdf|view pdf|view pdf|
-
-</center>
-
-<br>
-
-- Template for journal article (needs to be made)
-- Getting started with latex (need to make video guide)

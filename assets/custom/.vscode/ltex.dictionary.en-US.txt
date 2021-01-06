@@ -56,3 +56,5 @@ polarimeter
 Meso
 meso
 ToC
+trinucleotide
+glutamine
