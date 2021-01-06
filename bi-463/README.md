@@ -1,5 +1,5 @@
 <p align="center">
-  <a title="Join BI: 463 Discord Server 🥳" href="https://discord.gg/PSTgxwwJ2N">
+  <a title="Join BI: 463 Discord Server 🥳" href="https://discord.gg/DHGub8zxzZ">
   <img src="../assets/images/bi-463.ico" />
   </a>
 </p>
@@ -10,7 +10,7 @@
     <a href="conservation-biology-W21.pdf">
     <img title="View syllabus" src="https://img.shields.io/badge/BI: 429-Syllabus-informational?logo=adobe-acrobat-reader" >
     </a>
-    <a href="https://discord.gg/PSTgxwwJ2N">
+    <a href="https://discord.gg/DHGub8zxzZ">
   <img title="Join BI: 463 Discord Server 🥳" src="https://img.shields.io/discord/790760762418659349?logo=discord"
    alt="chat on Discord">
     </a>

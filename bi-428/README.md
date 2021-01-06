@@ -1,5 +1,5 @@
 <p align="center">
-  <a title="Join BI: 428 Discord Server 🥳" href="https://discord.gg/JHGNjnSdbB">
+  <a title="Join BI: 428 Discord Server 🥳" href="https://discord.gg/VNcNWddVKZ">
   <img src="../assets/images/bi-428.ico" />
   </a>
 </p>
@@ -10,7 +10,7 @@
     <a href="Human-Genetics-W21.pdf">
     <img title="View syllabus" src="https://img.shields.io/badge/BI: 428-Syllabus (updated 12/29)-informational?logo=adobe-acrobat-reader" >
     </a>
-    <a href="https://discord.gg/JHGNjnSdbB">
+    <a href="https://discord.gg/VNcNWddVKZ">
   <img title="Join BI: 428 Discord Server 🥳" src="https://img.shields.io/discord/790762936234147860?logo=discord"
    alt="chat on Discord">
     </a>

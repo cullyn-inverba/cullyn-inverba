@@ -1,5 +1,5 @@
 <p align="center">
-  <a title="Join BI: 429 Discord Server 🥳" href="https://discord.gg/r7jkUHNC6b">
+  <a title="Join BI: 429 Discord Server 🥳" href="https://discord.gg/EVJfcwzMg3">
   <img src="../assets/images/bi-429.ico" />
   </a>
 </p>
@@ -10,7 +10,7 @@
     <a href="conservation-biology-W21.pdf">
     <img title="View syllabus (draft 2)" src="https://img.shields.io/badge/BI: 429-Syllabus (draft 2)-informational?logo=adobe-acrobat-reader" >
     </a>
-    <a href="https://discord.gg/r7jkUHNC6b">
+    <a href="https://discord.gg/EVJfcwzMg3">
   <img title="Join BI: 429 Discord Server 🥳" src="https://img.shields.io/discord/790737836571492462?logo=discord"
    alt="chat on Discord">
     </a>

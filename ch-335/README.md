@@ -1,5 +1,5 @@
  <p align="center">
-    <a title="Join CH: 335 Discord Server 🥳" href="https://discord.gg/MDR7ze9p2m">
+    <a title="Join CH: 335 Discord Server 🥳" href="https://discord.gg/xgS9NMVyRY">
     <img src="../assets/images/ch-335.ico">
     </a>
 </p>
@@ -10,7 +10,7 @@
     <a title="View class syllabus" href="organic-chemistry-II-W21.pdf">
     <img src="https://img.shields.io/badge/CH: 355-Syllabus-informational?logo=adobe-acrobat-reader" >
     </a>
-    <a title="Join CH: 335 Discord server 🥳" href="https://discord.gg/MDR7ze9p2m">
+    <a title="Join CH: 335 Discord server 🥳" href="https://discord.gg/xgS9NMVyRY">
     <img src="https://img.shields.io/discord/760937229798604850?logo=discord"
    alt="chat on Discord">
     <br>

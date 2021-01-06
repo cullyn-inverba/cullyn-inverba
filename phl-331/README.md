@@ -1,5 +1,5 @@
  <p align="center">
-    <a title="Join PHL: 331 Discord Server 🥳" href="https://discord.gg/FwJzW8WGAS">
+    <a title="Join PHL: 331 Discord Server 🥳" href="https://discord.gg/6ckYfNF6WU">
     <img src="../assets/images/phl-331U.ico">
     </a>
 </p>
@@ -10,7 +10,7 @@
     <a title="View class syllabus" href="philosophy-of-education-W21.pdf">
     <img src="https://img.shields.io/badge/PHL: 331-Syllabus-informational?logo=adobe-acrobat-reader" >
     </a>
-    <a title="Join PHL: 331 Discord server 🥳" href="https://discord.gg/FwJzW8WGAS">
+    <a title="Join PHL: 331 Discord server 🥳" href="https://discord.gg/6ckYfNF6WU">
     <img src="https://img.shields.io/discord/790800309924528170?logo=discord"
    alt="chat on Discord">
     <a title="View my weekly reflectinos" href="ch-335.pdf">
