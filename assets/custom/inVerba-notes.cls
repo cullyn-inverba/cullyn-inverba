@@ -110,7 +110,16 @@
 % ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
 % ║ ║ │ ││  │ │ └┬┘
 % ╚═╝ ┴ ┴┴─┘┴ ┴  ┴ 
-\RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage}
+\RequirePackage[hidelinks]{hyperref}
+    \hypersetup{
+        colorlinks=false,
+        linktoc=all,    
+        linkcolor=link,
+        filecolor=link,      
+        urlcolor=link, 
+    }
+
+\RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite}
 \RequirePackage[justification=centering]{caption}
     \captionsetup[table]{
         skip=3pt,
@@ -124,14 +133,6 @@
         per-mode = symbol
 }
 
-\RequirePackage[hidelinks]{hyperref}
-    \hypersetup{
-        colorlinks=false,
-        linktoc=all,    
-        linkcolor=link,
-        filecolor=link,      
-        urlcolor=link, 
-    }
 
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ │││││││├─┤│││ ││└─┐
@@ -258,12 +259,34 @@
 %   \  / #1f1f1f background
 %    \/                      
 %  #141414 
-%                            
-%                            
-%                            
-%                            
-%                            
-%                            
-%                            
-%                            
-%                            
+
+% ╔═╗┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+% ║ ║├─┘ │ ││ ││││└─┐
+% ╚═╝┴   ┴ ┴└─┘┘└┘└─┘
+\DeclareOption{plain}{
+    \pagecolor{white}
+    \color{black}
+
+    \titleformat{\chapter}{\LARGE\bfseries}{}{0pt}{\centering}
+        \titlespacing*{\chapter}{0pt}{-64pt}{4pt} 
+    \titleformat{\section}{\Large\bfseries}{}{0pt}{}
+        \titlespacing*{\section}{0 em}
+        {1ex plus 7ex minus 1ex}
+        {1ex plus .0ex minus .0ex}
+    \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+        \titlespacing*{\subsection}{-1em}
+        {1ex plus 7ex minus 1ex}
+        {1ex plus 0ex minus 0ex}
+}
+
+\DeclareOption{basic}{
+    \pagestyle{fancy}
+    \lhead{\userName}
+    \chead{\textsc{\theTitle}}
+    \rhead{\today}    
+    \lfoot{\class}
+    \cfoot{\textsc{\institution}}
+    \rfoot{\thepage}
+}
+
+\ProcessOptions\relax
