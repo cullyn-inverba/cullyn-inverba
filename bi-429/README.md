@@ -71,7 +71,7 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | Lecture | Readings | Topic                               | Speaker |
 | :-----: | :------: | :---------------------------------- | :-----: |
-|    9    |   6,12   | **Mini symposium**: Invasive specie |         |
+|    9    |    9     | **Mini symposium**: Invasive specie |         |
 |   10    | Midterm  | Midterm                             | Midterm |
 
 <br>
@@ -80,8 +80,8 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | Lecture | Readings | Topic                         | Speaker           |
 | :-----: | :------: | :---------------------------- | :---------------- |
-|   11    |   6,12   | Global warming                | Luis Ruedas       |
-|   12    |          | Economics and the environment | Sahan Dissanayake |
+|   11    |    10    | Global warming                | Luis Ruedas       |
+|   12    |  5, 16   | Economics and the environment | Sahan Dissanayake |
 
 <br>
 
@@ -89,8 +89,8 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | Lecture | Readings | Topic                                                                     | Speaker                            |
 | :-----: | :------: | :------------------------------------------------------------------------ | :--------------------------------- |
-|   13    |   4,5    | Contaminants and Wildlife                                                 | _Jeremy Buck, Leland Brown_        |
-|   14    |          | _In situ_ and _ex situ_ conservation; <br>Recovery of sea otter in Oregon | _David Shepherdson; Robert Bailey_ |
+|   13    |    6     | Contaminants and Wildlife                                                 | _Jeremy Buck, Leland Brown_        |
+|   14    |    12    | _In situ_ and _ex situ_ conservation; <br>Recovery of sea otter in Oregon | _David Shepherdson; Robert Bailey_ |
 
 <br>
 
@@ -98,8 +98,8 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | Lecture | Readings | Topic                        | Speaker                                             |
 | :-----: | :------: | :--------------------------- | :-------------------------------------------------- |
-|   15    |   4,14   | Federal listing and recovery | Kristi Young (USFWS)                                |
-|   16    |          | Ecology and politics         | _Charlotte RegulaWhitefield (OR Governor’s Office)_ |
+|   15    |    17    | Federal listing and recovery | Kristi Young (USFWS)                                |
+|   16    |    17    | Ecology and politics         | _Charlotte RegulaWhitefield (OR Governor’s Office)_ |
 
 <br>
 
@@ -107,8 +107,8 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | Lecture | Readings | Topic                              | Speaker              |
 | :-----: | :------: | :--------------------------------- | :------------------- |
-|   17    |  10,13   | Zoos and conservation              | _Don Moore (OR Zoo)_ |
-|   18    |          | **Mini symposium**: Global warming |                      |
+|   17    |    14    | Zoos and conservation              | _Don Moore (OR Zoo)_ |
+|   18    |    10    | **Mini symposium**: Global warming |                      |
 
 <br>
 
@@ -116,8 +116,8 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | Lecture | Readings | Topic                            | Speaker         |
 | :-----: | :------: | :------------------------------- | :-------------- |
-|   19    | 15,16,17 | Connectivity and conservation    | _Lori Hennings_ |
-|   20    |          | Conservation in the Anthropocene | _Tierra Curry_  |
+|   19    |  15, 17  | Connectivity and conservation    | _Lori Hennings_ |
+|   20    |  17, 18  | Conservation in the Anthropocene | _Tierra Curry_  |
 
 <br>
 

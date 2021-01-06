@@ -1,6 +1,6 @@
 ![Portland State University](assets/images/psu.jpg)
 
-<center> <h1>拾 Winter 2021 Class Resources 拾 </h1></center>
+<center> <h1>Winter 2021 Class Resources</h1></center>
  
 Hello and welcome. This repository is an attempt at increasing the effectiveness of online learning, for myself and others. The main function of this repository will be a place to store and share notes I make&mdash;hopefully doing so will encourage others to do the same!
 

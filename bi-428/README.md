@@ -36,11 +36,21 @@ The following schedule is tentative and may be changed. Originally made from the
 
 ### **Week 1** (Jan 4-6) **Pedigree Analysis, Mendelian Disorders**
 
-| | Krof & Irons | D2L | Assignment | Special Assignment | 
+| | Krof & Irons | D2L | Assignment | Quiz |
 |-|:---:|:---:|:---:|:---:|
-| | 1,2,*3* | *TBA* | Pedigree | [OMIM](https://omim.org/) |
-|Due| --- | --- | Wed 6:40 pm | Fri 6:00 pm |
+| | 1,2,*3* | TBA | Pedigree | Pedigree Quiz |
+|Due| --- | --- | Wed 6:40 pm | Monday (1/11) 6:00 pm |
 
+Resources for pedigree assignment: 
+- [Online Mendelian Inhertaince in Man](https://omim.org/)
+- [GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1116/)
+- Instructions: prepare a 1 pg summary of a **single gene Mendelian disorder**. Be sure to include:
+  - A description of the disorder,
+  - the mode of inheritance,
+  - the gene responsible and where it is located on the chromosomes
+  - the frequency of occurrence (prevalence),
+  - and if available, the molecular, developmental, and physiological consequences of the gene defect.
+ 
 <br>
 
 ### **Week 2** (Jan 11-13) **Chromosome Structure and Nomenclature, Syndromes**
