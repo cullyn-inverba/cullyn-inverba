@@ -27,7 +27,7 @@
 
 ## **Weekly Schedule**
 
-The following schedule is tentative and may be changed. Originally made from the syllabus. All changes will be noted here.
+The following schedule is tentative and may be changed. Originally generated using the syllabus. All changes will be noted here.
 
 ### **Week 1** (Jan 5-7)
 
@@ -36,7 +36,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |    1    | [Introduction to Neurophysiology](slides/lecture-1.pdf)             |
 |    2    | [Resting Membrane Potential and Ion Channels](slides/lecture-2.pdf) |
 
-<br>
+___
 
 ### **Week 2** (Jan 12-14)
 
@@ -45,7 +45,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |    3    | Ion channels and Action Potentials |
 |    4    | Motor Systems I                    |
 
-<br>
+___
 
 ### **Week 3** (Jan 19-21)
 
@@ -54,7 +54,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |    5    | Motor Systems II                |
 |    6    | Motor Systems III + **Quiz #1** |
 
-<br>
+___
 
 ### **Week 4** (Jan 26-28)
 
@@ -63,7 +63,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |    7    | Autonomic Nervous System I  |
 |    8    | Autonomic Nervous System II |
 
-<br>
+___
 
 ### **Week 5** (Feb 2-4)
 
@@ -72,7 +72,7 @@ The following schedule is tentative and may be changed. Originally made from the
 | Review  | Midterm Exam |
 | Midterm | Midterm      |
 
-<br>
+___
 
 ### **Week 6** (Feb 9-11)
 
@@ -81,7 +81,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |    9    | Touch, pain and proprioception I            |
 |   10    | Touch, pain and proprioception II + Group 1 |
 
-<br>
+___
 
 ### **Week 7** (Feb 16-18)
 
@@ -90,7 +90,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |   11    | Cardiac Physiology I + Group 2                           |
 |   12    | Cardiac Physiology II + Group 3 + **Cardiac assignment** |
 
-<br>
+___
 
 ### **Week 8** (Feb 23-25)
 
@@ -99,7 +99,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |   13    | Vision I + Group 4      |
 |   14    | Vision II + **Quiz #2** |
 
-<br>
+___
 
 ### **Week 9** (Mar 2-4)
 
@@ -108,7 +108,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |   15    | Smell and Taste I + Group 5  |
 |   16    | Smell and Taste II + Group 6 |
 
-<br>
+___
 
 ### **Week 10** (Mar 9-11)
 
@@ -117,7 +117,7 @@ The following schedule is tentative and may be changed. Originally made from the
 |   17    | Neurodegenerative Disease: Parkinson’s + Group 7 |
 | Review  | Final Exam                                       |
 
-<br>
+___
 
 ### **Final Exam**
 
