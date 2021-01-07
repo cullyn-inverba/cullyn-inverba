@@ -11,10 +11,12 @@
 %\begingroup
 \chapter{Chapter 14: Alkenes}\label{Chapter 14: Alkenes}
 
-\section{Alkenes}\label{Alkenes}
+
+\section{Nomenclature of Alkenes}\label{Nomenclature of Alkenes}
+
 \medskip
-  \begin{center}
-    \schemestart{}
+\begin{center}
+  \schemestart{}
     \chemname{\chemfig{H-!\hch-!\hch-H}}{Saturated\\alk\emph{anes} eth\emph{ane}}
     \qquad
     \chemname{\chemfig{!\hhc=!\chh}}{Unsaturateed\\alk\emph{enes} eth\emph{ene}}
@@ -22,19 +24,55 @@
     \chemname{\chemfig{!\cu!\cd}}{prop\emph{ane}}
     \qquad
     \chemname{\chemfig{!\cu=[:-30]}}{prop\emph{ene}}
-    \schemestop{}
-  \end{center}
+  \schemestop{}
+\end{center}
 \bigskip
 
 \begin{itemize}
-  \item \textbf{Electronegativity}: negative charges on atoms with lower hybridization result in greater stability due to proximity (overlap) to positive nucleus. More s character results in greater stability.
-  \begin{itemize}
-    \item I.e., \(\bbb{sp~(50\%~s)} > sp^2~(33\%~s) > \rrr{sp^3~(25\%~s)}\)
-    \item E.g., ethene has two carbons that are both \(sp^2\) due to one unhybridized p-orbital. This gives ethene a trigonal planar geometry.
+  \item Generally prepared through beta elimination, which results in the formation of alkenes (series of unsaturated hydrocarbons contain that a \(\pi \) bond).
+  \item Alkenes are named using the same four steps in the previously used nomenclature, though the suffix of \minimal{``ane''} is replaced with \emph{``ene.''}
+  \item When choosing the parent chain, choose the parent chain that \emph{includes} the \(\pi \) bond.
+  \item When numbering the parent chain, the \(\pi \) bond should receive the \emph{lowest} number possible.
+  \item The locant of the \(\pi \) bond should be place right before the suffix of ``ene,'' though, it was previously recommended before the parent (both are acceptable).
+  \item Commonly recognized alternative names:
+
+    \medskip
+    \begin{center}
+    \schemestart{}
+      \chemname{\chemfig{=[:30]}}{Ethylene}
+      \qquad
+      \chemname{\chemfig{=[:30]-[:-30]}}{Propylene}
+      \qquad
+      \chemname{{\tiny\chemfig{*6(-=-(-=[:-30])=-=)}}}{Styrene}
+    \schemestop{}
+    \end{center}
+    \bigskip
+    
+  \item \textbf{Degree of substitution}: not a substitution reaction, but the \emph{number of groups} connected to the double bond.
+    \begin{itemize}
+      \item 
+        \chemname{\chemfig{R-[:45]=}}{Monosubstituted}
+        \qquad
+        \chemname{\chemfig{R-[:45]=-[:45]R}}{Disubstituted}
+        \qquad
+        \chemname{\chemfig{R-[:45]=(-[:-45]R)-[:45]R}}{Trisubstituted}
+        \qquad
+        \chemname{\chemfig{R-[:45](-[:135]R)=(-[:-45]R)-[:45]R}}{Tetrasubstituted}
+        \bigskip
     \end{itemize}
 
-        \bigskip
-        \schemestart{}
+  \subsection{Practice and Review}
+  \begin{itemize}
+    \item \textbf{Electronegativity}: negative charges on atoms with lower hybridization result in greater stability due to proximity (overlap) to positive nucleus. More s character results in greater stability.
+      \begin{itemize}
+        \item I.e., \(\bbb{sp~(50\%~s)} > sp^2~(33\%~s) > \rrr{sp^3~(25\%~s)}\)
+        \item E.g., ethene has two carbons that are both \(sp^2\) due to one unhybridized p-orbital. This gives ethene a trigonal planar geometry.
+      \end{itemize}
+
+      \bigskip
+      \begin{center}
+      \hspace{-20pt}
+      \schemestart{}
         \chemfig{!\hhc=!\chh}
         \arrow{<->}
         \quad
@@ -55,14 +93,14 @@
             (-[::30,.85]{\orbital{s}})(-[::-30,.85]{\orbital{s}})
         }
         \arrow{0}
-        \hspace{-8pt}
+        \hspace{-20pt}
         \orbital[scale=1.6]{p}
         \quad (unhybridized p-orbital)
-        \schemestop{}
-        \medskip
+      \schemestop{}
+      \end{center}
+      \bigskip
+      \bigskip
 
-  \subsection{Practice}
-  \begin{itemize}
     \item \textbf{Hydrogen deficiency index (HDI)}: the measure of degrees of unsaturation. 
       \begin{itemize}
         \item E.g., two degrees of unsaturation results in a HDI of 2.
@@ -73,9 +111,45 @@
             \item \(X\): halogen atoms.
         \end{itemize}
       \end{itemize}
-    \item 
+    \item What is the HDI for the following molecules?
+    
+    \begin{multicols}{2}  
+    \begin{itemize}
+        \item[i] \chemfig{!\cu=[:-30]!\cu=[:-30]!\cu=[:-30]}
+        \item[ii]~~{\footnotesize\chemfig{*6(-=-=-=)}}
+      \end{itemize}
+    \end{multicols}
   \end{itemize}
 
+  \subsection{Types of Alkenes}\label{Types of Alkenes}
+  \begin{itemize}
+    \item Basic types of alkenes:
+    
+    \schemestart{}
+      \chemname{\chemfig{=[:30,,,,emph]!\cd!\cu}}{Terminal Alkene}
+      \qquad
+      \chemname{\chemfig{!\cu=[:-30,,,,emph]!\cu}}{Internal Alkene}
+      \qquad
+      \chemname{{\footnotesize\chemfig{*6(---=[,,,,emph]--)}}}{Cyloalkene}
+    \schemestop{}
+    \bigskip
+
+    \item Types of terminal alkenes:  
+    
+    \schemestart{}
+      \chemname{\chemfig{R=(-[:45]H)(-[:-45]H)}}{Methylene}
+      \qquad
+      \chemname{\chemfig{R-=[:-45]}}{Vinyl}
+      \qquad
+      \chemname{\chemfig{R--[:-45]=}}{Allyl}
+    \schemestop{}
+    \bigskip
+
+    \begin{itemize}
+      \item ``R'' always tells you it's a carbon containing functional group, or hydrogen. 
+      \item ``A'' can be used to represent any functional group. 
+    \end{itemize}
+  \end{itemize}
 \end{itemize}
 %\endgroup
 %%%%%%%%%%% Chapter 14: Alkenes %%%%%%%%%%%
