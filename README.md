@@ -36,7 +36,7 @@ A brief guide to my color choices:
 
 ## Using Git
 
-It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be ~~adding slides provided by instructors~~ (I have been requested not to do this), other class dependent resources, and constant updates to notes as the term progresses. Rather than having to tediously download needed resources through d2l, or having to constantly revisit this page, then you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
+It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be collecting all class dependent resources I can, plus it allows you to stay up to date with constant updates to my notes as the term progresses. So rather than having to tediously download needed resources through d2l, or having to constantly revisit this page, then you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
 
 **Steps to update your local files with this repository**
 

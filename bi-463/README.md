@@ -25,20 +25,16 @@
   - [Purves &mdash; Neuroscience (6th ed.)](https://1lib.us/book/5481039/fb91d9)
   - [Kandel &mdash; Principles of Neural Science (5th ed.) ](https://1lib.us/book/2477222/4a05ed)
 
-### Other resources
-
-- [to be added]
-
 ## **Weekly Schedule**
 
 The following schedule is tentative and may be changed. Originally made from the syllabus. All changes will be noted here.
 
 ### **Week 1** (Jan 5-7)
 
-| Lecture | Topic                                       |
-| :-----: | :------------------------------------------ |
-|    1    | Introduction to Neurophysiology             |
-|    2    | Resting Membrane Potential and Ion Channels |
+| Lecture | Topic                                                               |
+| :-----: | :------------------------------------------------------------------ |
+|    1    | [Introduction to Neurophysiology](slides/lecture-1.pdf)             |
+|    2    | [Resting Membrane Potential and Ion Channels](slides/lecture-2.pdf) |
 
 <br>
 
@@ -89,10 +85,10 @@ The following schedule is tentative and may be changed. Originally made from the
 
 ### **Week 7** (Feb 16-18)
 
-| Lecture | Topic                           |
-| :-----: | :------------------------------ |
-|   11    | Cardiac Physiology I + Group 2  |
-|   12    | Cardiac Physiology II + Group 3 + **Cardiac assignment**|
+| Lecture | Topic                                                    |
+| :-----: | :------------------------------------------------------- |
+|   11    | Cardiac Physiology I + Group 2                           |
+|   12    | Cardiac Physiology II + Group 3 + **Cardiac assignment** |
 
 <br>
 
