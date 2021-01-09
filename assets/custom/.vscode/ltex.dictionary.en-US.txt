@@ -60,3 +60,12 @@ trinucleotide
 glutamine
 unhybridized
 ethene
+Hydrohalogenation
+electrophilic
+hydrohalic
+haloalkanes
+carbocation
+electropositive
+regioselective
+hydrohalogenation
+regioselectivity

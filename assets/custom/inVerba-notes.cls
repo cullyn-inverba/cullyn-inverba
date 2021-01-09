@@ -104,7 +104,7 @@
 % ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
 
 \RequirePackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
-    \setchemfig{atom sep=2.5em, cram width=1ex}
+    \setchemfig{atom sep=2.5em, cram width=.7ex}
     \chemsetup{modules = all}
     \chemsetup[orbital]{
         overlay,
@@ -113,11 +113,19 @@
         s/scale = 1.2,
         p/scale = 1.2
     }
-    \definesubmol\hch{C(-[::+90]H)(-[::-90]H)}
-    \definesubmol\hhc{C(-[::150]H)(-[::-150]H)}
-    \definesubmol\chh{C(-[::+30]H)(-[::-30]H)}
+    \definesubmol\hch{}
     \definesubmol\cu{-[:+30]}
     \definesubmol\cd{-[:-30]}
+    
+    \definesubmol\cat{\rrr{\scriptstyle\fplus}}
+    \definesubmol\ani{\bbb{\scriptstyle\fminus}}
+
+    \usetikzlibrary{matrix}
+    \tikzset{
+        obrace/.style={left delimiter={[},inner sep=3pt}
+        cbrace/.style={right delimiter={]},inner sep=3pt},
+        braces/.style={left delimiter={[},right delimiter={]},inner sep=3pt}
+    }
 
 % ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
 % ║ ║ │ ││  │ │ └┬┘

@@ -12,14 +12,15 @@
 \chapter{Chapter 14: Alkenes}\label{Chapter 14: Alkenes}
 
 
-\section{Nomenclature of Alkenes}\label{Nomenclature of Alkenes}
-
+\section{Alkenes Basics/Review}\label{Alkenes Basics/Review}
+\begin{itemize}
+  \item Alkanes vs alkenes: 
 \medskip
 \begin{center}
   \schemestart{}
-    \chemname{\chemfig{H-!\hch-!\hch-H}}{Saturated\\alk\emph{anes} eth\emph{ane}}
+    \chemname{\chemfig{H-C(-[::+90]H)(-[::-90]H)-C(-[::+90]H)(-[::-90]H)-H}}{Saturated\\alk\emph{anes} eth\emph{ane}}
     \qquad
-    \chemname{\chemfig{!\hhc=!\chh}}{Unsaturateed\\alk\emph{enes} eth\emph{ene}}
+    \chemname{\chemfig{C(-[::150]H)(-[::-150]H)=C(-[::+30]H)(-[::-30]H)}}{Unsaturateed\\alk\emph{enes} eth\emph{ene}}
     \qquad
     \chemname{\chemfig{!\cu!\cd}}{prop\emph{ane}}
     \qquad
@@ -27,39 +28,6 @@
   \schemestop{}
 \end{center}
 \bigskip
-
-\begin{itemize}
-  \item Generally prepared through beta elimination, which results in the formation of alkenes (series of unsaturated hydrocarbons contain that a \(\pi \) bond).
-  \item Alkenes are named using the same four steps in the previously used nomenclature, though the suffix of \minimal{``ane''} is replaced with \emph{``ene.''}
-  \item When choosing the parent chain, choose the parent chain that \emph{includes} the \(\pi \) bond.
-  \item When numbering the parent chain, the \(\pi \) bond should receive the \emph{lowest} number possible.
-  \item The locant of the \(\pi \) bond should be place right before the suffix of ``ene,'' though, it was previously recommended before the parent (both are acceptable).
-  \item Commonly recognized alternative names:
-
-    \medskip
-    \begin{center}
-    \schemestart{}
-      \chemname{\chemfig{=[:30]}}{Ethylene}
-      \qquad
-      \chemname{\chemfig{=[:30]-[:-30]}}{Propylene}
-      \qquad
-      \chemname{{\tiny\chemfig{*6(-=-(-=[:-30])=-=)}}}{Styrene}
-    \schemestop{}
-    \end{center}
-    \bigskip
-    
-  \item \textbf{Degree of substitution}: not a substitution reaction, but the \emph{number of groups} connected to the double bond.
-    \begin{itemize}
-      \item 
-        \chemname{\chemfig{R-[:45]=}}{Monosubstituted}
-        \qquad
-        \chemname{\chemfig{R-[:45]=-[:45]R}}{Disubstituted}
-        \qquad
-        \chemname{\chemfig{R-[:45]=(-[:-45]R)-[:45]R}}{Trisubstituted}
-        \qquad
-        \chemname{\chemfig{R-[:45](-[:135]R)=(-[:-45]R)-[:45]R}}{Tetrasubstituted}
-        \bigskip
-    \end{itemize}
 
   \subsection{Practice and Review}
   \begin{itemize}
@@ -73,7 +41,7 @@
       \begin{center}
       \hspace{-20pt}
       \schemestart{}
-        \chemfig{!\hhc=!\chh}
+        \chemfig{C(-[::150]H)(-[::-150]H)=C(-[::+30]H)(-[::-30]H)}
         \arrow{<->}
         \quad
         \chemfig{
@@ -117,10 +85,28 @@
     \begin{itemize}
         \item[i] \chemfig{!\cu=[:-30]!\cu=[:-30]!\cu=[:-30]}
         \item[ii]~~{\footnotesize\chemfig{*6(-=-=-=)}}
+        \item[i] \(\frac{1}{2}(2(7) + 2 + (0) - (3+(5(1))+2) - 0) = \emph{3}\)
+        \smallskip 
+        \item[ii] \(\frac{1}{2}(2(6) + 2 + 0 - (6(1)) - 0) = \emph{4}\)
       \end{itemize}
     \end{multicols}
-  \end{itemize}
 
+    \item \textbf{Degree of substitution}: not a substitution reaction, but the \emph{number of groups} connected to the double bond.
+    \begin{itemize}
+      \item 
+      
+        \chemname{\chemfig{R-[:45]=}}{Monosubstituted}
+        \qquad
+        \chemname{\chemfig{R-[:45]=-[:45]R}}{Disubstituted}
+        \qquad
+        \chemname{\chemfig{R-[:45]=(-[:-45]R)-[:45]R}}{Trisubstituted}
+        \qquad
+        \chemname{\chemfig{R-[:45](-[:135]R)=(-[:-45]R)-[:45]R}}{Tetrasubstituted}
+        \bigskip
+        
+    \end{itemize}
+  \end{itemize}
+  
   \subsection{Types of Alkenes}\label{Types of Alkenes}
   \begin{itemize}
     \item Basic types of alkenes:
@@ -150,6 +136,426 @@
       \item ``A'' can be used to represent any functional group. 
     \end{itemize}
   \end{itemize}
+
+  \subsection{Chirality}
+  \begin{itemize}
+    \item \ddd{Achiral (nonsuperimposable)}: when an object's mirrored version is identical to the actual object.
+    \item \ddd{Chiral}: objects that are not superimposable.
+      \begin{itemize}
+        \item The most common source of molecular chirality is the presence of a \emph{carbon bearing four different groups}.
+      \end{itemize}
+    \item All three-dimensional objects can be classified as either chiral or achiral.
+    \item \ddd{Enantiomer}: the nonsuperimposable mirror image of a chiral compound.
+      \begin{itemize}
+          \item Can be used in speech the same way the word \emph{twin} is used
+          \item The easiest way to draw enantiomers is to simply change wedges and dashes, but there are multiples ways to mirror a molecule, so it can be more complex.
+      \end{itemize}
+    \item \ddd{Diastereomers}: non-identical stereoisomers (nonsuperimposable) that are \emph{not mirror images} of one another. 
+      \begin{itemize}
+          \item  Enantiomers have the same physical properties, while diastereomers have \emph{different physical properties}.
+          \item Differences between enantiomers and diastereomers are especially relevant when comparing compounds with \emph{more than one chiral center}.
+          \item \emph{Maximum} (could be less) number of stereoisomers: \emph{\(2^n\)}
+        \begin{itemize}
+          \item \(n\): number of chiral centers
+          \item \(\dfrac{2^n}{2}\): max pairs of enantiomers.
+        \end{itemize}
+      \end{itemize}
+    \end{itemize}
+
+    \medskip
+
+    \subsection{Cahn-Ingold-Prelog System}
+    \begin{itemize}
+    \item \ddd{Chan-Ingold-Prelog system}: a system of nomenclature for Identifying each enantiomer individually.
+    \begin{enumerate}
+      \item Assign priorities to each of the four groups based on atomic number; the highest atomic number has the highest priority.
+      \item Rotate the molecule so that the fourth priority group is on a dash (behind)
+      \item Determine the configuration, i.e., sequence of 1--2--3 groups.
+        \begin{itemize}
+          \item \ttt{clockwise (R)} or \fff{counterclockwise (S)}.
+        \end{itemize}
+    \end{enumerate}
+    \item If there is a tie between the atoms connected, then continue outward until a difference is found.
+      \begin{itemize}
+        \item Do not add the sum all atomic numbers attached to each atom, just the first in which the atoms differ.
+        \item Any multiple bonded atom, (2 or 3) is treated as if connected to multiple atoms equal to number of bonds.
+      \end{itemize}
+    \item Switching any two groups on a chiral center will invert the configuration, e.g.,
+    
+      \medskip
+      \schemestart{}
+        \fff{\chemfig{2-[:30](-[:-30]3)(<[:130]1)(<:[:50]4)}}
+        \arrow{->}
+        \ttt{\chemfig{2-[:30](-[:-30]3)(<[:130]4)(<:[:50]1)}}
+      \schemestop{}
+      \bigskip 
+
+    \item Switching twice results in a change without changing configuration, e.g.,
+            
+      \medskip
+      \schemestart{}
+        \ttt{\chemfig{
+            2-[:30](<[:130]1)(<:[:50]3)-[:-30]4
+            }}
+        \arrow{->}
+        \fff{\chemfig{
+            2-[:30](<[:130]1)(<:[:50]4)-[:-30]3
+            }}
+        \arrow{->}
+        \ttt{\chemfig{
+            1-[:30](<[:130]2)(<:[:50]4)-[:-30]3
+            }}
+      \schemestop{}
+      \bigskip
+    
+    \bigskip
+
+    \item \textbf{Configuration in IUPAC nomenclature}:
+    \begin{itemize}
+        \item The configuration of the chiral center is indicated at the beginning of the name, italicized, and surrounded by parentheses.
+        \item When multiple centers are present, then each must be preceded by a locant.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\section{Addition Reactions of Alkenes}\label{Addition Reactions of Alkenes}
+\begin{itemize}
+  \item[]
+  \subsection{Syn Addition}\label{Syn Addition}
+  \begin{itemize}
+    \item Syn addition means that both components (A \& B) came in from the same side.
+
+    \medskip
+    \schemestart{}
+      \chemfig{C(-[::150])(-[::-150])=C(-[::+30])(-[::-30])}
+      \+
+      \chemfig{A-B}
+      \arrow{}
+      \chemfig{-C(-[:90])(-[:-90]A)-C(-[:90])(-[:-90]B)-}
+    \schemestop{}
+    \bigskip
+        
+    \item When there is mixture of products, then the stereochemistry is important---A \& B could come from different directions.
+    \item Switching to a 3D perspective, with groups pointing towards and away from the viewer, rather than a flat view:
+        
+    \medskip
+    \schemestart{}
+      \chemfig{C(-[::150])(-[::-150])=C(-[::+30])(-[::-30])}
+      \arrow{<->}
+      \chemfig{C(<:[::150])(<[::-150])=C(<:[::+30])(<[::-30])}
+      \arrow{->[A---B][\ttt{Syn}]}
+      \chemfig{C(<:[:190])(<[:-110])(-[:90]A)-C(-[:90]B)(<[:-70])(<:[:-10])}
+    \schemestop{}
+    \bigskip
+        
+    \item The final product above results in no chiral compounds (no carbons contain four different groups). If a product does have chiral compounds, you must show the other possible products.
+
+    \medskip
+    \schemestart{}
+      \chemfig{C(<:[::150])(<[::-150]-[:180,.6])=C(<:[::30]-[,.6])(<[::-30])}
+      \arrow{->[A---B][\ttt{Syn}]}
+      \chemfig{C(<:[:190])(<[:-110]-[:180,.6])(-[:90]A)-C(-[:90]B)(<[:-70])(<:[:-10]-[,.6])}
+    \schemestop{}
+    \bigskip
+        
+    \item The product in this case has chiral centers, so enantiomers must be considered.
+        
+    \medskip
+    \schemestart{}
+      \dots
+      \arrow(--[braces]){->[A---B][\ttt{Syn}]}
+      \chemfig{C(<:[:190])(<[:-110]-[:180,.6])(-[:90]A)-C(-[:90]B)(<[:-70])(<:[:-10]-[,.6])}
+      \+
+      \chemfig{C(<:[:-190])(<[:110]-[:180,.6])(-[:-90]A)-C(-[:-90]B)(<:[:70]-[,.6])(<[:10])}
+    \schemestop{}
+    \bigskip
+
+  \end{itemize}
+
+  \subsection{Anti Addition}\label{Anti Addition}
+  \begin{itemize}
+    \item Anti addition means that the added components come in from different sides.
+    
+    \medskip
+    \hspace{-28pt}
+    \schemestart{}
+      \chemfig{C_1(<:[::150])(<[::-150]-[:180,.6])=C_2(<:[::30]-[,.6])(<[::-30])}
+      \arrow(--[braces]){->[A---B][\fff{Anti}]}
+      \chemfig{C_1(<:[:190])(<[:-110]-[:180,.6])(-[:90]A)-C_2(-[:-90]B)(<:[:70]-[,.6])(<[:10])}
+      \+
+      \chemfig{C_1(<:[:90])(<[:140]-[:180,.6])(-[:-90]A)-C_2(-[:90]B)(<[:-90])(<:[:-40]-[,.6])}
+    \schemestop{}
+    \bigskip
+  \end{itemize}
+
+  \subsection{Types of Addition Reactions}\label{Types of Addition Reactions}
+  \begin{itemize}
+    \item \ddd{Hydrogenation}: a chemical reaction between molecular hydrogen \ch{H2} and another compound or element, usually in the presence of a catalyst such as nickel, palladium (typically pd, due to cost) or platinum.
+      \begin{itemize}
+        \item Commonly employed to reduce or saturate organic compounds.
+        \item Usually constitutes the addition of pairs of hydrogen atoms to a molecule, often an alkene.
+        \item Catalysts are required for the reaction to be usable; non-catalytic hydrogenation takes place only at very high temperatures.
+        \item \emph{Reduces} double and triple bonds in hydrocarbons.
+        \item Always occurs with \emph{syn addition}, with hydrogen entering from the least hindered side.
+      \end{itemize}
+    
+    \item Hydrogenation of 2-methyl-3-ethyl-2-pentene:
+      \begin{itemize}
+        \item First convert to 3D view:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{(-[::150])(-[::-150])=(-[::30]-[,.6])(-[::-30]-[,.6])}
+          \arrow{<->}
+          \chemfig{(<:[::150])(<[::-150])=(<:[::30]-[,.6])(<[::-30]-[,.6])}
+        \schemestop{}
+        \bigskip
+
+        \item Then apply \ch{H2} with catalyst to trigger syn addition:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{(<:[::150])(<[::-150])=(<:[::30]-[,.6])(<[::-30]-[,.6])}
+          \arrow{->[\ch{H2}][Pd-c]}
+          \chemfig{(<:[:200])(<[:240])(-[:90]H)-(-[:90]H)(<:[:-20]-[,.6])(<[:-60]-[,.6])}
+        \schemestop{}
+        \bigskip
+
+        \item Product is achiral; no enantiomers. Bottom would attack just flips the orientation; not a different product. 
+      \end{itemize}
+  \end{itemize}
+
+  \subsubsection{Hydrogenation Practice Problems}\label{Hydrogenation Practice Problems}
+  \begin{enumerate}\footnotesize
+      \item
+
+      \medskip
+      \schemestart{}
+        \chemfig{(<:[:150])(<[:-150]-[180,.6])=(<:[:30](-[:60,.6])(-[:-10,.6]))(<[:-30])}
+        \arrow{->[\ch{H2}][Pd-c]}
+        \chemfig{(<:[:200])(<[:-100]-[:180,.6])(-[:90])-(-[:90])(<:[::-20](-[::60,.6])(-[::-10,.6]))(<[:-80])}
+      \schemestop{}
+      \bigskip
+
+      \item
+
+      \medskip
+      \schemestart{}
+        \chemfig{*6(---(-)=(-)--)}
+        \arrow{->[\ch{H2}][Pd-c]}
+        \chemfig{*6(---(<)-(<)--)}
+      \schemestop{}
+      \bigskip
+
+      \item
+
+      \medskip
+      \schemestart{}
+        \chemfig{*6(---(--[:-30])=(-)--)}
+        \arrow(--[braces]){->[\ch{H2}][Pd-c]}
+        \chemfig{*6(---(<-[:-30])=(<)--)}
+        \+
+        \chemfig{*6(---(<:-[:-30])=(<:)--)}
+      \schemestop{}
+      \bigskip
+  \end{enumerate}
+
+  \begin{itemize}
+    \item \ddd{Hydrohalogenation}: the electrophilic addition (\(\pi \to 2\sigma \) bonds) of hydrohalic acids (\ch{HX}, e.g., \ch{HCl} or \ch{HBr}) to alkenes to yield the corresponding haloalkanes.
+    \item \ddd{Markovnikov's rule}: an addition of a protic acid (HX) or other polar reagent to an asymmetric alkene results in the \rrr{electropositive part (usually H)} gets attached to the carbon with \rrr{more hydrogen substituents}, and the \bbb{electronegative part (usually the halide)} attaches to the carbon with \bbb{more alkyl substituents}. 
+      \begin{itemize}
+        \item Alternatively: \rrr{\(H^+\)} is added to the carbon with the \rrr{greatest} number of hydrogen atoms while the \bbb{\(X^-\) component} is added to the carbon with the \bbb{fewest} hydrogen atoms.
+      \end{itemize}
+
+    \medskip
+    \schemestart{}
+      \chemfig{C_1(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))=[@{db}]C_2(<:[:30]H)(<[:-30])}
+      \arrow{->[\chemfig{@{hx}\rrr{H}@{xx}\bbb{X}}]}
+      \chemname{\chemfig{
+        \chemabove[3pt]{C_1}{\cat}
+        (<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))
+        -C_2
+        (-[:90]@{h}\rrr{H})(<:[:250]H)(<[:-50,.9])}
+        }{most stable carbocation intermediate}
+      \arrow{->}
+      \chemname{\chemfig{
+        C_1
+        (-[:90]@{x}\bbb{X})(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))
+        -C_2
+        (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9])}
+      }{final product} 
+    \schemestop{}
+    \chemmove[shorten <=2pt,dash pattern= on 1pt off 1pt]{
+      \draw(db)..controls +(90:1cm)and+(north:1.5cm)..(hx);
+      \draw(hx)..controls +(90:1cm)and+(north:1.5cm)..(h);
+      \draw(xx)..controls +(90:1.5cm)and+(north:1.8cm)..(x);
+    }
+    \bigskip
+
+    \item However, we have a chiral carbon, so we have to take enantiomers into account:
+    
+    \medskip
+    \schemestart{}
+      \chemfig{(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))=[@{db}](<:[:30]H)(<[:-30])}
+      \arrow(--[braces]){->[\rrr{H}\bbb{X}]}
+      \chemname{\chemfig{
+        (-[:90]\bbb{X})(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))-
+        (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9])}}
+        {\ttt{Syn}}
+      \+
+      \chemname{\chemfig{
+        (-[:-90]\bbb{X})(<:[:80])(<[:120](-[:80,.6])(-[:160,.6]))-
+        (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9])}}
+        {\fff{Anti}}
+    \schemestop{}
+    \bigskip
+    
+    \item The previous example is an example of a regioselective reaction, i.e., it's a chemical reaction where one reaction site is preferred over another.
+      \begin{itemize}
+        \item Markovnikov additions are common examples of regioselective reactions since there is a specific region in where the hydrogen is supposed to go.
+      \end{itemize}
+    
+    \item Another example that contains multiple products:
+    
+    \medskip
+    \schemestart{}
+      \chemfig{*6(---(-)=(-)--)}
+      \arrow(--[braces]){->[\rrr{H}-\bbb{I}]}
+      \chemfig{*6(---(<)(<:[:-30]\rrr{H})-(-[:30,0.3,,,draw=none]\cat)(-)--)}
+      \+
+      \chemfig{*6(---(<\rrr{H})(<:[:-30])-(-[:30,0.3,,,draw=none]\cat)(-)--)}
+    \schemestop{}
+    \bigskip
+
+    \item Again, this first step shows the most stable carbocation intermediate, which helps determine where the \rrr{\ch{H+}} will attach to. In this case either location works, so four products are formed, each with syn and anti enantiomers.
+   
+    \medskip
+    \hspace{-20pt}
+    \schemestart{}
+      \dots
+      \arrow(--[braces]){->[\rrr{H}-\bbb{I}]}
+      {\footnotesize
+      \chemname{\chemfig{*6(---(<)(<:[:-30]\rrr{H})-(<:[:30])(<\bbb{I})--)}}{\fff{Anti}}
+      \+
+      \chemname{\chemfig{*6(---(<)(<:[:-30]\rrr{H})-(<:[:30]\bbb{I})(<)--)}}{\ttt{Syn}}
+      \+ 
+      \chemname{\chemfig{*6(---(<\rrr{H})(<:[:-30])-(<:[:30])(<\bbb{I})--)}}{\ttt{Syn}}
+      \+
+      \chemname{\chemfig{*6(---(<\rrr{H})(<:[:-30])-(<:[:30]\bbb{I})(<)--)}}
+      {\fff{Anti}}
+      }
+    \schemestop{}
+    \bigskip
+
+    \item The above products are all \emph{stereoisomers} of each other. Note: not all chemical reactions produce all possible stereoisomers.
+  \end{itemize}
+
+  \subsubsection{Hydrohalogenation Practice Examples}
+
+    {\footnotesize
+    \medskip
+    \schemestart{}
+      \chemfig{*6(---=(-)--)}
+      \arrow{->[\rrr{H}\bbb{Br}]}
+      \chemfig{*6(---(-\rrr{H})-(-)(-[:30,0.3,,,draw=none]\cat)--)}
+      \arrow(--[braces]){}[,,shorten >=6pt]
+      \chemfig{*6(---(-\rrr{H})-(<:[:120]\bbb{Br})(<[:50])--)}
+      \+
+      \chemfig{*6(---(-\rrr{H})-(<[:120]\bbb{Br})(<:[:50])--)}
+    \schemestop{}
+    \bigskip
+    }
+
+  \ddd{Addition of Water or Alcohol (ROH)}: analogous to that of hydrohalogenation (HX); both of which involve a carbocation intermediate, syn/anti stereochemistry, and Markovnikov regioselectivity.
+    \begin{itemize}
+      \item Note: the hydronium ion (\rrr{\ch{H3O+}}) forms via the reaction of \rrr{\ch{H2SO4}} with \bbb{\ch{H2O}}, and is the source of the proton that reacts with the starting alkene.
+      \item \ch{H-OH} and \ch{RO-H} helps to visualize where the proton is coming from. What ever works with water also works with alcohol and vice versa. 
+      \item An example that is very similar to the example from \hyperref[Hydrohalogenation]{\ulink{hydrohalogenation}}:
+        
+        \hspace{-30pt}
+        \bigskip
+        \schemestart{}
+         \chemfig{(<:[::150])(<[::-150]-[:180,.6])=[,.8](<:[::30]H)(<[::-30]-[,.6])}
+         \arrow{->[\ch{H2O}][dil \ch{H2SO4}]}
+         \chemfig{
+           \chemabove[3pt]{C_1}{\cat}
+           (<:[:150])(<[:-150](-[:190,.6]))-
+           (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9](-[,.6]))}
+         \arrow{->[\ch{H2O}]}[,,shorten <=8pt]
+         \chemfig{
+           (-[:90]\bbb{OH})(<:[:200])(<[:-110](-[:190,.6]))-
+           (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9](-[,.6]))}
+        \schemestop{}
+        
+        \begin{itemize}
+          \item Note: \rrr{\ch{H2SO4}} is a \rrr{strong acid} and can be generalized to \rrr{\ch{H+}} or \rrr{HA}. 
+          \item Note: I occasionally use \rrr{red} for both \rrr{cations} and \rrr{acids}. I also use \bbb{blue} for \bbb{anions} and \bbb{bases} to help easily keep track of things. This is an arbitrary color choice, but it holds weight in these notes. 
+        \end{itemize}
+
+      \item Again, this reaction is stereoselective, so there is actually more than one product:
+        
+        \medskip
+        \schemestart{}
+          \dots
+          \arrow(--[braces]){->[\ch{H2O}]}[,,shorten <=8pt]
+          \chemname{\chemfig{
+           (-[:-90]\bbb{OH})(<[:-200](-[:190,.6]))(<:[:110])-
+           (-[:90]\rrr{H})(<:[:260]H)(<[:-40,.9](-[,.6]))
+           }}{\fff{Anti}}
+          \+
+          \chemname{\chemfig{
+           (-[:90]\bbb{OH})(<:[:200])(<[:-110](-[:190,.6]))-
+           (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9](-[,.6]))
+           }}{\ttt{Syn}}
+        \schemestop{}
+        \bigskip
+        
+      \item Example 2:
+      
+      \medskip
+      \schemestart{}
+        \chemfig{=[:-30]-[:30](<[:90,.8])-[:-30]-[:30]}
+        \arrow{->[\bbb{\ch{H2O}}][\rrr{\ch{H+}}]}
+        \chemfig{\rrr{H}-[:-90,.8]-[:-30]\chemabove[6pt]{}{\cat}-[:30](<[:90,.8])-[:-30]-[:30]}
+      \schemestop{}
+      \bigskip
+        
+      \item Rearrangement is always a possibility to be considered when cation are generated. In this case, a \ang{2} carbocation was generated, but we can do better:
+      
+      \medskip
+      \schemestart{}
+        \chemfig{\rrr{H}-[:-90,.8]-[:-30]@{c}\chemabove[6pt]{}{\cat}-[:30](<:[:30]@{h}H)(<[:90,.8])-[:-30]-[:30]}
+      \schemestop{}
+      \chemmove[dash pattern= on 1pt off 1pt]{
+        \draw(h)..controls +(south:1cm) and +(south:1cm).. (c);}
+      \bigskip
+      
+    \end{itemize}
+\end{itemize}
+
+
+
+\section{Nomenclature of Alkenes}\label{Nomenclature of Alkenes}
+\begin{itemize}
+  \item Generally prepared through beta elimination, which results in the formation of alkenes (series of unsaturated hydrocarbons contain that a \(\pi \) bond).
+  \item Alkenes are named using the same four steps in the previously used nomenclature, though the suffix of \minimal{``ane''} is replaced with \emph{``ene.''}
+  \item When choosing the parent chain, choose the parent chain that \emph{includes} the \(\pi \) bond.
+  \item When numbering the parent chain, the \(\pi \) bond should receive the \emph{lowest} number possible.
+  \item The locant of the \(\pi \) bond should be place right before the suffix of ``ene,'' though, it was previously recommended before the parent (both are acceptable).
+  \item Commonly recognized alternative names:
+
+    \medskip
+    \begin{center}
+    \schemestart{}
+      \chemname{\chemfig{=[:30]}}{Ethylene}
+      \qquad
+      \chemname{\chemfig{=[:30]-[:-30]}}{Propylene}
+      \qquad
+      \chemname{{\tiny\chemfig{*6(-=-(-=[:-30])=-=)}}}{Styrene}
+    \schemestop{}
+    \end{center}
+    \bigskip
+
 \end{itemize}
 %\endgroup
 %%%%%%%%%%% Chapter 14: Alkenes %%%%%%%%%%%
