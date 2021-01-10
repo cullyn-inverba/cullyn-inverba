@@ -13,30 +13,26 @@
     <a title="Join CH: 335 Discord server 🥳" href="https://discord.gg/xgS9NMVyRY">
     <img src="https://img.shields.io/discord/760937229798604850?logo=discord"
    alt="chat on Discord">
-    <br>
     </a>
     <a title="View my older notes" href="ch-334/org-chem.pdf">
     <img src="https://img.shields.io/badge/Review Notes-CH 334-informational?logo=latex" >
     </a>
-    <a title="View my notes" href="ch-335.pdf">
-    <img src="https://img.shields.io/badge/My Notes-WIP-critical?logo=latex" >
-    </a>
-    <a title="View practice problems" href="ch-335.pdf">
-    <img src="https://img.shields.io/badge/Lecture Notes-WIP-critical?logo=latex" >
     <br>
+    <a title="View my notes" href="ch-335.pdf">
+    <img src="https://img.shields.io/badge/Notes-Week 1 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations" href="quizes.pdf">
-    <img src="https://img.shields.io/badge/Mini Quiz-not started-important?logo=latex" >
+    <img src="https://img.shields.io/badge/Mini Quiz-WIP-critical?logo=latex" >
     </a>
     <a title="View selected practice problems" href="quizes.pdf">
-    <img src="https://img.shields.io/badge/Practice Problems-not started-important?logo=latex" >
+    <img src="https://img.shields.io/badge/Practice Problems-WIP-important?logo=latex" >
     </a>
 </p>
 
 ## **Course Materials**
 
-- Class text: [Crosscutting Concepts, Vol 2 (Ch. 4&ndash;22)](https://www.grlcontent.com/) (I do not have access)
-- Alternative text: [David R. Klein &ndash; Organic Chemistry (3rd edition)](https://1lib.us/book/2929062/c615a5) + [Klein's Solutions Manual](https://1lib.us/book/3515143/0b1300) (what I use)
+- Class text: [Crosscutting Concepts, Vol 2 (Ch. 4&ndash;22)](https://www.grlcontent.com/)
+- Alternative text: [David R. Klein &mdash; Organic Chemistry (3rd edition)](https://1lib.us/book/2929062/c615a5) + [Klein's Solutions Manual](https://1lib.us/book/3515143/0b1300)
 - Practice problems: [1000 Multiple-Choice Questions in Organic Chemistry](https://1lib.us/book/5342108/844e92)
 
 ### Other resources
