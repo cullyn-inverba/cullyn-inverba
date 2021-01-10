@@ -38,12 +38,17 @@
         \titlespacing*{\subsection}{-1em}
         {1ex plus 7ex minus 1ex}
         {1ex plus 0ex minus 0ex}
+    \titleformat{\subsubsection}{\large\bfseries\color{jarg}}{}{0pt}{\vspace{-12pt}}
+        \titlespacing*{\subsection}{-1em}
+        {1ex plus 5ex minus 1ex}
+        {1ex plus 0ex minus 0ex}
 
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ ││││ │ ├┤ │││ │ └─┐
 % ╚═╝└─┘┘└┘ ┴ └─┘┘└┘ ┴ └─┘
 \RequirePackage{titletoc}
     \renewcommand{\contentsname}{\color{title-color}\theTitle}
+    \setcounter{tocdepth}{3}
     \titlecontents{chapter}[0 em]
         {\large\bfseries}{}{}
         {\hfill \thecontentspage}
@@ -51,6 +56,9 @@
         {\color{minor}\bfseries}{}{}
         {\normalfont\hfill \thecontentspage}
     \titlecontents{subsection}[3.236 em]
+        {\color{minimal}}{}{}
+        {\titlerule*[0.42 em]{.}\thecontentspage}
+    \titlecontents{subsubsection}[4.854 em]
         {\color{minimal}}{}{}
         {\titlerule*[0.42 em]{.}\thecontentspage}
     
@@ -120,6 +128,14 @@
     \definesubmol\cat{\rrr{\scriptstyle\fplus}}
     \definesubmol\ani{\bbb{\scriptstyle\fminus}}
 
+    \definesubmol\elec{\rrr{\(E^\fplus \)}}
+    \definesubmol\nuc{\bbb{\(nu^\fminus \)}}
+    \definesubmol\pcp{\rrr{\(\delta\,\scriptstyle\fplus \)}}
+    \definesubmol\pcn{\bbb{\(\delta\,\scriptstyle\fminus \)}}
+    \definesubmol\pcpab{\rrr{\chemabove[6pt]{}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
+    \definesubmol\pcnab{\bbb{\chemabove[6pt]{}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
+
+
     \usetikzlibrary{matrix}
     \tikzset{
         obrace/.style={left delimiter={[},inner sep=3pt}
@@ -167,8 +183,8 @@
 
 \newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
 
-\newcommand{\ulink}[1]{{\color{ulink}{#1}\small\(\,^\rcurvearrowne\)}}
-\newcommand{\dlink}[1]{{\color{dlink}{#1}\small\(\,^\lcurvearrowse\)}}
+\newcommand{\ulink}[1]{{\color{ilink}{#1}\small\(\,^\rcurvearrowne\)}}
+\newcommand{\dlink}[1]{{\color{ilink}{#1}\small\(\,^\lcurvearrowse\)}}
 
 
 
@@ -204,10 +220,9 @@
 \definecolor{jarg}{HTML}{cedeeb} 
     
 
-% Links: #99e09b #78b07a #496b4a 
+% Links: #99e09b #78b07a
 \definecolor{link}{HTML}{99e09b} 
-\definecolor{ulink}{HTML}{78b07a} 
-\definecolor{dlink}{HTML}{496b4a} 
+\definecolor{ilink}{HTML}{78b07a} 
     
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
@@ -252,8 +267,8 @@
 %      sec #7abef5        \/___________/
 %    ssec #b0d0eb        
 %  jarg #cedeeb                              #99e09b link
-%                         #57d9c3 ttt          #78b07a ulink
-%                                                #496b4a dlink
+%                         #57d9c3 ttt          #78b07a ilink
+%                                             
 %  #ebebeb                       
 %    /\ 
 %   /  \ #e0e0e0 foreground 
