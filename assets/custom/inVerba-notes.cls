@@ -340,6 +340,7 @@
         leftmargin=\dimexpr26pt -1 em
     }
     \color{minimal}
+    \lhead{}
 }
 
 \ProcessOptions\relax
