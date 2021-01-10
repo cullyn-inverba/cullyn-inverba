@@ -1,18 +1,37 @@
-\documentclass{inVerba-notes}
+\documentclass[quiz]{inVerba-notes}
 
 \definecolor{title-color}{HTML}{5f89f5}
-\newcommand{\theTitle}{\href{https://github.com/cullyn-inverba/notes/tree/master/ch-335} {Organic Chemistry II}}
+\newcommand{\theTitle}{\href{https://github.com/cullyn-inverba/notes/tree/master/ch-335}{Mini Quizes}}
 
 \begin{document}
+\hypertarget{ToC}{\tableofcontents}
+
+\clearpage
+\section{Week 1 --- Chapter 14}\label{Week 1}
 \begin{enumerate}
     \item Name the structure: 
-
+    
     \medskip
     \schemestart{}
         \chemfig{*7((-Cl)--=----)}
     \schemestop{}
     \bigskip
     
+    \begin{itemize}
+      \item 1-chloro-3-cycloheptene
+      \item 4-chloro-1-cycloheptene
+      \item 4-chloro-1-cyclohexene
+      \item 6-chloro-1-cycloheptene
+      \basec{\begin{itemize}
+        \item When numbering the parent chain, the double bond should receive the lowest number possible; \emph{k=1}
+          \begin{itemize}
+            \item Note: define the location \(k\) of the double bond as being the number of its first carbon, not at the end.
+          \end{itemize}
+        \item The locant (\(k\)) of the double bond should be placed right before the suffix of ``ene,'' though, it was previously recommended before the parent (both are acceptable), e.g., 2-pentene = pent-2-ene; \emph{1-cycloheptene}
+        \item Name and the side groups (other than hydrogen) according to the appropriate rules; \emph{chloro}
+        \item Define the position of each side group as the number of the chain carbon it is attached to; \emph{4-}
+      \end{itemize}}
+    \end{itemize}
 
     \item Name the structure: 
     
@@ -23,6 +42,30 @@
       }
     \schemestop{}
     \bigskip
+
+    \begin{itemize}
+      \item (2E,4E)-7-chloro-2,4-heptadiene
+      \item (2Z,4Z)-7-chloro-2,4-heptadiene
+      \item (2Z,4E)-7-chloro-2,4-heptadiene
+      \item (2E,4Z)-7-chloro-2,4-heptadiene
+      \basec{
+        \begin{itemize}
+          \item \ddd{E-Z notation}: recommended instead of \textit{cis} and \textit{trans} in order to account for cases that has more than two different groups attached to the double bond by first determining the priority using the \link{https://en.wikipedia.org/wiki/Cahn\%E2\%80\%93Ingold\%E2\%80\%93Prelog_priority_rules}{Cahn-Ingold-Prelog System}.
+          \begin{itemize}
+            \item \fff{E, entgegen, ``opposite''}.
+            \item \ttt{Z, zusammen, ``together''}; ``on ze zame zide.''
+        \end{itemize}
+        \item When numbering the parent chain, the double bond should receive the lowest number possible; \emph{k=2}
+          \begin{itemize}
+            \item The two highest priority groups are on \fff{opposite} sides; \emph{2E}
+          \end{itemize}
+        \item There is more than one double bond; \emph{\(k_2=4\)}
+          \begin{itemize}
+            \item The two highest priority groups are on \ttt{zame} side; \emph{4Z}
+          \end{itemize}
+      \end{itemize}
+      }
+    \end{itemize}
     
     \item How many stereoisomeric product(s) do you get in the reaction below.
     
@@ -33,6 +76,21 @@
     \schemestop{}
     \bigskip
     
+    \basec{\begin{itemize}
+      \item Oxymercuration-demercuration reactions follow Markovnikov's rule, i.e., \rrr{\(H^+\)} is added to the carbon with the \rrr{greatest} number of hydrogen atoms while the \bbb{\(X^-\) component} is added to the carbon with the \bbb{fewest} hydrogen atoms.
+      \item Drawing the intermediate is not necessary, and no chiral centers are found in the products:
+      
+      \medskip
+      \schemestart{}
+        \dots 
+        \arrow(--[braces]){->[\rrr{\ch{Hg(OAc)2}}, \bbb{\ch{H2O}}, THF][\ch{NaBH4}]}[0,2.2]
+        \chemfig{\rrr{H}-[:30](<[:90]\bbb{OH})-[:-30](-[:30]-[:-30])-[:-90]-[:-30]}
+        \+
+        \chemfig{\rrr{H}-[:30](<:[:90]\bbb{OH})-[:-30](-[:30]-[:-30])-[:-90]-[:-30]}
+      \schemestop{}
+      \bigskip
+      
+    \end{itemize}}
     
     \item Which reaction intermediate is formed when Br2/CCl4 reacts with cyclohexene?
     
@@ -81,5 +139,14 @@
 
     \end{enumerate}
     \end{multicols}
-\end{enumerate}
+
+    \basec{\begin{itemize}
+      \item \ddd{Halogenation}: a reaction that involves the addition of one or more halogens to a compound or material.
+    \begin{itemize}
+      \item The addition of halogens to alkenes proceeds via \emph{intermediate halonium ions}.
+      \item \ddd{Halonium ion}: any onium ion containing a halogen atom carrying a positive charge. This cation has the general structure: \chemfig{R-[,.7]\rrr{+X}-[,.7]R'}
+      \item \ddd{Onium ion}: a \rrr{cation} formally obtained by the protonation of mononuclear parent hydride of a pnictogen (group 15 of the periodic table), chalcogen (group 16), or halogen (group 17); \rrr{\(Br^\cat\)} in our case.
+    \end{itemize}
+    \end{itemize}}
+  \end{enumerate}
 \end{document}

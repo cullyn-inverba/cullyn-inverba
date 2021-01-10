@@ -175,6 +175,7 @@
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 \renewcommand{\emph}[1]{{\color{emph}#1}} 
 \newcommand{\stress}[1]{{\color{stress}#1}}
+\newcommand{\basec}[1]{{\color{text}#1}}
 \newcommand{\minor}[1]{{\color{minor}#1}}
 \newcommand{\minimal}[1]{{\color{minimal}#1}}
 
@@ -325,4 +326,21 @@
     \rfoot{\thepage}
 }
 
+\DeclareOption{quiz}{
+    \setlist[itemize,1]{
+        label=\circ, 
+        leftmargin=\dimexpr26pt -1 em
+    }
+    \setlist[itemize,2]{
+        label=\textbullet,
+        leftmargin=\dimexpr26pt -1 em
+    }
+    \setlist[itemize,3]{
+        label=\small\color{minor}\textbullet,
+        leftmargin=\dimexpr26pt -1 em
+    }
+    \color{minimal}
+}
+
 \ProcessOptions\relax
+

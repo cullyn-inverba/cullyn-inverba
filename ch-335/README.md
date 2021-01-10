@@ -21,11 +21,8 @@
     <a title="View my notes" href="ch-335.pdf">
     <img src="https://img.shields.io/badge/Notes-Week 1 Done-sucess?logo=latex" >
     </a>
-    <a title="View my mini quiz explanations" href="quizes.pdf">
-    <img src="https://img.shields.io/badge/Mini Quiz-WIP-critical?logo=latex" >
-    </a>
-    <a title="View selected practice problems" href="quizes.pdf">
-    <img src="https://img.shields.io/badge/Practice Problems-WIP-important?logo=latex" >
+    <a title="View my mini quiz explanations" href="mini-quiz.pdf">
+    <img src="https://img.shields.io/badge/Mini Quiz-Week 1 Done-success?logo=latex" >
     </a>
 </p>
 
@@ -48,9 +45,9 @@ The following schedule is tentative and may be changed. I originally generated i
 
 ### **Week 1** (Jan 4-10) **Alkenes**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |  7,8  |    14    | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |  7,8  |    14    | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) | 
 
 Supplemental Materials
 
@@ -63,9 +60,9 @@ Supplemental Materials
 
 ### **Week 2** (Jan 11-17) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |    15    | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |    15    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -74,9 +71,9 @@ Supplemental Materials
 
 ### **Week 3** (Jan 18-24) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |    16    | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |    16    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -85,9 +82,9 @@ Supplemental Materials
 
 ### **Week 4** (Jan 25-31) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |  16, 17  | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |  16, 17  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -96,9 +93,9 @@ Supplemental Materials
 
 ### **Week 5** (Feb 1-7) **Midterm 1, ???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |  17, 18  | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |  17, 18  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -107,9 +104,9 @@ Supplemental Materials
 
 ### **Week 6** (Feb 8-14) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |  18, 19  | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |  18, 19  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -118,9 +115,9 @@ Supplemental Materials
 
 ### **Week 7** (Feb 15-21) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |  19, 20  | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |  19, 20  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -129,9 +126,9 @@ Supplemental Materials
 
 ### **Week 8** (Feb 22-28) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |    20    | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |    20    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -140,9 +137,9 @@ Supplemental Materials
 
 ### **Week 9** (Mar 1-7) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |    21    | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |    21    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -151,9 +148,9 @@ Supplemental Materials
 
 ### **Week 10** (Mar 8-14) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |   Practice   | 
-| --- | :---: | :------: | :--:|:----------: | :----------: |
-|     |   ?   |    22    | _View pdf_ | _Explanations_ | _Explanations_ |
+|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
+| --- | :---: | :------: | :--:|:----------: | 
+|     |   ?   |    22    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
