@@ -13,9 +13,6 @@
     <a title="Join PHL: 331 Discord server 🥳" href="https://discord.gg/6ckYfNF6WU">
     <img src="https://img.shields.io/discord/790800309924528170?logo=discord"
    alt="chat on Discord">
-    <a title="View my weekly reflectinos" href="ch-335.pdf">
-    <img src="https://img.shields.io/badge/Weekly Reflections-not started-important?logo=latex" >
-    </a>
 </p>
 
 ## Suggested Readings 
@@ -51,6 +48,7 @@ The following schedule is tentative and may be changed. Originally made from the
 #### **Read**
 
 - [Plato’s Republic, Book VII](http://classics.mit.edu/Plato/republic.8.vii.html)
+  - [Plato's Allegory of the Cave](https://www.youtube.com/watch?v=1RWOpQXTltA&vl=es) (suggested related video)
 - [Alfred North Whitehead, The Aims of Education](http://www.anthonyflood.com/whiteheadeducation.htm)
 
 #### **Watch**
@@ -63,8 +61,6 @@ The following schedule is tentative and may be changed. Originally made from the
 - Jean-Jacques Rousseau, “Against Reasoning with Children” 
 - Aristotle, “Liberal v. Mechanical Education” 
 - Jean-Jacques Rousseau, “Learning the Value of Work” 
-
-_My response to reflection questions (will link to pdf once complete)_
 
   ---
 
@@ -79,8 +75,6 @@ _My response to reflection questions (will link to pdf once complete)_
 - [The Idea of a University](readings/Idea-of-a-university.pdf)
 - [Progressive Education](readings/Progressive-Education.pdf)
 - [5 Big Ideas That Don't Work In Education](https://www.npr.org/sections/ed/2015/08/13/430050765/five-big-ideas-that-don-t-work-in-education)
-
-_My response to reflection questions (will link to pdf once complete)_
 
   ---
 
@@ -101,8 +95,6 @@ Pedagogy)
 - [Boghossian’s Mambo Dog Fish](readings/Mambo-Dog-Fish.pdf) (Critical Thinking and Constructivism: 
 Mambo Dog Fish to the Banana Patch)
 - [Delphi Report](readings/Delphi-Report.pdf) (Thinking: A Statement of Expert Consensus for Purposes of Educational Assessment and Instruction)
-
-_My response to reflection questions (will link to pdf once complete)_
 
   ---
 
@@ -130,8 +122,6 @@ _My response to reflection questions (will link to pdf once complete)_
 
 - [Damon Horowitz’s TED talk](http://www.ted.com/talks/lang/en/damon_horowitz_philosophy_in_prison.html)
 
-_My response to reflection questions (will link to pdf once complete)_
-
   ---
 
 ### **Week 5** (Feb 1-7)
@@ -148,8 +138,6 @@ _My response to reflection questions (will link to pdf once complete)_
 #### **Watch**
 
 - [Political Theory &mdash; John Rawls](https://www.youtube.com/watch?v=5-JQ17X6VNg)
-
-_My response to reflection questions (will link to pdf once complete)_
 
   ---
 
@@ -169,8 +157,6 @@ _My response to reflection questions (will link to pdf once complete)_
 - [Ken Robinson’s TED talk](http://www.ted.com/talks/ken_robinson_says_schools_kill_creativity.html)
 - [Peter Norvig’s TED talk](https://www.ted.com/talks/peter_norvig_the_100_000_student_classroom)
 - [Faith Jegede’s TED talk](https://www.ted.com/talks/faith_jegede_cole_what_i_ve_learned_from_my_autistic_brothers)
-
-_My response to reflection questions (will link to pdf once complete)_
 
   ---
 
@@ -194,8 +180,6 @@ _My response to reflection questions (will link to pdf once complete)_
 - [Lukianoff and Haidt](http://www.theatlantic.com/magazine/archive/2015/09/the-coddling-of-the-american-mind/399356) (NB, you only get one free article)
 - [President Obama delivers remarks on education](https://www.youtube.com/watch?v=dqHz33Q9XC4)
 
-_My response to reflection questions (will link to pdf once complete)_
-
   ---
 
 ### **Week 8** (Feb 22-28)
@@ -212,8 +196,6 @@ _My response to reflection questions (will link to pdf once complete)_
 
 #### **Watch**
 
-
-_My response to reflection questions (will link to pdf once complete)_
 
   ---
 
@@ -234,8 +216,6 @@ _My response to reflection questions (will link to pdf once complete)_
 - (Suggested) [Including Samuel](http://www.includingsamuel.com/home.aspx)
 - (Suggested) [Educating Peter](http://www.imdb.com/title/tt0104167)
 
-_My response to reflection questions (will link to pdf once complete)_
-
   ---
 
 ### **Week 10** (Mar 8-14)
@@ -253,6 +233,3 @@ _My response to reflection questions (will link to pdf once complete)_
 - [Dr. Martin Luther King, Jr., “I Have a Dream”](https://www.youtube.com/watch?v=vP4iY1TtS3s)
 
 - [Dr. Martin Luther King, Jr., “I’ve been to the mountaintop”](https://www.youtube.com/watch?v=Oehry1JC9Rk&feature=emb_logo)
-
-
-_My response to reflection questions (will link to pdf once complete)_
