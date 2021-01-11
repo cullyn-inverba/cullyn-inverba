@@ -33,21 +33,23 @@
 - Practice problems: [1000 Multiple-Choice Questions in Organic Chemistry](https://1lib.us/book/5342108/844e92)
 
 ### Other resources
+
 - A website that is useful for [memorizing the periodic](https://online.seterra.com/en-an/vgp/3824) table. Surprisingly helpful at times.
 - [Crash Course Organic Chemistry](https://www.youtube.com/playlist?list=PL8dPuuaLjXtONguuhLdVmq0HTKS0jksS4), it's still currently being produced, but has plenty of content already.
 - [The Organic Chemistry Tutor](https://www.youtube.com/c/TheOrganicChemistryTutor/featured): a huge lifesaver for many subjects, not just organic chemistry. There is not really a single playlist that tracks our class content, but just look up his videos on YouTube for great practice problems and walk-through solutions.
-- My [notes](ch-334/org-chem.pdf) from last term and my work on some [mini quizes](ch-334/apres-lecture-quiz.pdf) that were from Harry Davis's class. 
+- My [notes](ch-334/org-chem.pdf) from last term and my work on some [mini quizes](ch-334/apres-lecture-quiz.pdf) that were from Harry Davis's class.
   - _Disclaimer_: This was my first experiment with sharing my notes, so they are less structured (also didn't have working spell check at the time). Furthermore, I ran into some issues that started to become unmanageable the last two weeks of the term and it prompted a re-write of my custom LaTeX class. So, the last couple chapters and explanations to the mini quizzes were a mostly absent.
 - See [my instructions for using git](https://github.com/cullyn-inverba/notes#using-git) if you wish to have the files on your machine and easily stay up to date with the changes I push here.
+
 ## **Weekly Schedule**
 
-The following schedule is tentative and may be changed. I originally generated if from the syllabus. I do not have Strongin's textbook, so some information is missing. Any changes will be noted and slides will be added as they are released. 
+The following schedule is tentative and may be changed. I originally generated if from the syllabus. I do not have Strongin's textbook, so some information is missing. Any changes will be noted and slides will be added as they are released.
 
 ### **Week 1** (Jan 4-10) **Alkenes**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|    14    | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) | 
+| Strongin |     Lecture Notes      |           Mini Quiz           |
+| :------: | :--------------------: | :---------------------------: |
+|    14    | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) |
 
 Learning Objectives
 
@@ -67,9 +69,9 @@ Supplemental Materials
 
 ### **Week 2** (Jan 11-17) **Alkynes**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|    15    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|    15    |  _View pdf_   | _Explanations_ |
 
 Learning Objectives
 
@@ -77,7 +79,6 @@ Learning Objectives
 - Nomenclature of alkynes
 - Addition reaction of alkynes
 - Reaction mechanism and stereochemistry of products
-
 
 Supplemental Materials
 
@@ -90,9 +91,9 @@ Supplemental Materials
 
 ### **Week 3** (Jan 18-24) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|    16    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|    16    |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -101,9 +102,9 @@ Supplemental Materials
 
 ### **Week 4** (Jan 25-31) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|  16, 17  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|  16, 17  |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -112,9 +113,9 @@ Supplemental Materials
 
 ### **Week 5** (Feb 1-7) **Midterm 1, ???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|  17, 18  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|  17, 18  |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -123,9 +124,9 @@ Supplemental Materials
 
 ### **Week 6** (Feb 8-14) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|  18, 19  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|  18, 19  |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -134,9 +135,9 @@ Supplemental Materials
 
 ### **Week 7** (Feb 15-21) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|  19, 20  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|  19, 20  |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -145,9 +146,9 @@ Supplemental Materials
 
 ### **Week 8** (Feb 22-28) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|    20    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|    20    |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -156,9 +157,9 @@ Supplemental Materials
 
 ### **Week 9** (Mar 1-7) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|    21    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|    21    |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
@@ -167,9 +168,9 @@ Supplemental Materials
 
 ### **Week 10** (Mar 8-14) **???**
 
-| Strongin | Lecture Notes | Mini Quiz   |
-| :---: | :------: | :--:|:----------: | 
-|    22    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes |   Mini Quiz    |
+| :------: | :-----------: | :------------: |
+|    22    |  _View pdf_   | _Explanations_ |
 
 Supplemental Materials
 
