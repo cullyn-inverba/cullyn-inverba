@@ -45,9 +45,16 @@ The following schedule is tentative and may be changed. I originally generated i
 
 ### **Week 1** (Jan 4-10) **Alkenes**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |  7,8  |    14    | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|    14    | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) | 
+
+Learning Objectives
+
+- Properties of alkenes
+- Nomenclature of alkenes
+- Addition reaction of alkenes
+- Reaction mechanism and stereochemistry of products
 
 Supplemental Materials
 
@@ -58,22 +65,34 @@ Supplemental Materials
 - [Addition of Water (acid-catalyzed) Mechanism](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/addition-of-water-acid-catalyzed-mechanism "Khan Academy")
   <br>
 
-### **Week 2** (Jan 11-17) **???**
+### **Week 2** (Jan 11-17) **Alkynes**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |    15    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|    15    | _View pdf_ | _Explanations_ | 
+
+Learning Objectives
+
+- Properties of alkynes
+- Nomenclature of alkynes
+- Addition reaction of alkynes
+- Reaction mechanism and stereochemistry of products
+
 
 Supplemental Materials
 
-- N/A
-  <br>
+- [Alkyne nomenclature](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-preparation-alkynes/v/alkyne-nomenclature)
+- [Alkyne acidity and alkylation](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-preparation-alkynes/v/alkyne-acidity-and-alkylation)
+- [Preparation of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-preparation-alkynes/v/preparation-of-alkynes)
+- [Reduction of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/reduction-of-alkynes)
+- [Hydrohalogenation of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/hydrohalogenation-of-alkynes)
+- [Hydration of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/hydration-of-alkynes)
 
 ### **Week 3** (Jan 18-24) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |    16    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|    16    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -82,9 +101,9 @@ Supplemental Materials
 
 ### **Week 4** (Jan 25-31) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |  16, 17  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|  16, 17  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -93,9 +112,9 @@ Supplemental Materials
 
 ### **Week 5** (Feb 1-7) **Midterm 1, ???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |  17, 18  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|  17, 18  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -104,9 +123,9 @@ Supplemental Materials
 
 ### **Week 6** (Feb 8-14) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |  18, 19  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|  18, 19  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -115,9 +134,9 @@ Supplemental Materials
 
 ### **Week 7** (Feb 15-21) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |  19, 20  | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|  19, 20  | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -126,9 +145,9 @@ Supplemental Materials
 
 ### **Week 8** (Feb 22-28) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |    20    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|    20    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -137,9 +156,9 @@ Supplemental Materials
 
 ### **Week 9** (Mar 1-7) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |    21    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|    21    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 
@@ -148,9 +167,9 @@ Supplemental Materials
 
 ### **Week 10** (Mar 8-14) **???**
 
-|     | Klein | Strongin | Lecture Notes | Mini Quiz   |
-| --- | :---: | :------: | :--:|:----------: | 
-|     |   ?   |    22    | _View pdf_ | _Explanations_ | 
+| Strongin | Lecture Notes | Mini Quiz   |
+| :---: | :------: | :--:|:----------: | 
+|    22    | _View pdf_ | _Explanations_ | 
 
 Supplemental Materials
 

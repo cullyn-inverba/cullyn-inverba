@@ -89,3 +89,4 @@ pnictogen
 chalcogen
 bromonium
 olefin
+Aromaticity
