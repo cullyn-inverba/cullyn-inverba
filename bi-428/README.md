@@ -18,7 +18,7 @@
     <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-week 1 started-important?logo=latex" >
     </a>
      <a href="journal-summaries.pdf">
-    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-not started-critical?logo=latex" >
+    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Pedigree Done-sucess?logo=latex" >
     </a>
 </p>
 
@@ -44,7 +44,7 @@ The following schedule is tentative and may be changed. Originally made from the
 
 | | Krof & Irons | D2L | Assignment | Quiz |
 |-|:---:|:---:|:---:|:---:|
-| | 1,2,*3* | TBA | [Pedigree](pedigree.pdf "View my submission") | Pedigree Quiz |
+| | 1,2,*3* | TBA | [Pedigree](pedigree.pdf "View my submission") | [Pedigree Quiz](pedigree-quiz.pdf) |
 |Due| --- | --- | Wed 6:40 pm | Monday (1/11) 6:00 pm |
 
 Resources for pedigree assignment: 
