@@ -7,8 +7,8 @@
 # BI: 463 · Sensory and Motor Systems · Portland State University · Winter 2021
 
  <p align="center">
-    <a href="conservation-biology-W21.pdf">
-    <img title="View syllabus" src="https://img.shields.io/badge/BI: 429-Syllabus-informational?logo=adobe-acrobat-reader" >
+    <a href="motor-and-sensory-W21.pdf">
+    <img title="View syllabus" src="https://img.shields.io/badge/BI: 463-Syllabus-informational?logo=adobe-acrobat-reader" >
     </a>
     <a href="https://discord.gg/DHGub8zxzZ">
   <img title="Join BI: 463 Discord Server 🥳" src="https://img.shields.io/discord/790760762418659349?logo=discord"
