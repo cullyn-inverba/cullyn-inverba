@@ -17,6 +17,9 @@
     <a href="bi-463.pdf">
     <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-not started-important?logo=latex" >
     </a>
+    <a href="neural-science-notes.pdf">
+    <img title="Much older notes" src="https://img.shields.io/badge/Old notes-deperciated-informational?logo=latex" >
+    </a>
 </p>
 
 ## **Course Materials**
@@ -24,6 +27,8 @@
 - Supplemental texts:
   - [Purves &mdash; Neuroscience (6th ed.)](https://1lib.us/book/5481039/fb91d9)
   - [Kandel &mdash; Principles of Neural Science (5th ed.) ](https://1lib.us/book/2477222/4a05ed)
+
+- I happened to read Kandel's text last summer. I have some [notes](neural-science-notes.pdf) from that time, but they are pretty shallow considering the content covered. Lots of mistakes probably, and not a good representation of what my notes currently look like.
 
 ## **Weekly Schedule**
 
