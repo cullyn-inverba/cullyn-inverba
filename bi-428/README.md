@@ -17,8 +17,8 @@
     <a href="bi-428.pdf">
     <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-week 1 started-important?logo=latex" >
     </a>
-     <a href="journal-summaries.pdf">
-    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Pedigree Done-sucess?logo=latex" >
+     <a href="week-2.pdf">
+    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 2 Done-sucess?logo=latex" >
     </a>
 </p>
 
@@ -67,7 +67,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-|     6,9      | Journal Article |
+|     6,9      | [Journal Article](week-2.pdf) |
 
 ---
 

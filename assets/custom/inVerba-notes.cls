@@ -305,16 +305,11 @@
     \color{black}
 
     \titleformat{\chapter}{\LARGE\bfseries}{}{0pt}{\centering}
-        \titlespacing*{\chapter}{0pt}{-64pt}{4pt} 
     \titleformat{\section}{\Large\bfseries}{}{0pt}{}
-        \titlespacing*{\section}{0 em}
-        {1ex plus 7ex minus 1ex}
-        {1ex plus .0ex minus .0ex}
     \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
-        \titlespacing*{\subsection}{-1em}
-        {1ex plus 7ex minus 1ex}
-        {1ex plus 0ex minus 0ex}
+    \titleformat{\subsubsection}{\large\bfseries}{}{0pt}{}
 }
+
 
 \DeclareOption{basic}{
     \pagestyle{fancy}
