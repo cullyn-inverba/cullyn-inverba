@@ -30,10 +30,6 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
   - Minimize creation time; more time should be spent on application of the information contained in the notes.
   - Make something I'm proud of and want to share. It's incredible how much motivation can be generated from the focus on the craft, or quality, of your pursuits&mdash;especially if others find it useful.
 
-A brief guide to my color choices:
-
-![colors](assets/images/color-guide.png)
-
 ## Using Git
 
 It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be collecting all class dependent resources I can, plus it allows you to stay up to date with constant updates to my notes as the term progresses. So rather than having to tediously download needed resources through d2l, or having to constantly revisit this page, then you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
@@ -101,13 +97,13 @@ It's not necessary to use git to get the most out of this repository, most of it
   - [x] ~~Clean up .sty file.~~ (I think it's better to make separate custom classes)
   - [x] Establish primary dark-theme.
   - [ ] Create optional light-theme.
-  - [ ] Create basic theme for printing purposes.
+  - [x] Create basic theme for printing purposes.
   - [ ] Leave sufficient comments for optional customization by others.
   - [x] Find a better integrated spell/grammar checker.
 - [ ] **Make the repository more accessible.**
   - [x] Create a more detailed README for the repository in general.
   - [x] Establish a more standardized note taking structure.
-  - [x] Create introduction to note structure.
+  - [x] ~~Create introduction to note structure.~~ (I think structure speaks for itself; guide was removed.)
   - [x] Create a discord server for each winter term classes.
   - [x] Create READMEs for each class (need syllabus for each class first).
 - [ ] **Make it easier for others to contribute.**
