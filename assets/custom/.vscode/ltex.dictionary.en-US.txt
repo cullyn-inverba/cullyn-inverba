@@ -95,3 +95,15 @@ Alkyne
 Acetylide
 alkyne
 epoxide
+stereoisomeric
+Coplanar
+Hofmann
+Stereospecificity
+Zaitsev
+stereospecificity
+stereoisomer
+coplanar
+Periplanar
+protic
+halide
+Geminal
