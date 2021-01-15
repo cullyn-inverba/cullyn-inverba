@@ -90,3 +90,5 @@ chalcogen
 bromonium
 olefin
 Aromaticity
+Alkynes
+Alkyne

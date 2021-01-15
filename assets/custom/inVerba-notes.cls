@@ -121,10 +121,7 @@
         s/scale = 1.2,
         p/scale = 1.2
     }
-    \definesubmol\hch{}
-    \definesubmol\cu{-[:+30]}
-    \definesubmol\cd{-[:-30]}
-    
+        
     \definesubmol\cat{\rrr{\scriptstyle\fplus}}
     \definesubmol\ani{\bbb{\scriptstyle\fminus}}
 

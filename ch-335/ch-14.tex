@@ -11,9 +11,9 @@
       \qquad
       \chemname{\chemfig{C(-[::150]H)(-[::-150]H)=C(-[::+30]H)(-[::-30]H)}}{Unsaturateed\\alk\emph{enes} eth\emph{ene}}
       \qquad
-      \chemname{\chemfig{!\cu!\cd}}{prop\emph{ane}}
+      \chemname{\chemfig{-[:30]-[:-30]}}{prop\emph{ane}}
       \qquad
-      \chemname{\chemfig{!\cu=[:-30]}}{prop\emph{ene}}
+      \chemname{\chemfig{-[:30]=[:-30]}}{prop\emph{ene}}
     \schemestop{}
   \end{center}
   \bigskip
@@ -33,9 +33,9 @@
     \item Basic types of alkenes:
     
     \schemestart{}
-      \chemname{\chemfig{=[:30,,,,emph]!\cd!\cu}}{Terminal Alkene}
+      \chemname{\chemfig{=[:30,,,,emph]-[:-30]-[:30]}}{Terminal Alkene}
       \qquad
-      \chemname{\chemfig{!\cu=[:-30,,,,emph]!\cu}}{Internal Alkene}
+      \chemname{\chemfig{-[:30]=[:-30,,,,emph]-[:30]}}{Internal Alkene}
       \qquad
       \chemname{{\footnotesize\chemfig{*6(---=[,,,,emph]--)}}}{Cyloalkene}
     \schemestop{}
@@ -112,7 +112,7 @@
     
     \begin{multicols}{2}  
     \begin{itemize}
-        \item[i] \chemfig{!\cu=[:-30]!\cu=[:-30]!\cu=[:-30]}
+        \item[i] \chemfig{-[:30]=[:-30]-[:30]=[:-30]-[:30]=[:-30]}
         \item[ii]\quad{\footnotesize\chemfig{*6(-=-=-=)}}
         \item[i] \(\frac{1}{2}(2(7) + 2 + (0) - (3+(5(1))+2) - 0) = \emph{3}\)
         \smallskip 
@@ -282,6 +282,29 @@
     \bigskip
 
     \item Groups containing \ch{C=C} have common names as well, which can be found under \hyperref[Types of Alkenes]{\ulink{types of alkenes}}.
+    
+    \item If there is \emph{more than 1} functional group, then the \emph{alcohol} has the \emph{higher priority} over alkenes.
+    \begin{itemize}
+        \item There are more rules depending on functional groups, but for now the distinction between alcohol and alkenes are all that is needed.
+        \item I.e., find the longest chain and number in a way that the carbon \emph{containing the OH} gets the \emph{lowest} possible number while still including both the OH and alkene.
+        \item An example with alcohol:
+    
+        \medskip
+        \schemestart{}
+        \chemname{\chemfig{-[:30]-[:-30]3(=[:-90,,,,emph]4-[:-30,,,,ttt]5-[:-90]6)-[:30,,,,ttt]2-[:-30]1-[:30]\emph{OH}}}{(\ttt{3Z})-3-propyl-hex-3-\emph{en}-1-\emph{ol}\\or\\\textit{(\ttt{3Z})-3-propyl-3-hexen-1-ol}}
+        \schemestop{}
+        \bigskip
+
+        \item An example with OH still being lowest (name still ends with -ol), but alkene happens to be lower:
+        
+        \medskip
+        \schemestart{}
+            \chemname{\chemfig{[:30]10-[:-30]9-[:30]8-[:-30]7(<:[:-90,.9,,,ttt])-[:30]6-[:-30]5(<[:-90,,,,fff]\ch{OH})-[:30,,,,ttt]4=[:-30]3-[:30,,,,fff]2-[:-30]1}}{(\fff{3E},\fff{5S},\ttt{7R})-4-methyl-3-en-5-ol}
+        \schemestop{}
+        \bigskip
+
+        \item Note: if planar geometry was not given, \ttt{R} and \fff{S} could not be determined. Check out the \hyperref[Cahn-Ingold-Prelog System]{\ulink{Cahn-Ingold-Prelog System}} for review.
+    \end{itemize}
 \end{itemize}
 
 \clearpage
@@ -438,14 +461,14 @@
     \schemestart{}
       \chemfig{C_1(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))=[@{db}]C_2(<:[:30]H)(<[:-30])}
       \arrow{->[\chemfig{@{hx}\rrr{H}@{xx}\bbb{X}}]}
-      \chemname{\chemfig{
+      \chemname[-20pt]{\chemfig{
         \chemabove[3pt]{C_1}{\cat}
         (<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))
         -C_2
         (-[:90]@{h}\rrr{H})(<:[:250]H)(<[:-50,.9])}
         }{most stable carbocation intermediate}
       \arrow{->}
-      \chemname{\chemfig{
+      \chemname[-20pt]{\chemfig{
         C_1
         (-[:90]@{x}\bbb{X})(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))
         -C_2
@@ -465,12 +488,12 @@
     \schemestart{}
       \chemfig{(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))=[@{db}](<:[:30]H)(<[:-30])}
       \arrow(--[braces]){->[\rrr{H}\bbb{X}]}
-      \chemname{\chemfig{
+      \chemname[-20pt]{\chemfig{
         (-[:90]\bbb{X})(<:[:150])(<[:-150](-[:190,.6])(-[:250,.6]))-
         (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9])}}
         {\ttt{Syn}}
       \+
-      \chemname{\chemfig{
+      \chemname[-20pt]{\chemfig{
         (-[:-90]\bbb{X})(<:[:80])(<[:120](-[:80,.6])(-[:160,.6]))-
         (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9])}}
         {\fff{Anti}}
@@ -502,13 +525,13 @@
       \dots
       \arrow(--[braces]){->[\rrr{H}-\bbb{I}]}
       {\footnotesize
-      \chemname{\chemfig{*6(---(<)(<:[:-30]\rrr{H})-(<:[:30])(<\bbb{I})--)}}{\fff{Anti}}
+      \chemname[-40pt]{\chemfig{*6(---(<)(<:[:-30]\rrr{H})-(<:[:30])(<\bbb{I})--)}}{\fff{Anti}}
       \+
-      \chemname{\chemfig{*6(---(<)(<:[:-30]\rrr{H})-(<:[:30]\bbb{I})(<)--)}}{\ttt{Syn}}
+      \chemname[-40pt]{\chemfig{*6(---(<)(<:[:-30]\rrr{H})-(<:[:30]\bbb{I})(<)--)}}{\ttt{Syn}}
       \+ 
-      \chemname{\chemfig{*6(---(<\rrr{H})(<:[:-30])-(<:[:30])(<\bbb{I})--)}}{\ttt{Syn}}
+      \chemname[-40pt]{\chemfig{*6(---(<\rrr{H})(<:[:-30])-(<:[:30])(<\bbb{I})--)}}{\ttt{Syn}}
       \+
-      \chemname{\chemfig{*6(---(<\rrr{H})(<:[:-30])-(<:[:30]\bbb{I})(<)--)}}
+      \chemname[-40pt]{\chemfig{*6(---(<\rrr{H})(<:[:-30])-(<:[:30]\bbb{I})(<)--)}}
       {\fff{Anti}}
       }
     \schemestop{}
@@ -566,12 +589,12 @@
         \schemestart{}
           \dots
           \arrow(--[braces]){->[\ch{H2O}]}[,,shorten <=8pt]
-          \chemname{\chemfig{
+          \chemname[-30pt]{\chemfig{
            (-[:-90]\bbb{OH})(<[:-200](-[:190,.6]))(<:[:110])-
            (-[:90]\rrr{H})(<:[:260]H)(<[:-40,.9](-[,.6]))
            }}{\fff{Anti}}
           \+
-          \chemname{\chemfig{
+          \chemname[-30pt]{\chemfig{
            (-[:90]\bbb{OH})(<:[:200])(<[:-110](-[:190,.6]))-
            (-[:90]\rrr{H})(<:[:250]H)(<[:-50,.9](-[,.6]))
            }}{\ttt{Syn}}
@@ -598,7 +621,7 @@
       \schemestart{}
         \chemfig{\rrr{H}-[:-90,.8]-[:-30]@{c}\chemabove[6pt]{}{\cat}-[:30](<:[:30]@{h}H)(<[:90,.8])-[:-30]-[:30]}
         \arrow{->}[,,shorten <=12pt]
-        \chemname{\chemfig{\rrr{H}-[:-90,.8]-[:-30]-[:30](-[:160,0.3,,,draw=none]\cat)(-[:90,.8])-[:-30]-[:30]}}{\ang{3} carbocation intermediate}
+        \chemname[-20pt]{\chemfig{\rrr{H}-[:-90,.8]-[:-30]-[:30](-[:160,0.3,,,draw=none]\cat)(-[:90,.8])-[:-30]-[:30]}}{\ang{3} carbocation intermediate}
         \arrow{->[\bbb{\ch{H2O}}]}
         \chemfig{\rrr{H}-[:-90,.8]-[:-30]-[:30](-[:130,.8])(-[:50,.8]\bbb{OH})-[:-30]-[:30]}
       \schemestop{}
@@ -660,9 +683,9 @@
           \begin{center}\footnotesize
           \hspace{-20pt}
           \schemestart{}
-            \chemname{\chemfig{CH_3-C(=[:-90]O)-OH}}{acitic acid, OAc}
+            \chemname[-35pt]{\chemfig{CH_3-C(=[:-90]O)-OH}}{acitic acid, OAc}
             \arrow{->}[,,shorten <=8pt]
-            \chemname{\chemfig{CH_3-C(=[:-90]O)-\bbb{O^-}}}{acitate, \ch{AcO-}}
+            \chemname[-35pt]{\chemfig{CH_3-C(=[:-90]O)-\bbb{O^-}}}{acitate, \ch{AcO-}}
           \schemestop{}
           \end{center}
           \medskip
@@ -717,7 +740,7 @@
           \schemestart{}
             \dots
             \arrow(--[braces]){->}[0,.9]
-            \chemname{\chemfig{-[:30]@{c1}*3(-<{\cat{}Hg}(-\ch{OAc})>)}
+            \chemname[-35pt]{\chemfig{-[:30]@{c1}*3(-<{\cat{}Hg}(-\ch{OAc})>)}
             \+
             \chemfig{-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mecurinium intermediates}
             \arrow(--[braces]){->[\chemfig{@{wa}\bbb{\ch{H2O}}}]}[0,.9]
@@ -735,36 +758,51 @@
         \end{itemize}
       \end{itemize}
     \subsubsection{Related Practice Problems}
-    \begin{enumerate}
+    \begin{enumerate}\footnotesize
       \item 
       \schemestart{}
         \chemfig{-[:-30]-[:30](<[:90])-[:-30]=[:30]}
-        \arrow{->[\ch{CH3OH}/\ch{H+}]}
+        \arrow{->[\ch{CH3\bbb{OH}}/\rrr{\ch{H+}}]}
+        \chemfig{-[:-30]-[:30](<[:90])(<:[:45]\rrr{H})-[:-30]\chemabove[6pt]{}{\cat}-[:30]}
+        \arrow{->}[0,.8]
+        \chemfig{-[:-30]-[:30](-[:30,.3,,,draw=none]\cat)(-[:90])-[:-30]-[:30]}
       \schemestop{}
       \bigskip
-
+    
+      \medskip
+      \schemestart{}
+        \dots
+        \arrow{->}
+        \chemfig{-[:-30]-[:30](-[:45]\bbb{O}CH_3)(-[:135])-[:-30]-[:30]}
+      \schemestop{}
+      \bigskip
+      
+    
       \item 
       \schemestart{}
-        \chemfig{(-[::150])(-[::-150]-[:180,.6])=[,.8](-[::30]H)(-[::-30]-[,.6])} 
-        \arrow{->[ROH][d. \ch{H2SO4}]}
+        \chemfig{(-[::150])(<[::-150]-[:180,.6])=[,.8](-[::30]H)(<[::-30]-[,.6])} 
+        \arrow{->[ROH][d. \rrr{\ch{H2SO4}}]}
+        \chemfig{\chemabove[6pt]{}{\cat}(-[::150])(<[::-150]-[:180,.6])-(<:[:-100]H)(-[:90]\rrr{H})(<[::-30]-[,.6])} 
       \schemestop{}
       \bigskip
-
-      \item 
+    
+      \medskip
       \schemestart{}
-        \chemfig{*6(---=(-)--)}
-        \arrow{->[EtOH][d.\ch{H2SO4}]}
-        \chemfig{*6(---=(-)--)}
+        \dots
+        \arrow(--[braces]){->[R\bbb{OH}]}
+        \chemfig{(<:[:220])(<[:-100]-[:180,.6])(-[:90]\bbb{OR})-(<:[:-100]H)(-[:90]\rrr{H})(<[:-40]-[,.6])} 
+        \+
+        \chemfig{(<:[:-220])(<[:100]-[:180,.6])(-[:-90]\bbb{OR})-(<:[:-90]H)(-[:90]\rrr{H})(<[:-40]-[,.6])} 
       \schemestop{}
       \bigskip
-
+      
       \item + Alternate ways of drawing rings (was done in lecture):
-
+    
       \medskip
       \schemestart{}
         \chemfig{-[:-30]-[:30]=[:-30]}
         \arrow(--[braces]){->[\ch{Hg(OAC)2},\ch{H2O},THF][\ch{NaBH4}, \ch{NaOH}, THF]}[0,2.2]
-        \chemname{\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
+        \chemname[-45pt]{\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
             \+
             \chemfig{-[:-30]-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mecurinium intermediates}
       \schemestop{}
@@ -775,11 +813,11 @@
       \schemestart{}
         \dots
         \arrow(--[braces]){->}[0,.6]
-        \chemname{\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
+        \chemname[-45pt]{\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
           \+
           \chemfig{-[:-30]-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mecurinium intermediates}
         \arrow(--[braces]){<->[or]}[0,.8]
-        \chemname{\chemfig{-[:-30]<[:30]*3(--{\cat{}Hg}(-\ch{OAc})-)}
+        \chemname[-45pt]{\chemfig{-[:-30]<[:30]*3(--{\cat{}Hg}(-\ch{OAc})-)}
           \+
           \chemfig{-[:30]<[:-30]*3(-{\cat{}Hg}(-[:-90]\ch{OAc})--)}}{Mecurinium intermediates}
       \schemestop{}
@@ -803,7 +841,7 @@
       \schemestop{}
       }
       \bigskip
-
+    
       \textbf{Demercuration}:
       
       \medskip
@@ -822,49 +860,31 @@
       \schemestop{}
       }
       \bigskip
-
+    
       \item 
+
+      \hspace{-9pt}
       \schemestart{}
-        \chemfig{=[:-30]-[:30](<[:90])-[:-30]-[:30]}
-        \arrow{->[\ch{Hg(OAC)2},\ch{H2O},THF][\ch{NaBH4}, \ch{NaOH}, THF]}[0,2.2]
+      \chemfig{=[:-30]-[:30](<[:90])-[:-30]-[:30]}
+      \arrow(--[braces]){->[\rrr{\ch{Hg(OAC)2}},\bbb{\ch{CH3OH}},THF][\ch{NaBH4}, \ch{NaOH}, THF]}[0,2.5]
+      \chemfig{\rrr{H}-[:-30](<[:-90]\bbb{\ch{OCH3}})-[:30](<[:90])-[:-30]-[:30]}
+      \+
+      \chemfig{\rrr{H}-[:-30](<:[:-90]\bbb{\ch{OCH3}})-[:30](<[:90])-[:-30]-[:30]}
       \schemestop{}
       \bigskip
-
-      \textbf{For 6 and 7: find the products directly without the mechanism.}
-
-      \item Very similar to \hyperref[oxymercuration-num-7]{\dlink{question 7}} which I did first since it was in lecture.\label{oxy-num-6}
+    
+      \item 
       
       \schemestart{}
         \chemfig{*6(---=(-)--)}
         \arrow{->[\ch{Hg(OAC)2},\ch{H2O},THF][\ch{NaBH4}, \ch{NaOH}, THF]}[0,2.2]
         \chemfig{*6(---(-[,.3,,,,draw=none]\rrr{H})=(-\bbb{OH})--)}
-      \schemestop{}
-      \bigskip
-
-      \item[\small\color{minor}\textbullet] First, label where the new additions will go.
-
-      \schemestart{}
-        \dots
-        \arrow(--[braces]){->}[0,.8]
-        \chemfig{*6(---(<:\rrr{H})-(-\bbb{OH})--)}
-        \+
-        \chemfig{*6(---(<\rrr{H})-(-\bbb{OH})--)}
-      \schemestop{}
-      \bigskip
-
-      \item[\small\color{minor}\textbullet] \rrr{H} has two options, which gives us the above.
-      \item[\small\color{minor}\textbullet] Since oxymercuration-demercuration is always an \fff{anti addition}, then we know \bbb{OH} must be \fff{anti} to the hydrogen in both of the products:
-
-      \schemestart{}
-        \dots
-        \arrow(--[braces]){->}[0,.8]
-        \chemname{\chemfig{*6(---(<:\rrr{H})-(<\bbb{OH})--)}}{\fff{Anti}}
-        \+
-        \chemname{\chemfig{*6(---(<\rrr{H})-(<:\bbb{OH})--)}}{\fff{Anti}}
+        \arrow{->}[0,.8]
+        \chemfig{*6(----(-[:120]\bbb{OH})(-[:60])---)}
       \schemestop{}
       \bigskip
       
-      \item Very similar to \hyperref[oxy-num-6]{\ulink{question 6}} (was done in lecture)\label{oxymercuration-num-7}
+      \item (was done in lecture)
       
       \medskip
       \schemestart{}
@@ -873,7 +893,7 @@
           \chemfig{*6(--(-)-(-[,.3,,,draw=none]\rrr{H})=(-\bbb{OH})--)}
       \schemestop{}
       \bigskip
-
+    
       \item[\small\color{minor}\textbullet] We know these are the locations of the H and OH, so we can start by labeling them.
       
       \medskip
@@ -885,7 +905,7 @@
         \chemfig{*6(--(-)-(<:\rrr{H})-(-\bbb{OH})--)}
       \schemestop{}
       \bigskip
-
+    
       \item[\small\color{minor}\textbullet] The methyl will be the same no matter what, so we can ignore that.
       \item[\small\color{minor}\textbullet] \rrr{H} has two options, which gives us the above.
       \item[\small\color{minor}\textbullet] Since oxymercuration-demercuration is always an \fff{anti addition}, then we know \bbb{OH} must be \fff{anti} to the hydrogen in both of the products:
@@ -971,9 +991,9 @@
     \schemestart{}
         \chemfig{*6(--(-)-=(-)--)}
         \arrow(--[braces]){->[\ch{BH3}][\ch{H2O2}, \ch{NaOH}, THF]}[0,2.2]
-        \chemname{\chemfig{*6(--(-)-(<\rrr{OH})-(<\bbb{H})(<:[:30])--)}}{\ttt{Syn}}
+        \chemname[-40pt]{\chemfig{*6(--(-)-(<\rrr{OH})-(<\bbb{H})(<:[:30])--)}}{\ttt{Syn}}
         \+
-        \chemname{\chemfig{*6(--(-)-(<:\rrr{OH})-(<:\bbb{H})(<[:30])--)}}{\ttt{Syn}}
+        \chemname[-40pt]{\chemfig{*6(--(-)-(<:\rrr{OH})-(<:\bbb{H})(<[:30])--)}}{\ttt{Syn}}
     \schemestop{}
     \bigskip
 
@@ -983,9 +1003,9 @@
     \schemestart{}
         \chemfig{*6(--(-)-=(-)--)}
         \arrow(--[braces]){->[\ch{BH3}][\ch{H2O2}, \ch{NaOH}, THF]}[0,2.2]
-        \chemname{\chemfig{*6(--(<)-(<\rrr{OH})-(<\bbb{H})(<:[:30])--)}}{\ttt{Syn}}
+        \chemname[-40pt]{\chemfig{*6(--(<)-(<\rrr{OH})-(<\bbb{H})(<:[:30])--)}}{\ttt{Syn}}
         \+
-        \chemname{\chemfig{*6(--(<)-(<:\rrr{OH})-(<:\bbb{H})(<[:30])--)}}{\ttt{Syn}}
+        \chemname[-40pt]{\chemfig{*6(--(<)-(<:\rrr{OH})-(<:\bbb{H})(<[:30])--)}}{\ttt{Syn}}
     \schemestop{}
   \end{itemize}
 
@@ -1030,9 +1050,9 @@
     \+{,,20pt}
     \chemfig{-[:30]@{att}*3(-<:@{cat2}\chemabove[3pt]{\rrr{Br}}{\cat}>:)}
     \arrow(--[braces]){->}
-    \chemname{\chemfig{(<[:90]\bbb{Br})(-[:-130])-<:[:-90]\rrr{Br}}}{\fff{Anti}}
+    \chemname[-40pt]{\chemfig{(<[:90]\bbb{Br})(-[:-130])-<:[:-90]\rrr{Br}}}{\fff{Anti}}
     \+
-    \chemname{\chemfig{(<:[:90]\bbb{Br})(-[:-130])-<[:-90]\rrr{Br}}}{\fff{Anti}}
+    \chemname[-40pt]{\chemfig{(<:[:90]\bbb{Br})(-[:-130])-<[:-90]\rrr{Br}}}{\fff{Anti}}
     \schemestop{}
     \chemmove[dash pattern= on 1pt off 1pt]{
       \draw(br)..controls +(south:2cm) and +(south:1cm).. (at);
@@ -1049,11 +1069,11 @@
     \schemestart{}
       \chemfig{-[:30]=[:-30]}
       \arrow(--[braces]){->[\ch{Br2}][\bbb{\ch{H2O}}]}
-      \chemname{\chemfig{
+      \chemname[-40pt]{\chemfig{
         (<[:90]\bbb{OH})(-[:-130])-<:[:-90]\rrr{Br}
         }}{\fff{Anti}}
       \+
-      \chemname{\chemfig{
+      \chemname[-40pt]{\chemfig{
         (<:[:90]\bbb{OH})(-[:-130])-<[:-90]\rrr{Br}
         }}{\fff{Anti}}
     \schemestop{}
