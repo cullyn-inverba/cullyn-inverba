@@ -121,16 +121,18 @@
         s/scale = 1.2,
         p/scale = 1.2
     }
-        
+
     \definesubmol\cat{\rrr{\scriptstyle\fplus}}
     \definesubmol\ani{\bbb{\scriptstyle\fminus}}
 
     \definesubmol\elec{\rrr{\(E^\fplus \)}}
     \definesubmol\nuc{\bbb{\(nu^\fminus \)}}
-    \definesubmol\pcp{\rrr{\(\delta\,\scriptstyle\fplus \)}}
-    \definesubmol\pcn{\bbb{\(\delta\,\scriptstyle\fminus \)}}
-    \definesubmol\pcpab{\rrr{\chemabove[6pt]{}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
-    \definesubmol\pcnab{\bbb{\chemabove[6pt]{}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
+    \definesubmol\pcp{\text{\rrr{\(\delta\,\scriptstyle\fplus \)}}}
+    \newcommand{\cadp}[1]{\rrr{\chemabove[3pt]{#1}{\text{\delta\plus}}}}
+    \newcommand{\cadn}[1]{\bbb{\chemabove[3pt]{#1}{\text{\delta\minus}}}}
+    \definesubmol\pcn{\text{\bbb{\(\delta\,\scriptstyle\fminus \)}}}
+    \newcommand{\pcpab}[1]{\rrr{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
+    \newcommand{\pcnab}[1]{\bbb{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
 
 
     \usetikzlibrary{matrix}

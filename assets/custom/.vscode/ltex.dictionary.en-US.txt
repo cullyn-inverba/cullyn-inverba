@@ -92,3 +92,6 @@ olefin
 Aromaticity
 Alkynes
 Alkyne
+Acetylide
+alkyne
+epoxide
