@@ -40,11 +40,11 @@
       \hspace{-30pt}
       \medskip
       \schemestart{}
-        \chemname[-60pt]{\chemfig{?-[:60]O-[:-60]?}}{epoxide}
+        \chemname[-50pt]{\chemfig{?-[:60]O-[:-60]?}}{epoxide}
         \qquad
-        \chemname[-60pt]{\chemfig{-[:30]\chemabove[3pt]{}{\ang{1}}-[:-30]X}}{\ang{1}-halide}
+        \chemname[-50pt]{\chemfig{-[:30]\chemabove[3pt]{}{\ang{1}}-[:-30]X}}{\ang{1}-halide}
         \qquad
-        \chemname[-60pt]{\chemfig{CH3-X}}{metyhl-halide}
+        \chemname[-50pt]{\chemfig{CH3-X}}{metyhl-halide}
       \schemestop{}
       \bigskip
     \end{center}
@@ -112,13 +112,52 @@
         \arrow{->[\bbb{NaH}][{\tiny\chemfig{*6(---(-[:45])(-[:-15]I)---)}}]}
         \chemfig{-~\bbb{C^\ani}}
         \arrow(--[braces]){->}
-        \chemname[-50pt]{{\scriptsize\chemfig{*6(---(=)---)}}}{Hoffman}
+        \chemname[-40pt]{{\scriptsize\chemfig{*6(---(=)---)}}}{Hoffman}
         \+
-        \chemname[-50pt]{{\scriptsize\chemfig{*6(---(-)=--)}}}{Zaitsev}
+        \chemname[-40pt]{{\scriptsize\chemfig{*6(---(-)=--)}}}{Zaitsev}
       \schemestop{}
       \bigskip
       
       \item The Zaitsev product is more likely to be the major product due to the thermodynamics (more energetically stable) than the Hofmann product; a bulkier base would likely increase the Hofmann product. 
+      
+      \subsection{Preparation of Alkynes}\label{Preparation of Alkynes}
+        \item Introductory example of a geminal dihalide going through two E2 reactions to generate an alkyne:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{R-(-[@{cbr}:90]@{br1}Br)(-[:-90]Br)-[@{sb}](-[:90]H)(-[:-90]@{h1}H)-R'}
+          \arrow{->[\ch{NaNH2}][(2 eq.)]}[0,1.2]
+          \chemfig{(-[:150]R)(-[@{cbr2}:-150]@{br2}Br)=[@{db}](-[:30]@{h2}H)(-[:-30]R')}
+          \arrow{->[\ch{NaH2}]}
+          \chemfig{R-~-R'}
+        \schemestop{}
+        \chemmove[dash pattern= on 1pt off 1pt]{
+          \draw(h1)..controls +(170:0.5cm) and +(280:0.5cm).. (sb);
+          \draw(cbr)..controls +(west:0.5cm) and +(west:0.5cm).. (br1);
+          \draw(h2)..controls +(140:0.8cm) and +(90:0.5cm).. (db);
+          \draw(cbr2)..controls +(-60:0.8cm) and +(-20:0.5cm).. (br2);
+          }
+        \bigskip
+        
+        \begin{itemize}
+          \item Related example with a vicinal dihalide (halide on adjacent carbons):
+          
+          \medskip
+          \schemestart{}
+            \chemfig{R-(-[:90]Br)(-[:-90]@{h3}H)-[@{sb1}](-[@{cbr3}:90]@{br3}Br)(-[:-90]H)-R'}
+            \arrow{->[\ch{NaNH2}][(2 eq.)]}[0,1.2]
+            \chemfig{(-[:150]R)(-[:-150]@{h4}H)=[@{db}](-[@{cbr4}:30]@{br4}Br)(-[:-30]R')}
+            \arrow{->[\ch{NaH2}]}
+            \chemfig{R-~-R'}
+          \schemestop{}
+          \chemmove[dash pattern= on 1pt off 1pt]{
+            \draw(h3)..controls +(-20:0.5cm) and +(280:0.5cm).. (sb1);
+            \draw(cbr3)..controls +(west:0.5cm) and +(west:0.5cm).. (br3);
+            \draw(h4)..controls +(-60:0.8cm) and +(-90:0.5cm).. (db);
+            \draw(cbr4)..controls +(130:0.8cm) and +(150:0.5cm).. (br4);
+            }
+          \bigskip
+        \end{itemize}
 
       \subsection{Regioselectivity and Stereospecificity of E2 Reactions}
         \item \ddd{Regiochemistry}: when a chemical reaction is said to produce two different regiochemical outcomes.
@@ -163,7 +202,36 @@
 \clearpage
 \section{Alkyne Nomenclature}\label{Alkyne Nomenclature}
 \begin{itemize}
-    \item 
+  \item[]
+  \subsection{Basic Alkyne Nomenclature}\label{Basic Alkyne Nomenclature}
+  \begin{itemize}
+      \item All other basic IUPAC rules still apply; the suffix is \emph{``yne''}.
+      \item Find the longest carbon chain that includes both carbons of the triple bond.
+      \item Number the longest chain starting at the end closest to the triple bond.
+      \item Compounds with > 1 triple bond are called diynes, triynes, etc.
+      \item Enynes are compounds that contain both double and triple bonds, and enynols also contain an alcohol.
+      \item The functional groups have their assigned carbon numbers written directly before their name.
+  \end{itemize}
+  \subsection{Priority Rules}\label{Priority Rules}
+  \begin{itemize}
+      \item More functional groups will change the as we get introduced to more, but for now we only need to know the following (somewhat follows electronegativity):
+      \begin{enumerate}
+          \item Alcohol
+          \item Alkenes
+          \item Alkynes
+          \item Alkyls
+          \item Halogens
+        \end{enumerate}
+      \item Preference for naming order if multiple functional groups are present in the same chain: OH + DB + TB > OH + DB > OH + TB.
+      \item When alkynes are substituents, then they are named as \(k\)-alkynyl. (\(k=\) locant)
+      \item Example containing all three:
+      
+      \medskip
+      \schemestart{}
+        \chemname{\chemfig{9-8~7-6-[:-30]5=[:30]4(-[:90]-[:150]-[:-150]-[:150])-[:-30]3(<[:-90]OH)-[:30]2-[:-30]1}}{(\ttt{3R,\fff{4E}})-butylnon-4-en-7-yn-3-ol}
+      \schemestop{}
+      \bigskip
+  \end{itemize}
 \end{itemize}
 
 \clearpage
@@ -180,7 +248,7 @@
       \arrow{->[\rrr{H}-\bbb{Br}]}
       \chemfig{R-\chemabove[6pt]{}{\cat}=(-[:30]\rrr{H})-[:-30]H}
       \arrow{->[\bbb{\ch{Br-}}]}
-      \chemname[-25pt]{\chemfig{R-[:-30](-[:210]\bbb{Br})=(-[:30]H)-[:-30]H}}{vinyl halide}
+      \chemname[-30pt]{\chemfig{R-[:-30](-[:210]\bbb{Br})=(-[:30]H)-[:-30]H}}{vinyl halide}
     \schemestop{}
 
     \begin{itemize}

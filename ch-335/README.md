@@ -14,12 +14,8 @@
     <img src="https://img.shields.io/discord/760937229798604850?logo=discord"
    alt="chat on Discord">
     </a>
-    <a title="View my older notes" href="ch-334/org-chem.pdf">
-    <img src="https://img.shields.io/badge/Review Notes-CH 334-informational?logo=latex" >
-    </a>
-    <br>
     <a title="View my notes" href="ch-335.pdf">
-    <img src="https://img.shields.io/badge/Notes-Week 1 Done-sucess?logo=latex" >
+    <img src="https://img.shields.io/badge/Notes-Week 2 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations" href="mini-quiz.pdf">
     <img src="https://img.shields.io/badge/Mini Quiz-Week 2 Done-success?logo=latex" >
@@ -58,20 +54,20 @@ Learning Objectives
 - Addition reaction of alkenes
 - Reaction mechanism and stereochemistry of products
 
-Supplemental Materials
+Relevant Khan Academy Videos
 
-- [Alkene Structure and Classification](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes-jay/v/alkene-intro-and-stability "Khan Academy")
-- [Naming Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/naming-alkenes-examples "Khan Academy")
-- [E-Z Naming Scheme for Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/cis-trans-and-e-z-naming-scheme-for-alkenes "Khan Academy")
-- [Markovnikov's Rule and Carbocations](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/markovnikov-s-rule-and-carbocations "Khan Academy")
-- [Addition of Water (acid-catalyzed) Mechanism](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/addition-of-water-acid-catalyzed-mechanism "Khan Academy")
+- [Alkene Structure and Classification](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes-jay/v/alkene-intro-and-stability)
+- [Naming Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/naming-alkenes-examples)
+- [E-Z Naming Scheme for Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/cis-trans-and-e-z-naming-scheme-for-alkenes)
+- [Markovnikov's Rule and Carbocations](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/markovnikov-s-rule-and-carbocations)
+- [Addition of Water (acid-catalyzed) Mechanism](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/addition-of-water-acid-catalyzed-mechanism)
   <br>
 
 ### **Week 2** (Jan 11-17) **Alkynes**
 
-| Strongin | Lecture Notes |   Mini Quiz    |
-| :------: | :-----------: | :------------: |
-|    15    |  _View pdf_   | [Explanations](mini-quiz.pdf) |
+| Strongin |     Lecture Notes      |           Mini Quiz           |
+| :------: | :--------------------: | :---------------------------: |
+|    15    | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) |
 
 Learning Objectives
 
@@ -80,7 +76,7 @@ Learning Objectives
 - Addition reaction of alkynes
 - Reaction mechanism and stereochemistry of products
 
-Supplemental Materials
+Relevant Khan Academy Videos
 
 - [Alkyne nomenclature](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-preparation-alkynes/v/alkyne-nomenclature)
 - [Alkyne acidity and alkylation](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-preparation-alkynes/v/alkyne-acidity-and-alkylation)
@@ -88,6 +84,7 @@ Supplemental Materials
 - [Reduction of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/reduction-of-alkynes)
 - [Hydrohalogenation of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/hydrohalogenation-of-alkynes)
 - [Hydration of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/hydration-of-alkynes)
+  <br>
 
 ### **Week 3** (Jan 18-24) **???**
 
@@ -95,9 +92,23 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |    16    |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
 
-- N/A
+- Oxidizing and reducing agents
+- Oxidation of alkenes, alkynes, alcohols
+- Reduction of aldehydes, ketones and carboxylic acids
+
+Relevant Khan Academy Videos
+
+- [Comparing formal charges to oxidation states](https://www.khanacademy.org/science/organic-chemistry/organic-structures/oxidation-reduction-review/v/comparing-formal-charges-to-oxidation-states)
+- [Organic oxidation-reduction reactions](https://www.khanacademy.org/science/organic-chemistry/organic-structures/oxidation-reduction-review/v/organic-oxidation-reduction-reactions)
+- [Preparation of alcohols using NaBH4](https://www.khanacademy.org/science/organic-chemistry/alcohols-ethers-epoxides-sulfides/synthesis-alcohols-tutorial/v/preparation-of-alcohols-using-nabh4)
+- [Preparation of alcohols using LiAlH4](https://www.khanacademy.org/science/organic-chemistry/alcohols-ethers-epoxides-sulfides/synthesis-alcohols-tutorial/v/preparation-of-alcohols-using-lialh4)
+- [Formation of alcohols using hydride reducing agents](https://www.khanacademy.org/science/organic-chemistry/aldehydes-ketones/reactions-aldehydes-ketones-jay/v/formation-of-alcohols-using-hydride-reducing-agents)
+- [Reduction of carboxylic acids](https://www.khanacademy.org/science/organic-chemistry/carboxylic-acids-derivatives/reactions-carboxylic-jay/v/reduction-of-carboxylic-acids)
+- [Epoxide formation and anti dihydroxylation](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions-tutorial/v/epoxide-formation-and-anti-dihydroxylation)
+- [Syn dihydroxylation](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions-tutorial/v/syn-dihydroxylation)
+- [Ozonolysis](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions-tutorial/v/ozonolysis-1)
   <br>
 
 ### **Week 4** (Jan 25-31) **???**
@@ -106,7 +117,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |  16, 17  |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>
@@ -117,7 +132,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |  17, 18  |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>
@@ -128,7 +147,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |  18, 19  |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>
@@ -139,7 +162,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |  19, 20  |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>
@@ -150,7 +177,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |    20    |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>
@@ -161,7 +192,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |    21    |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>
@@ -172,7 +207,11 @@ Supplemental Materials
 | :------: | :-----------: | :------------: |
 |    22    |  _View pdf_   | _Explanations_ |
 
-Supplemental Materials
+Learning Objectives
+
+- N/A
+
+Relevant Khan Academy Videos
 
 - N/A
   <br>

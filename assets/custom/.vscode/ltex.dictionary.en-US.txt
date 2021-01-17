@@ -123,3 +123,9 @@ dihalide
 vicinal
 hydroboration
 heptyne
+alkenynes
+Alkyls
+dihydroxylation
+Ozonolysis
+alkylation
+alkynes
