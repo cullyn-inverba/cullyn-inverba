@@ -114,7 +114,12 @@ tautomerism
 Tautomers
 mercurinium
 hydroboration-oxidation
-Anti-Markonikov
+Anti-Markovnikov
 lindlar
 Halogenation
 @sb
+geminal
+dihalide
+vicinal
+hydroboration
+heptyne
