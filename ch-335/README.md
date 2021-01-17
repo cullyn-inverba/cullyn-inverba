@@ -22,7 +22,7 @@
     <img src="https://img.shields.io/badge/Notes-Week 1 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations" href="mini-quiz.pdf">
-    <img src="https://img.shields.io/badge/Mini Quiz-Week 1 Done-success?logo=latex" >
+    <img src="https://img.shields.io/badge/Mini Quiz-Week 2 Done-success?logo=latex" >
     </a>
 </p>
 
@@ -71,7 +71,7 @@ Supplemental Materials
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    15    |  _View pdf_   | _Explanations_ |
+|    15    |  _View pdf_   | [Explanations](mini-quiz.pdf) |
 
 Learning Objectives
 
