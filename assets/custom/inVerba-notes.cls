@@ -112,7 +112,7 @@
 % ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
 
 \RequirePackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
-    \setchemfig{atom sep=2.5em, cram width=.7ex}
+    \setchemfig{atom sep=2em, cram width=.7ex}
     \chemsetup{modules = all}
     \chemsetup[orbital]{
         overlay,

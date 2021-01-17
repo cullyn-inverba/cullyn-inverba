@@ -107,3 +107,14 @@ Periplanar
 protic
 halide
 Geminal
+protonation-deprotonation
+tautomerization
+desmotropism
+tautomerism
+Tautomers
+mercurinium
+hydroboration-oxidation
+Anti-Markonikov
+lindlar
+Halogenation
+@sb

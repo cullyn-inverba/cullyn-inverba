@@ -2,7 +2,7 @@
 
 \chapter{14: Alkenes}\label{14: Alkenes}
 \section{Alkenes Basics/Review}\label{Alkenes Basics/Review}
-\begin{itemize}
+\begin{itemize}\setchemfig{atom sep=2.5em}
   \item Alkanes vs alkenes: 
   \medskip
   \begin{center}
@@ -29,7 +29,7 @@
     \end{itemize}
       
   \subsection{Types of Alkenes}\label{Types of Alkenes}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item Basic types of alkenes:
     
     \schemestart{}
@@ -59,7 +59,7 @@
   \end{itemize}
 
   \subsection{Relevant Review}\label{Relevant Review}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item \ddd{Electronegativity}: negative charges on atoms with lower hybridization result in greater stability due to proximity (overlap) to positive nucleus. More s character results in greater stability.
       \begin{itemize}
         \item I.e., \(\bbb{sp~(50\%~s)} > sp^2~(33\%~s) > \rrr{sp^3~(25\%~s)}\)
@@ -253,41 +253,47 @@
 \clearpage
 \section{Nomenclature of Alkenes}\label{Nomenclature of Alkenes}
 \begin{itemize}
-  \item Alkenes are named using the same four steps in the previously used nomenclature, though the suffix of \minimal{``ane''} is replaced with \emph{``ene.''}
-  \item When choosing the parent chain, choose the parent chain that \emph{includes} the double bond.
-  \item When numbering the parent chain, the double bond should receive the \emph{lowest} number possible.
-    \begin{itemize}
-      \item Define the location \(k\) of the double bond as being the number of its first carbon.
-      \item The locant (\(k\)) of the double bond should be placed right before the suffix of ``ene,'' though, it was previously recommended before the parent (both are acceptable), e.g., 2-pentene = pent-2-ene
-    \end{itemize}
-  \item Name and the side groups (other than hydrogen) according to the appropriate rules.
-  \item Define the position of each side group as the number of the chain carbon it is attached to.
-  \item \ddd{E-Z notation}: recommended instead of \textit{cis} and \textit{trans} in order to account for cases that has more than two different groups attached to the double bond by first determining the \hyperref[Cahn-Ingold-Prelog System]{\ulink{CIP priority}}. 
-    \begin{itemize}
-      \item \fff{E, entgegen, ``opposite''}.
-      \item \ttt{Z, zusammen, ``together''}; ``on ze zame zide.''
-    \end{itemize}
-  \item Commonly recognized alternative names:
+  \item[]
 
-    \medskip
-    \begin{center}
-    \schemestart{}
-      \chemname{\chemfig{=[:30]}}{Ethylene}
-      \qquad
-      \chemname{\chemfig{=[:30]-[:-30]}}{Propylene}
-      \qquad
-      \chemname{{\tiny\chemfig{*6(-=-(-=[:-30])=-=)}}}{Styrene}
-    \schemestop{}
-    \end{center}
-    \bigskip
+  \subsection{Basic Alkene Nomenclature Rules}\label{Basic Alkene Nomenclature Rules}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
+    \item Alkenes are named using the same four steps in the previously used nomenclature, though the suffix of \minimal{``ane''} is replaced with \emph{``ene.''}
+    \item When choosing the parent chain, choose the parent chain that \emph{includes} the double bond.
+    \item When numbering the parent chain, the double bond should receive the \emph{lowest} number possible.
+      \begin{itemize}
+        \item Define the location \(k\) of the double bond as being the number of its first carbon.
+        \item The locant (\(k\)) of the double bond should be placed right before the suffix of ``ene,'' though, it was previously recommended before the parent (both are acceptable), e.g., 2-pentene = pent-2-ene
+      \end{itemize}
+    \item Name and the side groups (other than hydrogen) according to the appropriate rules.
+    \item Define the position of each side group as the number of the chain carbon it is attached to.
+    \item \ddd{E-Z notation}: recommended instead of \textit{cis} and \textit{trans} in order to account for cases that has more than two different groups attached to the double bond by first determining the \hyperref[Cahn-Ingold-Prelog System]{\ulink{CIP priority}}. 
+      \begin{itemize}
+        \item \fff{E, entgegen, ``opposite''}.
+        \item \ttt{Z, zusammen, ``together''}; ``on ze zame zide.''
+      \end{itemize}
+    \item Commonly recognized alternative names:
 
-    \item Groups containing \ch{C=C} have common names as well, which can be found under \hyperref[Types of Alkenes]{\ulink{types of alkenes}}.
-    
+      \medskip
+      \begin{center}
+      \schemestart{}
+        \chemname[-10pt]{\chemfig{=[:30]}}{Ethylene}
+        \qquad
+        \chemname[-10pt]{\chemfig{=[:30]-[:-30]}}{Propylene}
+        \qquad
+        \chemname[-10pt]{{\tiny\chemfig{*6(-=-(-=[:-30])=-=)}}}{Styrene}
+      \schemestop{}
+      \end{center}
+      \bigskip
+
+      \item Groups containing \ch{C=C} have common names as well, which can be found under \hyperref[Types of Alkenes]{\ulink{types of alkenes}}.
+    \end{itemize}
+  
+    \subsection{Alkenes Containing an Alcohol}\label{Alkenes Containing an Alcohol}
+    \begin{itemize}
     \item If there is \emph{more than 1} functional group, then the \emph{alcohol} has the \emph{higher priority} over alkenes.
-    \begin{itemize}
-        \item There are more rules depending on functional groups, but for now the distinction between alcohol and alkenes are all that is needed.
-        \item I.e., find the longest chain and number in a way that the carbon \emph{containing the OH} gets the \emph{lowest} possible number while still including both the OH and alkene.
-        \item An example with alcohol:
+    \item There are more rules depending on functional groups, but for now the distinction between alcohol and alkenes are all that is needed.
+    \item I.e., find the longest chain and number in a way that the carbon \emph{containing the OH} gets the \emph{lowest} possible number while still including both the OH and alkene.
+    \item An example with alcohol:
     
         \medskip
         \schemestart{}
@@ -295,16 +301,16 @@
         \schemestop{}
         \bigskip
 
-        \item An example with OH still being lowest (name still ends with -ol), but alkene happens to be lower:
+    \item An example with OH still being lowest (name still ends with -ol), but alkene happens to be lower:
         
         \medskip
         \schemestart{}
-            \chemname{\chemfig{[:30]10-[:-30]9-[:30]8-[:-30]7(<:[:-90,.9,,,ttt])-[:30]6-[:-30]5(<[:-90,,,,fff]\ch{OH})-[:30,,,,ttt]4=[:-30]3-[:30,,,,fff]2-[:-30]1}}{(\fff{3E},\fff{5S},\ttt{7R})-4-methyl-3-en-5-ol}
+            \chemname[-10pt]{\chemfig{[:30]10-[:-30]9-[:30]8-[:-30]7(<:[:-90,.9,,,ttt])-[:30]6-[:-30]5(<[:-90,,,,fff]\ch{OH})-[:30,,,,fff]4=[:-30]3-[:30,,,,fff]2-[:-30]1}}{(\fff{3E},\fff{5S},\ttt{7R})-4-methyl-3-en-5-ol}
         \schemestop{}
         \bigskip
 
-        \item Note: if planar geometry was not given, \ttt{R} and \fff{S} could not be determined. Check out the \hyperref[Cahn-Ingold-Prelog System]{\ulink{Cahn-Ingold-Prelog System}} for review.
-    \end{itemize}
+    \item Note: if planar geometry was not given, \ttt{R} and \fff{S} could not be determined. Check out the \hyperref[Cahn-Ingold-Prelog System]{\ulink{Cahn-Ingold-Prelog System}} for review.
+  \end{itemize}
 \end{itemize}
 
 \clearpage
@@ -312,7 +318,7 @@
 \begin{itemize}
   \item[]
   \subsection{Syn Addition}\label{Syn Addition}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item Syn addition means that both components (A \& B) came in from the same side.
 
     \medskip
@@ -363,7 +369,7 @@
   \end{itemize}
 
   \subsection{Anti Addition}\label{Anti Addition}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item Anti addition means that the added components come in from different sides.
     
     \medskip
@@ -379,7 +385,7 @@
   \end{itemize}
 
   \subsection{Hydrogenation}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item \ddd{Hydrogenation}: a chemical reaction between molecular hydrogen \ch{H2} and another compound or element, usually in the presence of a catalyst such as nickel, palladium (typically pd, due to cost) or platinum.
       \begin{itemize}
         \item Commonly employed to \emph{reduce} (\(\pi \) bonds) or \emph{saturate} (add hydrogens) organic compounds.
@@ -450,7 +456,7 @@
   \end{enumerate}
 
   \subsection{Hydrohalogenation}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item \ddd{Hydrohalogenation}: the electrophilic addition (\(\pi \to 2\sigma \) bonds) of hydrohalic acids (\ch{HX}, e.g., \ch{HCl} or \ch{HBr}) to alkenes to yield the corresponding haloalkanes.
     \item \ddd{Markovnikov's Rule}: an addition of a protic acid (HX) or other polar reagent to an asymmetric alkene results in the \rrr{electropositive part (usually H)} gets attached to the carbon with \rrr{more hydrogen substituents}, and the \bbb{electronegative part (usually the halide)} attaches to the carbon with \bbb{more alkyl substituents}. 
       \begin{itemize}
@@ -557,7 +563,7 @@
     }
 
   \subsection{Addition of Water or Alcohol}
-  \ddd{Addition of Water or Alcohol (ROH)}: analogous to that of hydrohalogenation (HX); both of which involve a carbocation intermediate, syn/anti stereochemistry, and Markovnikov regioselectivity.
+  \ddd{Addition of Water or Alcohol (ROH)}: analogous to that of \setchemfig{atom sep=2.5em}hydrohalogenation (HX); both of which involve a carbocation intermediate, syn/anti stereochemistry, and Markovnikov regioselectivity.
     \begin{itemize}
       \item Note: the hydronium ion (\rrr{\ch{H3O+}}) forms via the reaction of \rrr{\ch{H2SO4}} with \bbb{\ch{H2O}}, and is the source of the proton that reacts with the starting alkene.
       \item \ch{H-OH} and \ch{RO-H} helps to visualize where the proton is coming from. What ever works with water also works with alcohol and vice versa. 
@@ -674,7 +680,7 @@
     \end{itemize}
   
   \subsection{Oxymercuration-Demercuration}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
       \item \ddd{Oxymercuration-Demercuration} is another electrophilic addition organic reaction that transforms an alkene into a neutral alcohol.
         \begin{itemize}
           \item Reacts with mercuric acetate (\ch{AcO–Hg–OAc}) in aqueous solution to yield the addition of an acetoxymercury (\ch{HgOAc}) group and a hydroxy (OH) group across the double bond.
@@ -691,7 +697,7 @@
           \medskip
 
           \item Carbocations are not formed in this process and thus rearrangements are not observed. 
-          \item The reaction follows \hyperref[Markovnikov's rule]{\ulink{Markovnikov's rule}}.
+          \item The reaction follows \hyperref[Markovnikov's Rule]{\ulink{Markovnikov's rule}}.
           \item The reaction is stereospecific---it is always an \fff{anti addition}.
         \end{itemize}
       \item Example using propylene:
@@ -740,7 +746,7 @@
           \schemestart{}
             \dots
             \arrow(--[braces]){->}[0,.9]
-            \chemname[-35pt]{\chemfig{-[:30]@{c1}*3(-<{\cat{}Hg}(-\ch{OAc})>)}
+            \chemname[-25pt]{\chemfig{-[:30]@{c1}*3(-<{\cat{}Hg}(-\ch{OAc})>)}
             \+
             \chemfig{-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mecurinium intermediates}
             \arrow(--[braces]){->[\chemfig{@{wa}\bbb{\ch{H2O}}}]}[0,.9]
@@ -804,7 +810,7 @@
         \arrow(--[braces]){->[\ch{Hg(OAC)2},\ch{H2O},THF][\ch{NaBH4}, \ch{NaOH}, THF]}[0,2.2]
         \chemname[-45pt]{\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
             \+
-            \chemfig{-[:-30]-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mecurinium intermediates}
+            \chemfig{-[:-30]-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mercurinium intermediates}
       \schemestop{}
       \bigskip
       
@@ -813,13 +819,13 @@
       \schemestart{}
         \dots
         \arrow(--[braces]){->}[0,.6]
-        \chemname[-45pt]{\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
+        {\chemfig{-[:-30]-[:30]*3(-<{\cat{}Hg}(-\ch{OAc})>)}
           \+
-          \chemfig{-[:-30]-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}{Mecurinium intermediates}
+          \chemfig{-[:-30]-[:30]*3(-<:{\cat{}Hg}(-\ch{OAc})>:)}}
         \arrow(--[braces]){<->[or]}[0,.8]
-        \chemname[-45pt]{\chemfig{-[:-30]<[:30]*3(--{\cat{}Hg}(-\ch{OAc})-)}
+        \chemfig{-[:-30]<[:30]*3(--{\cat{}Hg}(-\ch{OAc})-)}
           \+
-          \chemfig{-[:30]<[:-30]*3(-{\cat{}Hg}(-[:-90]\ch{OAc})--)}}{Mecurinium intermediates}
+          \chemfig{-[:30]<[:-30]*3(-{\cat{}Hg}(-[:-90]\ch{OAc})--)}
       \schemestop{}
       \bigskip
       }
@@ -922,11 +928,11 @@
     \end{enumerate}
   
   \subsection{Hydroboration-Oxidation}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item \ddd{Hydroboration-Oxidation}: a two-step hydration reaction that converts an alkene into an alcohol.
       \begin{itemize}
         \item Results in the \ttt{syn addition} of a hydrogen and a hydroxyl group where the double bond had been.
-        \item An anti-Markovnikov reaction---the hydroxyl group attaches to the less-substituted carbon.
+        \item An \emph{anti-Markovnikov reaction}---the hydroxyl group attaches to the less-substituted carbon.
         \item Provides a more stereospecific and complementary regiochemical alternative to other hydration reactions such as acid-catalyzed addition (stereoselective) and oxymercuration-demercuration (stereospecific for anti).
         \item Usually \ch{BH3}, \ch{B2H6}, \ch{R2BH} are used. The presence of Boron is key. 
       \end{itemize}
@@ -1010,7 +1016,7 @@
   \end{itemize}
 
   \subsection{Halogenation}
-  \begin{itemize}
+  \begin{itemize}\setchemfig{atom sep=2.5em}
     \item \ddd{Halogenation}: a reaction that involves the addition of one or more halogens to a compound or material.
     \begin{itemize}
       \item The addition of halogens to alkenes proceeds via intermediate halonium ions.
@@ -1050,9 +1056,9 @@
     \+{,,20pt}
     \chemfig{-[:30]@{att}*3(-<:@{cat2}\chemabove[3pt]{\rrr{Br}}{\cat}>:)}
     \arrow(--[braces]){->}
-    \chemname[-40pt]{\chemfig{(<[:90]\bbb{Br})(-[:-130])-<:[:-90]\rrr{Br}}}{\fff{Anti}}
+    \chemname[-20pt]{\chemfig{(<[:90]\bbb{Br})(-[:-130])-<:[:-90]\rrr{Br}}}{\fff{Anti}}
     \+
-    \chemname[-40pt]{\chemfig{(<:[:90]\bbb{Br})(-[:-130])-<[:-90]\rrr{Br}}}{\fff{Anti}}
+    \chemname[-20pt]{\chemfig{(<:[:90]\bbb{Br})(-[:-130])-<[:-90]\rrr{Br}}}{\fff{Anti}}
     \schemestop{}
     \chemmove[dash pattern= on 1pt off 1pt]{
       \draw(br)..controls +(south:2cm) and +(south:1cm).. (at);
@@ -1069,11 +1075,11 @@
     \schemestart{}
       \chemfig{-[:30]=[:-30]}
       \arrow(--[braces]){->[\ch{Br2}][\bbb{\ch{H2O}}]}
-      \chemname[-40pt]{\chemfig{
+      \chemname[-20pt]{\chemfig{
         (<[:90]\bbb{OH})(-[:-130])-<:[:-90]\rrr{Br}
         }}{\fff{Anti}}
       \+
-      \chemname[-40pt]{\chemfig{
+      \chemname[-20pt]{\chemfig{
         (<:[:90]\bbb{OH})(-[:-130])-<[:-90]\rrr{Br}
         }}{\fff{Anti}}
     \schemestop{}

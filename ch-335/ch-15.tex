@@ -12,7 +12,7 @@
 
       \item Large amount of \(s\) character (\bbb{sp: 50\% \(s\)}) makes the hydrogens very acidic and the carbons very basic. 
       \item 1 mole of base takes off 1 hydrogen (1 equivalent, equiv, eq), which can be done twice to take off both (2 equivalent).  
-      \item Traditionally known as acetylenes, though acetylene referers specifically to \ch{C2H2} (ethyne)
+      \item Traditionally known as acetylenes, though acetylene referrers specifically to \ch{C2H2} (ethyne)
     \end{itemize}
     
   \subsection{Acetylides}\label{Acetylides}
@@ -169,5 +169,258 @@
 \clearpage
 \section{Addition Reactions of Alkynes}\label{Addition Reactions of Alkynes}
 \begin{itemize}
-    \item 
+  \item[]
+  \subsection{Hydrohalogenation of Alkynes}\label{Hydrohalogenation of Alkynes}
+  \begin{itemize}
+    \item Introductory example:
+    
+    \medskip
+    \schemestart{}
+      \chemfig{R-~-H}
+      \arrow{->[\rrr{H}-\bbb{Br}]}
+      \chemfig{R-\chemabove[6pt]{}{\cat}=(-[:30]\rrr{H})-[:-30]H}
+      \arrow{->[\bbb{\ch{Br-}}]}
+      \chemname{\chemfig{R-[:-30](-[:210]\bbb{Br})=(-[:30]H)-[:-30]H}}{vinyl halide}
+    \schemestop{}
+
+    \begin{itemize}
+      \item Is \hyperref[Regioselective]{\ulink{Regioselective}}
+      \item Follows \hyperref[Markovnikov's Rule]{\ulink{Markonikov's Rule}}
+      \item This reaction can be done again (2 equiv):
+      
+      \hspace{-20pt}
+      \medskip
+      \schemestart{}
+        \chemfig{R-[:-30](-[:210]Br)=(-[:30]H)-[:-30]H}
+        \arrow{->[\rrr{H}-\bbb{Br}]}
+        \chemfig{R-[:-30]\chemabove[6pt]{}{\cat}(-[:210]Br)-(-H)(-[:45]\rrr{H})-[:-45]H}
+        \arrow{->[\bbb{\ch{Br-}}]}
+        \chemname{\chemfig{R-[:-30](-[:-90]\bbb{Br})(-[:210]Br)-(-H)(-[:45]H)-[:-45]H}}{geminal halide}
+      \schemestop{}
+      \medskip
+      
+      \item Geminal halide: a carbon that contains two halides.
+      \item Related practice problem that generates chiral carbon due to use of different reagents for each equivalence (needs to be verified still, I might be wrong):
+      
+      \medskip
+      \schemestart{}
+        \chemfig{-[:-30]-~-H}
+        \arrow{->[HBr][HI]}[0,0.8]
+        \chemfig{--[:-30](-[:-130]\bbb{Br})=(-[:30]H)-[:-30]H}
+      \schemestop{}
+      \medskip
+
+      \medskip
+      \schemestart{}
+        \dots
+        \arrow(--[braces]){->[H\bbb{I}]}[0,.8]
+        \chemname{\chemfig{->:[:30](-[:90]\bbb{I})(<[:-90]Br)-(-H)(-[:45]H)-[:-45]H}}{\ttt{rectus}}
+        \+
+        \chemname{\chemfig{(<:[:90]-[:150])(-[:-90]\bbb{I})(<[:150]Br)-(-H)(-[:45]H)-[:-45]H}}{\fff{sinister}}
+      \schemestop{}
+      \medskip
+
+      \medskip
+      \schemestart{}
+        \chemfig{}
+      \schemestop{}
+      \bigskip
+      
+    \end{itemize}
+    
+    \item Example with an internal alkyne; either side can be chosen if the R groups are not specified:
+    
+    \hspace{-43pt}
+    \medskip
+    \schemestart{}
+      \chemfig{R-~-R'} 
+      \arrow{->[HCl]}
+      \chemfig{R-\chemabove[6pt]{}{\cat}=(-[:30]H)(-[:-30]R')}
+      \arrow(--[braces]){->[\bbb{\ch{Cl-}}]}
+      \chemname{\chemfig{R-[:-30](-[:210]\bbb{Cl})=(-[:30]H)(-[:-30]R')}}{\ttt{zusammen}}
+      \+{,,-10pt}
+      \chemname{\chemfig{\bbb{Cl}-[:-30](-[:210]R)=(-[:30]H)(-[:-30]R')}}{\fff{entegen}}
+    \schemestop{}
+    \medskip
+    \begin{itemize}
+      \item Cl is higher priority than any carbon containing gruop (R), and any R' is higher than H, so both top and bottom attacks are possibile.
+      \item Related practice problem:
+      
+      \medskip
+      \schemestart{}
+        {\scriptsize\chemfig{[:-30]*6(-=-(-~-)=-=)}}
+        \arrow{->[HCl]}
+        {\scriptsize\chemname[-10pt]{\chemfig{[:-30]*6(-=-(-\chemabove[6pt]{}{\cat}=(-[:-30]H)(-[:30]))=-=)}}{preferred}}
+        \quad{}or\quad
+        {\scriptsize\chemfig{[:-30]*6(-=-(-[:-30](-[:240]H)=\chemabove[6pt]{}{\cat}-)=-=)}}
+      \schemestop{}
+      \medskip
+
+      \item The former carbocation intermediate is preferred due to resonance of the benzene ring, which does a better job stabilizing the carbocation.
+      \item Continuing the reaction:
+      
+      \medskip
+      \schemestart{}
+        {\scriptsize{\chemfig{[:-30]*6(-=-(-\chemabove[6pt]{}{\cat}=(-[:-30]H)(-[:30]))=-=)}}}
+        \arrow(--[braces]){->[\bbb{\ch{Cl-}}]}
+        \chemname{{\scriptsize{\chemfig{[:-30]*6(-=-(-[:-30](-[:240]Cl)-(-[:-30]H)(-[:30]))=-=)}}}}{\fff{entegen}}
+        \+
+        \chemname{{\scriptsize{\chemfig{[:-30]*6(-=-(-[:-30](-[:240]Cl)-(-[:30]H)(-[:-30]))=-=)}}}}{\ttt{zusammen}}
+      \schemestop{}
+      \bigskip
+    \end{itemize}
+  \end{itemize}
+
+  \subsection{Hydration of Alkynes}\label{Hydration of Alkynes}
+  \begin{itemize}
+      \item Introductory example:
+      
+      \schemestart{}
+        \chemfig{R-~-H}
+        \arrow{->[\ch{H2O}][d. \ch{H2SO4}]}[0,1.1]
+        \chemfig{R-\chemabove[6pt]{}{\cat}=(-[:30]\rrr{H})-[:-30]H}
+        \arrow{->[\ch{H2O}]}
+        \chemname{\chemfig{R-[:-30](-[:210]\bbb{OH})=(-[:30]H)-[:-30]H}}{enol}
+      \schemestop{}
+      
+      \item Follows \hyperref[Markovnikov's Rule]{\ulink{Markonikov's Rule}}
+      \item However, enols readily interconvert with more stable form:
+      
+      \medskip
+      \schemestart{}
+      \chemname{\chemfig{R-[:-30](-[:210]HO)=(-[:30]H)-[:-30]H}}{enol}
+      \arrow{<->>}
+      \chemname{\chemfig{R-[:-30](=[:210]O)-(-H)(-[:45]H)-[:-45]H}}{keto}
+      \schemestop{}
+      \medskip 
+
+      \item \ddd{Tautomers}: a class of structural isomers (constitutional isomers) that readily interconvert, commonly due to the relocation of a proton (protonation-deprotonation) across a \(\pi \) bond.
+        \begin{itemize}
+          \item The chemical reaction is called tautomerization; the concept is referred to tautomerism, which is sometimes desmotropism.
+        \end{itemize}
+      \item Keto-enol tautomerism major product is the keto form, which does not allow for a second addition reaction.
+      \item \ch{HgSO4} is frequently used instead of d. \ch{H2SO4}, due to the mercurinium intermediate vs.\ the carbocation intermediate, which is both \emph{faster} and a means to \emph{reduce the probability} of byproducts.
+      
+      \item Example of an alkyne in a \hyperref[Hydroboration-Oxidation]{\ulink{hydroboration-oxidation reaction}}:
+      
+      \medskip
+      \hspace{25pt}\chemfig{\cadn{H}-[,1.2]\cadp{BH_2}}\\
+      \medskip
+      \schemestart{}
+        \chemfig{R-\cadp{C}~\cadn{C}-H}
+        \arrow{->[\ch{B2H6}][{\small\ch{H2O2}, \ch{NaOH, THF}}]}[0,1.8]
+        \chemfig{(-[:150]\bbb{H})(-[:-150]R)=(-[:30]\rrr{BH_2})(-[:-30]H)}
+        \arrow{->[{\small\ch{H2O2}, \ch{NaOH, THF}}]}[0,1.8]
+        \dots
+      \schemestop{}
+      \medskip
+
+      \medskip
+      \schemestart{}
+        \dots
+        \quad
+        \chemname{\chemfig{(-[:150]H)(-[:-150]R)=(-[:30]OH)(-[:-30]H)}}{enol}
+        \arrow{<->>}
+        \chemname{\chemfig{(-[:135]H)(-[:-135]R)(-[180])-(=[:30]O)(-[:-30]H)}}{aldehyde (a ketone)}
+      \schemestop{}
+      \bigskip
+      
+      \item \ddd{Aldehyde}: generally created by removing a hydrogen from an alcohol; in our case it is generated by the \emph{anti-Markonikov} reaction that results in a terminal enol, which then undergoes tautomerization and produces the aldehyde as the major product.
+  \end{itemize}
+  
+  \subsection{Hydrogenation of Alkynes}\label{Hydrogenation of Alkynes}
+  \begin{itemize}
+      \item Complete hydrogenation of an alkyne:
+      
+      \medskip
+      \schemestart{}
+        \chemfig{R-~-R'}
+        \arrow{->[\ch{H2}][Pd-c]}
+        \chemfig{R-(-[:90]H)(-[:-90]H)-(-[:90]H)(-[:-90]H)-R'}
+      \schemestop{}
+      \bigskip
+  
+      \item Alkyne \to\ \emph{cis}-alkene; use of lindlar catalyst (Pd-c poisoned with lead) limits further reduction by controlling hydrogens available:
+      
+      \medskip
+      \schemestart{}
+      \chemfig{R-~-R'}
+      \arrow{->[\ch{H2}][lindlar]}
+      \chemfig{(-[:150]H)(-[:210]R)=(-[:30]H)(-[:-30]R')}
+      \schemestop{}
+      \bigskip
+      
+      \item Alkyne \to\ \emph{trans}-alkene; using generation of free radicals (\bbb{\bullet}, single electron) that pair up with another electron generated by the dissociation of Na \to\ \rrr{\ch{Na+}}\plus\ \bbb{\ch{e-}} to create a free pair of electrons that than receive a hydrogen from \ch{NH3}:
+
+      \medskip
+      \schemestart{}
+        \chemfig{R-~-R'}
+        \arrow{->[Na][liq. \ch{NH3}]}
+        \chemfig{(-[:120,.3,,,draw=none]\bbb{\bullet})(-[:-150]R)=(-[:30]R')(-[:-60,.3,,,draw=none]\bbb{\bullet})}
+        \arrow{->}
+        \chemfig{(-[:120,.3,,,draw=none]\bbb{\ani})(-[:-150]R)=(-[:30]R')(-[:-60,.3,,,draw=none]\bbb{\ani})}
+        \dots
+      \schemestop{}
+      \bigskip
+
+      \medskip
+      \schemestart{}
+        \dots
+        \arrow{->[\ch{H-NH2}]}[0,1.2]
+        \chemfig{(-[:150]H)(-[:210]R)=(-[:30]R')(-[:-30]H)}
+      \schemestop{}
+      \bigskip
+
+        \begin{itemize}
+          \item Note, in lecture the added hydrogens were drawn separately; I am unsure, but I assume they happen near-simultaneously.
+        \end{itemize}
+      
+  \end{itemize}
+
+  \subsection{Halogenation of Alkynes}\label{Halogenation of Alkynes}
+  \begin{itemize}
+      \item Introductory example:
+
+      \medskip
+      \schemestart{}
+        \chemfig{R-~-R'}
+        \arrow{->[\ch{I_2}][(1 eq.)]}
+        \chemfig{R-[:30]@{c1}([:30]*3(=-@{i2}\chemabove[3pt]{\rrr{I}}{\cat}-[@{sb}]))--[:-30]R'}
+        \arrow{->[\chemfig{@{i1}\bbb{I^\ani}}]}
+        \chemfig{R-[:-30](-[:210]\bbb{I})=(-[:-30]R')(-[:30]\rrr{I})}
+      \schemestop{}
+      \chemmove[dash pattern= on 1pt off 1pt]{
+        \draw(i1)..controls +(-80:1.8cm) and +(south:1cm).. (c1);
+        \draw(sb)..controls +(110:0.5cm) and +(160:0.5cm).. (i2);
+        }
+      \bigskip
+        
+      \begin{itemize}
+        \item The 3-membered cationic ring with a double bond is not very stable, so it does not form readily with a rate that is \(10^3\text{--}10^7\) times slower than that on an alkene.
+      \end{itemize}
+
+      \item Same example, but with 2 equivalent or excess:
+      
+      \medskip
+      \schemestart{}
+        \chemfig{R-~-R'}
+        \arrow{->[\ch{I_2}][(2+ eq.)]}
+        \chemfig{R-[:-30](-[:210]I)=(-[:-30]R')(-[:30]I)}
+        \arrow{->[\ch{I_2}]}
+        \chemfig{R-[:30]([:30]*3(--\chemabove[3pt]{\rrr{I}}{\cat}-))(-[:-90]I)-(-[:-90]I)-[:-30]R'}
+        \arrow{}
+        \dots
+      \schemestop{}
+      \bigskip
+      
+      \medskip
+      \schemestart{}
+        \dots
+        \arrow{}
+        \chemfig{(-[:60]R)(-[:120]I)(-[:-90]I)-[,1.3](-[:-60]R')(-[:-120]I)(-[:90]I)}
+      \schemestop{}
+      \bigskip
+      
+  \end{itemize}
+  
 \end{itemize}
