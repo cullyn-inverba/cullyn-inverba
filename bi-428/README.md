@@ -14,9 +14,6 @@
   <img title="Join BI: 428 Discord Server 🥳" src="https://img.shields.io/discord/790762936234147860?logo=discord"
    alt="chat on Discord">
     </a>
-    <a href="bi-428.pdf">
-    <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-week 1 started-important?logo=latex" >
-    </a>
      <a href="week-2.pdf">
     <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 2 Done-sucess?logo=latex" >
     </a>
@@ -65,17 +62,17 @@ Resources for pedigree assignment:
 
 ### **Week 2** (Jan 11-13) **Chromosome Structure and Nomenclature, Syndromes**
 
-| Krof & Irons |   Assignment    |
-| :----------: | :-------------: |
+| Krof & Irons |          Assignment           |
+| :----------: | :---------------------------: |
 |     6,9      | [Journal Article](week-2.pdf) |
 
 ---
 
 ### **Week 3** (Jan 18-20) **Sex Determination**
 
-| Krof & Irons |   Assignment    |
-| :----------: | :-------------: |
-|     ---      | Journal Article |
+| Krof & Irons |    Assignment    |
+| :----------: | :--------------: |
+|     ---      | ~~Journal Article~~ |
 
 ---
 
