@@ -22,6 +22,7 @@
 ## **Course Materials**
 
 - Supplemental texts:
+
   - [Purves &mdash; Neuroscience (6th ed.)](https://1lib.us/book/5481039/fb91d9)
   - [Kandel &mdash; Principles of Neural Science (5th ed.) ](https://1lib.us/book/2477222/4a05ed)
 
@@ -44,8 +45,8 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 | Lecture | Topic                                                  |
 | :-----: | :----------------------------------------------------- |
-|    3    | [Ion channels and Action Potentials](slides/lecture-3) |
-|    4    | [Motor Systems I](slides/lecture-4)                    |
+|    3    | [Ion channels and Action Potentials](slides/lecture-3.pdf) |
+|    4    | [Motor Systems I](slides/lecture-4.pdf)                    |
 
 ---
 
