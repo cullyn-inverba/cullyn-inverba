@@ -100,7 +100,7 @@ It's not necessary to use git to get the most out of this repository, most of it
   - [x] Create basic theme for printing purposes.
   - [ ] Leave sufficient comments for optional customization by others.
   - [x] Find a better integrated spell/grammar checker.
-- [ ] **Make the repository more accessible.**
+- [x] **Make the repository more accessible.**
   - [x] Create a more detailed README for the repository in general.
   - [x] Establish a more standardized note taking structure.
   - [x] ~~Create introduction to note structure.~~ (I think structure speaks for itself; guide was removed.)
