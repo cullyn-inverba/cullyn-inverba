@@ -15,7 +15,7 @@
    alt="chat on Discord">
     </a>
     <a href="bi-429.pdf">
-    <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-not started-important?logo=latex" >
+    <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-updated on 1.18-sucess?logo=latex" >
     </a>
 </p>
 

@@ -38,7 +38,7 @@
         \titlespacing*{\subsection}{-1em}
         {1ex plus 7ex minus 1ex}
         {1ex plus 0ex minus 0ex}
-    \titleformat{\subsubsection}{\large\bfseries\color{jarg}}{}{0pt}{\vspace{-12pt}}
+    \titleformat{\subsubsection}{\bfseries\color{jarg}}{}{0pt}{\vspace{-12pt}}
         \titlespacing*{\subsection}{-1em}
         {1ex plus 5ex minus 1ex}
         {1ex plus 0ex minus 0ex}
@@ -66,6 +66,7 @@
 %  ║  │└─┐ │ └─┐
 %  ╩═╝┴└─┘ ┴ └─┘
 \RequirePackage{enumitem}
+    \setlist[itemize]{itemsep=-0.3ex,topsep=-0.3ex,partopsep=-0.3ex}
     \setlist[itemize,1]{
         label=\small\(\triangleright\), 
         leftmargin=\dimexpr26pt -1 em
