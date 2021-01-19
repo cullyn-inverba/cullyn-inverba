@@ -14,11 +14,8 @@
   <img title="Join BI: 463 Discord Server 🥳" src="https://img.shields.io/discord/790760762418659349?logo=discord"
    alt="chat on Discord">
     </a>
-    <a href="bi-463.pdf">
-    <img title="View current state of my notes" src="https://img.shields.io/badge/My Notes-not started-important?logo=latex" >
-    </a>
     <a href="neural-science-notes.pdf">
-    <img title="Much older notes" src="https://img.shields.io/badge/Old notes-deperciated-informational?logo=latex" >
+    <img title="Much older notes" src="https://img.shields.io/badge/Old notes-potentially useuful-informational?logo=latex" >
     </a>
 </p>
 
