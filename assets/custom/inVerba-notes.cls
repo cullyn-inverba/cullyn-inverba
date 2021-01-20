@@ -135,6 +135,9 @@
     \newcommand{\pcpab}[1]{\rrr{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
     \newcommand{\pcnab}[1]{\bbb{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
 
+    \definesubmol\oxi{\rrr{[O]}}
+    \definesubmol\reduc{\bbb{[H]}}
+
 
     \usetikzlibrary{matrix}
     \tikzset{
