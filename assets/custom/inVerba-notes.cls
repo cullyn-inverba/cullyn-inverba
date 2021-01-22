@@ -134,6 +134,12 @@
     \definesubmol\pcn{\text{\bbb{\(\delta\,\scriptstyle\fminus \)}}}
     \newcommand{\pcpab}[1]{\rrr{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
     \newcommand{\pcnab}[1]{\bbb{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
+    \newcommand{\pcpbe}[1]{\rrr{\chembelow[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
+    \newcommand{\pcnbe}[1]{\bbb{\chembelow[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
+    \newcommand{\pab}[1]{\rrr{\chemabove[3pt]{#1}{\text{\(\scriptstyle\fplus \)}}}}
+    \newcommand{\nab}[1]{\bbb{\chemabove[3pt]{#1}{\text{\(\scriptstyle\fminus \)}}}}
+    \newcommand{\pbe}[1]{\rrr{\chembelow[5pt]{#1}{\text{\(\scriptstyle\fplus \)}}}}
+    \newcommand{\nbe}[1]{\bbb{\chembelow[5pt]{#1}{\text{\(\scriptstyle\fminus \)}}}}
 
     \definesubmol\oxi{\rrr{[O]}}
     \definesubmol\reduc{\bbb{[H]}}
