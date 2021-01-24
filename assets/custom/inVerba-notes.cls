@@ -319,6 +319,12 @@
     \titleformat{\subsubsection}{\large\bfseries}{}{0pt}{}
 }
 
+\DeclareOption{worksheet}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \newgeometry{hmargin=2cm, vmargin=1.8cm, headsep=1.2em}
+    \setenumerate{align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!}
+}
 
 \DeclareOption{basic}{
     \pagestyle{fancy}
