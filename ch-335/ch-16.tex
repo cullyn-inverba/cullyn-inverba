@@ -1,5 +1,460 @@
 \chapter{16: Oxidation and Reduction}\label{16: Oxidation and Reduction}
-\section{Oxidation and Reduction Basics/Review}\label{Oxidation and Reduction Basics/Review}
+\section{Redox Basics/Review}\label{Redox Reactions Basics/Review}
 \begin{itemize}
-    \item 
+    \item \ddd{Oxidation}: is the \rrr{loss of electrons} or an \rrr{increase in the oxidation state} of an atom, an ion, or of certain atoms in a molecule.
+    
+    \medskip
+    \schemestart{}
+      \rrr{\ch{Fe^{+2}}}
+      \arrow{}
+      \rrr{\ch{Fe^{+3}}}
+      \+
+      \bbb{\ch{e-}}
+    \schemestop{}
+    \bigskip
+    
+    \item \ddd{Reduction}: is the \bbb{gain of electrons} or a \bbb{decrease in the oxidation} state of an atom, an ion, or of certain atoms in a molecule (a reduction in oxidation state).
+    
+    \medskip
+    \schemestart{}
+      \rrr{\ch{Mn^{+7}}}
+      \+
+      \bbb{\ch{e^{-2}}}
+      \arrow{}
+      \rrr{\ch{Mn^{+5}}}
+    \schemestop{}
+    \bigskip
+    
+    \item \ddd{Redox (reduction-oxidation)}: a type of chemical reaction in which the oxidation states of atoms are changed. 
+      \begin{itemize}
+        \item Characterized by the actual or formal transfer of electrons between chemical species.
+        \item Most often one species (\rrr{the reducing agent}) undergoing \rrr{oxidation} while another species (\bbb{the oxidizing agent}) undergoes \bbb{reduction}.
+      \end{itemize}
+    \item Many reactions in organic chemistry are redox reactions due to changes in oxidation states but without distinct electron transfer; rather changes in \emph{electron density}.
+      \begin{itemize}
+        \item \rrr{Oxidation [O]}: going from a \ch{C-H} \to\ \ch{C-\pcn} bond; pulls \rrr{electron density away} from the carbon.
+        \item \bbb{Reduction [H]}: going from a \ch{C-\pcn} \to\ \ch{C-H} bond; pulls \bbb{electron density towards} the carbon.
+      \end{itemize}
+    
+    \subsection{Redox Practice Examples}\label{Redox Practice Examples}
+    \begin{itemize}
+      \item Examples of oxidation reactions:
+        
+      \medskip
+      \hspace{-19pt}
+      \schemestart{}
+        \chemfig{-[:30]-[:-30](-[:60]H)(-H)(-[:-60]H)}
+        \arrow{->[\rrr{[O]}]}
+        \chemfig{-[:30]-[:-30]\pcpab{C}(-[:30,1.2]\pcnab{OH})(-[:-30]H)(-[:-90]H)}
+     \qquad
+        \chemfig{-[:-30]-[:30](=[:90]O)-[:-30]H}
+        \arrow{->[\oxi]}
+        \chemfig{-[:-30]-[:30](=[:90]OH)-[:-30]OH}
+      \schemestop{}
+      \bigskip
+      
+      \item Examples of reduction reactions:
+    
+      \bigskip
+      \hspace{-29pt}
+      \schemestart{}
+        \chemfig{-[:30]-[:-30]\chembelow[6pt]{}{\pcp}-[:30]\pcnab{Cl}}
+        \arrow{->[\bbb{[H]}]}
+        \chemfig{-[:30]-[:-30]-[:30]H}
+      \qquad
+        \chemfig{-[:30]-[:-30]-[:30](=[:90]O)-[:-30]H}
+        \arrow{->[\reduc]}
+        \chemfig{-[:30]-[:-30]-[:30](-[:90]OH)(-[:-90]H)-[:-30]H}
+      \schemestop{}
+      \bigskip
+    
+    \end{itemize}
+    
+\end{itemize}
+
+\clearpage
+\section{Reduction Reactions}\label{Reduction Reactions}
+\begin{itemize}
+  \item[]
+  \subsection{Reduction Reagents}\label{Reduction Reagents}
+  \begin{itemize}
+    \item \ddd{Hydride}: \bbb{\ch{H-}}, a negatively charged hydrogen ion (anion); commonly used as a \bbb{strong base} that react with \rrr{weak acids}, releasing \ch{H2}. 
+    \item \ch{NaBH4}: sodium borohydride.
+    \item \ch{LiAlH4} (LAH): lithium aluminum hydride.
+    \item Both \ch{NaBH4} and \ch{LiAlH4} are \bbb{hydride donors}; they give up a hydride to become neutral.
+      \begin{itemize}
+        \item Boron < aluminum in terms of size; electrons are attracted to boron to a greater degree, making it harder to remove the hydride for boron vs.\ aluminum. Thus:
+          \begin{itemize}
+            \item \ch{LiAlH4} is a \emph{stronger} reducing agent.
+            \item \ch{NaBH4} is a \emph{weaker} reducing agent.
+          \end{itemize}
+      \end{itemize}
+  \end{itemize}
+  
+  \subsection{Reduction with \ch{LiAlH4}}\label{Reaction of Alkyl Halides with LAH}
+  \begin{itemize}
+      \item Example with an alkyl halide:
+
+      \bigskip
+      \schemestart{}
+        \chemfig{-[:30]-[:-30]-[:30]\pcpab{}-[:-30,1.2]\pcnab{Br}}
+        \arrow{->[\ch{LiAlH4}][\reduc]}[0,1.2]
+        \chemfig{-[:30]-[:-30]-[:30]-[:-30]H} 
+        \+
+        \minimal{\ch{AlH3 + LiBr}}
+      \schemestop{}
+      \bigskip
+      
+      \item Example with an epoxide:
+      
+      \bigskip
+      \schemestart{}
+        \chemfig{R-[:30,0.8]?-[:60]O-[:-60]?}
+        \arrow{->[LAH]}
+        \chemfig{R-[:30](<[:90]\nab{O})-[:-30]}
+        \+{,,20pt}
+        \chemfig{R-[:30](<:[:90]\nab{O})-[:-30]}
+        \arrow{->[\ch{H2O}]}
+        \chemfig{R-[:30](<[:90]OH)-[:-30]}
+        \+{,,20pt}
+        \chemfig{R-[:30](<:[:90]OH)-[:-30]}
+      \schemestop{}
+      \bigskip
+
+      \item Remember: epoxide rings \emph{no positive charge} will have the \emph{less sterically hindered} side attacked.
+      \item \ddd{Quenching}: deactivation of any unreacted reagents (adding a hydrogen source using \ch{H2O} for the negatively charged oxgen in this case).
+  \end{itemize}
+  
+
+  \subsection{Reduction of Aldehydes}\label{Reduction of Aldehydes}
+  \begin{itemize}
+      \item Example of reduction to \ang{1} alcohol:
+      
+      \bigskip
+      \schemestart{}
+        \chemfig{R-[:30]@{dc}\pcpbe{}(=[:90]\pcnab{O})-[:-30]H}
+        \arrow{->[\chemfig{LiAlH_3-@{h-}\bbb{H^{-}}}][\ch{H2O}]}[0,1.2]
+        \chemfig{R-[:30](-[:90]OH)(-H)(-[:-60]H)}
+      \schemestop{}
+      \chemmove[dash pattern= on 1pt off 1pt]{
+        \draw(h-)..controls +(130:1.5cm) and +(40:1cm).. (dc);
+      }
+      \bigskip
+      \begin{itemize}
+        \item Note: the reaction is done in two steps, but the addition of water was omitted here.
+        \item The partial charge on the carbon double bonded to oxygen gives a slight \rrr{electrophilic} center for the \bbb{hydride} to attack due to the \emph{inductive effect}.
+      \end{itemize}
+      
+      \item Same example as above, but with \ch{NaBH4} and showing the intermediate step:
+
+      \bigskip
+      \schemestart{}
+        \chemfig{R-[:30](=[:90]O)-[:-30]H}
+        \arrow{->[\ch{NaBH4}][\ch{H2O}]}[0,1.2]
+        \chemfig{R-[:30](-[:90]\nab{O})(-H)(-[:-60]H)}
+        \arrow{->[\ch{H2O}]}
+        \chemfig{R-[:30](-[:90]OH)(-H)(-[:-60]H)}
+      \schemestop{}
+      \bigskip
+
+    \end{itemize}
+
+      \subsection{Reduction of Ketones}\label{Reduction of Ketones}
+      \begin{itemize}
+      \item Examples of generating racemic mixtures of \ang{2} alcohols:
+
+      \medskip
+      \schemestart{}
+        \chemfig{R-[:30](=[:90]O)-[:-30]R'}
+        \arrow{->[\ch{LiAlH4}][\ch{H2O}]}[0,1.2]
+        \chemfig{R-[:30](<:[:90]O)-[:-30]R'}
+        \+{,,20pt}
+        \chemfig{R-[:30](<[:90]O)-[:-30]R'}
+      \schemestop{}
+      \bigskip
+      
+      \begin{itemize}
+        \item Note: the above can be done with \ch{NaBH4}, it's just slower.
+        \item The inductive effect is slightly increased vs.\ aldehydes, since there are now two alkyl groups pushing electron density.
+      \end{itemize}
+  \end{itemize}
+  
+  \subsection{Reduction of Esters}\label{Reduction of Esters}
+  \begin{itemize}
+    \item First the ester is reduced to an aldehyde, then in presence of excess it will be further reduced from an aldehyde to a \ang{1} alcohol.
+      
+      \bigskip
+      \schemestart{}
+        \chemfig{R-[:30](=[:90]O)-[:-30]OR'}
+        \arrow{->[\ch{LiAlH4}][(excess)]}[0,1.2]
+        \chemfig{R-[:30]@{c}(-[:90]@{o}\nab{O})(-[@{h}:-60]H)-@{or}OR'}
+        \arrow{}[0,0.7]
+        \chemfig{R-[:30](=[:90]O)-[:-30]H} 
+        \arrow{->[(excess)]}[0,1.2]
+        \hyperref[Reduction of Aldehydes]{\ulink{aldehyde}}
+      \schemestop{}
+      \chemmove[dash pattern= on 1pt off 1pt]{
+        \draw(h)..controls +(-20:0.5cm) and +(230:0.5cm).. (or);
+        \draw(o)..controls +(west:0.8cm) and +(130:0.5cm).. (c);
+      }
+      \bigskip
+
+    \begin{itemize}
+      \item Resonance (shared electron density due to delocalization of electrons between either oxygen) is stronger than inductive effect, so \emph{only reduction using \ch{LiAlH4}} works.
+    \end{itemize}
+  \end{itemize}
+
+  \subsection{Reduction of Carboxylic Acids}\label{Reduction of Carboxylic Acids}
+    \begin{itemize}
+      \item Very similar to Esters, which ends up producing a \ang{1} alcohol: 
+        
+      \medskip
+      \schemestart{}
+        \chemfig{R-[:30](=[:90]O)-[:-30]OH}
+        \arrow{->[\ch{LiAlH4}]}[0,1.2]
+        \chemfig{R-[:30](-[:90]OH)(-H)(-[:-60]H)}
+      \schemestop{}
+      \bigskip
+
+      \begin{itemize}
+        \item Again, the presence of resonance will only allow the use of \ch{LiAlH4}; the first step will not occur if \ch{NaBH4} is used as it is too weak to be a reagent.
+      \end{itemize}
+  \end{itemize}
+
+  \subsection{Reduction Practice Problems}\label{Reduction Practice Problems}
+  \begin{itemize}
+      \item[1.] No reaction, needs carbonyl (\ch{C=O}) functional group to proceed:
+      
+      \medskip
+      \schemestart{}
+        {\scriptsize\chemfig{*6(-----=)}}
+        \arrow{->[\ch{LiAlH4}][or \ch{NaBH4}]}[0,1.4] 
+        {\scriptsize\chemfig{*6(-----=)}}
+      \schemestop{}
+      \bigskip
+
+      \item[2.] Example that contains a carbonyl group:
+
+      \medskip
+      \schemestart{}
+        {\scriptsize\chemfig{*6(---(-[:30](=[:90]O)(-[:-30]H))--=)}}
+        \arrow{->[\ch{LiAlH4}][\ch{H2O}]}[0,1.3] 
+        {\scriptsize\chemfig{*6(---(-[:30](-[:90]OH)(-[:-90]H)(-[:-30]H))--=)}}
+        \arrow{<->}
+        {\scriptsize\chemfig{*6(---(-[:30](-[:-30]OH))--=)}}
+      \schemestop{}
+      \bigskip
+
+      \item[3.] Example with a ketone and an acyclic ester:
+      
+      \medskip
+      \schemestart{}
+        {\scriptsize\chemfig{*6(---(-[:30](=[:90]O)-[:-30]OR)-(=O)--)}}
+        \arrow{->[\ch{NaBH4}][\ch{H2O}]}[0,1.2]
+        {\scriptsize\chemfig{*6(---(-[:30](=[:90]O)-[:-30]OR)-
+        ((<:[:120]OH)(<[:60]H))
+        --)}}
+        \+{,,10pt}
+        {\scriptsize\chemfig{*6(---(-[:30](=[:90]O)-[:-30]OR)-
+        ((<[:120]OH)(<:[:60]H))
+        --)}}
+      \schemestop{}
+      \bigskip
+     
+    \item[3b.] Same example as above but with \ch{LiAlH4} (assuming excess): 
+
+    \medskip
+    \schemestart{}
+      {\scriptsize\chemfig{*6(---(-[:30](=[:90]O)-[:-30]OR)-(=O)--)}}
+      \arrow{->[\ch{LiAlH4}][\ch{H2O}]}[0,1.2]
+      {\scriptsize\chemfig{*6(---(-[:30]-[:-30]OH)-
+      ((<:[:120]OH)(<[:60]H))
+      --)}}
+      \+{,,10pt}
+      {\scriptsize\chemfig{*6(---(-[:30]-[:-30]OH)-
+      ((<[:120]OH)(<:[:60]H))
+      --)}}
+    \schemestop{}
+    \bigskip
+
+    \item[4.] Example with a cyclic ester (assuming excess):
+
+    \medskip
+    \schemestart{}
+      {\scriptsize\chemfig{*6(--(-[:30])(-[:-30])-O-(=[:90]O)--)}}
+      \arrow{->[\ch{LiAlH4}][\ch{H2O}]}
+      {\scriptsize\chemfig{*6(--(-[:30])(-[:-30])-@{o}O-[@{sbo}]
+      ((-[:120]O)(-[:60]H))
+      --)}}
+      \arrow{->}[0,0.8]
+      {\scriptsize\chemfig{*6(--(-[:30])(-[:-30])-\nab{O}-[,,,,draw=none]
+      ((=[:120]O)(-[:50]H))
+      --)}}
+      \arrow{->}[0,0.8]
+      {\scriptsize\chemfig{*6(--(-[:30])(-[:-30])-\nab{O}-[,,,,draw=none]
+      ((-[:120]\nab{O})(-[:50]H)(-[:-90]H))
+      --)}}
+      \arrow{->[\ch{H2O}]}[0,0.8]
+      {\scriptsize\chemfig{*6(--(-[:30])(-[:-30])-OH-[,,,,draw=none]
+      (-[:90]OH)
+      --)}}
+    \schemestop{}
+    \chemmove[dash pattern= on 1pt off 1pt]{
+      \draw(sbo)..controls +(220:0.5cm) and +(200:0.3cm).. (o);
+    }
+    \bigskip
+  \end{itemize}
+\end{itemize}
+
+\clearpage
+\section{Oxidation Reactions}\label{Oxidation Reactions}
+\begin{itemize}
+    \item[]
+    
+    \subsection{Oxidizing Agents}\label{Oxidizing Agents}
+    \begin{itemize}
+        \item \emph{Peroxide reagents}: reagents that contain \ch{O-O} linkage of some kind:
+        
+        \medskip
+      \begin{center}
+        \hspace{-30pt}
+        \schemestart{}
+          \chemname[-50pt]{\ch{H-O-O-H}}{\ch{H2O2} hydrogen peroxide }
+          \hspace{60pt}
+          \chemname[-50pt]{\chemfig[atom sep=2.5em]{O=[:30]\pab{O}-[:-30]\nab{O}}}{\ch{O3} ozone}
+          \hspace{60pt}
+          \chemname[-50pt]{\chemfig{R-[:30](=[:90]O)-[:-30]O-O-H}}{\ch{-OOH} peroxy acid (peracid)}
+        \schemestop{}
+      \end{center}
+        \bigskip
+        
+      \item \ddd{Arene substitution patterns}: IUPAC nomenclature for naming substituents other than hydrogen in relation to each other on an aromatic hydrocarbon:
+        
+      \medskip
+      \begin{center}
+      \hspace{-30pt}
+      \schemestart{}
+        \chemfig{*6
+          ((-[:195,0.7,,,draw=none]meta)
+          -(-[,0.5,,,draw=none]para)
+          =(-[:-15,0.7,,,draw=none]meta)
+          -(-[,0.7,,,draw=none]ortho)
+          =(-R)
+          -(-[,0.7,,,draw=none]ortho)
+          =)
+          }
+      \schemestop{}
+      \end{center}
+      \bigskip
+      
+    
+      
+      \item \ddd{meta-Chloroperoxybenzoic acid (mCPBA)}: a strong and widely used oxidant in organic synthesis due to relative ease of handling.
+      
+
+      \medskip
+      \begin{center}
+      \hspace{-10pt}
+      \schemestart{}
+      \chemfig{*6(-=(-\ch{Cl})-=(-(=[3]O)-[:30]O-[0]OH)-=)}
+      \schemestop{}
+      \end{center}
+      \bigskip
+      
+      \item \emph{Metal based} oxidizing agents:
+
+      \medskip
+      \begin{center}
+      \hspace{-30pt}
+      \schemestart{}
+        \chemname[-35pt]{\chemfig[atom sep=2.5em]
+        {\ch{Cr}(=[5]O)(=[2,0.9]O)(=[-1]O)}}{\ch{CrO3} chromium trioxide}
+        \hspace{90pt}
+        \chemname[-35pt]{\chemfig[atom sep=2.5em]
+        {\ch{Mn}(=[5]O)(=[1]O)(=[-1]O)(-[3]\nab{O})}}{\ch{MnO4-} permangante}
+        \hspace{90pt}
+        \chemname[-35pt]{\chemfig[atom sep=2.5em]
+        {\ch{Os}(=[5]O)(=[1]O)(=[-1]O)(=[3]O)}}{\ch{OsO4} osmium tetroxide}
+      \schemestop{}
+      \end{center}
+      \bigskip
+    
+    \begin{itemize}
+      \item Note: \ch{MnO4-} comes as \ch{KMnO4}. The anion must be created in order to be used as a reagent.
+      \item \ddd{Pyridinium chlorochromate (PCC)}: \ch{[C5H5NH]\plus[CrO3Cl]−} --- a \emph{mild} oxidizing reagent primarily used for \emph{selective} oxidation of alcohols to aldehyde or ketones.
+      
+      \medskip
+      \begin{center}
+      \hspace{-30pt}
+      \schemestart{}
+        {\footnotesize\chemfig{*6(-\pab{N}(-[,0.5,,,draw=none]H)=-=-=)}}
+        \qquad
+        \chemfig{\nab{O}-\ch{Cr}(=[:90]O)(=[:-90]O)-\ch{Cl}}
+      \schemestop{}
+      \end{center}
+      \bigskip
+      
+    \end{itemize}
+    \end{itemize}
+
+    \subsection{Epoxidation}\label{Epoxidation}
+    \begin{itemize}
+      \item Example of oxidizing a \textit{cis}-alkene to a \textit{cis}-epoxide:
+      
+      \medskip
+      \schemestart{}
+      \chemfig{(<:[:150]H)(<[:-150])=(<:[:30]H)(<[:-30])}
+      \arrow{->[mCPBA]}[0,1.3]
+      \chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20]H)(<[:-70])}
+      \schemestop{}
+      \bigskip
+      
+      \begin{itemize}
+        \item Note: epoxide rings are always \minimal{(commonly?)} made when using mCPBA\@.
+        \item The epoxide ring is an example of a \emph{meso compound}, where there are chiral centers, but there is a plane of symmetry making it \emph{superimposable on its mirror image}, so no other products are made. 
+      \end{itemize}
+
+      \item Similar to example of above, but with a \textit{trans}-alkene to a \textit{trans}-epoxide:
+      
+      \medskip
+      \schemestart{}
+      \chemfig{(<:[:150]H)(<[:-150])=(<:[:30])(<[:-30]H)}
+      \arrow{->[mCPBA]}[0,1.3]
+      \chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20])(<[:-70]H)}
+      \+
+      \chemfig{?(<[:-200])(<:[:110]H)-[:-60]O-[:60]?(<:[:20])(<[:70]H)}
+      \schemestop{}
+      \bigskip
+      
+      \begin{itemize}
+        \item The \textit{trans}-epoxide ring is no longer a meso compound, so you must show both products; one when the ring forms on the top and one where the ring forms on the bottom.
+      \end{itemize}
+    \item These examples show that epoxidation reactions are \emph{concerted} reactions, since there is no mixture of products between cis and trans products; it's dependent on the starting compound.
+  \end{itemize}
+
+  \subsubsection{Epoxidation Practice Problems}
+  \begin{itemize}
+      \item[1.] ~ % chktex 39
+
+      \medskip
+      \schemestart{}
+        {\small\chemfig{*6(---=--)}}
+        \arrow{->[mCPBA]}[0,1.3]
+        {\small\chemfig{*6(---(-[:90]O)(<:[0]H)-(-[:30,0.75])(<:[2]H)--)}}
+      \schemestop{}
+      \bigskip
+      
+      \item[2.] ~ % chktex 39
+
+      \medskip
+      \schemestart{}
+        {\small\chemfig{*6(---=(-)--)}}
+        \arrow{->[mCPBA]}[0,1.3]
+        {\small\chemfig{*6(---(-[:90]O)(<:[0]H)-(-[:30,0.75])(<[2]H)(<:[3])--)}}
+        \+{,,15pt}
+        {\small\chemfig{*6(---(-[:90]O)(<:[0]H)-(-[:30,0.75])(<:[2]H)(<[3])--)}}
+      \schemestop{}
+      \bigskip
+      
+  \end{itemize}
 \end{itemize}

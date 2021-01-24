@@ -151,3 +151,11 @@ Halides
 racemic
 nonequilibrium
 dissective
+peroxy
+Arene
+Pyridinium
+chlorochromate
+Epoxidation
+mCPBA
+epoxidation
+emph
