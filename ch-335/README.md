@@ -15,7 +15,7 @@
    alt="chat on Discord">
     </a>
     <a title="View my notes" href="ch-335.pdf">
-    <img src="https://img.shields.io/badge/Notes-Week 2 Done-sucess?logo=latex" >
+    <img src="https://img.shields.io/badge/Notes-Week 3 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations" href="mini-quiz.pdf">
     <img src="https://img.shields.io/badge/Mini Quiz-Week 2 Done-success?logo=latex" >
@@ -61,7 +61,8 @@ Relevant Khan Academy Videos
 - [E-Z Naming Scheme for Alkenes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/naming-alkenes/v/cis-trans-and-e-z-naming-scheme-for-alkenes)
 - [Markovnikov's Rule and Carbocations](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/markovnikov-s-rule-and-carbocations)
 - [Addition of Water (acid-catalyzed) Mechanism](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions/v/addition-of-water-acid-catalyzed-mechanism)
-  <br>
+  
+  ---
 
 ### **Week 2** (Jan 11-17) **Alkynes**
 
@@ -84,13 +85,14 @@ Relevant Khan Academy Videos
 - [Reduction of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/reduction-of-alkynes)
 - [Hydrohalogenation of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/hydrohalogenation-of-alkynes)
 - [Hydration of alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkyne-reactions/v/hydration-of-alkynes)
-  <br>
+  
+  ---
 
 ### **Week 3** (Jan 18-24) **???**
 
-| Strongin | Lecture Notes |   Mini Quiz    |
-| :------: | :-----------: | :------------: |
-|    16    |  _View pdf_   | _Explanations_ |
+| Strongin |     Lecture Notes      |   Mini Quiz    |
+| :------: | :--------------------: | :------------: |
+|    16    | [View pdf](ch-335.pdf) | _Explanations_ |
 
 Learning Objectives
 
@@ -109,7 +111,8 @@ Relevant Khan Academy Videos
 - [Epoxide formation and anti dihydroxylation](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions-tutorial/v/epoxide-formation-and-anti-dihydroxylation)
 - [Syn dihydroxylation](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions-tutorial/v/syn-dihydroxylation)
 - [Ozonolysis](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/alkene-reactions-tutorial/v/ozonolysis-1)
-  <br>
+  
+  ---
 
 ### **Week 4** (Jan 25-31) **???**
 
@@ -119,12 +122,17 @@ Relevant Khan Academy Videos
 
 Learning Objectives
 
-- N/A
+- Mass spectrometry
+- Using mass spectrometry to determine molecular formula
+- Infrared spectroscopy (IR)
+- Using IR to determine functional groups
 
 Relevant Khan Academy Videos
 
-- N/A
-  <br>
+- [Syntesis using alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/synthesis-alkynes/v/synthesis-using-alkynes)
+
+  
+  ---
 
 ### **Week 5** (Feb 1-7) **Midterm 1, ???**
 
@@ -139,7 +147,8 @@ Learning Objectives
 Relevant Khan Academy Videos
 
 - N/A
-  <br>
+  
+  ---
 
 ### **Week 6** (Feb 8-14) **???**
 
@@ -154,7 +163,8 @@ Learning Objectives
 Relevant Khan Academy Videos
 
 - N/A
-  <br>
+  
+  ---
 
 ### **Week 7** (Feb 15-21) **???**
 
@@ -169,7 +179,8 @@ Learning Objectives
 Relevant Khan Academy Videos
 
 - N/A
-  <br>
+  
+  ---
 
 ### **Week 8** (Feb 22-28) **???**
 
@@ -184,7 +195,8 @@ Learning Objectives
 Relevant Khan Academy Videos
 
 - N/A
-  <br>
+  
+  ---
 
 ### **Week 9** (Mar 1-7) **???**
 
@@ -199,7 +211,8 @@ Learning Objectives
 Relevant Khan Academy Videos
 
 - N/A
-  <br>
+  
+  ---
 
 ### **Week 10** (Mar 8-14) **???**
 
@@ -214,10 +227,9 @@ Learning Objectives
 Relevant Khan Academy Videos
 
 - N/A
-  <br>
+  
+  ---
 
 ### **Final Exam**
 
 - 12:30 &ndash; 2:20 pm **Thursday, March 18**.
-
-<br>
