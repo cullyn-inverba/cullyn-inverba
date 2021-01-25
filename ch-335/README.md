@@ -88,7 +88,7 @@ Relevant Khan Academy Videos
 
   ***
 
-### **Week 3** (Jan 18-24) **???**
+### **Week 3** (Jan 18-24) **Oxidation and Reduction Reactions**
 
 | Strongin |     Lecture Notes      |           Mini Quiz           |
 | :------: | :--------------------: | :---------------------------: |
@@ -114,7 +114,7 @@ Relevant Khan Academy Videos
 
   ***
 
-### **Week 4** (Jan 25-31) **???**
+### **Week 4** (Jan 25-31) **Mass Spectrometry and Infrared Spectroscopy**
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |

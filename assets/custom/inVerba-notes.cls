@@ -174,8 +174,6 @@
 \RequirePackage{siunitx}
     \sisetup{
         inter-unit-product = \ensuremath{{\cdot}},
-        tight-spacing = true,
-        per-mode = symbol
 }
 
 
@@ -317,6 +315,10 @@
     \titleformat{\section}{\Large\bfseries}{}{0pt}{}
     \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
     \titleformat{\subsubsection}{\large\bfseries}{}{0pt}{}
+
+        % Charge: #d64242 → #225ed6
+    \definecolor{rrr}{HTML}{d64242}
+    \definecolor{bbb}{HTML}{225ed6}
 }
 
 \DeclareOption{worksheet}{
@@ -324,6 +326,18 @@
     \renewcommand{\headrulewidth}{0pt}
     \newgeometry{hmargin=2cm, vmargin=1.8cm, headsep=1.2em}
     \setenumerate{align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!}
+    \setlist[itemize,1]{
+        label=\circ, 
+        leftmargin=\dimexpr26pt 
+    }
+    \setlist[itemize,2]{
+        label=\textbullet,
+        leftmargin=\dimexpr26pt
+    }
+    \setlist[itemize,3]{
+        label=\small\color{minor}\textbullet,
+        leftmargin=\dimexpr26pt
+    }
 }
 
 \DeclareOption{basic}{
