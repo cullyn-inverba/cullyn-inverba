@@ -1,0 +1,138 @@
+\documentclass[plain,worksheet]{inVerba-notes}
+% chktex-file 3
+\begin{document}
+\begin{center}
+    \Large \textbf{Sensory and Motor Systems --- Problem Set 1}
+\end{center}
+\medskip
+\begin{enumerate}
+    \item Define equilibrium for an ion (within the context of the neuronal membrane). Your answer should mention forces.
+    \begin{itemize}
+        \item Equilibrium for an ion is reached when its diffusion gradient is equal to the electrical gradient. The net flow through any open channel would be zero at equilibrium.
+        \item \(E_{ion}\) can be calucated with the Nernst equation:
+        \begin{equation*}
+            E_{ion}=\frac{RT}{ZF}\ln{\frac{[ion]_{out}}{[ion]_{in}}}
+        \end{equation*}
+        \begin{itemize}
+            \item \(E_{ion}\) is the equilibrium potential for a given ion, measured in volts (V). 
+            \item R is the universal gas constant, equal to \SI{8.314}{\joule\per\mole\per\kelvin}
+            \item T is the absolute temperature, measured in kelvins (= K = degrees Celsius + 273.15)
+            \item z is the number of elementary charges (valence) of the ion involved in the reaction
+            \item F is the Faraday constant, equal to 96,485 \si{coulombs\per\mol}
+        \end{itemize}
+    \end{itemize}
+
+    \item What is the membrane potential at steady state in a cell with a membrane that is only permeable to calcium (\bbb{Calcium out = 1.9mM}, \bbb{Calcium in= 0.0002mM})? 
+    \begin{align*}
+        E_{eq,Ca^+} &= \frac{\rrr{RT}}{Z\rrr{F}}\text{\rrr{ln}}{\frac{[Ca]_{o}}{[Ca]_{i}}} & \text{Nernst equation using calcium} \\
+        \frac{\rrr{\SI{61}{mV}}}{2}\cdot \rrr{\text{log}}\bbb{\frac{\SI{1.9}{mM}}{\SI{2e-4}{mM}}}&=\SI{121.3}{mV} & \text{\rrr{Simplified} at \SI{37}{\celsius}}\\
+        \Aboxed{E_{eq,Ca^+} &= \SI{121.3}{mV}}
+    \end{align*}
+
+    \item If Vm is \rrr{-70mV} and \bbb{external sodium is 145mM} and \bbb{internal is 10 mM}. Calculate the driving force for sodium ions after Nav channels open.
+    \begin{align*}
+        V_{DF}&=V_{m}-V_{eq} & \text{Electrochemical driving force}\\
+        V_{eq} &= \frac{RT}{F}\ln{\frac{[Na]_{o}}{[Na]_{i}}} & \text{equilibrium potential when Nav channels open}\\
+        \SI{61}{mV}\cdot\log{\bbb{\frac{\SI{145}{mM}}{\SI{10}{mM}}}}&=\SI{71.4}{mV} & \text{Simplified} \\
+        &= \rrr{\SI{-70}{mV}} - \SI{71.4}{mV} & \text{Plug in}~V_m~\&~V_{eq}\\
+        \Aboxed{V_{DF}&= \SI{-144}{mV}}
+    \end{align*}
+
+    \newpage
+    \item Please explain the shape of the current voltage relationship for both voltage gated sodium and potassium ion channels.
+\end{enumerate}
+    \begin{center}
+        \input{graphs/nav.tex}
+    \end{center}
+
+    \begin{itemize}
+        \item \textbf{Voltage gated} sodium channels \textbf{open} at \SI{-30}{mV}, at which point \ch{Na+} starts coming \textbf{into} the cell resulting in a \textbf{negative} current. The current peaks then starts decreasing due to weakening driving force induced by incoming \ch{Na+} as nears its equilibrium potential.
+    \end{itemize}
+     
+    \bigskip
+    \begin{center}
+    \input{graphs/kav.tex}
+    \end{center}
+
+    \begin{itemize}
+        \item \textbf{Voltage gated} potassium channels begin to open at approximately \SI{10}{mV}, at which point \ch{K+} begins to \textbf{leave} the cell resulting in a \textbf{positive} current. The driving force continues to increase until the relationship becomes linear due to OHM's law (\(V=IR\)) and the fact that the driving force continues to increase as potassium leaves the cell.
+    \end{itemize}
+        
+\begin{enumerate}[resume]
+    \item Neurons A and B are able to fire at different frequencies. Neuron A’s maximum firing rate is shown below at left; Neuron B’s maximum firing rate is shown at right. Note that in both cases, the vertical lines represent spikes, or individual action potentials. Suggest one specific difference in Na+ or K+ channel properties between these 2 neurons that could explain the different firing rates. Be as specific as you can.
+    \bigskip
+    \begin{center}
+        \includegraphics[scale=0.4]{graphs/firing-rate.png}
+    \end{center}
+    \begin{itemize}
+        \item Faster transition of voltage gated sodium channels from their inactivated state back to a closed (and now ready to open) state would allow for an increased firing rate. 
+        \item Potassium channels that close more quickly would allow for cells to return to their resting membrane potential faster than those that remain open for longer, thus increasing potential firing rate.
+    \end{itemize}
+
+    \item Imagine that a mutation causes faster inactivation of sodium channels compared to those that help produced the APs bellow. Draw and explain how the AP shape would change.
+
+    \bigskip
+    \begin{center}
+        \input{graphs/mutation-a.tex}
+    \end{center}
+
+    \begin{itemize}
+        \item Faster inactivation would cause the action potential to peak sooner and potentially allow for increased firing rates.
+    \end{itemize}
+    
+    \item When a normal, healthy squid axon is voltage-clamped in artificial seawater, one obtains the following current (I) record in response to a step change in \si{V_m} from \SI{-70}{mV} to \SI{+20}{mV}.
+    
+    \bigskip
+    \begin{center}
+        \input{graphs/voltage-clamp.tex}
+    \end{center}
+
+    Draw plots of current vs.\ time when the recordings are made under each of the following experimental conditions.  Overlay the new response on the control plot for each of the following situations. Briefly explain your reasoning next to each plot. Note that a dashed line is provided at \SI{0}{nA}. 
+    
+    \item[a.] TEA, a voltage gated K+ channel blocker is added:
+    
+    \bigskip
+    \begin{center}
+        \input{graphs/tea.tex}
+    \end{center}
+    \begin{itemize}
+        \item TEA blocks potassium channels; only sodium flows in, then back out of the cell, until it returns to equilibrium.
+    \end{itemize}
+    \newpage
+    \item[b.] TTX, a voltage gated Na+ channel blocker is added:
+    
+    \bigskip
+    \bigskip
+    \begin{center}
+        \input{graphs/ttx.tex}
+    \end{center}
+    
+    \begin{itemize}
+        \item TTX blocks sodium channels, so only the potassium channels open, which continue to flow out of the cell while the voltage is applied.
+    \end{itemize}
+
+    \item[c.] Na concentration out= Na concentration in:
+    
+    \bigskip
+    \bigskip
+    \begin{center}
+        \input{graphs/sodium.tex}
+    \end{center}
+    
+    \begin{itemize}
+        \item 
+    \end{itemize}
+
+    \item[d.] \ch{K+} concentration out= K concentration in:
+
+    \bigskip
+    \bigskip
+    \begin{center}
+        \input{graphs/potassium.tex}
+    \end{center}
+    
+    \begin{itemize}
+        \item 
+    \end{itemize}
+\end{enumerate}
+\end{document}
