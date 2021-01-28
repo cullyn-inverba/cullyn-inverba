@@ -14,9 +14,6 @@
   <img title="Join BI: 463 Discord Server 🥳" src="https://img.shields.io/discord/790760762418659349?logo=discord"
    alt="chat on Discord">
     </a>
-    <a href="neural-science-notes.pdf">
-    <img title="Much older notes" src="https://img.shields.io/badge/Old notes-potentially useuful-informational?logo=latex" >
-    </a>
 </p>
 
 ## **Course Materials**
@@ -26,7 +23,11 @@
   - [Purves &mdash; Neuroscience (6th ed.)](https://1lib.us/book/5481039/fb91d9)
   - [Kandel &mdash; Principles of Neural Science (5th ed.) ](https://1lib.us/book/2477222/4a05ed)
 
-- I happened to read Kandel's text last summer. I have some [notes](neural-science-notes.pdf) from that time, but they are pretty shallow considering the content covered. Lots of mistakes probably, and not a good representation of what my notes currently look like.
+- Practice Problems:
+  - [Problem Set 1 (Blank)](problem-set-1.pdf)
+  - [Problem Set 1 (Answer Key)](problem-set-1-answers.pdf)
+
+
 
 ## **Weekly Schedule**
 
@@ -34,19 +35,19 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 ### **Week 1** (Jan 5-7)
 
-| Lecture | Topic                                                               |
-| :-----: | :------------------------------------------------------------------ |
-|    1    | [Introduction to Neurophysiology](slides/lecture-1.pdf)             |
-|    2    | [Resting Membrane Potential and Ion Channels](slides/lecture-2.pdf) |
+| Lecture | Topic                                       |
+| :-----: | :------------------------------------------ |
+|    1    | Introduction to Neurophysiology             |
+|    2    | Resting Membrane Potential and Ion Channels |
 
 ---
 
 ### **Week 2** (Jan 12-14)
 
-| Lecture | Topic                                                  |
-| :-----: | :----------------------------------------------------- |
-|    3    | [Ion channels and Action Potentials](slides/lecture-3.pdf) |
-|    4    | [Motor Systems I](slides/lecture-4.pdf)                    |
+| Lecture | Topic                              |
+| :-----: | :--------------------------------- |
+|    3    | Ion channels and Action Potentials |
+|    4    | Motor Systems I                    |
 
 ---
 
@@ -57,6 +58,8 @@ The following schedule is tentative and may be changed. Originally generated usi
 |    5    | Motor Systems II                |
 |    6    | Motor Systems III + **Quiz #1** |
 
+- [Problem Set 1 (Blank)](problem-set-1.pdf)
+- [Problem Set 1 (Answer Key)](problem-set-1-answers.pdf)
 ---
 
 ### **Week 4** (Jan 26-28)
@@ -118,7 +121,7 @@ The following schedule is tentative and may be changed. Originally generated usi
 | Lecture | Topic                                            |
 | :-----: | :----------------------------------------------- |
 |   17    | Neurodegenerative Disease: Parkinson’s + Group 7 |
-| Review  | Final Exam                                       |
+| Review  | Final Exam Review                                |
 
 ---
 
