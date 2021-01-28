@@ -29,12 +29,12 @@
         \Aboxed{E_{eq,Ca^+} &= \SI{121.3}{mV}}
     \end{align*}
 
-    \item If Vm is \rrr{-70mV} and \bbb{external sodium is 145mM} and \bbb{internal is 10 mM}. Calculate the driving force for sodium ions after Nav channels open.
+    \item If Vm is -70mV and \bbb{external sodium is 145mM} and \bbb{internal is 10 mM}. Calculate the driving force for sodium ions after Nav channels open.
     \begin{align*}
         V_{DF}&=V_{m}-V_{eq} & \text{Electrochemical driving force}\\
         V_{eq} &= \frac{RT}{F}\ln{\frac{[Na]_{o}}{[Na]_{i}}} & \text{equilibrium potential when Nav channels open}\\
         \SI{61}{mV}\cdot\log{\bbb{\frac{\SI{145}{mM}}{\SI{10}{mM}}}}&=\SI{71.4}{mV} & \text{Simplified} \\
-        &= \rrr{\SI{-70}{mV}} - \SI{71.4}{mV} & \text{Plug in}~V_m~\&~V_{eq}\\
+        &= \SI{-70}{mV} - \SI{71.4}{mV} & \text{Plug in}~V_m~\&~V_{eq}\\
         \Aboxed{V_{DF}&= \SI{-144}{mV}}
     \end{align*}
 
@@ -120,7 +120,10 @@
     \end{center}
     
     \begin{itemize}
-        \item 
+        \item When \([Na^+]_{out}=[Na^+]_{in}\), then \(E_{Na}\) becomes \SI{0}{mV}.
+        \item A driving force is generated is thus generated when the cell voltage is stepped to \SI{+20}{mV}, since \SI{20}{mv} > \SI{0}{mV}. This is results in sodium flowing \textbf{out} of the cell, which produces a \textbf{positive} current.
+        \item Additionally, the amplitude of the sodium current should be less than the control, where sodium is flowing into the cell. A greater driving force is present in the control (when the sodium flows into the cell; \SI{40}{mV}) than the weaker driving force generated from the manual application of voltage (\SI{20}{mV}).
+        \item No change to potassium, so it would continue to flow out as long as voltage is applied, just as it does in the control.
     \end{itemize}
 
     \item[d.] \ch{K+} concentration out= K concentration in:
@@ -132,7 +135,9 @@
     \end{center}
     
     \begin{itemize}
-        \item 
+        \item When \([K^+]_{out}=[K^+]_{in}\), then \(E_{K}\) becomes \SI{0}{mV}. 
+        \item Potassium has a driving for of \SI{100}{mV} in the control and wants to bring the Vm down to \SI{-80}{mV}, but when \(E_{K}\) becomes \SI{0}{mV}, then it has a much weaker driving force of only \SI{20}{mV} and wants to bring Vm down to only \SI{0}{mV} due to new \(E_K\). Thus, there will still be a small outward current of potassium, but it will be much smaller than the control.
+        \item Sodium is unaffected, so there the initial current mimics the control.
     \end{itemize}
 \end{enumerate}
 \end{document}
