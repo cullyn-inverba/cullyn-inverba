@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/Notes-Ch 14 through 16 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations" href="mini-quiz.pdf">
-    <img src="https://img.shields.io/badge/Mini Quiz-Week 3 Done-success?logo=latex" >
+    <img src="https://img.shields.io/badge/Mini Quiz-Ch 16 Done-success?logo=latex" >
     </a>
 </p>
 
