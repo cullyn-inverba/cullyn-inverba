@@ -381,8 +381,8 @@
   
         \item \ch{KMnO4} is \emph{inexpensive}, but a very \emph{strong oxidizing} agent and is \emph{not soluble} in organic solvents.
         \begin{itemize}
+          \item \ch{MnO4-} comes as \ch{KMnO4}; the anion must be created in order to be used as a reagent.
           \item Keeping \ch{KMnO4} cold can help reduce activation energy, leading a reduction of the more oxidized byproduct.
-          \item \ch{MnO4-} comes as \ch{KMnO4}. The anion must be created in order to be used as a reagent.
         \end{itemize}
         
       \item \ch{OsO4} is \emph{very expensive}, but a \emph{mild oxidizing} agent that is \emph{soluble} in organic solvents.
@@ -390,7 +390,17 @@
             \item N-metyhlmopholine N-oxide (NMO): used with \ch{OsO4} to reduce cost; it oxidizes the byproduct (\ch{Os^{+6}}) back to \ch{OsO4} in solution, allowing for reuse.
           \end{itemize}
       
-    \item \ddd{Pyridinium chlorochromate (PCC)}: \ch{[C5H5NH]\plus[CrO3Cl]−} --- a \emph{mild} oxidizing reagent primarily used for \emph{selective} oxidation of alcohols to aldehyde or ketones.
+      \item \ch{CrO3} is a \emph{strong oxidizing} agent that is \emph{not soluble} in most organic solvents; it tends to explode in the presence of organic compounds and solvents.
+          \begin{itemize}
+            \item In water if forms chromic acid and anhydrides, from which salts such as sodium dichromate (\ch{Na2Cr2O7}) and PCC\@.
+            \item Other chromium based oxidizing reagents:
+              \begin{itemize}
+                \item \ch{NaCrO4}: sodium chromate.
+                \item \ch{K2Cr2O7}: potassium dichromate.
+              \end{itemize}
+          \end{itemize}
+      
+    \item \ddd{Pyridinium chlorochromate (PCC)}: \ch{[C5H5NH]\plus[CrO3Cl]−} --- a \emph{mild} oxidizing reagent primarily used for \emph{selective oxidation} of alcohols to \emph{aldehyde or ketones} rather than carboxylic acid.
       
       \medskip
       \begin{center}
@@ -522,7 +532,7 @@
     \medskip
     \subsubsection{Trans Hydroxylation Practice Problems}\label{Trans Hydroxylation Practice Problems}
     \begin{itemize}
-      \item \textit{Trans}-alkene reactant (\rrr{acid catalyzed}):
+      \item \textit{Trans}-alkene reactant (\rrr{acid catalyzed} in this case, but a \bbb{base catalyzed} would produce same product):
       
       \bigskip
       \schemestart{}
@@ -530,20 +540,9 @@
         \arrow{->[mCPBA][\rrr{\ch{H+}}/\ch{H2O}]}[0,1.3]
         \chemfig{?(<:[:200]H)(<[:-110])-[:60]\ch{\pab{O}H}-[:-60]?(<:[:-20])(<[:-70]H)}
         \arrow{->[\ch{H2O}][]}
+        \chemfig{(<:[:80]H)(-[:-90]\ch{OH})(<[:120])-(-[:90]\ch{OH})(<:[:-60])(<[:-100]H)}
       \schemestop{}
       \bigskip
-      
-      \item \textit{Trans}-alkene reactant (\bbb{base catalyzed}):
-      
-      \bigskip
-      \schemestart{}
-        \chemfig{(<:[:150]H)(<[:-150])=(<:[:30])(<[:-30]H)}
-        \arrow{->[mCPBA][\bbb{\ch{OH}}/\ch{H2O}]}[0,1.3]
-        \chemfig{?(<:[:200]H)(<[:-110])-[:60]\ch{\nab{O}H}-[:-60]?(<:[:-20])(<[:-70]H)}
-        \arrow{->[\ch{H2O}][]}
-      \schemestop{}
-      \bigskip
-      
       
       \item Cyclohexene reactant:
       
@@ -624,4 +623,141 @@
         \item The product is no longer chiral, giving us different products depending on which side \ch{MnO4-} attached to.
       \end{itemize}
     \end{itemize}
+
+    \subsubsection{Syn Dihydroxylation Practice Problems}\label{Syn Dihydroxylation Practice Problems}
+    \begin{itemize}
+        \item Cyclohexene with cold potassium permanganate:
+        
+        \medskip
+        \schemestart{}
+          {\footnotesize\chemfig{*6(--=---)}}
+          \arrow{->[\ch{KMnO4} (cold)][\bbb{OH}/\ch{H2O}]}[0,1.4]
+          {\footnotesize\chemfig{*6(--(<\ch{OH})-(<\ch{OH})---)}}
+        \schemestop{}
+        \bigskip
+
+        \item 1-methylcyclohexene with osmium tetroxide:
+        
+        \medskip
+        \schemestart{}
+        {\footnotesize\chemfig{*6(--=(-)---)}}
+        \arrow{->[\ch{OsO4}, NMO][\ch{NaHSO3}, \ch{H2O}]}[0,1.6]
+        {\footnotesize\chemfig{*6(--(<\ch{OH})-(<\ch{OH})(<:[2])---)}}
+        \+{,,10pt}
+        {\footnotesize\chemfig{*6(--(<:\ch{OH})-(<:\ch{OH})(<[2])---)}}
+        \schemestop{}
+        \bigskip
+    \end{itemize}
+  
+    \subsection{Ozonolysis}
+    \begin{itemize}
+        \item \ddd{Ozonolysis}: when the unsaturated bonds of alkenes, alkynes, or azo compounds (azo compounds not important for this class) are \emph{cleaved} with ozone.
+    
+        \item Basic example demonstrating bond cleavage:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{(-[3])(-[5])=(-[1]H)(-[7])}
+          \arrow{->[\ch{O3}][\ch{Me2S}]}
+          \chemfig{(-[3])(-[5])=O-[,1,,,draw=none]O=(-[1]H)(-[7])}
+        \schemestop{}
+        \bigskip
+  
+        \begin{itemize}
+          \item \ch{Me2S}: dimethyl sulfide; used as reducing agent that decomposes the intermediate (ozonide), making dimethyl sulfoxide (DMSO).
+        \end{itemize}
+  
+        \item Alkenes can be oxidized with ozone to form alcohols, aldehydes or ketones (depends on substituents), or carboxylic acids. 
+  
+        \item Example of ozonolysis on an alkene, generating both an aldehyde and a ketone due to difference in substituents:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{(-[3])(-[5])=(-[1]-)(-[7])}
+          \arrow{->[\ch{O3}][\ch{Me2S}]}
+          \chemfig{(-[3]H)(-[5]H)=O-[,0.8,,,draw=none]+-[,0.8,,,draw=none]O=(-[1]-)(-[7])}
+        \schemestop{}
+        \bigskip
+        
+        \item Example with 1-methylcyclohexene:
+        
+        \medskip
+        \schemestart{}
+          {\footnotesize\chemfig{*6(---=(-)--)}}
+          \arrow{->[\ch{O3}][\ch{Me2S}]}
+          {\footnotesize\chemfig{*6(---(=[,0.6]O)-[,,,,draw=none](-)(=[:-30,0.6]O)--)}}
+          \arrow{}
+          \chemfig{-[:-30](=[:-90]O)-[:30]-[:-30]-[:30]-[:-30]-[:30](=[:90]O)}
+        \schemestop{}
+        \bigskip
+  
+        \item Ozonolysis of alkynes generally gives an acid anhydride or diketone product, unlike the complete fragmentation in alkenes.
+        \begin{itemize}
+          \item  If the reaction is performed in the presence of water, then the anhydride hydrolyzes to give two carboxylic acids. 
+        \end{itemize}
+        
+        \item Example of ozonolysis on alkynes:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{R-~-R'}
+          \arrow(1--2){->[\ch{O3}]}
+          \chemname[-50pt]{\chemfig{(=[3]O)(-[5]R)-(=[1]O)(-[7]R')}}{diketone}
+          \arrow(@1--){->[\ch{O3}]}[-90,0.8]
+          \chemname[-50pt]{\chemfig{(=[2]O)(-[:210]R)-[:-30]O-[:30](=[2]O)(-[:-30]R')}}{anhydride}
+          \arrow{->[\ch{H2O}]}
+          \chemfig{(=[2]O)(-[:210]R)-[:-30]OH}
+          \+
+          \arrow{0}[,0]
+          \chemfig{HO-[:30](=[2]O)(-[:-30]R')}
+        \schemestop{}
+        \bigskip
+        
+        \item Example of alkyne with different substituents:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{-~--[:-30]}
+          \arrow{->[\ch{O3}][\ch{H2O}]}
+          \chemfig{(=[2]O)(-[:210])-[:-30]OH}
+          \+
+          \arrow{0}[,0]
+          \chemfig{HO-[:30](=[2]O)(-[:-30]-[:30])}
+        \schemestop{}
+        \bigskip
+        
+  
+        \item Retro synthesis (products \to\ reactants) example:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{(=[2]O)(-[:210]-[:150])-[:-30]OH}
+          \+
+          \arrow{0}[,0]
+          \chemfig{HO-[:30](=[2]O)(-[:-30]-[:30]-)}
+          \arrow{0}[,0] \quad \(\Longrightarrow \) \quad
+          \chemfig{-[:30]-~--[:30]-}
+        \schemestop{}
+        \bigskip
+        
+        \item Example with a terminal alkyne:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{R-~-H}
+          \arrow{->[\ch{O3}][\ch{H2O}]}
+          \chemfig{(=[2]O)(-[:210]R)-[:-30]OH}
+          \+
+          \arrow{0}[,0]
+          \chemfig{HO-[:30](=[2]O)(-[:-30]H)}
+          \arrow{->}[0,0.8]
+          \minimal{\ch{CO2}}
+        \schemestop{}
+        \bigskip
+        
+        \begin{itemize}
+          \item Terminal alkynes generate a carboxylic acid and a formic acid; formic acid will break down to \ch{CO2}.
+        \end{itemize}
+    \end{itemize}
+    
 \end{itemize}
