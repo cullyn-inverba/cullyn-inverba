@@ -15,7 +15,7 @@
    alt="chat on Discord">
     </a>
     <a title="View my notes" href="ch-335.pdf">
-    <img src="https://img.shields.io/badge/Notes-Week 3 Done-sucess?logo=latex" >
+    <img src="https://img.shields.io/badge/Notes-Ch 14 through 16 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations" href="mini-quiz.pdf">
     <img src="https://img.shields.io/badge/Mini Quiz-Week 3 Done-success?logo=latex" >
@@ -118,7 +118,7 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|  16, 17  |  _View pdf_   | _Explanations_ |
+|  16, 17  | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) |
 
 Learning Objectives
 
