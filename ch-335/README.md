@@ -129,7 +129,7 @@ Learning Objectives
 
 Relevant Khan Academy Videos
 
-- [Syntesis using alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/synthesis-alkynes/v/synthesis-using-alkynes)
+- [Synthesis using alkynes](https://www.khanacademy.org/science/organic-chemistry/alkenes-alkynes/synthesis-alkynes/v/synthesis-using-alkynes)
 
   ***
 
