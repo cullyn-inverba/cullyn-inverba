@@ -172,3 +172,5 @@ callosal
 commissures
 myelinated
 interhemispheric
+covariation
+callosotomized
