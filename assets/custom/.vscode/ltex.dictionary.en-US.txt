@@ -174,3 +174,4 @@ myelinated
 interhemispheric
 covariation
 callosotomized
+splenium
