@@ -88,7 +88,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons | Midterm |
 | :----------: | :-----: |
-|      11      | Midterm |
+|      11      | [Midterm](midterm.pdf) |
 
 ---
 
