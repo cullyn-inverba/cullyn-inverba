@@ -348,6 +348,21 @@
     \lfoot{\class}
     \cfoot{\textsc{\institution}}
     \rfoot{\thepage}
+
+    \setenumerate{align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!}
+
+    \setlist[itemize,1]{
+        label=\circ, 
+        leftmargin=\dimexpr26pt 
+    }
+    \setlist[itemize,2]{
+        label=\textbullet,
+        leftmargin=\dimexpr26pt
+    }
+    \setlist[itemize,3]{
+        label=\small\color{minor}\textbullet,
+        leftmargin=\dimexpr26pt
+    }
 }
 
 \DeclareOption{quiz}{
