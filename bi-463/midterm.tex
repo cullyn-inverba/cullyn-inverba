@@ -11,77 +11,381 @@
 \begin{enumerate} 
   \minimal{\item[1-A.] Acetylcholinesterase is a crucial enzyme that is responsible for clearing acetylcholine from the synaptic cleft after presynaptic release. Some patients have a mutation that renders this enzyme only partially active. Please explain which branch of the autonomic nervous system (sympathetic vs.\ parasympathetic) would be MORE adversely affected by this mutation. Explain your reasoning. (4 pts)}
 
-  Acetylcholinesterase (ACHE) is found mostly in neuromuscular junctions,  
+  Acetylcholinesterase (AChE) is found mostly in neuromuscular junctions and have chemical synapses of the \textbf{cholinergic} type, used to \textbf{terminate synaptic transmission} by hydrolyzing ACh. Both sympathetic and parasympathetic preganglionic neurons are cholinergic, and some presynaptic neurons can be taken up again. However, only the parasympathetic postganglionic neurons are cholinergic, meaning they need the AChE present to deal with signal termination; this makes the \textbf{parasympathetic more adversely affected} by a function altering mutation.
   
   \minimal{\item[1-B.] Additionally, please list 3 symptoms (related to the autonomic nervous system) that an individual with this mutation may present with. (3 pts)}
-  
-  \minimal{\item[2-A.] Imagine an individual has gotten an injury resulting in a cut down the midline of the ENTIRE LUMBAR segment of the spinal corD. Upon clinical examination would this person be able to lift their right leg? Why or why not? (3 pts)}
 
-  \minimal{\item[2-B.] Would this person be able to lift their left leg? Why or why not? (3 pts)}
+  ACh must be released from the receptor in order for a postsynaptic neuron to receive another impulse. Inhibition of AChE leads to higher concentrations of ACh in the synaptic cleft and occupied receptors. Muscles that can no longer receive impulses can lead to:
 
-  \minimal{\item[3-A.] Now imagine that a patient has a spinal cord injury resulting in major damage to one half of the CERVICAL spinal corD. Would this patient be able to lift their right leg? Why or why not? (3 pts)}
+  \begin{itemize}
+    \item Muscular paralysis, convulsions, asphyxiation, and loss of control over other vital (and non-vital) other muscular functions.
+  \end{itemize}
   
-  \minimal{\item[3-B.] Would this person be able to lift their left leg? Why or why not? (3 pts)}
+  \minimal{\item[2-A.] Imagine an individual has gotten an injury resulting in a cut down the midline of the ENTIRE LUMBAR segment of the spinal cord. Upon clinical examination would this person be able to lift their right leg? Why or why not? (3 pts). Would this person be able to lift their left leg? Why or why not? (3 pts)}
+
+  Decussation of pyramidal motor fibers marks the border between the spinal cord and the medulla. The majority cross over the middle line to the posterior part of the lateral corticospinal tract, then continuing down into the spinal cord. A minority amount stay uncrossed in the anterior corticospinal tract. 
+
+  Assuming the lumbar injury affects the midline of just the minority anterior tract, and the majority posterior tract is not affected, \textbf{then both legs, left of right, should still be able to be moved.} There might be some issues due to the loss of the minority tract, but the extent probably depends on the task.
+
+
+  \minimal{\item[3-A.] Now imagine that a patient has a spinal cord injury resulting in major damage to one half of the CERVICAL spinal cord. Would this patient be able to lift their right leg? Why or why not? (3 pts) Would this person be able to lift their left leg? Why or why not? (3 pts)}
+
+  A major injury to the cervical region that damages the motor fibers on the spinal cord would certainly have an impact on muscular movement of the legs. If the decussation occurred before the damaged area, then the cervical injury would damage the major posterior tract of the leg that's on the same side of the damage, limiting ability to lift that leg. The anterior tract of the opposite leg would be affected, which may cause some issues for the other leg.  
+
+  However, if the cervical injury affected the motor fibers before they crossed (which I assume is actually the case in this question since the cervical is at the top of the spinal cord), then both anterior and posterior tracts would be affected, meaning the \textbf{leg opposite to the damage would be affected}. I.e., if the left side of the cervical spinal cord was damaged, then the right leg would not be able to be lifted; if the right side was damaged, then the left side would be not be able to be lifted.
 
 
   \minimal{\item[4-A.] You have a patient that has developed symptoms of persistent muscle cramping in which muscles such as their bicep enters states of contraction that are hard to relax most times they try to pick something up. The muscle DOES EVENTUALLY RELAX, although it takes time. Please go into DETAIL describing TWO LIKELY cellular/molecular processes in muscle that COULD be causing these tetanic responses in the muscle. (6 pts)}
 
+  Tetnaic responses (persistent muscle contraction; cramping) are due to failures of the muscle to relax prior to additional contraction. Relaxation occurs in the absence of calcium biding, as it is needed for muscle contraction. The SERCA pump, which needs ATP, is used to transport calcium back into the sarcoplasmic reticulum within the myofibril. This means a failure of the SERCA pump, either by limited available ATP or some other means, would limit expulsion of calcium and thus decreases ability for the muscle to relax. This would be an example of an unfused tetanic contraction, where muscle fibers do not completely relax, thought there could be partial relaxation. 
+
+  Tetanic responses can also occur due to over stimulation caused by a torrent of high frequency impulses, leading to maximal stimulation. This resulted in fused tetanus, where no intermediary relaxation is present. This could be the result of excess calcium being already present the system, increasing ability of twitch summation to reach the maximal contraction state. Overuse (repetitive rapid simulation) of the muscle without reset would increase chance of this happening, even if the SERCA pump is perfectly functional; it just wouldn't have time to clear excess calcium back into the sarcoplasmic reticulum.
+
+  Both failures could result in tetanus remaining until the muscle becomes completely fatigued if stimulation is still present.
+
   \minimal{\item[4-B.] Now imaging you could measure the action potential from the bicep in this individual. Whereas a normal AP in muscle is quite broad (left), the AP you measure is more narrow (right). What two channels are more likely to have potentially caused the change in AP shape? How? (3 pts)}
+
+  The plateau that maintains the polarization is maintained due to the stronger driving force created by the opening the of slow opening \ch{Ca^2+} channels. However, repolarization will occur once there is closing of calcium channels, allowing for the open voltage-gated potassium channels to do their job. So both potassium and calcium channels could change the shape of the action potential.
   
   \minimal{\item[5-A.] In contrast to the cytoplasm (which has 100 nanomolar calcium), the inside of the sarcoplasmic reticulum in muscle fibers has a calcium concentration of 500 micromolar. Assume room temperature conditions. Please calculate the equilibrium potential of calcium given the concentrations above. (3 pts)}
+  \begin{align*}
+      E_{eq,Ca^+} &= \frac{\rrr{RT}}{Z\rrr{F}}\text{\rrr{ln}}{\frac{[Ca]_{o}}{[Ca]_{i}}} & \text{Nernst equation using calcium} \\
+      \SI{500}{\micro M} &= \SI{5e5}{nM} & \text{Conversion to nM}\\
+      \frac{\rrr{\SI{58}{mV}}}{2}\cdot \rrr{\text{log}}\bbb{\frac{\SI{100}{nM}}{\SI{5e5}{nM}}}&=-\SI{107}{mV} & \text{\rrr{Simplified} at \SI{22}{\celsius}}\\
+      \Aboxed{E_{eq,Ca^+} &= -\SI{107}{mV}}
+  \end{align*}
 
   \minimal{\item[5-B.] If you increase the concentration of calcium within the sarcoplasmic reticulum will this increase or decrease the capacity of a given muscle fiber to contract? Explain why? (4 pts)}
 
-  \minimal{\item[5-C.] The EXTRACELLULAR concentration of calcium is approximately 2 millimolar. If we decrease this calcium concentration to 500 micromolar, will this increase or decrease the capacity for an effective muscle contraction. Please show why mathematically with a short description of why you arrived at the answer you diD. (4 pts)}
+  Increase. Ryanodine receptors bind to the calcium inside and open, releasing much more calcium into the myofibril, which is needed to interact with the sarcomere to produce a contraction. If there is low concentration of calcium within, then there are less to bind and get released when needed.
 
-  \minimal{\item There is a time delay between the action potential produced in muscle and the actual muscle contraction as depicted bellow:}
+  \minimal{\item[5-C.] The EXTRACELLULAR concentration of calcium is approximately 2 millimolar. If we decrease this calcium concentration to 500 micromolar, will this increase or decrease the capacity for an effective muscle contraction. Please show why mathematically with a short description of why you arrived at the answer you did. (4 pts)}
+  \begin{align*}
+    \frac{\SI{58}{mV}}{2}\cdot \text{log}\frac{\rrr{\SI{2}{mM}}}{\SI{0.5}{mM}}&=\SI{17.5}{mV} \\ 
+    \frac{\SI{58}{mV}}{2}\cdot \text{log}\frac{\rrr{\SI{0.5}{mM}}}{\SI{0.5}{mM}}&=\SI{0}{mV} \\ 
+    \SI{17.5}{mV} &> \SI{0}{mV} 
+  \end{align*}
+
+  The equilibrium potential is more positive in the case of \SI{2}{mM} than in the case of \SI{0.5}{mM}. A more positive equilibrium potential results in an easier time for the cell to reach another action potential, increasing frequency and thus twitch summation. A stronger muscle contraction would be the result, since there would be no time for muscles to relax.
+
+  \minimal{\item[6.] There is a time delay between the action potential produced in muscle and the actual muscle contraction as depicted bellow:}
 
   \minimal{\item[6-A] In your own words please give a detailed description of why this delay exists including all steps between the AP produced through the END of the muscle contraction. (8 pts)}
 
-  \minimal{\item In your own words, please explain the difference between how the sympathetic vs.\ parasympathetic nervous system affect the HEART during:}
+  Muscle contracts takes time and has multiple steps that cause delays. The motor neuron action potential is a very brief, only a couple ms, which releases ACh that binds to the nicotinic receptors, which open to initiate the muscle action potential and begins the contraction time period.
+
+  During this time, the potential opens voltage gated calcium channels, prolonging the action potential while they remain open. This flow of calcium binds with Ryanodine receptors, which open a flood of calcium from the sarcoplasmic reticulum into the myofibril, next binding with troponin, removing tropomyosin from the actin, allowing for ATP to power the actin contract.
+
+  This marks the peak of contractile response time, around 50 ms. Next, the remaining relaxation time consists of the calcium being actively pumped back into the sarcoplasmic reticulum. This is the point at which twitch summation can occur if another action potential triggers another release calcium into the myofibril again.
+
+  \minimal{\item[7.] In your own words, please explain the difference between how the sympathetic vs.\ parasympathetic nervous system affect the HEART during:}
   \begin{itemize}
     \minimal{\item[A.] A bear chasing you in Olympic national park (4 pts):}
+
+    This scenario would heavily involve the sympathetic nervous system. This run for your life would increase blood flow to muscles by increasing your heart rate, heart contraction, and blood pressure. In general, this is accomplished by preganglionic neurons releasing ACh, which activates nicotinic ACh receptors, which triggers the release of norepinephrine, activating adrenergic receptors (Beta1 \& alpha1 excitatory in case of heart) on peripheral target tissues.
+
+
+
     \minimal{\item[B.] Hanging out at home after taking an exam in neurophysiology (4 pts):}
+
+    This scenario hopefully describes a situation where your parasympathetic nervous system is active. During this relaxing time your body would try to conserve energy constricting airways, decreasing force of heart contractions, and decreasing heart rate. The difference here is that the response is done via the vagus nerve. Here acetylcholine is released onto the heart muscle activation muscarinic (M2) GPCRs that act to cause inhibitory effects that will decrease output of the hart.
   \end{itemize}
 
   \minimal{\item[7-C.] Briefly, how does this differ from what happens at the smooth muscle of the bladder wall during the A and B scenario (4 pts)?}
 
-  \minimal{\item The following is a representative image of a neuromuscular junction.}
+  The bladder has typically the inverse. The sympathetic will act to decrease its activity while you're running, since peeing or sexual activity is not of the importance, but while relaxing then the bladder will need to be active. For example, the bladder has the Beta3 inhibitory receptor, which triggers relaxation in response to norepinephrine when released the sympathetic nervous system. Meanwhile, the parasympathetic has the M3 muscarinic receptor on it, causing contraction.
+
+  \minimal{\item[8.] The following is a representative image of a neuromuscular junction.}
   
   \minimal{\item[8-A.]What kind of ion channel(s) produce the changes in membrane potential shown at the top right? (2 pt)}
 
+  \ch{Ca^2+} channels open in response to motor nerve action potential, triggering an \textbf{outflow of the \ch{Ca^2+}} ions from the extracellular fluid into presynaptic neuron's cytosol.
+
   \minimal{\item[8-B.] What kind of ion channel(s) produce the changes in current shown at the bottom right? (2 pt)}
+
+  The \ch{Ca^2+} causes ACh to be released by exocytosis, triggering an EPP (end plate polarization, depolarizing), due to trigger of an \textbf{influx of sodium} ions.
 
   \minimal{\item[8-C.] Where is the cell body from the motor neuron innervating the muscle located? (Please circle the correct answer) (2 pt)}
 
+  \begin{center}
+    \textbf{Ventral Horn}
+  \end{center}
+  
   \minimal{\item[8-D.] Where does the motor neuron exit the spinal cord? (Please circle the correct answer) (2 pt)}
 
-  \minimal{\item The following image shows a current (red arrow) produced by a sensory receptor in the periphery.}
+  \begin{center}
+    \textbf{Ventral Root}
+  \end{center}
+
+  \minimal{\item[9.] The following image shows a current (red arrow) produced by a sensory receptor in the periphery.}
   
   \minimal{\item[9-A.] Assuming the resistance of this receptor is 5 megaohms, what is the driving force for the ions that flow through this channel? (4 pts)}
+  \begin{align*}
+    V&=IR\\
+    V&=(\SI{-5e-9}{A})(\SI{5e6}{}~\Omega )\\
+    \Aboxed{V_{df}&=-\SI{25}{mV}}
+  \end{align*}
 
   \minimal{\item[9-B.] Imagine this receptor is only permeable to sodium and the original resting membrane potential of this cell was -50 mV prior to channel opening. What is the equilibrium potential for sodium? (Use the driving force calculated above)? Show your work. (4 pts)}
+  \begin{align*}
+    V_{df}&=V_m-E_{na}\\
+    \SI{-25}{mV} &= \SI{-50}{mV}-E_{na}\\
+    \SI{25}{mV} &= -E_{na}\\
+    \Aboxed{E_{na} &= \SI{-25}{mV} }
+  \end{align*}
+  
 
-  \minimal{\item Please answer to the following questions. In the bellow graph assume an ENa+ = +60mV and EK+ = -90 mV. Assume room temperature for all experiments.}
+  \minimal{\item[10.] Please answer to the following questions. In the bellow graph assume an ENa+ = +60mV and EK+ = -90 mV. Assume room temperature for all experiments.}
 
   \minimal{\item[10-A.] Please draw a new graph on top of the graph below if we change out Na+ concentrations such that Na+ outside the cell = 5mM and Na+ inside the cell = 1mM\@? Explain your new graph. (2 pts)}
+  \begin{align*}
+    \frac{\SI{58}{mV}}{1}\cdot \text{log}\frac{\SI{5}{mM}}{\SI{1}{mM}}&=\SI{40.5}{mV} \\ 
+  \end{align*}
+
+  \begin{center}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,263); %set diagram left start at 0, and has height of 263
+
+%Straight Lines [id:da16011518847864004] 
+\draw    (169.6,199) -- (450.6,199) (195.6,195) -- (195.6,203)(221.6,195) -- (221.6,203)(247.6,195) -- (247.6,203)(273.6,195) -- (273.6,203)(299.6,195) -- (299.6,203)(325.6,195) -- (325.6,203)(351.6,195) -- (351.6,203)(377.6,195) -- (377.6,203)(403.6,195) -- (403.6,203)(429.6,195) -- (429.6,203) ;
+%Straight Lines [id:da6331484236419908] 
+\draw    (169.6,199) -- (169.6,209.8) ;
+%Straight Lines [id:da9468556493718451] 
+\draw    (450.6,198.8) -- (450.6,209.6) ;
+%Straight Lines [id:da24916388579329574] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (142,140) -- (452.6,140) ;
+%Straight Lines [id:da9306867894592372] 
+\draw    (120.6,178.8) -- (120.6,98.8) ;
+%Straight Lines [id:da5216250289907107] 
+\draw    (120.6,98.8) -- (110.6,98.8) ;
+%Straight Lines [id:da23662949375459186] 
+\draw    (120.6,178.8) -- (111.6,178.8) ;
+%Straight Lines [id:da29778043966934653] 
+\draw    (119.6,140.8) -- (113.6,140.8) ;
+%Straight Lines [id:da8763352921223286] 
+\draw    (119.6,69.8) -- (119.6,32.8) ;
+%Straight Lines [id:da45611768180136814] 
+\draw    (119.6,32.8) -- (110.6,32.8) ;
+%Straight Lines [id:da3161554804894263] 
+\draw    (119.6,69.8) -- (110.6,69.8) ;
+%Straight Lines [id:da31256679777863217] 
+\draw    (140,70) -- (159.6,70) ;
+%Straight Lines [id:da3583142606073797] 
+\draw    (159.6,70) -- (159.6,29.8) ;
+%Straight Lines [id:da27061197847465945] 
+\draw    (159.6,29.8) -- (450.6,29.8) ;
+%Curve Lines [id:da029122297555634558] 
+\draw [draw opacity=0.42]   (142,140) .. controls (167.6,139.2) and (159.6,141.2) .. (178.6,171.2) .. controls (197.6,201.2) and (192.6,94.2) .. (448.6,99.8) ;
+%Curve Lines [id:da28295113286902884] 
+\draw [color=rrr  ,draw opacity=1 ]   (142,140) .. controls (167,136.4) and (167.68,140.1) .. (177.68,156.1) .. controls (187.68,172.1) and (215.68,135.1) .. (280.68,118.1) .. controls (345.68,101.1) and (338.6,101.8) .. (448.6,99.8) ;
+
+
+  
+  % Text Node
+  \draw (304.13,211) node [anchor=north] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{32.47pt}\setlength\topsep{0pt}
+    \begin{center}
+      time (ms)
+    \end{center}
+    
+  \end{minipage}};
+  % Text Node
+  \draw (169.6,212.8) node [anchor=north] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+    \begin{center}
+      0
+    \end{center}
+    
+  \end{minipage}};
+  % Text Node
+  \draw (450.6,212.6) node [anchor=north] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{10.132000000000001pt}\setlength\topsep{0pt}
+    \begin{center}
+      11
+    \end{center}
+    
+  \end{minipage}};
+  % Text Node
+  \draw (108.6,98.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+    \begin{flushright}
+      2
+    \end{flushright}
+    
+  \end{minipage}};
+  % Text Node
+  \draw (109.6,178.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\mbox{-}2};
+  % Text Node
+  \draw (101.6,138.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{22.156644000000004pt}\setlength\topsep{0pt}
+    \begin{center}
+      1 (nA)
+    \end{center}
+    
+  \end{minipage}};
+  % Text Node
+  \draw (108.6,32.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {+20};
+  % Text Node
+  \draw (108.6,69.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\mbox{-}70};
+  % Text Node
+  \draw (98.6,51.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{31.132644pt}\setlength\topsep{0pt}
+    \begin{center}
+      $\displaystyle V_{m}$ (mV)
+    \end{center}
+    
+  \end{minipage}};
+  % Text Node
+  \draw (111.6,140.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+    \begin{flushright}
+      0
+    \end{flushright}
+    
+  \end{minipage}};
+  
+  
+\end{tikzpicture}
+  \end{center}
+
+  The driving force of sodium is changed from the control (40.5 mV < 60 mV). This means sodium will still flow in the cell generating a negative current like in the control, but with a reduced amplitude.    
 
   \minimal{\item[10-B.] Please draw a new graph on top of the graph below if we change out K+ concentrations such that K+ outside the cell = 150mM and K+ inside the cell = 5mM\@? Explain your new graph. (2 pts)}
+  \begin{align*}
+    \frac{\SI{58}{mV}}{1}\cdot \text{log}\frac{\SI{150}{mM}}{\SI{5}{mM}}&=\SI{85.7}{mV} \\ 
+    V_{df}&=\SI{-65.7}{mV}
+  \end{align*}
 
-  \minimal{\item What ion channel is responsible for the depolarization phase of the AP\@? (2 pts)}
+  \begin{center}
+    
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,263); %set diagram left start at 0, and has height of 263
+
+%Straight Lines [id:da16011518847864004] 
+\draw    (169.6,199) -- (450.6,199) (195.6,195) -- (195.6,203)(221.6,195) -- (221.6,203)(247.6,195) -- (247.6,203)(273.6,195) -- (273.6,203)(299.6,195) -- (299.6,203)(325.6,195) -- (325.6,203)(351.6,195) -- (351.6,203)(377.6,195) -- (377.6,203)(403.6,195) -- (403.6,203)(429.6,195) -- (429.6,203) ;
+%Straight Lines [id:da6331484236419908] 
+\draw    (169.6,199) -- (169.6,209.8) ;
+%Straight Lines [id:da9468556493718451] 
+\draw    (450.6,198.8) -- (450.6,209.6) ;
+%Straight Lines [id:da24916388579329574] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (142,140) -- (452.6,140) ;
+%Straight Lines [id:da9306867894592372] 
+\draw    (120.6,178.8) -- (120.6,98.8) ;
+%Straight Lines [id:da5216250289907107] 
+\draw    (120.6,98.8) -- (110.6,98.8) ;
+%Straight Lines [id:da23662949375459186] 
+\draw    (120.6,178.8) -- (111.6,178.8) ;
+%Straight Lines [id:da29778043966934653] 
+\draw    (119.6,140.8) -- (113.6,140.8) ;
+%Straight Lines [id:da8763352921223286] 
+\draw    (119.6,69.8) -- (119.6,32.8) ;
+%Straight Lines [id:da45611768180136814] 
+\draw    (119.6,32.8) -- (110.6,32.8) ;
+%Straight Lines [id:da3161554804894263] 
+\draw    (119.6,69.8) -- (110.6,69.8) ;
+%Straight Lines [id:da31256679777863217] 
+\draw    (140,70) -- (159.6,70) ;
+%Straight Lines [id:da3583142606073797] 
+\draw    (159.6,70) -- (159.6,29.8) ;
+%Straight Lines [id:da27061197847465945] 
+\draw    (159.6,29.8) -- (450.6,29.8) ;
+%Curve Lines [id:da029122297555634558] 
+\draw[draw opacity=0.42 ]    (142,140) .. controls (167.6,139.2) and (159.6,141.2) .. (178.6,171.2) .. controls (197.6,201.2) and (192.6,94.2) .. (448.6,99.8) ;
+%Curve Lines [id:da28295113286902884] 
+\draw [color=rrr ,draw opacity=1 ]  (142,140) .. controls (168.78,137.1) and (166.78,154.1) .. (178.6,171.2) .. controls (190.42,188.3) and (226.78,179.1) .. (450.78,180.1) ;
+
+% Text Node
+\draw (304.13,211) node [anchor=north] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{32.47pt}\setlength\topsep{0pt}
+\begin{center}
+time (ms)
+\end{center}
+
+\end{minipage}};
+% Text Node
+\draw (169.6,212.8) node [anchor=north] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+\begin{center}
+0
+\end{center}
+
+\end{minipage}};
+% Text Node
+\draw (450.6,212.6) node [anchor=north] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{10.132000000000001pt}\setlength\topsep{0pt}
+\begin{center}
+11
+\end{center}
+
+\end{minipage}};
+% Text Node
+\draw (108.6,98.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+\begin{flushright}
+2
+\end{flushright}
+
+\end{minipage}};
+% Text Node
+\draw (109.6,178.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\mbox{-}2};
+% Text Node
+\draw (101.6,138.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{22.156644000000004pt}\setlength\topsep{0pt}
+\begin{center}
+1 (nA)
+\end{center}
+
+\end{minipage}};
+% Text Node
+\draw (108.6,32.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {+20};
+% Text Node
+\draw (108.6,69.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\mbox{-}70};
+% Text Node
+\draw (98.6,51.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{31.132644pt}\setlength\topsep{0pt}
+\begin{center}
+$\displaystyle V_{m}$ (mV)
+\end{center}
+
+\end{minipage}};
+% Text Node
+\draw (111.6,140.8) node [anchor=east] [inner sep=0.75pt]  [font=\scriptsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+\begin{flushright}
+0
+\end{flushright}
+
+\end{minipage}};
+
+
+\end{tikzpicture}
+
+  \end{center}
+
+  Normally there is a much larger amount of sodium in the cell, rather than out. So there will be a strong driving force into the cell for potassium as long as the concentrations are held at the given amount.
+
+  \minimal{\item[11.] What ion channel is responsible for the depolarization phase of the AP\@? (2 pts)}
+
+  \textbf{Voltage gated sodium channels}
   
-  \minimal{\item Which branch of the autonomic nervous system has a long preganglionic axon? (2 pts)}
+  \minimal{\item[12.] Which branch of the autonomic nervous system has a long preganglionic axon? (2 pts)}
+
+  \textbf{Parasympathetic}
   
-  \minimal{\item Which ion is most crucial for the process of vesicular fusion/synaptic release? (2 pts)}
+  \minimal{\item[13.] Which ion is most crucial for the process of vesicular fusion/synaptic release? (2 pts)}
   
-  \minimal{\item Please read the attached PDF\@.}
+  \textbf{Calcium}
+
+  \minimal{\item[14.] Please read the attached PDF\@.}
   
   \minimal{\item[14-A.] What questions did the authors wanted to address in this paper? (3 pts)}
+
+  They wanted to investigate whether a defect that causes myasthenia gravis was caused due to the nerve terminal, the postsynaptic region of the muscle, or both. 
   
   \minimal{\item[14-B.] What techniques did they use to accomplish the experiments presented? (3 pts)}
 
+  The examined acetylcholine receptor sites during biopsy by eliciting minimal manual electrical stimuli applied to the surface of the muscle. They also remove bundles of fibers containing neuromuscular junctions and dissected, viewed under microscope, and processed for autoradiography and scintillation counting. A toxin, \(\alpha \)-bungaro, was used to label the ACh receptor sites.
+
   \minimal{\item[14-C.] What were the main findings of the paper? In detail, discuss how this relates to the motor unit we learned about in class. What implications do their findings have for control of motor movement? (6 pts)}
 
+  Their main findings show a deficit in junctional ACh receptors in patients affected with myasthenia gravis without proportional decreases in postsynaptic area.
+
+  This implies the failure ACh receptors to trigger the end plate potential, meaning no influx of sodium ions, no muscle fiber depolarization, and thus no needed cascade resulting in muscle contraction. These findings specifically implicated ACh receptors as the failure in the postsynaptic region, linking them as a vital step in the neuromuscular junction. 
+
   \minimal{\item[14-D.] For patients suffering from this disease, why are acetylcholinesterase inhibitors prescribed? (3 pts)}
+
+  Acetylcholinesterase inhibitors stop the enzyme from breaking down ACh. If patients are suffering from broken, reduced, or dysfunctional receptors, then decreasing activity of this enzyme gives the receptors more time to bind with the neurotransmitter. 
 \end{enumerate}
 \end{document}
