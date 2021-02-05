@@ -27,8 +27,6 @@
   - [Problem Set 1 (Blank)](problem-set-1.pdf)
   - [Problem Set 1 (Answer Key)](problem-set-1-answers.pdf)
 
-
-
 ## **Weekly Schedule**
 
 The following schedule is tentative and may be changed. Originally generated using the syllabus. All changes will be noted here.
@@ -60,6 +58,7 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 - [Problem Set 1 (Blank)](problem-set-1.pdf)
 - [Problem Set 1 (Answer Key)](problem-set-1-answers.pdf)
+
 ---
 
 ### **Week 4** (Jan 26-28)
@@ -73,10 +72,10 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 ### **Week 5** (Feb 2-4)
 
-| Lecture | Topic        |
-| :-----: | :----------- |
-| Review  | Midterm Exam |
-| Midterm | Midterm      |
+| Lecture | Topic                  |
+| :-----: | :--------------------- |
+| Review  | ---                    |
+| Midterm | [Midterm](midterm.pdf) |
 
 ---
 
