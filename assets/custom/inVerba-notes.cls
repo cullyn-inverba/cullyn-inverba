@@ -68,7 +68,7 @@
 \RequirePackage{enumitem}
     \setlist[itemize]{itemsep=-0.3ex,topsep=-0.3ex,partopsep=-0.3ex}
     \setlist[itemize,1]{
-        label=\small\(\triangleright\), 
+        label=\small\(\color{minor}\bullet\), 
         leftmargin=\dimexpr26pt -1 em
     }
     \setlist[itemize,2]{
