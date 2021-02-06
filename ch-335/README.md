@@ -116,8 +116,8 @@ Relevant Khan Academy Videos
 
 ### **Week 4** (Jan 25-31) **Mass Spectrometry and Infrared Spectroscopy**
 
-| Strongin | Lecture Notes |   Mini Quiz    |
-| :------: | :-----------: | :------------: |
+| Strongin |     Lecture Notes      |           Mini Quiz           |
+| :------: | :--------------------: | :---------------------------: |
 |  16, 17  | [View pdf](ch-335.pdf) | [Explanations](mini-quiz.pdf) |
 
 Learning Objectives
@@ -141,11 +141,22 @@ Relevant Khan Academy Videos
 
 Learning Objectives
 
-- N/A
+- NMR Spectroscopy
+- Determining number of NMR signals
+- 1H NMR Chemical Shifts
+- 1H NMR splitting
 
 Relevant Khan Academy Videos
 
-- N/A
+- [Introduction to infrared spectroscopy](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/infrared-spectroscopy-theory/v/introduction-to-infrared-spectroscopy)
+- [Bonds as springs](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/infrared-spectroscopy-theory/v/bonds-as-springs)
+- [IR spectra for hydrocarbons](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/infrared-spectroscopy-theory/v/ir-spectra-for-hydrocarbons)
+- [IR signals for carbonyl compounds](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/infrared-spectroscopy-theory/v/ir-signals-for-carbonyl-compounds)
+- [Isotopes and mass spectrometry](https://www.khanacademy.org/science/chemistry/x822131fc:untitled-537/mass-spectrometry/a/isotopes-and-mass-spectrometry)
+- [Introduction to proton NMR](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/proton-nmr/v/introduction-to-proton-nmr)
+- [Nuclear shielding](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/proton-nmr/v/nuclear-shielding)
+- [Chemical equivalence](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/proton-nmr/v/chemical-equivalence)
+- [Chemical shift](https://www.khanacademy.org/science/organic-chemistry/spectroscopy-jay/proton-nmr/v/chemical-shift)
 
   ***
 
