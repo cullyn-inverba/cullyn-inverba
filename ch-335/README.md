@@ -160,7 +160,7 @@ Relevant Khan Academy Videos
 
   ***
 
-### **Week 6** (Feb 8-14) **???**
+### **Week 6** (Feb 8-14) **NMR, Reactions of Free Radicals**
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |

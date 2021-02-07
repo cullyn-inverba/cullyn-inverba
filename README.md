@@ -81,37 +81,3 @@ It's not necessary to use git to get the most out of this repository, most of it
 
 [![What is Git It? How to use Git and Github](http://img.youtube.com/vi/HkdAHXoRtos/0.jpg)](http://www.youtube.com/watch?v=HkdAHXoRtos "What is Git It? How to use Git and Github")
 
-## Using LaTeX
-
-- [Text instructions for the basics to be explained]
-
-- [Video guide to using my notes template to be made]
-
-## Personal Goals for This Repository
-
-- [ ] **Create cleaner, more stabilized versions of my custom class and style preferences.**
-  - [ ] Create custom classes for essays, articles, notes.
-    - [x] inVerba-notes&mdash;report class modified for extensive notes.
-    - [ ] inVerba-essay&mdash;article class modified for traditional essays.
-    - [ ] inVerba-article&mdash;article class modified for scientific papers/reports.
-  - [x] ~~Clean up .sty file.~~ (I think it's better to make separate custom classes)
-  - [x] Establish primary dark-theme.
-  - [ ] Create optional light-theme.
-  - [x] Create basic theme for printing purposes.
-  - [ ] Leave sufficient comments for optional customization by others.
-  - [x] Find a better integrated spell/grammar checker.
-- [x] **Make the repository more accessible.**
-  - [x] Create a more detailed README for the repository in general.
-  - [x] Establish a more standardized note taking structure.
-  - [x] ~~Create introduction to note structure.~~ (I think structure speaks for itself; guide was removed.)
-  - [x] Create a discord server for each winter term classes.
-  - [x] Create READMEs for each class (need syllabus for each class first).
-- [ ] **Make it easier for others to contribute.**
-  - [ ] Create more ways to easily share and discuss class problems.
-    - [x] Hotkeys for screenshots, screenshares, and instant gifs complete.
-    - [x] Create/find guide to help others use git.
-    - [ ] ??? More still needs to be done to achieve this, but I'm not sure what yet.
-  - [ ] Create a text guide on using latex templates for class assignments, possibly using overleaf.
-  - [ ] Create videos tutorials about LateX to encourage others to use it.
-    - [ ] Learn basics of manim.
-    - [ ] Publish at least one video, probably a getting started with latex + vscode tutorial.
