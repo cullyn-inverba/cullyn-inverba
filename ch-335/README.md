@@ -133,11 +133,11 @@ Relevant Khan Academy Videos
 
   ***
 
-### **Week 5** (Feb 1-7) **Midterm 1, ???**
+### **Week 5** (Feb 1-7) **Midterm 1, NMR Spectroscopy**
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|  17, 18  |  _View pdf_   | _Explanations_ |
+|  17, 18  |  [View pdf](ch-335.pdf)   | _Explanations_ |
 
 Learning Objectives
 
@@ -168,11 +168,16 @@ Relevant Khan Academy Videos
 
 Learning Objectives
 
-- N/A
+ - 1H NMR Chemical Shifts
+ - 1H NMR splitting
+ - What are radicals
+ - Chlorination and bromination of radicals
+ - Selective allylic bromination using NBS
+ - Anti-Markonikov addition of HBr to alkenes
 
 Relevant Khan Academy Videos
 
-- N/A
+- [Free radial reactions](https://www.khanacademy.org/science/organic-chemistry/substitution-elimination-reactions/free-radical-reaction-alkanes/v/free-radical-reactions)
 
   ***
 
