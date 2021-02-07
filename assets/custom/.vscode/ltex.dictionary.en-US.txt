@@ -231,3 +231,6 @@ actin
 neurophysiology
 muscarinic
 autoradiography
+Wavenumber
+wavenumbers
+halides

@@ -1,10 +1,105 @@
-%%%%%%%%%%% 17: Mass Spectrometry and Infrared Spectroscopy %%%%%%%%%%%
-%\begingroup
 \chapter{17: Mass Spectrometry and Infrared Spectroscopy}\label{17: Mass Spectrometry and Infrared Spectroscopy}
-\begin{adjustwidth}{1cm}{1cm}
-  \dots
-\end{adjustwidth}
-
-
-%\endgroup
-%%%%%%%%%%% 17: Mass Spectrometry and Infrared Spectroscopy %%%%%%%%%%%
+\section{Infrared Spectrometry}\label{Infared Spectrometry}
+\begin{itemize}
+  \item \ddd{IR spectroscopy}: measurement of the interaction of infrared radiation with matter by absorption, emission, or reflection.
+  \begin{itemize}
+    \item Used to study and identify chemical substances or functional groups. 
+    \item Uses an infrared spectrometer to produce an infrared spectrum.
+  \end{itemize}
+  \item The infrared spectrum is plotted on a graph with absorbance (or transmittance) vs.\ frequency.
+  \item \ddd{Wavelength} \(\lambda \): the distance over which a wave shape repeats.
+  \item \ddd{Frequency} \(\nu, f \): number of occurrences per unit of time (period; \(T\)), i.e., \(\nu = \dfrac{1}{T}\) 
+  \item \(\lambda \) and \(\nu \) are inversely proportional:
+  \begin{align*}
+    c &= \lambda\nu &
+    \frac{c}{\lambda} &= \nu &
+    \lambda &\propto \frac{1}{\nu} &
+    c\left(\frac{1}{\lambda}\right) &= \nu &
+    c\tilde{\nu} &= \nu
+  \end{align*}
+  \item \ddd{Wavenumber} \(\tilde{\nu}=\si{\per\cm} \): wave number is the spatial frequency of a wave, rather than number of waves per distance, making \(\tilde{\nu} \propto \nu \)
+  \begin{itemize}
+    \item Energy: \(E = h\nu \); \(h\)= Planck's constant.
+    \item Thus, \emph{\(E \propto \nu \propto \tilde{\nu}\)}
+    \item Charts usually use frequency represented in wavenumbers.
+  \end{itemize}
+  \item Bonds can be thought of as springs that are constantly moving. IR graphs exploits the fact that molecules absorb frequencies that are characteristic of their structure.
+  \begin{itemize}
+    \item Peaks in the IR spectrum arise when a bond absorb energy that matches its vibrational energy, provides it has a dipole moment. 
+    \item The \emph{stronger the bond}, the faster its vibrations and the \emph{greater the \(\tilde{\nu} \)}.
+    \item The \emph{smaller the atoms} in a bond, the faster its vibrations and the \emph{greater the \(\tilde{\nu} \)}.
+  \end{itemize}
+  \item Calculating \(\tilde{\nu} \):
+  \begin{equation*}
+    \tilde{\nu} = \frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}
+  \end{equation*}
+  Where \(k\) is the spring constant for the bond, \(c\) is the speed of light, and \(\mu \) is the relative mass.
+  \item A spectrograph is often interpreted as having two regions:
+    \begin{itemize}
+      \item \ddd{Functional group region}: \(\geq 1500~\tilde{\nu} \).
+      \begin{itemize}
+        \item Most work done in this class will be in functional group region.
+        \item Shapes of the troughs help determine compounds in functional group region:
+          \begin{itemize}
+            \item \ch{-OH} has a large wide ``tongue shape''.
+            \item \ch{-COOH} has a wide and staggered ``beard shape''.
+            \item \ch{R-NH2} has a double ``fang shape''.
+            \item \ch{R2-NH} has a single ``fang shape''.
+          \end{itemize}
+      \end{itemize}
+      \item \ddd{Fingerprint region}: \(< 1500~\tilde{\nu} \).
+        \begin{itemize}
+          \item Generally there are many troughs which form intricate patters, which can used to determine certain compounds.
+        \end{itemize}
+    \end{itemize}
+  \item \ddd{Conjugation}: alternating \(\sigma \) and \(\pi \) bonds. Allows for electron delocalization which in general lowers overall energy of the molecule and increases stability.
+    \begin{itemize}
+      \item This leads to \emph{lower \(\tilde{\nu} \)} due to the electron delocalization.
+    \end{itemize}
+  \item Strong inductive effects towards electronegative atoms can retain double bond character if it is near one. This double bond ``sealing'' increases \(\tilde{\nu} \) relative to resonance found in anhydrides due to increased double bond character.
+    \begin{itemize}
+      \item Inversely, inductive effects towards double bonded oxygen decrease \(\tilde{\nu} \) due to decreased double bond character.
+    \end{itemize}
+  \item Carboxylic acid has even more increased resonance if it close to another one, which decreases overall double bond character and thus decreases \(\tilde{\nu} \). 
+    \begin{itemize}
+      \item Likewise, with \ch{NH2} rather than \ch{OH}, then there is even more of a tendency to enter resonance.
+    \end{itemize}
+\end{itemize}
+  
+\section{Mass Spectrometry}\label{Mass Spectrometry}
+\begin{itemize}
+  \item \ddd{Mass Spectrometry (MS)}: an analytical technique that is used to measure the mass-to-charge ratio of ions; typically presented as a mass spectrum.
+    \begin{itemize}
+      \item \ddd{Mass-to-charge ratio} \(\frac{m}{Q}\): a physical quantity that is used in electrodynamics of charged particles; two particles with the same mass-to-charge ratio move in the same path in a vacuum when subjected to same magnetic field.
+      \item \ddd{Mass spectrum}: an intensity of \(\frac{m}{z}\) (a dimensionless unit of \(\frac{m}{Q}\)) representing chemical analysis; used to represent the distribution of ions by mass in a sample.
+    \end{itemize}
+  \item Basic technique involves taking a sample, vaporizing it to gas form, then bombarding the ions with high energy electrons, then analyzing the unstable radical cations in order to determine relative abundance of ions by mass.
+    \begin{itemize}
+      \item \ddd{Molecular ion peak} \(M^+\): corresponds to that of the molecule with all of its atoms intact, rather than a fragment, which themselves cause other minor peaks.
+      \item \ddd{Base peak}: The tallest peak, often is the same as the molecular ion peak, but not always.
+      \item \ddd{M + 1 peak}: peaks that are due to molecular ions containing heavier isotopes of their atoms.
+        \begin{itemize}
+          \item E.g., relative intensity of M+1 peak divided by 1.1 gives you the number of carbon atoms if the M peak has an intensity of 100\%.
+        \end{itemize}
+      \item \ddd{M + 2 peak}: used to determine if there are halogens in the molecule.
+        \begin{itemize}
+          \item Relative natural abundance of chlorine: 3:1
+          \item Relative natural abundance of bromine: 1:1
+          \item Thus, roughly equal M + 2 peaks signal for Br, while uneven peaks signal for Ch.
+        \end{itemize}
+      \item The atoms or molecules can then be identified by correlating known masses of the molecule or atoms to the identified masses through characteristic fragmentation patterns.
+      \item Molecules containing only \ttt{C, H and/or O} atoms will have an \ttt{even molecular weight}.
+      \item \ddd{Nitrogen rule}: molecules with an \fff{odd number of nitrogen} atoms will have an \fff{odd molecular weight}.
+      \item In general, one can do the following to find the molecular formula:
+        \begin{enumerate}
+          \item Assign M, M + 1, and M + 2 peaks.
+          \item Multiple peaks by what ever factor makes M's peak 100\%.
+          \item Use M to determine if nitrogen is present, most of the time there will just be 1 if there is.
+          \item Estimate number of carbons by dividing M + 1 relative abundance by 1.1.
+          \item Determine if Cl or Br is present by comparison of M + 2 peaks. (use lower number isotope for calculation)
+          \item Determine if oxygen is needed after accounting for halides and nitrogen. 
+          \item Add remaining hydrogens needed to reach M's amu.
+        \end{enumerate}
+    \end{itemize}
+  
+\end{itemize}
