@@ -173,7 +173,6 @@ commissures
 myelinated
 interhemispheric
 covariation
-callosotomized
 splenium
 aneuploidy
 acrocentric
