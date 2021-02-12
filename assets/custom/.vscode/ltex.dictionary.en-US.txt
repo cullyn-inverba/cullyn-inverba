@@ -245,3 +245,10 @@ acidemia
 upfield
 Deshielded
 deshielding
+homolytic
+homolysis
+carbanions
+Captodative
+EDG
+allyl
+halogenation

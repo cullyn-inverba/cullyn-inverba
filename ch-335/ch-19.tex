@@ -1,12 +1,84 @@
-
-
-%%%%%%%%%%% 19: Free Radical Reactions %%%%%%%%%%%
-%\begingroup
 \chapter{19: Free Radical Reactions}\label{19: Free Radical Reactions}
-\begin{adjustwidth}{1cm}{1cm}
-  \dots
-\end{adjustwidth}
+\section{Free Radical Basics/Review}\label{Free Radical Basics/Review}
+\begin{itemize}
+    \item \ddd{Free radical}: a highly reactive intermediate atom, molecule, or ion that has an unpaired valence electron formed upon homolytic cleavage, or homolysis. 
+      \begin{itemize}
+        \item Homolytic cleavage occurs when breaking a covalent bond, leaving each fragment with \emph{one electron}.
+        \item Breaking bonds require energy, so \emph{heat (\(\Delta \)) or light (\(h\nu \))} is needed for homolysis to take place.
+        \item Radical forming reactions proceed in \emph{nonpolar solvents}, since radicals do not have a charge.
+        \item No rearrangements are possibile with radicals.
+      \end{itemize}
+    \item \ddd{Bond-dissociation energy (BDE)}: one measure of strength of a chemical bond. 
+      \begin{itemize}
+        \item BDE is based on energy required for homolytic bond cleavage:
+          \begin{itemize}
+            \item Higher BDE = less stable radical formed.
+            \item Lower BDE = more stable radical.
+          \end{itemize}
+      \end{itemize}
+    \item Carbon radical geometry is not perfectly trigonal planar, instead it is a hybrid between trigonal pyramidal and trigonal planar.
+    \item Compounds bearing \ch{C-H} bonds react with radicals in the following order, reflecting \ch{C-H} BDE\@:
+      \begin{itemize}
+        \item Least stable \(\leftarrow \) \emph{\ch{CH3^.} < \ang{1}C < \ang{2}C < \ang{3}C < benzyl < allyl} \(\rightarrow \) most stable
+      \end{itemize}
+    \item \ddd{Captodative effect}: the stabilization of radicals by synergistic effect of electron-withdrawing group (EWG\@; ``captor'' group) and an electron-donating group (EDG\@; ``dative'' group)
+      \begin{itemize}
+        \item Free radical can be \emph{stabilized by resonance }in a manner directly analogous to that of carbanions and carbocations.
+      \end{itemize} 
+\end{itemize}
 
-
-%\endgroup
-%%%%%%%%%%% 19: Free Radical Reactions %%%%%%%%%%%
+\section{Radical Halogenation of Alkanes}\label{Radical Halogenation of Alkanes}
+\begin{itemize}
+    \item \ddd{Free-radical halogenation}: a type of halogenation typical of alkanes and alkyl-substituted aromatics under application of UV light that proceeds by a free-radical chain mechanism.
+    \item General mechanism (using chlorination of methane as example):
+      \begin{itemize}
+        \item \ddd{Initiation:} homolysis of halogen by light or heat forming free radicals:
+        
+        \medskip
+        \schemestart{}
+          \chemfig{Cl-Cl}
+          \arrow{->[\(h\nu \)]}
+          \ch{Cl.} + \ch{Cl.}
+        \schemestop{}
+        \bigskip
+        
+        \item \ddd{Chain propagation}: a hydrogen is pulled off the carbon leaving a methyl radical, then the methyl radical pulls a \ch{Cl.} from \ch{Cl2}:
+        
+        \medskip
+        \schemestart{}
+          \ch{CH4} + \ch{Cl.} 
+          \arrow{}[0,.8]
+          \ch{CH3.} + \ch{H-Cl} 
+          \arrow{}[0,.8] 
+          \ch{CH3.} + \ch{Cl-Cl}
+          \arrow{}[0,.8]
+          \ch{CH3-Cl} + \ch{Cl.}
+        \schemestop{}
+        \bigskip
+        
+        \begin{itemize}
+          \item If there is sufficient chlorine, then other products could be formed, for example a continuation to \ch{CH2Cl2}.
+        \end{itemize}
+        \item \ddd{Chain termination}: recombination of two free radicals, needed to stop the reaction. Could result in two methyl radicals forming an impurity in final mixture. Ideally, however, the following net reaction occurs:
+        
+        \medskip
+        \schemestart{}
+          \ch{CH4}
+          \arrow{->[\ch{Cl2}][{\(h\nu \)}]}
+          \ch{CH3-Cl} + \ch{H-Cl}
+        \schemestop{}
+        \bigskip
+        
+      \end{itemize}
+    \item Radical halogenation allows for the addition of a halogen on an alkene or other substituent, thus allowing for further reactions to take place on such normally unreactive substituents (e.g., haloalkanes) which are often needed in other reactions.
+    \item \ddd{Statistical product distribution}: when all hydrogens in a substituent are equivalent and have equal chance of being replaced.
+      \begin{itemize}
+        \item Hydrogens that form \ch{CH2} or \ch{CH} will be preferred on propane and above for alkanes.
+      \end{itemize}
+    \item The reactivity of different halogens varies considerably.
+      \begin{itemize}
+        \item F > Cl > Br > I.
+        \item Fluorine is difficult to control (too exothermic), with chlorine moderate to fast, bromine slow (with high UV levels) and iodine practically nonexistent (since it's endothermic). 
+        \item Use of bromine will increase BDE preference due to lesser thermodynamic activation energy available.
+      \end{itemize}
+\end{itemize}
