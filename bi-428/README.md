@@ -15,7 +15,7 @@
    alt="chat on Discord">
     </a>
      <a href="week-2.pdf">
-    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 4 Done-sucess?logo=latex" >
+    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 6 Done-sucess?logo=latex" >
     </a>
 </p>
 
@@ -96,7 +96,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-| 10,11,13,14  | Journal Article |
+| 10,11,13,14  | [Journal Article](week-6.pdf) |
 
 ---
 
