@@ -164,7 +164,7 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|  18, 19  |  _View pdf_   | _Explanations_ |
+|  18, 19  |  [View pdf](ch-335.pdf)   | Explanations |
 
 Learning Objectives
 
@@ -181,23 +181,21 @@ Relevant Khan Academy Videos
 
   ***
 
-### **Week 7** (Feb 15-21) **???**
+### **Week 7** (Feb 15-21) **Free Radicals Continued**
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|  19, 20  |  _View pdf_   | _Explanations_ |
+|  19, 20  |  [View pdf](ch-335.pdf)   | _Explanations_ |
 
 Learning Objectives
 
-- N/A
-
-Relevant Khan Academy Videos
-
-- N/A
+- Selective allylic bromination using NBS
+- Anti-Markonikov addition of HBr to alkenes
+- Addition reactions of HX to conjugated alkenes
 
   ***
 
-### **Week 8** (Feb 22-28) **???**
+### **Week 8** (Feb 22-28) **Midterm II, Conjugation and Resonance**
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
@@ -205,11 +203,14 @@ Relevant Khan Academy Videos
 
 Learning Objectives
 
-- N/A
+- Diels-Alder Reactions
 
 Relevant Khan Academy Videos
 
-- N/A
+- [Diels-Alder reaction](https://www.khanacademy.org/science/organic-chemistry/conjugation-diels-alder-mo-theory/diels-alder-reaction/v/diels-alder-reaction-new)
+- [Diels-Alder: stereochemistry of dienophile](https://www.khanacademy.org/science/organic-chemistry/conjugation-diels-alder-mo-theory/diels-alder-reaction/v/diels-alder-stereochemistry-of-dienophile)
+- [Diels-Alder: stereochemistry of diene](https://www.khanacademy.org/science/organic-chemistry/conjugation-diels-alder-mo-theory/diels-alder-reaction/v/diels-alder-stereochemistry-of-diene-new)
+- [Diels-Alder: endo rule](https://www.khanacademy.org/science/organic-chemistry/conjugation-diels-alder-mo-theory/diels-alder-reaction/v/diels-alder-endo-rule-new)
 
   ***
 
