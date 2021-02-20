@@ -269,3 +269,8 @@ electrophile
 stereospecific
 Diels-Alder
 dienophile
+cyclohexene
+pericyclic
+Cycloaddition
+Dienophiles
+dienophiles
