@@ -92,8 +92,8 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 | Lecture | Topic                                                    |
 | :-----: | :------------------------------------------------------- |
-|   11    | Cardiac Physiology I + Group 2                           |
-|   12    | Cardiac Physiology II + Group 3 + **Cardiac assignment** |
+|   11    | ~~Cardiac Physiology I~~ Class Cancelled                           |
+|   12    | Cardiac Physiology I + Group 3 + **Cardiac assignment** |
 
 ---
 
@@ -101,8 +101,8 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 | Lecture | Topic                   |
 | :-----: | :---------------------- |
-|   13    | Vision I + Group 4      |
-|   14    | Vision II + **Quiz #2** |
+|   13    | Cardiac Physiology II + Group 4  |
+|   14    | **Quiz #2** + Group 2 |
 
 ---
 
@@ -110,8 +110,8 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 | Lecture | Topic                        |
 | :-----: | :--------------------------- |
-|   15    | Smell and Taste I + Group 5  |
-|   16    | Smell and Taste II + Group 6 |
+|   15    | Vision I + Group 5  |
+|   16    | Vision II + Group 6 |
 
 ---
 
@@ -119,7 +119,7 @@ The following schedule is tentative and may be changed. Originally generated usi
 
 | Lecture | Topic                                            |
 | :-----: | :----------------------------------------------- |
-|   17    | Neurodegenerative Disease: Parkinson’s + Group 7 |
+|   17    | Smell and Taste + Group 7 |
 | Review  | Final Exam Review                                |
 
 ---
