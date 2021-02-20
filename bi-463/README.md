@@ -86,6 +86,8 @@ The following schedule is tentative and may be changed. Originally generated usi
 |    9    | Touch, pain and proprioception I            |
 |   10    | Touch, pain and proprioception II + Group 1 |
 
+[Group 1 Presentation](presentation.pdf)
+
 ---
 
 ### **Week 7** (Feb 16-18)
