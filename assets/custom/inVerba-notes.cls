@@ -353,15 +353,15 @@
 
     \setlist[itemize,1]{
         label=\circ, 
-        leftmargin=\dimexpr26pt 
+        leftmargin=\dimexpr26pt -1 em
     }
     \setlist[itemize,2]{
         label=\textbullet,
-        leftmargin=\dimexpr26pt
+        leftmargin=\dimexpr26pt -1 em
     }
     \setlist[itemize,3]{
         label=\small\color{minor}\textbullet,
-        leftmargin=\dimexpr26pt
+        leftmargin=\dimexpr26pt -1 em
     }
 }
 

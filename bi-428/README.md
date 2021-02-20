@@ -15,7 +15,7 @@
    alt="chat on Discord">
     </a>
      <a href="week-2.pdf">
-    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 6 Done-sucess?logo=latex" >
+    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 7 Done-sucess?logo=latex" >
     </a>
 </p>
 
@@ -64,7 +64,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |          Assignment           |
 | :----------: | :---------------------------: |
-|     6,9      | [Journal Article](week-2.pdf) |
+|     6,9      | [Journal Summary](week-2.pdf) |
 
 ---
 
@@ -72,7 +72,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |    Assignment    |
 | :----------: | :--------------: |
-|     ---      | ~~Journal Article~~ |
+|     ---      | ~~Journal Summary~~ |
 
 ---
 
@@ -80,7 +80,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-|     6,12     | [Journal Article](week-4.pdf) |
+|     6,12     | [Journal Summary](week-4.pdf) |
 
 ---
 
@@ -96,7 +96,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-| 10,11,13,14  | [Journal Article](week-6.pdf) |
+| 10,11,13,14  | [Journal Summary](week-6.pdf) |
 
 ---
 
@@ -104,7 +104,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-|     4,5      | Journal Article |
+|     4,5      | [Journal Summary](week-7.pdf) |
 
 ---
 
@@ -112,7 +112,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-|     4,14     | Journal Article |
+|     4,14     | Journal Summary |
 
 ---
 

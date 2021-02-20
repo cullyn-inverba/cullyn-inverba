@@ -274,3 +274,7 @@ pericyclic
 Cycloaddition
 Dienophiles
 dienophiles
+GWAS
+scRNA-seq
+microarrrays
+polygenicity
