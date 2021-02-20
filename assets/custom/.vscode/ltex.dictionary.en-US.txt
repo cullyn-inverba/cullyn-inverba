@@ -258,3 +258,14 @@ benzylic
 allylic
 Whol-Ziegler
 HBr
+electropositive
+Dienes
+HX
+dienes
+diene
+coplanar
+Pericyclic
+electrophile
+stereospecific
+Diels-Alder
+dienophile
