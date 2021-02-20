@@ -29,7 +29,7 @@
   - [The Coming Plague: Newly Emerging Diseases in a World Out of Balance](https://1lib.us/book/3501748/56b790)
   - [Genome: The Autobiography of a Species in 23 Chapters](https://1lib.us/book/5281757/8db11f)
   - [Deadly Feasts](https://1lib.us/book/4793719/852983)
-  - My suggestoins:
+  - My suggestions:
     - ["Blueprint" by Robert Plomin](https://a.co/1x0c9VX)
     - ["Behave" by Robert M. Sapolsky](https://a.co/4YYOFBh)
 
