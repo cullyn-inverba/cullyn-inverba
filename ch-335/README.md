@@ -164,7 +164,7 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|  18, 19  |  [View pdf](ch-335.pdf)   | Explanations |
+|  18, 19  |  [View pdf](ch-335.pdf)   | ~~Explanations~~ |
 
 Learning Objectives
 
@@ -185,7 +185,7 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|  19, 20  |  [View pdf](ch-335.pdf)   | _Explanations_ |
+|  19, 20  |  [View pdf](ch-335.pdf)   | ~~Explanations~~ |
 
 Learning Objectives
 
@@ -199,7 +199,7 @@ Learning Objectives
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    20    |  _View pdf_   | _Explanations_ |
+|    20    |  _View pdf_   | Explanations |
 
 Learning Objectives
 
