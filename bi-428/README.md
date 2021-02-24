@@ -112,7 +112,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-|     4,14     | Journal Summary |
+|     4,14     | [Journal Summary](week-8.pdf) |
 
 ---
 

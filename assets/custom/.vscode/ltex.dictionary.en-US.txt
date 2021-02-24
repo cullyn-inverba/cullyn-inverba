@@ -279,3 +279,5 @@ scRNA-seq
 microarrrays
 polygenicity
 HERG
+intramolecular
+prometaphse
