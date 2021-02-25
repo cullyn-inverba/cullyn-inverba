@@ -4,10 +4,9 @@
     </a>
 </p>
 
-# Google's Golang Programming Language
+# Google's Golang Programming Language 
 
 
 ## **Course Materials**
-- Course created by [Todd McLeod](https://www.udemy.com/course/learn-how-to-code/#instructor-1)
 - [Take the course yourself](https://www.udemy.com/course/learn-how-to-code/)
-- [Course Resources](https://goo.gl/PHKgO7)
+- [Documentation](https://golang.org/doc/)
