@@ -1,8 +1,6 @@
 ![Portland State University](assets/images/psu.jpg)
 
 <center> <h1>Winter 2021 Class Resources</h1></center>
- 
-Hello and welcome. This repository is an attempt at increasing the effectiveness of online learning, for myself and others. The main function of this repository will be a place to store and share notes I make&mdash;hopefully doing so will encourage others to do the same!
 
 <center>
 
@@ -16,68 +14,14 @@ Hello and welcome. This repository is an attempt at increasing the effectiveness
 
 </center>
 
-### My Philosophy on Notes
+<br>
 
-- My use of a hierarchical structure is an attempt to:
-  - Encourage recontextualizing information and minimize mindless copying.
-  - Chunk information down into smaller pieces that I then can use to build upon.
-  - Identify then expand on the weak points in my understanding of the subject.
-  - Make incorporating multiple sources easier.
-- If I do a good job, then I aim to:
-  - Be as concise as possible.
-  - Include information that is regularly referenced.
-  - Have key pieces of information be easily identifiable.
-  - Minimize creation time; more time should be spent on application of the information contained in the notes.
-  - Make something I'm proud of and want to share. It's incredible how much motivation can be generated from the focus on the craft, or quality, of your pursuits&mdash;especially if others find it useful.
+![Independent Learning](assets/images/code.jpg)
 
-## Using Git
+<center> <h1>Indepent Learning Resources</h1></center>
 
-It's not necessary to use git to get the most out of this repository, most of it can be viewed on GitHub. However, I will be collecting all class dependent resources I can, plus it allows you to stay up to date with constant updates to my notes as the term progresses. So rather than having to tediously download needed resources through d2l, or having to constantly revisit this page, then you can instead capitalize on the time I will take doing it for myself&mdash;sharing it is the easy part.
-
-**Steps to update your local files with this repository**
-
-1. Make sure you have [**git** installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-2. Open a terminal.
-3. Download this repository onto your machine:
-
-   ```
-   git clone https://github.com/cullyn-inverba/notes.git
-   ```
-
-4. That's it. You now have a folder called &ldquo;notes&rdquo; which is a copy of the one I pushed to GitHub. You now have all resources I have included in this repository. However, the files you will be interested in will probably just be pdfs.
-
-5. _Optional:_ Feel free to delete everything besides the class folder you need. However, if you plan on trying to use LateX yourself, then you might want to keep the &ldquo;assets&rdquo; folder since it has templates and custom class files that you can use.
-
-**Updating Files**
-
-1. Open a terminal.
-2. Change your directory (cd) to where you cloned the repository:
-
-   ```
-   cd notes
-   ```
-
-   or if you cloned it into a different directory:
-
-   ```
-   cd ~/path/to/notes
-   ```
-
-3. To update the folder to download any changes that I have made recently:
-   ```
-   git pull
-   ```
-4. _Optional:_ The command prompt might be telling you that running git pull without a default option is bad and that it chose one for you. The option it chooses for us is what we want, but to set the default option, then run this:
-   ```
-   git config pull.rebase false
-   ```
-5. You're all set. There are probably other ways of doing this, but this is the most basic way to do it. Keeping running step #4 to update the repository when ever I add something you need.
-
-### For those still curious about git:
-
-[![Git explained in 100 seconds](http://img.youtube.com/vi/hwP7WQkmECE/0.jpg)](http://www.youtube.com/watch?v=hwP7WQkmECE "Git Explained in 100 Seconds")
-
-### And here is an interactive tutorial:
-
-[![What is Git It? How to use Git and Github](http://img.youtube.com/vi/HkdAHXoRtos/0.jpg)](http://www.youtube.com/watch?v=HkdAHXoRtos "What is Git It? How to use Git and Github")
-
+|                                 [Golang Training](/go "Jump to golang training resources")                                 | 
+| :--------------------------------------------------------------------------------------------------------------------: |
+|      ![Golang Training](assets/images/go.ico)      |   
+|  [Instructor's Resources](https://github.com/GoesToEleven/GolangTraining) |
+| [Course Work](/go#Course-materials "Jump to course materials")     |
