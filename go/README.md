@@ -9,5 +9,6 @@
 
 ## **Course Materials**
 - [Take the course yourself](https://www.udemy.com/course/learn-how-to-code/)
-- [Course Outline](https://docs.google.com/document/d/1ckYpi6hcRkaBUEk975f54oGsHYHu7GhzOk7-nOrkNxo/edit)
-- [Documentation](https://golang.org/doc/)
+- [Course outline](https://docs.google.com/document/d/1ckYpi6hcRkaBUEk975f54oGsHYHu7GhzOk7-nOrkNxo/edit)
+- [Documentation (golang.org)](https://golang.org/doc/)
+- [Discover packages (go.dev)](https://pkg.go.dev/)
