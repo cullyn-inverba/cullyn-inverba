@@ -28,14 +28,6 @@
 - Alternative text: [David R. Klein &mdash; Organic Chemistry (3rd edition)](https://1lib.us/book/2929062/c615a5) + [Klein's Solutions Manual](https://1lib.us/book/3515143/0b1300)
 - Practice problems: [1000 Multiple-Choice Questions in Organic Chemistry](https://1lib.us/book/5342108/844e92)
 
-### Other resources
-
-- A website that is useful for [memorizing the periodic](https://online.seterra.com/en-an/vgp/3824) table. Surprisingly helpful at times.
-- [Crash Course Organic Chemistry](https://www.youtube.com/playlist?list=PL8dPuuaLjXtONguuhLdVmq0HTKS0jksS4), it's still currently being produced, but has plenty of content already.
-- [The Organic Chemistry Tutor](https://www.youtube.com/c/TheOrganicChemistryTutor/featured): a huge lifesaver for many subjects, not just organic chemistry. There is not really a single playlist that tracks our class content, but just look up his videos on YouTube for great practice problems and walk-through solutions.
-- My [notes](ch-334/org-chem.pdf) from last term and my work on some [mini quizes](ch-334/apres-lecture-quiz.pdf) that were from Harry Davis's class.
-  - _Disclaimer_: This was my first experiment with sharing my notes, so they are less structured (also didn't have working spell check at the time). Furthermore, I ran into some issues that started to become unmanageable the last two weeks of the term and it prompted a re-write of my custom LaTeX class. So, the last couple chapters and explanations to the mini quizzes were a mostly absent.
-- See [my instructions for using git](https://github.com/cullyn-inverba/notes#using-git) if you wish to have the files on your machine and easily stay up to date with the changes I push here.
 
 ## **Weekly Schedule**
 
