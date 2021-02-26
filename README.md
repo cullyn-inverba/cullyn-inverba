@@ -10,7 +10,7 @@
 | <a href="https://discord.gg/6ckYfNF6WU"><img src="https://img.shields.io/discord/790800309924528170?logo=discord"></a> | <a href="https://discord.gg/xgS9NMVyRY"><img src="https://img.shields.io/discord/760937229798604850?logo=discord"></a> | <a href="https://discord.gg/VNcNWddVKZ"><img src="https://img.shields.io/discord/790762936234147860?logo=discord"></a> | <a href="https://discord.gg/EVJfcwzMg3"><img src="https://img.shields.io/discord/790737836571492462?logo=discord"></a> | <a href="https://discord.gg/DHGub8zxzZ"><img src="https://img.shields.io/discord/790760762418659349?logo=discord"></a> |
 |                                  [Syllabus](phl-331/philosophy-of-education-W21.pdf)                                   |                                    [Syllabus](ch-335/organic-chemistry-II-W21.pdf)                                     |                                       [Syllabus](bi-428/Human-Genetics-W21.pdf)                                        |                                    [Syllabus](bi-429/conservation-biology-W21.pdf)                                     |                                      [Syllabus](bi-463/motor-and-sensory-W21.pdf)                                      |
 |                            [Resources](/phl-331#weekly-schedule "Jump to course materials")                            |                            [Resources](/ch-335#Course-materials "Jump to course materials")                            |                            [Resources](/bi-428#Course-materials "Jump to course materials")                            |                            [Resources](/bi-429#Course-materials "Jump to course materials")                            |                            [Resources](/bi-463#Course-materials "Jump to course materials")                            |
-|                                                          ---                                                           |                                    [Notes](/ch-335/ch-335.pdf "Jump to notes pdf")                                     |                                                          ---                                                           |                                    [Notes](/bi-429/bi-429.pdf "Jump to notes pdf")                                     |                                                          ---                                                           |
+|                                                                                                                        |                                    [Notes](/ch-335/ch-335.pdf "Jump to notes pdf")                                     |                                                                                                                        |                                    [Notes](/bi-429/bi-429.pdf "Jump to notes pdf")                                     |                                                                                                                        |
 
 </center>
 
@@ -18,10 +18,15 @@
 
 ![Independent Learning](assets/images/code.jpg)
 
-<center> <h1>Indepent Learning Resources</h1></center>
+<center> <h1>Independent Learning</h1></center>
 
-|                                 [Golang Training](/go "Jump to golang training resources")                                 | 
-| :--------------------------------------------------------------------------------------------------------------------: |
-|      ![Golang Training](assets/images/go.ico)      |   
-|  [Instructor's Resources](https://github.com/GoesToEleven/GolangTraining) |
-| [Course Work](/go#Course-materials "Jump to course materials")     |
+<center>
+
+|      [Golang](/go "Jump to golang training resources")       |   [Linear Algebra](/linear "Jump to linear algebra resources")   |       [Statistics](/stat "Jump to statistics resources")       |            [Pandas](/stat "Jump to pandas resources")            |
+| :----------------------------------------------------------: | :--------------------------------------------------------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: |
+|               ![Golang](assets/images/go.ico)                |               ![Linear](assets/images/linear.ico)                |             ![Statistics](assets/images/stat.ico)              |               ![Pandas](assets/images/pandas.ico)                |
+| [Resources](/go#Course-materials "Jump to course materials") | [Resources](/linear#Course-materials "Jump to course materials") | [Resources](/stat#Course-materials "Jump to course materials") | [Resources](/pandas#Course-materials "Jump to course materials") |
+|    [Exercises](/go/exercises "Jump to practice problems")    |    [Exercises](/linear/exercises "Jump to practice problems")    |    [Exercises](/stat/exercises "Jump to practice problems")    |      [Exercises](/pandas/exercises "Jump to practice problems")      |
+|                                                              |           [Notes](/linear/linear.pdf "Jump to notes")            |            [Notes](/stat/stat.pdf "Jump to notes")             |                                                                  |
+
+</center>
