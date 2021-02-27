@@ -281,3 +281,9 @@ polygenicity
 HERG
 intramolecular
 prometaphse
+Endo
+Exo
+endo
+regiospecificity
+regiospecific
+ortho
