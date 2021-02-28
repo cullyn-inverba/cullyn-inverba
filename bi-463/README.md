@@ -95,7 +95,7 @@ The following schedule is tentative and may be changed. Originally generated usi
 | Lecture | Topic                                                    |
 | :-----: | :------------------------------------------------------- |
 |   11    | ~~Cardiac Physiology I~~ Class Cancelled                           |
-|   12    | Cardiac Physiology I + Group 3 + **Cardiac assignment** |
+|   12    | Cardiac Physiology I + Group 3 + **[Cardiac assignment](cardiac.pdf)** |
 
 ---
 
@@ -105,6 +105,7 @@ The following schedule is tentative and may be changed. Originally generated usi
 | :-----: | :---------------------- |
 |   13    | Cardiac Physiology II + Group 4  |
 |   14    | **Quiz #2** + Group 2 |
+
 
 ---
 
