@@ -22,11 +22,11 @@
 
 <center>
 
-|      [Golang](/go "Jump to golang training resources")       |   [Linear Algebra](/linear "Jump to linear algebra resources")   |       [Statistics](/stat "Jump to statistics resources")       |            [Pandas](/stat "Jump to pandas resources")            |
+|      [Golang](/go "Jump to golang training resources")       |   [Linear Algebra](/linear "Jump to linear algebra resources")   |       [Statistics](/stat "Jump to statistics resources")       |            [Pandas](/pandas "Jump to pandas resources")            |
 | :----------------------------------------------------------: | :--------------------------------------------------------------: | :------------------------------------------------------------: | :--------------------------------------------------------------: |
 |               ![Golang](assets/images/go.ico)                |               ![Linear](assets/images/linear.ico)                |             ![Statistics](assets/images/stat.ico)              |               ![Pandas](assets/images/pandas.ico)                |
 | [Resources](/go#Course-materials "Jump to course materials") | [Resources](/linear#Course-materials "Jump to course materials") | [Resources](/stat#Course-materials "Jump to course materials") | [Resources](/pandas#Course-materials "Jump to course materials") |
-|    [Exercises](/go/exercises "Jump to practice problems")    |    [Exercises](/linear/exercises "Jump to practice problems")    |    [Exercises](/stat/exercises "Jump to practice problems")    |      [Exercises](/pandas/exercises "Jump to practice problems")      |
+|    [Exercises](/go/exercises "Jump to practice problems")    |    [Exercises](/linear/exercises "Jump to practice problems")    |    [Exercises](/stat/exercises "Jump to practice problems")    |    [Exercises](/pandas/exercises "Jump to practice problems")    |
 |                                                              |           [Notes](/linear/linear.pdf "Jump to notes")            |            [Notes](/stat/stat.pdf "Jump to notes")             |                                                                  |
 
 </center>
