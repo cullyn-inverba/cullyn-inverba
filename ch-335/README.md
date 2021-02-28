@@ -191,7 +191,7 @@ Learning Objectives
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    20    |  _View pdf_   | Explanations |
+|    20    |  [View pdf](ch-335.pdf)  | Explanations |
 
 Learning Objectives
 
