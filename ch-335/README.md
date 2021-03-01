@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/Notes-Ch 14 through 20 Done-sucess?logo=latex" >
     </a>
     <a title="View my mini quiz explanations (not doing anymore)" href="mini-quiz.pdf">
-    <img src="https://img.shields.io/badge/No longer publishing-critical?logo=latex" >
+    <img src="https://img.shields.io/badge/Mini quizzes-No longer publishing-critical?logo=latex" >
     </a>
 </p>
 
