@@ -17,8 +17,8 @@
     <a title="View my notes" href="ch-335.pdf">
     <img src="https://img.shields.io/badge/Notes-Ch 14 through 20 Done-sucess?logo=latex" >
     </a>
-    <a title="View my mini quiz explanations" href="mini-quiz.pdf">
-    <img src="https://img.shields.io/badge/Mini Quiz-Ch 17 Done-success?logo=latex" >
+    <a title="View my mini quiz explanations (not doing anymore)" href="mini-quiz.pdf">
+    <img src="https://img.shields.io/badge/No longer publishing-critical?logo=latex" >
     </a>
 </p>
 
@@ -191,7 +191,7 @@ Learning Objectives
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    20    |  [View pdf](ch-335.pdf)  | Explanations |
+|    20    |  [View pdf](ch-335.pdf)  | ~~Explanations~~ |
 
 Learning Objectives
 
@@ -210,7 +210,7 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    21    |  _View pdf_   | _Explanations_ |
+|    21    |  _View pdf_   | ~~Explanations~~ |
 
 Learning Objectives
 
@@ -226,7 +226,7 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    22    |  _View pdf_   | _Explanations_ |
+|    22    |  _View pdf_   | ~~Explanations~~ |
 
 Learning Objectives
 
