@@ -1,6 +1,6 @@
  <p align="center">
-    <a title="Golang Training" href="https://www.udemy.com/course/learn-how-to-code/">
-    <img src="../assets/images/linear.png"> 
+    <a title="Complete linear algebra: theory and implementation in code" href="https://www.udemy.com/course/linear-algebra-theory-and-implementation/">
+    <img src="../assets/images/linear.ico"> 
     </a>
 </p>
 
