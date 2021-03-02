@@ -1,5 +1,6 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "/home/cullyn/notes/linear/linear-venv/bin/python3.9"
+    "python.pythonPath": "/home/cullyn/notes/linear/linear-venv/bin/python3.9",
+    "python.dataScience.jupyterServerURI": "local"
 }
