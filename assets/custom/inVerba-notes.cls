@@ -51,7 +51,7 @@
     \setcounter{tocdepth}{3}
     \titlecontents{chapter}[0 em]
         {\large\bfseries}{}{}
-        {\hfill \thecontentspage}
+        {\hfill}
     \titlecontents{section}[1.618 em]
         {\color{minor}\bfseries}{}{}
         {\normalfont\hfill \thecontentspage}
