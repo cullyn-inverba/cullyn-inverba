@@ -95,7 +95,7 @@ Resources for pedigree assignment:
 ### **Week 6** (Feb 8-10) **Metabolic Pathways/Inborn Errors of Metabolism (cont.)**
 
 | Krof & Irons |   Assignment    |
-| :----------: cod| :-------------: |
+| :----------: | :-------------: |
 | 10,11,13,14  | [Journal Summary](week-6.pdf) |
 
 ---
