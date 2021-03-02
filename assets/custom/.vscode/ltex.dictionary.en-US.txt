@@ -289,3 +289,6 @@ regiospecific
 ortho
 coassemble
 ToC
+Tay-Sachs
+Sandhoff
+Lesch-Nyhan
