@@ -214,11 +214,14 @@ Relevant Khan Academy Videos
 
 Learning Objectives
 
-- N/A
+- Aromatic, antiaromatic and non-aromatic compounds
+- Benzene derivative nomenclature
+
 
 Relevant Khan Academy Videos
 
-- N/A
+- [Aromatic stability & heterocycles](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/aromatic-stability/v/aromatic-stability-i)
+- [Naming benzene derivatives](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/naming-aromatic/v/naming-benzene-derivatives-introduction)
 
   ***
 
