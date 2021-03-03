@@ -206,11 +206,11 @@ Relevant Khan Academy Videos
 
   ***
 
-### **Week 9** (Mar 1-7) **???**
+### **Week 9** (Mar 1-7) **Benzene and Aromaticity**
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    21    |  _View pdf_   | ~~Explanations~~ |
+|    21    |  [View pdf](ch-335.pdf)   | ~~Explanations~~ |
 
 Learning Objectives
 

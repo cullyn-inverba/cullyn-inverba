@@ -292,3 +292,7 @@ ToC
 Tay-Sachs
 Sandhoff
 Lesch-Nyhan
+heterocycles
+antiaromatic
+Antiaromaticity
+Hückel
