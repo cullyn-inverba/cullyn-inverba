@@ -296,3 +296,5 @@ heterocycles
 antiaromatic
 Antiaromaticity
 Hückel
+Heterocyclic
+aromaticity
