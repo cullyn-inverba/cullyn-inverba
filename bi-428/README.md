@@ -120,7 +120,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment    |
 | :----------: | :-------------: |
-|    10,13     | Bioethics Panel |
+|    10,13     | [Bioethics Panel](bioethics.pdf) |
 
 ---
 
