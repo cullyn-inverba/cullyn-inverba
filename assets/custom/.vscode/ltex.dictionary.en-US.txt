@@ -298,3 +298,5 @@ Antiaromaticity
 Hückel
 Heterocyclic
 aromaticity
+beta-hexosaminidase
+hemizygous
