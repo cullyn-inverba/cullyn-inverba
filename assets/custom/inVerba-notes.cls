@@ -319,6 +319,7 @@
         % Charge: #d64242 → #225ed6
     \definecolor{rrr}{HTML}{d64242}
     \definecolor{bbb}{HTML}{225ed6}
+    \definecolor{text}{HTML}{000000}  
 }
 
 \DeclareOption{worksheet}{
