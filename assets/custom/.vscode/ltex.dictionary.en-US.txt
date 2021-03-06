@@ -300,3 +300,6 @@ Heterocyclic
 aromaticity
 beta-hexosaminidase
 hemizygous
+monosubstituted
+benzenes
+Polysubstituted
