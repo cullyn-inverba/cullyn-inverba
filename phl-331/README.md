@@ -25,7 +25,6 @@ And here are some books that are relevant to many of the topics discussed and ar
 - ["Thinking in Systems" by Donella H. Meadows](https://a.co/at3nIcz)
 - ["The Madness of Crowds" by Douglas Murray](https://a.co/hzUaU9z)
 - ["How to Have Impossible Conversations" by Peter Boghossian, James Lindsay](https://a.co/4kUnZnW)
-- ["The Structure of Scientific Revolutions" by Thomas S. Kuhn](https://a.co/7nNDYGc)
 - ["The Moral Landscape" by Sam Harris](https://a.co/ex9466J) 
 - ["Justice" by Michael J. Sandel](https://a.co/ft9wfSx)
 - ["Behave" by Robert M. Sapolsky](https://a.co/4YYOFBh)
