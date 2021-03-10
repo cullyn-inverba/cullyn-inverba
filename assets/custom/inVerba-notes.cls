@@ -364,6 +364,7 @@
         label=\small\color{minor}\textbullet,
         leftmargin=\dimexpr26pt -1 em
     }
+    \hypersetup{colorlinks,linkcolor={bbb},citecolor={bbb},urlcolor={bbb}} 
 }
 
 \DeclareOption{quiz}{
