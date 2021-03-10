@@ -320,6 +320,8 @@
     \definecolor{rrr}{HTML}{d64242}
     \definecolor{bbb}{HTML}{225ed6}
     \definecolor{text}{HTML}{000000}  
+
+    \hypersetup{colorlinks,linkcolor={bbb},citecolor={bbb},urlcolor={bbb}} 
 }
 
 \DeclareOption{worksheet}{
@@ -364,7 +366,6 @@
         label=\small\color{minor}\textbullet,
         leftmargin=\dimexpr26pt -1 em
     }
-    \hypersetup{colorlinks,linkcolor={bbb},citecolor={bbb},urlcolor={bbb}} 
 }
 
 \DeclareOption{quiz}{
