@@ -229,15 +229,30 @@ Relevant Khan Academy Videos
 
 | Strongin | Lecture Notes |   Mini Quiz    |
 | :------: | :-----------: | :------------: |
-|    22    |  _View pdf_   | ~~Explanations~~ |
+|    22    |  [View pdf](ch-335.pdf)   | ~~Explanations~~ |
 
 Learning Objectives
 
-- N/A
+
+- Electrophilic aromatic substitution
+- Halogenation of benzene
+- Nitration of benzene
+- Sulfonation of benzene
+- Friedel Craft alkylation and acylation
+- Halogenation of alkyl benzenes
+- Oxidation of alkyl benzenes
+- Reduction of aryl ketones
+- Reduction of aryl nitro groups
+- Nucleophilic aromatic substitution
 
 Relevant Khan Academy Videos
 
-- N/A
+- [Naming benzene derivatives introduction](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/naming-aromatic/v/naming-benzene-derivatives-introduction)
+- [Electrophilic aromatic substitution](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/reactions-benzene/v/electrophilic-aromatic-substitution)
+- [Bromination of benzene](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/reactions-benzene/v/bromination-of-benzene)
+- [Friedel-Crafts alkylation](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/electrophilic-aromatic-substitution/v/friedel-crafts-alkylation)
+- [Friedel crafts acylation addendum](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/reactions-benzene/v/friedel-crafts-acylation-addendum)
+- [Nucleophilic aromatic substitution II](https://www.khanacademy.org/science/organic-chemistry/aromatic-compounds/nucleophilic-aromatic-substitution/v/nucleophilic-aromatic-substitution-ii)
 
   ***
 

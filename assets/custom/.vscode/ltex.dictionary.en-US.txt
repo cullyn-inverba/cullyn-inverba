@@ -304,3 +304,11 @@ monosubstituted
 benzenes
 Polysubstituted
 homozygote
+Sulfonation
+Friedel
+acylation
+aryl
+Arenium
+cyclohexadienyl
+nitronium
+protonates
