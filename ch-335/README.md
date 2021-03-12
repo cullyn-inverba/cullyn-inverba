@@ -4,7 +4,7 @@
     </a>
 </p>
 
-# CH: 355 · Organic Chemistry II · Portland State University · Winter 2021
+# CH: 355 · Organic Chemistry II · Portland State University · Winter 2021 (Completed)
 
  <p align="center">
     <a title="View class syllabus" href="organic-chemistry-II-W21.pdf">

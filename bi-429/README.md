@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# BI: 429 · Conservation Biology · Portland State University · Winter 2021
+# BI: 429 · Conservation Biology · Portland State University · Winter 2021 (Completed)
 
  <p align="center">
     <a href="conservation-biology-W21.pdf">

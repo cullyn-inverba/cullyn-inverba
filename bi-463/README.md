@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# BI: 463 · Sensory and Motor Systems · Portland State University · Winter 2021
+# BI: 463 · Sensory and Motor Systems · Portland State University · Winter 2021 (Completed)
 
  <p align="center">
     <a href="motor-and-sensory-W21.pdf">

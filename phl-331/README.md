@@ -4,7 +4,7 @@
     </a>
 </p>
 
-# PHL: 331 · Philosophy of Education · Portland State University · Winter 2021
+# PHL: 331 · Philosophy of Education · Portland State University · Winter 2021 (Completed)
 
  <p align="center">
     <a title="View class syllabus" href="philosophy-of-education-W21.pdf">
