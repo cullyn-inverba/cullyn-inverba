@@ -4,19 +4,13 @@
   </a>
 </p>
 
-# BI: 428 · Human Genetics · Portland State University · Winter 2021
+# BI: 428 · Human Genetics · Portland State University · Winter 2021 (Completed)
 
  <p align="center">
     <a href="Human-Genetics-W21.pdf">
     <img title="View syllabus" src="https://img.shields.io/badge/BI: 428-Syllabus (updated 12/29)-informational?logo=adobe-acrobat-reader" >
     </a>
     <a href="https://discord.gg/VNcNWddVKZ">
-  <img title="Join BI: 428 Discord Server 🥳" src="https://img.shields.io/discord/790762936234147860?logo=discord"
-   alt="chat on Discord">
-    </a>
-     <a href="week-2.pdf">
-    <img title="View most recent journal summary" src="https://img.shields.io/badge/Journal Summary-Week 7 Done-sucess?logo=latex" >
-    </a>
 </p>
 
 ## **Course Materials**
@@ -128,7 +122,7 @@ Resources for pedigree assignment:
 
 | Krof & Irons |   Assignment   |
 | :----------: | :------------: |
-|   15,16,17   | What is CRISPR |
+|   15,16,17   | [CRISPR](crispr.pdf) |
 
 ---
 
@@ -136,3 +130,4 @@ Resources for pedigree assignment:
 
 - 9:00 am Monday (3/15)
 - Due: Wednesday (3/17) by 6:00 pm
+- [My submission](final.pdf)
