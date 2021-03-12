@@ -316,3 +316,10 @@ propyl
 acylium
 Clemmensen
 Wolf-Kishner
+Ubiquitin
+ubiquitin
+huntingtin
+ubiquitlyation
+ubiquitination
+oncogenesis
+proteasome

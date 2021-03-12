@@ -133,7 +133,7 @@
     \item Any gene therapies?
     
     \basec{
-      There are no current gene therapies for Lesh-Nyhan syndromes, though many specific drug therapies can be used on a paitent specific basis~\cite{nord2}. Treatment may even require the coordinated efforts of a team of specialists.
+      There are no current gene therapies for Lesh-Nyhan syndromes, though many specific drug therapies can be used on a patient specific basis~\cite{nord2}. Treatment may even require the coordinated efforts of a team of specialists.
 
       Some individuals with Lesch-Nyhan syndrome have been reported to benefit from behavior modification techniques designed to reduce self-mutilating behaviors, but real success is unusual~\cite{nord2}.
 
@@ -153,7 +153,6 @@
   
 \newpage
 \section{Week 8: Mapping and Genome Organization}
-
 \begin{enumerate}
   \item \textbf{A synthesis of the Huntington’s Disease story}:
   
@@ -201,7 +200,7 @@
     
     The mutant huntingtin protein in HD results from an expanded CAG repeat leading to an expanded polyglutamine strand at the N terminus and a putative toxic gain of function. Neuropathologic studies show neuronal inclusions containing aggregates of polyglutamines.~\cite{walker2007huntington}
     
-    In addition to Huntington disease, there are at least 8 other diseases of the central nervous system, each of which is known to be associated with a different protein containing an expanded polyglutamine sequence. 
+    In addition to Huntington disease, there are at least 8 other diseases of the central nervous system, each of which is known to be associated with a different protein containing an expanded polyglutamine sequence~\cite{caron_2020}.
     }
 
     Points: [\qquad / \qquad ]
@@ -212,7 +211,13 @@
     \item Develop the status of treatments and gene therapies. Be detailed here as well.
     
     \basec{
-      
+      Huntington's disease currently remains incurable and ultimately leads to fatal neurodegenerative disorders due to the CAG trinucleotide repeat from the huntingtin gene as described previously. However, there are been numerous gene therapies attempted, commonly using CRIPSR-Cas9, and I will briefly describe three of them here.
+
+      First, a 2016 study demonstrates the power of a then novel strategy of inactivating the mutant huntingtin gene. Their goal was to focus on improving allele specificity inactivation for a given diplotype. They used two CRISPR-Cas9 guide RNAs that depend on Protospacer Adjacent Motif altering SNPs to target sites on the mutant alleles. They excised \approx44 kb of DNA spanning the promoter region, transcription start site, and CAG expansion mutation in the mutant HTT mRNA protein. This lead to a proof of concept strategy that unequivocally indicated permanent allele-specific inactivation of the HD mutant allele~\cite{shin2016permanent}. This was a big deal as perfect selectivity with broad applicability in diverse disease haplotypes support precision medicine through inactivation of other gain-of-function mutations.
+
+      Next, a 2019 study used a small Cas9 ortholog packaged alongside a single guide RNA into a single adeno-associated virus vector in an attempt to disrupt the expression of mutant HTT gene in a mouse model. The authors found that the CRIPR-Cas9-mediated disruption resulted in \approx50\% decrease in neuronal inclusions and significantly improved lifespan and certain motor deficits~\cite{ekman2019crispr}. This study was an early demonstration of the potential for CRIPR-Cas9 to treat HD and other autosomal dominant neurodegenerative disorders caused by trinucleotide repeats using the emerging CRISPR-Cas9 applications. 
+
+      Finally, a 2020 study reports an \textit{in vivo} cell conversion technology to reprogram striatal astrocytes into GABAergic neurons, as they are the neurons being lost in the huntingtin gene mutation and causing motor deficits. Using a mouse model, the authors report an astrocyte-to-neuron success rate of 80\% in the straitum and >50\% DARPP32\(^+\) medium spiny neurons~\cite{wu2020gene}. These converted neurons displayed action potential and synaptic events, and projected their axons to the targeted regions in a time-dependent manner; these results show that the not only were the neurons converted, but they were functional as well. Behavioral analyses also showed significant extension of life span and improvement of motor functions~\cite{wu2020gene}. This study was important as showed a successful application of \textit{in vivo} AtN conversion, implicating it another potential gene therapy to treat Huntington's disease and other neurodegenerative disorders.
     }
 
     Points: [\qquad / \qquad ]
@@ -222,8 +227,80 @@
     \vspace*{50pt}
   \end{enumerate}
 
- \end{enumerate}}
+ \end{enumerate}
 
+\newpage
+\section{Week 10: Ubiquitin}
+\begin{enumerate}
+  \item Describe the cellular components and their functions of ubiquitin.
+  
+  \basec{
+      Ubiquitin, named for its ubiquitous finding in eukaryotic organisms, is a small regulatory protein that, when applied to a substrate protein called ubiquitlyation, affects proteins in a variety of ways; proteins can be marked for degradation, have their cellular location altered, change in activity, and prevent interactions with other proteins.
+
+      The protein is small and performs its functions through conjugation to a large range of target proteins. Ubiquitin consists of only 76 amino acids and has a small molecular mass of about 8.6 kDa. Key features is the C-terminal tail and the 7 lysine residues. It's coded by 4 different genes in mammals, UBA52 and RPS27A for a single copy fused to ribosomal proteins and UBB and UBC for polyubiquitin precursor proteins. 
+
+      Ubiquitination requires three types of enzyme: ubiquitin-activating enzymes, ubiquitin-conjugating enzymes, and ubiquitin ligases, known as E1s, E2s, and E3s, respectively. 
+
+      1. \textbf{Activation} via two-step reaction by an E1 ubiquitin-activating enzyme, which is dependent on ATP, and involves the production of an ubiquitin-adenlyate intermediate. 
+
+      2. \textbf{Conjugation} via E2 ubiquitin-conjugating enzymes catalyze the transfer of ubiquitin from E1 to the active site cysteine of the E2 via a trans(thio)esterification reaction. 
+
+      3. \textbf{Ligation} via E3 ubiquitin ligases that catalyze the final step of the ubiquitination cascade by creating an isopeptide bond between a lysine of the target protein and the C-terminal glycine of ubiquitin. 
+      
+      There are also E4 enzymes, or ubiquitin-chain elongation factors, that are capable of adding pre-formed polyubiquitin chains to substrate proteins.
+
+      The various levels of the cascade allow for tight regulation of the ubiquitlyation processes, with some variation existing. 
+
+      Different types of substrate ubiquitlyation lead to various regulation of cellular processes, ranging from monoubiquitination (resulting in cellular processes such as membrane trafficking, endocytosis and viral budding) to polyubiquitination which can help regulate a large variety of functions. Overall, the system functions in a wide variety of processes, including: 
+      
+      \begin{multicols}{2}
+      \begin{itemize}
+        \item Antigen processing
+        \item Apoptosis
+        \item Biogenesis of organelles
+        \item Cell cycle and division
+        \item DNA transcription and repair
+        \item Differentiation and development
+        \item Immune response and inflammation
+        \item Neural and muscular degeneration
+        \item Maintenance of pluripotency
+        \item Morphogenesis of neural networks
+        \item Modulation of cell surface receptors, ion channels and the secretory pathway
+        \item Response to stress and extracellular modulators
+        \item Ribosome biogenesis
+        \item Viral infection
+      \end{itemize}
+    \end{multicols}
+    }
+
+    Points: [\qquad / \qquad ]
+
+    Feedback: 
+
+    \vspace*{50pt}
+
+  \item Find and describe a cancer related to malfunction of ubiquitin. Be thorough in your description---include things like the cause of the cancer, the consequences of that cancer and whether there are any therapies that are being considered.
+  
+  \basec{
+    Many reviews have covered the role of ubiquitination in the development of cancer, including both tumor-suppressing and  tumor-promoting path-ways are regulated by ubiquitination depending on the nature of the substrate, a single ubiquitin ligase can act as both an oncogene and a tumor suppressor~\cite{popovic2014ubiquitination}.
+    
+    Ubiquitin ligases can affect oncogenesis in several ways, as they are able to change both fate and function of their substrates. Since proteins that are marked by ubiquitination are often trafficked to the proteasome or lysosome for degradation, then control over the cell cycle can be regulated, like in the ligase MDM2, which ubiquitinates the tumor suppressor p53 or the SCF and APC/C ligase complexes, which control cell cycle progression and mitotic exit10 by controlling the stability of cyclin–cyclin-dependent kinase (CDK) complexes as well as of the cell cycle inhibitor p27~\cite{popovic2014ubiquitination}. Another example cited is of mutations or aberrant expression of the E3 ligase c-Cbl have  been linked to primary colorectal cancer~\cite{popovic2014ubiquitination}.
+
+    The review previously cited covered a wide range of examples, and provides w excellent table that indicates the targeted protein or pathway, the Ubiquitin chain type affected, and the resulting disease. There is almost too many examples to choose from, but I'll focus on the MDM2 E3 ligase, which as I previously described affects the p53 protein and thus affects the function of tumor suppression. The chain type affected is Lys48, which I did not cover in the previous chain type, but is indicated to be involved in protein degradation~\cite{jacobson2009lysine}. Of course, failure to suppress tumors and failure of protein degradation would result in cancer of various types depending on location. 
+  
+    The review previously cited covered a wide range of examples, and provides w excellent table that indicates the targeted protein or pathway, the Ubiquitin chain type affected, and the resulting disease. There is almost too many examples to choose from, but I'll focus on the MDM2 E3 ligase, which as I previously described affects the p53 protein and thus affects the function of tumor suppression. The chain type affected is Lys48, which I did not cover in the previous chain type, but is indicated to be involved in protein degradation~\cite{jacobson2009lysine}. Of course, failure to suppress tumors and failure of protein degradation would result in cancer of various types depending on location. 
+  
+    Therapy for this example is possible, since Ubiquitin ligases are crucial players that ensure substrate specificity as well as the spatiotemporal regulation of ubiquitination events, then the MDM2-mediated ubiquitination can selectively inhibit the small molecules HL198 or JNJ-26854165, resulting in p53 stabilization during developmental stage 1~\cite{popovic2014ubiquitination}. This results in the induction of tumor cell death and inhibition of tumor growth, as shown in preclinical studies; however, further studies are required to fully assess the pharmacokinetic activity of HL198 in cancer~\cite{popovic2014ubiquitination}.
+
+    }
+
+    Points: [\qquad / \qquad ]
+
+    Feedback: 
+
+\end{enumerate}
+
+}
 
 \nocite*{}
 \bibliographystyle{apacite}
