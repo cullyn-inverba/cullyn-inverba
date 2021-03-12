@@ -312,3 +312,7 @@ Arenium
 cyclohexadienyl
 nitronium
 protonates
+propyl
+acylium
+Clemmensen
+Wolf-Kishner
