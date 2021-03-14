@@ -1,1 +1,0 @@
-/home/cullyn/notes/assets/custom/inVerba-notes.cls
