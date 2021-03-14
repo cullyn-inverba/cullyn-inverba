@@ -433,9 +433,3 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/latex,python
-
-draft.pdf
-draft.tex
-
-mini-quiz-draft.pdf
-mini-quiz-draft.tex
