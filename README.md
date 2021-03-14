@@ -4,7 +4,7 @@
 
 |    [Linear Algebra](/mth-261 "Jump to linear algebra class page")    | [Cell Biology Lab](/bi-337 "Jump to cell biology Lab class page")  |        [Histology](/bi-455 "Jump to histology class page")         | [Recombinant DNA](/bi-430 "Jump to theory of recombinatn DNA techniqus class page")  |
 | :-----------------------------------------------------------------: | :---------------------------------------------------------------: | :---------------------------------------------------------------: | :---------------------------------------------------------------: |
-| [![Linear](assets/images/mth-261.ico)](/mth-261 "Go to class page") | [![bi-337](assets/images/bi-337.ico)](/bi-337 "Go to class page") | [![bi-455](assets/images/bi-337.ico)](/bi-455 "Go to class page") | [![bi-430](assets/images/bi-337.ico)](/bi-430 "Go to class page") |
+| [![Linear](assets/images/mth-261.ico)](/mth-261 "Go to class page") | [![bi-337](assets/images/bi-337.ico)](/bi-337 "Go to class page") | [![bi-455](assets/images/bi-455.ico)](/bi-455 "Go to class page") | [![bi-430](assets/images/bi-430.ico)](/bi-430 "Go to class page") |
 |     [Exercises](/mth-261/exercises "Jump to practice problems")     |                                                                   |                                                                   |                                                                   |
 |            [Notes](/mth-261/mth-261.pdf "Jump to notes")            |                                                                   |                                                                   |                                                                   |
 
