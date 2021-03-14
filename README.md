@@ -1,6 +1,6 @@
 ![Portland State University](assets/images/psu.jpg)
 
-<center> <h1>Winter 2021 Class Resources (Compeleted)</h1></center>
+<center> <h1>Spring 2021 Class Resources (Compeleted)</h1></center>
 
 <center>
 
