@@ -84,17 +84,17 @@
     ]
   },
 
-  "New Subsection": {
-    "scope": "latex",
-    "prefix": "new ssection",
-    "body": [
-      "\\subsection{$1}\\label{$1}",
-      "\\begin{itemize}",
-      "    \\item $0",
-      "\\end{itemize}",
-      ""
-    ]
-  },
+  // "New Subsection": {
+  //   "scope": "latex",
+  //   "prefix": "new ssection",
+  //   "body": [
+  //     "\\subsection{$1}\\label{$1}",
+  //     "\\begin{itemize}",
+  //     "    \\item $0",
+  //     "\\end{itemize}",
+  //     ""
+  //   ]
+  // },
 
   "Centered Graphic": {
     "scope": "latex",

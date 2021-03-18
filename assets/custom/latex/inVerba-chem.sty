@@ -1,0 +1,48 @@
+% ╔═╗┬ ┬┌─┐┌┬┐┬┌─┐┌┬┐┬─┐┬ ┬
+% ║  ├─┤├┤ ││││└─┐ │ ├┬┘└┬┘
+% ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{inVerba-chem}[My depeceriated collection of chemistry packages]
+
+\RequirePackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
+    \setchemfig{atom sep=2em, cram width=.7ex}
+    \chemsetup{modules = all}
+    \chemsetup[orbital]{
+        overlay,
+        p/color = rrr,
+        s/color = bbb!60,
+        s/scale = 1.2,
+        p/scale = 1.2
+    }
+
+    \definesubmol\cat{\rrr{\scriptstyle\fplus}}
+    \definesubmol\ani{\bbb{\scriptstyle\fminus}}
+
+    \definesubmol\elec{\rrr{\(E^\fplus \)}}
+    \definesubmol\nuc{\bbb{\(nu^\fminus \)}}
+    \definesubmol\pcp{\text{\rrr{\(\delta\,\scriptstyle\fplus \)}}}
+    \newcommand{\cadp}[1]{\rrr{\chemabove[3pt]{#1}{\text{\delta\plus}}}}
+    \newcommand{\cadn}[1]{\bbb{\chemabove[3pt]{#1}{\text{\delta\minus}}}}
+    \definesubmol\pcn{\text{\bbb{\(\delta\,\scriptstyle\fminus \)}}}
+    \newcommand{\pcpab}[1]{\rrr{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
+    \newcommand{\pcnab}[1]{\bbb{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
+    \newcommand{\pcpbe}[1]{\rrr{\chembelow[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
+    \newcommand{\pcnbe}[1]{\bbb{\chembelow[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
+    \newcommand{\pab}[1]{\rrr{\chemabove[3pt]{#1}{\text{\(\scriptstyle\fplus \)}}}}
+    \newcommand{\nab}[1]{\bbb{\chemabove[3pt]{#1}{\text{\(\scriptstyle\fminus \)}}}}
+    \newcommand{\pbe}[1]{\rrr{\chembelow[5pt]{#1}{\text{\(\scriptstyle\fplus \)}}}}
+    \newcommand{\nbe}[1]{\bbb{\chembelow[5pt]{#1}{\text{\(\scriptstyle\fminus \)}}}}
+
+    \definesubmol\oxi{\rrr{[O]}}
+    \definesubmol\reduc{\bbb{[H]}}
+
+
+    \usetikzlibrary{matrix}
+    \tikzset{
+        obrace/.style={left delimiter={[},inner sep=3pt}
+        cbrace/.style={right delimiter={]},inner sep=3pt},
+        braces/.style={left delimiter={[},right delimiter={]},inner sep=3pt}
+    }
+
+    \ProcessOptions\relax

@@ -28,39 +28,39 @@
 % ╚═╗├┤ │   │ ││ ││││└─┐
 % ╚═╝└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
 \RequirePackage{titlesec}
-    \titleformat{\chapter}{\LARGE\bfseries\color{chap}}{}{0pt}{\centering}
+    \titleformat{\chapter}{\LARGE\bfseries\color{title-color}}{}{0pt}{\centering}
         \titlespacing*{\chapter}{0pt}{-64pt}{4pt} 
-    \titleformat{\section}{\Large\bfseries\color{sec}}{}{0pt}{}
+    \titleformat{\section}{\Large\bfseries\color{chap}}{}{0pt}{}
         \titlespacing*{\section}{0 em}
         {1ex plus 7ex minus 1ex}
         {1ex plus .0ex minus .0ex}
-    \titleformat{\subsection}{\large\bfseries\color{ssec}}{}{0pt}{}
-        \titlespacing*{\subsection}{-1em}
+    \titleformat{\subsection}{\large\bfseries\color{sec}}{}{0pt}{}
+        \titlespacing*{\subsection}{0 em}
         {1ex plus 7ex minus 1ex}
         {1ex plus 0ex minus 0ex}
-    \titleformat{\subsubsection}{\bfseries\color{jarg}}{}{0pt}{\vspace{-12pt}}
-        \titlespacing*{\subsection}{-1em}
-        {1ex plus 5ex minus 1ex}
-        {1ex plus 0ex minus 0ex}
+    % \titleformat{\subsubsection}{\bfseries\color{ssec}}{}{0pt}{}
+    %     \titlespacing*{\subsubsection}{0 em}
+    %     {1ex plus 5ex minus 1ex}
+    %     {1ex plus 0ex minus 0ex}
 
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ ││││ │ ├┤ │││ │ └─┐
 % ╚═╝└─┘┘└┘ ┴ └─┘┘└┘ ┴ └─┘
 \RequirePackage{titletoc}
     \renewcommand{\contentsname}{\color{title-color}\theTitle}
-    \setcounter{tocdepth}{3}
+    \setcounter{tocdepth}{2}
     \titlecontents{chapter}[0 em]
-        {\large\bfseries}{}{}
+        {\large\bfseries\color{title-color}}{}{}
         {\hfill}
-    \titlecontents{section}[1.618 em]
-        {\color{minor}\bfseries}{}{}
-        {\normalfont\hfill \thecontentspage}
-    \titlecontents{subsection}[3.236 em]
-        {\color{minimal}}{}{}
+    \titlecontents{section}[0.809 em]
+        {\bfseries}{}{}
+        {\hfill\thecontentspage}
+    \titlecontents{subsection}[1.618 em]
+        {\color{minor}}{}{}
         {\titlerule*[0.42 em]{.}\thecontentspage}
-    \titlecontents{subsubsection}[4.854 em]
-        {\color{minimal}}{}{}
-        {\titlerule*[0.42 em]{.}\thecontentspage}
+    % \titlecontents{subsubsection}[2.427  em]
+    %     {\color{minimal}}{}{}
+    %     {\titlerule*[0.42 em]{.}\thecontentspage}
     
 %  ╦  ┬┌─┐┌┬┐┌─┐
 %  ║  │└─┐ │ └─┐
@@ -69,17 +69,17 @@
     \setlist[itemize]{itemsep=-0.3ex,topsep=-0.3ex,partopsep=-0.3ex}
     \setlist[itemize,1]{
         label=\small\(\color{minor}\bullet\), 
-        leftmargin=\dimexpr26pt -1 em
+        leftmargin=\dimexpr1em
     }
     \setlist[itemize,2]{
         label=\small\(\circ\),
-        leftmargin=\dimexpr26pt -1 em
+        leftmargin=\dimexpr1em
     }
     \setlist[itemize,3]{
         label=\small\color{minor}\textbullet,
-        leftmargin=\dimexpr26pt -1 em
+        leftmargin=\dimexpr1em
     }
-    \setlist[itemize,4]{leftmargin=\dimexpr26pt -1 em}
+    \setlist[itemize,4]{leftmargin=\dimexpr1em}
 
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐
 % ╠╣ │ ││││ │ └─┐
@@ -101,56 +101,6 @@
     \fancyhead[R]{\hyperlink{ToC}{\nouppercase\rightmark}}
         
     \cfoot{\hyperlink{ToC}{\thepage}}
-
-% ╔╦╗┌─┐┌┬┐┬ ┬
-% ║║║├─┤ │ ├─┤
-% ╩ ╩┴ ┴ ┴ ┴ ┴
-\RequirePackage{amsmath, mathtools, amssymb, MnSymbol}
-    \numberwithin{equation}{section}
-
-% ╔═╗┬ ┬┌─┐┌┬┐┬┌─┐┌┬┐┬─┐┬ ┬
-% ║  ├─┤├┤ ││││└─┐ │ ├┬┘└┬┘
-% ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
-
-\RequirePackage{chemmacros, chemfig, chemformula, chemgreek, ghsystem}
-    \setchemfig{atom sep=2em, cram width=.7ex}
-    \chemsetup{modules = all}
-    \chemsetup[orbital]{
-        overlay,
-        p/color = rrr,
-        s/color = bbb!60,
-        s/scale = 1.2,
-        p/scale = 1.2
-    }
-
-    \definesubmol\cat{\rrr{\scriptstyle\fplus}}
-    \definesubmol\ani{\bbb{\scriptstyle\fminus}}
-
-    \definesubmol\elec{\rrr{\(E^\fplus \)}}
-    \definesubmol\nuc{\bbb{\(nu^\fminus \)}}
-    \definesubmol\pcp{\text{\rrr{\(\delta\,\scriptstyle\fplus \)}}}
-    \newcommand{\cadp}[1]{\rrr{\chemabove[3pt]{#1}{\text{\delta\plus}}}}
-    \newcommand{\cadn}[1]{\bbb{\chemabove[3pt]{#1}{\text{\delta\minus}}}}
-    \definesubmol\pcn{\text{\bbb{\(\delta\,\scriptstyle\fminus \)}}}
-    \newcommand{\pcpab}[1]{\rrr{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
-    \newcommand{\pcnab}[1]{\bbb{\chemabove[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
-    \newcommand{\pcpbe}[1]{\rrr{\chembelow[6pt]{#1}{\text{\(\delta\,\scriptstyle\fplus \)}}}}
-    \newcommand{\pcnbe}[1]{\bbb{\chembelow[6pt]{#1}{\text{\(\delta\,\scriptstyle\fminus \)}}}}
-    \newcommand{\pab}[1]{\rrr{\chemabove[3pt]{#1}{\text{\(\scriptstyle\fplus \)}}}}
-    \newcommand{\nab}[1]{\bbb{\chemabove[3pt]{#1}{\text{\(\scriptstyle\fminus \)}}}}
-    \newcommand{\pbe}[1]{\rrr{\chembelow[5pt]{#1}{\text{\(\scriptstyle\fplus \)}}}}
-    \newcommand{\nbe}[1]{\bbb{\chembelow[5pt]{#1}{\text{\(\scriptstyle\fminus \)}}}}
-
-    \definesubmol\oxi{\rrr{[O]}}
-    \definesubmol\reduc{\bbb{[H]}}
-
-
-    \usetikzlibrary{matrix}
-    \tikzset{
-        obrace/.style={left delimiter={[},inner sep=3pt}
-        cbrace/.style={right delimiter={]},inner sep=3pt},
-        braces/.style={left delimiter={[},right delimiter={]},inner sep=3pt}
-    }
 
 % ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
 % ║ ║ │ ││  │ │ └┬┘
@@ -324,25 +274,6 @@
     \hypersetup{colorlinks,linkcolor={bbb},citecolor={bbb},urlcolor={bbb}} 
 }
 
-\DeclareOption{worksheet}{
-    \fancyhf{}
-    \renewcommand{\headrulewidth}{0pt}
-    \newgeometry{hmargin=2cm, vmargin=1.8cm, headsep=1.2em}
-    \setenumerate{align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!}
-    \setlist[itemize,1]{
-        label=\circ, 
-        leftmargin=\dimexpr26pt 
-    }
-    \setlist[itemize,2]{
-        label=\textbullet,
-        leftmargin=\dimexpr26pt
-    }
-    \setlist[itemize,3]{
-        label=\small\color{minor}\textbullet,
-        leftmargin=\dimexpr26pt
-    }
-}
-
 \DeclareOption{basic}{
     \pagestyle{fancy}
     \lhead{\userName}
@@ -383,44 +314,6 @@
     }
     \color{minimal}
     \lhead{}
-}
-
-\DeclareOption{pascal}{
-    % Pascal Triangle Generator
-\makeatletter
-\newcommand\binomialCoefficient[2]{%
-    % Store values 
-    \c@pgf@counta=#1% n
-    \c@pgf@countb=#2% k
-    %
-    % Take advantage of symmetry if k > n - k
-    \c@pgf@countc=\c@pgf@counta%
-    \advance\c@pgf@countc by-\c@pgf@countb%
-    \ifnum\c@pgf@countb>\c@pgf@countc%
-        \c@pgf@countb=\c@pgf@countc%
-    \fi%
-    %
-    % Recursively compute the coefficients
-    \c@pgf@countc=1% will hold the result
-    \c@pgf@countd=0% counter
-    \pgfmathloop% c -> c*(n-i)/(i+1) for i=0,...,k-1
-        \ifnum\c@pgf@countd<\c@pgf@countb%
-        \multiply\c@pgf@countc by\c@pgf@counta%
-        \advance\c@pgf@counta by-1%
-        \advance\c@pgf@countd by1%
-        \divide\c@pgf@countc by\c@pgf@countd%
-    \repeatpgfmathloop%
-    \the\c@pgf@countc%
-}
-\makeatother
-
-    % \begin{tikzpicture}
-    %     \foreach \n in {0,...,15} {
-    %     \foreach \k in {0,...,\n} {
-    %         \node at (\k-\n/2,-\n) {$\binomialCoefficient{\n}{\k}$};
-    %     }
-    %     }
-    % \end{tikzpicture}
 }
 
 \ProcessOptions\relax
