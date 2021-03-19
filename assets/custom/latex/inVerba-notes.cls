@@ -28,13 +28,13 @@
 % ╚═╗├┤ │   │ ││ ││││└─┐
 % ╚═╝└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
 \RequirePackage{titlesec}
-    \titleformat{\chapter}{\LARGE\bfseries\color{title-color}}{}{0pt}{\centering}
+    \titleformat{\chapter}{\LARGE\bfseries\color{chap}}{}{0pt}{\centering}
         \titlespacing*{\chapter}{0pt}{-64pt}{4pt} 
-    \titleformat{\section}{\Large\bfseries\color{chap}}{}{0pt}{}
+    \titleformat{\section}{\Large\bfseries\color{sec}}{}{0pt}{}
         \titlespacing*{\section}{0 em}
         {1ex plus 7ex minus 1ex}
         {1ex plus .0ex minus .0ex}
-    \titleformat{\subsection}{\large\bfseries\color{sec}}{}{0pt}{}
+    \titleformat{\subsection}{\large\bfseries\color{ssec}}{}{0pt}{}
         \titlespacing*{\subsection}{0 em}
         {1ex plus 7ex minus 1ex}
         {1ex plus 0ex minus 0ex}
@@ -137,6 +137,8 @@
 \newcommand{\minimal}[1]{{\color{minimal}#1}}
 
 \newcommand{\textbfl}[1]{\textbf{#1}\label{#1}}
+\newcommand{\textbfe}[1]{\textbf{#1}\label{eq:#1}}
+
 \newcommand{\ddd}[1]{{\color{jarg}\textbfl{#1}}}
 
 \newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}

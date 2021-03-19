@@ -1,12 +1,36 @@
-% ╔╦╗┌─┐┌┬┐┬ ┬
-% ║║║├─┤ │ ├─┤
-% ╩ ╩┴ ┴ ┴ ┴ ┴
+% ███╗   ███╗ █████╗ ████████╗██╗  ██╗
+% ████╗ ████║██╔══██╗╚══██╔══╝██║  ██║
+% ██╔████╔██║███████║   ██║   ███████║
+% ██║╚██╔╝██║██╔══██║   ██║   ██╔══██║
+% ██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║
+% ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{inVerba-math}[My collection of math packages and commands]
 
-\RequirePackage{amsmath, mathtools, amssymb, MnSymbol}
-    \numberwithin{equation}{section}
+\RequirePackage{amsmath, mathtools, amssymb, MnSymbol, bm, relsize}
+    \numberwithin{equation}{chapter}
+
+    \DeclareMathSizes{12}{14}{12}{10}
+
+    \makeatletter
+    \renewcommand\tagform@[1]{
+        \maketag@@@{\ignorespaces#1\unskip\@@italiccorr}
+    }
+    \makeatother
+
+
+% ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
+% ║  │ │││││││├─┤│││ ││└─┐
+% ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘   
+
+\newcommand{\eee}[1]{
+    \begin{center}\color{emph}\textbfe{#1}\end{center}\vspace{8pt}
+}
+
+% ╔═╗┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+% ║ ║├─┘ │ ││ ││││└─┐
+% ╚═╝┴   ┴ ┴└─┘┘└┘└─┘
 
 \DeclareOption{pascal}{
     % Pascal Triangle Generator
@@ -36,6 +60,8 @@
     \the\c@pgf@countc%
 }
 \makeatother
+
+    % Actual use: 
 
     % \begin{tikzpicture}
     %     \foreach \n in {0,...,15} {
