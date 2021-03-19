@@ -179,6 +179,7 @@
 \definecolor{sec}{HTML}{7abef5} 
 \definecolor{ssec}{HTML}{b0d0eb} 
 \definecolor{jarg}{HTML}{cedeeb} 
+    \newcommand{\jjj}[1]{{\color{jarg}{\textbf{#1}}}}
     
 
 % Links: #99e09b #78b07a
