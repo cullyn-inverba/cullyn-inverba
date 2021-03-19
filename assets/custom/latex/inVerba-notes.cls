@@ -87,6 +87,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{cmbright}
     \SetSymbolFont{largesymbols}{normal}{OMX}{iwona}{m}{n}
+    \SetSymbolFont{largesymbols}{bold}{OMX}{iwona}{b}{n}
 \RequirePackage[sfdefault, light]{roboto}
 
 % ╦ ╦┌─┐┌─┐┌┬┐┌─┐┬─┐   ┬   ╔═╗┌─┐┌─┐┌┬┐┌─┐┬─┐

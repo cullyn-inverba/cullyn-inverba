@@ -57,10 +57,68 @@
       "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
       ""
     ],
-    "description": "An imporant equation with emphasis and label"
-  }
+    "description": "An imporant equation with emphasis and a label"
+  },
+
+  "Dispaly Equation": {
+    "scope": "latex",
+    "prefix": "deq",
+    "body": [
+      "\\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "$1",
+      "\\]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      ""
+    ]
+  },
 
   // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
   // ║  │ │││││││├─┤│││ ││└─┐
   // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
+
+  "Bold Math":{
+    "scope": "latex",
+    "prefix": "bm",
+    "body": "\\bm{$1}"
+  },
+
+  "Overarrow":{
+    "scope": "latex",
+    "prefix": "ov",
+    "body": "\\vv{$1}"
+  },
+
+  "Column Vector":{
+    "scope": "latex",
+    "prefix": "cv",
+    "body": [
+        "\\begin{bmatrix}",
+        "$1 \\\\\\",
+        "$2 \\\\\\",
+        "$3 \\\\",
+        "\\end{bmatrix}",
+    ]
+  },
+
+  "Row Vector":{
+    "scope": "latex",
+    "prefix": "rv",
+    "body": [
+        "\\begin{bmatrix}",
+        "$1 & $2 & $3",
+        "\\end{bmatrix}",
+    ]
+  },
+
+  "Matrix":{
+    "scope": "latex",
+    "prefix": "mx",
+    "body": [
+        "\\begin{bmatrix}",
+        "$1 & $2 & $3 \\\\\\",
+        "$4 & $5 & $6 \\\\\\",
+        "$7 & $8 & $9 ",
+        "\\end{bmatrix}",
+    ]
+  },
+
 }
