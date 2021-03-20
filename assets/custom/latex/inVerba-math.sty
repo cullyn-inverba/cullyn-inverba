@@ -8,7 +8,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{inVerba-math}[My collection of math packages and commands]
 
-\RequirePackage{mathtools, amssymb, bm, relsize, esvect}
+\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz, pifont}
     \numberwithin{equation}{chapter}
 
     \DeclareMathSizes{12}{14}{12}{10}
@@ -29,6 +29,11 @@
 }
 
 \newcommand{\jx}[1]{{\color{jarg}{\(#1\)}}}
+
+\def\schk{\resizebox{\widthof{\checkmark}*\ratio{\widthof{x}}{\widthof{\normalsize x}}}{!}{\checkmark}}
+
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{56}\,}
 
 % ╔═╗┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
 % ║ ║├─┘ │ ││ ││││└─┐
