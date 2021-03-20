@@ -1,0 +1,2 @@
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"A_MD_VB","sentence":"^\\QAdditionally, a could have a different dimensionality than\\E$"}

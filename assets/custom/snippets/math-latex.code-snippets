@@ -119,4 +119,22 @@
     ]
   },
 
+  "Sum":{
+    "scope": "latex",
+    "prefix": "sum",
+    "body": "\\sum_{n = $1}^{$2}"
+  },
+
+  "Times":{
+    "scope": "latex",
+    "prefix": "times",
+    "body": "\\cdot"
+  },
+
+  "Transpose":{
+    "scope": "latex",
+    "prefix": "trp",
+    "body": "\\bm{$1}^T"
+  }
+
 }
