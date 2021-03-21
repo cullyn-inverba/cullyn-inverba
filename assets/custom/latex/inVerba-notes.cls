@@ -163,10 +163,10 @@
 \pagecolor{back} 
 \definecolor{dark}{HTML}{141414}
 
-% Text: #e0e0e0 #b0b0b0 #6b6b6b 
+% Text: #e0e0e0 #949494 #6b6b6b 
 \definecolor{text}{HTML}{e0e0e0}  
 \color{text} 
-\definecolor{minor}{HTML}{b0b0b0} 
+\definecolor{minor}{HTML}{949494} 
 \definecolor{minimal}{HTML}{6b6b6b} 
 \definecolor{title-color}{HTML}{78b07a}
 
@@ -236,11 +236,11 @@
 %   /  \ #e0e0e0 foreground 
 %  / /\ \ 
 %  \ \/ / 
-%   \ \/ #b0b0b0 minor
+%   \ \/ #b0b0b0 
 %   /\ \ 
-%   \ \/ #949494
+%   \ \/ #949494 minor
 %   /\ \ 
-%   \ \/ #808080
+%   \ \/ #808080 
 %   /\ \ 
 %  / /\ \ #6b6b6b minimal
 %  \ \ \/ 
@@ -249,7 +249,7 @@
 %   \ \/
 %   /\ \ #404040
 %   \ \/
-%   /\ \ #2f2f2f
+%   /\ \ #2f2f2f 
 %   \ \/
 %   /\ \ #262626
 %  / /\ \
