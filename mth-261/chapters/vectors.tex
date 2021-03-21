@@ -63,7 +63,7 @@
   
   \subsection{Vector-Scalar Multiplication}\label{Vector-Scalar Multiplication}
   \begin{itemize}
-    \item \jjj{Scalar (\(\alpha,~\beta,~\lambda \))}: an element of a field (typically real numbers) used in scalar-multiplication of vectors. 
+    \item \ddd{Scalar}: typically denoted with lower case Greek letters (e.g., \(\alpha,~\lambda \)) indicating an element of a field (typically real numbers) used in scalar-multiplication of vectors. 
     \item Algebraically, scalar-multiplication is the multiplication of each element of a vector by a particular scalar, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \lambda \bm{v} \rightarrow 7 \begin{bmatrix}
@@ -88,11 +88,10 @@
 \begin{itemize}
   \item \ddd{Dot (scalar, inner) product}: an algebraic operation that takes two \emph{equal-length} sequences of numbers (usually coordinate vectors), and returns a \emph{single number}.
   \begin{itemize}
-    \item The result of a dot product is a scalar, so often it is represented as a such. I will typically use \(\lambda \) or
-    \(\alpha \) if I can.
+    \item The result of a dot product is a \hyperref[Scalar]{\ulink{scalar}}, so often it is represented as such.
       \begin{itemize}
         \item It can also be represented as multiplication between two vectors (\(\bm{a\cdot b}\)). 
-        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- transpose\(^T\) will be explained in more detail when dealing with matrix products. I will commonly use this notation.
+        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[tbd]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[tbd]{\dlink{matrix products}}.
       \end{itemize}
     \item Algebraically: \(\sum_{i = 1}^{n} \bm{a}_i \bm{b}_i  \) --- where \(\Sigma \) denotes summation and \(n\) is the dimension of the vector space, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,13 +116,13 @@
 
   \subsection{Vector Length}\label{Vector Length}
   \begin{itemize}
-    \item \jjj{Vector length (magnitude, norm)}: denoted with double vertical bars \( \| \bm{v} \| \), indicating length of a vector in euclidean space. Not to be confused with absolute value \(|x|\) of a scalar's ``norm.'' 
+    \item \jjj{Vector norm (magnitude, length)}: denoted with double vertical bars \( \| \bm{v} \| \), indicating length of a vector in euclidean space. Not to be confused with absolute value \(|x|\) of a scalar's ``norm.'' However, sometimes the notation \(| \bm{v} |\) is used.
     \item Calculating \( \| \bm{v} \| \) is done using the Euclidean norm:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \| \bm{v} \| = \sqrt{v_1^2+v_2^2+v_3^2}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item This is a consequence of the Pythagorean theorem, since the basis vectors \(\bm{e}_1\), \(\bm{e}_2\), \(\bm{e}_3\) are orthogonal unit vectors.
+      \item This is a consequence of the Pythagorean theorem, since the \hyperref[tbd]{\dlink{basis vectors}}  \\ \(\bm{e}_1\), \(\bm{e}_2\), and \(\bm{e}_3\) are \hyperref[Orthogonality]{\dlink{orthogonal}} \hyperref[tbd]{\dlink{unit vectors}}.
     \end{itemize}
     \item Thus, the \emph{norm} can easily be found by taking the square root of the dot product of the vector with itself:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,15 +134,18 @@
   \begin{itemize}
     \item The dot product of two \hyperref[Euclidean (geometric, spatial) vectors]{\ulink{Euclidean vectors}} \tbm{a} and \tbm{b} is defined by:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \emph{\lambda = \bm{a}^T \bm{b} = \| \bm{a} \| ~\| \bm{b} \| \cos{\theta}}
+    \emph{\lambda = \bm{a}^T \bm{b} = \| \bm{a} \| ~\| \bm{b} \| \cos(\theta)}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     where \(\theta \) is the angle between \tbm{a} and \tbm{b}.
     \item \jjj{Features based on \tbm{\theta}}:
     \begin{itemize}
-      \item When \(\rrr{\cos{\theta} > 0}\) \(\left(\theta < \ang{90}~\text{--- acute}\right)\) then \(\rrr{\lambda > 0~(+)}\)
-      \item When \(\bbb{\cos{\theta} < 0}\) \(\left(\theta > \ang{90}~\text{--- obtuse}\right)\) then \(\bbb{\lambda < 0~(-)}\)
-      \item When \(\emph{\cos{\theta} = 0}\) then \(\minor{\lambda = 0}\), resulting in a special case, termed \emph{orthogonal}:
-      
+      \item When \(\rrr{\cos{\theta} > 0}\) \(\left(\theta < \ang{90}~\text{--- \rrr{acute}}\right)\) then \(\rrr{\lambda > 0~(+)}\)
+      \item When \(\bbb{\cos{\theta} < 0}\) \(\left(\theta > \ang{90}~\text{--- \bbb{obtuse}}\right)\) then \(\bbb{\lambda < 0~(-)}\)
+      \item When \(\minor{\cos{\theta} = 0}\)  (\(\theta = \ang{90}~\text{--- \minor{perpendicular}}\)) then \(\minor{\lambda = 0}\)
+      \begin{itemize}
+        \item This represents a special case where the vectors are said to be \emph{orthogonal}. 
+        \item \ddd{Orthogonality}: the generalization of the notion of \emph{perpendicularity} to the linear algebra of \hyperref[tbd]{\dlink{bilinear forms}}.
+      \end{itemize}
       \item When \(\emph{\cos{\theta} = 1}\) then the vectors are \emph{codirectional}:
       \[\bm{a}^T\bm{b} = \| \bm{a} \| ~\| \bm{b} \| \]\vspace{-25pt}
       \begin{itemize}
@@ -159,7 +161,7 @@
 \newpage
 \section{Other Vector Products}\label{Other Vector Products}
 \begin{itemize}
-  \item Matrices are properly defined later. However, vectors are technically single row or column matrices, so many of the following operations also work on vectors, thus use of matrices appears often in this section.
+  \item \hyperref[tbd]{\dlink{Matrices}} are properly defined later. However, vectors are technically single row or column matrices, so many of the following operations also work on vectors, thus use of matrices often appears in this section.
   
   \subsection{Hadamard Multiplication}\label{Vector Hadamard Multiplication}
   \begin{itemize}
@@ -190,19 +192,16 @@
 
   \subsection{Outer Product}\label{Outer Product}
   \begin{itemize}
-    \item Recall that the \hyperref[Dot (scalar, inner) product]{\ulink{dot (scalar, inner) product}} produces a \(1\times1 \) matrix, or rather, a scalar (hence ``scalar'' product).
+    \item Recall that the \hyperref[Dot (scalar, inner) product]{\ulink{dot (scalar, inner) product}} produces a \(1\times1 \) matrix, or rather a scalar, hence ``scalar'' product.
       \begin{itemize}
-        \item Also, note the typical notation used is: \(\bm{v}^T \bm{w}\) --- etymology of the ``inner'' product. 
+        \item Note: the typical notation used for dot products is \(\bm{v}^T \bm{w}\) --- part of reasoning for the ``inner'' product. 
       \end{itemize}
     \item \jjj{Outer product}: an \(N\times M\) matrix that results from the product of two vectors with dimensions \(n\) and \(m\).
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \bm{v}\bm{w}^T=N\times M
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item The subtle change in notation matters in contrast to the dot product, each represent different operations.
-      \begin{itemize}
-        \item Note: the above notation assumes original vectors are column vectors.
-      \end{itemize}
-    \item The outer product allows for the multiplication of vectors with different dimensionality.
+    \item The subtle change in notation matters in contrast to the dot product, as both represent distinct operations (assuming they are column vectors).
+    \item The outer product allows for the multiplication of vectors with different dimensionality
     \item Can be thought of in two different ways:
     \begin{itemize}
       \item The \xxx{row} perspective:
@@ -242,7 +241,21 @@
   
   \subsection{Cross Product}\label{Cross Product}
   \begin{itemize}
-    \item \jjj{Cross (vector, directed area) product}: a binary operation on two vectors in three or seven-dimensional space \(\left(\mathbb{R}^3, \mathbb{R}^7\right)\), and is denoted by the symbol \(\times \). 
+    \item \jjj{Cross (vector, directed area) product}: denoted by the symbol \jjj{\(\bm{\times} \)}, indicating a binary operation on two vectors in three-dimensional space \(\mathbb{R}^3 \).
+      \begin{itemize}
+        \item Given two linearly independent vectors \tbm{a} and \tbm{b}, then the cross product \(\bm{a}\times\bm{b}\) produces a new vector that is \emph{orthogonal} to both \tbm{a} and \tbm{b}, and thus \emph{normal} to the plane containing them.
+        \item The \emph{direction} of the vector is given by the \emph{right-hand rule} (\tbm{a} = pointer, \tbm{b} = index, thumb = direction). 
+        \item The \emph{magnitude} of the vector represents the \emph{area of the parallelogram} that the vectors span.
+      \end{itemize}
+    \item The cross product can be defined by the formula: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{a}\times \bm{b} = \| \bm{a} \|~\| \bm{b} \|\sin(\theta)~\bm{n}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Notice this is similar to the \hyperref[Geometric Interpretation of the Dot Product]{\ulink{geometric interpretations of the dot product}}. 
+      \item The key difference here is that \(\cos(\theta)\)
+    \end{itemize}
+    \item An algebraic example of vector e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}
     1 \\
@@ -262,13 +275,21 @@
     1b & - & 2a 
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item Given two linearly independent vectors \tbm{a} and \tbm{b}, the cross product, \(\bm{a}\times\bm{b}\) is a vector that is perpendicular to both a and b, and thus normal to the plane containing them.
   \end{itemize}
   
 \end{itemize}
 
   
-  
+\newpage
+
+\section{To be defined}\label{tbd}
+\begin{itemize}
+  \item unit vectors
+  \item basis vectors
+  \item transpose
+  \item matrix products
+\end{itemize}
+
 
 
 
