@@ -78,7 +78,7 @@
     "body": [
       "\\section{$1}\\label{$1}",
       "\\begin{itemize}",
-      "    \\item $0",
+      "\t\\item $0",
       "\\end{itemize}",
       ""
     ]
@@ -90,7 +90,7 @@
     "body": [
       "\\subsection{$1}\\label{$1}",
       "\\begin{itemize}",
-      "    \\item $0",
+      "\t\\item $0",
       "\\end{itemize}",
       ""
     ]
@@ -142,13 +142,13 @@
 
   "Multicols": {
     "scope": "latex",
-    "prefix": "multi",
+    "prefix": "mti",
     "body": "\\begin{multicols}{2}"
   },
 
   "End Multicols": {
     "scope": "latex",
-    "prefix": "emulti",
+    "prefix": "emti",
     "body": "\\end{multicols}"
   },
 

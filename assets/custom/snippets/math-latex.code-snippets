@@ -81,6 +81,12 @@
     "body": "\\bm{$1}"
   },
 
+  "Text-Bold Math":{
+    "scope": "latex",
+    "prefix": "tbm",
+    "body": "\\tbm{$1}"
+  },
+
   "Overarrow":{
     "scope": "latex",
     "prefix": "ov",
@@ -94,7 +100,7 @@
         "\\begin{bmatrix}",
         "$1 \\\\\\",
         "$2 \\\\\\",
-        "$3 \\\\",
+        "$3 ",
         "\\end{bmatrix}",
     ]
   },
@@ -135,6 +141,18 @@
     "scope": "latex",
     "prefix": "trp",
     "body": "\\bm{$1}^T"
+  },
+
+  "Text-Vector Norm":{
+    "scope": "latex",
+    "prefix": "tvn",
+    "body": "\\( \\| \\bm{$1} \\| \\)"
+  },
+
+  "Vector Norm":{
+    "scope": "latex",
+    "prefix": "vnor",
+    "body": "\\| \\bm{$1} \\|"
   }
 
 }
