@@ -144,8 +144,8 @@
 
 \newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
 
-\newcommand{\ulink}[1]{{\color{ilink}{#1}\small\(\,^\rcurvearrowne\)}}
-\newcommand{\dlink}[1]{{\color{ilink}{#1}\small\(\,^\lcurvearrowse\)}}
+\newcommand{\ulink}[1]{{\color{ilink}{#1}\small\(\,^\uparrow\)}}
+\newcommand{\dlink}[1]{{\color{ilink}{#1}\small\(\,^\downarrow\)}}
 
 
 
