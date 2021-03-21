@@ -159,15 +159,22 @@
   "Internal Down Link": {
     "scope": "latex",
     "prefix": "dll",
-    "body": ["\\hyperref[$0]{\\dlink{$1}}"],
-    "description": "a styled link to a later part of the document"
+    "body": ["\\hyperref[$1]{\\dlink{$0"],
+    "description": "A styled link to a later part of the document (needs }})"
+  },
+
+  "To be defined":{
+    "scope": "latex",
+    "prefix": "dlltb",
+    "body": ["\\hyperref[tbd]{\\dlink{$0"],
+    "description": "A styled link to a later part of the document that is currently not defined (needs }})"
   },
 
   "Internal Up Link": {
     "scope": "latex",
     "prefix": "ull",
-    "body": ["\\hyperref[$0]{\\ulink{$1}}"],
-    "description": "A styled link to an earlier part of the document"
+    "body": ["\\hyperref[$1]{\\ulink{$0"],
+    "description": "A styled link to an earlier part of the document (needs }})"
   },
 
   "SI units": {

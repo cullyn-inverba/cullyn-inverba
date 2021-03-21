@@ -151,8 +151,20 @@
 
   "Vector Norm":{
     "scope": "latex",
-    "prefix": "vnor",
+    "prefix": "vnr",
     "body": "\\| \\bm{$1} \\|"
-  }
+  },
+
+  "Cos Theta":{
+    "scope": "latex",
+    "prefix": "cth",
+    "body": "\\(\\cos(\\theta)\\)",
+  },
+
+  "Sine Theta":{
+    "scope": "latex",
+    "prefix": "sth",
+    "body": "\\(\\sin(\\theta)\\)",
+  },
 
 }
