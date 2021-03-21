@@ -2,114 +2,274 @@
 \section{Interpretations of Vectors}\label{Interpretations of Vectors}
 \begin{itemize}
   \item \jjj{Algebraic vectors \jx{\left(\bm{v},~\vv{v}\right)}}: an ordered list of numbers.
-    \begin{itemize}
-      \item E.g., \(\bm{v}= \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}\)
-      \item Vectors can be written as rows (seen above) or columns (seen below), but  differ only at the level of notation and convention.
-      \item The order of elements in a vector matters:
-      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \begin{bmatrix}
+  \begin{itemize}
+    \item E.g., \(\bm{v}= \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}\)
+    \item Vectors can be written as rows (seen above) or columns (seen below), but  differ only at the level of notation and convention.
+    \item The order of elements in a vector matters:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
       1 \\
       2 \\
       3 \
-      \end{bmatrix}
-      \neq
-      \begin{bmatrix}
+    \end{bmatrix}
+    \neq
+    \begin{bmatrix}
       2 \\
       1 \\
       3 \
-      \end{bmatrix}
-      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \end{itemize}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
   \item \jjj{Dimensionality}: the number of elements in a vector.
-
-  \item \jjj{Geometric vectors}: a line in geometric space that indicates the magnitude and direction from its start point (tail) to its end point (head).
-    \begin{itemize}
-      \item Geometric vectors can start at any point in space, but often represented as starting from the \emph{origin}---such vectors are in \emph{standard position}.
-      \item Coordinates are not the same as vectors, but they do indicate where the head of a vector will land if it is in standard position. 
-    \end{itemize}
+  
+  \item \ddd{Euclidean (geometric, spatial) vectors}: a line in geometric space that indicates the \emph{magnitude} and \emph{direction} from a starting point (tail) to an end point (head).
+  \begin{itemize}
+    \item Geometric vectors can start at any point in space, but often represented as starting from the \emph{origin}---such vectors are in \emph{standard position}.
+    \item Coordinates are not the same as vectors, but they do indicate where the head of a vector will land if it is in standard position. 
+  \end{itemize}
   
   \subsection{Vector Addition and Subtraction}\label{Vector Addition and Subtraction}
   \begin{itemize}
-      \item Algebraically, \emph{dimensionality} of vectors \emph{must be equal}. When they are, then addition or subtraction vectors is done on the corresponding elements of each vector, e.g.:
-      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \begin{bmatrix}
+    \item Algebraically, \emph{dimensionality} of vectors \emph{must be equal}. When they are, then addition or subtraction vectors is done on the corresponding elements of each vector, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
       1 \\
       0 \\
       4 \\
       5 
-      \end{bmatrix}
-      +
-      \begin{bmatrix}
+    \end{bmatrix}
+    +
+    \begin{bmatrix}
       2 \\
       3 \\
       -6 \\
       11
-      \end{bmatrix}
-      =
-      \begin{bmatrix}
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
       3 \\
       3 \\
       -2 \\
       16
-      \end{bmatrix}
-      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \item Geometrically, addition can be thought of translating the tail of one vector to the head of the other---resulting in a new vector. 
-      \item Geometric interpretations of subtraction can be thought of in two ways:
-        \begin{itemize}
-          \item[1.] Multiplying one vector by -1, then applying vector addition method above.
-          \item[2.] Placing both vectors in standard position, with the resulting vector between the two heads being the answer.
-        \end{itemize}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Geometrically, addition can be thought of translating the tail of one vector to the head of the other---resulting in a new vector. 
+    \item Geometric interpretations of subtraction can be thought of in two ways:
+    \begin{itemize}
+      \item[1.] Multiplying one vector by -1, then applying vector addition method above.
+      \item[2.] Placing both vectors in standard position, with the resulting vector between the two heads being the answer.
+    \end{itemize}
   \end{itemize}
   
   \subsection{Vector-Scalar Multiplication}\label{Vector-Scalar Multiplication}
   \begin{itemize}
-      \item \jjj{Scalar (\(\alpha,~\beta,~\lambda \))}: an element of a field (typically real numbers) used in scalar-multiplication of vectors. 
-      \item Algebraically, scalar-multiplication is the multiplication of each element of a vector by a particular scalar.
-      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \bbb{\lambda} \bm{v} \rightarrow \bbb{7} \begin{bmatrix}
+    \item \jjj{Scalar (\(\alpha,~\beta,~\lambda \))}: an element of a field (typically real numbers) used in scalar-multiplication of vectors. 
+    \item Algebraically, scalar-multiplication is the multiplication of each element of a vector by a particular scalar, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lambda \bm{v} \rightarrow 7 \begin{bmatrix}
       -1 \\
       0 \\
       1 \
-      \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix} = \begin{bmatrix}
       -7 \\
       0 \\
       7 \
-      \end{bmatrix}
-      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \item Geometrically, scalar-multiplication is the \emph{extension} (\(\lambda > 1\)) or \emph{compression} (\(\lambda\in(0,1)\)) of a vector.
-        \begin{itemize}
-          \item When \(\lambda \) < 0, then it can be thought of inverting its direction with respect to the origin.  
-        \end{itemize}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Geometrically, scalar-multiplication can be thought of as the \rrr{extension (\(\lambda > 1\))} or \xxx{compression (\(\lambda\in(0,1)\))} of a vector.
+    \begin{itemize}
+      \item When \bbb{\(\lambda \) < 0}, then it can be thought of inverting its direction with respect to the origin.  
+    \end{itemize}
   \end{itemize}  
 \end{itemize}
+  
 
 \section{The Dot Product}\label{The Dot Product}
 \begin{itemize}
-    \item \jjj{Dot product (scalar product)}: an algebraic operation that takes two \emph{equal-length} sequences of numbers (usually coordinate vectors), and returns a \emph{single number}.
+  \item \ddd{Dot (scalar, inner) product}: an algebraic operation that takes two \emph{equal-length} sequences of numbers (usually coordinate vectors), and returns a \emph{single number}.
+  \begin{itemize}
+    \item The result of a dot product is a scalar, so often it is represented as a such. I will typically use \(\lambda \) or
+    \(\alpha \) if I can.
       \begin{itemize}
-        \item The result of a dot product is a scalar, so often it is represented as a such (a lower case Greek letter).
         \item It can also be represented as multiplication between two vectors (\(\bm{a\cdot b}\)). 
-        \item Most commonly it is represented as \(\bm{a}^T\bm{b}\) --- transpose will be explained in more detail when dealing with matrix products.
-        \item Algebraically: \(\sum_{i = 1}^{n} \bm{a}_i \bm{b}_i  \) --- where \(\Sigma \) denotes summation and \(n\) is the dimension of the vector space, e.g.:
-        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \rrr{\begin{bmatrix} 1 & 3 & 5 \end{bmatrix}}\bbb{\begin{bmatrix}
-        4 \\
-        -2 \\
-        1 \
-        \end{bmatrix}} = (\rrr{1}\cdot\bbb{4}) + (\rrr{3}\cdot \bbb{-2}) + (\rrr{-5} \cdot \bbb{-1}) = 3
-        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- transpose\(^T\) will be explained in more detail when dealing with matrix products. I will commonly use this notation.
       \end{itemize}
-
+    \item Algebraically: \(\sum_{i = 1}^{n} \bm{a}_i \bm{b}_i  \) --- where \(\Sigma \) denotes summation and \(n\) is the dimension of the vector space, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \rrr{\begin{bmatrix} 1 & 3 & 5 \end{bmatrix}}\bbb{\begin{bmatrix}
+      4 \\
+      -2 \\
+      1 \
+    \end{bmatrix}} = (\rrr{1}\cdot\bbb{4}) + (\rrr{3}\cdot \bbb{-2}) + (\rrr{-5} \cdot \bbb{-1}) = 3
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
+  
   \subsection{Properties of the Dot Product}\label{Properties of the Dot Product}
   \begin{itemize}
-      \item \ttt{\cmark~Distributive}: if \textbf{a}, \textbf{b}, and \textbf{c} and real vectors, then \(\bm{a}^T(\bm{b}+\bm{c})=\bm{a}^T\bm{b}+\bm{a}^T\bm{c}\)
-      \item \fff{\xmark~Associative}: \(\bm{a}^T(\bm{b}^T\bm{c})\fff~\fff{\neq}~(\bm{a}^T\bm{b})\bm{c}\) --- in general the associative property does not hold, as the dot product would most likely produce different scalars.
-        \begin{itemize}
-          \item Additionally, \bm{a} could have a different dimensionality than \bm{b} and \bm{c}. I.e., even if \bm{b} and \bm{c} had the same dimensionality (\(\bm{a}^T(\bm{b}^T\bm{c})\) would be valid scalar-vector multiplication) then \(\bm{a}^T \bm{b}\) would be invalid.
-        \end{itemize}
+    \item Note: the following properties hold as long as \(\bm{a}\), \(\bm{b}\), and \(\bm{c}\) are real vectors.
+    \item \ttt{\cmark~Distributive}: \(\bm{a}^T(\bm{b}+\bm{c})=~\bm{a}^T\bm{b}+\bm{a}^T\bm{c}\) ---  vector multiplication distributes over vector addition. 
+    \item \fff{\xmark~Associative}: \(\bm{a}^T(\bm{b}^T\bm{c})\neq(\bm{a}^T\bm{b})\bm{c}\) --- in general the associative property does not hold, as the dot product would most likely produce different scalars.
+    \begin{itemize}
+      \item Additionally, \bm{a} could have a different dimensionality than \bm{b} and \bm{c}. I.e., even if \bm{b} and \bm{c} had the same dimensionality (\(\bm{a}^T(\bm{b}^T\bm{c})\) would be valid vector-scalar multiplication) then \(\bm{a}^T \bm{b}\) would be invalid.
+    \end{itemize}
+    \item \ttt{\cmark~Commutative}: \(\bm{a}^T\bm{b} = \bm{b}^T\bm{a}\) --- the order of the vectors does not matter. 
+  \end{itemize}
+
+  \subsection{Vector Length}\label{Vector Length}
+  \begin{itemize}
+    \item \jjj{Vector length (magnitude, norm)}: denoted with double vertical bars \( \| \bm{v} \| \), indicating length of a vector in euclidean space. Not to be confused with absolute value \(|x|\) of a scalar's ``norm.'' 
+    \item Calculating \( \| \bm{v} \| \) is done using the Euclidean norm:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \| \bm{v} \| = \sqrt{v_1^2+v_2^2+v_3^2}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item This is a consequence of the Pythagorean theorem, since the basis vectors \(\bm{e}_1\), \(\bm{e}_2\), \(\bm{e}_3\) are orthogonal unit vectors.
+    \end{itemize}
+    \item Thus, the \emph{norm} can easily be found by taking the square root of the dot product of the vector with itself:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \emph{\| \bm{v} \| = \sqrt{\bm{v}^T v}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
+
+  \subsection{Geometric Interpretation of the Dot Product}\label{Geometric Interpretation of the Dot Product}
+  \begin{itemize}
+    \item The dot product of two \hyperref[Euclidean (geometric, spatial) vectors]{\ulink{Euclidean vectors}} \tbm{a} and \tbm{b} is defined by:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \emph{\lambda = \bm{a}^T \bm{b} = \| \bm{a} \| ~\| \bm{b} \| \cos{\theta}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    where \(\theta \) is the angle between \tbm{a} and \tbm{b}.
+    \item \jjj{Features based on \tbm{\theta}}:
+    \begin{itemize}
+      \item When \(\rrr{\cos{\theta} > 0}\) \(\left(\theta < \ang{90}~\text{--- acute}\right)\) then \(\rrr{\lambda > 0~(+)}\)
+      \item When \(\bbb{\cos{\theta} < 0}\) \(\left(\theta > \ang{90}~\text{--- obtuse}\right)\) then \(\bbb{\lambda < 0~(-)}\)
+      \item When \(\emph{\cos{\theta} = 0}\) then \(\minor{\lambda = 0}\), resulting in a special case, termed \emph{orthogonal}:
+      
+      \item When \(\emph{\cos{\theta} = 1}\) then the vectors are \emph{codirectional}:
+      \[\bm{a}^T\bm{b} = \| \bm{a} \| ~\| \bm{b} \| \]\vspace{-25pt}
+      \begin{itemize}
+        \item Thus, the dot product with a vector \tbm{v} with itself is
+        \[\bm{v}^T\bm{v} = \| \bm{v} \|^2\]\vspace{-25pt}
+        \item Which gives us the \hyperref[Vector Length]{\ulink{norm}} as defined above, i.e., \( \| \bm{v} \| = \sqrt{\bm{v}^T v}\)
+        \item If \(\cos{\theta} = -1\), then really vectors are still codirectional, but point in opposite directions with respect to the origin. 
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\newpage
+\section{Other Vector Products}\label{Other Vector Products}
+\begin{itemize}
+  \item Matrices are properly defined later. However, vectors are technically single row or column matrices, so many of the following operations also work on vectors, thus use of matrices appears often in this section.
+  
+  \subsection{Hadamard Multiplication}\label{Vector Hadamard Multiplication}
+  \begin{itemize}
+    \item \jjj{Hadamard (element-wise) product}: a binary operation (only takes two operands) that matrices of the same dimensions and produces another matrix of the same dimension as the operands, e.g., vector Hadamard multiplication:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+      1 \\
+      0 \\
+      4 \\
+      5 
+    \end{bmatrix}
+    +
+    \begin{bmatrix}
+      2 \\
+      3 \\
+      -6 \\
+      11
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      2 \\
+      0 \\
+      -24 \\
+      55
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
+
+  \subsection{Outer Product}\label{Outer Product}
+  \begin{itemize}
+    \item Recall that the \hyperref[Dot (scalar, inner) product]{\ulink{dot (scalar, inner) product}} produces a \(1\times1 \) matrix, or rather, a scalar (hence ``scalar'' product).
+      \begin{itemize}
+        \item Also, note the typical notation used is: \(\bm{v}^T \bm{w}\) --- etymology of the ``inner'' product. 
+      \end{itemize}
+    \item \jjj{Outer product}: an \(N\times M\) matrix that results from the product of two vectors with dimensions \(n\) and \(m\).
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{v}\bm{w}^T=N\times M
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The subtle change in notation matters in contrast to the dot product, each represent different operations.
+      \begin{itemize}
+        \item Note: the above notation assumes original vectors are column vectors.
+      \end{itemize}
+    \item The outer product allows for the multiplication of vectors with different dimensionality.
+    \item Can be thought of in two different ways:
+    \begin{itemize}
+      \item The \xxx{row} perspective:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}
+        1 \\
+        0 \\
+        4 \\
+        2
+      \end{bmatrix} \begin{bmatrix} \xxx{a} & \xxx{b} & \xxx{c} \end{bmatrix}
+      =
+      \begin{bmatrix}
+        1\xxx{a} & 1\xxx{b} & 1\xxx{c} \\
+        0\xxx{a} & 0\xxx{b} & 0\xxx{c} \\
+        4\xxx{a} & 4\xxx{b} & 4\xxx{c} \\
+        2\xxx{a} & 2\xxx{b} & 2\xxx{c}  
+      \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item The \yyy{column} perspective:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}
+        \yyy{1} \\
+        \yyy{0} \\
+        \yyy{4} \\
+        \yyy{2}
+      \end{bmatrix} \begin{bmatrix} a & b & c \end{bmatrix}
+      =
+      \begin{bmatrix}
+        \yyy{1}a & \yyy{1}b & \yyy{1}c \\
+        \yyy{0}a & \yyy{0}b & \yyy{0}c \\
+        \yyy{4}a & \yyy{4}b & \yyy{4}c \\
+        \yyy{2}a & \yyy{2}b & \yyy{2}c  
+      \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \end{itemize}
+  
+  \subsection{Cross Product}\label{Cross Product}
+  \begin{itemize}
+    \item \jjj{Cross (vector, directed area) product}: a binary operation on two vectors in three or seven-dimensional space \(\left(\mathbb{R}^3, \mathbb{R}^7\right)\), and is denoted by the symbol \(\times \). 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    1 \\
+    2 \\
+    3 
+    \end{bmatrix}
+    \times
+    \begin{bmatrix}
+    a \\
+    b \\
+    c 
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    2c & - & 3b \\
+    3a & - & 1c \\
+    1b & - & 2a 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Given two linearly independent vectors \tbm{a} and \tbm{b}, the cross product, \(\bm{a}\times\bm{b}\) is a vector that is perpendicular to both a and b, and thus normal to the plane containing them.
   \end{itemize}
   
 \end{itemize}
+
+  
+  
+
 
 
 
