@@ -241,19 +241,23 @@
   
   \subsection{Cross Product}\label{Cross Product}
   \begin{itemize}
-    \item \jjj{Cross (vector, directed area) product}: denoted by the symbol \jjj{\(\bm{\times} \)}, indicating a binary operation on two vectors in three-dimensional space \(\mathbb{R}^3 \).
+    \item \jjj{Cross (vector, directed area) product}: denoted by the symbol \jjj{\(\bm{\times} \)}, indicating a binary operation on two vectors in \emph{three-dimensional space \(\mathbb{R}^3 \)}.
       \begin{itemize}
-        \item Given two linearly independent vectors \tbm{a} and \tbm{b}, then the cross product \(\bm{a}\times\bm{b}\) produces a new vector that is \emph{orthogonal} to both \tbm{a} and \tbm{b}, and thus \emph{normal} to the plane containing them.
+        \item Given two linearly independent vectors \tbm{a} and \tbm{b}, then the cross product \(\bm{a}\times\bm{b}\) produces a new vector that is \emph{orthogonal} to both \tbm{a} and \tbm{b}, or \emph{normal} to the plane containing them.
         \item The \emph{direction} of the vector is given by the \emph{right-hand rule} (\tbm{a} = pointer, \tbm{b} = index, thumb = direction). 
         \item The \emph{magnitude} of the vector represents the \emph{area of the parallelogram} that the vectors span.
       \end{itemize}
     \item The cross product can be defined by the formula: 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \bm{a}\times \bm{b} = \| \bm{a} \|~\| \bm{b} \|\sin(\theta)~\bm{n}
+    \bm{a}\times \bm{b} = \| \bm{a} \|~\| \bm{b} \|\sin(\theta)\,\bm{v}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Notice this is similar to the \hyperref[Geometric Interpretation of the Dot Product]{\ulink{geometric interpretations of the dot product}}. 
-      \item The key difference here is that \(\cos(\theta)\)
+      \item Notice this is similar to the \hyperref[Geometric Interpretation of the Dot Product]{\ulink{geometric interpretations of the dot product}} --- the contrast between the two leads to an intuitive interpretation:
+      \begin{itemize}
+        \item \(\cos(\theta)\) in the \emph{dot product} is used to measure how ``parallel'' the two vectors are, i.e., they are \emph{codirectional} when \(\theta = 1\), allowing for calculation of the \hyperref[Vector Length]{\ulink{norm}}. 
+        \item \(\sin(\theta)\) in the \emph{cross product} is used to measure how ``perpendicular'' two vectors are, i.e., they are \emph{orthogonal} when \(\theta = 1\). There are multiple directions of the orthogonal vector, so calculation of the signed area returns vector \tbm{v} that describes both magnitude and direction as described above.
+        \item The intuition described here will be more clear when the \hyperref[tbd]{\dlink{determinant}} is discussed in more detail.
+      \end{itemize}
     \end{itemize}
     \item An algebraic example of vector e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -277,6 +281,13 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
   
+  \subsection{Vectors with Complex Numbers}\label{Vectors with Complex Numbers}
+  \begin{itemize}
+    \item \ddd{Complex number}: a number that can be expressed in the form \(\xxx{a} + \yyy{bi}\), where \(a\) and \(b\) are real numbers, and \(i~(\: j\,)\) is a symbol called the imaginary unit that satisfies the equation \yyy{\(i = \sqrt{-1}\)}.
+    \item This imaginary unit allows for the \yyy{imaginary set \((\mathbb{C})\)} to combined with the \\ \xxx{real number set \((\mathbb{R})\)} to create a 2-D plane that allows for more efficient calculations. 
+    \item He
+  \end{itemize}
+  
 \end{itemize}
 
   
@@ -288,6 +299,7 @@
   \item basis vectors
   \item transpose
   \item matrix products
+  \item determinant
 \end{itemize}
 
 
