@@ -167,4 +167,9 @@
     "body": "\\(\\sin(\\theta)\\)",
   },
 
+  "Field":{
+    "scope": "latex",
+    "prefix": "bbf",
+    "body": "\\mathbb{$1}"
+  }
 }
