@@ -243,7 +243,7 @@
   \begin{itemize}
     \item \jjj{Cross (vector, directed area) product}: denoted by the symbol \jjj{\(\bm{\times} \)}, indicating a binary operation on two vectors in \emph{three-dimensional space \(\mathbb{R}^3 \)}.
       \begin{itemize}
-        \item Given two \hyperref[tbd]{\dlink{linearly independent}} vectors \tbm{a} and \tbm{b}, then the cross product \(\bm{a}\times\bm{b}\) produces a new vector that is \emph{orthogonal} to both \tbm{a} and \tbm{b}, or \emph{normal} to the plane containing them.
+        \item Given two \hyperref[Linear Independence]{\dlink{linearly independent}} vectors \tbm{a} and \tbm{b}, then the cross product \(\bm{a}\times\bm{b}\) produces a new vector that is \emph{orthogonal} to both \tbm{a} and \tbm{b}, or \emph{normal} to the plane containing them.
         \item The \emph{direction} of the vector is given by the \emph{right-hand rule} (\tbm{a} = pointer, \tbm{b} = index, thumb = direction). 
         \item The \emph{magnitude} of the vector represents the \emph{area of the parallelogram} that the vectors span.
       \end{itemize}
@@ -344,52 +344,86 @@
   \end{itemize}
 \end{itemize}
 
-\section{Linear Subspace}\label{Linear Subspace}
+\section{Linear Combinations}\label{Linear Combinations}
 \begin{itemize}
-  \item \jjj{Linear (vector) subspace}: a vector space that is a subset of some larger vector space.
-  \item \emph{Algebraically}, a subspace is the set of all vectors that can be created by taking a linear combination of some vector or a set of vectors.
-    \begin{itemize}
-      \item \ddd{Linear combination}: an expression constructed from a set of terms by multiplying each term by a scalar and adding the results, i.e.,
-      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      a_1\bm{v}_1 +  a_2\bm{v}_2 +  a_3\bm{v}_3 +  a_n\bm{v}_n   
-      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \item For example, in a 3-D vector space \(\mathbb{R}^3\), then \emph{any vector} in the space is can be made by a linear combination of the following three vectors \(\bm{e}_1,~\bm{e}_2,~\bm{e}_3\) (unit vectors) multiplied by some scalar:
-      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \lambda\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} +
-      \lambda\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} + 
-      \lambda\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
-      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \end{itemize}
-  \item A vector subspace must be \emph{closed under} \emph{addition} and \emph{scalar multiplication} while also \emph{containing the zero vector}, i.e.,
+  \item \ddd{Linear combination}: an expression constructed from a set of terms by multiplying each term by a scalar and adding the results, i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \forall\bm{v}, \bm{w} \in L;\quad \forall\lambda,\alpha \in \mathbb{R};\quad \lambda \bm{v} + \alpha \bm{w} \in L
+  a_1\bm{v}_1 +  a_2\bm{v}_2 +  a_3\bm{v}_3 +  a_n\bm{v}_n   
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item For example, in a 3-D vector space \(\mathbb{R}^3\), then \emph{any vector} in the space is can be made by a linear combination of the following three vectors \(\bm{e}_1,~\bm{e}_2,~\bm{e}_3\) (unit vectors) multiplied by some scalar:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \lambda\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} +
+  \lambda\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} + 
+  \lambda\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \subsection{Subspace}\label{Subspace}
+  \begin{itemize}
+    \item \jjj{Linear (vector) subspace}: a vector space that is a subset of some larger vector space.
+    \item \emph{Algebraically}, a subspace is the set of all vectors that can be created by taking a linear combination of some vector or a set of vectors.
+    \item A vector subspace must be \emph{closed under} \emph{addition} and \emph{scalar multiplication} while also \emph{containing the zero vector}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \forall\bm{v}, \bm{w} \in L;\quad \forall\lambda,\alpha \in \mathbb{R};\quad \lambda \bm{v} + \alpha \bm{w} \in L
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item For all (\(\forall \)) vectors \(\bm{v},\bm{w}\) in (\(\in \)) the linear subspace (\(V\)), and for all scalars \(\lambda,\alpha \) in the set of real numbers (\(\mathbb{R}\)), then any linear combination of the two are in the same subspace.
       \item The above equation also implies the inclusion of zero vector, which is a trivial subspace of the vector space.
     \end{itemize}
-  \item The \emph{geometric} interpretation is best described through some examples:
-  \begin{itemize}
-    \item A \(\mathbb{R}^1\) vector and all the scaled possibilities added together describes a line stretches infinity in both directions, while a \(\mathbb{R}^2\) vector would create a 2-D plane. 
-    \item Both of the previous subspaces exist in the higher dimensional vector spaces, i.e., a 2-D plane and a 1-D line both exist in the 3-D vector space.
-    \item All subspaces also pass through the origin, including the O-D subspace, which is just the origin.
+    \item The \emph{geometric} interpretation is best described through some examples:
+    \begin{itemize}
+      \item A \(\mathbb{R}^1\) vector and all the scaled possibilities added together describes a line stretches infinity in both directions, while a \(\mathbb{R}^2\) vector would create a 2-D plane. 
+      \item Both of the previous subspaces exist in the higher dimensional vector spaces, i.e., a 2-D plane and a 1-D line both exist in the 3-D vector space.
+      \item All subspaces also pass through the origin, including the O-D subspace, which is just the origin.
+    \end{itemize}
   \end{itemize}
 
   \subsection{Subsets}\label{Subsets}
   \begin{itemize}
     \item \jjj{Subset \(\subseteq \)}: a set \(A\) is a subset of a set \(B\) if all elements of \(A\) are also elements of \(B\); \(B\) is then b a \jjj{superset \(\supseteq  \)} of \(A\).
-    \item Not all subsets of vector spaces are subsets; some subsets don't need to include the origin, don't need to be closed, or could have boundaries.
+    \item Not all subsets of vector spaces are subsets; subsets don't need to include the origin, don't need to be closed, or could have boundaries.
   \end{itemize}
   
   \subsection{Span}\label{Span}
   \begin{itemize}
-    \item 
+    \item \jjj{Linear span (hull) \(\operatorname{span}(S)\)}: a set \(S\) of vectors (from a vector space) that is the smallest linear subspace that contains the set.
+    \item The span is typically infinite, but it also can be defined as the set of all finite \hyperref[Linear combination]{\ulink{linear~combinations}} of vectors of \(S\) given an arbitrary field \(K\):
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \operatorname{span}(S)=\left\lbrace\left. \sum_{i = i}^{k} \lambda_i\bm{v}_i ~ \right| k \in \mathbb{N}, \bm{v}_i \in S, \lambda_i \in K \right\rbrace
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item A frequent question is asked whether a vector is in a span or not, e.g., are vectors \(v, w \in \operatorname{span}(S)\): 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{v}=\begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}
+    w=\begin{bmatrix} 3 \\ 2 \\ 1 \end{bmatrix}
+    S= \left\lbrace \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix} \begin{bmatrix} 1 \\ 7 \\ 0 \end{bmatrix} \right\rbrace 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \(\bm{v}\in \operatorname{span}(S) \) since both vectors in \(S\) can be scaled then combined in some way to form \tbm{v}, i.e., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{v}=\begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix} =
+    \frac{5}{6}\begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix} + 
+    \frac{1}{6}\begin{bmatrix} 1 \\ 7 \\ 0 \end{bmatrix} 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Determining the weights will be discussed later using \hyperref[tbd]{\dlink{matrix computations}}.
+    \end{itemize}
+    \item However, it's clear that \(\bm{w}\notin \operatorname{span}(S) \) since 0 cannot be scaled to equal 1.
+    \item Geometrically, a useful intuitive example is a 2-D span in 3-D space; the 2-D plane can be moved anywhere in the 3-D space as long as the two vectors describing the 2-D plane are \hyperref[Linear Independence]{\dlink{linearly independent}}.
   \end{itemize}
   
   \subsection{Linear Independence}\label{Linear Independence}
   \begin{itemize}
-    \item 
-  \end{itemize}
+    \item \jjj{Linearly dependent}: a set of \(V\) vectors where at least one vector in the set can be defined as a \hyperref[Linear combination]{\ulink{linear combination}} of the others.
+      \begin{itemize}
+        \item \jjj{Linearly independent}: when no vector in the set can be written in the above way. 
+      \end{itemize}
+    \item Algebraically, a sequence of vectors \(\bm{v}_1,\bm{v}_2,\dots,\bm{v}_k\) that a vector space \(V\) are linearly independent if there exist scalars \(\lambda_1,\lambda_2,\dots,\lambda_k\) (not all zero) such that they form the zero vector \(\bm{0}\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lambda_1\bm{v}_1,\lambda_2\bm{v}_2,\dots,\lambda_k\bm{v}_k = \bm{0} \qquad \lambda \in \mathbb{R}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Geometrically, a set of \(V\) vectors in independent if each vectors points in a geometric dimension not reachable using other vectors in the set.
+    \begin{itemize}
+      \item E.g., if two vectors are lie along the same line, then they are really just the same vector; same concept with a 2-D plane containing three vectors in \(\mathbb{R}^3\).
+    \end{itemize}
+    \end{itemize}
   
   \subsection{Basis}\label{Basis}
   \begin{itemize}
@@ -403,10 +437,11 @@
 
 \section{To be defined}\label{tbd}
 \begin{itemize}
-  \item basis vectors
+  \item Basis vectors
   \item transpose
   \item matrix products
   \item determinant
+  \item bilinear forms
 \end{itemize}
 
 

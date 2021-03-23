@@ -97,11 +97,7 @@
     "scope": "latex",
     "prefix": "cv",
     "body": [
-        "\\begin{bmatrix}",
-        "$1 \\\\\\",
-        "$2 \\\\\\",
-        "$3 ",
-        "\\end{bmatrix}",
+      "\\begin{bmatrix} $1 \\\\\\ $2 \\\\\\ $3 \\end{bmatrix}",
     ]
   },
 
@@ -171,5 +167,11 @@
     "scope": "latex",
     "prefix": "bbf",
     "body": "\\mathbb{$1}"
+  },
+
+  "Span":{
+    "scope": "latex",
+    "prefix": "sp()",
+    "body": "\\operatorname{span}($1)"
   }
 }
