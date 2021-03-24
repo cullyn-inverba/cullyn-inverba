@@ -173,5 +173,11 @@
     "scope": "latex",
     "prefix": "sp()",
     "body": "\\operatorname{span}($1)"
+  },
+
+  "Braces":{
+    "scope": "latex",
+    "prefix": "br{}",
+    "body": "\\left\\lbrace $1 \\right\\rbrace"
   }
 }

@@ -122,7 +122,7 @@
     \| \bm{v} \| = \sqrt{v_1^2+v_2^2+v_3^2}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item This is a consequence of the Pythagorean theorem, since the \hyperref[tbd]{\dlink{basis vectors}}  \\ \(\bm{e}_1\), \(\bm{e}_2\), and \(\bm{e}_3\) are \hyperref[Orthogonality]{\dlink{orthogonal}} \hyperref[Unit Vectors]{\dlink{unit vectors}}.
+      \item This is a consequence of the Pythagorean theorem, since the \hyperref[Basis]{\dlink{basis vectors}}  \\ \(\bm{e}_1\), \(\bm{e}_2\), and \(\bm{e}_3\) are \hyperref[Orthogonality]{\dlink{orthogonal}} \hyperref[Unit Vectors]{\dlink{unit vectors}}.
     \end{itemize}
     \item Thus, the \emph{norm} can easily be found by taking the square root of the dot product of the vector with itself:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,7 +144,7 @@
       \item When \(\minor{\cos{\theta} = 0}\)  (\(\theta = \ang{90}~\text{--- \minor{perpendicular}}\)) then \(\minor{\lambda = 0}\)
       \begin{itemize}
         \item This represents a special case where the vectors are said to be \emph{orthogonal}. 
-        \item \ddd{Orthogonality}: the generalization of the notion of \emph{perpendicularity} to the linear algebra of \hyperref[tbd]{\dlink{bilinear forms}}.
+        \item \ddd{Orthogonality}: the generalization of the notion of \emph{perpendicularity} to the linear algebra of bilinear forms.
       \end{itemize}
       \item When \(\emph{\cos{\theta} = 1}\) then the vectors are \emph{codirectional}:
       \[\bm{a}^T\bm{b} = \| \bm{a} \| ~\| \bm{b} \| \]\vspace{-25pt}
@@ -412,9 +412,7 @@
   \subsection{Linear Independence}\label{Linear Independence}
   \begin{itemize}
     \item \jjj{Linearly dependent}: a set of \(V\) vectors where at least one vector in the set can be defined as a \hyperref[Linear combination]{\ulink{linear combination}} of the others.
-      \begin{itemize}
-        \item \jjj{Linearly independent}: when no vector in the set can be written in the above way. 
-      \end{itemize}
+    \item \jjj{Linearly independent}: when no vector in the set can be written in the above way. 
     \item Algebraically, a sequence of vectors \(\bm{v}_1,\bm{v}_2,\dots,\bm{v}_k\) that a vector space \(V\) are linearly independent if there exist scalars \(\lambda_1,\lambda_2,\dots,\lambda_k\) (not all zero) such that they form the zero vector \(\bm{0}\), i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \lambda_1\bm{v}_1,\lambda_2\bm{v}_2,\dots,\lambda_k\bm{v}_k = \bm{0} \qquad \lambda \in \mathbb{R}
@@ -427,21 +425,29 @@
   
   \subsection{Basis}\label{Basis}
   \begin{itemize}
-    \item 
+    \item \jjj{Basis}: the combination of \hyperref[Span]{\ulink{span}} and \hyperref[Linear Independence]{\ulink{linear independence}}, i.e., the set \(B\) of vectors in vector space \(V\) if every element of \(V\) may be written as a \emph{unique} finite \hyperref[Linear combination]{\ulink{linear~combination}} of elements of \(B\).
+      \begin{itemize}
+        \item More concisely, a basis is simply a \emph{linearly independent spanning set}.
+        \item \jjj{Components (coordinates)}: the coefficients of the linear combination and are referred to as of the vector with respect to \(B\), or \jjj{basis vectors}.
+      \end{itemize}
+    \item Examples of standard basis vectors:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \mathbb{R}^2 ~ 
+    \left\lbrace 
+    \begin{bmatrix} 1 \\ 0 \end{bmatrix} 
+    \begin{bmatrix} 0 \\ 1 \end{bmatrix}
+    \right\rbrace
+    \qquad
+    \mathbb{R}^3 ~ 
+    \left\lbrace 
+    \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
+    \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}
+    \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
+     \right\rbrace
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
-  
-\end{itemize}
-
-  
-\newpage
-
-\section{To be defined}\label{tbd}
-\begin{itemize}
-  \item Basis vectors
-  \item transpose
-  \item matrix products
-  \item determinant
-  \item bilinear forms
+  \item The standard basis vectors of \(\mathbb{R}^3\) was used in the example of \hyperref[Linear Combinations]{\ulink{linear combinations}} to demonstrate how these unit vectors could all be scaled so that they could describe any vector in the space.
+  \item \hyperref[tbd]{\dlink{Basis vectors can be changed}}, so it's better to think of them as the ``rulers'' used to describe any other vector in the space.
 \end{itemize}
 
 
