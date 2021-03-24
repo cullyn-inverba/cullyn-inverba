@@ -1,10 +1,12 @@
 \chapter{Vectors}\label{Vectors}
 \section{Interpretations of Vectors}\label{Interpretations of Vectors}
 \begin{itemize}
-  \item \jjj{Algebraic vectors \jx{\left(\bm{v},~\vv{v}\right)}}: an ordered list of numbers.
+  \item \jjj{Algebraic vectors \jx{\left(\bm{v},~\vv{v}\right)}}: an ordered list of numbers, e.g.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{v}= \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
-    \item E.g., \(\bm{v}= \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}\)
-    \item Vectors can be written as rows (seen above) or columns (seen below), but  differ only at the level of notation and convention.
+    \item Vectors can be written as \xxx{rows} (seen above) or \yyy{columns} (seen below), but  differ only at the level of notation, some notation is more useful with certain conventions.
     \item The order of elements in a vector matters:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}
@@ -91,15 +93,15 @@
     \item The result of a dot product is a \hyperref[Scalar]{\ulink{scalar}}, so often it is represented as such.
       \begin{itemize}
         \item It can also be represented as multiplication between two vectors (\(\bm{a\cdot b}\)). 
-        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[tbd]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[tbd]{\dlink{matrix products}}.
+        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[tbd]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[tbd]{\dlink{matrix multiplication}}.
       \end{itemize}
     \item Algebraically: \(\sum_{i = 1}^{n} \bm{a}_i \bm{b}_i  \) --- where \(\Sigma \) denotes summation and \(n\) is the dimension of the vector space, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \rrr{\begin{bmatrix} 1 & 3 & 5 \end{bmatrix}}\bbb{\begin{bmatrix}
+    \xxx{\begin{bmatrix} 1 & 3 & 5 \end{bmatrix}}\yyy{\begin{bmatrix}
       4 \\
       -2 \\
       1 \
-    \end{bmatrix}} = (\rrr{1}\cdot\bbb{4}) + (\rrr{3}\cdot \bbb{-2}) + (\rrr{-5} \cdot \bbb{-1}) = 3
+    \end{bmatrix}} = (\xxx{1}\cdot\yyy{4}) + (\xxx{3}\cdot \yyy{-2}) + (\xxx{-5} \cdot \yyy{-1}) = 3
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
   
@@ -161,7 +163,7 @@
 \newpage
 \section{Other Properties of Vectors}\label{Other Properties of Vectors}
 \begin{itemize}
-  \item \hyperref[tbd]{\dlink{Matrices}} are properly defined later. However, vectors are technically single row or column matrices, so many of the following operations also work on vectors, thus use of matrices often appears in this section.
+  \item \hyperref[Matrix Terminology]{\dlink{Matrices}} are properly defined later. However, vectors are technically single row or column matrices, so many of the following operations also work on vectors, thus use of matrices often appears in this section.
   
   \subsection{Hadamard Multiplication}\label{Vector Hadamard Multiplication}
   \begin{itemize}
@@ -196,9 +198,9 @@
       \begin{itemize}
         \item Note: the typical notation used for dot products is \(\bm{v}^T \bm{w}\) --- part of reasoning for the ``inner'' product. 
       \end{itemize}
-    \item \jjj{Outer product}: an \(N\times M\) matrix that results from the product of two vectors with dimensions \(n\) and \(m\).
+    \item \jjj{Outer product}: an \(n\times m\) matrix that results from the product of two vectors with dimensions \(n\) and \(m\).
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \bm{v}\bm{w}^T=N\times M
+    \bm{v}\bm{w}^T=n\times m
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item The subtle change in notation matters in contrast to the dot product, as both represent distinct operations (assuming they are column vectors).
     \item The outer product allows for the multiplication of vectors with different dimensionality
@@ -449,8 +451,3 @@
   \item The standard basis vectors of \(\mathbb{R}^3\) was used in the example of \hyperref[Linear Combinations]{\ulink{linear combinations}} to demonstrate how these unit vectors could all be scaled so that they could describe any vector in the space.
   \item \hyperref[tbd]{\dlink{Basis vectors can be changed}}, so it's better to think of them as the ``rulers'' used to describe any other vector in the space.
 \end{itemize}
-
-
-
-
-
