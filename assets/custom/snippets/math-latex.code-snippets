@@ -111,7 +111,7 @@
 
   "Matrix":{
     "scope": "latex",
-    "prefix": "mx",
+    "prefix": "mbx",
     "body": [
         "\\begin{bmatrix}",
         "$1 & $2 & $3 \\\\\\",
@@ -119,6 +119,12 @@
         "$7 & $8 & $9 ",
         "\\end{bmatrix}",
     ]
+  },
+
+  "Matrix Notation":{
+    "scope": "latex",
+    "prefix": "mex",
+    "body": "$1_{$2,$3}"
   },
 
   "Sum":{

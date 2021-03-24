@@ -1,7 +1,51 @@
 \chapter{Matrices}\label{Matrices}  
-\section{Intro}\label{Intro}
+\section{Matrix Terminology}\label{Matrix Terminology}
 \begin{itemize}
-  \item 
+  \item \jjj{Matrix \(\bm{M}_{\xxx{r},\yyy{c}}\)}: a \emph{rectangular array} of elements arranged in \xxx{rows \(\updownarrow \)} and \yyy{columns \(\leftrightarrow \)}, e.g.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  M = \begin{bmatrix}
+  1 & 0 & 3 \\
+  5 & 4 & 2 \\
+  7 & 6 & 9 
+  \end{bmatrix}
+  \qquad M_{\xxx{3},\yyy{2}} = 6
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item \jjj{Block (partitioned) matrix}: a matrix that is interpreted as having been broken into sections called blocks or submatrices, e.g.,
+  \begin{align*}
+    \bm{M} = 
+    \begin{bmatrix}
+      \bbb{\bm{D}} & \fff{\bm{N}} \\
+      \ttt{\bm{Y}} & \bbb{\bm{D}} 
+    \end{bmatrix} 
+    =
+    \begin{bmatrix}
+    \bbb{4} & \bbb{2} & \fff{0} & \fff{0} \\
+    \bbb{6} & \bbb{9} & \fff{0} & \fff{0} \\
+    \ttt{1} & \ttt{1} & \bbb{4} & \bbb{2} \\
+    \ttt{1} & \ttt{1} & \bbb{6} & \bbb{9}
+    \end{bmatrix}
+    \\
+    \bm{D} = 
+    \bbb{\begin{bmatrix}
+      4 & 2 \\
+      6 & 9 
+    \end{bmatrix}}\quad
+    \bm{N} =
+    \fff{\begin{bmatrix}
+      0 & 0 \\
+      0 & 0 
+    \end{bmatrix}}\quad
+    \bm{Y} = 
+    \ttt{\begin{bmatrix}
+      1 & 1 \\
+      1 & 1 
+    \end{bmatrix}}
+  \end{align*}
+  \begin{itemize}
+    \item Can be used for large matrices with high level structure, offering convenient notation, and sometimes providing computational benefits.
+  \end{itemize}
+
+  \item \jjj{}
 \end{itemize}
 
 

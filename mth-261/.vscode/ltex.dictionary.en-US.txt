@@ -1,3 +1,4 @@
 ToC
 codirectional
 Hadamard
+submatrices
