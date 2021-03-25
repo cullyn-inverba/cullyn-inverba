@@ -142,10 +142,149 @@
   
   \subsection{Diagonal and Triangular Matrices}\label{Diagonal and Triagnular Matrices}
   \begin{itemize}
-    \item 
+    \item \ddd{Diagonal matrix}: when all elements \emph{outside the main diagonal} are zero, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    e_{1,1} & 0 & \cdots & 0 \\
+    0 & e_{2,2} & 0 & \vdots \\
+    \vdots & 0 & \ddots & 0  \\
+    0 & \cdots & 0 & e_{i,i}  \\
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Elements along the diagonal don't have to be the same, and they can be zero (meaning rectangular matrices still can be diagonal, technically).
+      \item When all the elements along the main diagonal are the same, then it's a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, i.e., \(\lambda\bm{I}\).
+    \end{itemize}
+    \item \ddd{Triangular matrices}: when all elements above or below the diagonal are zero, but not on both sides.
+      \begin{itemize}
+        \item \rrr{Upper triangular matrix}: when all the elements \bbb{below} the diagonal are zero. 
+        \item \bbb{Lower triangular matrix}: when all the elements \rrr{above} the diagonal are zero. 
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \rrr{\text{Upper}=\begin{bmatrix}
+          e_{1,1} & e_{1,2} & e_{1,3} \\
+          \bbb{0} & e_{2,2} & e_{2,3} \\
+          \bbb{0} &  \bbb{0} & e_{3,3}  \\
+        \end{bmatrix}}
+        \qquad
+        \bbb{\text{Lower}=\begin{bmatrix}
+          e_{1,1} & \rrr{0} & \rrr{0} \\
+          e_{2,1} & e_{2,2} & \rrr{0} \\
+          e_{3,1} &  e_{3,2}& e_{3,3}  \\
+        \end{bmatrix}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+      \end{itemize}
   \end{itemize}
   
   \subsection{Augmented and Complex Matrices}\label{Augmented and Complex Matrices}
+  \begin{itemize}
+    \item \jjj{Augmented (concatenated) matrix \(\bm{A}~\,\vline~\bm{B}\)}: a matrix obtained by appending the columns of two given matrices, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    4 & 2 & 0 \\
+    3 & 7 & 6 \\
+    1 & 6 & 9 
+    \end{bmatrix}
+    ~\vline~
+    \begin{bmatrix} 4 \\ 2 \\ 0 \end{bmatrix}
+    =
+    \begin{bmatrix}[ccc|c]
+      4 & 2 & 0 & 4 \\
+      3 & 7 & 6 & 2 \\
+      1 & 6 & 9 & 0 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Used typically for the purpose of performing the same elementary row operations on each of the given matrices. 
+      \item Matrices must have the same number of rows (or columns for vertical augmentation) for the concatenation to be applied.
+    \end{itemize}
+    \item \ddd{Complex matrix}: A matrix whose elements may contain complex numbers.
+    \item The \hyperref[Conjugate Transpose]{\ulink{conjugate transpose}} discussed previously in vectors can is used here as well. 
+    \item \hyperref[Transposition]{\dlink{Transposition}} will be discussed shortly, but for now, the complex conjugate still behaves the same (just imaginary numbers change sign), e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    1 & -1\yyy{+5i} & 0 \\
+    1 & -2 & -4 \\
+   \yyy{ 6i} & -4 & 5\yyy{-2i}  
+    \end{bmatrix}^H
+    =
+    \begin{bmatrix}
+    1 & 1 & \yyy{-6i} \\
+    -1\yyy{-5i} & -2 & -4 \\
+    0 & -4 & 5\yyy{+2i} 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}  
+\end{itemize}
+
+\section{Basic Matrix Operations}\label{Basic Matrix Operations}
+\begin{itemize}
+  \item []
+  
+  \subsection{Matrix Addition and Subtraction}\label{Matrix Addition and Subtraction}
+  \begin{itemize}
+    \item \ddd{Matrix addition (subtraction)}: the operation of adding (subtracting) two matrices of \emph{equal dimensions} \(m \times n\) by adding (subtracting) the corresponding elements together, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    1 & 2 & 5 \\
+    0 & 6 & 8 \\
+    9 & 6 & 4 
+    \end{bmatrix} +
+    \begin{bmatrix}
+      0 & 3 & 5 \\
+      1 & -6 & 9 \\
+      -5 & -4 & 0 
+    \end{bmatrix} 
+    = 
+    \begin{bmatrix}
+    1 & 5 & 10 \\
+    1 & 0 & 17 \\
+    4 & 2 & 4 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Note: there are other operations which could also be considered addition for matrices, such as the direct sum and the Kronecker sum (not discussed as of now).
+    \item \ttt{\cmark~Commutative}: \(\bm{A}+\bm{B} = \bm{B} + \bm{A}\)
+    \item \ttt{\cmark~Associative}: \(\bm{A} + (\bm{B}+\bm{C}) = (\bm{A}+\bm{B} + C)\)
+  \end{itemize}
+
+  \subsection{Matrix Scalar Multiplication}\label{Matrix Scalar Multiplication}
+  \begin{itemize}
+    \item \jjj{Matrix scalar multiplication}: the same as \hyperref[Vector Scalar Multiplication]{\ulink{vector scalar multiplication}} or simply, scalar multiplication, as vectors are \(m \times 1~(\text{or}~1 \times n)\) matrices.
+    \item Scalar multiplication is true when both \bbb{left scalar} and \rrr{right scalar} are equal, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bbb{\lambda}(\bm{M})_{ij} = (\bbb{\lambda} \bm{M})_{ij} = ( \bm{M}\rrr{\lambda})_{ij}= (\bm{M})_{ij}\rrr{\lambda} % chktex 3
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item More explicitly: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    \bbb{\lambda} e & \bbb{\lambda} e & \cdots & \bbb{\lambda} e \\
+    \bbb{\lambda} e & \bbb{\lambda} e & \cdots & \bbb{\lambda} e \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \bbb{\lambda} e & \bbb{\lambda} e & \cdots & \bbb{\lambda} e
+    \end{bmatrix}
+    =
+    \left(
+      \bbb{\lambda}~\text{or}
+    \begin{bmatrix}
+    e & e & \cdots & e \\
+    e & e & \cdots & e \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e & e & \cdots & e
+    \end{bmatrix}
+      \text{or}~\rrr{\lambda}
+    \right)
+    =
+    \begin{bmatrix}
+    e\rrr{\lambda} & e\rrr{\lambda} & \cdots & e\rrr{\lambda} \\
+    e\rrr{\lambda} & e\rrr{\lambda} & \cdots & e\rrr{\lambda} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e\rrr{\lambda} & e\rrr{\lambda} & \cdots & e\rrr{\lambda}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The above is \ttt{true only} where the underlying ring (algebraic structure that generalize fields\dots I need to learn more about this\dots) \ttt{is commutative}. This fact is essential for later proofs.
+  \end{itemize}
+  
+  \subsection{Transposition}\label{Transposition}
   \begin{itemize}
     \item 
   \end{itemize}
@@ -158,8 +297,8 @@
 
 \section{To be defined}\label{tbd}
 \begin{itemize}
-  \item Transpose
-  \item matrix multiplication
+  \item Matrix multiplication
+  \item matrix computations (determining weights)
   \item determinant
   \item change of basis
 \end{itemize}

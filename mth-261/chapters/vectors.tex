@@ -63,10 +63,10 @@
     \end{itemize}
   \end{itemize}
   
-  \subsection{Vector-Scalar Multiplication}\label{Vector-Scalar Multiplication}
+  \subsection{Vector Scalar Multiplication}\label{Vector Scalar Multiplication}
   \begin{itemize}
-    \item \ddd{Scalar}: typically denoted with lower case Greek letters (e.g., \(\alpha,~\lambda \)) indicating an element of a field (typically real numbers) used in scalar-multiplication of vectors. 
-    \item Algebraically, scalar-multiplication is the multiplication of each element of a vector by a particular scalar, e.g.,
+    \item \ddd{Scalar}: typically denoted with lower case Greek letters (e.g., \(\alpha,~\lambda \)) indicating an element of a field (typically real numbers) used in scalar multiplication of vectors. 
+    \item Algebraically, scalar multiplication is the multiplication of each element of a vector by a particular scalar, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \lambda \bm{v} \rightarrow 7 \begin{bmatrix}
       -1 \\
@@ -93,7 +93,7 @@
     \item The result of a dot product is a \hyperref[Scalar]{\ulink{scalar}}, so often it is represented as such.
       \begin{itemize}
         \item It can also be represented as multiplication between two vectors (\(\bm{a\cdot b}\)). 
-        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[tbd]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[tbd]{\dlink{matrix multiplication}}.
+        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[Transposition]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[tbd]{\dlink{matrix multiplication}}.
       \end{itemize}
     \item Algebraically: \(\sum_{i = 1}^{n} \bm{a}_i \bm{b}_i  \) --- where \(\Sigma \) denotes summation and \(n\) is the dimension of the vector space, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,7 +111,7 @@
     \item \ttt{\cmark~Distributive}: \(\bm{a}^T(\bm{b}+\bm{c})=~\bm{a}^T\bm{b}+\bm{a}^T\bm{c}\) ---  vector multiplication distributes over vector addition. 
     \item \fff{\xmark~Associative}: \(\bm{a}^T(\bm{b}^T\bm{c})\neq(\bm{a}^T\bm{b})\bm{c}\) --- in general the associative property does not hold, as the dot product would most likely produce different scalars.
     \begin{itemize}
-      \item Additionally, \bm{a} could have a different dimensionality than \bm{b} and \bm{c}. I.e., even if \bm{b} and \bm{c} had the same dimensionality (\(\bm{a}^T(\bm{b}^T\bm{c})\) would be valid vector-scalar multiplication) then \(\bm{a}^T \bm{b}\) would be invalid.
+      \item Additionally, \bm{a} could have a different dimensionality than \bm{b} and \bm{c}. I.e., even if \bm{b} and \bm{c} had the same dimensionality (\(\bm{a}^T(\bm{b}^T\bm{c})\) would be valid vector scalar multiplication) then \(\bm{a}^T \bm{b}\) would be invalid.
     \end{itemize}
     \item \ttt{\cmark~Commutative}: \(\bm{a}^T\bm{b} = \bm{b}^T\bm{a}\) --- the order of the vectors does not matter. 
   \end{itemize}
@@ -326,7 +326,7 @@
   
   \subsection{Conjugate Transpose}\label{Conjugate Transpose}
   \begin{itemize}
-    \item \jjj{Conjugate (Hermitian) transpose \(M^H,~M^*\)}: the \(n\text{-by-}m\) matrix obtained by taking the \hyperref[tbd]{\dlink{transpose}} and then taking the complex conjugate of each entry.
+    \item \jjj{Conjugate (Hermitian) transpose \(M^H,~M^*\)}: the \(n\text{-by-}m\) matrix obtained by taking the \hyperref[Transposition]{\dlink{transpose}} and then taking the complex conjugate of each entry.
     \item \jjj{Complex conjugate}: the number with both equal real and imaginary parts equal in magnitude but \emph{opposite in sign.}
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       a+bi = a - bi~~\longleftrightarrow~~a - bi = a + bi

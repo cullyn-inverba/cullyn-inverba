@@ -121,6 +121,19 @@
     ]
   },
 
+  "Indefinite Matrix":{
+    "scope": "latex",
+    "prefix": "imx",
+    "body": [
+      "\\begin{bmatrix}",
+      "e & e & \\cdots & e \\\\\\",
+      "e & e & \\cdots & e \\\\\\",
+      "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
+      "e & e & \\cdots & e",
+      "\\end{bmatrix}",
+    ]
+  },
+
   "Matrix Notation":{
     "scope": "latex",
     "prefix": "mex",
