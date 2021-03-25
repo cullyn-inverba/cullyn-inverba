@@ -14,10 +14,18 @@
     \DeclareMathSizes{12}{14}{10}{8}
 
     \makeatletter
-    \renewcommand\tagform@[1]{
-        \maketag@@@{\ignorespaces#1\unskip\@@italiccorr}
-    }
+        \renewcommand\tagform@[1]{
+            \maketag@@@{\ignorespaces#1\unskip\@@italiccorr}
+        }
     \makeatother
+
+    \makeatletter
+        \renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+        \hskip -\arraycolsep
+        \let\@ifnextchar\new@ifnextchar
+        \array{#1}}
+    \makeatother
+
 
     
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
