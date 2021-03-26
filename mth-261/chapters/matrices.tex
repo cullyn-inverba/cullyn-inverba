@@ -100,8 +100,8 @@
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \begin{itemize}
-        \item Algebraically, it's a square matrix \(A\) that is equal to its \hyperref[tbd]{\dlink{transpose}}, i.e., \\ \(A = A^T\).
-        \item Additionally, it does not matter what is on the diagonal, as any number is equal to itself. 
+        \item Algebraically, it's a square matrix \(A\) that is equal to its \hyperref[Transposition]{\dlink{transpose}}, i.e., \\ \(A = A^T\).
+        \item It does not matter what is on the diagonal, as any number is equal to itself. 
       \end{itemize}
     \item \ddd{Skew-symmetric matrix}: a square matrix that is still symmetric, but all elements mirrored across the diagonal and inverted, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,7 +113,7 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Algebraically, it's a square matrix \(A\) that is equal to its negative transpose, i.e., \(A = -A^T\)
-      \item However, the diagonal must be zero, as zero is the only number that can equal its inverse. 
+      \item Here all elements on the diagonal must be zero, as zero is the only number that can be equal its inverse. 
     \end{itemize}
   \end{itemize}
   
@@ -199,7 +199,7 @@
       \item Matrices must have the same number of rows (or columns for vertical augmentation) for the concatenation to be applied.
     \end{itemize}
     \item \ddd{Complex matrix}: A matrix whose elements may contain complex numbers.
-    \item The \hyperref[Conjugate Transpose]{\ulink{conjugate transpose}} discussed previously in vectors can is used here as well. 
+    \item The \hyperref[Conjugate Transpose]{\ulink{conjugate transpose}} discussed previously in vectors can is used here as well.
     \item \hyperref[Transposition]{\dlink{Transposition}} will be discussed shortly, but for now, the complex conjugate still behaves the same (just imaginary numbers change sign), e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}
@@ -286,19 +286,130 @@
   
   \subsection{Transposition}\label{Transposition}
   \begin{itemize}
+    \item \jjj{Transpose \(^T\)}: an operation where a matrix is flipped over its \hyperref[Diagonal]{\ulink{diagonal}}, i.e., \\ it switches the row and column indices of the matrix, e.g., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    \rrr{1} & \ttt{5} & \bbb{9} \\
+    \rrr{2} & \ttt{6} & \bbb{0} \\
+    \rrr{3} & \ttt{7} & \bbb{1} \\
+    \rrr{4} & \ttt{8} & \bbb{2}
+    \end{bmatrix}^T
+    =
+    \begin{bmatrix}
+    \rrr{1} & \rrr{2} & \rrr{3} & \rrr{4} \\
+    \ttt{5} & \ttt{6} & \ttt{7} & \ttt{8} \\
+    \bbb{9} & \bbb{0} & \bbb{1} & \bbb{2}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Formally, the element of the \xxx{\(i\)-th row}, \yyy{\(j\)-th column} of matrix \(\bm{M}\) when transposed becomes the element of the \yyy{\(j\)-th row}, \xxx{\(i\)-th column} of matrix \(\bm{M}^T\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{M}_{\xxx{i},\yyy{j}} = \bm{M}_{\yyy{j},\xxx{i}}^T
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Alternatively, with regard to dimensionality, if \(\bm{M}\) is an \(\xxx{m} \times \yyy{n}\) matrix, then \(\bm{M}^T\) is an \(\yyy{n} \times \xxx{m}\) matrix. 
+      \begin{itemize}
+        \item Thus, a transposed matrix that is transposed again will produce the original matrix, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \left(\bm{M}_{\yyy{j},\xxx{i}}^T\right)^T = \bm{M}_{\xxx{i},\yyy{j}} % chktex 3
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+    \item Revisiting \hyperref[Augmented and Complex Matrices]{\ulink{complex matrices}}:
+    \begin{itemize}
+      \item \ddd{Hermitian matrix}: a \emph{square} complex matrix whose transpose is equal to every entry being replaced with its \hyperref[Complex conjugate]{\ulink{complex conjugate}}. 
+        \begin{itemize}
+          \item Denoted: \(\bm{M}^T={\overline{\bm{M}\,}}\)
+        \end{itemize}
+      \item \ddd{Skew-Hermitian matrix}: a Hermitian matrix whose transpose is equal to the \emph{negation} of its complex conjugate.
+      \begin{itemize}
+        \item Denoted: \(\bm{M}^T=-{\overline{\bm{M}\,}}\)
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+
+  \subsection{Diagonal and Trace}\label{Diagonal and Trace}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  \subsection{Broadcasting}\label{Broadcasting}
+  \begin{itemize}
     \item 
   \end{itemize}
   
+  
+\end{itemize}
+
+\section{Matrix Multiplication}\label{Matrix Multiplication}
+\begin{itemize}
+  \item []
+  
+  \subsection{Standard Matrix Multiplication Perspectives}\label{Standard Matrix Multiplication Perspectives}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  \subsection{Diagonal Matrix Multiplication}\label{Diagonal Matrix Multiplication}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  \subsection{Order of Operations}\label{Order of Operations}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
+  \subsection{Matrix Vector Multiplication}\label{Matrix Vector Multiplication}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  \subsection{Transformation Matrix}\label{Tansformation Matrix}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
+  \subsection{Additive and Multiplicative Matrices}\label{Additive and Multiplicative Matrices}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
+  \subsection{Hadamard Multiplication}\label{Hadamard Multiplication}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
+  \subsection{Multiplication of Symmetric Matrices}\label{Multiplication of Symmetric Matrices}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  \subsection{Frobenius Dot Product}\label{Frobenius Dot Product}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
+  \subsection{Matrix Norms}\label{Other Matrix Norms}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+\end{itemize}
+
+\section{Matrix Rank}\label{Matrix Rank}
+\begin{itemize}
+  \item 
 \end{itemize}
 
 
-
-\newpage
-
-\section{To be defined}\label{tbd}
+\section{Matrix Spaces}\label{Matrix Spaces}
 \begin{itemize}
-  \item Matrix multiplication
-  \item matrix computations (determining weights)
-  \item determinant
-  \item change of basis
+  \item 
+\end{itemize}
+
+\section{Matrix Determinant}\label{Matrix Determinant}
+\begin{itemize}
+  \item 
+\end{itemize}
+
+\section{Matrix Inverse}\label{Matrix Inverse}
+\begin{itemize}
+  \item 
 \end{itemize}

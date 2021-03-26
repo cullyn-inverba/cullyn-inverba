@@ -93,7 +93,7 @@
     \item The result of a dot product is a \hyperref[Scalar]{\ulink{scalar}}, so often it is represented as such.
       \begin{itemize}
         \item It can also be represented as multiplication between two vectors (\(\bm{a\cdot b}\)). 
-        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[Transposition]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[tbd]{\dlink{matrix multiplication}}.
+        \item However, it is commonly represented as \(\bm{a}^T\bm{b}\) --- \hyperref[Transposition]{\dlink{transpose}} will be explained in more detail when dealing with \hyperref[Matrix Multiplication]{\dlink{matrix multiplication}}.
       \end{itemize}
     \item Algebraically: \(\sum_{i = 1}^{n} \bm{a}_i \bm{b}_i  \) --- where \(\Sigma \) denotes summation and \(n\) is the dimension of the vector space, e.g.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,7 +165,7 @@
 \begin{itemize}
   \item \hyperref[Matrix Terminology]{\dlink{Matrices}} are properly defined later. However, vectors are technically single row or column matrices, so many of the following operations also work on vectors, thus use of matrices often appears in this section.
   
-  \subsection{Hadamard Multiplication}\label{Vector Hadamard Multiplication}
+  \subsection{Vector Hadamard Multiplication}\label{Vector Hadamard Multiplication}
   \begin{itemize}
     \item \jjj{Hadamard (element-wise) product}: a binary operation (only takes two operands) that matrices of the same dimensions and produces another matrix of the same dimension as the operands, e.g., vector Hadamard multiplication:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -258,7 +258,7 @@
       \begin{itemize}
         \item \(\cos(\theta)\) in the \emph{dot product} is used to measure how ``parallel'' the two vectors are, i.e., they are \emph{codirectional} when \(\theta = 1\), allowing for calculation of the \hyperref[Vector Length]{\ulink{norm}}. 
         \item \(\sin(\theta)\) in the \emph{cross product} is used to measure how ``perpendicular'' two vectors are, i.e., they are \emph{orthogonal} when \(\theta = 1\). There are multiple directions of the orthogonal vector, so calculation of the signed area returns vector \tbm{v} that describes both magnitude and direction as described above.
-        \item The intuition described here will be more clear when the \hyperref[tbd]{\dlink{determinant}} is discussed in more detail.
+        \item The intuition described here will be more clear when the \hyperref[Matrix Determinant]{\dlink{determinant}} is discussed in more detail.
       \end{itemize}
     \end{itemize}
     \item An algebraic example of vector e.g.,
@@ -327,7 +327,7 @@
   \subsection{Conjugate Transpose}\label{Conjugate Transpose}
   \begin{itemize}
     \item \jjj{Conjugate (Hermitian) transpose \(M^H,~M^*\)}: the \(n\text{-by-}m\) matrix obtained by taking the \hyperref[Transposition]{\dlink{transpose}} and then taking the complex conjugate of each entry.
-    \item \jjj{Complex conjugate}: the number with both equal real and imaginary parts equal in magnitude but \emph{opposite in sign.}
+    \item \ddd{Complex conjugate}: the number with both equal real and imaginary parts equal in magnitude but \emph{opposite in sign.}
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       a+bi = a - bi~~\longleftrightarrow~~a - bi = a + bi
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -405,7 +405,7 @@
     \frac{1}{6}\begin{bmatrix} 1 \\ 7 \\ 0 \end{bmatrix} 
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Determining the weights will be discussed later using \hyperref[tbd]{\dlink{matrix computations}}.
+      \item Determining the weights will be discussed later using \hyperref[Matrix Vector Multiplication]{\dlink{matrix computations}}.
     \end{itemize}
     \item However, it's clear that \(\bm{w}\notin \operatorname{span}(S) \) since 0 cannot be scaled to equal 1.
     \item Geometrically, a useful intuitive example is a 2-D span in 3-D space; the 2-D plane can be moved anywhere in the 3-D space as long as the two vectors describing the 2-D plane are \hyperref[Linear Independence]{\dlink{linearly independent}}.
@@ -449,5 +449,6 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
   \item The standard basis vectors of \(\mathbb{R}^3\) was used in the example of \hyperref[Linear Combinations]{\ulink{linear combinations}} to demonstrate how these unit vectors could all be scaled so that they could describe any vector in the space.
-  \item \hyperref[tbd]{\dlink{Basis vectors can be changed}}, so it's better to think of them as the ``rulers'' used to describe any other vector in the space.
+  \item %\hyperref[tbd]{\dlink{Basis vectors can be changed}},%
+   (fix link) so it's better to think of them as the ``rulers'' used to describe any other vector in the space.
 \end{itemize}

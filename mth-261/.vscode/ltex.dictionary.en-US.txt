@@ -2,3 +2,6 @@ ToC
 codirectional
 Hadamard
 submatrices
+nonsingular
+nondegenerate
+Frobenius
