@@ -100,7 +100,7 @@
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \begin{itemize}
-        \item Algebraically, it's a square matrix \(A\) that is equal to its \hyperref[Transposition]{\dlink{transpose}}, i.e., \\ \(A = A^T\).
+        \item Algebraically, it's a square matrix \(\bm{A}\) that is equal to its \hyperref[Transposition]{\dlink{transpose}}, i.e., \\ \(\bm{A} = \bm{A}^T\).
         \item It does not matter what is on the diagonal, as any number is equal to itself. 
       \end{itemize}
     \item \ddd{Skew-symmetric matrix}: a square matrix that is still symmetric, but all elements mirrored across the diagonal and inverted, e.g.,
@@ -112,7 +112,7 @@
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Algebraically, it's a square matrix \(A\) that is equal to its negative transpose, i.e., \(A = -A^T\)
+      \item Algebraically, it's a square matrix \(\bm{A}\) that is equal to its negative transpose, i.e., \(\bm{A} = -\bm{A}^T\)
       \item Here all elements on the diagonal must be zero, as zero is the only number that can be equal its inverse. 
     \end{itemize}
   \end{itemize}
@@ -244,7 +244,7 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Note: there are other operations which could also be considered addition for matrices, such as the direct sum and the Kronecker sum (not discussed as of now).
     \item \ttt{\cmark~Commutative}: \(\bm{A}+\bm{B} = \bm{B} + \bm{A}\)
-    \item \ttt{\cmark~Associative}: \(\bm{A} + (\bm{B}+\bm{C}) = (\bm{A}+\bm{B} + C)\)
+    \item \ttt{\cmark~Associative}: \(\bm{A} + (\bm{B}+\bm{C}) = (\bm{A}+\bm{B}+ \bm{C})\)
   \end{itemize}
 
   \subsection{Matrix Scalar Multiplication}\label{Matrix Scalar Multiplication}
@@ -327,12 +327,28 @@
 
   \subsection{Diagonal and Trace}\label{Diagonal and Trace}
   \begin{itemize}
-    \item 
+    \item The \hyperref[Diagonal]{\ulink{main diagonal}} of a matrix can be extracted and turned into a vector.
+      \begin{itemize}
+        \item Not to be confused with \hyperref[tbd]{\dlink{diagonalization}} of a matrix, which is a result of \hyperref[tbd]{\dlink{matrix~decomposition}} resulting from \hyperref[tbd]{\dlink{eigendecomposition}}.
+      \end{itemize}
+    \item \jjj{Trace \(\operatorname{tr}(\bm{M})\)}: the sum of all diagonal elements, defined only for square matrices.
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \operatorname{tr}(\bm{M}) = \sum_{i = 1}^{n} e_{i,i} = e_{1,1} + e_{2,2} + \cdots + e_{n,n}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The trace is a \emph{linear mapping} (two vector spaces that preserves the operations of vector addition and scalar multiplication.), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \operatorname{tr}(\bm{A + B})  =  \operatorname{tr}(\bm{A}) + \operatorname{tr}(\bm{B})  \qquad
+      \operatorname{tr}(\lambda\bm{A}) = \lambda\operatorname{tr}(\bm{A}) 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Additionally, a matrix and its transpose have the same trace, as elements along the main diagonal are not affected, i.e., \( \operatorname{tr}(\bm{M}) = \operatorname{tr}(\bm{M}^T)\) 
   \end{itemize}
 
   \subsection{Broadcasting}\label{Broadcasting}
   \begin{itemize}
-    \item 
+    \item \jjj{Broadcasting}: duplication of a vector so that the dimensionality matches a larger matrix, allowing for simplification of element wise addition or multiplication. 
+      \begin{itemize}
+        \item Technically not a valid operation in linear algebra at face value, but is used commonly in applied linear algebra and machine learning.
+      \end{itemize}
   \end{itemize}
   
   
@@ -340,11 +356,49 @@
 
 \section{Matrix Multiplication}\label{Matrix Multiplication}
 \begin{itemize}
-  \item []
-  
+  \item \jjj{Standard matrix multiplication \(\bm{AB}\)}: a binary operation that produces a matrix from two matrices whose \emph{inner dimensions match}.
+    \begin{itemize}
+      \item Multiplication of matrices can be thought of as going from right to left (\(\bm{A}\leftarrow\bm{B}\)), or rather, \tbm{B} post-multiplies \tbm{A}.
+      \item The number of \yyy{columns (\(n\)) in the first matrix} must be \ttt{equal to} the number of \\ \xxx{rows (\(m\)) in the second matrix}.
+      \item \jjj{Matrix product}: the product, whose size is equal to \xxx{rows of the first matrix} and the number of \yyy{columns of the second matrix}.
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      (\xxx{m_1} \times \ttt{n_1})(\ttt{m_2} \times \yyy{n_2}) = \xxx{m_1} \times \yyy{n_2}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item \hyperref[Transposition]{\ulink{Transposing}} a matrix switches the dimensions, so it can enable computation in some cases, e.g,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \underbrace{\bm{A}}_{\xxx{5}\times \yyy{7}} = \underbrace{\bm{A}^T}_{\xxx{7}\times \yyy{5}} 
+  \qquad
+  \underbrace{\bm{A}^T}_{\xxx{7}\times \ttt{5}} 
+  \underbrace{\bm{B}}_{\ttt{5}\times \yyy{2}} = \underbrace{\bm{C}}_{\xxx{7}\times\yyy{2}} 
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item Revisiting the \hyperref[The Dot Product]{\ulink{dot (inner) product}} and the \hyperref[Outer Product]{\ulink{outer product}} of vectors:
+  \begin{itemize}
+    \item The dot product must have equal-length vectors since the transpose of left vector makes inner dimensions much match, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \underbrace{\bm{v}}_{5\times1}\underbrace{\bm{w}}_{5\times1}
+    \to
+    \underbrace{\bm{v}^T}_{\xxx{1}\times \ttt{5}}\underbrace{\bm{w}}_{\ttt{5}\times\yyy{1}}
+    = 1\times 1~\text{(scalar)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item However, the transpose of the right vector makes the \(1 \times 1\) dimensions match, making the outer dimensions irrelevant to the validity of the computation, e.g., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \underbrace{\bm{v}}_{6\times1}\underbrace{\bm{w}}_{9\times1}
+    \to
+    \underbrace{\bm{v}}_{\xxx{6}\times \ttt{1}}\underbrace{\bm{w}^T}_{\ttt{1}\times\yyy{9}}
+    = 6\times 9~\text{(matrix)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
+
   \subsection{Standard Matrix Multiplication Perspectives}\label{Standard Matrix Multiplication Perspectives}
   \begin{itemize}
-    \item 
+    \item There are four ways to compute and conceptualize the process of multiplication of two matrices, all of which give the same result.
+    \begin{itemize}
+      \item[1.] \jjj{The element perspective}:
+      \item[2.] \jjj{The layer perspective}:
+      \item[3.] \jjj{The column perspective}:
+      \item[4.] \jjj{The row perspective}:   
+    \end{itemize}
   \end{itemize}
 
   \subsection{Diagonal Matrix Multiplication}\label{Diagonal Matrix Multiplication}
@@ -404,7 +458,7 @@
   \item 
 \end{itemize}
 
-\section{Matrix Determinant}\label{Matrix Determinant}
+\section{The Determinant}\label{The Determinant}
 \begin{itemize}
   \item 
 \end{itemize}
@@ -412,4 +466,11 @@
 \section{Matrix Inverse}\label{Matrix Inverse}
 \begin{itemize}
   \item 
+\end{itemize}
+
+\chapter{To Be Defined}\label{tbd}
+\begin{itemize}
+  \item Diagonalization
+  \item Matrix decomposition
+  \item Eigendecomposition
 \end{itemize}

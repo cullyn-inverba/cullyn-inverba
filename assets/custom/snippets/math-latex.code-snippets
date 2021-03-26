@@ -143,7 +143,7 @@
   "Sum":{
     "scope": "latex",
     "prefix": "sum",
-    "body": "\\sum_{n = $1}^{$2}"
+    "body": "\\sum_{i = $1}^{$2}"
   },
 
   "Times":{
@@ -198,5 +198,11 @@
     "scope": "latex",
     "prefix": "br{}",
     "body": "\\left\\lbrace $1 \\right\\rbrace"
+  },
+
+  "Math Label":{
+    "scope": "latex",
+    "prefix": "mlu",
+    "body": "\\underbrace{$1}_{$2}"
   }
 }
