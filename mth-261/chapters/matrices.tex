@@ -153,7 +153,7 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Elements along the diagonal don't have to be the same, and they can be zero (meaning rectangular matrices still can be diagonal, technically).
-      \item When all the elements along the main diagonal are the same, then it's a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, i.e., \(\lambda\bm{I}\).
+      \item When all the elements along the main diagonal are the same, then it's a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, i.e., a \ddd{scaled matrix}\jjj{\(\lambda\bm{I}\)}.
     \end{itemize}
     \item \ddd{Triangular matrices}: when all elements above or below the diagonal are zero, but not on both sides.
       \begin{itemize}
@@ -393,22 +393,189 @@
   \subsection{Standard Matrix Multiplication Perspectives}\label{Standard Matrix Multiplication Perspectives}
   \begin{itemize}
     \item There are four ways to compute and conceptualize the process of multiplication of two matrices, all of which give the same result.
-    \begin{itemize}
-      \item[1.] \jjj{The element perspective}:
-      \item[2.] \jjj{The layer perspective}:
-      \item[3.] \jjj{The column perspective}:
-      \item[4.] \jjj{The row perspective}:   
-    \end{itemize}
+    \item I.e, if \tbm{A} is an \(\xxx{m} \times \ttt{n}\) matrix and \tbm{B} is an \(\ttt{n} \times \yyy{p}\) matrix, then their product \tbm{C} =
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \hspace{-25pt}
+    {\begin{bmatrix}
+      a_{11}b_{11} + \cdots + a_{1\ttt{n}}b_{\ttt{n}1}&a_{11}b_{12} + \cdots + a_{1\ttt{n}}b_{\ttt{n}2} &\cdots &a_{11}b_{1\yyy{p}} + \cdots + a_{1\ttt{n}}b_{\ttt{n}\yyy{p}}
+      \\ a_{21}b_{11} + \cdots + a_{2\ttt{n}}b_{\ttt{n}1}&a_{21}b_{12} + \cdots + a_{2\ttt{n}}b_{\ttt{n}2}&\cdots &a_{21}b_{1\yyy{p}} + \cdots + a_{2\ttt{n}}b_{\ttt{n}\yyy{p}}
+      \\ \vdots &\vdots &\ddots &\vdots 
+      \\ a_{\xxx{m}1}b_{11} + \cdots + a_{\xxx{m}\ttt{n}}b_{\ttt{n}1}&a_{\xxx{m}1}b_{12} + \cdots + a_{\xxx{m}\ttt{n}}b_{\ttt{n}2}&\cdots &a_{\xxx{m}1}b_{1\yyy{p}} + \cdots + a_{\xxx{m}\ttt{n}}b_{\ttt{n}\yyy{p}}
+    \end{bmatrix}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \jjj{The element perspective}: building the product matrix directly, one element at a time, via the computation of the \hyperref[The Dot Product]{\ulink{dot product}} between the \xxx{rows of the left matrix} and the \yyy{columns of the right matrix}.
+    \begin{align*}
+    \begin{bmatrix} \xxx{1} & \xxx{2} \\ 3 & 4 \end{bmatrix}
+    \begin{bmatrix} \yyy{a} & b \\ \yyy{c} & d \end{bmatrix}
+    &=
+    \begin{bmatrix}
+    \xxx{1}\yyy{a} + \xxx{2}\yyy{c} & \cdots \\ \cdots & \cdots \end{bmatrix}
+    \\%
+    \begin{bmatrix} \xxx{1} & \xxx{2} \\ 3 & 4 \end{bmatrix}
+    \begin{bmatrix} a & \yyy{b} \\ c & \yyy{d} \end{bmatrix}
+    &=
+    \begin{bmatrix}
+    1a + 2c & \xxx{1}\yyy{b}+\xxx{2}\yyy{d} \\ \cdots & \cdots 
+    \end{bmatrix}
+    \\%
+    \begin{bmatrix} 1 & 2 \\ \xxx{3} & \xxx{4} \end{bmatrix}
+    \begin{bmatrix}  \yyy{a} & b \\ \yyy{c} & d \end{bmatrix}
+    &=
+    \begin{bmatrix}
+    1a + 2c & 1b+2d \\ \xxx{3}\yyy{a}+\xxx{4}\yyy{c} & \cdots 
+    \end{bmatrix}
+    \\%
+    \begin{bmatrix} 1 & 2 \\ \xxx{3} & \xxx{4} \end{bmatrix}
+    \begin{bmatrix} a & \yyy{b} \\ c & \yyy{d} \end{bmatrix}
+    &=
+    \begin{bmatrix}
+    1a + 2c & 1b+2d \\ 3a+4c & \xxx{3}\yyy{b}+\xxx{4}\yyy{d} 
+    \end{bmatrix}
+    \end{align*}
+    \item This is generally the most common perspective as the others methods have all have two ``pseudo steps'' to reach the final product, rather than through one direct method.
+    \item \jjj{The layer perspective}: the building of the product matrix one layer at a time, followed by a ``flattening'' to make the final product.
+      \begin{itemize}
+        \item Each layer is the same size \((\xxx{m_1} \times \yyy{n_2})\) as the product, but is only a \hyperref[Matrix Rank]{\dlink{rank~1~matrix}}, or essentially the representation of only one column's worth of information.
+        \item Can be thought of as a \yyy{left matrix of columns} and a \xxx{right matrix of rows}, resulting in the computation of the \hyperref[Outer Product]{\ulink{outer product}}.
+      \end{itemize}
+    \begin{align*}
+    \begin{bmatrix} \yyy{1} & 2 \\ \yyy{3} & 4 \end{bmatrix}
+    \begin{bmatrix} \xxx{a} & \xxx{b} \\ c & d \end{bmatrix}
+    &=
+    \begin{bmatrix}
+    \yyy{1}\xxx{a} & \yyy{1}\xxx{b} \\
+    \yyy{3}\xxx{a} & \yyy{3}\xxx{b} 
+    \end{bmatrix}
+    \\
+    \begin{bmatrix} 1 & \yyy{2} \\ 3 & \yyy{4} \end{bmatrix}
+    \begin{bmatrix} a & b \\ \xxx{c} & \xxx{d} \end{bmatrix}
+    &=
+    \begin{bmatrix}
+    \yyy{2}\xxx{c} & \yyy{2}\xxx{d} \\
+    \yyy{4}\xxx{c} & \yyy{4}\xxx{d} 
+    \end{bmatrix}
+    \\
+    \begin{bmatrix}
+      \yyy{1}\xxx{a} & \yyy{1}\xxx{b} \\
+      \yyy{3}\xxx{a} & \yyy{3}\xxx{b} 
+    \end{bmatrix}
+    \Downarrow
+    \begin{bmatrix}
+      \yyy{2}\xxx{c} & \yyy{2}\xxx{d} \\
+      \yyy{4}\xxx{c} & \yyy{4}\xxx{d} 
+    \end{bmatrix}
+    &=
+    \begin{bmatrix}
+      \yyy{1}\xxx{a} + \yyy{2}\xxx{c} & \yyy{1}\xxx{b}+\yyy{2}\xxx{d} \\ \yyy{3}\xxx{a}+\yyy{4}\xxx{c} & \yyy{3}\xxx{b}+\yyy{4}\xxx{d}  
+    \end{bmatrix}
+    \end{align*}
+    \item \jjj{The column perspective}: the building of the product matrix by columns, where the first column is the sum of the two columns of the left matrix weighted (scaled) by the elements of the first column of the right matrix. 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix} \bbb{1} & \chap{2} \\ \bbb{3} & \chap{4} \end{bmatrix}
+      \begin{bmatrix} \rrr{a} & \emph{b} \\ \rrr{c} & \emph{d} \end{bmatrix}
+      =
+      \begin{pmatrix}
+      \rrr{a} \begin{bmatrix} \bbb{1} \\ \bbb{3} \end{bmatrix} + \rrr{c} \begin{bmatrix} \chap{2} \\ \chap{4} \end{bmatrix} &
+      \emph{b} \begin{bmatrix} \bbb{1} \\ \bbb{3} \end{bmatrix} + \emph{d} \begin{bmatrix} \chap{2} \\ \chap{4} \end{bmatrix}
+      \end{pmatrix}
+      =
+      \begin{bmatrix}
+        \bbb{1}\rrr{a} + \chap{2}\rrr{c} & \bbb{1}\emph{b}+\chap{2}\emph{d} \\ \bbb{3}\rrr{a}+  \chap{4}\rrr{c} & \bbb{3}\emph{b}+\chap{4}\emph{d} 
+      \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \jjj{The row perspective}: similar to the column perspective, but building up by row. 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix} \bbb{1} & \bbb{2} \\ \chap{3} & \chap{4} \end{bmatrix}
+    \begin{bmatrix} \rrr{a} & \rrr{b} \\ \emph{c} & \emph{d} \end{bmatrix}
+    =
+    \begin{pmatrix}
+    \bbb{1} \begin{bmatrix} \rrr{a} & \rrr{b} \end{bmatrix} + 
+    \bbb{2} \begin{bmatrix} \emph{c} & \emph{d} \end{bmatrix} \\
+    \chap{3} \begin{bmatrix} \rrr{a} & \rrr{b} \end{bmatrix} + 
+    \chap{4} \begin{bmatrix} \emph{c} & \emph{d} \end{bmatrix}
+    \end{pmatrix}
+    =
+    \begin{bmatrix}
+      \bbb{1}\rrr{a} + \bbb{2}\emph{c} & \bbb{1}\rrr{b}+\bbb{2}\emph{d} \\ \chap{3}\rrr{a}+\chap{4}\emph{c} & \chap{3}\rrr{b}+\chap{4}\emph{d} 
+    \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
-
+    
   \subsection{Diagonal Matrix Multiplication}\label{Diagonal Matrix Multiplication}
   \begin{itemize}
-    \item 
+    \item Square \hyperref[Diagonal and Triagnular Matrices]{\ulink{diagonal matrices}} are often used to scale another matrix by the elements along such diagonal.
+    \item You can scale the columns or rows depending on the placement of the diagonal matrix \(\bm{D}\) relative to original matrix \(\bm{M}\). 
+      \begin{itemize}
+        \item Post-multiplying by the diagonal results in the scaling by \yyy{columns}, i.e., \(\bm{M}\yyy{\bm{D}}\):
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{bmatrix}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9 
+        \end{bmatrix}
+        \begin{bmatrix}
+        \yyy{a} & 0 & 0 \\
+        0 & \yyy{b} & 0 \\
+        0 & 0 & \yyy{c}
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+          \yyy{a}1 & \yyy{b}2 & \yyy{c}3 \\
+          \yyy{a}4 & \yyy{b}5 & \yyy{c}6 \\
+          \yyy{a}7 & \yyy{b}8 & \yyy{c}9 
+          \end{bmatrix}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Post-multiplying by the original results in the scaling by \xxx{rows}, i.e., \(\xxx{\bm{D}}\bm{M}\):
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{bmatrix}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9 
+        \end{bmatrix}
+        \begin{bmatrix}
+        \xxx{a} & 0 & 0 \\
+        0 & \xxx{b} & 0 \\
+        0 & 0 & \xxx{c}
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+          \xxx{a}1 & \xxx{a}2 & \xxx{a}3 \\
+          \xxx{b}4 & \xxx{b}5 & \xxx{b}6 \\
+          \xxx{c}7 & \xxx{c}8 & \xxx{c}9 
+          \end{bmatrix}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+    \item Again, when all the elements along the diagonal are the same, then it is simply a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, or sometimes referred to as a \hyperref[scaled matrix]{\ulink{scaling matrix}}.
   \end{itemize}
 
   \subsection{Order of Operations}\label{Order of Operations}
   \begin{itemize}
-    \item 
+    \item \minor{``And love is evol, spell it backwards, I'll show ya''}
+    \item \jjj{\(\bm{(L\,O\,VE)}^T = \bm{E}^T\bm{V}^T\bm{O}^T\bm{L}^T\)}: reversing the order of multiplication on a set of matrices is valid if the same operation (e.g., \hyperref[Transposition]{\ulink{transpose}} or \hyperref[Matrix Inverse]{\dlink{inverse}}) can be applied to each matrix, e.g, (\emph{diagonal} highlighted for easier time seeing transpose)
+    \begin{align*}
+    \begin{pmatrix}
+      \begin{bmatrix} \emph{1} & 2 \\ 3 & \emph{4} \end{bmatrix}
+      \begin{bmatrix} \emph{a} & b \\ c & \emph{d} \end{bmatrix}
+    \end{pmatrix}^T
+    &=
+    \begin{bmatrix}
+      \emph{1a+2c} & 1b+2d \\ 3a+4c & \emph{3b+4d} 
+    \end{bmatrix}^T
+    &= 
+    \begin{bmatrix}
+      \emph{1a+2c} & 3a+4c \\ 1b+2d & \emph{3b+4d} 
+    \end{bmatrix}
+    \\
+    \begin{bmatrix} \emph{a} & b \\ c & \emph{d} \end{bmatrix}^T
+    \begin{bmatrix} \emph{1} & 2 \\ 3 & \emph{4} \end{bmatrix}^T
+    &=
+    \begin{bmatrix} \emph{a} & c \\ b & \emph{d} \end{bmatrix}
+    \begin{bmatrix} \emph{1} & 3 \\ 2 & \emph{4} \end{bmatrix}
+    &=
+    \begin{bmatrix}
+      \emph{1a+2c} & 1b+2d \\ 3a+4c & \emph{3b+4d} 
+    \end{bmatrix}
+    \end{align*}
   \end{itemize}
   
   \subsection{Matrix Vector Multiplication}\label{Matrix Vector Multiplication}

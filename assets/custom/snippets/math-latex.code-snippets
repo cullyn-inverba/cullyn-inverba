@@ -111,7 +111,7 @@
 
   "Matrix":{
     "scope": "latex",
-    "prefix": "mbx",
+    "prefix": "mx",
     "body": [
         "\\begin{bmatrix}",
         "$1 & $2 & $3 \\\\\\",
@@ -131,6 +131,17 @@
       "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
       "e & e & \\cdots & e",
       "\\end{bmatrix}",
+    ]
+  },
+
+  "2x2 Matrix":{
+    "scope": "latex",
+    "prefix": "smx",
+    "body": [
+        "\\begin{bmatrix}",
+        "$1 & $2 \\\\\\",
+        "$4 & $5 ",
+        "\\end{bmatrix}",
     ]
   },
 
