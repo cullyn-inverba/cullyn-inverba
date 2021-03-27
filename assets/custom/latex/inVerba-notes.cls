@@ -176,8 +176,11 @@
 
 % Titles: #4ca9f5 #7abef5 #b0d0eb #cedeeb
 \definecolor{chap}{HTML}{4ca9f5} 
+    \newcommand{\chap}[1]{{\color{chap}{#1}}}
 \definecolor{sec}{HTML}{7abef5} 
+    \newcommand{\tsec}[1]{{\color{sec}{#1}}}
 \definecolor{ssec}{HTML}{b0d0eb} 
+    \newcommand{\ssec}[1]{{\color{ssec}{#1}}}
 \definecolor{jarg}{HTML}{cedeeb} 
     \newcommand{\jjj}[1]{{\color{jarg}{\textbf{#1}}}}
     
