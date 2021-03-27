@@ -358,7 +358,7 @@
 \begin{itemize}
   \item \jjj{Standard matrix multiplication \(\bm{AB}\)}: a binary operation that produces a matrix from two matrices whose \emph{inner dimensions match}.
     \begin{itemize}
-      \item Multiplication of matrices can be thought of as going from right to left (\(\bm{A}\leftarrow\bm{B}\)), or rather, \tbm{B} post-multiplies \tbm{A}.
+      \item Multiplication of matrices can be thought of as going from right to left (\(\bm{A}\leftarrow\bm{B}\)), or rather, \rrr{\tbm{B} post-multiplies \tbm{A}}, or \bbb{\tbm{A} pre-multiplies \tbm{B}},
       \item The number of \yyy{columns (\(n\)) in the first matrix} must be \ttt{equal to} the number of \\ \xxx{rows (\(m\)) in the second matrix}.
       \item \jjj{Matrix product}: the product, whose size is equal to \xxx{rows of the first matrix} and the number of \yyy{columns of the second matrix}.
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -506,7 +506,7 @@
     \item Square \hyperref[Diagonal and Triagnular Matrices]{\ulink{diagonal matrices}} are often used to scale another matrix by the elements along such diagonal.
     \item You can scale the columns or rows depending on the placement of the diagonal matrix \(\bm{D}\) relative to original matrix \(\bm{M}\). 
       \begin{itemize}
-        \item Post-multiplying by the diagonal results in the scaling by \yyy{columns}, i.e., \(\bm{M}\yyy{\bm{D}}\):
+        \item \rrr{Post-multiplying} by the diagonal results in the scaling by \yyy{columns}, i.e., same as diagonal matrix multiplication above\(\bm{M}\yyy{\bm{D}}\):
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \begin{bmatrix}
         1 & 2 & 3 \\
@@ -525,7 +525,7 @@
           \yyy{a}7 & \yyy{b}8 & \yyy{c}9 
           \end{bmatrix}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \item Post-multiplying by the original results in the scaling by \xxx{rows}, i.e., \(\xxx{\bm{D}}\bm{M}\):
+        \item \bbb{Pre-multiplying} by the diagonal results in the scaling by \xxx{rows}, i.e., \(\xxx{\bm{D}}\bm{M}\):
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \begin{bmatrix}
         1 & 2 & 3 \\
@@ -580,12 +580,28 @@
   
   \subsection{Matrix Vector Multiplication}\label{Matrix Vector Multiplication}
   \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Transformation Matrix}\label{Tansformation Matrix}
-  \begin{itemize}
-    \item 
+    \item Multiplying a matrix by a vector always results in a vector, regardless order. 
+    \item The order of multiplication does impact the orientation and size (dimensionality) of the product vector, i.e.,
+    \\ \rrr{post-multiplication} \to~\yyy{column vector} (weighted combinations of the columns of \tbm{A})
+    \\ \bbb{pre-multiplication} \to~\xxx{row vector}
+    (weighted combinations of the rows of \tbm{A})
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \underbrace{\bm{A}}_{\xxx{m}\times\ttt{n}}\underbrace{\rrr{\bm{w}}}_{\ttt{m}\times\yyy{1}}=\yyy{\underbrace{\bm{v}}_{\xxx{m}\times\yyy{1}}}
+    \qquad 
+    \underbrace{\bbb{\bm{w}^T}}_{\xxx{1}\times\ttt{n}}\underbrace{\bm{A}}_{\ttt{m}\times\yyy{n}}=\xxx{\underbrace{\bm{v}}_{\xxx{1}\times\yyy{n}}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The order of multiplication does not matter when multiplying a vector with a \hyperref[Symmetric and Skew-Symmetric Matrices]{\ulink{symmetric matrix}}:
+    \begin{align*}
+      \ttt{\bm{S}^T} &= \ttt{\bm{S}} & \text{symmetric matrix}\\
+      \bm{S}\bm{w} &= \yyy{\bm{v}} & \text{column vector}\\ 
+      (\bm{S}\bm{w})^T &= \xxx{\bm{v}^T} & \text{apply transpose \rightarrow~row vector}\\ % chktex 3
+      \bm{w}^T \bm{S}^T &= \bm{v}^T & \text{\hyperref[Order of Operations]{\ulink{love \leftrightarrow~evol}}}\\
+      \bm{w}^T \ttt{\bm{S}} &= \bm{v}^T & \text{symmetric matrix \leftrightarrow~transpose}\\
+      \xxx{\bm{v}^T} &= \yyy{\bm{v}} & \text{row vector \leftrightarrow~column vector}
+    \end{align*}
+    \item If \(\bm{S^T}\neq\bm{S}\), then order does matter, resulting in different product vectors.
+    \item Multiplication of vectors and matrices form the basis of \hyperref[tbd]{\dlink{linear transformations}}.
+    \item When multiplication between a matrix and vector is equal to the multiplication between a scalar and the same vector, then the scalar is the \hyperref[tbd]{\dlink{eigenvalue}} and the vector is the \hyperref[tbd]{\dlink{eigenvector}}. 
   \end{itemize}
   
   \subsection{Additive and Multiplicative Matrices}\label{Additive and Multiplicative Matrices}
@@ -639,5 +655,6 @@
 \begin{itemize}
   \item Diagonalization
   \item Matrix decomposition
+  \item Linear transformations
   \item Eigendecomposition
 \end{itemize}

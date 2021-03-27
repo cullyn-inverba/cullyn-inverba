@@ -7,3 +7,6 @@ nondegenerate
 Frobenius
 eigendecomposition
 evol
+pre-multiplies
+Pre-multiplying
+pre-multiplication

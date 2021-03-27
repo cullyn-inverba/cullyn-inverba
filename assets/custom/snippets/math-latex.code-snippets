@@ -215,5 +215,11 @@
     "scope": "latex",
     "prefix": "mlu",
     "body": "\\underbrace{$1}_{$2}"
+  },
+
+  "Dimensionality":{
+    "scope": "latex",
+    "prefix": "mxn",
+    "body": "\\xxx{$1}\\times\\yyy{$2}"
   }
 }
