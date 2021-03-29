@@ -16,9 +16,10 @@
     <a title="View my notes" href="mth-261.pdf">
     <img src="https://img.shields.io/badge/Notes-work in progress-important?logo=latex" >
     </a>
+    <iframe src="https://discord.com/widget?id=826146352513286204&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </p>
 
-<iframe src="https://discord.com/widget?id=826146352513286204&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 
 ## External Resources
 - [Linear algebra: theory and implementation in code](https://www.udemy.com/course/linear-algebra-theory-and-implementation/) &mdash; Course from Udemy taught by Mike X Cohen with coding exercises in both MATLAB and Python.
