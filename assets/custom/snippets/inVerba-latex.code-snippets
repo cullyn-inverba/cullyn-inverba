@@ -101,7 +101,7 @@
     "prefix": "Centered Graphic",
     "body": [
       "\\begin{center}",
-      "\t\\includegraphics[scale=0.$1]{images/$2.png}",
+      "\t\\includegraphics[scale=0.$1]{images/$2}",
       "\\end{center}"
     ],
     "description": "Insert centered graphic"
