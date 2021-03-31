@@ -45,19 +45,14 @@
     "description": "Set up for multi step math equation with side explations"
   },
 
-  "Important Equation": {
+  "Cases":{
     "scope": "latex",
-    "prefix": "eqx",
+    "prefix": "csx",
     "body": [
-      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      "\\eee{$1}\\vspace{8pt}",
-      "\\begin{equation}\\color{emph}",
-      "\t$2",
-      "\\end{equation}",
-      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      ""
-    ],
-    "description": "An imporant equation with emphasis and a label"
+      "\\begin{cases}",
+      "$1",
+      "\\end{cases}",
+    ]
   },
 
   "Dispaly Equation": {
@@ -117,6 +112,18 @@
         "$1 & $2 & $3 \\\\\\",
         "$4 & $5 & $6 \\\\\\",
         "$7 & $8 & $9 ",
+        "\\end{bmatrix}",
+    ]
+  },
+
+  "Augmented Matrix":{
+    "scope": "latex",
+    "prefix": "amx",
+    "body": [
+        "\\begin{bmatrix}[ccc|c]",
+        "$1 & $2 & $3 & $10 \\\\\\",
+        "$4 & $5 & $6 & $11 \\\\\\",
+        "$7 & $8 & $9 & $12 ",
         "\\end{bmatrix}",
     ]
   },
