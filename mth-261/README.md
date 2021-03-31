@@ -13,8 +13,8 @@
     <a title="View class calendar" href="https://docs.google.com/document/d/1OYqwN_rzepdQmW6-E20KXIub9hwaDFT9P0AAP-qCzMk/edit">
     <img src="https://img.shields.io/badge/MTH: 261-Calendar-informational" >
     </a>
-    <a title="Join the class discord sever" href="https://discord.gg/qkq7QuxkEJ">
-    <img src="https://img.shields.io/discord/826223019764219925?label=Discord&logo=discord">
+    <a title="Join the PSU discord sever" href="https://psu.wiki/discord">
+    <img src="https://img.shields.io/discord/760189932429115492?label=Discord&logo=discord">
     </a>
     <a title="View my notes" href="mth-261.pdf">
     <img src="https://img.shields.io/badge/Notes-work in progress-important?logo=latex" >
