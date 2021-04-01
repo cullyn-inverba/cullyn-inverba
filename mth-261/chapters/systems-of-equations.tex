@@ -7,17 +7,17 @@
    \emph{a_{1}x_{1}+a_{2}x_{2}+\cdots +a_{n}x_{n}+b=0}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
-    \item \jjj{Coefficients (parameters) \(a_1,a_2,\dots,a_n\)}: typically real numbers; sometimes they can be arbitrary expressions (hence parameters) as long as they don't contain any variables.
+    \item \jjj{Coefficients (parameters) \(a_1,a_2,\dots,a_n\)}: typically real numbers; sometimes they can be arbitrary expressions as long as they don't contain any new variables, though often \(\{x_{n+1},x_{n+2},x_{n+3},\dots\}\) are replaced with \(\{s,r,t,\dots\}\) for convenience. % chktex 21
     \item \jjj{Variables \(x_1,x_2,\dots,x_n\)}: the unknowns of the equation.
     \item \jjj{Constant term \(b\)}: typically a real number; technically also a coefficient, but not attached to any variables.
   \end{itemize}
-  \item \jjj{System of linear equations}: a \emph{finite collection} of linear equations involving the \emph{same set of variables}, e.g.,
+  \item \jjj{System of linear equations}: a \emph{finite collection} of linear equations involving the \emph{same~set of variables}, e.g.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{cases}
     3x+2y-z &= 1 \\
     2x+2y+4z &= -2 \\
     -x+\frac{1}{2}y-z &= 0 \\
-  \end{cases}\vspace{6pt}
+  \end{cases}\vspace{5pt}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Note: some variables can have a coefficient of 0, so some equations may appear to not contain the same set at first glance.
@@ -34,7 +34,7 @@
       x &= 1  & 3(1) + 2(-2) - (-2) &= 1 \\
       y &= -2 & 2(1) + 2(-2) + 4(-2)&= -2\\
       z &= -2 & -(1) + \tfrac{1}{2}(-2) - (-2) &= 0
-    \end{align*}
+    \end{align*}\vspace{-24pt}
     \item \jjj{Solution set}: the set of all possible solutions that satisfy all variables in a system of linear equations; there are three possibilities for such system: 
       \begin{enumerate}
         \item The system has \emph{infinitely many solutions} (the lines are the same).
@@ -92,14 +92,57 @@
 \section{Gaussian Elimination}\label{Gaussian Elimination}
 \begin{itemize}
   \item \jjj{Gaussian elimination (row reduction)}: an algorithm for solving systems of linear equations by using a sequence of elementary operations on a matrix until the \emph{row~echelon form} is obtained.
+  \begin{itemize}
+    \item \jjj{Gauss-Jordan elimination}: when Gaussian elimination is used until a matrix reaches the \emph{reduced row echelon form}; sometimes it is computationally beneficial to stop and before such form is reached.
+    \item The \emph{reduced row echelon form is unique}, unlike the row echelon form, i.e., it is independent of the sequences of row operations used.
+  \end{itemize}
+  \subsection{Row Echelon form}\label{Row Echelon form}
+  \begin{itemize}
+    \item \jjj{Row echelon form}: a matrix that has converted into a pseudo \hyperref[Diagonal and Triagnular Matrices]{\ulink{upper triangular matrix}} using Gaussian elimination, e.g. (* = any number; can be zero),
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+      1 & \rrr{*} & \rrr{*} & \rrr{*} & \rrr{*} & \rrr{*} \\
+      \bbb{0} & \bbb{0} & 1 & \rrr{*} & \rrr{*} & \rrr{*} \\
+      \bbb{0} & \bbb{0} & \bbb{0} & 1 & \rrr{*} & \rrr{*} \\
+      \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & 1 \\
+      \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} \\
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item The final form is unique; it is independent of the sequences of row operations used.
-      \item \jjj{Gauss-Jordan elimination}: when Gaussian elimination is used until a matrix reaches the \emph{reduced row echelon form}; sometimes it is computationally beneficial to stop and before such form is reached.
+      \item More specifically, a matrix is in row echelon form if:
+      \begin{itemize}
+        \item All rows consisting of only zeroes are on the bottom.
+        \item The leading coefficient (pivot) of a nonzero row is always strictly to the right of the leading coefficient (sometimes must be 1) of the row above it. 
+      \end{itemize}
+      \item The row echelon form allows for \hyperref[Matrix Rank]{\ulink{matrix rank}} and kernel (not discussed).
     \end{itemize}
+    \item \ddd{Reduced row echelon (row canonical) form}: a matrix that satisfies all the requirements of the row echelon form while additionally satisfying the following:
+    \begin{itemize}
+      \item The leading coefficient of each nonzero row must be 1 (often called a leading 1). 
+      \item Columns containing a leading 1 have zeros in all other entries (below \emph{and above}).
+      \item E.g., using the row echelon form above:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}
+        1 & \rrr{*} & \emph{0} & \rrr{*} & \emph{0} & \rrr{*} \\
+        \bbb{0} & \bbb{0} & 1 & \rrr{*} & \emph{0} & \rrr{*} \\
+        \bbb{0} & \bbb{0} & \bbb{0} & 1 & \emph{0} & \rrr{*} \\
+        \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & 1 \\
+      \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+    \item \ddd{Parameters}: the nonleading variables (\(\rrr{*x_n}\): the left over variables associated with nonzero elements) are replaced with new variables \(\{s,r,t,\dots\}\) when converting back systems of equations, hence why \hyperref[Linear Equations]{\ulink{coefficients}} are sometimes referred to as parameters. % chktex 21
+    \item Any matrix can be brought to the (reduced) row echelon form by a sequence of elementary row operations, this leads to the Gaussian algorithm.
+  \end{itemize}
+  
+  \subsection{The Gaussian Algorithm}\label{The Gaussian Algorithm}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
 \end{itemize}
-
-\section{Homogeneous Equations}\label{Homogeneous Equations}
-\begin{itemize}
+  
+  \section{Homogeneous Equations}\label{Homogeneous Equations}
+  \begin{itemize}
   \item 
 \end{itemize}
   
