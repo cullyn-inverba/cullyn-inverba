@@ -47,7 +47,7 @@
 
   \subsection{Elementary Operations}\label{Elementary Operations}
   \begin{itemize}
-    \item Solve system of equations is easily done if such systems are first converted in matrix equations, i.e., taking this general form of a system of equations:
+    \item Solve system of equations is easily done if such systems are first converted to a form of matrix multiplication, i.e., taking this general form of a system of equations:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{cases}
       a_{1,1}x_{1}+a_{1,2}x_{2}+\cdots +a_{1,n}x_{n}&=b_1 \\ 
@@ -68,28 +68,34 @@
     =
     \yyy{\begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{bmatrix}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item \hyperref[Augmented and Complex Matrices]{\ulink{Augmented matrices}} are useful to represent the final product; we can drop the variables for now and concatenate the vector of constants onto the matrix of coefficients creating an augmented matrix, i.e.,
-    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{bmatrix}[cccc|c]
-      a_{1,1} & a_{1,2} & \cdots & a_{1,n} & \yyy{b_1}\\
-      a_{2,1} & a_{2,2} & \cdots & a_{2,n} & \yyy{b_2}\\
-      \vdots & \vdots & \ddots & \vdots & \yyy{\vdots} \\
-      a_{m,1} & a_{m,2} & \cdots & a_{m,n} & \yyy{b_m}
-      \end{bmatrix}
-    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item \jjj{Elementary operations}: a set of operations that can be performed on a matrix while maintaining equivalence (when two systems have the same set of solutions); the operations are as follows:
+    \item \hyperref[Augmented and Complex Matrices]{\ulink{Augmented matrices}} are a useful intermediate that is used to represent the final product and perform elementary operations on.
+      \begin{itemize}
+        \item Creating an augmented matrix can easily be done by taking the above form, \rrr{dropping the variables} temporarily, then \yyy{concatenating the vector of constants} onto the \chap{matrix of coefficients}, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}[cccc|c]
+        \chap{a_{1,1}} & \chap{a_{1,2}} & \chap{\cdots} & \chap{a_{1,n}} & \yyy{b_1}\\
+        \chap{a_{2,1}} & \chap{a_{2,2}} & \chap{\cdots} & \chap{a_{2,n}} & \yyy{b_2}\\
+        \chap{\vdots} & \chap{\vdots} & \chap{\ddots} & \chap{\vdots} & \yyy{\vdots} \\
+        \chap{a_{m,1}} & \chap{a_{m,2}} & \chap{\cdots} & \chap{a_{m,n}} & \yyy{b_m}
+        \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize} 
+    \item \jjj{Elementary operations}: a set of operations that can be performed on a matrix while \emph{maintaining equivalence} (when two systems have the same set of solutions); the operations are as follows:
       \begin{enumerate}
-        \item \emph{Interchange two rows.}
-        \item \emph{Multiply one row by a nonzero number.}
-        \item \emph{Add a multiple of one row to a different row.}
+        \item Interchange two rows: \emph{\(R_i \updownarrow R_j\)}
+        \item Multiply one row by a nonzero number: \emph{\(kR_i \rightarrow R_i,~k\neq 0\)}
+        \item Add a multiple of one row to a different row: \emph{\(R_i + kR_j \rightarrow R_i,~i\neq j\)}
       \end{enumerate}
   \end{itemize}
-  
 \end{itemize}
 
 \section{Gaussian Elimination}\label{Gaussian Elimination}
 \begin{itemize}
-  \item 
+  \item \jjj{Gaussian elimination (row reduction)}: an algorithm for solving systems of linear equations by using a sequence of elementary operations on a matrix until the \emph{row~echelon form} is obtained.
+    \begin{itemize}
+      \item The final form is unique; it is independent of the sequences of row operations used.
+      \item \jjj{Gauss-Jordan elimination}: when Gaussian elimination is used until a matrix reaches the \emph{reduced row echelon form}; sometimes it is computationally beneficial to stop and before such form is reached.
+    \end{itemize}
 \end{itemize}
 
 \section{Homogeneous Equations}\label{Homogeneous Equations}
