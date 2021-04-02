@@ -132,6 +132,7 @@
 % ║  │ │││││││├─┤│││ ││└─┐
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 \renewcommand{\emph}[1]{{\color{emph}#1}} 
+\newcommand{\amp}[1]{{\color{amp}#1}}
 \newcommand{\stress}[1]{{\color{stress}#1}}
 \newcommand{\basec}[1]{{\color{text}#1}}
 \newcommand{\minor}[1]{{\color{minor}#1}}
@@ -146,6 +147,9 @@
 
 \newcommand{\ulink}[1]{{\color{ilink}{#1}\small\(\,^\uparrow\)}}
 \newcommand{\dlink}[1]{{\color{ilink}{#1}\small\(\,^\downarrow\)}}
+
+\newcommand{\mc}[1]{\makecell[c]{#1}}
+\newcommand{\mr}[1]{\makecell[r]{#1}}
 
 
 
@@ -173,6 +177,7 @@
 % Emphasis: #f5b17a #ff9e4f
 \definecolor{emph}{HTML}{f5b17a} 
 \definecolor{stress}{HTML}{ff9e4f} 
+\definecolor{amp}{HTML}{f5769c}
 
 % Titles: #4ca9f5 #7abef5 #b0d0eb #cedeeb
 \definecolor{chap}{HTML}{4ca9f5} 
@@ -216,7 +221,7 @@
 %                  ╩╚═└─┘└  └─┘┴└─└─┘┘└┘└─┘└─┘
 
 %                 fff #eb4972       #f5736c rrr
-%         
+%           amp #f5769c
 %                          ____________              
 %                         /\  ________ \         
 %    xxx #c28bf0         /  \ \______/\ \        #f5b17a  emph
@@ -224,7 +229,7 @@
 %                      / / /\ \ \/ / /\ \ \
 %                     / / /__\_\/ / /__\_\ \
 %                    / /_/_______/ /________\
-%   rrr  #5f89f5     \ \ \______ \ \______  /
+%   bbb  #5f89f5     \ \ \______ \ \______  /
 %                     \ \ \  / /\ \ \  / / /
 %                      \ \ \/ / /\ \ \/ / /      #f0dd86 yyy
 %                       \ \/ / /__\_\/ / /      

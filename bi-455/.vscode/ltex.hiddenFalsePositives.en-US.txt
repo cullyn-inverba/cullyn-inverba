@@ -1,0 +1,5 @@
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QInfiltration: evaporation of the clearing solvent via exposure to heat (50–60 ) promoting the final embedding of tissue into the medium.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAcidophilic: dyes What does H & E Stain?\\E$"}
+{"rule":"NEEDS_FIXED","sentence":"^\\QEnzyme histochemistry is a method for localizing cellular structures using specific enzymatic activity in such structures; preservation of enzymes often requires unfixed of mildly fixed tissue.\\E$"}
+{"rule":"NEEDS_FIXED","sentence":"^\\QEnzyme histochemistry is a method for localizing cellular structures using specific enzymatic activity in such structures; preservation of enzymes often requires unfixed or mildly fixed tissue.\\E$"}
+{"rule":"NEEDS_FIXED","sentence":"^\\QPreservation of enzymes often requires unfixed or mildly fixed tissue and generally adhere to the following steps: How does Immunohistochemistry work?\\E$"}
