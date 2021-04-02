@@ -98,13 +98,13 @@
   \end{itemize}
   \subsection{Row Echelon form}\label{Row Echelon form}
   \begin{itemize}
-    \item \jjj{Row echelon form}: a matrix that has converted into a pseudo \hyperref[Diagonal and Triagnular Matrices]{\ulink{upper triangular matrix}} using Gaussian elimination, e.g. (* = any number; can be zero),
+    \item \jjj{Row echelon form}: a matrix that has been converted into a pseudo \hyperref[Diagonal and Triagnular Matrices]{\ulink{upper triangular matrix}} using Gaussian elimination, e.g. (\rrr{*} = any number; can be zero),
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}
-      1 & \rrr{*} & \rrr{*} & \rrr{*} & \rrr{*} & \rrr{*} \\
-      \bbb{0} & \bbb{0} & 1 & \rrr{*} & \rrr{*} & \rrr{*} \\
-      \bbb{0} & \bbb{0} & \bbb{0} & 1 & \rrr{*} & \rrr{*} \\
-      \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & 1 \\
+      \jjj{1} & \rrr{*} & \rrr{*} & \rrr{*} & \rrr{*} & \rrr{*} \\
+      \bbb{0} & \bbb{0} & \jjj{1} & \rrr{*} & \rrr{*} & \rrr{*} \\
+      \bbb{0} & \bbb{0} & \bbb{0} & \jjj{1} & \rrr{*} & \rrr{*} \\
+      \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \jjj{1} \\
       \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} \\
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,37 +112,62 @@
       \item More specifically, a matrix is in row echelon form if:
       \begin{itemize}
         \item All rows consisting of only zeroes are on the bottom.
-        \item The leading coefficient (pivot) of a nonzero row is always strictly to the right of the leading coefficient (sometimes must be 1) of the row above it. 
+        \item The leading coefficient (\jjj{pivots}) of a nonzero row is always strictly to the right of the leading coefficient (sometimes required to be 1) of the row above it. 
       \end{itemize}
-      \item The row echelon form allows for \hyperref[Matrix Rank]{\ulink{matrix rank}} and kernel (not discussed).
+      \item The row echelon form allows for determination of the \hyperref[Matrix Rank]{\ulink{matrix rank}} by counting the number of pivots, e.g., the above example is rank 4.
     \end{itemize}
-    \item \ddd{Reduced row echelon (row canonical) form}: a matrix that satisfies all the requirements of the row echelon form while additionally satisfying the following:
+    \item \ddd{Reduced row echelon form} \jjj{\(\operatorname{rref}(\bm{M})\)}: a matrix that satisfies all the requirements of the row echelon form while additionally satisfying the following:
     \begin{itemize}
       \item The leading coefficient of each nonzero row must be 1 (often called a leading 1). 
       \item Columns containing a leading 1 have zeros in all other entries (below \emph{and above}).
       \item E.g., using the row echelon form above:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \begin{bmatrix}
-        1 & \rrr{*} & \emph{0} & \rrr{*} & \emph{0} & \rrr{*} \\
-        \bbb{0} & \bbb{0} & 1 & \rrr{*} & \emph{0} & \rrr{*} \\
-        \bbb{0} & \bbb{0} & \bbb{0} & 1 & \emph{0} & \rrr{*} \\
+        1 & \rrr{*} & \emph{0} & \emph{0} & \rrr{*} & \emph{0} \\
+        \bbb{0} & \bbb{0} & 1 & \emph{0} & \rrr{*} & \emph{0} \\
+        \bbb{0} & \bbb{0} & \bbb{0} & 1 & \rrr{*} & \emph{0} \\
         \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & \bbb{0} & 1 \\
       \end{bmatrix}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
     \item \ddd{Parameters}: the nonleading variables (\(\rrr{*x_n}\): the left over variables associated with nonzero elements) are replaced with new variables \(\{s,r,t,\dots\}\) when converting back systems of equations, hence why \hyperref[Linear Equations]{\ulink{coefficients}} are sometimes referred to as parameters. % chktex 21
-    \item Any matrix can be brought to the (reduced) row echelon form by a sequence of elementary row operations, this leads to the Gaussian algorithm.
+    \item Any matrix can be brought to the (reduced) row echelon form by a sequence of elementary row operations; this theorem is the basis of the Gaussian algorithm. 
   \end{itemize}
   
   \subsection{The Gaussian Algorithm}\label{The Gaussian Algorithm}
   \begin{itemize}
-    \item 
+    \item[1.] Create an augmented matrix from a system of linear equations in order to perform elementary operations more easily. 
+      \begin{itemize}
+        \item Steps for how to do this is under \hyperref[Elementary Operations]{\ulink{elementary operations}}, as well valid operations for step 2.
+      \end{itemize}
+    \item[2.] Use Gaussian/Gaussian-Jordan elimination until the row echelon form/rref is obtained; the majority of the work involves this step (assuming not a zero matrix). 
+    \begin{enumerate}
+      \item[2.1] Find the first column from the left containing a nonzero entry (call it \(a\)).
+      \item[2.2] Create a leading 1 in the top row by multiplying by \(a^{-1}\).
+      \item[2.3] Subtract multiples of row that row from rows below; make each entry below the leading 1 zero. 
+      \item[2.4] Repeat steps 2.1--2.3, on the next row.
+      \begin{itemize}
+        \item Sometimes interchanging rows can make this process more efficient, look for invalid pivots to save computational effort.
+      \end{itemize}
+      \item[2.5] Stop when either no rows remain in step 4, or the remaining rows consist of entirely of zeros to obtain the row echelon form, continue to obtain rref.
+      \item[2.6] Repeat step 2.3, but now subtracting multiples of that row from rows above the row; make each entry above the leading 1 zero.
+    \end{enumerate}
+    \item[3.] There a few different possibilities once solved, i.e.,
+    \begin{itemize}
+      \item If a row with the form 
+      \(\begin{bmatrix}[cccc|c] \chap{0} & \chap{0} & \chap{0} &\chap{\cdots} & \yyy{a > 0} \end{bmatrix}\) occurs, then the system is \emph{inconsistent}, i.e., at least one line is parallel with another---no solution possible.
+      \item If a row with all zeros occurs, then that row added no new information and was only a multiple of another row, i.e., the system is \emph{reduced rank}.
+      \item If reduced form is found, then continue.
+    \end{itemize} 
+    \item[4.] Map the matrix back to the equations.
+    \item[5.] Back-substitution of the nonleading coefficients (parameters) to solve for leading coefficients.
+    \item[6.] Double check for validity by using leading variables in the original system. 
   \end{itemize}
   
 \end{itemize}
   
-  \section{Homogeneous Equations}\label{Homogeneous Equations}
-  \begin{itemize}
+\section{Homogeneous Equations}\label{Homogeneous Equations}
+\begin{itemize}
   \item 
 \end{itemize}
   
