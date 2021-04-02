@@ -3,3 +3,5 @@
 {"rule":"NEEDS_FIXED","sentence":"^\\QEnzyme histochemistry is a method for localizing cellular structures using specific enzymatic activity in such structures; preservation of enzymes often requires unfixed of mildly fixed tissue.\\E$"}
 {"rule":"NEEDS_FIXED","sentence":"^\\QEnzyme histochemistry is a method for localizing cellular structures using specific enzymatic activity in such structures; preservation of enzymes often requires unfixed or mildly fixed tissue.\\E$"}
 {"rule":"NEEDS_FIXED","sentence":"^\\QPreservation of enzymes often requires unfixed or mildly fixed tissue and generally adhere to the following steps: How does Immunohistochemistry work?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection[0.809 em]   [0.42 em].\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Qsection[0.809 em]   [0.42 em].\\E$"}
