@@ -2,3 +2,6 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QInfiltration: evaporation of the clearing solvent via exposure to heat (50–60 ) promoting the final embedding of tissue into the medium.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSize: 1–50 m, depends on stage; (E)rly forms dynamic tubular network.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q(M)vbs (late) lack tubes, larger.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSize: 1–50 m, depends on stage; (E)rly forms dynamic tubular network, can be long.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q(M)vbs (late) lack tubes.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QSize: 2–5 , stacks of flat membranes, can occupy large portion of cell.\\E$"}
