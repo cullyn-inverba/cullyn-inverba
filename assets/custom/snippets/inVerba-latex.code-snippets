@@ -107,6 +107,12 @@
     "description": "Insert centered graphic"
   },
 
+  "Graphic":{
+    "scope": "latex",
+    "prefix": "grpx",
+    "body": "\\includegraphics[scale=0.$1]{images/$2}"
+  },
+
   "My Table": {
     "prefix": "my table",
     "body": [

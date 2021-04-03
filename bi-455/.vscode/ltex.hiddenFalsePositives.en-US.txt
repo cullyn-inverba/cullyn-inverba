@@ -1,7 +1,4 @@
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QGolgi Apparatus: Size: 2–5 , stacks of flat membranes, can occupy large portion of cell.\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QInfiltration: evaporation of the clearing solvent via exposure to heat (50–60 ) promoting the final embedding of tissue into the medium.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAcidophilic: dyes What does H & E Stain?\\E$"}
-{"rule":"NEEDS_FIXED","sentence":"^\\QEnzyme histochemistry is a method for localizing cellular structures using specific enzymatic activity in such structures; preservation of enzymes often requires unfixed of mildly fixed tissue.\\E$"}
-{"rule":"NEEDS_FIXED","sentence":"^\\QEnzyme histochemistry is a method for localizing cellular structures using specific enzymatic activity in such structures; preservation of enzymes often requires unfixed or mildly fixed tissue.\\E$"}
-{"rule":"NEEDS_FIXED","sentence":"^\\QPreservation of enzymes often requires unfixed or mildly fixed tissue and generally adhere to the following steps: How does Immunohistochemistry work?\\E$"}
-{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection[0.809 em]   [0.42 em].\\E$"}
-{"rule":"WHITESPACE_RULE","sentence":"^\\Qsection[0.809 em]   [0.42 em].\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSize: 1–50 m, depends on stage; (E)rly forms dynamic tubular network.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q(M)vbs (late) lack tubes, larger.\\E$"}
