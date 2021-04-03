@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/discord/826224660537540659?label=Discord&logo=discord">
     </a>
     <a title="View my lab work" href="lab/practical-1.pdf">
-    <img src="https://img.shields.io/badge/Notes-week 1 WIP-important?logo=latex" >
+    <img src="https://img.shields.io/badge/Notes-week 1 complete-success?logo=latex" >
     </a> 
 </p>
 
