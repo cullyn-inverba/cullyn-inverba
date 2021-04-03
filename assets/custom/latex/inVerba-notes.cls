@@ -151,7 +151,8 @@
 \newcommand{\mc}[1]{\makecell[c]{#1}}
 \newcommand{\mr}[1]{\makecell[r]{#1}}
 
-
+\newcommand{\Arrow}{\raisebox{-.5\height}{\scalebox{2}{$~\rightarrow~$}}}
+\newcommand{\Image}[2]{\raisebox{-.5\height}{\includegraphics[width=#1]{#2}}}
 
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
 % ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
@@ -191,8 +192,9 @@
     
 
 % Links: #99e09b #78b07a
-\definecolor{link}{HTML}{99e09b} 
-\definecolor{ilink}{HTML}{78b07a} 
+\definecolor{link}{HTML}{99e09b}
+\definecolor{ilink}{HTML}{78b07a}
+    \newcommand{\ggg}[1]{{\color{ilink}{#1}}}
     
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬

@@ -5,3 +5,8 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSize: 1–50 m, depends on stage; (E)rly forms dynamic tubular network, can be long.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q(M)vbs (late) lack tubes.\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QSize: 2–5 , stacks of flat membranes, can occupy large portion of cell.\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\Qimages/week-1-mp1.png Interphase images/week-1-mp2.png Prophase images/week-1-mp3.png Prometaphase images/week-1-mp4.png Metaphase images/week-1-mp5.png Anaphase images/week-1-mp6.png Telophase\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection[0.809 em]   [0.42 em].\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Qsection[0.809 em]   [0.42 em].\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qimages/week-1-mp1.png Interphase images/week-1-mp2.png Prophase images/week-1-mp3.png Prometaphase images/week-1-mp4.png Metaphase images/week-1-mp5.png Anaphase images/week-1-mp6.png Telophase\\E$"}
+{"rule":"COPYRIGHT","sentence":"^\\QCapillaries (C) Cardiac muscle (plate 24): Smooth muscle (plate 26):\\E$"}

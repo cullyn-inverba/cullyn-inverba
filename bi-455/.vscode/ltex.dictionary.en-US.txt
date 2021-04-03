@@ -27,3 +27,10 @@ rhodamine
 IHC
 nucleoplasm
 actin
+Prometaphase
+prometaphase
+pyknotic
+blebbing
+phagocytic
+squames
+gluteraldehyde
