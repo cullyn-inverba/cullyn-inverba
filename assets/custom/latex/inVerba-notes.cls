@@ -301,7 +301,7 @@
 
     \setlist[itemize,1]{
         label=\circ, 
-        leftmargin=\dimexpr26pt
+        leftmargin=\dimexpr26pt -1 em
     }
     \setlist[itemize,2]{
         label=\textbullet,

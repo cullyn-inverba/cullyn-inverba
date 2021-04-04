@@ -8,26 +8,97 @@
 
 \begin{document}
 
-\section{Description of Techniques}
-\begin{itemize}
-  \item \textbf{Monolipidated Substrates for S-Palmitoylation Rapidly and Randomly Partition over All Membranes}:
-\end{itemize}
-
-\section{Visualization of Techniques}
 \begin{center}
-  \chemname{\Image{\textwidth}{images/week-1-a.png}}{\textbf{Steady-State Localization}}
-
-  \medskip
-  \chemname{\Image{\textwidth}{images/week-1-b.png}}{\textbf{Fluorescence Loss of Photoactivated MySer-paGFP}}
-
-  \chemname{\Image{\textwidth}{images/week-1-c.png}}{\textbf{Fluorescence Loss of Photoactivated paGFP-HRasC181S,C184S}}
+  {\Large\textbf{\rrr{Description of Techniques} and \bbb{Explanation of Concepts}}}
 \end{center}
 
-\section{Concepts Used in Techniques}
+\hrule
+\medskip
+
+{\large\textbf{Monolipidated Substrates for S-Palmitoylation Rapidly and Randomly Partition Over All Membranes}}
 \begin{itemize}
-  \item \textbf{Steady-state localization}:
-  \item \textbf{Fluorescence loss}:
-  \item \textbf{Total internal reflection fluorescence (TIRF)}:
+  \item ``Palmitoylated peripheral membrane proteins typically contain an \bbb{irreversibly attached prenyl or myristoyl moiety} in proximity to the palmitoylation site.''
+  \begin{itemize}
+    \item \bbb{Prenylation (lipidation)}: the addition of hydrophobic molecules to a protein or chemical compound.
+      \begin{itemize}
+        \item Prenyl groups (are often assumed to) facilitate attachment to cell membranes, similar to lipid anchors like the GPI anchor.
+      \end{itemize}
+    \item \bbb{Myristoylation}: a lipidation modification where a myristoyl group (a common saturated fatty acid derived from myristic acid) is covalently attached by an amide bond to the alpha-amino group of an N-terminal glycine residue.
+    \begin{itemize}
+      \item Myristoylation allows for weak protein–protein and protein–lipid interactions and plays an essential role in membrane targeting, protein–protein interactions, and functions widely in a variety of signal transduction pathways. 
+    \end{itemize}
+    \item I.e., these \bbb{irreversible modifications} that help facilitate protein-protein and protein-lipid interactions may help \rrr{identify spatial organization} of palmitoylated peripheral membrane proteins, as \bbb{palmitoylation is a reversible lipid modification and thus hard to localize}.
+  \end{itemize}
 \end{itemize}
+
+\medskip 
+
+\begin{center}
+  \chemname{\Image{\textwidth}{images/week-1-a.png}}{\textbf{(A) Steady-State Localization}}
+\end{center}
+  
+\medskip 
+  
+  \begin{itemize}
+    \item ``We first \rrr{questioned whether singly lipidated proteins} exhibit a \bbb{specific membrane distribution to facilitate their subsequent S-palmitoylation}. Mutant solely farnesylated HRasC181,184S and solely myristoylated MyrSer that cannot get palmitoylated were \rrr{equipped with mCherry and mCitrine, respectively}, to observe their \bbb{steady-state localization}. In both cases, the fluorescence distribution did not show a preference for any membrane compartment, but merely reflected membrane densities (Figure A).''
+    \begin{itemize}
+      \item \bbb{Steady-state localization}: steady state refers to the maintenance of constant internal concentrations of molecules and ions in the cells and organs of living systems, basically homeostasis at a cellular level. 
+      \begin{itemize}
+        \item I'm uncertain on what the ``localization'' exactly is specifying, but I'm assuming that is means where proteins (cellular organelles, lipids, and possibly others components) actually end up when steady-state is maintained.
+      \end{itemize}
+      \item The use of \rrr{mCherry and mCitrine (stains)} allowed for \rrr{visualization of the localization via fluorescence} of HRasC181,184S and MySer (singly lipidated proteins); these proteins were \bbb{mutated in order to control for any preemptive palmitoylation}, allowing researchers to \rrr{test for any prior distribution} that effects later palmitoylation---``results reflected membrane densities (Figure A).''
+    \end{itemize}
+  \end{itemize}
+  
+  \medskip
+  \begin{center}
+    \chemname{\Image{\textwidth}{images/week-1-b.png}}{\textbf{(B) Fluorescence Loss of Photoactivated MySer-paGFP}}
+
+    \chemname{\Image{\textwidth}{images/week-1-c.png}}{\textbf{(C) Fluorescence Loss of Photoactivated paGFP-HRasC181S,C184S}}
+  \end{center}
+  \medskip
+
+\begin{itemize}
+  \item ``\bbb{Photoactivatable GFP-fused} versions of both proteins rapidly redistributed over all membranes, reaching steady-state within the first seconds after \rrr{photo-activation} (Figures B/C)''. 
+    \begin{itemize}
+      \item \rrr{Photo-activation localization}: fluorescence microscopy imaging methods that allow obtaining images with a resolution beyond the diffraction limit targeted biophysical imaging method was largely prompted by the discovery of new species and the engineering of mutants of fluorescent proteins displaying a controllable \bbb{photochromism} (a reversible change of color upon exposure to light, using the photo-activatible GFP).
+    \end{itemize}
+  \item Essentially, the \rrr{use of photoactivation} allowed for the researchers to \rrr{determine the rate of steady-state localization}. 
+\end{itemize}
+
+\medskip
+\begin{center}
+  \Image{0.9\textwidth}{images/week-1-d.png}
+  \chemname{\Image{0.9\textwidth}{images/week-1-e.png}}{\textbf{(D) Total Internal Reflection Fluorescence}}
+\end{center}  
+\medskip 
+
+\begin{itemize}
+  \item  ``In order to confirm that the monolipidated
+  proteins also had access to the PM, \rrr{TIRF microscopy was
+  performed} on the wild-type and monolipidated mutant proteins.
+  As expected, the fully lipidated wild-type proteins clearly
+  showed an \bbb{enrichment at the PM} (Figure D).''
+    \begin{itemize}
+      \item \rrr{Total internal reflection fluorescence (TIRF)}: a fluorescence microscope technique that allows for a thin region of a specimen, usually less than 200 nanometers to be observed. 
+        \begin{itemize}
+          \item The fluorescence signals from the lipidated proteins were \rrr{normalized to soluble mCherry} to show the \bbb{disparity in contrast reflecting their PM localization}.
+          \item Free mCitrine/ Free mCitrine/mCherry images are shown as controls, showing disparity arising due to differences in optical parameters of the TIRF field.
+          \item Scale bars represent 10 mM. Color bar indicates normalized range of pixel ratios from minimum (blue) to maximum (red).
+        \end{itemize}
+      \item \bbb{Enrichment at the plasma membrane (PM)}: depalmitoylation was shown to occur at least at the plasma membrane (El-Hus-seini et al., 2002; Rocks et al., 2005)---this is why it was expected. 
+    \end{itemize}
+    \item ``However, both \bbb{monolipidated mutants also exhibited clear PM localization}, establishing that \bbb{they have access to this membrane}. These \bbb{experiments are inconsistent with} the presence of receptors for monolipidated proteins on specific membrane compartments \bbb{(Choy et al., 1999)}. Instead, \rrr{proteins with only one attached lipid} rapidly and randomly sample all membranes until they are \bbb{trapped because of an increase in their affinity for membranes} by the acquisition of additional lipid anchors at the site of palmitoylation. This \bbb{kinetic trapping (Shahinian and Silvius, 1995)} is an essential aspect of the spatial organization of palmitoylated peripheral membrane proteins that can be \rrr{exploited to detect the subcellular site of palmitoylation}.''
+      \begin{itemize}
+        \item \bbb{Kinetic traps}: folding kinetics may trap a protein in a high-energy conformation, i.e. a high-energy intermediate conformation blocks access to the lowest-energy conformation. 
+          \begin{itemize}
+            \item The authors go on to use this phenomenon, stating that ``kinetic tapping is apparent from a local probe accumulation caused by a decrease in effective diffusion.''
+          \end{itemize}
+        \item Essentially, what I'm gathering is that \rrr{exploitation of the higher energy state} may lead to different more observable functions, such as decreased effective diffusion, which is the technique used to identify the subcellular cites that are currently (previously?) not well known.
+      \end{itemize}
+\end{itemize}
+
+
+
 
 \end{document}
