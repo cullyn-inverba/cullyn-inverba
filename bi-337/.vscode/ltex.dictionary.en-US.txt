@@ -1,0 +1,3 @@
+Monolipidated
+S-Palmitoylation
+MySer-paGFP
