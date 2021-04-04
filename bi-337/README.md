@@ -7,7 +7,7 @@
 </p>
 
  <p align="center">
-    <a title="View my lab work" href="lab/lab-1.pdf">
+    <a title="View my currnet lab work, comleted or not" href="lab-1.pdf">
     <img src="https://img.shields.io/badge/Lab Homework-week 1 complete-success?logo=latex" >
     </a> 
 </p>
