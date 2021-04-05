@@ -12,3 +12,4 @@ Pre-multiplying
 pre-multiplication
 nonleading
 rref
+pre
