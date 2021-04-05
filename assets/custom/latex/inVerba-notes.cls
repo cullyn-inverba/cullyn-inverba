@@ -194,7 +194,7 @@
 % Links: #99e09b #78b07a
 \definecolor{link}{HTML}{99e09b}
 \definecolor{ilink}{HTML}{78b07a}
-    \newcommand{\ggg}[1]{{\color{ilink}{#1}}}
+    \newcommand{\igg}[1]{{\color{ilink}{#1}}}
     
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
