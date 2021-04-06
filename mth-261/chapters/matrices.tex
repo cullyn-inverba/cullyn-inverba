@@ -316,11 +316,11 @@
     \begin{itemize}
       \item \ddd{Hermitian matrix}: a \emph{square} complex matrix whose transpose is equal to every entry being replaced with its \hyperref[Complex conjugate]{\ulink{complex conjugate}}. 
         \begin{itemize}
-          \item Denoted: \(\bm{M}^T={\overline{\bm{M}\,}}\)
+          \item Denoted: \(\bm{A}^T={\overline{\bm{A}\,}}\)
         \end{itemize}
       \item \ddd{Skew-Hermitian matrix}: a Hermitian matrix whose transpose is equal to the \emph{negation} of its complex conjugate.
       \begin{itemize}
-        \item Denoted: \(\bm{M}^T=-{\overline{\bm{M}\,}}\)
+        \item Denoted: \(\bm{A}^T=-{\overline{\bm{A}\,}}\)
       \end{itemize}
     \end{itemize}
   \end{itemize}
@@ -331,16 +331,16 @@
       \begin{itemize}
         \item Not to be confused with \hyperref[tbd]{\dlink{diagonalization}} of a matrix, which is a result of \hyperref[tbd]{\dlink{matrix~decomposition}} resulting from \hyperref[tbd]{\dlink{eigendecomposition}}.
       \end{itemize}
-    \item \jjj{Trace \(\operatorname{tr}(\bm{M})\)}: the sum of all diagonal elements, defined only for square matrices.
+    \item \jjj{Trace \(\operatorname{tr}(\bm{A})\)}: the sum of all diagonal elements, defined only for square matrices.
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \operatorname{tr}(\bm{M}) = \sum_{i = 1}^{n} e_{i,i} = e_{1,1} + e_{2,2} + \cdots + e_{n,n}
+    \operatorname{tr}(\bm{A}) = \sum_{i = 1}^{n} e_{i,i} = e_{1,1} + e_{2,2} + \cdots + e_{n,n}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item The trace is a \emph{linear mapping} (two vector spaces that preserves the operations of vector addition and scalar multiplication.), i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \operatorname{tr}(\bm{A + B})  =  \operatorname{tr}(\bm{A}) + \operatorname{tr}(\bm{B})  \qquad
       \operatorname{tr}(\lambda\bm{A}) = \lambda\operatorname{tr}(\bm{A}) 
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item Additionally, a matrix and its transpose have the same trace, as elements along the main diagonal are not affected, i.e., \( \operatorname{tr}(\bm{M}) = \operatorname{tr}(\bm{M}^T)\) 
+    \item Additionally, a matrix and its transpose have the same trace, as elements along the main diagonal are not affected, i.e., \( \operatorname{tr}(\bm{A}) = \operatorname{tr}(\bm{A}^T)\) 
   \end{itemize}
 
   \subsection{Broadcasting}\label{Broadcasting}

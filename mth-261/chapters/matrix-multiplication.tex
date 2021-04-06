@@ -3,7 +3,7 @@
 \begin{itemize}
   \item \jjj{Standard matrix multiplication \(\bm{AB}\)}: a binary operation that produces a matrix from two matrices whose \emph{inner dimensions match}.
     \begin{itemize}
-      \item Multiplication of matrices can be thought of as going from right to left (\(\bm{A}\leftarrow\bm{B}\)), or rather, \rrr{\tbm{B} post-multiplies \tbm{A}}, or \bbb{\tbm{A} pre-multiplies \tbm{B}},
+      \item Multiplication of matrices can be thought of as going from right to left (\(\bm{A}\leftarrow\bm{B}\)), or rather, \bbb{\tbm{A} pre-multiplies \tbm{B}}, or \rrr{\tbm{B} post-multiplies \tbm{A}}.
       \item The number of \yyy{columns (\(n\)) in the first matrix} must be \ttt{equal to} the number of \\ \xxx{rows (\(m\)) in the second matrix}.
       \item \jjj{Matrix product}: the product, whose size is equal to \xxx{rows of the first matrix} and the number of \yyy{columns of the second matrix}.
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,28 +153,9 @@
   \subsection{Diagonal Matrix Multiplication}\label{Diagonal Matrix Multiplication}
   \begin{itemize}
     \item Square \hyperref[Diagonal and Triagnular Matrices]{\ulink{diagonal matrices}} are often used to scale another matrix by the elements along such diagonal.
-    \item You can scale the columns or rows depending on the placement of the diagonal matrix \(\bm{D}\) relative to original matrix \(\bm{M}\). 
+    \item You can scale the columns or rows depending on the placement of the diagonal matrix \(\bm{D}\) relative to original matrix \(\bm{A}\). 
       \begin{itemize}
-        \item \rrr{Post-multiplying} by the diagonal results in the scaling by \yyy{columns}, i.e., same as diagonal matrix multiplication above\(\bm{M}\yyy{\bm{D}}\):
-        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \begin{bmatrix}
-        1 & 2 & 3 \\
-        4 & 5 & 6 \\
-        7 & 8 & 9 
-        \end{bmatrix}
-        \begin{bmatrix}
-        \yyy{a} & 0 & 0 \\
-        0 & \yyy{b} & 0 \\
-        0 & 0 & \yyy{c}
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-          \yyy{a}1 & \yyy{b}2 & \yyy{c}3 \\
-          \yyy{a}4 & \yyy{b}5 & \yyy{c}6 \\
-          \yyy{a}7 & \yyy{b}8 & \yyy{c}9 
-          \end{bmatrix}
-        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \item \bbb{Pre-multiplying} by the diagonal results in the scaling by \xxx{rows}, i.e., \(\xxx{\bm{D}}\bm{M}\):
+        \item \bbb{Pre-multiplication} of the diagonal results in the scaling by \xxx{rows}, i.e., \(\xxx{\bm{D}}\bm{A}\):
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \begin{bmatrix}
         1 & 2 & 3 \\
@@ -191,6 +172,25 @@
           \xxx{a}1 & \xxx{a}2 & \xxx{a}3 \\
           \xxx{b}4 & \xxx{b}5 & \xxx{b}6 \\
           \xxx{c}7 & \xxx{c}8 & \xxx{c}9 
+          \end{bmatrix}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item \rrr{Post-multiplication} of the diagonal results in the scaling by \yyy{columns}, i.e., \(\bm{A}\yyy{\bm{D}}\):
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{bmatrix}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9 
+        \end{bmatrix}
+        \begin{bmatrix}
+        \yyy{a} & 0 & 0 \\
+        0 & \yyy{b} & 0 \\
+        0 & 0 & \yyy{c}
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+          1\yyy{a} & 2\yyy{b}  & 3\yyy{c} \\
+          4\yyy{a} & 5\yyy{b} & 6\yyy{c} \\
+          7\yyy{a} & 8\yyy{b} & 9\yyy{c} 
           \end{bmatrix}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \end{itemize}
@@ -231,13 +231,13 @@
   \begin{itemize}
     \item Multiplying a matrix by a vector always results in a vector, regardless order. 
     \item The order of multiplication does impact the orientation and size (dimensionality) of the product vector, i.e.,
-    \\ \rrr{post-multiplication} \to~\yyy{column vector} (weighted combinations of the columns of \tbm{A})
     \\ \bbb{pre-multiplication} \to~\xxx{row vector}
     (weighted combinations of the rows of \tbm{A})
+    \\ \rrr{post-multiplication} \to~\yyy{column vector} (weighted combinations of the columns of \tbm{A})
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \underbrace{\bm{A}}_{\xxx{m}\times\ttt{n}}\underbrace{\rrr{\bm{w}}}_{\ttt{m}\times\yyy{1}}=\yyy{\underbrace{\bm{v}}_{\xxx{m}\times\yyy{1}}}
-    \qquad 
     \underbrace{\bbb{\bm{w}^T}}_{\xxx{1}\times\ttt{n}}\underbrace{\bm{A}}_{\ttt{m}\times\yyy{n}}=\xxx{\underbrace{\bm{v}}_{\xxx{1}\times\yyy{n}}}
+    \qquad 
+    \underbrace{\bm{A}}_{\xxx{m}\times\ttt{n}}\underbrace{\rrr{\bm{w}}}_{\ttt{m}\times\yyy{1}}=\yyy{\underbrace{\bm{v}}_{\xxx{m}\times\yyy{1}}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item The order of multiplication does not matter when multiplying a vector with a \hyperref[Symmetric and Skew-Symmetric Matrices]{\ulink{symmetric matrix}}:
     \begin{align*}
@@ -257,26 +257,72 @@
   \begin{itemize}
     \item \jjj{Multiplicative identity matrix}: commonly referred to as the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, where both \bbb{pre} and \rrr{post} multiplication are equal and both produce the original matrix.
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \bbb{\bm{I}} \bm{M} = \bm{M}\rrr{\bm{I}} = \bm{M}
+    \bbb{\bm{I}} \bm{A} = \bm{A}\rrr{\bm{I}} = \bm{A}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item However, addition of the multiplicative identity matrix does not yield the same product, i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \bm{M} + \bm{I} \neq \bm{M}
+      \bm{A} + \bm{I} \neq \bm{A}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
   \item \jjj{Additive identity matrix}: the compliment to the multiplicative matrix that uses the zero matrix (matrix of all zeros), hence why it is commonly referred to as simply the zero matrix.
     \begin{itemize}
       \item Multiplication by the zero matrix of course does not yield the original matrix (unless the original matrix was a zero matrix), but the addition of zero will yield the original product, i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \bm{M0} = \bm{0M}\neq M ,\qquad  \bm{M} + \bm{0} = \bm{M} 
+      \bm{A0} = \bm{0A}\neq A ,\qquad  \bm{A} + \bm{0} = \bm{A} 
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
   \end{itemize}
   
   \subsection{Creating Symmetric Matrices}\label{Creating Symmetric Matrices}
   \begin{itemize}
-    \item 
+    \item \ddd{Additive method}: using a square matrix \tbm{A} added to its own transpose will create a \hyperref[Symmetric and Skew-Symmetric Matrices]{\ulink{symmetric matrix}}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{S} = \bm{A}+\bm{A}^T
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Non-square matrices result in invalid \hyperref[Matrix Addition and Subtraction]{\ulink{matrix addition}} due to unequal dimensions.
+      \item Optionally, a scaling factor of \(\frac{1}{2}\) can be used to make the symmetric matrix more closely resemble the original matrix since all values are doubled during addition.
+    \end{itemize}
+    
+    \item \ddd{Multiplicative method}: multiplying a matrix \tbm{M} of any dimension with the transpose of itself to create a symmetric matrix \tbm{S}.
+      \begin{itemize}
+        \item The order of matrix multiplication matters if the matrix is a non-square matrix, i.e.,
+        \begin{align*}
+          \underbrace{\bbb{\bm{M}^T}}_{\yyy{n} \times \ttt{m}} 
+          \underbrace{\bm{M}}_{\ttt{m} \times \yyy{n}} = \underbrace{\bm{S}}_{\yyy{n \times n}}\\
+          \underbrace{\bm{M}}_{\xxx{m} \times \ttt{n}} 
+          \underbrace{\rrr{\bm{M}^T}}_{\ttt{n} \times \xxx{m}} = \underbrace{\bm{S}}_{\xxx{m \times m}}\\
+        \end{align*}\vspace*{-42pt}
+        \item Note, again the order of multiplication does impact the dimensionality of the symmetric matrix produced, i.e.,\\
+        \bbb{pre-multiplication} \to~\yyy{size \(n \times n\)} = number of \yyy{columns} in the original matrix
+        \\
+        \rrr{post-multiplication} \to~\xxx{size \(m \times m\)} = number of \xxx{rows} in the original matrix
+      \end{itemize}
+      \item Proving multiplicative matrices using \hyperref[Order of Operations]{\ulink{love \leftrightarrow~evol rule}}:
+      \begin{align*}
+        \bm{A}^T \bm{A} = (\bm{A}^T \bm{A})^T = \bm{A}^T \bm{A}^{TT} = \bm{A}^T\bm{A}\\ % chktex 3
+        \bm{A}\bm{A}^T = (\bm{A}\bm{A}^T)^T = \bm{A}^{TT}\bm{A}^T = \bm{A}\bm{A}^T % chktex 3
+      \end{align*}
+      \item Example of producing a symmetric matrix:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}
+      a & b & c \\
+      d & e & f \\
+      \end{bmatrix}
+      \begin{bmatrix}
+      a & d \\
+      b & e \\
+      c & f   
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      a^2+b^2+c^2 & ad+be+cf & \\
+      ad+be+cf & d^2+e^2+f^2 &  \\
+      \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Notice that the diagonal of the symmetric matrix is the columns of the original (or rows of transposed matrix) squared while the off diagonal elements are the cross terms (or rows of the original and columns of transpose).
+      \item The multiplicative method is widely used signal processing and statistics; the product is often called a covariance matrix, i.e., a matrix where the diagonal elements are the variances and the off diagonal elements are the covariances.
   \end{itemize}
   
   \subsection{Hadamard Multiplication}\label{Hadamard Multiplication}

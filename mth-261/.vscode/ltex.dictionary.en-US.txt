@@ -13,3 +13,4 @@ pre-multiplication
 nonleading
 rref
 pre
+covariances
