@@ -16,3 +16,4 @@ pre
 covariances
 Schatten
 Submultiplicative
+submultiplicative

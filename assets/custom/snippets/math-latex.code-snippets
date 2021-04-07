@@ -188,6 +188,12 @@
     "body": "\\| \\bm{$1} \\|"
   },
 
+  "Forbenius Norm":{
+    "scope": "latex",
+    "prefix": "fnr",
+    "body": "\\langle \\bm{$1},\\bm{$1} \\rangle_F"
+  },
+
   "Cos Theta":{
     "scope": "latex",
     "prefix": "cth",

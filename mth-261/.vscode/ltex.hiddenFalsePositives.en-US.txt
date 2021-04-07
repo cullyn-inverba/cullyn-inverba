@@ -15,3 +15,5 @@
 {"rule":"THE_NN_AND_THE_NN","sentence":"^\\QWhen multiplication between a matrix and vector is equal to the multiplication between a scalar and the same vector, then the scalar is the eigenvalue and the vector is the eigenvector All of which will be heavily discussed later.\\E$"}
 {"rule":"THE_NN_AND_THE_NN","sentence":"^\\QWhen multiplication between a matrix and vector is equal to the multiplication between a scalar and the same vector, then the scalar is the eigenvalue and the vector is the eigenvector.\\E$"}
 {"rule":"AGREEMENT_SENT_START","sentence":"^\\QThe use of augmented matrices are very useful when dealing with system of linear equations.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=: yields the induced vector 2-norm.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=1: yields the nuclear norm, which is the sum of all the singular values of the matrix.\\E$"}
