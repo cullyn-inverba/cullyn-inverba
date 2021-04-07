@@ -147,7 +147,7 @@
   \end{itemize}
 \end{itemize}
 
-\section{Applications of Matrix Multiplication}\label{Applications of Matrix Multiplication}
+\section{Various Notes on Matrix Multiplication}\label{Applications of Matrix Multiplication}
 \begin{itemize}
   \item[] 
   \subsection{Diagonal Matrix Multiplication}\label{Diagonal Matrix Multiplication}
@@ -285,25 +285,27 @@
       \item Optionally, a scaling factor of \(\frac{1}{2}\) can be used to make the symmetric matrix more closely resemble the original matrix since all values are doubled during addition.
     \end{itemize}
     
-    \item \ddd{Multiplicative method}: multiplying a matrix \tbm{M} of any dimension with the transpose of itself to create a symmetric matrix \tbm{S}.
+    \item \ddd{Multiplicative method}: multiplying a matrix \tbm{A} of any dimension with the transpose of itself to create a symmetric matrix \tbm{S}.
       \begin{itemize}
         \item The order of matrix multiplication matters if the matrix is a non-square matrix, i.e.,
-        \begin{align*}
-          \underbrace{\bbb{\bm{M}^T}}_{\yyy{n} \times \ttt{m}} 
-          \underbrace{\bm{M}}_{\ttt{m} \times \yyy{n}} = \underbrace{\bm{S}}_{\yyy{n \times n}}\\
-          \underbrace{\bm{M}}_{\xxx{m} \times \ttt{n}} 
-          \underbrace{\rrr{\bm{M}^T}}_{\ttt{n} \times \xxx{m}} = \underbrace{\bm{S}}_{\xxx{m \times m}}\\
-        \end{align*}\vspace*{-42pt}
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \underbrace{\bbb{\bm{A}^T}}_{\yyy{n} \times \ttt{m}} 
+          \underbrace{\bm{A}}_{\ttt{m} \times \yyy{n}} = \underbrace{\bm{S}}_{\yyy{n \times n}}
+          \qquad
+          \underbrace{\bm{A}}_{\xxx{m} \times \ttt{n}} 
+          \underbrace{\rrr{\bm{A}^T}}_{\ttt{n} \times \xxx{m}} = \underbrace{\bm{S}}_{\xxx{m \times m}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \item Note, again the order of multiplication does impact the dimensionality of the symmetric matrix produced, i.e.,\\
         \bbb{pre-multiplication} \to~\yyy{size \(n \times n\)} = number of \yyy{columns} in the original matrix
         \\
         \rrr{post-multiplication} \to~\xxx{size \(m \times m\)} = number of \xxx{rows} in the original matrix
       \end{itemize}
       \item Proving multiplicative matrices using \hyperref[Order of Operations]{\ulink{love \leftrightarrow~evol rule}}:
-      \begin{align*}
-        \bm{A}^T \bm{A} = (\bm{A}^T \bm{A})^T = \bm{A}^T \bm{A}^{TT} = \bm{A}^T\bm{A}\\ % chktex 3
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \bm{A}^T \bm{A} = (\bm{A}^T \bm{A})^T = \bm{A}^T \bm{A}^{TT} = \bm{A}^T\bm{A}  % chktex 3
+        \qquad
         \bm{A}\bm{A}^T = (\bm{A}\bm{A}^T)^T = \bm{A}^{TT}\bm{A}^T = \bm{A}\bm{A}^T % chktex 3
-      \end{align*}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \item Example of producing a symmetric matrix:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \begin{bmatrix}
@@ -327,12 +329,28 @@
   
   \subsection{Hadamard Multiplication}\label{Hadamard Multiplication}
   \begin{itemize}
-    \item 
-  \end{itemize}
-  
-  \subsection{Multiplication of Symmetric Matrices}\label{Multiplication of Symmetric Matrices}
-  \begin{itemize}
-    \item 
+    \item Covered briefly in while introducing other \hyperref[Other Properties of Vectors]{\ulink{properties of vectors}}; it is often denoted with either \( \circ, \text{or}~\odot \).
+    \item To reiterate, now with more context, the Hadamard product takes two matrices with equal dimensions and multiplies each element with the corresponding element in the other matrix, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    a_{1,1}  & \cdots & a_{1,n} \\
+    \vdots & \ddots & \vdots \\
+    a_{m,1}  & \cdots & a_{m,n}
+    \end{bmatrix}
+    \odot
+    \begin{bmatrix}
+      b_{1,1}  & \cdots & b_{1,n} \\
+      \vdots & \ddots & \vdots \\
+      b_{m,1}  & \cdots & b_{m,n}
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      a_{1,1}b_{1,1}  & \cdots & a_{1,n}b_{1,n} \\
+      \vdots & \ddots & \vdots \\
+      a_{m,1} b_{m,1}  & \cdots & a_{m,n}b_{m,n}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ttt{\cmark~associative}, \ttt{\cmark~distributive}, and \ttt{\cmark~commutative}, unlike standard matrix multiplication which is not commutative.
   \end{itemize}
 
   \subsection{Frobenius Dot Product}\label{Frobenius Dot Product}

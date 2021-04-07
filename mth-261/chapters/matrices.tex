@@ -1,18 +1,18 @@
 \chapter{Matrices}\label{Matrices}  
 \section{Matrix Terminology}\label{Matrix Terminology}
 \begin{itemize}
-  \item \jjj{Matrix \(\bm{M}_{\xxx{r},\yyy{c}}\)}: a \emph{rectangular array} of elements arranged in \xxx{rows \(\leftrightarrow \)} and \yyy{columns \(\updownarrow \)}, e.g.,
+  \item \jjj{Matrix \(\bm{A}_{\xxx{r},\yyy{c}}\)}: a \emph{rectangular array} of elements arranged in \xxx{rows \(\leftrightarrow \)} and \yyy{columns \(\updownarrow \)}, e.g.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  M = \begin{bmatrix}
+  \bm{A} = \begin{bmatrix}
   1 & 0 & 3 \\
   5 & 4 & 2 \\
   7 & 6 & 9 
   \end{bmatrix}
-  \qquad M_{\xxx{3},\yyy{2}} = 6
+  \qquad \bm{A}_{\xxx{3},\yyy{2}} = 6
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item \ddd{Block (partitioned) matrix}: a matrix that is interpreted as having been broken into sections called blocks or submatrices, e.g.,
   \begin{align*}
-    \bm{M} = 
+    \bm{A} = 
     \begin{bmatrix}
       \bbb{\bm{D}} & \fff{\bm{N}} \\
       \ttt{\bm{Y}} & \bbb{\bm{D}} 
@@ -153,7 +153,7 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Elements along the diagonal don't have to be the same, and they can be zero (meaning rectangular matrices still can be diagonal, technically).
-      \item When all the elements along the main diagonal are the same, then it's a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, i.e., a \ddd{scaled matrix}\jjj{\(\lambda\bm{I}\)}.
+      \item When all the elements along the main diagonal are the same, then it's a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}, i.e., a \ddd{scaled matrix} \jjj{\(\lambda\bm{I}\)}.
     \end{itemize}
     \item \ddd{Triangular matrices}: when all elements above or below the diagonal are zero, but not on both sides.
       \begin{itemize}
@@ -252,7 +252,7 @@
     \item \jjj{Matrix scalar multiplication}: the same as \hyperref[Vector Scalar Multiplication]{\ulink{vector scalar multiplication}} or simply, scalar multiplication, as vectors are \(m \times 1~(\text{or}~1 \times n)\) matrices.
     \item Scalar multiplication is true when both \bbb{left scalar} and \rrr{right scalar} are equal, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \bbb{\lambda}(\bm{M})_{ij} = (\bbb{\lambda} \bm{M})_{ij} = ( \bm{M}\rrr{\lambda})_{ij}= (\bm{M})_{ij}\rrr{\lambda} % chktex 3
+    \bbb{\lambda}(\bm{A})_{ij} = (\bbb{\lambda} \bm{A})_{ij} = ( \bm{A}\rrr{\lambda})_{ij}= (\bm{A})_{ij}\rrr{\lambda} % chktex 3
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item More explicitly: 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -301,15 +301,15 @@
     \bbb{9} & \bbb{0} & \bbb{1} & \bbb{2}
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item Formally, the element of the \xxx{\(i\)-th row}, \yyy{\(j\)-th column} of matrix \(\bm{M}\) when transposed becomes the element of the \yyy{\(j\)-th row}, \xxx{\(i\)-th column} of matrix \(\bm{M}^T\), i.e.,
+    \item Formally, the element of the \xxx{\(i\)-th row}, \yyy{\(j\)-th column} of matrix \(\bm{A}\) when transposed becomes the element of the \yyy{\(j\)-th row}, \xxx{\(i\)-th column} of matrix \(\bm{A}^T\), i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \bm{M}_{\xxx{i},\yyy{j}} = \bm{M}_{\yyy{j},\xxx{i}}^T
+    \bm{A}_{\xxx{i},\yyy{j}} = \bm{A}_{\yyy{j},\xxx{i}}^T
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item Alternatively, with regard to dimensionality, if \(\bm{M}\) is an \(\xxx{m} \times \yyy{n}\) matrix, then \(\bm{M}^T\) is an \(\yyy{n} \times \xxx{m}\) matrix. 
+    \item Alternatively, with regard to dimensionality, if \(\bm{A}\) is an \(\xxx{m} \times \yyy{n}\) matrix, then \(\bm{A}^T\) is an \(\yyy{n} \times \xxx{m}\) matrix. 
       \begin{itemize}
         \item Thus, a transposed matrix that is transposed again will produce the original matrix, i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \left(\bm{M}_{\yyy{j},\xxx{i}}^T\right)^T = \bm{M}_{\xxx{i},\yyy{j}} % chktex 3
+        \left(\bm{A}_{\yyy{j},\xxx{i}}^T\right)^T = \bm{A}_{\xxx{i},\yyy{j}} % chktex 3
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \end{itemize}
     \item Revisiting \hyperref[Augmented and Complex Matrices]{\ulink{complex matrices}}:
