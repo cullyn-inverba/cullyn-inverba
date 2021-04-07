@@ -14,3 +14,4 @@ nonleading
 rref
 pre
 covariances
+Schatten
