@@ -1,3 +1,4 @@
+% chktex-file 3
 \chapter{Matrix Multiplication}\label{Matrix Multiplication}
 \section{Standard Matrix Multiplication}\label{Standard Matrix Multiplication}
 \begin{itemize}
@@ -356,11 +357,45 @@
 
 \section{Matrix Norms}\label{Matrix Norms}
 \begin{itemize}
-  \item []
+  \item \jjj{Matrix norm}: a vector norm in a vector space whose elements are matrices.
+    \begin{itemize}
+      \item More specifically, given a field \(K\) (of either real or complex numbers) and the vector space \(K^{m\times n}\) of matrices of the size \(m\times n\) with entries in the field \(K\), then a matrix norm is a norm in the vector space \(K^{m\times n}\). 
+      \item Thus, a matrix norm is a function \( \| \bm{A} \| : K^{m \times n} \to \mathbb{R}\) that satisfies the following properties for all scalars \(\lambda \in K\) and all matrices \(\bm{A},\bm{B} \in K^{m\times n}\): 
+      \begin{itemize}
+        \item \( \| \lambda\bm{A} \|= |\lambda|\| \bm{A} \| \) (absolutely homogenous)
+        \item \( \| \bm{A}+\bm{B} \| \leq \| \bm{A} \| + \| \bm{B} \| \) (sub-additive or satisfying the triangle inequality)
+        \item \( \| \bm{A} \| \geq 0\) (positive)
+        \item \( \| \bm{A} \| = 0 \leftrightarrow \bm{A}= 0_{m,n} \) (definite)
+      \end{itemize}
+      \item \jjj{Submultiplicative norm}: special cases of square matrices that also follow the following condition:
+        \begin{itemize}
+          \item \( \| \bm{AB} \| \leq \| \bm{A} \| \| \bm{B} \| \) for all matrices \tbm{A} and \tbm{B} in \(K^{n\times n}\)
+        \end{itemize}
+    \end{itemize}
+  \item There are many types of norms, and special cases for each category of norms, but for now just the Frobenius norm, the induced 2-norm, and the Schatten p-norm will be discussed.
   
   \subsection{Frobenius Norm}\label{Frobenius Norm}
   \begin{itemize}
-    \item 
+    \item \ddd{Frobenius inner (dot) product} \jx{\langle\bm{A}, \bm{B} \rangle_F}: binary operation that takes two matrices of equal dimensions and computes a component-wise \hyperref[The Dot Product]{\ulink{inner product}} of two matrices as if they were vectors. There are several ways of thinking about how the Frobenius inner product is computed, either:
+      \begin{itemize}
+        \item Element-wise multiplication \to~summation of all elements;
+        \item Vectorization of both matrices \to~vector dot product;
+          \begin{itemize}
+            \item \jjj{Vectorization \(\operatorname{vec}(\bm{A})\)}: a \hyperref[tbd]{\dlink{linear transformation}} that converts a matrix into a \yyy{column vector}, i.e., a \(\xxx{m}\yyy{n} \times 1\) column vector is obtained by stacking the columns of the matrix A on top of one another: 
+            \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            \operatorname{vec}(A)=[a_{1,1},\ldots ,a_{m,1},a_{1,2},\ldots ,a_{m,2},\ldots ,a_{1,n},\ldots ,a_{m,n}]^T
+            \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \end{itemize}
+        \item Or the must efficient way, simply taking the \hyperref[Diagonal and Trace]{\ulink{trace}} of \(\bm{A}^T \bm{B}\)
+        \item Thus, the Frobenius inner product can be defined as:
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \langle\bm{A}, \bm{B} \rangle_F =
+        \sum_{i,j}\bm{A}_{i,j}\bm{B}_{i,j} = 
+        \operatorname{vec}(\bm{A})^T\operatorname{vec}(\bm{B})=
+        \operatorname{tr}(\bm{A}^T\bm{B})
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+      \end{itemize}
   \end{itemize}
 
   \subsection{Induced 2-Norm}\label{Induced 2-norm}
