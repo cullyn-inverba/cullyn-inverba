@@ -22,7 +22,8 @@
 
 ## Class Resources
 - [Junqueira’s Basic Histology Text and Atlas (Edition: 15th; 2018)](https://1lib.us/book/5001185/6d1add)
-- [Christina Howard's Histology Lectures](https://youtube.com/playlist?list=PL7VEdRfJHS5ufLYpVnf6BcX2eH5KtVQDD)
+- [Christina Howard's Histology Lectures](https://www.youtube.com/playlist?list=PL7VEdRfJHS5v7n-r09YVA2WWS150E2ThL)
+- [Christina Howard's Histology Lab Lectures](https://youtube.com/playlist?list=PL7VEdRfJHS5ufLYpVnf6BcX2eH5KtVQDD)
 - [Join the Class Discord Server](https://discord.gg/Df2cxnUz3e)
 
 ## Lab
