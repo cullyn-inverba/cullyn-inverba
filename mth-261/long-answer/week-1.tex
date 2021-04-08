@@ -31,22 +31,27 @@
     \lambda\begin{bmatrix} 0 \\ 1 \\ \minimal{0} \end{bmatrix} + 
     \minimal{\lambda\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item That being said, the matrix above could be an augmented matrix with the constant matrix containing values for the first two vectors, indicating a single solution. 
+    \item That being said, the matrix above could be an augmented matrix with the constant matrix containing values for only the first two vectors, indicating a single solution. 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}[ccc|c]
-    1 & 0 & \minimal{0} & y \\
-    0 & 1 & \minimal{0} & x \\
+    1 & 0 & \minimal{0} & 6 \\
+    0 & 1 & \minimal{0} & 9 \\
     \minimal{0} & \minimal{0} & \minimal{0} & \minimal{0}
     \end{bmatrix}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item And now I've realized I actually answered why the statement in (b) is false and not directly addressing the validity of (a).
-    \item For (a) to be true, then there does have to be a row of zeros, given the original system of equations, as well as parameters in at least one of the other systems, as a row of all zeros puts no restriction on z.
+    \item (a) is false, the row of zeros puts no restriction on the \rrr{parameter}, but the row doesn't have to be there; the rank just has to be less than the number of columns. 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}[ccc|c]
-      1 & 0 & 2 & x \\
-      0 & 1 & \minimal{0} & y \\
-      \minimal{0} & \minimal{0} & \minimal{0} & \minimal{0(z)}
+      1 & 0 & \rrr{2} & 4 \\
+      0 & 1 & \minimal{0} & 2 \\
+      \minimal{0} & \minimal{0} & \minimal{0} & \minimal{0}
     \end{bmatrix}
+    \Arrow 
+    \begin{bmatrix}[ccc|c]
+      1 & 0 & \rrr{2} & 4 \\
+      0 & 1 & \minimal{0} & 2 \\
+    \end{bmatrix}~\text{row zeros doesn't have to exist}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
     \minor{\item If \tbm{A} has a row of zeros, there is more than one solution.}
@@ -154,5 +159,7 @@ Idk, let's try it.
   s &= 0
 \end{align*}
 Well, why doesn't that work? I guess rref removes information\dots or maybe I'm doing something wrong with parameters.
+
+\emph{Update after a couple of days later}: the rank is 2, with 4 columns, i.e., \(r < n\), thus there are infinite solutions. You just gave us one of many possible solutions, hence why \(s=0\) I guess? \(s\), and I bet \(t\) if I worked it out, would both be zero, or unrestricted.
 \end{enumerate}
 \end{document}
