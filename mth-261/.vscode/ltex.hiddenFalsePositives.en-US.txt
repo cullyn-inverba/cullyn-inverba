@@ -17,3 +17,4 @@
 {"rule":"AGREEMENT_SENT_START","sentence":"^\\QThe use of augmented matrices are very useful when dealing with system of linear equations.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=: yields the induced vector 2-norm.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=1: yields the nuclear norm, which is the sum of all the singular values of the matrix.\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QDiagonalization Matrix decomposition Linear transformations Eigendecomposition Change of Basis Singular values of a matrix Non-singular matrix Singular matrix Singular value decomposition\\E$"}

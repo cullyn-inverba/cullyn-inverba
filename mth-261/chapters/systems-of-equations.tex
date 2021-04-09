@@ -89,6 +89,7 @@
   \end{itemize}
 \end{itemize}
 
+\newpage
 \section{Gaussian Elimination}\label{Gaussian Elimination}
 \begin{itemize}
   \item \jjj{Gaussian elimination (row reduction)}: an algorithm for solving systems of linear equations by using a sequence of elementary operations on a matrix until the \emph{row~echelon form} is obtained.
@@ -115,6 +116,9 @@
         \item The leading coefficient (\jjj{pivots}) of a nonzero row is always strictly to the right of the leading coefficient (sometimes required to be 1) of the row above it. 
       \end{itemize}
       \item The row echelon form allows for determination of the \hyperref[Matrix Rank]{\ulink{matrix rank}} by counting the number of pivots, e.g., the above example is rank 4.
+        \begin{itemize}
+          \item If rank (\(r\)) =  number of columns (\(n\)), then it has a unique solution. If \(r < n\), then it has infinite solutions.
+        \end{itemize}
     \end{itemize}
     \item \ddd{Reduced row echelon form} \jjj{\(\operatorname{rref}(\bm{M})\)}: a matrix that satisfies all the requirements of the row echelon form while additionally satisfying the following:
     \begin{itemize}
@@ -130,7 +134,7 @@
       \end{bmatrix}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
-    \item \ddd{Parameters}: the nonleading variables (\(\rrr{*x_n}\): the left over variables associated with nonzero elements) are replaced with new variables \(\{s,r,t,\dots\}\) when converting back systems of equations, hence why \hyperref[Linear Equations]{\ulink{coefficients}} are sometimes referred to as parameters. % chktex 21
+    \item \ddd{Parameters}: the nonleading variables (\(\rrr{*x_n}\): the leftover variables associated with nonzero elements) are replaced with new variables \(\{s,r,t,\dots\}\) when converting back systems of equations, hence why \hyperref[Linear Equations]{\ulink{coefficients}} are sometimes referred to as parameters. % chktex 21
     \item Any matrix can be brought to the (reduced) row echelon form by a sequence of elementary row operations; this theorem is the basis of the Gaussian algorithm. 
   \end{itemize}
   
@@ -163,12 +167,45 @@
     \item[5.] Back-substitution of the nonleading coefficients (parameters) to solve for leading coefficients.
     \item[6.] Double check for validity by using leading variables in the original system. 
   \end{itemize}
-  
 \end{itemize}
-  
+
+
 \section{Homogeneous Equations}\label{Homogeneous Equations}
 \begin{itemize}
-  \item 
+  \item \jjj{Homogeneous systems}: when a system of linear equations have zeros in all the constant terms, i.e.,
+  \begin{align*}
+    a_1,1x_1 + a_{1,2}x_2+\cdots+a_{1,n}x_n &=0 \\
+    a_2,1x_1 + a_{2,2}x_2+\cdots+a_{2,n}x_n &=0 \\
+    &\hspace{8pt}\vdots  \\
+    a_m,1x_1 + a_{m,2}x_2+\cdots+a_{2,n}x_n &=0 
+  \end{align*}
+  \item Equivalent to a matrix equation of the form \(\bm{A}\bm{v}=\bm{0}\).
+  
+  \subsection{Homogeneous Solution Sets}\label{Homogeneous Solution Sets}
+  \begin{itemize}
+    \item \jjj{Trivial solution}: obtained by assigning the value of zero to each of the variables.
+    \item If the system has a \hyperref[tbd]{\dlink{non-singular matrix}}, then it is also the only solution.
+    \item If the system has a \hyperref[tbd]{\dlink{singular matrix}} then there are infinite solutions and consists of a solution set with the following properties:
+    \begin{itemize}
+      \item If \tbm{u} and \tbm{v} are two vectors representing solutions, then the vector sum \(\bm{u}+\bm{v}\) is also a solution.
+      \item If \(\bm{u}\) is a vector representing a solution, and \(\lambda \) is any scalar, then \(\lambda \bm{u}\) is also a solution.
+      \item These are exactly the same properties required for the solution set to be a \hyperref[Subspace]{\ulink{subspace}} of \(\mathbb{R}^n\).
+      \item Numerical solutions to a homogeneous can be found with \hyperref[tbd]{\dlink{singular value decomposition}}.
+    \end{itemize}
+  \end{itemize}
+  \bigskip
+  \item There is a close relationship between the solutions to a linear system and the solutions to the corresponding homogeneous system: 
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{Ax}=b \quad \text{and} \quad \bm{Ax}=0
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{itemize}
+    \item Specifically, if \tbm{p} is any specific solution to the linear system \(\bm{Ax} = b\), then the entire solution set can be described as
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \{\bm{p}+\bm{v}: \bm{v} ~\text{is any solution to}~\bm{Ax}=0\}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Geometrically, \( \bm{Ax}=b\) is simply translation of the solution set for \( \bm{Ax}=0\).
+  \end{itemize}
+  \item The above only applies if \( \bm{Ax}=b \) has at least one solution.
 \end{itemize}
   
   
