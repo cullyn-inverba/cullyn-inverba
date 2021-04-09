@@ -1,0 +1,1 @@
+{"rule":"EN_A_VS_AN","sentence":"^\\QCo-injection ensures that cells observed are exactly the neurons in question (blue region under a in the above image).\\E$"}

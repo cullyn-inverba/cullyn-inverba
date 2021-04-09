@@ -26,3 +26,16 @@ GPI
 GFP
 monolipidated
 depalmitoylation
+Optogenetic
+VMHvl
+HAA
+adeno-associated
+Cre-dependent
+recombinase
+Cre
+fibreoptic
+EYFP
+channelrhodopsin
+Fos
+optogenetic
+LacZ
