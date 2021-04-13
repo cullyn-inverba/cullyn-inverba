@@ -154,6 +154,8 @@
 \newcommand{\Arrow}{\raisebox{-.5\height}{\scalebox{2}{$~\rightarrow~$}}}
 \newcommand{\Image}[2]{\raisebox{-.5\height}{\includegraphics[width=#1]{#2}}}
 
+\newcommand{\chonk}[1]{\begin{center}\Large{\textbf{#1}}\end{center}}
+
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
 % ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
 % ██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
