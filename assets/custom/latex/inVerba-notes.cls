@@ -154,7 +154,7 @@
 \newcommand{\Arrow}{\raisebox{-.5\height}{\scalebox{2}{$~\rightarrow~$}}}
 \newcommand{\Image}[2]{\raisebox{-.5\height}{\includegraphics[width=#1]{#2}}}
 
-\newcommand{\chonk}[1]{\begin{center}\Large{\textbf{#1}}\end{center}}
+\newcommand{\chonk}[1]{{\Large{\textbf{#1}}}}
 
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
 % ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
@@ -301,18 +301,18 @@
 
     \setenumerate{align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!}
 
-    \setlist[itemize,1]{
-        label=\circ, 
-        leftmargin=\dimexpr32pt
-    }
-    \setlist[itemize,2]{
-        label=\textbullet,
-        leftmargin=\dimexpr26pt -1 em
-    }
-    \setlist[itemize,3]{
-        label=\small\color{minor}\textbullet,
-        leftmargin=\dimexpr26pt -1 em
-    }
+    % \setlist[itemize,1]{
+    %     label=\circ, 
+    %     leftmargin=\dimexpr32pt
+    % }
+    % \setlist[itemize,2]{
+    %     label=\textbullet,
+    %     leftmargin=\dimexpr26pt -1 em
+    % }
+    % \setlist[itemize,3]{
+    %     label=\small\color{minor}\textbullet,
+    %     leftmargin=\dimexpr26pt -1 em
+    % }
 }
 
 \DeclareOption{quiz}{
