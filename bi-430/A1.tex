@@ -1,0 +1,102 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{BI:\@ 430}
+\newcommand{\theTitle}{Assignment 1}
+\newcommand{\institution}{Portland State University}
+
+% chktex-file 1
+
+\begin{document}
+
+\begin{enumerate}\color{minor}
+  \item You plan to use a plasmid called pBR322 for a genetic engineering experiment. You decide to make a DNA preparation of the plasmid by purifying it from its \textit{Escherichia coli} host, using a standard plasmid prep protocol. The plasmid is 4,361 base pairs long. 
+  \\ Points: [ \hspace{14pt} / 6 ] \smallskip
+  \begin{enumerate}
+    \item You dissolve the plasmid DNA in water, and quantify by making a 1/10 dilution (10 microliters of plasmid plus 90 microliters water) and measuring the absorbance of this dilution at 260 nm. You obtain a value of 0.130. What is the concentration of this diluted plasmid DNA, in micrograms per milliliter? 
+    \\ Points: [ \hspace{14pt} / 2 ] \smallskip
+
+    \begin{itemize}\color{text}
+      \item A sample OD with a value of 0.130 at \SI{260}{nm} with a sample type of double-stranded DNA results in \bbb{\boxed{\SI{6.50}{\micro\gram\per\milli\litre}}} given a conversion factor of 1~OD\(_{260}\) Unit = \SI{50}{\micro\gram\per\milli\liter} dsDNA\@.
+    \end{itemize}
+    \item What is the concentration of the undiluted plasmid prep in nanograms per microliter (remember to consider the dilution factor used for making the measurement!) 
+    \\ Points: [ \hspace{14pt} / 2 ] \smallskip
+
+    \begin{itemize}\color{text}
+      \item \(\underbrace{\SI{6.50}{\micro\gram\per\milli\litre} \cdot 10}_{\text{concentration adjustment}}\) = \SI{65.0}{\micro\gram\per\milli\litre} = \bbb{\boxed{\SI{65.0}{\nano\gram\per\micro\litre}}}
+    \end{itemize}
+    \item What is the molar concentration of the undiluted pBR322 plasmid preparation (express as micromolar or nanomolar)? Keep in mind that the size of the plasmid is 4,361 base pairs. 
+    \\ Points: [ \hspace{14pt} / 2 ] \medskip
+
+    \begin{itemize}\color{text}
+      \item \(\displaystyle 
+      \frac{\SI{60}{\micro\gram}}{\SI{1}{ml}}
+      \times
+      \frac{\SI{1000}{ml}}{\SI{1}{L}}
+      \times
+      \frac{\SI{1}{g}}{\SI{e6}{\micro\gram}}
+      \times
+      \frac{\SI{1}{\mole}}{(650\cdot4361)~\text{g}}
+      =
+      \bbb{\boxed{\SI{22.9e-9}{nM}}}
+      \)
+    \end{itemize}
+  \end{enumerate}
+
+  \bigskip
+
+  \item To address the following, see the posted reading: “Berg first rDNA 1972”, from Friday of Week 2.
+  \\ \dots \\
+  See the protocol for making a covalently closed dimer of the SV40 genome, shown in figure 1, and described in the text on pages 2906 and 2907. 
+  \\ Points: [ \hspace{14pt} / 4 ] \smallskip
+
+  \begin{enumerate}
+    \item Why was the linear version of SV40 form 1 treated with lambda (\(\lambda \)) exonuclease, before being treated with terminal transferase? What did the \(\lambda \) exonuclease do to the DNA\@? What does this say about requirements for maximum activity of terminal transferase? 
+    \\ Points: [ \hspace{14pt} / 2] \smallskip
+
+    \begin{itemize}\color{text}
+      \item \(\lambda \) exonuclease was added after R\(_1\) (EcoRI) opened the linear DNA up in order to \textbf{add~a~3'~overhang}. I am hesitant to assert what this might say about the \textit{maximal activity} of terminal transferase, but it does suggest that terminal transferase does not work in the 5'\to~3' direction and that a sufficient 3' overhang is needed to start the catalytic addition of chosen deoxynucleotide via dATP or dTTP\@.
+    \end{itemize}
+    \item In the final step of the protocol, how do the activities of the two enzymes, DNA polymerase and ligase, cause repair and closing of the DNA backbone? 
+    \\ Points: [ \hspace{14pt} / 2] \smallskip
+
+    \begin{itemize}\color{text}
+      \item DNA polymerase fills in the leftover gaps in the now circular DNA structure created from the annealing process. 
+      \item DNA ligase also for the covalent closure, or joining of the strands, with the now filled in gaps; yielding a new recombinant DNA molecule.
+      \item Bonus: Exonuclease III was added to remove any 3' phosphoryl residues introduced at any nicks in the DNA since nicks with 3'-phosphoryl ends cannot be sealed by DNA ligase with such residue. 
+    \end{itemize}
+  \end{enumerate}
+  \item To address the following, see the readings (posted with this assignment): “DNA synthesis TdT 2018”, and the short summary article “enzymatic synthetic DNA 2019”. 
+  \\ Points: [ \hspace{14pt} / 5 ] \smallskip
+  \begin{enumerate}
+    \item Why is TdT (terminal transferase) likely to be a good enzyme for making new DNA strands with defined sequences? 
+    \\ Points: [ \hspace{14pt} / 1 ] \smallskip
+
+    \begin{itemize}\color{text}
+      \item Current oligonucleotide synthesis has an upper limit (\sim~200--300 nt) and produces hazardous waste; this limitation often results in the inability or high cost to get the desired DNA sequence. TdT is a template-independent polymerase that might allow for much longer and possibly useful for cheap and high-throughput methods. 
+    \end{itemize}
+
+    \item Suppose you want to make a synthetic DNA sequence, for example: 5’--G~A~C~T--3’. How can you force TdT to only add a single nucleotide at a time---what needs to happen in between the addition of each individual nucleotide? To answer this question, consult the posted paper “DNA synthesis TdT 2018”, specifically figure 1, and descriptions of the method on pages 1 and 2. 
+    \\ Points: [ \hspace{14pt} / 2 ] \smallskip
+
+    \begin{itemize}\color{text}
+      \item The authors suggest an approach wherein each polymerase molecule is site-specifically labeled with a tethered nucleoside. Once the tethered nucleoside is incorporated into a primer, then it remains covalently attached to the 3' end. Essentially, this blocks all other potential dNTPs until the linker is cleaved, allowing for addition of even a single nucleotide if needed.
+      \item The two-step approach proposed by the authors can be done recursively until the desired sequence is achieved, switching linked dNTPs as needed. 
+    \end{itemize}
+    \item In what ways would enzymatic synthesis of DNA strands be better than the current chemical synthesis by phosphoamidite chemistry? 
+    \\ Points: [ \hspace{14pt} / 2 ] \smallskip
+
+    \begin{itemize}\color{text}
+      \item The enzymatic scheme potentially allows for an accurate, safe, practical, and fast method for oligonucleotide synthesis. 
+        \begin{itemize}
+          \item Accurate: the single nucleotide specificity and mild conditions allow for more control over final products and a reduction in side products, which is a major barrier in synthesizing longer strands today.
+          \item Safe: the aqueous conditions allow for no hazardous waste generation compared to current phosphoamidite methods.
+          \item Practical: initiation from natural DNA thanks to the template-independent nature of TdT.
+          \item Fast: enzymatic activity allows for potential enzyme engineering and other high-throughput methods, leading to many real applications. 
+        \end{itemize}
+    \end{itemize}
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
