@@ -160,7 +160,7 @@
     \begin{itemize}
       \item If a row with the form 
       \(\begin{bmatrix}[cccc|c] \chap{0} & \chap{0} & \chap{0} &\chap{\cdots} & \yyy{a \neq 0} \end{bmatrix}\) occurs, then the system is \emph{inconsistent}, i.e., at least one line is parallel with another---no solution possible.
-      \item If a row with all zeros occurs, then that row added no new information and was only a multiple of another row, i.e., the system is \emph{reduced rank}.
+      \item If a row with all zeros occurs, then that row added no new information and was simply a multiple of another row.
       \item If reduced form is found, then continue.
     \end{itemize} 
     \item[4.] Map the matrix back to the equations.
@@ -174,10 +174,10 @@
 \begin{itemize}
   \item \jjj{Homogeneous systems}: when a system of linear equations have zeros in all the constant terms, i.e.,
   \begin{align*}
-    a_1,1x_1 + a_{1,2}x_2+\cdots+a_{1,n}x_n &=0 \\
-    a_2,1x_1 + a_{2,2}x_2+\cdots+a_{2,n}x_n &=0 \\
+    a_{1,1}x_1 + a_{1,2}x_2+\cdots+a_{1,n}x_n &=0 \\
+    a_{2,1}x_1 + a_{2,2}x_2+\cdots+a_{2,n}x_n &=0 \\
     &\hspace{8pt}\vdots  \\
-    a_m,1x_1 + a_{m,2}x_2+\cdots+a_{2,n}x_n &=0 
+    a_{m,1}x_1 + a_{m,2}x_2+\cdots+a_{2,n}x_n &=0 
   \end{align*}
   \item Equivalent to a matrix equation of the form \(\bm{A}\bm{v}=\bm{0}\).
   
