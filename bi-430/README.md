@@ -25,4 +25,4 @@
 
 ## Assignments
 
-- [Assignment 1](AS.pdf)
+- [Assignment 1](A1.pdf)
