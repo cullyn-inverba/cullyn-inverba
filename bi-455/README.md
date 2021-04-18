@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/discord/826224660537540659?label=Discord&logo=discord">
     </a>
     <a title="View my lab work" href="lab/practical-1.pdf">
-    <img src="https://img.shields.io/badge/Notes-week 2 done-success?logo=latex" >
+    <img src="https://img.shields.io/badge/Notes-week 3 done-success?logo=latex" >
     </a> 
 </p>
 
@@ -27,5 +27,6 @@
 - [Join the Class Discord Server](https://discord.gg/Df2cxnUz3e)
 
 ## Lab
-- [Week 1 &mdash; Complete](lab/practical-1.pdf)
-- [Week 2 &mdash; Complete](lab/practical-1.pdf)
+- [Week 1 &mdash; Complete](lab/practical-1.pdf) (left out for now)
+- [Week 2 &mdash; Complete](lab/practical-1.pdf) (left out for now)
+- [Week 3 &mdash; Complete](lab/practical-1.pdf) 
