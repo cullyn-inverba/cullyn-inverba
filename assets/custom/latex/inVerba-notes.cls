@@ -175,9 +175,8 @@
 \color{text} 
 \definecolor{minor}{HTML}{949494} 
 \definecolor{minimal}{HTML}{6b6b6b} 
-\definecolor{title-color}{HTML}{78b07a}
 
-% Emphasis: #f5b17a #ff9e4f
+% Emphasis: #f5b17a #ff9e4f #f5769c
 \definecolor{emph}{HTML}{f5b17a} 
 \definecolor{stress}{HTML}{ff9e4f} 
 \definecolor{amp}{HTML}{f5769c}
@@ -282,7 +281,7 @@
     \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
     \titleformat{\subsubsection}{\large\bfseries}{}{0pt}{}
 
-        % Charge: #d64242 → #225ed6
+    % Charge: #d64242 → #225ed6
     \definecolor{rrr}{HTML}{d64242}
     \definecolor{bbb}{HTML}{225ed6}
     \definecolor{text}{HTML}{000000}  
