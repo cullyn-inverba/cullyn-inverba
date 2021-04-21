@@ -1,24 +1,43 @@
 \chapter{Matrix Rank}\label{Matrix Rank}
 \section{Rank Terminology}\label{Rank Terminology}
 \begin{itemize}
-  \item \jjj{Matrix rank \(r,\operatorname{rank}(\bm{A})\)}: a non-negative integer (0, 1, 2, 3, \dots) 
+  \item \jjj{Matrix rank \(r,\operatorname{rank}(\bm{A})\)}: a non-negative integer \((\mathbb{N}_0 = 0, 1, 2, 3,\,\dots)\) that describes the dimension of the vector space \hyperref[Span]{\ulink{spanned}} by its columns.
+    \begin{itemize}
+      \item Rank can also be thought of as communicating the \emph{dimensionality of the information} in a matrix, but not the dimensionality of the matrix itself.
+      \begin{itemize}
+        \item E.g., the columns of a \(2\times 3\) matrix are in \(\mathbb{R}^3\), but one column could be embedded in a two-dimensional \hyperref[Subspace]{\ulink{subspace}}, which would make it a linearly dependent set.
+      \end{itemize}
+      \item Thus, rank can also be thought of as the maximal number of \hyperref[Linear Independence]{\ulink{linearly independent}} columns of a matrix, which also means rank is dimension of the vector space spanned by its rows, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \operatorname{rank}(C(\bm{A})) = \operatorname{rank}(R(\bm{A})) = \operatorname{rank}(\bm{A})
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item The maximum possible rank is equal to the smaller of the two dimensions, either the \xxx{rows} or \yyy{columns}, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \max(r) = r \in \mathbb{N}_0~\,|~\,0 \leq r \leq \min(\xxx{m},\yyy{n})
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \jjj{Full rank}: a square matrix with maximum possible rank, making it \hyperref[Matrix Inverse]{\dlink{invertible}}. 
+      \item \jjj{Full column rank}: when \(\xxx{m} > \yyy{n}\) and \(\max(r) = \yyy{n}\). 
+      \item \jjj{Full row rank}: when \( > \xxx{m} \) and \(\max(r) = \xxx{m}\). 
+      \item \jjj{Rank deficient (reduced rank, degenerate, low-rank, singular, non-invertible)}: when the rank is less than the maximum possible rank. 
+    \end{itemize}
   
-  \subsection{Concepts and Applications}\label{Concepts and Applications}
-  \begin{itemize}
-    \item 
+    
+    \subsection{Computing Rank}\label{Computing Rank}
+    \begin{itemize}
+      \item In smaller matrices, it may be easily computed by counting the number of columns in a linearly independent set.
+      \item \hyperref[Row Echelon form]{\dlink{Row reduction}} to the row echelon form also allows for calculation of rank by counting number of pivots.
+      \item Compute the \hyperref[tbd]{\dlink{singular value decomposition}} and count the number of non-zero singular values.
+      \item Compute the \hyperref[tbd]{\dlink{eigendecomposition}} and count the number of non-zero eigenvalues.
+      \item Rank after addition and multiplication:
+      \begin{itemize}
+        \item \(\rank{\bm{A}+\bm{B}} \leq \rank{\bm{A}} + \rank{\bm{B}} \)
+        \item \(\rank{\bm{A}\bm{B}} \leq \min{(\rank{\bm{A}},\rank{\bm{B}})} \)
+        \item The key take way here is that the rank is not necessarily the same as either of the original matrices. However, these rules aren't used often in applied linear algebra.
+      \end{itemize}
   \end{itemize}
-  
-\end{itemize}
-
-\section{Computing Rank}\label{Computing Rank}
-\begin{itemize}
-  \item []
-  
-  \subsection{Rank after Addition and Multiplication}\label{Rank after Addition and Multiplication}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
+      
 \end{itemize}
 
 
