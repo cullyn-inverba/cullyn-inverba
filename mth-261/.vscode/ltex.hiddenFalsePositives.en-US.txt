@@ -18,3 +18,4 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=: yields the induced vector 2-norm.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=1: yields the nuclear norm, which is the sum of all the singular values of the matrix.\\E$"}
 {"rule":"PHRASE_REPETITION","sentence":"^\\QDiagonalization Matrix decomposition Linear transformations Eigendecomposition Change of Basis Singular values of a matrix Non-singular matrix Singular matrix Singular value decomposition\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QA and AA\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}

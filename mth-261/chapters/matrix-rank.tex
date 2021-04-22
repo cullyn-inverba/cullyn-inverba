@@ -30,14 +30,40 @@
       \item \hyperref[Row Echelon form]{\dlink{Row reduction}} to the row echelon form also allows for calculation of rank by counting number of pivots.
       \item Compute the \hyperref[tbd]{\dlink{singular value decomposition}} and count the number of non-zero singular values.
       \item Compute the \hyperref[tbd]{\dlink{eigendecomposition}} and count the number of non-zero eigenvalues.
-      \item Rank after addition and multiplication:
-      \begin{itemize}
-        \item \(\rank{\bm{A}+\bm{B}} \leq \rank{\bm{A}} + \rank{\bm{B}} \)
-        \item \(\rank{\bm{A}\bm{B}} \leq \min{(\rank{\bm{A}},\rank{\bm{B}})} \)
-        \item The key take way here is that the rank is not necessarily the same as either of the original matrices. However, these rules aren't used often in applied linear algebra.
-      \end{itemize}
-  \end{itemize}
-      
+    \end{itemize}
+    
+    \subsection{Rank After Addition and Multiplication}\label{Rank After Addition and Multiplication}
+    \begin{itemize}
+      \item \(\rank{\bm{A}+\bm{B}} \leq \rank{\bm{A}} + \rank{\bm{B}} \)
+      \item \(\rank{\bm{A}\bm{B}} \leq \min{(\rank{\bm{A}},\rank{\bm{B}})} \)
+      \item The key take way here is that the rank is not necessarily the same as either of the original matrices. However, these rules aren't used often in applied linear algebra.
+    \end{itemize}
+
+    \subsection{Rank of A\texorpdfstring{\(^T\)}{}A and AA\texorpdfstring{\(^T\)}{}}\label{Rank of ATA and AAT}
+    \begin{itemize}
+      \item The rank of a matrix when multiplied with itself is the same as the rank of the original matrix (and the transpose of said matrix), regardless of \bbb{pre}/\rrr{post}-multiplication, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \rank{\bm{A}}  = \rank{\bm{A}^T} = \rank{\bbb{\bm{A}^T}\bm{A}} = \rank{\bm{A}\rrr{\bm{A}^T}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+      \item Explanation 1:
+        \begin{itemize}
+          \item Columns \(c_j\) are combinations of columns in \(A^T\), i.e., combining rows of \tbm{A} results in column \(c_j\) of product matrix \(\rightarrow \bm{A^T}a_j=c_j \)
+          \item This means the dimensionality of the subspace spanned by the columns of \bm{C} is the same as the dimensionality subspace spanned the columns of \(\bm{A}^T\), which means the rank is the same, i.e.,
+          \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          C(\bm{C})=C(\bm{A}^T)\rightarrow \rank{\bm{C}} = \rank{\bm{A}^T} 
+          \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \end{itemize}
+      \item Explanation 2: one can use \hyperref[tbd]{\dlink{null spaces}} to show that the dimensionality of the \(\bm{A}^T\bm{A}\) is the same as \tbm{A}. I don't understand this yet, so this will hopefully be explained better later.
+      \item Explanation 3: one can use \hyperref[tbd]{\dlink{singular value decomposition}} to show that \(\bm{A}^T\bm{A}\) has the same singular values (squared) as \tbm{A}, indicating the rank is also equal. Again, I don't understand this yet, so this will hopefully be explained better later.
+      \item The implications of this fact show that \emph{creating symmetric full rank matrices}, via the \hyperref[Hadamard Multiplication]{\ulink{multiplicative method}}, of desired size (\bbb{pre}=\yyy{column} sized, \rrr{post}=\xxx{row} sized) can easily be done.
+    \end{itemize}
+    
+    \subsection{Full Rank via ``Shifting''}\label{Full Rank via ``Shifting''}
+    \begin{itemize}
+      \item 
+    \end{itemize}
+    
 \end{itemize}
 
 
