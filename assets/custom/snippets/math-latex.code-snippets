@@ -116,6 +116,18 @@
     ]
   },
 
+  "Identity Matrix":{
+    "scope": "latex",
+    "prefix": "imx",
+    "body": [
+        "\\begin{bmatrix}",
+        "1 & 0 & 0 \\\\\\",
+        "0 & 1 & 0 \\\\\\",
+        "0 & 0 & 1 ",
+        "\\end{bmatrix}",
+    ]
+  },
+
   "Augmented Matrix":{
     "scope": "latex",
     "prefix": "amx",
