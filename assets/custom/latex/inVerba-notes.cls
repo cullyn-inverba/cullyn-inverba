@@ -28,7 +28,11 @@
 % ╚═╗├┤ │   │ ││ ││││└─┐
 % ╚═╝└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
 \RequirePackage{titlesec}
-    \titleformat{\chapter}{\LARGE\bfseries\color{chap}}{}{0pt}{\centering}
+\RequirePackage[object=vectorian]{pgfornament}
+    \titleformat{\chapter}
+    {\LARGE\centering\bfseries\color{title-color}}
+    {}{0pt}
+    {}[\vspace{-1em}{\pgfornament[width=14cm]{89}}\vspace{-6pt}]
         \titlespacing*{\chapter}{0pt}{-64pt}{0pt} 
     \titleformat{\section}{\Large\bfseries\color{sec}}{}{0pt}{}
         \titlespacing*{\section}{0 em}
@@ -54,10 +58,10 @@
         {\hfill}
     \titlecontents{section}[0.809 em]
         {\bfseries}{}{}
-        {\hfill\thecontentspage}
+        {\hfill\contentspage}
     \titlecontents{subsection}[1.618 em]
         {\color{minor}}{}{}
-        {\titlerule*[0.42 em]{.}\thecontentspage}
+        {\titlerule*[0.42 em]{.}\contentspage}
     % \titlecontents{subsubsection}[2.427  em]
     %     {\color{minimal}}{}{}
     %     {\titlerule*[0.42 em]{.}\thecontentspage}
