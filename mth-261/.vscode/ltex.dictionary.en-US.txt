@@ -17,3 +17,4 @@ covariances
 Schatten
 Submultiplicative
 submultiplicative
+cokernel
