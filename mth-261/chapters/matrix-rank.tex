@@ -7,7 +7,7 @@
       \begin{itemize}
         \item E.g., the columns of a \(2\times 3\) matrix are in \(\mathbb{R}^3\), but one column could be embedded in a two-dimensional \hyperref[Subspace]{\ulink{subspace}}, which would make it a linearly dependent set.
       \end{itemize}
-      \item Thus, rank can also be thought of as the maximal number of \hyperref[Linear Independence]{\ulink{linearly independent}} columns of a matrix, which also means rank is dimension of the vector space spanned by its rows, i.e.,
+      \item Thus, rank can also be thought of as the maximal number of \hyperref[Linear Independence]{\ulink{linearly independent}} columns of a matrix, which also means rank is dimension of the vector space spanned by its rows  (see \hyperref[Column Space]{\dlink{column and row space of a matrix}}), i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \operatorname{rank}(C(\bm{A})) = \operatorname{rank}(R(\bm{A})) = \operatorname{rank}(\bm{A})
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,11 +35,11 @@
   \item Compute the \hyperref[tbd]{\dlink{singular value decomposition}} and count the number of non-zero singular values.
   \item Compute the \hyperref[tbd]{\dlink{eigendecomposition}} and count the number of non-zero eigenvalues.
   
-  \subsection{Rank After Addition and Multiplication}\label{Rank After Addition and Multiplication}
+  \item Rank after addition and multiplication:
   \begin{itemize}
     \item \(\rank{\bm{A}+\bm{B}} \leq \rank{\bm{A}} + \rank{\bm{B}} \)
     \item \(\rank{\bm{A}\bm{B}} \leq \min{(\rank{\bm{A}},\rank{\bm{B}})} \)
-    \item The key take way here is that the rank is not necessarily the same as either of the original matrices. However, these rules aren't used often in applied linear algebra.
+    \item Key point: the rank is not necessarily the same as either of the original matrices.
   \end{itemize}
   
   \subsection{Rank of A\texorpdfstring{\(^T\)}{}A and AA\texorpdfstring{\(^T\)}{}}\label{Rank of ATA and AAT}
@@ -49,16 +49,22 @@
     \rank{\bm{A}}  = \rank{\bm{A}^T} = \rank{\bbb{\bm{A}^T}\bm{A}} = \rank{\bm{A}\rrr{\bm{A}^T}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    \item Explanation 1:
+    \item Explanation 1, using \hyperref[Column Space]{\dlink{column spaces}}:
     \begin{itemize}
       \item Columns \(c_j\) are combinations of columns in \(A^T\), i.e., combining rows of \tbm{A} results in column \(c_j\) of product matrix \(\rightarrow \bm{A^T}a_j=c_j \)
-      \item This means the dimensionality of the subspace spanned by the columns of \bm{C} is the same as the dimensionality subspace spanned the columns of \(\bm{A}^T\), which means the rank is the same, i.e.,
+      \item This means the dimensionality of the subspace spanned by the columns of \bm{C} is the same as the dimensionality subspace spanned the columns of \(\bm{A}^T\), which means the \hyperref[Rank Terminology]{\ulink{rank is the same}}, i.e., 
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       C(\bm{C})=C(\bm{A}^T)\rightarrow \rank{\bm{C}} = \rank{\bm{A}^T} 
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
-    \item Explanation 2: one can use \hyperref[tbd]{\dlink{null spaces}} to show that the dimensionality of the \(\bm{A}^T\bm{A}\) is the same as \tbm{A}. I don't understand this yet, so this will hopefully be explained better later.
-    \item Explanation 3: one can use \hyperref[tbd]{\dlink{singular value decomposition}} to show that \(\bm{A}^T\bm{A}\) has the same singular values (squared) as \tbm{A}, indicating the rank is also equal. Again, I don't understand this yet, so this will hopefully be explained better later.
+    \item Explanation 2, using \hyperref[tbd]{\dlink{null spaces}}:
+      \begin{itemize}
+        \item (to be explained)
+      \end{itemize}
+    \item Explanation 3, using \hyperref[tbd]{\dlink{singular value decomposition}}: 
+    \begin{itemize}
+      \item (to be explained)
+    \end{itemize}
     \item The implications of this fact show that \emph{creating symmetric full rank matrices}, via the \hyperref[Hadamard Multiplication]{\ulink{multiplicative method}}, of desired size (\bbb{pre}=\yyy{column} sized, \rrr{post}=\xxx{row} sized) can easily be done.
   \end{itemize}
     
