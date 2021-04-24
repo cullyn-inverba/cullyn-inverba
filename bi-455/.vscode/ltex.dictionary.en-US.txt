@@ -80,3 +80,9 @@ Submucosa
 muscularis
 Externa
 externa
+Epicardium
+adventitia
+Vasa
+vasorum
+Venules
+intima
