@@ -107,6 +107,19 @@
     "description": "Insert centered graphic"
   },
 
+  "Multicol Graphic":{
+    "scope": "latex",
+    "prefix": "jci",
+    "body": [
+      "\\jjj{$1}",
+      "",
+      "\\begin{center}",
+      "\t\\Image{0.7\\columnwidth}{images/week-4-1h.png}",
+      "\\end{center}",
+      "",
+    ]
+  },
+
   "Graphic":{
     "scope": "latex",
     "prefix": "grpx",
@@ -138,6 +151,12 @@
     "scope": "latex",
     "prefix": "mleft",
     "body": "\\hspace{-$1pt}"
+  },
+
+  "Needs Space":{
+    "scope": "latex",
+    "prefix": "nvs",
+    "body": "\\vspace{42pt}"
   },
 
   "Begin Center": {

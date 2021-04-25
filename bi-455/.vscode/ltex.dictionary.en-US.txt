@@ -86,3 +86,8 @@ Vasa
 vasorum
 Venules
 intima
+mesothelial
+Endocardium
+Pectinate
+sinusoids
+Sinusoid

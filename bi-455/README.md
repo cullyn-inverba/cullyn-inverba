@@ -22,4 +22,4 @@
 - [Christina Howard's Histology Lectures](https://www.youtube.com/playlist?list=PL7VEdRfJHS5v7n-r09YVA2WWS150E2ThL)
 - [Christina Howard's Histology Lab Lectures](https://youtube.com/playlist?list=PL7VEdRfJHS5ufLYpVnf6BcX2eH5KtVQDD)
 - [Join the Class Discord Server](https://discord.gg/Df2cxnUz3e)
-- [Powerpoints to pdfs](https://downgit.github.io/#/home?url=https://github.com/cullyn-inverba/notes/tree/master/bi-455/ppts)
+- [PowerPoints to pdfs](https://downgit.github.io/#/home?url=https://github.com/cullyn-inverba/notes/tree/master/bi-455/ppts)
