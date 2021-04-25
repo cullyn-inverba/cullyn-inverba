@@ -91,3 +91,5 @@ Endocardium
 Pectinate
 sinusoids
 Sinusoid
+venules
+lobules
