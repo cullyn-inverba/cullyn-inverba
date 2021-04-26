@@ -23,3 +23,7 @@
 - [Christina Howard's Histology Lab Lectures](https://youtube.com/playlist?list=PL7VEdRfJHS5ufLYpVnf6BcX2eH5KtVQDD)
 - [Join the Class Discord Server](https://discord.gg/Df2cxnUz3e)
 - [PowerPoints to pdfs](https://downgit.github.io/#/home?url=https://github.com/cullyn-inverba/notes/tree/master/bi-455/ppts)
+
+## Lab
+
+- [Practical 1, weeks 1&ndash;4](lab/practical-1.pdf)
