@@ -10,3 +10,7 @@ phosphoryl
 nt
 dsDNA
 dNTPs
+hyperthermophilic
+Gencode
+OMIM
+DeltaBLAST
