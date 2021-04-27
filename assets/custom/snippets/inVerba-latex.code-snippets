@@ -96,6 +96,12 @@
     ]
   },
 
+  "No indent list":{
+    "scope": "latex",
+    "prefix": "noindent",
+    "body": "[align=left, leftmargin=0pt, labelindent=\\parindent, listparindent=\\parindent, labelwidth=0pt, itemindent=!]",
+  },
+
   "Centered Graphic": {
     "scope": "latex",
     "prefix": "Centered Graphic",
