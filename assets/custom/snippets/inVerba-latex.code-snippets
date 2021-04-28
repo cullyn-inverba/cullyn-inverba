@@ -102,6 +102,17 @@
     "body": "[align=left, leftmargin=0pt, labelindent=\\parindent, listparindent=\\parindent, labelwidth=0pt, itemindent=!]",
   },
 
+  "Response":{
+    "scope": "latex",
+    "prefix": "basec",
+    "body": [
+      "\\basec{\\begin{itemize}",
+      "\t\\item $0",
+      "\\end{itemize}}",
+      "",
+    ]
+  },
+
   "Centered Graphic": {
     "scope": "latex",
     "prefix": "Centered Graphic",
