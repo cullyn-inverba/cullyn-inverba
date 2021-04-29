@@ -66,7 +66,7 @@
     \end{itemize}}
     \item \textbf{[ \hspace{14pt} / 2 ]} Use the Gencode V36 ‘full’ track to answer the following (note: this track is found in the “Genes and Gene Predictions” category and can be activated/altered if it is not initially visible). Use the gene version that is highlighted (blue background) to answer the following:
     \begin{enumerate}
-      \item How many exons make up the CFTR gene?
+      \item How many exons make up the CFTR \textbf{\color{text} I chose CFTR, not CFTR-AS1 if that makes a difference} gene?
       
       \basec{\begin{itemize}
         \item 21 (transcript and coding)
@@ -74,8 +74,7 @@
       \item How much space does the entire gene occupy, including both exons and introns?
       
       \basec{\begin{itemize}
-        \item 147,900 bp (transcript, including untranslated regions)
-        \item 147,706 bp (coding region)
+        \item 147,900 bp (transcript, including untranslated regions) \\ 147,706 bp (coding region)
       \end{itemize}}
     \end{enumerate}
 
@@ -146,15 +145,17 @@
       
       \basec{\begin{itemize}
         \item No, no significant degree of confidence in similarity. The E-value is low, but compared to archaea it is much higher.  Query cover is less than ideal---with only 76\% there could be several missed mutations that significantly change function.
-        \item Interesting that it is describing a general transcription factor IIE, possibile subunit of \(\alpha \)-subuint.
+        \item Interesting that it is describing a general transcription factor IIE, possible subunit of \(\alpha \)-subuint.
         \item However, with a percent identity of only 14.47\%, then the number of identical amino acids is quite low and below the ``40\%'' rule of thumb.
       \end{itemize}}
 
       \item Which BLAST approach was most valuable, and why?
       
       \basec{\begin{itemize}
-        \item I mean, I suppose it depends on context, but the basic protein-protein blast certainly shows identical amino acid sequence and thus is pretty useful for identifying a protein.
-        \item If this sequence was generated from a human sample, then I guess the DELTA blast would be useful to determine whether the sequence you have is not known or possibly a distant homolog, especially in cross-domain homology. 
+        \item I mean, I suppose it depends on context, but the basic protein-protein blast certainly shows identical amino acid sequence in the specific organism you are interested and thus is pretty useful for identifying a protein. However, it is next to useless if there is no match (well, no match can still be useful data, but I digress) so in this example case then it isn't that helpful. 
+        \item If this sequence was generated from a human sample (is this necessary, actually?), then the DELTA blast would be useful to determine whether the sequence you have is just not known or possibly a distant homolog, especially in cross-domain homology; such results must be taken with caution if results are similar to the ones from part (b).
+        \item Running the DELTA blast again, but restricting it to archaea, leads to results similar to that of part (a). Interestingly, the E value is much lower, and the query cover is not at 100\% either; the total and max score is much less too. These results indicate that DELTA blast might not be better in general. 
+        \item With a sample size of three searches then I suspect I have little data to make an informed conclusion here.
       \end{itemize}}
       
     \end{enumerate}
