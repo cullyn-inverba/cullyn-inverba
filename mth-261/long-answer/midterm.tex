@@ -1,0 +1,161 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 256}
+\newcommand{\theTitle}{Midterm}
+\newcommand{\institution}{Portland State University}
+
+\begin{document}
+
+\vspace*{160pt}
+
+\begin{table}[h]
+  \centering
+  \scalebox{1.4}{
+  \begin{tabular}{ccc}
+    \toprule
+    Page & Points  & Score \\
+    \midrule
+    \hyperlink{page.2}{\dlink{2}} & 6 & \\
+    \hyperlink{page.3}{\dlink{3}} & 8 & \\
+    \hyperlink{page.4}{\dlink{4}} & 4 & \\
+    \hyperlink{page.5}{\dlink{5}} & 4 & \\
+    \hyperlink{page.6}{\dlink{6}} & 4 & \\
+    \hyperlink{page.7}{\dlink{7}} & 4 & \\
+    \midrule
+    Total: & 30 & \\
+    \bottomrule
+    \end{tabular}}
+\end{table}
+
+\newpage
+
+\begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
+
+  \item Determine whether each statement below is true or false, then explain how you know. Note: that if the statement is false, then it might be easiest to provide a counterexample as justification.
+  \begin{enumerate}
+    \item \pts{2} If a linear system has \(n\) variables and \(m\) equations, then the augmented matrix has
+    \(n\) columns.
+    \item \pts{2} An inconsistent system can be made consistent by performing a sequence of elementary row operations.
+    \item \pts{2} A consistent system whose augmented matrix has 3 rows and 5 columns will have infinitely many solutions.
+  \end{enumerate}
+
+  \newpage
+
+  \item Create an augmented matrix for the scenarios below or explain why it is impossible to do so. The associated system:
+  
+  \begin{enumerate}
+    \item \pts{2} has infinite solutions, but the augmented matrix has no row of zeros.
+    \item \pts{2} has exactly one solution, but the augmented matrix has two rows of zeros.
+    \item \pts{2} is consistent, but has more equations than unknowns.
+    \item \pts{2} is inconsistent, but the augmented matrix has a row of zeros.
+  \end{enumerate}
+
+  \newpage
+
+  \item Consider the linear system whose augmented matrix is
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix}
+  1 & h & 4 \\
+  3 & 6 & 8 \\
+  \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{enumerate}
+    \item Determine a value for \(h\) so that the system is \textbf{consistent}.
+    \item Determine a value for \(h\) so that the system is \textbf{inconsistent}.
+  \end{enumerate}
+
+  \newpage
+
+  \item \pts{2} Show that \(x=1\), \(y=2\), and \(z=3\) is not a solution to the following system.
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{cases}
+    x+y+2z=9\\
+    2x+4y-2z=1\\
+    3x+6y-5z=0
+  \end{cases}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \item \pts{2} Find a solution to the following system of linear equations: 
+  \begin{align*}
+    -450x_1 & \quad + & -22x_2 & \quad + & 1x_3 & \quad + & 1x_4 & \quad + & 0x_5 & \quad + & 333x_6 &= 0 \\
+    3x_1 & \quad + & 2x_2 & \quad + & 1x_3 & \quad + & 0x_4 & \quad + & 900x_5 & \quad + & 0x_6 &= 0 \\
+    -\pi x_1 & \quad + & 0x_2 & \quad + & 88x_3 & \quad + & 45x_4 & \quad + & 1x_5 & \quad + & 0x_6 &= 0 \\
+    7x_1 & \quad + & 12x_2 & \quad + & 300x_3 & \quad + & 0x_4 & \quad + & 9x_5 & \quad + & 0x_6 &= 0 \\
+    1x_1 & \quad + & 3x_2 & \quad + & 9x_3 & \quad + & 27x_4 & \quad + & 81x_5 & \quad + & 243x_6 &= 0 
+  \end{align*}
+  
+  
+  \newpage 
+
+  \item \pts{2} Suppose the matrix below is the augmented matrix of a system of linear equations. Write the general solution in parametric vector form (as a linear combination of vectors some scaled by parameters).
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix}
+  1 & 0 & -4 & 0 & 2 & -1  \\
+  0 & 1 & 8 & 0 & -7 & 9  \\
+  0 & 0 & 0 & 1 & 0 & 3  
+  \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \item \pts{2} Let
+  \(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{A} = \begin{bmatrix} -0 & -4 \\ 3 & 9 \end{bmatrix},
+  \quad \bm{B} = \begin{bmatrix} -9 & 1  \\ -9 & 8 \end{bmatrix},~\text{and}
+  \quad \bm{C} = \begin{bmatrix} 7 & 5 \\ 3 & -3 \end{bmatrix}.
+  \)%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \medskip
+  
+  \hspace{58pt} Determine: \( -8c + 2(5A-3B) + 4C - 10A + 4(C+2B) \)
+
+  \newpage
+
+  \item \pts{2} Fact: the vector equation below is consistent
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  2 \begin{bmatrix} 1 \\ 4\end{bmatrix} + 
+  3 \begin{bmatrix} 2 \\ -12 \end{bmatrix} -
+  5 \begin{bmatrix} 7 \\ 0 \end{bmatrix} + 
+  6 \begin{bmatrix} -3 \\ 5 \end{bmatrix} =
+  \begin{bmatrix} -45 \\ 2 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  Use that fact to find a solution to the matrix equation \(\bm{Ax} = \bm{b }\) where 
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{A} = \begin{bmatrix}
+  1 & 2 & 7 & -3 \\
+  4 & -12 & 0 & 5 \\
+  \end{bmatrix}
+  \qquad \text{and} \qquad
+  \bm{b} = \begin{bmatrix} -45 \\  2 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \item \pts{2} Define a transformation 
+  \begin{align*}
+    T: \mathbb{R}^3 &\to \mathbb{R}^4 \\
+    \bm{x} &\to \bm{Ax}
+  \end{align*}
+  where \(\bm{A} = \begin{bmatrix}
+  -5 & -4 & 1 \\
+  3 & 2 & -1 \\
+  -4 & 0 & 8 \\
+  7 & 0 & 9
+  \end{bmatrix}\). 
+  It is a fact that 
+  \(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  T\left(\begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix}\right) = \begin{bmatrix} 3 \\ -3 \\ 28 \\ 43 \end{bmatrix}
+  \)%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \medskip
+
+  Use this fact to produce a solution to the system of linear equations below
+  \begin{align*}
+    \hspace{80pt} -5x_1 &\quad+ \hspace{-50pt}& -4x_2 &\quad+ \hspace{-50pt}& 1x_3 &= 3 \\
+    \hspace{80pt} 3x_1 &\quad+ \hspace{-50pt}& 2x_2  &\quad+ \hspace{-50pt}& 1x_3 &= -3 \\
+    \hspace{80pt} -4x_1 &\quad+ \hspace{-50pt}& 0x_2 &\quad+ \hspace{-50pt}& 3 8x_3 &= 28 \\
+    \hspace{80pt} 7x_1 &\quad+ \hspace{-50pt}& 0x_2  &\quad+ \hspace{-50pt}& 9x_3 &= 43 
+  \end{align*}
+\end{enumerate}
+
+
+\end{document}
