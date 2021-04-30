@@ -37,8 +37,47 @@
   \begin{enumerate}
     \item \pts{2} If a linear system has \(n\) variables and \(m\) equations, then the augmented matrix has
     \(n\) columns.
+
+    \basec{\begin{itemize}
+      \item \true{True}: creating an augmented matrix can easily be done by dropping the variables temporarily, then \yyy{concatenating the vector of constants} onto the \chap{matrix~of coefficients}, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}[cccc|c]
+        \chap{a_{1,1}} & \chap{a_{1,2}} & \chap{\cdots} & \chap{a_{1,n}} & \yyy{b_1}\\
+        \chap{a_{2,1}} & \chap{a_{2,2}} & \chap{\cdots} & \chap{a_{2,n}} & \yyy{b_2}\\
+        \chap{\vdots} & \chap{\vdots} & \chap{\ddots} & \chap{\vdots} & \yyy{\vdots} \\
+        \chap{a_{m,1}} & \chap{a_{m,2}} & \chap{\cdots} & \chap{a_{m,n}} & \yyy{b_m}
+        \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      where the number of variables are equal to columns (\(n\)) of the matrix of coefficients and the numbers of equations are equal to the rows (\(m\)).
+      \item Though, if you count the vector of constants as part of the augmented matrix then technically it's \fff{false}, since the totals columns is \(\chap{n}+\yyy{1}\).
+    \end{itemize}}
+    
     \item \pts{2} An inconsistent system can be made consistent by performing a sequence of elementary row operations.
+    
+    \basec{\begin{itemize}
+      \item \false{False}: an inconsistent system is always inconsistent. For example, nothing can be down to the following matrix that would make it consistent:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}[cccc|c]
+        1 & -2 & 1 & -4 & 1 \\
+        0 & 5 & 6 & 6 & 1 \\
+        \rrr{0} & \rrr{0} & \rrr{0} & \rrr{0} & \rrr{6}
+      \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      One might try to say that multiplying the final row by 
+      zero would make it consistent, but such multiplication would not be reversible, making it an invalid elementary row operation.
+    \end{itemize}}
+    
     \item \pts{2} A consistent system whose augmented matrix has 3 rows and 5 columns will have infinitely many solutions.
+    
+    \basec{\begin{itemize}
+      \item \true{True}: a consistent system will have infinitely many solutions if the rank of the matrix is less than the number of columns.
+      \item The max rank of matrix can be defined as a non-negative integer, including zero (\(\mathbb{N}_0\)), that is equal to the smaller of the two dimensions, either the \xxx{rows} or \yyy{columns}, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \max(r) = r \in \mathbb{N}_0~\,|~\,0 \leq r \leq \min(\xxx{m},\yyy{n})
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      Thus, a \(3\times5\) matrix is rank deficient (\(r=3\)), meaning \(r<\yyy{n}\), which means that there are infinitely many solutions.
+    \end{itemize}}
+    
   \end{enumerate}
 
   \newpage
@@ -47,9 +86,55 @@
   
   \begin{enumerate}
     \item \pts{2} has infinite solutions, but the augmented matrix has no row of zeros.
+  
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}=\begin{bmatrix}[cccc|c]
+    \jjj{6} & 0 & 0 & 0 & 4 \\
+    0 & \jjj{9} & 0 & 0 & 2 \\
+    0 & 0 & 0 & \jjj{1} & 0 
+    \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \rank{\bm{A}} = 3,\quad r < n \to \text{infinite solutions}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item \pts{2} has exactly one solution, but the augmented matrix has two rows of zeros.
+    
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{B}=\begin{bmatrix}[cc|c]
+    \jjj{6} & 0 & 4 \\
+    0 & \jjj{9} & 2 \\
+    0 & 0 & 0 \\
+    0 & 0 & 0 
+    \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \rank{\bm{B}} = 2,\quad r = n \to \text{one solution}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
     \item \pts{2} is consistent, but has more equations than unknowns.
+    
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}=\begin{bmatrix}[ccc|c]
+    6 & \yyy{0} & \yyy{0} & 4 \\
+    \xxx{0} & 9 & 0 & 2 \\
+    \xxx{0} & 0 & 1 & 0 \\ 
+    \xxx{0} & 0 & 0 & 0 \\ 
+    \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \xxx{m} > \yyy{n} 
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
     \item \pts{2} is inconsistent, but the augmented matrix has a row of zeros.
+    
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}=\begin{bmatrix}[cccc|c]
+    6 & 0 & 0 & 0 & 3 \\
+    0 & 9 & 0 & 0 & 1 \\
+    \fff{0} & \fff{0} & \fff{0} & \fff{0} & \fff{4} \\
+    \ttt{0} & \ttt{0} & \ttt{0} & \ttt{0} & \ttt{0}\\ 
+    \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{enumerate}
 
   \newpage
@@ -62,8 +147,39 @@
   \end{bmatrix}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{enumerate}
-    \item Determine a value for \(h\) so that the system is \textbf{consistent}.
-    \item Determine a value for \(h\) so that the system is \textbf{inconsistent}.
+    \item Determine a value for \(h\) so that the system is \ttt{consistent}.
+    
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bbb{h = 1} \to 
+    \begin{bmatrix}
+      1 & \bbb{1} & 4 \\
+      3 & 6 & 8 \\
+      \end{bmatrix} \quad  R_2 - 3R_1 \to 
+      \begin{bmatrix}
+        1 & \bbb{1} & 4 \\
+        0 & 3 & -4 \\
+      \end{bmatrix} \quad \frac{1}{3}R_2 \to 
+      \begin{bmatrix}
+        1 & \bbb{1} & 4 \\
+        \ttt{0} & \ttt{1} & \ttt{-\frac{4}{3}}~~~\\
+      \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+    
+    \item Determine a value for \(h\) so that the system is \fff{inconsistent}.
+    
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \emph{h = 2} \to 
+    \begin{bmatrix}
+      1 & \emph{2} & 4 \\
+      3 & 6 & 8 \\
+      \end{bmatrix} \quad 3R_1 - R_2 \to 
+      \begin{bmatrix}
+        1 & \emph{2} & 4 \\
+        \fff{0 }& \fff{0 }& \fff{-4} \\
+        \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
   \end{enumerate}
 
   \newpage
@@ -76,6 +192,14 @@
     3x+6y-5z=0
   \end{cases}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\begin{align*}
+    1 + 2 + 2(3) &= 9 \text{ \true{}} \\
+    2(1) + 4(2) - 2(3) &= 4 \text{ \false{}}
+  \end{align*}}
+  \vspace{-24pt}
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \fff{1\neq4},~\text{not a solution}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
   \item \pts{2} Find a solution to the following system of linear equations: 
   \begin{align*}
@@ -86,29 +210,94 @@
     1x_1 & \quad + & 3x_2 & \quad + & 9x_3 & \quad + & 27x_4 & \quad + & 81x_5 & \quad + & 243x_6 &= 0 
   \end{align*}
   
+  \basec{\begin{itemize}
+    \item Ignoring the trivial solution, here is a nearly trivial solution:
+    
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}[cccccc|c]
+     1 & 1 & 1 & 1 & 1 & \frac{470}{333} & 0  \\
+     0 & 0 & 0 & 0 & 0 & 0 & 0  \\
+     0 & 0 & 0 & 0 & 0 & 0 & 0  \\
+     0 & 0 & 0 & 0 & 0 & 0 & 0  \\
+     0 & 0 & 0 & 0 & 0 & 0 & 0  
+    \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    x_1 + x_2 + x_3 + x_4 + x_5 + \tfrac{470}{333}x_6 = 0
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \minimal{\item Computer go brrrr\dots 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}[cccccc|c]
+      1 & 0 & 0 & 0 & 0 & -3.47 & 0 \\
+      0 & 1 & 0 & 0 & 0 & 55.88 & 0  \\
+      0 & 0 & 1 & 0 & 0 & -2.15 & 0  \\
+      0 & 0 & 0 & 1 & 0 & 3.97 & 0  \\
+      0 & 0 & 0 & 0 & 1 & -0.11 & 0  
+     \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    3.47x_1 - 55.88x_2 + 2.15x_3 + -3.97x_4 + 0.11x_5 + \lambda x_6 = 0 
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-24pt}
+    \begin{center}\color{minimal}
+      Wait, is that right? \(\uparrow \)
+    \end{center}
+  \end{itemize}}
+  
   
   \newpage 
 
   \item \pts{2} Suppose the matrix below is the augmented matrix of a system of linear equations. Write the general solution in parametric vector form (as a linear combination of vectors some scaled by parameters).
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{bmatrix}
-  1 & 0 & -4 & 0 & 2 & -1  \\
-  0 & 1 & 8 & 0 & -7 & 9  \\
-  0 & 0 & 0 & 1 & 0 & 3  
+  \begin{bmatrix}[ccccc|c]
+  1 & 0 & \bbb{-4}  & 0 & \rrr{2} & -1  \\
+  0 & 1 & \bbb{8 } & 0 & \rrr{-7} & 9  \\
+  0 & 0 & \bbb{0 } & 1 & \rrr{0} & 3  
   \end{bmatrix}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix} x_1 \\ x_2  \\ \bbb{x_3} \\ x_4 \\ \rrr{x_5} \end{bmatrix}
+  = 
+  \begin{bmatrix} -1 \\ 9 \\ \bbb{0} \\ 3 \\ \rrr{0} \end{bmatrix}
+  + r
+  \begin{bmatrix} 4 \\ -8 \\ \bbb{1} \\ 0 \\ \rrr{0} \end{bmatrix}
+  + s
+  \begin{bmatrix} -2 \\ 7 \\ \bbb{0} \\ 0 \\ \rrr{1} \end{bmatrix}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
   
   \item \pts{2} Let
   \(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \bm{A} = \begin{bmatrix} -0 & -4 \\ 3 & 9 \end{bmatrix},
+  \bm{A} = \begin{bmatrix} 0 & -4 \\ 3 & 9 \end{bmatrix},
   \quad \bm{B} = \begin{bmatrix} -9 & 1  \\ -9 & 8 \end{bmatrix},~\text{and}
   \quad \bm{C} = \begin{bmatrix} 7 & 5 \\ 3 & -3 \end{bmatrix}.
   \)%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
   \medskip
   
-  \hspace{58pt} Determine: \( -8c + 2(5A-3B) + 4C - 10A + 4(C+2B) \)
+  \hspace{58pt} Determine: \( -8\bm{C} + 2(5\bm{A}-3\bm{B}) + 4\bm{C} - 10\bm{A} + 4(\bm{C}+2\bm{B}) \)
 
+  \basec{\begin{itemize}
+    \item Matrix addition is:
+      \begin{itemize}
+        \item \true{Commutative}: \(\bm{A}+\bm{B} = \bm{B} + \bm{A}\)
+        \item \true{Associative}: \(\bm{A} + (\bm{B}+\bm{C}) = (\bm{A}+\bm{B}+ \bm{C})\)
+        \item \true{Distributive}: \(\bm{A}(\bm{B}+\bm{C}) = \bm{A}\bm{B}+ \bm{A}\bm{C}\)
+      \end{itemize}
+    \item Thus:
+    \begin{align*}
+      \emph{-8\bm{C} + 2(5\bm{A}-3\bm{B}) + 4\bm{C} - 10\bm{A} + 4(\bm{C}+2\bm{B})} &= \\
+      -8\bm{C} + 10\bm{A}-6\bm{B} + 4\bm{C} - 10\bm{A} + 4\bm{C}+8\bm{B} &= \\
+      10\bm{A}-6\bm{B} - 10\bm{A} +8\bm{B} &= \\
+      -6\bm{B} + 8\bm{B} &= \\
+      2\bm{B} &= \emph{\begin{bmatrix}
+      -18 & 2 \\
+      -18 & 16 
+      \end{bmatrix}}
+    \end{align*}
+  \end{itemize}}
+  
   \newpage
 
   \item \pts{2} Fact: the vector equation below is consistent
@@ -129,6 +318,18 @@
   \qquad \text{and} \qquad
   \bm{b} = \begin{bmatrix} -45 \\  2 \end{bmatrix}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix}[cccc|c]
+  1 & 2 & 7 & -3 & -45 \\
+  4 & -12 & 0 & 5 & 2 
+  \end{bmatrix} \quad R_2 - 4R_1 \to 
+  \begin{bmatrix}[cccc|c]
+    1 & 2 & 7 & -3 & -45 \\
+    0 & -20 & -28 & -17 & -178 
+    \end{bmatrix} 
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \hspace{329pt}\emph{\underline{A} solution \(\uparrow \)}}
   
   \item \pts{2} Define a transformation 
   \begin{align*}
@@ -155,6 +356,96 @@
     \hspace{80pt} -4x_1 &\quad+ \hspace{-50pt}& 0x_2 &\quad+ \hspace{-50pt}& 3 8x_3 &= 28 \\
     \hspace{80pt} 7x_1 &\quad+ \hspace{-50pt}& 0x_2  &\quad+ \hspace{-50pt}& 9x_3 &= 43 
   \end{align*}
+  \vspace{-12pt}
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \text{If}~\bm{x}= \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix},\quad 
+  \text{then}~\bm{Ax} = \begin{bmatrix} 3 \\ -3 \\ 28 \\ 43 \end{bmatrix}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \text{Thus: if}~\bm{B} = \begin{bmatrix}
+    -5 & -4 & 1 \\
+    3 & 2 & -1 \\
+    -4 & 0 & \bbb{38} \\
+    7 & 0 & 9
+  \end{bmatrix}, \quad \text{then}
+  ~\bm{Bx} = \begin{bmatrix} 3 \\ -3 \\ \bbb{148} \\ 43 \end{bmatrix}~\text{is the solution}.
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \medskip
+  \begin{center}
+    Double-checking by computing RREF of both augment matrices \(\downarrow \)
+  \end{center}}
+  
+  \newpage
+
+  \color{text}
+
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \operatorname{rref}\left(\begin{bmatrix}[ccc|c]
+    -5 & -4 & 1 & 3 \\
+    3 & 2 & -1  & -3\\
+    -4 & 0 & 8  & 28 \\
+    7 & 0 & 9 & 43
+    \end{bmatrix}\right) =
+    \begin{bmatrix}[ccc|c]
+      1 & 0 & 0 & 1  \\   
+      0 & 1 & 0 & -1 \\
+      0 & 0 & 1 & 4  \\
+      0 & 0 & 0 & 0
+    \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  r = n, \text{thus the matrix is full rank and only one unique solution exists}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \operatorname{rref}\left(\begin{bmatrix}[ccc|c]
+    -5 & -4 & 1 & 3 \\
+    3 & 2 & -1  & -3\\
+    -4 & 0 & 28  & 148 \\
+    7 & 0 & 9 & 43
+    \end{bmatrix}\right) =
+    \begin{bmatrix}[ccc|c]
+      1 & 0 & 0 & 1  \\   
+      0 & 1 & 0 & -1 \\
+      0 & 0 & 1 & 4  \\
+      0 & 0 & 0 & 0
+    \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  r = n, \text{thus the matrix is full rank and only one unique solution exists}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  Does the rank matter here actually? I have not explored linear transformations much, so I'm exploring things here. Hmm, let's create a rank deficient matrix and apply the transformation.
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix}[ccc|c]
+    -5 & -4 & 1 \\
+    3 & 2 & -1  \\
+    3 & 2 & -1  
+  \end{bmatrix} 
+  \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix} =
+  \begin{bmatrix} 3 \\ -3 \\ -3 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  This results in infinite solutions:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \operatorname{rref}\left(\begin{bmatrix}[ccc|c]
+    -5 & -4 & 1 \\
+    3 & 2 & -1  \\
+    3 & 2 & -1  
+  \end{bmatrix}\right)
+  =
+  \begin{bmatrix}[ccc|c]
+    1 & 0 & -1 & 3 \\
+    0 & 1 & 1 & -3 \\
+    0 & 0 & 0 & 0 
+  \end{bmatrix} 
+  \to 
+  \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 
+  \begin{bmatrix} -3 \\ 3 \\ 0 \end{bmatrix} + \lambda
+  \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  So \bm{x} maps \(\mathbb{R}^2 \to \mathbb{R}^2\) in this case, hmm\dots maybe I'm getting at nothing here. 
+
 \end{enumerate}
 
 
