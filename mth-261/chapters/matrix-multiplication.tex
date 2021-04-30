@@ -250,8 +250,8 @@
       \xxx{\bm{v}^T} &= \yyy{\bm{v}} & \text{row vector \leftrightarrow~column vector}
     \end{align*}
     \item If \(\bm{S^T}\neq\bm{S}\), then order does matter, resulting in different product vectors.
-    \item Multiplication of vectors and matrices form the basis of \hyperref[tbd]{\dlink{linear transformations}}.
-    \item When multiplication between a matrix and vector is equal to the multiplication between a scalar and the same vector, then the scalar is the \hyperref[tbd]{\dlink{eigenvalue}} and the vector is the \hyperref[tbd]{\dlink{eigenvector}}. 
+    \item Multiplication of vectors and matrices form the basis of linear transformations.
+    \item When multiplication between a matrix and vector is equal to the multiplication between a scalar and the same vector, then the scalar is the \hyperref[Eigendecomposition]{\dlink{eigenvalue}} and the vector is the \hyperref[Eigendecomposition]{\dlink{eigenvector}}. 
   \end{itemize}
   
   \subsection{Additive and Multiplicative Matrices}\label{Additive and Multiplicative Matrices}
@@ -381,7 +381,7 @@
         \item Element-wise multiplication \to~summation of all elements;
         \item Vectorization of both matrices \to~vector dot product;
           \begin{itemize}
-            \item \jjj{Vectorization \(\operatorname{vec}(\bm{A})\)}: a \hyperref[tbd]{\dlink{linear transformation}} that converts a matrix into a \yyy{column vector}, i.e., a \(\xxx{m}\yyy{n} \times 1\) column vector is obtained by stacking the columns of the matrix A on top of one another: 
+            \item \jjj{Vectorization \(\operatorname{vec}(\bm{A})\)}: a linear transformation that converts a matrix into a \yyy{column vector}, i.e., a \(\xxx{m}\yyy{n} \times 1\) column vector is obtained by stacking the columns of the matrix A on top of one another: 
             \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             \operatorname{vec}(A)=[a_{1,1},\ldots ,a_{m,1},a_{1,2},\ldots ,a_{m,2},\ldots ,a_{1,n},\ldots ,a_{m,n}]^T
             \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -418,7 +418,7 @@
   
   \subsection{Schatten p-Norm}\label{Schatten Norms}
   \begin{itemize}
-    \item \jjj{Schatten p-norm \( \| \bm{A} \|_p \)}: arises when applying the p-norm to the vector of \hyperref[tbd]{\dlink{singular~values of a matrix}} (for now, a special set of scalars with a certain matrix).
+    \item \jjj{Schatten p-norm \( \| \bm{A} \|_p \)}: arises when applying the p-norm to the vector of \hyperref[Singular Value Decomposition]{\dlink{singular~values of a matrix}} (for now, a special set of scalars with a certain matrix).
     \item If the singular values of a matrix are denoted by \(\sigma \), then the Schatten p-norm is defined the sum of all singular values of matrix, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \| \bm{A} \|_p = \left(\sum_{i = 1}^{r}\sigma_i^p\right)^{1/p}
