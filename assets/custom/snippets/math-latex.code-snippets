@@ -258,5 +258,11 @@
     "scope": "latex",
     "prefix": "mxn",
     "body": "\\xxx{$1}\\times\\yyy{$2}"
+  },
+
+  "Inverse":{
+    "scope": "latex",
+    "prefix": "inv",
+    "body": "^{-1}"
   }
 }

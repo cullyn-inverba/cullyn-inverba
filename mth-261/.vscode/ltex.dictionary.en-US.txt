@@ -21,3 +21,4 @@ cokernel
 parallelepiped
 brrrr
 Orthogonalization
+pseudoinverse
