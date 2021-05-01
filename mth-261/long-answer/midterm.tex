@@ -323,22 +323,26 @@
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
   \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{bmatrix}[cccc|c]
+  \operatorname{rref}\left(\begin{bmatrix}[cccc|c]
   1 & 2 & 7 & -3 & -45 \\
   4 & -12 & 0 & 5 & 2 
-  \end{bmatrix} \quad R_2 - 4R_1 \to 
+  \end{bmatrix}\right) \to 
   \begin{bmatrix}[cccc|c]
-    1 & 2 & 7 & -3 & -45 \\
-    0 & -20 & -28 & -17 & -178 
+    1 & 0 & \dfrac{21}{5} & -\dfrac{13}{10} & -\dfrac{134}{5} \\
+    &&&& \\
+    0 & 1 & \dfrac{7}{5}  & -\dfrac{17}{20}  & -\dfrac{91}{10}
     \end{bmatrix} 
-  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \hspace{329pt}\emph{\underline{A} solution \(\uparrow \)}}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4\end{bmatrix} = 
+  \begin{bmatrix} 134/5 \\ -91/10\\ 0 \\ 0\end{bmatrix} + 
+  r\begin{bmatrix} -21/5 \\ -7/5 \\ 1 \\ 0\end{bmatrix} +
+  s\begin{bmatrix} 13/10 \\ 17/20 \\ 0 \\ 1\end{bmatrix}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
   \item \pts{2} Define a transformation 
-  \begin{align*}
-    T: \mathbb{R}^3 &\to \mathbb{R}^4 \\
-    \bm{x} &\to \bm{Ax}
-  \end{align*}
+  \(T: \mathbb{R}^3 \to \mathbb{R}^4 \qquad \bm{x} \to \bm{Ax}\) \\
+  \medskip
   where \(\bm{A} = \begin{bmatrix}
   -5 & -4 & 1 \\
   3 & 2 & -1 \\
@@ -361,7 +365,7 @@
   \end{align*}
   \vspace{-12pt}
   \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \text{If}~\bm{x}= \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix},\quad 
+  \text{If}~\bm{x}= \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix},~
   \text{then}~\bm{Ax} = \begin{bmatrix} 3 \\ -3 \\ 28 \\ 43 \end{bmatrix}
   \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \basec{
@@ -371,10 +375,9 @@
     3 & 2 & -1 \\
     -4 & 0 & \bbb{38} \\
     7 & 0 & 9
-  \end{bmatrix}, \quad \text{then}
+  \end{bmatrix},~\text{then}
   ~\bm{Bx} = \begin{bmatrix} 3 \\ -3 \\ \bbb{148} \\ 43 \end{bmatrix}~\text{is the solution}.
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \medskip
   \begin{center}
     Double-checking by computing RREF of both augment matrices \(\downarrow \)
   \end{center}}
@@ -444,7 +447,7 @@
   \end{bmatrix} 
   \to 
   \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 
-  \begin{bmatrix} -3 \\ 3 \\ 0 \end{bmatrix} + \lambda
+  \begin{bmatrix} -3 \\ 3 \\ 0 \end{bmatrix} + r
   \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   So \bm{x} maps \(\mathbb{R}^2 \to \mathbb{R}^2\) in this case, hmm\dots maybe I'm getting at nothing here. 
