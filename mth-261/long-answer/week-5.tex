@@ -1,0 +1,127 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+% chktex-file 3
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 261}
+\newcommand{\theTitle}{More Multiplication Again}
+\newcommand{\institution}{Portland State University}
+
+ \begin{document}
+   \begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
+     \item Show that if \tbm{B} has a column of zeros, so too does \tbm{AB}.
+     \basec{\begin{itemize}
+       \item Visualizing matrix multiplication as building of the product matrix via scaling the columns of the left matrix by the columns of the right matrix allows for a good example of why the above is true, e.g.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+       \begin{bmatrix} \bbb{a} & \emph{b} \\ \bbb{c} & \emph{d} \end{bmatrix}
+       \begin{bmatrix} \ttt{\alpha} & \fff{0} \\ \ttt{\lambda} & \fff{0} \end{bmatrix}
+       =
+       \begin{pmatrix}
+        \ttt{\alpha} \begin{bmatrix} \bbb{a} \\ \bbb{c} \end{bmatrix} + \ttt{\lambda} \begin{bmatrix} \emph{b} \\ \emph{d} \end{bmatrix} &
+        \fff{0} \begin{bmatrix} \bbb{a} \\ \bbb{c} \end{bmatrix} + \fff{0} \begin{bmatrix} \emph{b} \\ \emph{d} \end{bmatrix}
+      \end{pmatrix}
+      =
+      \begin{bmatrix}
+        \ttt{\alpha}\bbb{a} + \ttt{\lambda}\emph{b} & \fff{0}+\fff{0} \\ \ttt{\alpha}\bbb{c}+  \ttt{\lambda}\emph{d} & \fff{0}+\fff{0} 
+      \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Under standard matrix multiplication, the product matrix dimensions are equal to \xxx{the~rows of the left matrix} \(\times \) \yyy{the columns of the right matrix}---thus, the product matrix must have a column of zeros if the right matrix contains a column of zeros.
+    \end{itemize}}
+    
+    \item Create an example where \tbm{AB} has a column of zeros, but \tbm{B} does not.
+    \basec{\begin{itemize}
+      \item Again, the column perspective is very useful here---if the scaled columns of the left matrix summed together equal zero, then the entire column will be zero, e.g., 
+      \vspace{-18pt}
+    \end{itemize}}
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix} \bbb{4} & \emph{2} \\ \bbb{6} & \emph{3} \end{bmatrix}
+      \begin{bmatrix} \ttt{3} & \fff{1} \\ \ttt{1} & \fff{-2} \end{bmatrix}
+      =
+      \begin{pmatrix}
+       \ttt{3} \begin{bmatrix} \bbb{4} \\ \bbb{6} \end{bmatrix} + \ttt{1} \begin{bmatrix} \emph{2} \\ \emph{3} \end{bmatrix} &
+       \fff{1} \begin{bmatrix} \bbb{4} \\ \bbb{6} \end{bmatrix} + \fff{-2} \begin{bmatrix} \emph{2} \\ \emph{3} \end{bmatrix}
+     \end{pmatrix}
+     =
+     \begin{bmatrix}
+       \ttt{(}\bbb{12} + \emph{2}\ttt{)} & \fff{(}\bbb{4} - \emph{4}\fff{)} \\ \ttt{(}\bbb{18}+\emph{3}\ttt{)} & \fff{(}\bbb{6}-\emph{6}\fff{)} %chktex 9
+     \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      =
+      \begin{bmatrix}
+        \ttt{14} & \fff{0} \\ \ttt{21} & \fff{0} 
+      \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-18pt}
+    \item For two numbers \(a\) and \(b\), note it's always true that
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      (a+b)^2 = a^2 + 2ab + b^2
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Find two matrices \tbm{A} and \tbm{B} so that 
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      (\bm{A} + \bm{B})^2 \neq \bm{A}^2 + 2 \bm{AB} + \bm{B}^2
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \vspace{-18pt}
+    \basec{\begin{itemize}
+      \item The above is true if and only if \(\bm{AB}=\bm{BA}\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      (\bm{A} + \bm{B})^2 = \bm{A}(\bm{A}+\bm{B}) + \bm{B}(\bm{A}+\bm{B}) =  \bm{A}^2 + \bm{AB} + \bm{BA} + \bm{B}^2
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{itemize}
+          \item This is true if \tbm{B} is the identity matrix, in which case \(\bm{AI}=\bm{IA}=\bm{A}\).
+          \item Or if \tbm{A} is invertible and \tbm{B} is equal to the inverse, in which case \(\bm{AA}^{-1} = \bm{I} = \bm{A}^{-1}\bm{A}\)
+        \end{itemize} 
+      \item Thus, any two square matrices of equal size such that \(\bm{AB} \neq \bm{BA} \) will yield a counter example, e.g,
+      \begin{align*}
+      \bm{A} =\begin{bmatrix}
+      4 & 2 & 0 \\
+      0 & 0 & 6 \\
+      0 & 0 & 9 
+      \end{bmatrix} & ~\quad
+     \begin{bmatrix}
+      3 & 1 & 4 \\
+      0 & 0 & 0 \\
+      8 & 2 & 6 
+      \end{bmatrix} = \bm{B}
+      \\
+      \bm{AB} =\begin{bmatrix}
+        12 & 4  & 16 \\
+        48 & 12 &  36 \\
+        72 & 18 &  54 
+      \end{bmatrix} &\neq
+      \begin{bmatrix}
+        12 & 6  & 42 \\
+        0 & 0  & 0 \\
+        32 & 16 &  66 
+      \end{bmatrix} = \bm{BA} 
+      \\
+      \bm{2AB} = \begin{bmatrix}
+        24  & 8 & 32 \\
+        96  & 24 & 72\\
+        144 & 36 & 108
+      \end{bmatrix} &\neq
+      \begin{bmatrix}
+        24  & 10 & 58\\
+        48  & 12 & 36 \\
+        104 & 34 & 120
+      \end{bmatrix} = \bm{AB} + \bm{BA}
+      \end{align*}
+    \end{itemize}}
+    \item Let \tbm{A} and \tbm{B} denote invertible \(n\times n\) matrices. Show that if \(\bm{A}^{-1} = \bm{B}^{-1}\), then \(\bm{A}=\bm{B}\). 
+    \basec{
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \emph{\bm{A}^{-1}} = \emph{\bm{B}^{-1}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \downarrow
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}^{-1}\bm{A} = \bm{AA}^{-1} = \bm{AB}^{-1} = \bbb{\bm{I}} = \bm{B}^{-1}\bm{A} = \bm{BB}^{-1} = \bm{B}^{-1}\bm{B}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \downarrow 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \emph{\bm{A}} = \emph{\bm{A}}\bbb{\bm{I}} = \emph{\bm{A}}\bbb{(\bm{B}^{-1}\bm{B})} = \bbb{(\bm{A}\bm{B}^{-1})}\emph{\bm{B}} = \bm{\bbb{I}\emph{B}} = \emph{\bm{B}}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \end{enumerate}
+ \end{document}
