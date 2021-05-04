@@ -19,3 +19,5 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp=1: yields the nuclear norm, which is the sum of all the singular values of the matrix.\\E$"}
 {"rule":"PHRASE_REPETITION","sentence":"^\\QDiagonalization Matrix decomposition Linear transformations Eigendecomposition Change of Basis Singular values of a matrix Non-singular matrix Singular matrix Singular value decomposition\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QA and AA\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MISSING_GENITIVE","sentence":"^\\QHilbert space: Oblique projection:\\E$"}
+{"rule":"MISSING_GENITIVE","sentence":"^\\QHilbert space: a generalized notion of Euclidean space that extends methods from \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to space with any finite or infinite number of dimensions.\\E$"}

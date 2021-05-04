@@ -2,8 +2,28 @@
 
 \section{Projections}\label{Projections}
 \begin{itemize}
-  \item
+  \item \jjj{Projection}: an idempotent linear transformation \(P\) from a vector space to itself that results in the original transformation, i.e., 
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  P : V \to V ~|~ P^2 = P
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \jjj{Idempotent}: a property of certain operations whereby they can be applied multiple times without changing the results.
+    \end{itemize}
+  \item \jjj{Orthogonal projection}: a projection on \(V\), when \(V\) is a Hilbert space, that satisfies:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \langle P \bm{x}, \bm{y} \rangle = 
+  \langle P \bm{x}, P\bm{y} \rangle =
+  \langle \bm{x}, P\bm{y} \rangle~\forall~\bm{x,y} \in V
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
+    \begin{itemize}
+      \item \jjj{Hilbert space}: a generalized notion of Euclidean space that extends methods from \(\mathbb{R}^2\) and \(\mathbb{R}^3\) to space with any finite or infinite number of dimensions.
+        \begin{itemize}
+          \item This means an \hyperref[Vector Length]{\ulink{orthogonal projection}}, with regard to vector space,  \(V\) has an \hyperref[The Dot Product]{\ulink{inner~product}} (denoted \(\langle \cdot, \cdot \rangle \) here) and has enough limits in the space (i.e., it's complete) to allow the techniques of calculus and vector algebra to be used.
+        \end{itemize}
+      \item Essentially, an orthogonal projection finds a 
+    \end{itemize}
+  \item \jjj{Oblique projection}: A projection on a Hilbert space that is not orthogonal.
   
 \end{itemize}
 
