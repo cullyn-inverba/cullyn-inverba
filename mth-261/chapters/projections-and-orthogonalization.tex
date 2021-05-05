@@ -1,4 +1,5 @@
 \chapter{Projections and Orthogonalization}\label{Projections and Orthogonalization}
+% chktex-file 3
 
 \section{Projections}\label{Projections}
 \begin{itemize}
@@ -21,16 +22,57 @@
         \begin{itemize}
           \item This means an \hyperref[Vector Length]{\ulink{orthogonal projection}}, with regard to vector space,  \(V\) has an \hyperref[The Dot Product]{\ulink{inner~product}} (denoted \(\langle \cdot, \cdot \rangle \) here) and has enough limits in the space (i.e., it's complete) to allow the techniques of calculus and vector algebra to be used.
         \end{itemize}
-      \item Essentially, an orthogonal projection finds a 
+      \item Essentially, an orthogonal projection is one that describes a mapping of one vector to another divided by the magnitude of the vector being mapped to.
+      \item E.g., in \(\mathbb{R}^2\) a vector \(\bm{y}\) can be projected onto vector some scaled vector \(\beta\bm{x}\); the orthogonal projection occurs when the dot product between vector \(\bm{x}\) and distance \tbm{y} from the scaled vector \(\bm{x}\) \((\bm{y}-\beta\bm{x}) \) is equal to zero, i.e.,
+      \(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \bm{x}^T(\bm{y}-\beta\bm{x}) = 0
+      \)%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+      Solving for \(\beta \) results in the described mapping over magnitude:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \beta = \frac{\bm{x}^T \bm{y}}{\bm{x}^T \bm{x}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      Which is often described as the projection of \(\bm{y} \to \bm{x}\) is a scaled version of \(\bm{x}\), which is equivocal to the generalized form above, and the common notation in \(\mathbb{R}^2\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \proj{\bm{x}}{y} = \beta \bm{x}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
-  \item \jjj{Oblique projection}: A projection on a Hilbert space that is not orthogonal.
+  \item \jjj{Oblique projection}: a projection on a Hilbert space that is not orthogonal, often used to represent spatial figures in 2-D drawings or calculating the fitted value of instrumental variables in regression, though much less common than orthogonal projections. 
+    \begin{itemize}
+      \item Let vectors \(\bm{u}_1,\ldots,\bm{u}_k\) form a basis for the range of the projection, and assemble them into matrix \(\bm{A}\). 
+      \item Let \(\bm{v}_1,\ldots,\bm{v}_k\) form a basis for the orthogonal complement of the null space of the projection, and assemble them into matrix \(\bm{B}\).
+      \item Then the projection is defined by:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      P = \bm{A}(\bm{B}^T \bm{A})^{-1} \bm{B}^T
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  
+  \subsection{Finding Projections}\label{}
+  \begin{itemize}
+    \item The example for orthogonal projections can be generalized for \(\mathbb{R}^N\). 
+    \item Let \(V\) be a vector space spanned by orthogonal vectors \(\bm{u}_1,\bm{u}_2,\ldots,\bm{u}_p\)
+    \item Let \tbm{y} be a vector.
+    \item One can now define a projection of \tbm{y} on \(V\) as:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \proj{V}{y}=\frac{\bm{u}^i \bm{y}}{\bm{u}^i \bm{u}^i} \bm{u}^i
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    where repeated indices\(^i\) are summed over.
+    \item The vector \tbm{y} can be written as an orthogonal sum such that:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{\hat{y}} = \proj{V}{y} + \bm{z} \proj{V}{y}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    where \bm{z} is the shortest distance from \(\bm{y} \to V\). This is commonly used in areas such as machine learning.
+  \end{itemize}
   
 \end{itemize}
 
 
 \section{Orthogonalization}\label{Orthogonalization}
 \begin{itemize}
-  \item
+  \item \jjj{Orthogonalization}
+  \item \jjj{Orthonormalization}
+  \item \jjj{Orthonormal}
+  \item \jjj{Orthogonal Matrices}
 
   \subsection{Gram-Schmidt Process}\label{Gram-Schmidt Process}
   \begin{itemize}
