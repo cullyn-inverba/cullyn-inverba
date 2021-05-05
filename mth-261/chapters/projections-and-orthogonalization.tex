@@ -69,10 +69,39 @@
 
 \section{Orthogonalization}\label{Orthogonalization}
 \begin{itemize}
+  \item []
+  
+  \subsection{Orthogonal Matrices}\label{Orthogonal Matrices}
+  \begin{itemize}
+    \item \jjj{Orthogonal matrix \(\bm{Q}\)}: a matrix whose rows and columns are orthonormal vectors.
+      \begin{itemize}
+        \item \jjj{Orthonormal vectors}: two vectors that are \hyperref[Geometric Interpretation of the Dot Product]{\ulink{orthogonal}} \hyperref[Unit Vectors]{\ulink{unit vectors}}.
+        \item \jjj{Orthonormal set}: all vectors that are mutually orthogonal and all of unit length.
+        \item \jjj{Orthonormal basis}: an orthonormal set which forms a \hyperref[Basis]{\ulink{basis}}.
+      \end{itemize}
+    \item In other words, orthogonal matrices have columns that are all pairwise orthogonal, i.e., all the dot products between any two columns are orthogonal.
+    \item Additionally, each column has as magnitude of 1 since the \hyperref[Vector Length]{\ulink{norm}} = 1.
+    \item Thus, algebraically, orthogonal matrices can be defined as:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \langle \bm{Q}_i, \bm{Q}_j \rangle = 
+    \begin{cases}
+    \ttt{1}, \text{if}~\ttt{i=j} \\
+    \fff{0}, \text{if}~\fff{i\neq j}
+    \end{cases}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Which can be compacted further to express even in simpler notation:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{Q}^T \bm{Q} = \bm{Q}\bm{Q}^T = \bm{I}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    This means that \(\bm{Q}^T\) is also the inverse of \(\bm{Q}\), leading to the equivalent characterization: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bbb{\bm{Q}^T} \bm{Q} = \bbb{\bm{Q}^{-1}}\bm{Q} = \bm{Q}\rrr{\bm{Q}^T} = \bm{Q}\rrr{\bm{Q}^{-1}}  = \bm{I} 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Note: 
+  \end{itemize}
+  
   \item \jjj{Orthogonalization}
   \item \jjj{Orthonormalization}
-  \item \jjj{Orthonormal}
-  \item \jjj{Orthogonal Matrices}
 
   \subsection{Gram-Schmidt Process}\label{Gram-Schmidt Process}
   \begin{itemize}
