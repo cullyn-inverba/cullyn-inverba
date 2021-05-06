@@ -1,5 +1,6 @@
 \chapter{Projections and Orthogonalization}\label{Projections and Orthogonalization}
 % chktex-file 3
+% chktex-file 21
 
 \section{Projections}\label{Projections}
 \begin{itemize}
@@ -47,18 +48,18 @@
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
   
-  \subsection{Finding Projections}\label{}
+  \subsection{Finding Projections}\label{Finding Projections}
   \begin{itemize}
     \item The example for orthogonal projections can be generalized for \(\mathbb{R}^N\). 
     \item Let \(V\) be a vector space spanned by orthogonal vectors \(\bm{u}_1,\bm{u}_2,\ldots,\bm{u}_p\), and let \tbm{y} be a vector.
     \item One can now define a projection of \tbm{y} on \(V\) as:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \proj{V}{y}=\frac{\bm{u}^i \bm{y}}{\bm{u}^i \bm{u}^i} \bm{u}^i
+    \proj{\, V}{y}=\frac{\bm{u}^i \bm{y}}{\bm{u}^i \bm{u}^i} \bm{u}^i
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     where repeated indices\(^i\) are summed over.
     \item The vector \tbm{y} can be written as an orthogonal sum such that:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \bm{\hat{y}} = \proj{V}{y} + \bm{z} \proj{V}{y}
+    \bm{\hat{y}} = \proj{\, V}{y} + \bm{z} \proj{\, V}{y}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     where \bm{z} is the shortest distance from \(\bm{y} \to V\). This is commonly used in areas such as machine learning.
   \end{itemize}
@@ -101,13 +102,38 @@
 
   \subsection{Gram-Schmidt Process}\label{Gram-Schmidt Process}
   \begin{itemize}
-    \item \jjj{Orthogonalization}
-    \item \jjj{Orthonormalization}
+    \item \jjj{Orthogonalization}: the process of finding a set of orthogonal vectors that span a particular subspace. 
+    \begin{itemize}
+      \item Every vector in the new set is orthogonal to every other vector in the new set; the new set and the old set have the same \hyperref[Span]{\ulink{linear span}}.
+    \end{itemize}
+    \item \jjj{Orthonormalization}: the process normalizing each vector in order to make them all unite vectors.
+    \item Orthonormalization is typically included within orthogonalization, and together they satisfy the conditions needed in order to create \hyperref[Orthogonal Matrices]{\ulink{orthogonal matrices}}.
+    \item \jjj{Gram-Schmidt process}: the method of Orthonormalizing a set of vectors in an inner product space.
+      \begin{itemize}
+        \item The process takes finite, linearly independent set of vectors \(S = \left\{v_1,\ldots,v_k \right\} \) and uses the methods of \hyperref[Finding Projections]{\ulink{finding projections}} to create an orthogonal set \(S' = \left\{u_1,\ldots,u_k \right\} \) that spans the same \(k\)-dimensional subspace of \(\mathbb{R}^n\) as \(S\). 
+        \item There are other algorithms for orthogonalization, that offer certain benifites in various cases, but the main point here is that the application of such process \emph{yields the QR decomposition}.
+      \end{itemize}
   \end{itemize}
 
   \subsection{QR Decomposition}\label{QR Decomposition}
   \begin{itemize}
-    \item 
+    \item \jjj{QR decomposition (factorization)}: a decomposition of a matrix \tbm{A} into a product \(\bm{A}=\bm{QR}\) of an orthogonal matrix \(\bm{Q}\) and  an \hyperref[Diagonal and Triagnular Matrices]{\ulink{upper triangular matrix}} \(\bm{R}\).
+      \begin{itemize}
+        \item Any information that was lost during orthonormalization in order to create \(\bm{Q}\) is captured by \(\bm{R}\), yielding a lossless transformation.
+        \item QR decomposition is often used to solve the \hyperref[Least-Squares and Model-Fitting]{\dlink{linear least squares problem}} and is the basis for a particular \hyperref[Eigendecomposition]{\dlink{eigenvalue algorithm, the QR algorithm}}.
+      \end{itemize}
+    \item Finding \(\bm{R}\) is easy, since the orthogonal matrix \(\bm{Q}^T = \bm{Q}^{-1}\), thus:
+    \begin{align*}
+      \bm{A} &= \bm{QR} \\
+      \bm{Q}^T \bm{A} &= \bm{Q}^T \bm{Q} \bm{R} \\
+      \bm{Q}^T \bm{A} &= \bm{R}
+    \end{align*}
+    \item \tbm{Q} is always size \(m \times m\) with a rank = \(m\).
+    \item \tbm{A} is always size \(m \times n\), but whose rank depends on the rank of \tbm{A}.
+    \item Finding the inverse of A can be done with QR decomposition, since finding the inverse of an upper triangular matrix is computationaly simple, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}^{-1} = (\bm{QR})^{-1} = \bm{R}^{-1} \bm{Q}^{-1} =  \bm{R}^{-1} \bm{Q}^T
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
   
   

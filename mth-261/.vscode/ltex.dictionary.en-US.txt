@@ -24,3 +24,5 @@ Orthogonalization
 pseudoinverse
 proejction
 Orthonormalization
+orthonormalization
+orthogonalization
