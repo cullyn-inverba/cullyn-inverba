@@ -93,3 +93,9 @@ sinusoids
 Sinusoid
 venules
 lobules
+thymic
+Non-Kerantized
+infoldings
+Trabeculae
+anastomosing
+Hassal

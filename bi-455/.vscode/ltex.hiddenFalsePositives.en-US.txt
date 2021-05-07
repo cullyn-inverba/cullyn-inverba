@@ -15,3 +15,5 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAdipocyte Morphology: multiocular, spherical, round eccentric nucleus, smaller diameter (10–25 ) Precursor Cells: Factors inducing differentiation: UCP-1 gene expression: Mitochondria: Response to environmental stress: Growth and differentiation: Examples.\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAdipocyte Morphology: multiocular, spherical, round eccentric nucleus, smaller diameter (10–25 ) Factors inducing differentiation: UCP-1 gene expression: Mitochondria: Response to environmental stress: Growth and differentiation: Examples.\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAdipocyte Morphology: multiocular, spherical, round eccentric nucleus, smaller diameter (10–25 ).\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Qsection[0.809 em]\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection[0.809 em]\\E$"}
