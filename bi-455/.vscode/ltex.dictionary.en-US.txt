@@ -105,3 +105,5 @@ meshwork
 mucins
 Propria
 submucosa
+propria
+invaginations
