@@ -137,6 +137,12 @@
     ]
   },
 
+  "Image with width":{
+    "scope": "latex",
+    "prefix": "img",
+    "body": "\\Image{0.7\\columnwidth}{images/week-6-$1.jpg}"
+  },
+
   "Graphic":{
     "scope": "latex",
     "prefix": "grpx",

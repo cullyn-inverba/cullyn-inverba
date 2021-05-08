@@ -99,3 +99,9 @@ infoldings
 Trabeculae
 anastomosing
 Hassal
+Aretrioles
+RBCs
+meshwork
+mucins
+Propria
+submucosa

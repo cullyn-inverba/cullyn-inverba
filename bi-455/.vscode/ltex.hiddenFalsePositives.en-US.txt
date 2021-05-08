@@ -17,3 +17,4 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAdipocyte Morphology: multiocular, spherical, round eccentric nucleus, smaller diameter (10–25 ).\\E$"}
 {"rule":"WHITESPACE_RULE","sentence":"^\\Qsection[0.809 em]\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection[0.809 em]\\E$"}
+{"rule":"EVERY_EACH_SINGULAR","sentence":"^\\QFurrows: separate each papillae and receive saliva from the minor lingual glands.\\E$"}
