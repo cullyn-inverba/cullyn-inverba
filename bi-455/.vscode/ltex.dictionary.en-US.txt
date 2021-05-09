@@ -114,3 +114,17 @@ plicae
 circularis
 Serosa
 Circumanal
+Striate
+Interlobular
+acini
+Lobule
+venule
+lobule
+rugae
+mesothelium
+tubuloacinar
+Centroacinar
+acinar
+acinus
+interlobular
+trypsinogen
