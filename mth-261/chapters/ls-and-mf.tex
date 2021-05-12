@@ -52,7 +52,7 @@
 
 \section{Least-Squares}\label{Least-Squares}
 \begin{itemize}
-  \item \jjj{Least-squares}: a standard approach in regression analysis to approximate the solution of systems with more equations than unknowns by minimizing the sum of the squares of the residuals, i.e.,
+  \item \jjj{Least-squares}: a standard approach in regression analysis to approximate the solution of overdetermined systems (systems of questions with more equations than unknowns) by minimizing the sum of the squares of the residuals, i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \| \epsilon \|^2 = \| \bm{X\beta - y}\|^2
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,19 +66,33 @@
       \item The only variables that can be changed in order to minimize the residuals are the \(\beta \) parameters, which can be done in multiple ways. Here we focus on tools and methods from linear algebra that allow us to perform the least-squares approach.
     \end{itemize}
 
-  \subsection{Least-Squares via Left Inverse}\label{Least-Squares via Left Inverse}
+  \subsection{Least-Squares via Left Inverse and Orthogonal Projections}\label{Least-Squares via Left Inverse}
   \begin{itemize}
-    \item 
-  \end{itemize}
+    \item Since the design matrix \(\bm{X}\) is an overdetermined system, then the \hyperref[Inverse Basics]{\ulink{\bbb{left} inverse}} can be used to isolate the regression coefficients if \(\bm{X}\) has \hyperref[Maximum Rank]{\ulink{full column rank}}, i.e.,
+    \begin{align*}
+      \bm{Ax = b} &\to \bm{X\beta = y} \\
+      \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{X\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y} \\
+      \bm{\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y}
+    \end{align*}
 
-  \subsection{Least-Squares via Orthogonal Projection}\label{Least-Squares via Orthogonal Projection}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Least-Squares via Row-Reduction}\label{Least-Squares via Row-Reduction}
-  \begin{itemize}
-    \item 
+    \item Finding \hyperref[Projections]{\ulink{orthogonal projections}} in arbitrary dimensions, \(\mathbb{R}^N\), yields the following: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{x} = \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Which is exactly the same as the solution to the regression coefficients,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{\beta} = \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Where the key takeaway here is that \(\bm{X\beta}\), after the application of least-squares, produces an estimated value, \(\bm{\hat{y}}\). However, we start with the observed values \(\bm{y}\), and this difference between \(\bm{\hat{y}}\) and \(\bm{y}\) is \(\epsilon\). 
+    \item This gives us the general form, since most models do not perfectly describe the observed data.
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{X\beta} = \bm{y} + \epsilon
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Taking the squared magnitude values allows for an efficient regression (due to methods in calculus) towards to minimal values acceptable in \(\beta \), yielding the original definition:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \| \epsilon \|^2 = \| \bm{X\beta - y}\|^2
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
   \end{itemize}
   
 \end{itemize}
