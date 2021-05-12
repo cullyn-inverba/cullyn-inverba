@@ -26,6 +26,12 @@
         \array{#1}}
     \makeatother
 
+    \let\origEpsilon\epsilon
+    \let\origVarEpsilon\varepsilon
+
+    \renewcommand*\varepsilon{\mathlarger{\mathlarger{\mathlarger\origEpsilon}}}
+    \renewcommand*\epsilon{\mathlarger{\mathlarger{\mathlarger\origVarEpsilon}}}
+
 
     
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
