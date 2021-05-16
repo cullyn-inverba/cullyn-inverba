@@ -18,3 +18,5 @@
 {"rule":"WHITESPACE_RULE","sentence":"^\\Qsection[0.809 em]\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsection[0.809 em]\\E$"}
 {"rule":"EVERY_EACH_SINGULAR","sentence":"^\\QFurrows: separate each papillae and receive saliva from the minor lingual glands.\\E$"}
+{"rule":"MISSING_GENITIVE","sentence":"^\\QMeissner corpuscles: 0.8 images/week-7-h.jpg Pacinian corpuscles: 0.8 images/week-7-.jpg\\E$"}
+{"rule":"MISSING_GENITIVE","sentence":"^\\QMeissner corpuscles: nerve endings in skin responsible for sensitivity to light touch.\\E$"}

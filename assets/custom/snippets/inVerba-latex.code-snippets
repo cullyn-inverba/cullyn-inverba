@@ -118,7 +118,7 @@
     "prefix": "Centered Graphic",
     "body": [
       "\\begin{center}",
-      "\t\\includegraphics[scale=0.$1]{images/$2}",
+      "\t\\Image{0.94\\columnwidth}{images/week-7-$1.jpg}",
       "\\end{center}"
     ],
     "description": "Insert centered graphic"
