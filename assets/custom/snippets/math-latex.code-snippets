@@ -182,6 +182,18 @@
     "body": "$1_{$2,$3}"
   },
 
+  "Eigen lambda": {
+    "scope": "latex",
+    "prefix": "eil",
+    "body": "\\(\\eigl \\)"
+  },
+
+  "Eigen Lambda": {
+    "scope": "latex",
+    "prefix": "eiL",
+    "body": "\\(\\eigL \\)"
+  },
+
   "Sum":{
     "scope": "latex",
     "prefix": "sum",

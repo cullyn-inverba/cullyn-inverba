@@ -1,16 +1,41 @@
 \chapter{Eigendecomposition}\label{Eigendecomposition}
+% chktex-file 1
 
 \section{Eigendecomposition Fundamentals}\label{Eigendecomposition Fundamentals}
 \begin{itemize}
-  \item []
-  
-  \subsection{Eigenvalues}\label{Eigenvalues}
+  \item \dd{Eigendecomposition}: the factorization of a matrix into a canonical form, whereby the matrix is represented in terms of its \str{eigen\textbf{value}} and \chap{eigen\textbf{vector}}.
+    \begin{itemize}
+      \item Only defined for square matrices. 
+      \item \hyperref[Singular Value Decomposition]{\dlink{Singular value decomposition}} works for any \(m\times n\) matrix.
+    \end{itemize}
+  \item For an \(m \times m\) matrix, there are \(m\) eigenvalues and \(m\) eigenvectors.
+    \begin{itemize}
+      \item Each eigenvalue has an associated eigenvector, with the possibility of there being both \hyperref[Eigenvectors of Distinct Eigenvalues]{\dlink{distinct}} and \hyperref[Eigenvectors of Repeated Eigenvalues]{\dlink{repeated}} eigenvalues.
+    \end{itemize}
+  \item \textbf{\str{Eigenvector \(\bm{v}\)}}: a nonzero vector that changes at most by a \hyperref[Vector Scalar Multiplication]{\ulink{scalar}} when a linear transformation is applied to it. 
+  \item \textbf{\chap{Eigenvalue \(\lambda\)}}: the corresponding factor by which the eigenvector is scaled.
+  \item Formally, if \(T\) is a linear transformation from vector space \(V\) over a field \(F\) into itself and \eigv~is a nonzero vector in \(V\), then \eigv~is an \str{eigenvector} of \(T\) if \(T(v)\) is a \chap{scalar multiple} \(\eigl \) of \(\eigv \), i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \chap{T}(\str{v}) = \eigl \eigv
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item If \(V\) is a finite-dimensional, then the above equation is equivalent to
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{\chap{A}\str{u}} = \eigl \str{\bm{u}}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  where \chap{\tbm{A}} is the matrix representation of \(T\) and \str{\tbm{u}} is the coordinate vector (vector in terms of particular ordered basis) of \(\eigv \).
+  \item Essentially, this is useful as a single \chap{eigenvalue} \(\eigl \) can represent an entire matrix \chap{\tbm{A}} given the associated \str{eigenvector} \(\eigv \). Thus, finding the eigenvectors allows for a set of basis vectors (principal axis) that can be used to represent a dataset, often in a more efficient way.
+    \begin{itemize}
+      \item E.g., it can be very useful as each data point can be represented as a vector, leading to the application of a linear transformation that will not change direction of the data, but instead efficiently scale the data along the eigenvectors.
+      \item Alternatively, there are often various patterns within datasets that can be much more apparent when organized along new axes, whereby eigenvectors are the means of such reorganization.
+    \end{itemize}
+
+  \subsection{Finding Eigenvalues}\label{Eigenvalues}
   \begin{itemize}
     \item 
   \end{itemize}
   
 
-  \subsection{Eigenvectors}\label{Eigenvectors}
+  \subsection{Finding Eigenvectors}\label{Eigenvectors}
   \begin{itemize}
     \item 
   \end{itemize}
