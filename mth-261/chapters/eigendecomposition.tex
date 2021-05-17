@@ -3,12 +3,12 @@
 
 \section{Eigendecomposition Fundamentals}\label{Eigendecomposition Fundamentals}
 \begin{itemize}
-  \item \dd{Eigendecomposition}: the factorization of a matrix into a canonical form, whereby the matrix is represented in terms of its \str{eigen\textbf{value}} and \chap{eigen\textbf{vector}}.
+  \item \dd{Eigendecomposition}: the factorization of a matrix into a canonical form, whereby the matrix is represented in terms of its \chap{eigen\textbf{value}} and \str{eigen\textbf{vector}}.
     \begin{itemize}
       \item Only defined for square matrices. 
       \item \hyperref[Singular Value Decomposition]{\dlink{Singular value decomposition}} works for any \(m\times n\) matrix.
     \end{itemize}
-  \item For an \(m \times m\) matrix, there are \(m\) eigenvalues and \(m\) eigenvectors.
+  \item For an \(n \times n\) matrix, there are \(n\) eigenvalues and \(n\) eigenvectors.
     \begin{itemize}
       \item Each eigenvalue has an associated eigenvector, with the possibility of there being both \hyperref[Eigenvectors of Distinct Eigenvalues]{\dlink{distinct}} and \hyperref[Eigenvectors of Repeated Eigenvalues]{\dlink{repeated}} eigenvalues.
     \end{itemize}
@@ -18,28 +18,57 @@
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \chap{T}(\str{v}) = \eigl \eigv
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item If \(V\) is a finite-dimensional, then the above equation is equivalent to
+  \item \dd{Eigenvalue equation}: if \(V\) is a finite-dimensional, then the above is equivalent to
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \bm{\chap{A}\str{u}} = \eigl \str{\bm{u}}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   where \chap{\tbm{A}} is the matrix representation of \(T\) and \str{\tbm{u}} is the coordinate vector (vector in terms of particular ordered basis) of \(\eigv \).
   \item Essentially, this is useful as a single \chap{eigenvalue} \(\eigl \) can represent an entire matrix \chap{\tbm{A}} given the associated \str{eigenvector} \(\eigv \). Thus, finding the eigenvectors allows for a set of basis vectors (principal axis) that can be used to represent a dataset, often in a more efficient way.
     \begin{itemize}
-      \item E.g., it can be very useful as each data point can be represented as a vector, leading to the application of a linear transformation that will not change direction of the data, but instead efficiently scale the data along the eigenvectors.
+      \item E.g., it can be very useful as each data point can be represented as a vector, leading to the application of a linear transformation that will not change the \hyperref[Span]{\ulink{span}} of the data, but instead will efficiently scale the data along the eigenvectors.
       \item Alternatively, there are often various patterns within datasets that can be much more apparent when organized along new axes, whereby eigenvectors are the means of such reorganization.
     \end{itemize}
+  \item \dd{Eigensystem}: the set of all eigenvectors of a linear transformation, each paired with corresponding eigenvalue.
+  \item \dd{Eigenspace}: the set of all eigenvectors of \(T\) corresponding to the same eigenvalue (and zero vector). 
+  \item \dd{Eigenbasis}: the set of eigenvectors of \(T\) that forms a \hyperref[Basis]{\ulink{basis}} of the domain of \(T\).
+  
 
   \subsection{Finding Eigenvalues}\label{Eigenvalues}
   \begin{itemize}
-    \item 
+    \item \dd{Characteristic polynomial}: the polynomial of a matrix that is invariant under matrix similarity and has \chap{eigenvalues as its roots}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    p(\eigl) = \det{(\chap{A}-\chap{\lambda} I)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \dd{Characteristic equation}: when the character polynomial is equated to zero, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \det{(\chap{A}-\chap{\lambda} I)} = 0
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The characteristic equation is derived from the Eigenvalue equation, i.e.,
+    \begin{align*}
+      \bm{\chap{A}\str{v}} &= \eigl \str{\bm{v}} \\
+      \bm{\chap{A}\str{v}} - \eigl \str{\bm{v}} &= \bm{o} \\
+      \underbrace{(\bm{\chap{A}} - \eigl I )}_{\text{\hyperref[Null Space]{\ulink{ nonzero kernel}}}} \hspace{-10pt}\str{\bm{v}} &= \bm{o}
+    \end{align*}
+    If \eigv~is the zeros vector, then it is a trivial solution, thus \((\bm{\chap{A}} - \eigl I )\) must have a nonzero kernel and thus is not \hyperref[Matrix Inverse]{\ulink{invertible}}, meaning the determinant must be zero, yielding the characteristic equation.
+    \item Since \(\eigl \) is unknown, then the determinant yields a polynomial, wherein the roots are in terms of \(\eigl \) and thus yields a means to find the \chap{eigenvalues}.
+    \item The characteristic equation is an \(N\)th order polynomial equation in the unknown \(\eigl \), meaning it will have \(N_{\eigl }\) distinct solutions where \(1 \leq N_{\eigl } \leq N \), i.e.,  an \(n \times n\) matrix will have \(n\) eigenvalues which may or may not be repeated.
+    \item A shortcut for finding the eigenvalues for a \(2\times 2\) matrix involves simply taking the trace and the determinant of the original then solving the polynomial, i.e,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \eigl^2 - \operatorname{tr}(\chap{\bm{A}}) + \det{(\chap{\bm{A}})}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Any \hyperref[Diagonal and Triagnular Matrices]{\ulink{triangular}} matrix (upper or lower) has eigenvalues that are simply the elements along their diagonal.
   \end{itemize}
-  
-
+    
   \subsection{Finding Eigenvectors}\label{Eigenvectors}
   \begin{itemize}
-    \item 
+   \item In most cases, the eigenvalues are only needed to determine the eigenvectors, which are generally the primary objects of interest.
+   \item Each \(\eigl\) allows you to find the corresponding \(\eigv\) by shifting the matrix by the \eigl~and finding the nontrivial vector that is in the null space of the shifted matrix, i.e.,
+   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \forall \eigl, \quad \eigv_i \in N(\bm{A}-\eigl_i I)
+   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
   \end{itemize}
-  
+    
 \end{itemize}
 
 
