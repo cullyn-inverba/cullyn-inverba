@@ -137,7 +137,7 @@
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 \renewcommand{\emph}[1]{{\color{emph}#1}} 
 \newcommand{\amp}[1]{{\color{amp}#1}}
-\newcommand{\stress}[1]{{\color{stress}#1}}
+\newcommand{\str}[1]{{\color{str}#1}}
 \newcommand{\basec}[1]{{\color{text}#1}}
 \newcommand{\minor}[1]{{\color{minor}#1}}
 \newcommand{\minimal}[1]{{\color{minimal}#1}}
@@ -165,8 +165,6 @@
 \newcommand{\true}[1]{\ttt{\cmark~#1}}
 \newcommand{\false}[1]{\fff{\xmark~#1}}
 
-\newcommand{\proj}[2]{\operatorname{proj}_{#1}\bm{#2}}
-
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
 % ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
 % ██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
@@ -189,7 +187,7 @@
 
 % Emphasis: #f5b17a #ff9e4f #f5769c
 \definecolor{emph}{HTML}{f5b17a} 
-\definecolor{stress}{HTML}{ff9e4f} 
+\definecolor{str}{HTML}{ff9e4f} 
 \definecolor{amp}{HTML}{f5769c}
 
 % Titles: #4ca9f5 #7abef5 #b0d0eb #cedeeb
@@ -201,6 +199,7 @@
     \newcommand{\ssec}[1]{{\color{ssec}{#1}}}
 \definecolor{jarg}{HTML}{cedeeb} 
     \newcommand{\jjj}[1]{{\color{jarg}{\textbf{#1}}}}
+    \newcommand{\dd}[1]{{\color{jarg}{\textbf{#1}}}}
     
 
 % Links: #99e09b #78b07a
@@ -239,7 +238,7 @@
 %                          ____________              
 %                         /\  ________ \         
 %    xxx #c28bf0         /  \ \______/\ \        #f5b17a  emph
-%                       / /\ \ \  / /\ \ \         #ff9e4f stress
+%                       / /\ \ \  / /\ \ \         #ff9e4f str
 %                      / / /\ \ \/ / /\ \ \
 %                     / / /__\_\/ / /__\_\ \
 %                    / /_/_______/ /________\
