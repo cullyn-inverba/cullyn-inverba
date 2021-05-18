@@ -1,0 +1,205 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+% chktex-file 3
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 261}
+\newcommand{\theTitle}{determinants and Eigenstuff}
+\newcommand{\institution}{Portland State University}
+
+\begin{document}
+
+\begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
+  \item Find the determinants in (a), (b), and (c) where \(\begin{vmatrix}
+  a & b & c \\
+  d & e & f \\
+  g & h & i 
+  \end{vmatrix} = 7\) 
+  \begin{enumerate}
+    \item \(\begin{vmatrix}
+    a & b & c \\
+    5d & 5e & 5f \\
+    g & h & i 
+    \end{vmatrix} \basec{= 7\cdot\emph{5} = \boxed{35}}\) 
+
+    \bigskip
+
+    \basec{\begin{itemize}
+      \item The determinant of a matrix \tbm{A} where a row \(\bm{m}_i\) (or column \(\bm{n}_i\)) of \tbm{A} is multiplied by some scalar \(\emph{\alpha}\) is equal to the determinant of \tbm{A} multiplied by \(\emph{\alpha}\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \emph{\alpha}\bm{m}_i \lor \emph{\alpha}\bm{n}_i = \emph{\alpha}\det{A}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+      \item Using ``Rule of Sarrus'' method for \(3 \times 3\) matrices as a demonstration:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{vmatrix}
+        \rrr{a} & \bbb{b} & \ttt{c} \\
+        \ttt{5d} & \rrr{5e} & \bbb{5f} \\
+        \bbb{g} & \ttt{h} & \rrr{i} 
+      \end{vmatrix} - 
+      \begin{vmatrix}
+        \ttt{a} & \bbb{b} & \rrr{c} \\
+        \bbb{5d} & \rrr{5e} & \ttt{5f} \\
+        \rrr{g} & \ttt{h} & \bbb{i} 
+      \end{vmatrix} =
+      \rrr{5aei}+\bbb{5bfg}+\ttt{5cdh}-\rrr{5ceg}-\bbb{5bdi}-\ttt{5afh}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      = \emph{5}(\rrr{aei}+\bbb{bfg}+\ttt{cdh}-\rrr{ceg}-\bbb{bdi}-\ttt{afh})
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+    \end{itemize}}
+    
+    \bigskip
+
+    \item \(\begin{vmatrix}
+    d & e & f \\
+    a & b & c \\
+    g & h & i 
+    \end{vmatrix} \basec{= \emph{-1}\cdot 7 = \boxed{-7}}\)
+
+    \bigskip
+    \basec{\begin{itemize}
+      \item Any distinct permutation of the rows (or columns) of \tbm{A} multiplies the determinant by \(-1\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \bm{m}_i~\emph{\updownarrow}~\bm{m}_j \lor \bm{n}_i~\emph{\leftrightarrow}~\bm{n}_j = \emph{-1}\det{A} 
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item E.g., the determinant of the original matrix:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{vmatrix}
+        \rrr{a} & \bbb{b} & \ttt{c} \\
+        \ttt{d} & \rrr{e} & \bbb{f} \\
+        \bbb{g} & \ttt{h} & \rrr{i} 
+      \end{vmatrix} - 
+      \begin{vmatrix}
+        \ttt{a} & \bbb{b} & \rrr{c} \\
+        \bbb{d} & \rrr{e} & \ttt{f} \\
+        \rrr{g} & \ttt{h} & \bbb{i} 
+      \end{vmatrix} = \rrr{aei}+\bbb{bfg}+\ttt{cdh}-\rrr{ceg}-\bbb{bdi}-\ttt{afh}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      and the determinant of the given matrix with the row swapped:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{vmatrix}
+        \bbb{d} & \rrr{e} & \ttt{f} \\
+        \ttt{a} & \bbb{b} & \rrr{c} \\
+        \rrr{g} & \ttt{h} & \bbb{i} 
+      \end{vmatrix} - 
+      \begin{vmatrix}
+        \ttt{d} & \rrr{e} & \bbb{f} \\
+        \rrr{a} & \bbb{b} & \ttt{c} \\
+        \bbb{g} & \ttt{h} & \rrr{i} 
+      \end{vmatrix} = \bbb{bdi}+\rrr{ecg}+\ttt{fah}-\bbb{gbf}-\rrr{aei}-\ttt{dhc}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      I moved around some products to make the symmetry more clear, but that doesn't change anything. Now, multiplication by \(-1\) clearly shows change in sign:
+      \begin{align*}
+        \rrr{aei}+\bbb{bfg}+\ttt{cdh}-\rrr{ceg}-\bbb{bdi}-\ttt{afh} \\
+        -\rrr{aei}-\bbb{bfg}-\ttt{cdh} + \rrr{ceg} + \bbb{bdi}+\ttt{afh}
+      \end{align*}
+      
+    \end{itemize}}
+    \bigskip
+
+    \item \(\begin{vmatrix}
+    a & b & c \\
+    d+3g & e+3h & f+3i \\
+    g & h & i 
+    \end{vmatrix} \basec{= \boxed{7}}\)
+  
+    \bigskip
+    \basec{\begin{itemize}
+      \item Adding a scalar multiple of one row (or column) to another row (or column) does not change the value of the determinant.
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{vmatrix}
+        \rrr{a} & \bbb{b} & \ttt{c} \\
+        \ttt{d+3g} & \rrr{e+3h} & \bbb{f+3i} \\
+        \bbb{g} & \ttt{h} & \rrr{i} 
+      \end{vmatrix} - 
+      \begin{vmatrix}
+        \ttt{a} & \bbb{b} & \rrr{c} \\
+        \bbb{d+3g} & \rrr{e+3h} & \ttt{f+3i} \\
+        \rrr{g} & \ttt{h} & \bbb{i} 
+      \end{vmatrix} 
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \downarrow
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \hspace{-32pt}
+      \rrr{a(e+3h)i}+\bbb{b(f+3i)g}+\ttt{c(d+3g)h}-\rrr{c(e+3h)g}-\bbb{b(d+3g)i}-\ttt{a(f+3i)h}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \downarrow
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \rrr{aei}+\bbb{bfg}+\ttt{cdh}-\rrr{ceg}-\bbb{bdi}-\ttt{afh}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}}
+    \bigskip
+
+
+  \end{enumerate}
+
+  \item Construct an example of a \(2 \times 2\) matrix with only one distinct eigenvalue.
+  
+  \basec{\begin{itemize}
+    \item The eigenvalues of any upper of lower triangular matrix (and any square diagonal matrix) are simply the elements along the diagonal. Thus, all the following examples of the \(2 \times 2\) matrices have only one distinct eigenvalue:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    6 & 0 \\
+    0 & 6 
+    \end{bmatrix} \lambda = 6,6 \quad
+    \begin{bmatrix}
+    6 & 9 \\
+    0 & 6 
+    \end{bmatrix} \lambda = 6,6 \quad
+    \begin{bmatrix}
+    6 & 0 \\
+    9 & 6 
+    \end{bmatrix} \lambda = 6,6
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     
+  \end{itemize}}
+  
+  \item Show that \(\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}\) is an eigenvector of \(\bm{A} = \begin{bmatrix}
+  0 & 0 & -2 \\
+  1 & 2 & 1 \\
+  1 & 0 & 3 
+  \end{bmatrix}\). What is its corresponding eigenvalue?
+
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{A}\eigv =\eigl \eigv = \begin{bmatrix}
+    0 & 0 & -2 \\
+    1 & 2 & 1 \\
+    1 & 0 & 3 
+  \end{bmatrix} 
+  \str{\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}} =
+  \str{\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}}\quad
+  \chap{\lambda = 1}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\begin{itemize}
+    \item Characteristic polynomial of \tbm{A} and corresponding eigenvalues:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    p(\lambda) = −\lambda^3+5\lambda^2-8\lambda+4, \quad \chap{\lambda = 1,2,2}
+    \]
+    \item Double-checking with \chap{\(\lambda = 1\)}
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \left(\begin{bmatrix}
+      0 & 0 & -2 \\
+      1 & 2 & 1 \\
+      1 & 0 & 3 
+    \end{bmatrix} - 
+    \begin{bmatrix}
+      \chap{1} & 0 & 0 \\
+      0 & \chap{1} & 0 \\
+      0 & 0 & \chap{1} 
+    \end{bmatrix} \right)
+    \str{\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+  \end{itemize}}
+  
+  
+  
+\end{enumerate}
+
+
+\end{document}
