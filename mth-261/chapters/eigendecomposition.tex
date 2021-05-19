@@ -186,19 +186,34 @@
 
   \subsection{Eigendecomposition of Symmetric Matrices}\label{Eigendecomposition of Symmetric Matrices}
   \begin{itemize}
-    \item 
+    \item Every \(n \times n \) real \hyperref[Symmetric and Skew-Symmetric Matrices]{\ulink{symmetric matrix}} has \chap{eigenvalues that are real} and \str{eigenvectors that are real and orthonormal}.
+    \item Since \hyperref[Orthogonalization]{\ulink{orthogonal matrices}} transposed are equal to the inverse \((\bm{Q}^T = \bm{Q}^{-1})\), then a real symmetric matrix \tbm{A} can be decomposed as
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A} = \bm{\str{Q}}\eigL \bm{\str{Q}}^T
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Note: \(\bm{Q}\) is typically used to indicate orthogonal matrices, but here \(\bm{\str{Q}}\) indicates an orthogonal matrix composed of the eigenvectors that are \hyperref[Vector Length]{\ulink{normalized}}.
+      \item Again, this also means that \(\bm{\str{QQ}}^T = \bm{I}\), which can be very useful.
+    \end{itemize}
+    \item This is useful property since the transpose is much easier and more accurate to compute than the inverse avoids the use of imaginary numbers that are sometimes needed in order to perform eigendecomposition.
   \end{itemize}
   
-  \subsection{Eigenlayers}\label{Eigenlayers}
+  \subsection{Useful Facts Regarding Eigenvalues}\label{Useful Facts Regarding Eigenvalues}
   \begin{itemize}
-    \item 
-  \end{itemize}
+    \item The \emph{product} of the eigenvalues is equal to the \hyperref[The Determinant]{\ulink{determinant}} of \tbm{A}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \det{A} = \prod_{i=1}^{N_\eigl} \eigl_i^{n_i}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Thus, the amount of nonzero eigenvalues is equal to the rank of the matrix. 
+      \item Also, any matrix with an eigenvalue equal to 0 means the determinant is also 0, indicating that the matrix is \hyperref[Matrix Inverse]{\ulink{singular}}.
+    \end{itemize}
+    \item The \emph{sum} of the eigenvalues is equal to the \hyperref[Diagonal and Trace]{\ulink{trace}} of \tbm{A}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \tr{\bm{A}} = \sum_{i=1}^{N_\eigl} n_i\eigl_i
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item If the eigenvalues of \tbm{A} are \(\eigl_i\) and \tbm{A} is invertible, then the eigenvalues of \(\bm{A}^{-1}\) are simply \(\eigl_i ^{-1}\)
+  \end{itemize} 
   
 \end{itemize}
-
-\section{Generalized Eigendecomposition}\label{Generalized Eigendecomposition}
-\begin{itemize}
-  \item 
-\end{itemize}
-
 

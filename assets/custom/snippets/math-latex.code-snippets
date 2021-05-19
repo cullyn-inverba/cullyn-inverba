@@ -276,5 +276,11 @@
     "scope": "latex",
     "prefix": "inv",
     "body": "^{-1}"
+  },
+
+  "N x N":{
+    "scope": "latex", 
+    "prefix": "nbyn",
+    "body": "\\(n \\times n \\)"
   }
 }
