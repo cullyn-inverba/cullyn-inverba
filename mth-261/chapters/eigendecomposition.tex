@@ -130,7 +130,11 @@
     \end{itemize}
   \subsection{Matrix Powers}\label{Matrix Powers}
   \begin{itemize}
-    \item 
+    \item Multiplication of a matrix with itself can easily be done using diagonalizable matrices, as \(\eigV ^{-1} \eigV = I\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}^n = \eigV \eigL_\chap{1}\, \minor{(\bm{V} ^{-1} \bm{V})} \eigL_\chap{2}\, \minor{(\bm{V} ^{-1} \bm{V})}~\chap{\cdots}~\, \minor{(\bm{V} ^{-1}\bm{V})} \eigL_\chap{n}\, \eigV ^{-1} = \eigV \eigL^n\, \eigV ^{-1}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
   \end{itemize}
   
 \end{itemize}
@@ -141,12 +145,43 @@
   
   \subsection{Eigenvectors of Distinct Eigenvalues}\label{Eigenvectors of Distinct Eigenvalues}
   \begin{itemize}
-    \item 
+    \item Distinct \(\eigl\) \to~distinct \(N(\bm{A}-\eigl I)\) \to~distinct \(\eigv\)
+    \item Proof by contradiction with the assumptions \(\eigl_\chap{1} \neq \eigl_\chap{2}\) and \(\alpha_1 \eigv_\str{1} = \alpha_2\eigv_\str{2} \):
+    \begin{align*}
+      \alpha_1 \eigv_\str{1} &= \alpha_2\eigv_\str{2} \\
+      \alpha_1 \eigv_\str{1} + \alpha_2\eigv_\str{2} &= \bm{o} \\
+      &\hspace{-8pt}\swarrow\searrow \\
+      \bm{A}\,\alpha_1 \eigv_\str{1} + \bm{A}\,\alpha_2\eigv_\str{2} = \bm{o} &\qquad 
+      \eigl_\chap{1}\,\alpha_1 \eigv_\str{1} + \eigl_\chap{1}\,\alpha_2\eigv_\str{2} = \bm{o}  \\
+      \eigl_\chap{1}\,\alpha_1 \eigv_\str{1} + \eigl_\chap{2}\,\alpha_2\eigv_\str{2} = \bm{o} &\qquad  \\
+      \eigl_\chap{1}\,\alpha_1 \eigv_\str{1} + \eigl_\chap{2}\,\alpha_2\eigv_\str{2} = \bm{o} &\hspace{3pt}-
+      \hspace{3pt}\eigl_\chap{1}\,\alpha_1 \eigv_\str{1} + \eigl_\chap{1}\alpha_2\,\eigv_\str{2} = \bm{o} \\
+      &\downarrow \\
+      \eigl_\chap{2}\,\alpha_2 \eigv_\str{2} - \eigl_\chap{1}\,\alpha_2\eigv_\str{2} &= \bm{o} \\
+      (\eigl_\chap{2} - \eigl_\chap{1})\alpha_2 \eigv_\str{2}&=\bm{o} \\
+      \alpha_2 &= \fff{0} \qquad \text{Ignoring trivial solution} \\
+      \alpha_1 \eigv_\str{1} + \fff{0}\eigv_\str{2} &= \bm{o} \\
+      \alpha_1 &= \fff{0} \qquad \text{Ignoring trivial solution}
+    \end{align*}
+    \item Thus, if the only scalar that makes a sequence of vectors the zero vectors \fff{zero}, then by definition they are \hyperref[Linear Independence]{\ulink{linearly independent}} and there are distinct eigenvectors for each eigenvalue.
   \end{itemize}
   
   \subsection{Eigenvectors of Repeated Eigenvalues}\label{Eigenvectors of Repeated Eigenvalues}
   \begin{itemize}
-    \item 
+    \item Repeated \(\eigl\) \to~same \(N(\bm{A}-\eigl I)\) \to~eigenspace of \(\eigv_\str{1} + \eigv_\str{\ldots} + \eigv_\str{n} \)
+    \item \dd{Geometric multiplicity \(y_{\, T}(\eigl)\)}: the dimension of the eigenspace associated with \(\eigl\), i.e., the maximum number of linearly independent eigenvectors associated with \(\eigl\).
+    \begin{itemize}
+      \item If \(\eigv_\str{1}\) and \(\eigv_\str{2}\) are eigenvectors of a linear transformation \(T\) and share a repeated eigenvalue \(\eigl\), then the eigenspace associated with \(\eigl\) is a linear subspace, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      T(\eigv_\str{1} + \eigv_\str{2}) = \eigl(\eigv_\str{1} + \eigv_\str{2})
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      T(\alpha \eigv) = \eigl(\alpha \eigv)
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item \dd{Eigenline, eigenplane}: when the eigenspace has dimension 1 or 2, respectively.
+      \item When \(y_{\, T}(\eigl) \geq 1 \) since every eigenvalue has at least one eigenvector
+      \item When \(y_{\, T}(\eigl)= \dim{(\bm{A})}\), then there are distinct \(\eigl\) each with distinct \(\eigv\) as described above.
+    \end{itemize}
   \end{itemize}
 
   \subsection{Eigendecomposition of Symmetric Matrices}\label{Eigendecomposition of Symmetric Matrices}

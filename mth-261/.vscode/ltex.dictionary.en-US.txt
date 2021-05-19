@@ -32,3 +32,5 @@ eigen
 Sarrus
 eigenmatrix
 magnituded
+eigenplane
+Eigenline
