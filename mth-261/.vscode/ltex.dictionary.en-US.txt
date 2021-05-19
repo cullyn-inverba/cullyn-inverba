@@ -30,3 +30,5 @@ overdetermined
 Eigenlayers
 eigen
 Sarrus
+eigenmatrix
+magnituded

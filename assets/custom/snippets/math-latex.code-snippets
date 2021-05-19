@@ -154,7 +154,7 @@
 
   "Indefinite Matrix":{
     "scope": "latex",
-    "prefix": "imx",
+    "prefix": "inx",
     "body": [
       "\\begin{bmatrix}",
       "e & e & \\cdots & e \\\\\\",

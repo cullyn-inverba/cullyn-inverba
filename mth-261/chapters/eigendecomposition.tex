@@ -3,9 +3,9 @@
 
 \section{Eigendecomposition Fundamentals}\label{Eigendecomposition Fundamentals}
 \begin{itemize}
-  \item \dd{Eigendecomposition}: the factorization of a matrix into a canonical form, whereby the matrix is represented in terms of its \chap{eigen\textbf{value}} and \str{eigen\textbf{vector}}.
+  \item \dd{Eigendecomposition}: the factorization of a matrix into a canonical form, whereby the matrix is represented in terms of its \chap{eigen\textbf{values}} and \str{eigen\textbf{vectors}}.
     \begin{itemize}
-      \item Only defined for square matrices. 
+      \item Only defined for square matrices.
       \item \hyperref[Singular Value Decomposition]{\dlink{Singular value decomposition}} works for any \(m\times n\) matrix.
     \end{itemize}
   \item For an \(n \times n\) matrix, there are \(n\) eigenvalues and \(n\) eigenvectors.
@@ -16,14 +16,14 @@
   \item \textbf{\chap{Eigenvalue \(\lambda\)}}: the corresponding factor by which the eigenvector is scaled.
   \item Formally, if \(T\) is a linear transformation from vector space \(V\) over a field \(F\) into itself and \eigv~is a nonzero vector in \(V\), then \eigv~is an \str{eigenvector} of \(T\) if \(T(v)\) is a \chap{scalar multiple} \(\eigl \) of \(\eigv \), i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \chap{T}(\str{v}) = \eigl \eigv
+  T(\str{v}) = \eigl \eigv
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item \dd{Eigenvalue equation}: if \(V\) is a finite-dimensional, then the above is equivalent to
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \bm{\chap{A}\str{u}} = \eigl \str{\bm{u}}
+  \bm{A\str{u}} = \eigl \str{\bm{u}}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  where \chap{\tbm{A}} is the matrix representation of \(T\) and \str{\tbm{u}} is the coordinate vector (vector in terms of particular ordered basis) of \(\eigv \).
-  \item Essentially, this is useful as a single \chap{eigenvalue} \(\eigl \) can represent an entire matrix \chap{\tbm{A}} given the associated \str{eigenvector} \(\eigv \). Thus, finding the eigenvectors allows for a set of basis vectors (principal axis) that can be used to represent a dataset, often in a more efficient way.
+  where \tbm{A} is the matrix representation of \(T\) and \str{\tbm{u}} is the coordinate vector (vector in terms of particular ordered basis) of \(\eigv \).
+  \item Essentially, this is useful as a single \chap{eigenvalue} \(\eigl \) can represent an entire matrix \tbm{A} given the associated \str{eigenvector} \(\eigv \). Thus, finding the eigenvectors allows for a set of basis vectors (principal axis) that can be used to represent a dataset, often in a more efficient way.
     \begin{itemize}
       \item E.g., it can be very useful as each data point can be represented as a vector, leading to the application of a linear transformation that will not change the \hyperref[Span]{\ulink{span}} of the data, but instead will efficiently scale the data along the eigenvectors.
       \item Alternatively, there are often various patterns within datasets that can be much more apparent when organized along new axes, whereby eigenvectors are the means of such reorganization.
@@ -37,24 +37,24 @@
   \begin{itemize}
     \item \dd{Characteristic polynomial}: the polynomial of a matrix that is invariant under matrix similarity and has \chap{eigenvalues as its roots}, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    p(\eigl) = \det{(\chap{A}-\chap{\lambda} I)}
+    p(\eigl) = \det{\bm{A}-\chap{\lambda} I}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item \dd{Characteristic equation}: when the character polynomial is equated to zero, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \det{(\chap{A}-\chap{\lambda} I)} = 0
+    \det{\bm{A}-\chap{\lambda} I} = 0
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item The characteristic equation is derived from the Eigenvalue equation, i.e.,
+    \item The characteristic equation is derived from the eigenvalue equation, i.e.,
     \begin{align*}
-      \bm{\chap{A}\str{v}} &= \eigl \str{\bm{v}} \\
-      \bm{\chap{A}\str{v}} - \eigl \str{\bm{v}} &= \bm{o} \\
-      \underbrace{(\bm{\chap{A}} - \eigl I )}_{\text{\hyperref[Null Space]{\ulink{ nonzero kernel}}}} \hspace{-10pt}\str{\bm{v}} &= \bm{o}
+      \bm{A\str{v}} &= \eigl \str{\bm{v}} \\
+      \bm{A\str{v}} - \eigl \str{\bm{v}} &= \bm{o} \\
+      \underbrace{(\bm{A} - \eigl I )}_{\text{\hyperref[Null Space]{\ulink{ nonzero kernel}}}} \hspace{-10pt}\str{\bm{v}} &= \bm{o}
     \end{align*}
-    If \eigv~is the zeros vector, then it is a trivial solution, thus \((\bm{\chap{A}} - \eigl I )\) must have a nonzero kernel and thus is not \hyperref[Matrix Inverse]{\ulink{invertible}}, meaning the determinant must be zero, yielding the characteristic equation.
+    If \eigv~is the zeros vector, then it is a trivial solution, thus \((\bm{A} - \eigl I )\) must have a nonzero kernel and thus is not \hyperref[Matrix Inverse]{\ulink{invertible}}, meaning the determinant must be zero, yielding the characteristic equation.
     \item Since \(\eigl \) is unknown, then the determinant yields a polynomial, wherein the roots are in terms of \(\eigl \) and thus yields a means to find the \chap{eigenvalues}.
     \item The characteristic equation is an \(N\)th order polynomial equation in the unknown \(\eigl \), meaning it will have \(N_{\eigl }\) distinct solutions where \(1 \leq N_{\eigl } \leq N \), i.e.,  an \(n \times n\) matrix will have \(n\) eigenvalues which may or may not be repeated.
     \item A shortcut for finding the eigenvalues for a \(2\times 2\) matrix involves simply taking the trace and the determinant of the original then solving the polynomial, i.e,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \eigl^2 - \operatorname{tr}(\chap{\bm{A}}) + \det{(\chap{\bm{A}})}
+    \eigl^2 - \operatorname{tr}(\bm{A}) + \det{\bm{A}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Any \hyperref[Diagonal and Triagnular Matrices]{\ulink{triangular}} matrix (upper or lower) has eigenvalues that are simply the elements along their diagonal.
   \end{itemize}
@@ -66,16 +66,68 @@
    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \forall \eigl, \quad \eigv_i \in N(\bm{A}-\eigl_i I)
    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   
   \end{itemize}
-    
+
 \end{itemize}
 
 
 \section{Diagonalization}\label{Diagonalization}
 \begin{itemize}
-  \item []
-  
+  \item \dd{Diagonalization}: the result of eigendecomposition on a square \(n \times n\) matrix \tbm{A} with \(n\) \hyperref[Linear Independence]{\ulink{linear independent}} eigenvectors that yields a factorized equation:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{A} = \eigV \eigL \eigV ^{-1}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  where \(\eigV \), whose \(i\)th column is the eigenvector \(\eigv_i\) of \tbm{A}, and a diagonal matrix \(\eigL \), whose diagonal elements are the corresponding eigenvalues \(\eigL_{ii} = \eigl_i\).
+  \begin{itemize}
+    \item Diagonalization takes all the eigenvalue equations (\(\bm{A} \eigv = \eigl \eigv\)) of a matrix and returns the ``eigenmatrix equation,'' i.e., %chktex 38
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A} \eigv_\str{1} = \eigl_\chap{1} \eigv_\str{1}, \quad 
+    \bm{A} \eigv_\str{2} = \eigl_\chap{2} \eigv_\str{2}, \quad 
+    \cdots, \quad 
+    \bm{A} \eigv_\str{n} = \eigl_\chap{n} \eigv_\str{n} 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \downarrow
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+      \eigv_{\str{1}} & \eigv_{\str{2}} & \cdots & \eigv_{\str{n}} \\
+      \eigv_{\str{1}} & \eigv_{\str{2}} & \cdots & \eigv_{\str{n}} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      \eigv_{\str{1}} & \eigv_{\str{2}} & \cdots & \eigv_{\str{n}}
+    \end{bmatrix}
+    \begin{bmatrix}
+    \eigl_\chap{1} & 0 & \cdots & 0 \\
+    0 & \eigl_\chap{2} & \cdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \cdots & \eigl_\chap{3}
+    \end{bmatrix}
+    = 
+    \begin{bmatrix}
+    \eigl_{\chap{1}} \eigv_{\str{1}} & \eigl_\chap{2} \eigv_\str{2} & \cdots & \eigl_\chap{n} \eigv_\str{n} \\
+    \eigl_{\chap{1}} \eigv_{\str{1}} & \eigl_\chap{2} \eigv_\str{2} & \cdots & \eigl_\chap{n} \eigv_\str{n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \eigl_{\chap{1}} \eigv_{\str{1}} & \eigl_\chap{2} \eigv_\str{2} & \cdots & \eigl_\chap{n} \eigv_\str{n}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \downarrow
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}\eigV = \eigV \eigL 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Thus, \(\eigV \) must be \hyperref[Matrix Inverse]{\ulink{invertible}}, which means there must be \(n\) distinct eigenvalues. 
+    \item Essentially, \(\eigV \) transforms \(\bm{A}\to \eigL\) and \(\eigV ^{-1}\) transforms \(\eigL \to \bm{A}\).
+  \end{itemize}
+  \item \dd{Diagonalizable (non-defective) matrix}: when there exists an invertible matrix \(\eigV\) and diagonal matrix \(\eigL\) such that \(\bm{A} = \eigV \eigL \eigV ^{-1}\).
+    \begin{itemize}
+      \item Diagonalization is really just a name for the process of finding such matrices, but is often synonymous with eigendecomposition.
+      \item The eigenvectors are typically normalized, though magnituded is canceled by the inverse. However, when discussing the \(\eigV\) in finite space, then \(\eigV \) usually refers to an \hyperref[Basis]{\ulink{ordered basis}} of eigenvectors that describe the transformation.
+    \end{itemize}
+  \item \dd{Defective matrix}: a square matrix that is not diagonalizable, which means there exist no invertible matrix \(\eigV\) and diagonal matrix \(\eigL \) consisting of only real numbers.
+    \begin{itemize}
+      \item Note: a matrix may still be diagonalizable using complex entries, e.g., a rotation matrix has no eigenvectors consisting of only real numbers.
+    \end{itemize}
   \subsection{Matrix Powers}\label{Matrix Powers}
   \begin{itemize}
     \item 
@@ -107,12 +159,11 @@
     \item 
   \end{itemize}
   
-  \subsection{Generalized Eigendecomposition}\label{Generalized Eigendecomposition}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
 \end{itemize}
 
+\section{Generalized Eigendecomposition}\label{Generalized Eigendecomposition}
+\begin{itemize}
+  \item 
+\end{itemize}
 
 
