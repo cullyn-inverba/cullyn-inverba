@@ -35,7 +35,7 @@
         \rrr{a} & \bbb{b} & \ttt{c} \\
         \ttt{5d} & \rrr{5e} & \bbb{5f} \\
         \bbb{g} & \ttt{h} & \rrr{i} 
-      \end{vmatrix} - 
+      \end{vmatrix} \hspace{-7pt}
       \begin{vmatrix}
         \ttt{a} & \bbb{b} & \rrr{c} \\
         \bbb{5d} & \rrr{5e} & \ttt{5f} \\
@@ -69,7 +69,7 @@
         \rrr{a} & \bbb{b} & \ttt{c} \\
         \ttt{d} & \rrr{e} & \bbb{f} \\
         \bbb{g} & \ttt{h} & \rrr{i} 
-      \end{vmatrix} - 
+      \end{vmatrix} \hspace{-7pt}
       \begin{vmatrix}
         \ttt{a} & \bbb{b} & \rrr{c} \\
         \bbb{d} & \rrr{e} & \ttt{f} \\
@@ -82,7 +82,7 @@
         \bbb{d} & \rrr{e} & \ttt{f} \\
         \ttt{a} & \bbb{b} & \rrr{c} \\
         \rrr{g} & \ttt{h} & \bbb{i} 
-      \end{vmatrix} - 
+      \end{vmatrix} \hspace{-7pt}
       \begin{vmatrix}
         \ttt{d} & \rrr{e} & \bbb{f} \\
         \rrr{a} & \bbb{b} & \ttt{c} \\
@@ -112,7 +112,7 @@
         \rrr{a} & \bbb{b} & \ttt{c} \\
         \ttt{d+3g} & \rrr{e+3h} & \bbb{f+3i} \\
         \bbb{g} & \ttt{h} & \rrr{i} 
-      \end{vmatrix} - 
+      \end{vmatrix} \hspace{-7pt}
       \begin{vmatrix}
         \ttt{a} & \bbb{b} & \rrr{c} \\
         \bbb{d+3g} & \rrr{e+3h} & \ttt{f+3i} \\
@@ -127,7 +127,7 @@
       \rrr{a(e+3h)i}+\bbb{b(f+3i)g}+\ttt{c(d+3g)h}-\rrr{c(e+3h)g}-\bbb{b(d+3g)i}-\ttt{a(f+3i)h}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \downarrow
+      \text{multilinearlity} \downarrow \text{alternating}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \rrr{aei}+\bbb{bfg}+\ttt{cdh}-\rrr{ceg}-\bbb{bdi}-\ttt{afh}
@@ -144,17 +144,17 @@
     \item The eigenvalues of any upper of lower triangular matrix (and any square diagonal matrix) are simply the elements along the diagonal. Thus, all the following examples of the \(2 \times 2\) matrices have only one distinct eigenvalue:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{bmatrix}
-    6 & 0 \\
-    0 & 6 
-    \end{bmatrix} \lambda = 6,6 \quad
+    \chap{6} & 0 \\
+    0 & \chap{6} 
+    \end{bmatrix} \eigl = \chap{6,6} \quad
     \begin{bmatrix}
-    6 & 9 \\
-    0 & 6 
-    \end{bmatrix} \lambda = 6,6 \quad
+    \chap{6} & 9 \\
+    0 & \chap{6} 
+    \end{bmatrix} \eigl = \chap{6,6} \quad
     \begin{bmatrix}
-    6 & 0 \\
-    9 & 6 
-    \end{bmatrix} \lambda = 6,6
+    \chap{6} & 0 \\
+    9 & \chap{6} 
+    \end{bmatrix} \eigl = \chap{6,6}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
      
   \end{itemize}}
@@ -166,21 +166,21 @@
   \end{bmatrix}\). What is its corresponding eigenvalue?
 
   \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \bm{A}\eigv =\eigl \eigv = \begin{bmatrix}
+  \bm{A}\eigv =\eigl \eigv \to \begin{bmatrix}
     0 & 0 & -2 \\
     1 & 2 & 1 \\
     1 & 0 & 3 
   \end{bmatrix} 
   \str{\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}} =
-  \str{\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}}\quad
+  \eigl \str{\begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}},\quad
   \chap{\lambda = 1}
   \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \basec{\begin{itemize}
     \item Characteristic polynomial of \tbm{A} and corresponding eigenvalues:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    p(\lambda) = −\lambda^3+5\lambda^2-8\lambda+4, \quad \chap{\lambda = 1,2,2}
+    p(\eigl) = −\eigl^3+5\eigl^2-8\eigl+4, \quad \chap{\lambda = 1,2,2}
     \]
-    \item Double-checking with \chap{\(\lambda = 1\)}
+    \item Double-checking with \chap{\(\lambda = 1\)}; should yield zero vector given corresponding eigenvalue since \((\bm{A}-\eigl\bm{I})\eigv=\bm{o}\) (I can't bold 0 for some reason, \tbm{o} = zero vector)
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \left(\begin{bmatrix}
       0 & 0 & -2 \\
