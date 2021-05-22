@@ -118,7 +118,7 @@
     "prefix": "Centered Graphic",
     "body": [
       "\\begin{center}",
-      "\t\\Image{0.94\\columnwidth}{images/week-7-$1.jpg}",
+      "\t\\Image{0.94\\columnwidth}{images/week-8-$1.jpg}",
       "\\end{center}"
     ],
     "description": "Insert centered graphic"
@@ -131,7 +131,7 @@
       "\\item \\jjj{$1}:",
       "",
       "\\begin{center}",
-      "\t\\Image{0.8\\columnwidth}{images/week-7-$2.jpg}",
+      "\t\\Image{0.8\\columnwidth}{images/week-8-$2.jpg}",
       "\\end{center}",
       "",
       "$0"
@@ -141,7 +141,7 @@
   "Image with width":{
     "scope": "latex",
     "prefix": "img",
-    "body": "\\Image{0.7\\columnwidth}{images/week-7-$1.jpg}"
+    "body": "\\Image{0.7\\columnwidth}{images/week-8-$1.jpg}"
   },
 
   "Graphic":{

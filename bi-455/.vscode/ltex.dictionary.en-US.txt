@@ -155,3 +155,12 @@ Macula
 densa
 Urothelium
 binucleate
+zona
+glomerulosa
+fasciculata
+reticularis
+Ductus
+Deferens
+spermiogenesis
+seminiferous
+epithelia
