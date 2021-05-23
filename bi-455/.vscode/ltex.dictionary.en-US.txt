@@ -265,3 +265,7 @@ saccule
 macula
 scala
 vestibuli
+congo
+histologyguide
+amyloidosis
+red-ish
