@@ -27,3 +27,4 @@
 ## Lab
 
 - [Practical 1, weeks 1&ndash;4](lab/practical-1.pdf)
+- [Practical 1, weeks 5&ndash;9](lab/practical-2.pdf)
