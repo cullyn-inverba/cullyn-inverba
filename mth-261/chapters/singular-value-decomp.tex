@@ -16,21 +16,24 @@
       \item The rest of the details regarding polar decomposition will not be covered, as it detracts from understanding of single value decomposition; for now we will only deal with real matrices.
       \item Other important notes before continuing:
       \begin{itemize}
-        \item Recall how \hyperref[Hadamard Multiplication]{\ulink{creating symmetric matrices}} is done.
+        \item Recall how \hyperref[Hadamard Multiplication]{\ulink{creating symmetric matrices}} is done, i.e.,
+        \begin{itemize}
+          \item \(\bm{\bbb{A^T}A}=\bm{\yyy{S_{n\times n}}}\) \quad and \quad \(\bm{A\rrr{A^T}} = \xxx{\bm{S}_{m \times m}}\)
+        \end{itemize}
         \item And that the \hyperref[Column Space]{\ulink{column and row space}} of matrices multiplied with their transpose are the same the original matrix column/row space, i.e., 
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        C(\bm{AA}^T) = C(\bm{A}), \quad R(\bm{A^T A}) = R(\bm{A})
+        \yyy{C}(\bm{A\rrr{A^T}}) = \yyy{C}(\bm{\xxx{S}}) = \yyy{C}(\bm{A}), \quad \xxx{R}(\bm{\bbb{A^T} A}) = \xxx{R}(\yyy{\bm{S}}) = \xxx{R}(\bm{A})
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \end{itemize}
       \item Finally, the singular value decomposition in more detail:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \underbrace{\bm{A}}_{\xxx{m} \times \yyy{n}} = \bbb{\underbrace{\bm{\yyy{U}}}_{\xxx{m} \times \xxx{m}}} \underbrace{\S}_{\xxx{m} \times \yyy{n}} \rrr{\underbrace{\Vt}_{\yyy{n} \times \yyy{n}}}
+      \underbrace{\bm{A}}_{\xxx{m} \times \yyy{n}} = \bbb{\underbrace{\U}_{\xxx{m} \times \xxx{m}}} \underbrace{\S}_{\xxx{m} \times \yyy{n}} \rrr{\underbrace{\Vt}_{\yyy{n} \times \yyy{n}}}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \begin{itemize}
         \item \(\U\)~--- the orthogonal basis for \yyy{column space} of \bm{A}.
           \begin{itemize}
             \item Termed the \bbb{\textbf{left singular vectors}} as \(\bbb{\bm{U}^T}\bm{A = \S \Vt}\)
-            \item Written the form of eigenvalue equation \(\bbb{\bm{u}^T}\bm{A}=\s \xxx{\bm{v}^T}\).
+            \item In the form of eigenvalue equation \(\bbb{\bm{u}^T}\bm{A}=\s \xxx{\bm{v}^T}\).
           \end{itemize}
         \item \(\S\)~--- a diagonal matrix consisting of the \ttt{\textbf{singular values} \(\bm{\sigma}\)} of \bm{A}. 
           \begin{itemize}
@@ -39,18 +42,36 @@
         \item \(\Vt\)~--- the orthogonal basis for \xxx{row space} of \bm{A}.
           \begin{itemize}
             \item Termed the \rrr{\textbf{right singular vectors}} as \(\bm{A}\rrr{\bm{V}} = \U \S\)
-            \item Written in the form of eigenvalue equation \(\bm{A}\rrr{\bm{v}}= \yyy{\bm{u}} \s\)
+            \item In the form of eigenvalue equation \(\bm{A}\rrr{\bm{v}}= \yyy{\bm{u}} \s\)
           \end{itemize}
       \end{itemize}
     \end{itemize}
   
-  \subsection{Computing SVD}\label{Computing SVD}
+  \newpage
+  \subsection{Computing SVD and Singular Values vs. Eigenvalues}\label{Computing SVD and Singular Values vs. Eigenvalues}
   \begin{itemize}
-    \item 
-  \end{itemize}
-    
-  \subsection{Singular Values vs. Eigenvalues}\label{Singular Values vs. Eigenvalues}
-  \begin{itemize}
+    \item Assuming \tbm{A} is an \(\xxx{m} \times \yyy{n} \) matrix, then multiplying by the transpose yields two results that are the similar to eigendecomposition and dependent on the order of multiplication:
+    \begin{align*}
+      \bm{A} &= \U \S \Vt &&& \bm{A} &= \U \S \Vt \\
+      \bm{\bbb{A^T}A} &= (\U\S\Vt)^T \U\S\Vt &&& \bm{A\rrr{A^T}} &=  \U\S\Vt (\U\S\Vt)^T \\
+      \bm{\yyy{S}} &= \Vt^T\S^T\yyy{\bm{U}^T} \U\S\Vt &&& \bm{\xxx{S}} &=  \U\S\Vt \Vt^T\S^T\yyy{\bm{U}^T} \\
+      \bm{\yyy{S}} &= \bm{\xxx{V}}\S^T\bm{I}\S\Vt &&& \bm{\xxx{S}} &=  \U\S\bm{I}\S^T\yyy{\bm{U}^T} \\
+      \bm{\yyy{S}} &= \bm{\xxx{V}}\S^2\Vt &&& \bm{\xxx{S}} &=  \U\S^2\yyy{\bm{U}^T} \\
+      &\downarrow &&& &\downarrow \\
+      \bm{\yyy{S}} &= \str{\bm{Q}}\eigL \str{\bm{Q}^T} &&& \bm{\xxx{S}} &= \str{\bm{Q}}\eigL \str{\bm{Q}^T} \\
+      \xxx{R}(\bm{\yyy{S}}) &= \str{\bm{Q}}\eigL \str{\bm{Q}^T} &&& \yyy{C}(\bm{\xxx{S}}) &= \str{\bm{Q}}\eigL \str{\bm{Q}^T} \\
+      \xxx{R}(\bm{A}) &= \str{\bm{Q}}\eigL \str{\bm{Q}^T} &&& \yyy{C}(\bm{A}) &= \str{\bm{Q}}\eigL \str{\bm{Q}^T} \\
+      &\downarrow &&& &\downarrow \\ 
+      \xxx{R}(\bm{A}) &= \bm{\xxx{V}}\S^2\Vt &&& \yyy{C}(\bm{A}) &=  \U\S^2\yyy{\bm{U}^T} 
+    \end{align*}
+    \item Thus, in the case of a real square matrix, \(\S^2 = \eigL\) when \tbm{A} is transposed with itself and \(\U\)\,/\,\(\Vt\) act as the orthogonal basis for the \yyy{column}/\xxx{row} spaces, respectively.
+    \item Reviewing the singular value equation:
+    \begin{align*}
+      \bm{A} = &~\U \S \Vt \\ 
+      \swarrow &\hspace{14pt} \searrow \\
+      \bm{A}\rrr{\bm{V}} = \U \S \hspace{20pt}&\hspace{35pt} \bbb{\bm{U^T}}\bm{A} = \S \Vt \\
+      \bm{A}\yyy{\bm{v}}= \yyy{\bm{u}} \s \hspace{24pt}&\hspace{37pt} \xxx{\bm{u}^T}\bm{A}=\s \xxx{\bm{v}^T} 
+    \end{align*}
     \item 
   \end{itemize}
 
