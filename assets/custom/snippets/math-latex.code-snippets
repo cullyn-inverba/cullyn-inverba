@@ -282,5 +282,11 @@
     "scope": "latex", 
     "prefix": "nbyn",
     "body": "\\(n \\times n \\)"
+  },
+
+  "M x N":{
+    "scope": "latex", 
+    "prefix": "mbyn",
+    "body": "\\(\\xxx{m} \\times \\yyy{n} \\)"
   }
 }

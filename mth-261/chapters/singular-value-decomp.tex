@@ -2,8 +2,53 @@
 
 \section{Singular Value Decomposition Fundamentals}\label{Singular Value Decomposition Fundamentals}
 \begin{itemize}
-  \item []
+  \item \dd{Singular value decomposition (SVD)}: an extension of \hyperref[Eigendecomposition]{\ulink{eigendecomposition}} to any \(\xxx{m} \times \yyy{n} \) matrix via polar decomposition.
+    \begin{itemize}
+      \item \dd{Polar decomposition}: the factorization of a matrix \tbm{A} in the form \(\bm{A}=\bm{U}{\bm
+      {P}}\), where \tbm{U} is a unitary matrix and \(\bm{{P}}\) is a positive-semidefinite \hyperref[Diagonal and Trace]{\ulink{Hermitian matrix}}, both square and the same size.
+        \begin{itemize}
+          \item \dd{Unitary}: when a complex square matrix has a \hyperref[Conjugate Transpose]{\ulink{conjugate transpose}} \(\bm{A}^* \) that is also it's inverse, i.e.,
+          \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \bm{U}^*\bm{U} = \bm{U}\bm{U}^* = \bm{I}
+          \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \item The real analogue of a unitary matrix is an \hyperref[Orthogonal Matrices]{\ulink{orthogonal matrix}}.
+        \end{itemize}
+      \item The rest of the details regarding polar decomposition will not be covered, as it detracts from understanding of single value decomposition; for now we will only deal with real matrices.
+      \item Other important notes before continuing:
+      \begin{itemize}
+        \item Recall how \hyperref[Hadamard Multiplication]{\ulink{creating symmetric matrices}} is done.
+        \item And that the \hyperref[Column Space]{\ulink{column and row space}} of matrices multiplied with their transpose are the same the original matrix column/row space, i.e., 
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        C(\bm{AA}^T) = C(\bm{A}), \quad R(\bm{A^T A}) = R(\bm{A})
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+      \item Finally, the singular value decomposition in more detail:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \underbrace{\bm{A}}_{\xxx{m} \times \yyy{n}} = \bbb{\underbrace{\bm{\yyy{U}}}_{\xxx{m} \times \xxx{m}}} \underbrace{\S}_{\xxx{m} \times \yyy{n}} \rrr{\underbrace{\Vt}_{\yyy{n} \times \yyy{n}}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{itemize}
+        \item \(\U\)~--- the orthogonal basis for \yyy{column space} of \bm{A}.
+          \begin{itemize}
+            \item Termed the \bbb{\textbf{left singular vectors}} as \(\bbb{\bm{U}^T}\bm{A = \S \Vt}\)
+            \item Written the form of eigenvalue equation \(\bbb{\bm{u}^T}\bm{A}=\s \xxx{\bm{v}^T}\).
+          \end{itemize}
+        \item \(\S\)~--- a diagonal matrix consisting of the \ttt{\textbf{singular values} \(\bm{\sigma}\)} of \bm{A}. 
+          \begin{itemize}
+            \item The number of non-zero singular values is equal to the \hyperref[Matrix Rank]{\ulink{rank}} of \tbm{A}.
+          \end{itemize}
+        \item \(\Vt\)~--- the orthogonal basis for \xxx{row space} of \bm{A}.
+          \begin{itemize}
+            \item Termed the \rrr{\textbf{right singular vectors}} as \(\bm{A}\rrr{\bm{V}} = \U \S\)
+            \item Written in the form of eigenvalue equation \(\bm{A}\rrr{\bm{v}}= \yyy{\bm{u}} \s\)
+          \end{itemize}
+      \end{itemize}
+    \end{itemize}
   
+  \subsection{Computing SVD}\label{Computing SVD}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+    
   \subsection{Singular Values vs. Eigenvalues}\label{Singular Values vs. Eigenvalues}
   \begin{itemize}
     \item 
