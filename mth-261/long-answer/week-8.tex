@@ -1,0 +1,98 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+% chktex-file 3
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 261 | Sauls}
+\newcommand{\theTitle}{Destination Imagination}
+\newcommand{\institution}{Portland State University}
+
+
+\begin{document}
+
+\begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
+  \item Find two orthogonal vectors that are both orthogonal \(\bm{u} = \begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}\)
+  \basec{\begin{itemize}
+    \item A vector is orthogonal when the dot product is equal to zero. Thus, if \(\bm{v} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}\), then any vector that satisfies the following equation is valid:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    -2a + b + c = 0
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item For any vector \(\bm{v}\) that satisfies the above equation, then one can compute the cross product (\(\times \)) with the given vector \tbm{u} and \tbm{v} in order to find a new vector that is orthogonal to both \tbm{u} and \tbm{v}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix} -2 \\ 1 \\ 1 \end{bmatrix}
+    \times 
+    \begin{bmatrix} a \\ b \\ c \end{bmatrix}
+    = 
+    \begin{bmatrix} -b + c \\ a + 2c \\ -a -2b \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \item For example, \(a = 0,~b=1,~c=-1\) satisfies the original equation, therefor:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{v} = \begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix},
+    \quad
+    \langle \bm{u}, \bm{v} \rangle = 0,
+    \quad
+    \bm{u}\times \bm{v} = \begin{bmatrix} -2 \\ -2 \\ -2 \end{bmatrix},
+    \quad \text{and} \quad
+    \langle \bm{v}, \bm{u} \times \bm{v} \rangle = 0
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+  \end{itemize}}
+  
+  \item Find a parametrization of the plane (write the solutions as linear combinations of vectors with some
+  parameters) given by the scalar equation
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  x-2y-3z=5
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\begin{itemize}
+    \item A parametrization for a plane can be written as:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{x} = \bm{c} + r \bm{a} + s \bm{b} 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    where \(\bm{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}\), \tbm{a} and \tbm{b} are parallel to the plane, and \(\bm{c}\) is a point on the plane. 
+    \item Letting \(y = 0\) and \(z = 0\) yields a point on the plane \(\begin{bmatrix} 5 \\ 0 \\ 0 \end{bmatrix}\)
+    \item Finding two vectors on the plane can be done by subtracting a point on the plane from another, which yields a new vector on the plane. Taking an approach to find a point similar to the first yields:
+    \begin{align*}
+      \bm{a} = \begin{bmatrix} 0 \\ -5/2 \\ 0 \end{bmatrix} - 
+      \begin{bmatrix} 5 \\ 0 \\ 0 \end{bmatrix} = 
+      \begin{bmatrix} -5 \\ -5/2 \\ 0 \end{bmatrix} \\ 
+      \bm{b} = \begin{bmatrix} 0 \\ 0 \\ -5/3 \end{bmatrix} - 
+      \begin{bmatrix} 5 \\ 0 \\ 0 \end{bmatrix} = 
+      \begin{bmatrix} -5 \\ 0 \\ -5/3 \end{bmatrix}
+    \end{align*}
+   
+    \item Putting it all together yields:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} =
+      \begin{bmatrix} 5 \\ 0 \\ 0 \end{bmatrix} +
+    r \begin{bmatrix} -5 \\ -5/2 \\ 0 \end{bmatrix} +
+    s \begin{bmatrix} -5 \\ 0 \\ -3/2 \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}}
+  
+  \item Show that the following parametrization produces solutions to the scalar equation given in number 2.
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}
+  = \begin{bmatrix} 5 \\ -3 \\ 2 \end{bmatrix}
+  + r \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}
+  + s \begin{bmatrix} 7 \\ 2 \\ 1 \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\begin{align*}
+    x - 2y - 3z = 5 && \text{original equation} \\
+    \begin{bmatrix} 1 & -2 & -3 \end{bmatrix}  = \bm{n} && \text{vector orthogonal to plane} \\
+    \begin{bmatrix} 5 & -3 & 2 \end{bmatrix}   = \bm{c} && \text{given point on plane}\\
+    \begin{bmatrix} 1 && 2 && -1 \end{bmatrix} = \bm{a} && \text{vector describing}~r \\
+    \begin{bmatrix} 7 && 2 && 1 \end{bmatrix}  = \bm{b} && \text{vector describing}~s \\ &\hspace{-24pt}\downarrow \\
+    \langle \bm{n}, \bm{c} \rangle = 5  && \text{yields solution to equation \true{}}\\
+    \langle \bm{n}, \bm{a} \rangle = 0  && \text{\tbm{a} is orthogonal to \tbm{n} \true{}} \\
+    \langle \bm{n}, \bm{b} \rangle = 0  && \text{\tbm{b} is orthogonal to \tbm{n} \true{}} 
+  \end{align*}
+    Additionally, one can show dot product of \tbm{c-a} and \tbm{n} yields solution to scalar equation:
+  \begin{align*}
+    \langle \bm{n}, \bm{c-a} \rangle = 5  && \text{yields solution to equation \true{}} \\
+    \langle \bm{n}, \bm{c-b} \rangle = 5  && \text{yields solution to equation \true{}}
+  \end{align*}
+  Replacing \tbm{a}, \tbm{b}, and \tbm{c} with examples provided in question two yields the same results.
+  }
+\end{enumerate}
+
+\end{document}
