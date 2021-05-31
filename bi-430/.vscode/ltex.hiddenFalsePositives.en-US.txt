@@ -5,3 +5,4 @@
 {"rule":"WORD_CONTAINS_UNDERSCORE","sentence":"^\\Qm _set_split:Nnn ł_tmpa_seq #1 _use:Nn ł_tmpa_seq [0]\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qm _set_split:Nnn ł_tmpa_seq #1 _use:Nn ł_tmpa_seq [0]\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qm _set_split:Nnn ł_tmpa_seq #1 _use:Nn ł_tmpa_seq [0]\\E$"}
+{"rule":"CD_NN","sentence":"^\\Q2 Which gene of concern did the authors detect mutations in?\\E$"}
