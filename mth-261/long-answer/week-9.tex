@@ -1,0 +1,54 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+% chktex-file 3
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 261 | Sauls}
+\newcommand{\theTitle}{Abstraction Gratification}
+\newcommand{\institution}{Portland State University}
+
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
+  \item Consider the set of all points in the region \(U\) shown in \(\R^2\) below. Assume the set includes the boundary line. Give a specific reason why the set \(U\) is \textit{not} a subspace of \(\mathbb{R}^2\).
+   
+  \begin{center}
+    \begin{tikzpicture}
+      
+      \draw[-,color=text] (-2.9 ,0.) -- (2.9,0.);
+      \draw[-,color=text] (0.,-.9) -- (0.,0.9);
+      \fill[color=bbb,fill=bbb,fill opacity=0.1] (-3.,1.) -- (3.,-1.) -- (3.,1.) -- cycle;
+      \draw [line width=1.5pt,color=bbb] (-3.,1)-- (3.,-1.);
+      \draw (1.2,0.7) node[anchor=north west] {\small{\({\color{ssec}U}\)}};
+      
+    \end{tikzpicture}
+  \end{center}
+  
+  \item Let \(W\) be the set of all points on either the \(x-\) or \(y-\) axis. That is, \(W\) is all the points of the form \(\begin{bmatrix} a \\ 0 \end{bmatrix}\) or \(\begin{bmatrix} 0 \\ b \end{bmatrix}\) for any real numbers \(a\) and \(b\). Show that \(W\) is not a subspace.
+  
+  \item Consider \(A\) and its reduced row echelon form below.
+  \[
+  A=\begin{bmatrix*}[r] -3 & 9 & -2 & -7 \\
+  2 & -6 & 4 & 8 \\
+  3 & -9 & -2 & 2\end{bmatrix*}
+  \rightarrow
+  \underbrace{\begin{bmatrix*}[r]1 & -3 & 0 & 3/2\\
+  0 & 0 & 1 & 5/4 \\
+  0 & 0 & 0 & 0\end{bmatrix*}}_{\text{rref of }A}
+  \]
+  Let \(\bm{b}_1\), \(\bm{b}_2\), \(\bm{b}_3\), and \(\bm{b}_4\) be the columns of rref\((A)\). Note that 
+  \[-3\bm{b}_1 = \bm{b}_2 \quad \text{and} \quad \frac{3}{2}\bm{b}_1 + \frac{5}{4}\bm{b}_3 = \bm{b}_4
+  \]
+  Now let \(\bm{a}_1\), \(\bm{a}_2\), \(\bm{a}_3\), and \(\bm{a}_4\) be the columns of \(A\).
+  
+  \begin{enumerate}
+
+      \item Show that \(-3\bm{a}_1 =\bm{a}_3 \).
+      \item Find a linear combination of \(\bm{a}_4\) in terms of \(\bm{a}_1\) and \(\bm{a}_3\).
+      \item Show that the set \( \{ \bm{a}_1, \, \bm{a}_2, \, \bm{a}_3, \, \bm{a}_4 \} \) is linearly dependent.
+
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
