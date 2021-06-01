@@ -381,8 +381,8 @@
 
   \subsection{Subsets}\label{Subsets}
   \begin{itemize}
-    \item \jjj{Subset \(\subseteq \)}: a set \(A\) is a subset of a set \(B\) if all elements of \(A\) are also elements of \(B\); \(B\) is then b a \jjj{superset \(\supseteq  \)} of \(A\).
-    \item Not all subsets of vector spaces are subsets; subsets don't need to include the origin, don't need to be closed, or could have boundaries.
+    \item \jjj{Subset \(\subseteq \)}: a set \(A\) is a subset of a set \(B\) if all elements of \(A\) are also elements of \(B\); this makes \(B\) a \jjj{superset \(\supseteq  \)} of \(A\).
+    \item Not all subsets of vector spaces are subspaces; subsets don't need to include the origin, don't need to be closed, or could have boundaries.
   \end{itemize}
   
   \subsection{Span}\label{Span}
@@ -411,11 +411,17 @@
   \subsection{Linear Independence}\label{Linear Independence}
   \begin{itemize}
     \item \jjj{Linearly dependent}: a set of \(V\) vectors where at least one vector in the set can be defined as a \hyperref[Linear combination]{\ulink{linear combination}} of the others.
-    \item \jjj{Linearly independent}: when no vector in the set can be written in the above way. 
-    \item Algebraically, a sequence of vectors \(\bm{v}_1,\bm{v}_2,\dots,\bm{v}_k\) that a vector space \(V\) are linearly independent if there exist scalars \(\lambda_1,\lambda_2,\dots,\lambda_k\) such that they form the zero vector \(\bm{0}\), i.e.,
+    \begin{itemize}
+      \item Algebraically, a sequence of vectors \(\bm{v}_1,\bm{v}_2,\ldots ,\bm{v}_k\) from a vector space are \emph{linearly dependent} if there exist scalars \(\lambda_1,\lambda_2\ldots s,\lambda_k\) such that they form the zero vector \(\bm{o}\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \lambda_1\bm{v}_1,\lambda_2\bm{v}_2,\ldots,\lambda_k\bm{v}_k = \bm{o} \qquad \lambda \in \mathbb{R}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+    \item \jjj{Linearly independent}: when no vector in the set can be written in the above way, i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lambda_1\bm{v}_1,\lambda_2\bm{v}_2,\dots,\lambda_k\bm{v}_k = \bm{0} \qquad \lambda \in \mathbb{R}
+    \lambda_1\bm{v}_1+\lambda_2\bm{v}_2+\cdots+\lambda_k\bm{v}_k = \bm{o} \qquad \lambda \in \mathbb{R}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
     \item Geometrically, a set of \(V\) vectors in independent if each vectors points in a geometric dimension not reachable using other vectors in the set.
     \begin{itemize}
       \item E.g., if two vectors are lie along the same line, then they are really just the same vector; same concept with a 2-D plane containing three vectors in \(\mathbb{R}^3\).
