@@ -33,7 +33,7 @@
         \item \(\U\)~--- the orthogonal basis for \yyy{column space} of \bm{A}.
           \begin{itemize}
             \item Termed the \bbb{\textbf{left singular vectors}} as \(\bbb{\bm{U}^T}\bm{A = \S \Vt}\)
-            \item In the form of eigenvalue equation \(\bbb{\bm{u}^T}\bm{A}=\s \xxx{\bm{v}^T}\).
+            \item In the form of eigenvalue equation \(\bbb{\bm{u}^T}\bm{A}=\ttt{\sigma} \xxx{\bm{v}^T}\).
           \end{itemize}
         \item \(\S\)~--- a diagonal matrix consisting of the \ttt{\textbf{singular values} \(\bm{\sigma}\)} of \bm{A}. 
           \begin{itemize}
@@ -42,13 +42,13 @@
         \item \(\Vt\)~--- the orthogonal basis for \xxx{row space} of \bm{A}.
           \begin{itemize}
             \item Termed the \rrr{\textbf{right singular vectors}} as \(\bm{A}\rrr{\bm{V}} = \U \S\)
-            \item In the form of eigenvalue equation \(\bm{A}\rrr{\bm{v}}= \yyy{\bm{u}} \s\)
+            \item In the form of eigenvalue equation \(\bm{A}\rrr{\bm{v}}= \yyy{\bm{u}} \ttt{\sigma}\)
           \end{itemize}
       \end{itemize}
     \end{itemize}
   
   \newpage
-  \subsection{Computing SVD and Singular Values vs. Eigenvalues}\label{Computing SVD and Singular Values vs. Eigenvalues}
+  \subsection{Computing SVD}\label{Computing SVD}
   \begin{itemize}
     \item Assuming \tbm{A} is an \(\xxx{m} \times \yyy{n} \) matrix, then multiplying by the transpose yields two results that are the similar to eigendecomposition and dependent on the order of multiplication:
     \begin{align*}
@@ -69,15 +69,47 @@
     \begin{align*}
       \bm{A} = &~\U \S \Vt \\ 
       \swarrow &\hspace{14pt} \searrow \\
-      \bm{A}\rrr{\bm{V}} = \U \S \hspace{20pt}&\hspace{35pt} \bbb{\bm{U^T}}\bm{A} = \S \Vt \\
-      \bm{A}\yyy{\bm{v}}= \yyy{\bm{u}} \s \hspace{24pt}&\hspace{37pt} \xxx{\bm{u}^T}\bm{A}=\s \xxx{\bm{v}^T} 
+      \bbb{\bm{U^T}}\bm{A} = \S \Vt \hspace{20pt}&\hspace{35pt}\bm{A}\rrr{\bm{V}} = \U \S  \\
+      \xxx{\bm{u}^T}\bm{A}=\ttt{\sigma} \xxx{\bm{v}^T} \hspace{24pt}&\hspace{37pt} \bm{A}\yyy{\bm{v}}= \yyy{\bm{u}} \ttt{\sigma}  
     \end{align*}
-    \item 
+    \item I.e.,  the \bbb{left singular matrix \(\bm{U}^T\)} is a matrix whose \xxx{rows} describe a transformation of \(\bm{A} \to\) an \xxx{orthogonal basis \(\bm{V^T}\)} wherein each column scaled by its respective \ttt{singular value \(\sigma \)} describes the \xxx{row space} of \tbm{A}.
+    \item Likewise, the \rrr{right singular matrix \(\bm{V}\)} is a matrix whose \yyy{columns} describe a transformation of \(\bm{A} \to\) an \yyy{orthogonal basis \(\bm{U}\)} wherein each column scaled by its respective \ttt{singular value \(\sigma \)} describes the \yyy{column space} of \tbm{A}.   
   \end{itemize}
+
+  \subsection{Singular Values vs. Eigenvalues}\label{Singular Values vs. Eigenvalues}
+  \begin{itemize}
+    \item \(\operatorname{eig}(\bm{A}^T \bm{A}) = \operatorname{svd}(\bm{A})^2 \)
+    \item \(\operatorname{eig}(\bm{A}^T \bm{A}) = \operatorname{svd}(\bm{A}^T \bm{A}) \), as \(\operatorname{svd}(\bm{A}^T \bm{A})\) essentially squares the singular values.
+    \item \(\operatorname{eig}(\bm{A})~\text{and}~\operatorname{svd}(\bm{A}) \) are usually not related at all, unless \tbm{A} consists all real entries.
+    \begin{itemize}
+      \item Singular values are always real, whereas eigenvalues are likely to be complex.
+    \end{itemize}
+  \end{itemize}
+  
 
   \subsection{Relation to Matrix Subspaces}\label{SVD Relation to Subspaces}
   \begin{itemize}
-    \item 
+    \item Since the SVD provides orthogonal basis for the row and column spaces of a matrix, then it also tells provides the \hyperref[Null Space]{\ulink{kernel and cokernel}} of the matrix.
+    \item Again, revisiting the singular value equation and taking note of dimensions of each of the matrices yields plenty of useful information:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \underbrace{\bm{A}}_{\xxx{m} \times \yyy{n}} = \underbrace{\U}_{\xxx{m} \times \xxx{m}} \underbrace{\S}_{\xxx{m} \times \yyy{n}} \underbrace{\Vt}_{\yyy{n} \times \yyy{n}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Again, the \emph{rank \(r\)} is equal to the sum of singular values greater than 0, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \rank{\bm{A}=\Sigma~(\s > 0)}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Where the orthogonal basis \U~spanning all of \(R^{\xxx{m}}\) with:
+        \begin{itemize}
+          \item a \yyy{column space} of \yyy{\(1:\emph{r}\)}
+          \item and a \xxx{cokernel} of \xxx{\(\emph{r}+1:\xxx{m}\)}
+        \end{itemize}
+      \item Likewise, the orthogonal basis \(\Vt\) spanning all of \(R^\yyy{n}\) has:
+      \begin{itemize}
+        \item a \xxx{row space} of \xxx{\(1:\emph{r}\)}
+        \item and a \yyy{kernel} of \yyy{\(\emph{r}+1:n\)}
+      \end{itemize}
+    \end{itemize}
   \end{itemize}
 
   \subsection{Spectral Theory}\label{Spectral Theory}
