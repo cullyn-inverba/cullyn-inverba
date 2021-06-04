@@ -18,6 +18,9 @@
 ## Class Resources
 - [Molecular Cloning: A Laboratory Manual (Volume 1, 2, & 3)](https://1lib.us/book/1125219/a3d323)
 - [Join the Class Discord Server](https://discord.gg/xq2xU35rft)
+- [Weeks 1&ndash;5 Lectures](ppts/weeks1-5.pdf)
+- [Weeks 6&ndash;10 Lectures](ppts/weeks6-10.pdf)
+
 
 ## Assignments
 
