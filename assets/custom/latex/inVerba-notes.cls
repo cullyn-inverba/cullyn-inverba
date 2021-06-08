@@ -304,9 +304,9 @@
     \lhead{\userName}
     \chead{\textsc{\theTitle}}
     \rhead{\today}    
-    \lfoot{\class}
     \cfoot{\textsc{\institution}}
     \rfoot{\thepage}
+    \lfoot{\class}
 }
 
 \DeclareOption{quiz}{

@@ -1,0 +1,178 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+% chktex-file 21
+
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 256}
+\newcommand{\theTitle}{Final Exam}
+\newcommand{\institution}{Portland State University}
+
+\rfoot{\hyperref[toc]{\ulink{\thepage}}}
+
+\begin{document}
+
+\vspace*{90pt}
+
+\begin{table}[h]
+  \centering
+  \scalebox{1.5}{
+  \begin{tabular}{ccc}
+    \toprule
+    Page & Points  & Score \\
+    \midrule
+    \hyperlink{page.2}{\dlink{2}} & 3 & \\
+    \hyperlink{page.3}{\dlink{3}} & 2 & \\
+    \hyperlink{page.4}{\dlink{4}} & 2 & \\
+    \hyperlink{page.5}{\dlink{5}} & 2 & \\
+    \hyperlink{page.6}{\dlink{6}} & 2 & \\
+    \hyperlink{page.7}{\dlink{7}} & 3 & \\
+    \hyperlink{page.8}{\dlink{8}} & 4 & \\
+    \hyperlink{page.9}{\dlink{9}} & 6 & \\
+    \hyperlink{page.10}{\dlink{10}} & 2 & \\
+    \hyperlink{page.11}{\dlink{11}} & 2 & \\
+    \hyperlink{page.12}{\dlink{12}} & 2 & \\
+    \midrule
+    Total: & 30 & \\
+    \bottomrule
+    \end{tabular}}
+\end{table}\label{toc}
+
+\newpage
+
+\begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
+  \item Use the fact to help respond to the prompts 1(a), 1(b), and 1(c) below.
+  
+  \textbf{Fact I:} The matrix equation below is consistent:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix}7 & -3\\2 & 1\\9 & -6\\-3 & 2 \end{bmatrix}
+  \begin{bmatrix}-2\\-5\end{bmatrix}
+  =
+  \begin{bmatrix}1\\-9\\12\\-4\end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  \begin{enumerate}
+    \item \pts{1} Write the matrix equation as an equivalent vector equation.
+    \item \pts{2} Is \(\begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}\) in span\(\left\{ \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\} \)? Justify your response. 
+    \newpage
+    \item \pts{2} Recall that a set of vectors \(\{ \bm{v_1}, \bm{v_2}, \, \ldots , \bm{v_k} \}\) is linearly independent if the only solution to the equation 
+    \[c_1 \bm{v_1}+ c_2 \bm{v_2} + \cdots + c_k \bm{v_k} = \bm{0}
+    \]
+    is the trivial solution \(c_1=c_2=\cdots =c_k=0\).
+
+    Is the set \(S=\left\{ \begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}, \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\}\) linearly independent? Use the definition to justify your response.
+  \end{enumerate}
+
+  \newpage
+
+  \item Let \(C=\begin{bmatrix}8 & 6\\5 & 4\end{bmatrix}\) and \(D=\begin{bmatrix}2 & -3\\-2.5 & 4\end{bmatrix}\) for 2(a) and 2(b).
+  
+  \begin{enumerate}
+    \item \pts{2} Show that \(D=C^{-1}\) by showing that \(DC=I\). You must show some details though you can use a calculator to check your work.
+    
+    \newpage
+    
+    \item \pts{2} Use the fact that \(D=C^{-1}\) to solve the system of linear equations (you can check your answer with another method, but full credit will only be awarded to the use of \(C^{-1}\)).
+    \[
+    \begin{cases}
+    8x_1+6x_2=2 \\
+    5x_1+4x_2=-1.
+    \end{cases}
+    \]
+  \end{enumerate}
+
+  \newpage
+
+  \item Below is a matrix \(A\) and the reduced row echelon form o\(A\). Use this \(A\) for 3(a) and 3(b).
+    \[
+    A=
+    \begin{bmatrix*}[r]
+    3 & -1 & 7 & 3 \\
+    -2 & 2 & -2 & 7 \\
+    -5 & 9 & 3 & 3 \\
+    1 & 1 & 5 & 10 \\
+    5 & -3 & 9 & -4
+    \end{bmatrix*} 
+    \rightarrow
+    \underbrace{
+    \begin{bmatrix*}[r]
+    1 & 0 & 3 & 0 \\
+    0 & 1 & 2 & 0 \\
+    0 & 0 & 0 & 1 \\
+    0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0
+    \end{bmatrix*}
+    }_{\text{rref of }A}
+    \]
+  \begin{enumerate}
+    \item \pts{2} Determine a basis for Col \(A\). 
+    
+    \newpage
+    
+    \[
+      A=
+      \begin{bmatrix*}[r]
+        3 & -1 & 7 & 3 \\
+        -2 & 2 & -2 & 7 \\
+        -5 & 9 & 3 & 3 \\
+        1 & 1 & 5 & 10 \\
+        5 & -3 & 9 & -4
+      \end{bmatrix*} 
+      \rightarrow
+      \underbrace{
+        \begin{bmatrix*}[r]
+          1 & 0 & 3 & 0 \\
+          0 & 1 & 2 & 0 \\
+          0 & 0 & 0 & 1 \\
+          0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0
+        \end{bmatrix*}
+        }_{\text{rref of }A}
+        \]
+      \item \pts{2} Determine a basis for \(N(\bm{A})\).
+      \item \pts{1} Give the dimension of Col \tbm{A} and the dimension of Nul \tbm{A}.
+    \end{enumerate}
+
+    \newpage
+
+  \item \pts{2} Is \(\begin{bmatrix}1\\1\\2\end{bmatrix}\) an eigenvector of \(\begin{bmatrix}1 & -3 & 3\\3 & -5 & 3\\6 & -6 & 4\end{bmatrix}\)?  If so, find the eigenvalue with which it associates.
+  
+  \item \pts{2} Find the eigenvalues of \(\begin{bmatrix}-5 & 2\\-7 & 4\end{bmatrix}\).
+  
+  \newpage
+
+  \item \pts{2} Show that \(\lambda=-2\) is an eigenvalue of \(\begin{bmatrix}7 & 3\\3 & -1\end{bmatrix}\) by finding an eigenvector associated with it.
+  
+
+  \item \pts{2} Let \(\bm{u}=\begin{bmatrix*}[r] -2 \\ 1 \\ 1 \end{bmatrix*}\),  \(\bm{v}=\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix}\), and \(\bm{w}=\begin{bmatrix} 1 \\ 2\\ 0 \end{bmatrix}\) for 7(a), 7(b), and 7(c).
+  
+    \begin{enumerate}
+      \item \pts{2} Determine the distance between \(\bm{u}\) and \(\bm{v}\).
+      
+      \item \pts{2} Which of the vectors \(\bm{u}\), \(\bm{v}\), and \(\bm{w}\) are orthogonal to one another?
+      \vfill
+      
+      \newpage
+      
+      \item \pts{2} Consider the vectors \(\bm{u}\), \(\bm{v}\), and \(\bm{w}\) as points in \(\R^3\). Now think about the plane that contains those three points. Give a parametrization of all the points on this plane or give a scalar equation that defines the plane. (You only need to do one, you will not get extra points for doing both, and I'll only grade the first one you do so don't submit both expecting you have a backup plan.) Again for reference:
+      \[\bm{u}=\begin{bmatrix*}[r] -2 \\ 1 \\ 1 \end{bmatrix*}, \quad  \bm{v}=\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix}, \quad \text{and}\quad \bm{w}=\begin{bmatrix} 1 \\ 2\\ 0 \end{bmatrix}
+      \]
+    \end{enumerate}
+
+    \newpage
+
+    \item \pts{2} Consider three geometric objects in \(\R^3\), two planes and a line. One plane is given by the equation \(2x-z=0\) and the other is given by the equation \(3x+2z=0\). The line is parametrized by
+    \[\bm{x}=\begin{bmatrix*}[r] x \\ y \\ z \end{bmatrix*} = \begin{bmatrix*}[r] 0 \\ 0 \\ 1 \end{bmatrix*} + t \begin{bmatrix*}[r] -1 \\ 5 \\ 0 \end{bmatrix*}
+    \]
+    for any real number \(t\). Do the three geometric objects share a common point of intersection? How do you know?
+    
+    \newpage
+
+    \item \pts{2} Suppose \(f(x)\) is a degree two polynomial function in one variable. That is, let 
+    \[ f(x)=ax^2+bx+c\]
+    Determine coefficients \(a, b\), and \(c\) so that \(f(-1)=-2\), \(f(1)=4\), and \(f(3)=2\). \par (This is called an \textit{interpolating} polynomial since it might be used to estimate values between the data points given.) \par
+
+    \textit{Hint:} The requirement that \(f(-1)=-2\) yields the equation 
+    \[-2=a(-1)^2+b(-1)+c\] % chktex 3
+    Use the other requirements to build a system of three equations in three unknowns. Then solve.
+  \end{enumerate}
+\end{document}
