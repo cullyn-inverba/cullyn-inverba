@@ -49,29 +49,90 @@
   =
   \begin{bmatrix}1\\-9\\12\\-4\end{bmatrix}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
+
   \begin{enumerate}
     \item \pts{1} Write the matrix equation as an equivalent vector equation.
+    \basec{\begin{align*}
+      \bm{A\rrr{x}}&=\bm{\chap{b}} \\
+      &\downarrow \\
+      \begin{bmatrix}
+        \yyy{a}_{\xxx{1}\yyy{1}} & \yyy{a}_{\xxx{1}\yyy{2}} & \cdots & \yyy{a}_{\xxx{1}\yyy{n}} \\
+        \yyy{a}_{\xxx{2}\yyy{1}} & \yyy{a}_{\xxx{2}\yyy{2}} & \cdots & \yyy{a}_{\xxx{2}\yyy{n}} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        \yyy{a}_{\xxx{m}\yyy{1}} & \yyy{a}_{\xxx{m}\yyy{2}} & \cdots & \yyy{a}_{\xxx{m}\yyy{n}}
+        \end{bmatrix}
+        \rrr{\begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}}
+        &=
+        \chap{\begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{bmatrix}} \\
+        &\downarrow && \text{Given equation}\\
+        \Aboxed{\rrr{-2}\yyy{\bm{a_1}} - \rrr{5}\yyy{\bm{a_2}} &= \chap{\bm{b}}} \\ \\
+        \text{where}~ \yyy{\bm{a_1}},\yyy{\bm{a_2}} = \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix}~&\text{and}~\chap{\bm{b}}= \begin{bmatrix} 1 \\ -9 \\ 12 \\ -4 \end{bmatrix}
+    \end{align*}}
+    
     \item \pts{2} Is \(\begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}\) in span\(\left\{ \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\} \)? Justify your response. 
-    \newpage
+    \medskip
+    \basec{\begin{itemize}
+      \item {\large{\ttt{Yes}}}, \chap{\tbm{b}} is in the span of \tbm{A}.
+      \item Span can be defined as set of all finite linear combinations of vectors of \tbm{A} over field \(K\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \operatorname{span}(\bm{A})=\left\lbrace\left. \sum_{i = 1}^{k} \lambda_i\bm{v}_i ~ \right| k \in \mathbb{N}, \yyy{\bm{v}_i} \in \bm{A}, \rrr{\lambda_i} \in K \right\rbrace
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Essentially, this is equivalent to asking if there exists such vector \tbm{x} such that \(\bm{A\rrr{x}}=\chap{\bm{b}}\). Part (a) showed that there is such vector \((\rrr{\bm{x}}= \begin{bmatrix} -2 & 5 \end{bmatrix})\), thus \chap{\bm{b}} is in the span of \tbm{A}. 
+      \item This can be confirmed by row reducing, just in case you don't trust random facts:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \operatorname{rref}\left(\begin{bmatrix}
+      7 & -3 & 1 \\
+      2 & 1 & -9 \\
+      9 & -6 & 12 \\
+      -3 & 2 & -4  
+      \end{bmatrix}\right) =
+      \begin{bmatrix}
+      1 & 0 & \rrr{-2} \\
+      0 & 1 & \rrr{-5} \\
+      0 & 0 & 0 \\
+      0 & 0 & 0 
+      \end{bmatrix}, \quad \bm{x}= \begin{bmatrix} -2 \\ -5 \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+    \end{itemize}}
+    
     \item \pts{2} Recall that a set of vectors \(\{ \bm{v_1}, \bm{v_2}, \, \ldots , \bm{v_k} \}\) is linearly independent if the only solution to the equation 
     \[c_1 \bm{v_1}+ c_2 \bm{v_2} + \cdots + c_k \bm{v_k} = \bm{0}
     \]
     is the trivial solution \(c_1=c_2=\cdots =c_k=0\).
 
-    Is the set \(S=\left\{ \begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}, \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\}\) linearly independent? Use the definition to justify your response.
+    Is the set \(S=\left\{ \begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}, \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\}\) linearly independent? 
+    \basec{\begin{itemize}
+      \item {\large{\fff{No}}}, the set \(S\) is linearly dependent; the \yyy{column space} must span all of \(\R^\xxx{m}\) in order to be linearly dependent.
+      \item A good way to test this is using the relationship between the \yyy{column space} and \xxx{cokernel}. The dot with the column space \(S\) and a vector from the \xxx{cokernel} must be orthogonal, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \xxx{\bm{x}^T}\{\lambda_1 \yyy{a_1} + \cdots + \lambda_n \yyy{a_n}\} = 0
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item This implies that the only vector to make this equation true is the zero vector, if the set is linearly independent (trivial solution). Extrapolating using the rank-nullity theorem leads to the conclusion that the kernel must be empty and the set must but full rank in order to be linearly independent.
+      \item First, the number of rows are more than number of columns, so without any calculation, one can tell nullity is out least one. However, using the rref form above clearly shows that dimension of the \yyy{column space} is \yyy{2}, implying the \xxx{cokernel's} dimension is \xxx{2} as well; a basis for the \xxx{cokernel} can be described as:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \xxx{\left(\begin{bmatrix} -21/13 \\ 15/13 \\ 1 \\ 0 \end{bmatrix}\begin{bmatrix} 7/13 \\ -5/13 \\ 0 \\ 1 \end{bmatrix}\right)}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      thus, (\(\lambda \in \R\)):
+      \begin{align*}
+        \xxx{{x_1}^T}\{\lambda\yyy{a_1} + \lambda\yyy{a_2}+ \lambda\yyy{\bm{a_3}} \} = 0 \\
+        \xxx{{x_2}^T}\{\lambda\yyy{a_1} + \lambda\yyy{a_2}+ \lambda\yyy{\bm{a_3}} \} = 0 
+      \end{align*}
+      I.e., not trivial solutions \to~\(S\) is \fff{linearly dependent}.
+    \end{itemize}}
+    
   \end{enumerate}
 
   \newpage
 
-  \item Let \(C=\begin{bmatrix}8 & 6\\5 & 4\end{bmatrix}\) and \(D=\begin{bmatrix}2 & -3\\-2.5 & 4\end{bmatrix}\) for 2(a) and 2(b).
+  \item Let \(\bm{C}=\begin{bmatrix}8 & 6\\5 & 4\end{bmatrix}\) and \(\bm{D}=\begin{bmatrix}2 & -3\\-2.5 & 4\end{bmatrix}\) for 2(a) and 2(b).
   
   \begin{enumerate}
-    \item \pts{2} Show that \(D=C^{-1}\) by showing that \(DC=I\). You must show some details though you can use a calculator to check your work.
+    \item \pts{2} Show that \(\bm{D}=\bm{C}^{-1}\) by showing that \(\bm{DC}=\bm{I}\). You must show some details though you can use a calculator to check your work.
     
     \newpage
     
-    \item \pts{2} Use the fact that \(D=C^{-1}\) to solve the system of linear equations (you can check your answer with another method, but full credit will only be awarded to the use of \(C^{-1}\)).
+    \item \pts{2} Use the fact that \(\bm{D}=\bm{C}^{-1}\) to solve the system of linear equations (you can check your answer with another method, but full credit will only be awarded to the use of \(C^{-1}\)).
     \[
     \begin{cases}
     8x_1+6x_2=2 \\
