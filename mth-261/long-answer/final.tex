@@ -22,15 +22,12 @@
     \midrule
     \hyperlink{page.2}{\dlink{2}} & 3 & \\
     \hyperlink{page.3}{\dlink{3}} & 2 & \\
-    \hyperlink{page.4}{\dlink{4}} & 2 & \\
-    \hyperlink{page.5}{\dlink{5}} & 2 & \\
-    \hyperlink{page.6}{\dlink{6}} & 2 & \\
-    \hyperlink{page.7}{\dlink{7}} & 3 & \\
-    \hyperlink{page.8}{\dlink{8}} & 4 & \\
-    \hyperlink{page.9}{\dlink{9}} & 6 & \\
-    \hyperlink{page.10}{\dlink{10}} & 2 & \\
-    \hyperlink{page.11}{\dlink{11}} & 2 & \\
-    \hyperlink{page.12}{\dlink{12}} & 2 & \\
+    \hyperlink{page.4}{\dlink{4}} & 4 & \\
+    \hyperlink{page.5}{\dlink{5}} & 5 & \\
+    \hyperlink{page.6}{\dlink{6}} & 6 & \\
+    \hyperlink{page.7}{\dlink{7}} &  & \\
+    \hyperlink{page.8}{\dlink{8}} &  & \\
+    \hyperlink{page.9}{\dlink{9}} &  & \\
     \midrule
     Total: & 30 & \\
     \bottomrule
@@ -65,17 +62,17 @@
         &=
         \chap{\begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{bmatrix}} \\
         &\downarrow && \text{Given equation}\\
-        \Aboxed{\rrr{-2}\yyy{\bm{a_1}} - \rrr{5}\yyy{\bm{a_2}} &= \chap{\bm{b}}} \\ \\
+        \rrr{-2}\yyy{\bm{a_1}} - \rrr{5}\yyy{\bm{a_2}} &= \chap{\bm{b}} \\ \\
         \text{where}~ \yyy{\bm{a_1}},\yyy{\bm{a_2}} = \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix}~&\text{and}~\chap{\bm{b}}= \begin{bmatrix} 1 \\ -9 \\ 12 \\ -4 \end{bmatrix}
     \end{align*}}
     
     \item \pts{2} Is \(\begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}\) in span\(\left\{ \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\} \)? Justify your response. 
     \medskip
     \basec{\begin{itemize}
-      \item {\large{\ttt{Yes}}}, \chap{\tbm{b}} is in the span of \tbm{A}.
+      \item \true{Yes}, \chap{\tbm{b}} is in the span of \tbm{A}.
       \item Span can be defined as set of all finite linear combinations of vectors of \tbm{A} over field \(K\), i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \operatorname{span}(\bm{A})=\left\lbrace\left. \sum_{i = 1}^{k} \lambda_i\bm{v}_i ~ \right| k \in \mathbb{N}, \yyy{\bm{v}_i} \in \bm{A}, \rrr{\lambda_i} \in K \right\rbrace
+      \operatorname{span}(\bm{A})=\left\lbrace\left. \sum_{i = 1}^{k} \rrr{\lambda_i}\,\yyy{\bm{a}_i} ~ \right| k \in \mathbb{N}, \yyy{\bm{a}_i} \in \bm{A}, \rrr{\lambda_i} \in K \right\rbrace
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \item Essentially, this is equivalent to asking if there exists such vector \tbm{x} such that \(\bm{A\rrr{x}}=\chap{\bm{b}}\). Part (a) showed that there is such vector \((\rrr{\bm{x}}= \begin{bmatrix} -2 & 5 \end{bmatrix})\), thus \chap{\bm{b}} is in the span of \tbm{A}. 
       \item This can be confirmed by row reducing, just in case you don't trust random facts:
@@ -103,7 +100,7 @@
 
     Is the set \(S=\left\{ \begin{bmatrix} 1 \\ -9 \\ 12\\-4 \end{bmatrix}, \begin{bmatrix} 7 \\ 2 \\ 9 \\ -3 \end{bmatrix}, \begin{bmatrix} -3 \\ 1 \\ -6 \\ 2 \end{bmatrix} \right\}\) linearly independent? 
     \basec{\begin{itemize}
-      \item {\large{\fff{No}}}, the set \(S\) is linearly dependent; the \yyy{column space} must span all of \(\R^\xxx{m}\) in order to be linearly dependent.
+      \item \false{No}, the set \(S\) is linearly dependent; the \yyy{column space} must span all of \(\R^\xxx{m}\) in order to be linearly dependent.
       \item A good way to test this is using the relationship between the \yyy{column space} and \xxx{cokernel}. The dot with the column space \(S\) and a vector from the \xxx{cokernel} must be orthogonal, i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \xxx{\bm{x}^T}\{\lambda_1 \yyy{a_1} + \cdots + \lambda_n \yyy{a_n}\} = 0
@@ -111,7 +108,7 @@
       \item This implies that the only vector to make this equation true is the zero vector, if the set is linearly independent (trivial solution). Extrapolating using the rank-nullity theorem leads to the conclusion that the kernel must be empty and the set must but full rank in order to be linearly independent.
       \item First, the number of rows are more than number of columns, so without any calculation, one can tell nullity is out least one. However, using the rref form above clearly shows that dimension of the \yyy{column space} is \yyy{2}, implying the \xxx{cokernel's} dimension is \xxx{2} as well; a basis for the \xxx{cokernel} can be described as:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \xxx{\left(\begin{bmatrix} -21/13 \\ 15/13 \\ 1 \\ 0 \end{bmatrix}\begin{bmatrix} 7/13 \\ -5/13 \\ 0 \\ 1 \end{bmatrix}\right)}
+      \xxx{\left\{\begin{bmatrix} -21/13 \\ 15/13 \\ 1 \\ 0 \end{bmatrix}\begin{bmatrix} 7/13 \\ -5/13 \\ 0 \\ 1 \end{bmatrix}\right\}}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       thus, (\(\lambda \in \R\)):
       \begin{align*}
@@ -130,7 +127,29 @@
   \begin{enumerate}
     \item \pts{2} Show that \(\bm{D}=\bm{C}^{-1}\) by showing that \(\bm{DC}=\bm{I}\). You must show some details though you can use a calculator to check your work.
     
-    \newpage
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \hspace{-24pt}\bm{DC} =
+    \begin{bmatrix}
+    \bbb{8} & \chap{6} \\
+    \bbb{5} & \chap{4} 
+    \end{bmatrix} 
+    \begin{bmatrix}
+    \emph{2} & \rrr{-3} \\
+    \emph{-2.5} & \rrr{4} 
+    \end{bmatrix}
+    = 
+    \begin{pmatrix}
+      \emph{2} \begin{bmatrix} \bbb{8} \\ \bbb{5} \end{bmatrix} + \emph{-2.5} \begin{bmatrix} \chap{6} \\ \chap{4} \end{bmatrix} &
+      \rrr{-3} \begin{bmatrix} \bbb{8} \\ \bbb{5} \end{bmatrix} + \rrr{4} \begin{bmatrix} \chap{6} \\ \chap{4} \end{bmatrix} \end{pmatrix} 
+      =
+      \begin{bmatrix}
+      1 & 0 \\
+      0 & 1 
+      \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{C}^{-1}\bm{C} = \bm{I} = \bm{DC}, \quad \text{thus,}~\ttt{\bm{D}= \bm{C}^{-1}}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     \item \pts{2} Use the fact that \(\bm{D}=\bm{C}^{-1}\) to solve the system of linear equations (you can check your answer with another method, but full credit will only be awarded to the use of \(C^{-1}\)).
     \[
@@ -139,84 +158,146 @@
     5x_1+4x_2=-1.
     \end{cases}
     \]
+
+    \basec{\begin{align*}
+      \bm{Cx}&=\bm{b} && \bm{b}= \begin{bmatrix} 2 \\ -1 \end{bmatrix} \\
+      \bm{C}^{-1}\bm{Cx}&=\bm{C}^{-1}\bm{b} \\
+      \bm{x} &= \bm{C}^{-1}\bm{b} \\
+      \bm{x} &= \bm{D}\bm{b} && \ttt{\bm{D=C}^{-1}}\\ 
+      \bm{x} &= \begin{bmatrix}
+      2 & -3 \\
+      -2.5 & 4  
+      \end{bmatrix}\begin{bmatrix} 2 \\ -1 \end{bmatrix} \\
+      \bm{x} &= \begin{bmatrix} 7 \\ -9 \end{bmatrix}
+    \end{align*}}
+    
   \end{enumerate}
 
   \newpage
 
-  \item Below is a matrix \(A\) and the reduced row echelon form o\(A\). Use this \(A\) for 3(a) and 3(b).
+  \item Below is a matrix \(\bm{A}\) and the reduced row echelon form of \(\bm{A}\). Use this \(\bm{A}\) for 3(a) and 3(b).
     \[
     A=
     \begin{bmatrix*}[r]
-    3 & -1 & 7 & 3 \\
-    -2 & 2 & -2 & 7 \\
-    -5 & 9 & 3 & 3 \\
-    1 & 1 & 5 & 10 \\
-    5 & -3 & 9 & -4
+    \yyy{3 } & \yyy{-1}  & 7  & \yyy{3 }\\
+    \yyy{-2}  &\yyy{ 2}  & -2  & \yyy{7 }\\
+    \yyy{-5}  &\yyy{ 9}  & 3  & \yyy{3 }\\
+    \yyy{1 } & \yyy{1 } & 5  & \yyy{10} \\
+    \yyy{5 } & \yyy{-3}  & 9  & \yyy{-4}
     \end{bmatrix*} 
     \rightarrow
     \underbrace{
     \begin{bmatrix*}[r]
-    1 & 0 & 3 & 0 \\
-    0 & 1 & 2 & 0 \\
-    0 & 0 & 0 & 1 \\
-    0 & 0 & 0 & 0 \\
-    0 & 0 & 0 & 0
+    \yyy{1} & \yyy{0} & 3 & \yyy{0} \\
+    \yyy{0} & \yyy{1} & 2 & \yyy{0} \\
+    \yyy{0} & \yyy{0} & 0 & \yyy{1} \\
+    \yyy{0} & \yyy{0} & 0 & \yyy{0} \\
+    \yyy{0} & \yyy{0} & 0 & \yyy{0}
     \end{bmatrix*}
     }_{\text{rref of }A}
     \]
   \begin{enumerate}
-    \item \pts{2} Determine a basis for Col \(A\). 
+    \item \pts{2} Determine a basis for \(C(\bm{A})\). 
     
-    \newpage
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \yyy{C(\bm{A})}= \left\{
+      \begin{bmatrix} 3 \\ -2 \\ -5 \\ 1 \\ 5 \end{bmatrix}
+      \begin{bmatrix} -1 \\ 2 \\ 9 \\ 1 \\ -3 \end{bmatrix}
+      \begin{bmatrix} 3 \\ 7 \\ 3 \\ 10 \\ -4 \end{bmatrix}
+     \right\}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \pts{2} Determine a basis for \(N(\bm{A})\).
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \yyy{N(\bm{A})} = \begin{bmatrix} -3 \\ -2 \\ 1 \\ 0 \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \pts{1} Give the dimension of \(C(\bm{A})\) and the dimension of \(N(\bm{A})\)
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \dim{\yyy{C(\bm{A})}} = 3, \quad \dim{\yyy{N(\bm{A})}} = 1
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Bonus: dimension of row space and left null space:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \dim{\xxx{C(\bm{A^T})}} = 3, \quad \dim{\xxx{N(\bm{A^T})}} = 2
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Double-checking using rank-nullity theorem: \((\bm{A}~\text{is}~\xxx{5} \times \yyy{4})\):
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \dim{\yyy{C(\bm{A})}} + \dim{\xxx{N(\bm{A^T})}} = \xxx{5} 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \dim{\xxx{C(\bm{A^T})}} + \dim{\yyy{N(\bm{A})}} = \yyy{4}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    \[
-      A=
-      \begin{bmatrix*}[r]
-        3 & -1 & 7 & 3 \\
-        -2 & 2 & -2 & 7 \\
-        -5 & 9 & 3 & 3 \\
-        1 & 1 & 5 & 10 \\
-        5 & -3 & 9 & -4
-      \end{bmatrix*} 
-      \rightarrow
-      \underbrace{
-        \begin{bmatrix*}[r]
-          1 & 0 & 3 & 0 \\
-          0 & 1 & 2 & 0 \\
-          0 & 0 & 0 & 1 \\
-          0 & 0 & 0 & 0 \\
-          0 & 0 & 0 & 0
-        \end{bmatrix*}
-        }_{\text{rref of }A}
-        \]
-      \item \pts{2} Determine a basis for \(N(\bm{A})\).
-      \item \pts{1} Give the dimension of Col \tbm{A} and the dimension of Nul \tbm{A}.
-    \end{enumerate}
+    }
+  \end{enumerate}
 
     \newpage
 
-  \item \pts{2} Is \(\begin{bmatrix}1\\1\\2\end{bmatrix}\) an eigenvector of \(\begin{bmatrix}1 & -3 & 3\\3 & -5 & 3\\6 & -6 & 4\end{bmatrix}\)?  If so, find the eigenvalue with which it associates.
+  \item \pts{2} Is \(\begin{bmatrix}1\\1\\2\end{bmatrix}\) \((\eigv)\) an eigenvector of \(\begin{bmatrix}1 & -3 & 3\\3 & -5 & 3\\6 & -6 & 4\end{bmatrix}\) \((\basec{\bm{A}})\)?  If so, find the eigenvalue with which it associates.
+  
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{A}\eigv = \begin{bmatrix} 4 \\ 4 \\ 8 \end{bmatrix}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \basec{\begin{itemize}
+    \item \true{Yes}, \(\begin{bmatrix} 4 \\ 4 \\ 8 \end{bmatrix}\) is clearly a scalar multiple of \(\eigv\); the scalar is the associated \chap{eigenvalue}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \eigl\eigv=
+    \chap{4}\str{\begin{bmatrix} 1 \\ 1 \\ 2 \end{bmatrix}} =
+    \begin{bmatrix} 4 \\ 4 \\ 8 \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+  \end{itemize}}
+  
   
   \item \pts{2} Find the eigenvalues of \(\begin{bmatrix}-5 & 2\\-7 & 4\end{bmatrix}\).
   
-  \newpage
+  \basec{\begin{align*}
+    \det{\bm{A}-\eigl \bm{I}} = 0 \\
+    \operatorname{det}\left(\begin{bmatrix} % chktex 35
+    -5 - \eigl & 2 \\
+    -7 & 4 - \eigl 
+    \end{bmatrix}\right) = 0 \\
+    (-5-\eigl)(4-\eigl)+14 = 0 \\
+    \eigl = -3,2
+  \end{align*}}
 
   \item \pts{2} Show that \(\lambda=-2\) is an eigenvalue of \(\begin{bmatrix}7 & 3\\3 & -1\end{bmatrix}\) by finding an eigenvector associated with it.
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \operatorname{N}\left(\begin{bmatrix} % chktex 35
+    7 \chap{-2} & 3 \\
+    3 & -1 - \chap{-2} 
+    \end{bmatrix}\right) = \str{\begin{bmatrix} -\tfrac{1}{3} \\ 1 \end{bmatrix}}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
+  
+  \newpage
 
   \item \pts{2} Let \(\bm{u}=\begin{bmatrix*}[r] -2 \\ 1 \\ 1 \end{bmatrix*}\),  \(\bm{v}=\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix}\), and \(\bm{w}=\begin{bmatrix} 1 \\ 2\\ 0 \end{bmatrix}\) for 7(a), 7(b), and 7(c).
   
     \begin{enumerate}
       \item \pts{2} Determine the distance between \(\bm{u}\) and \(\bm{v}\).
-      
+      \basec{\begin{align*}
+        \bm{p}&= \bm{u}-\bm{v} = \begin{bmatrix} -5 \\ -3  \\ 0 \end{bmatrix}  \\
+        \sqrt{\bm{p}^T \bm{p}} &= \emph{\sqrt{34}}
+      \end{align*}}
       \item \pts{2} Which of the vectors \(\bm{u}\), \(\bm{v}\), and \(\bm{w}\) are orthogonal to one another?
-      \vfill
+      \basec{\begin{align*}
+        \bm{u}^T \bm{v} &= -1\\
+        \bm{u}^T \bm{w} &= 0 && \text{\true{\tbm{u} and \tbm{w} are orthogonal}}\\
+        \bm{v}^T \bm{w} &= 11 
+      \end{align*}}
+      \item \pts{2} Consider the vectors \(\bm{u}\), \(\bm{v}\), and \(\bm{w}\) as points in \(\R^3\). Now think about the plane that contains those three points. Give a parametrization of all the points on this plane or give a scalar equation that defines the plane.
       
-      \newpage
+      \basec{\begin{align*}
+        p_1 &= u - v = \begin{bmatrix} -5 & -3 & 0 \end{bmatrix}\\
+        p_2 &= w - v = \begin{bmatrix} -2 & -2 & -1 \end{bmatrix} && \text{Generate two points on plane,}~p_1, p_2\\
+        p_3 &= p_1 \times p_2 = \begin{bmatrix} 3 & -5 & 4 \end{bmatrix} && \text{Find vector normal to plane}\\
+        b &= 3x-5y+4z && \text{Use normal vector to generate equation}\\ 
+        b &= 3(-2)-5(-2)+4(-1)  && \text{Plug in a point on plane to find solution}\\ 
+        b &= -7 && \downarrow
+      \end{align*}
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \text{Scalar equation of plane:}~\emph{3x-5y+4z+7=0}
+      \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       
-      \item \pts{2} Consider the vectors \(\bm{u}\), \(\bm{v}\), and \(\bm{w}\) as points in \(\R^3\). Now think about the plane that contains those three points. Give a parametrization of all the points on this plane or give a scalar equation that defines the plane. (You only need to do one, you will not get extra points for doing both, and I'll only grade the first one you do so don't submit both expecting you have a backup plan.) Again for reference:
-      \[\bm{u}=\begin{bmatrix*}[r] -2 \\ 1 \\ 1 \end{bmatrix*}, \quad  \bm{v}=\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix}, \quad \text{and}\quad \bm{w}=\begin{bmatrix} 1 \\ 2\\ 0 \end{bmatrix}
-      \]
     \end{enumerate}
 
     \newpage

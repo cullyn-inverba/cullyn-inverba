@@ -88,11 +88,11 @@
     \item The dimensionality of the column or row space of a matrix is equal to the \hyperref[Rank Terminology]{\ulink{rank}} of the matrix.
     \item \jjj{Rank-nullity theorem}: the dimension of the domain of a linear map is the sum of its rank and the nullity, i.e., the dimensionality of the \yyy{column space} and the nullity of the \xxx{left null space} must equal the \xxx{rows} of the original matrix: 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \dim(\yyy{C(\bm{A})}) + \dim(\xxx{N(\bm{A}^T)}) = \xxx{m}
+      \dim{\yyy{C(\bm{A})}} + \dim{\xxx{N(\bm{A}^T)}} = \xxx{m}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Likewise, the dimensionality of the \xxx{row space} and the nullity of the \yyy{right null space} must equal the \yyy{columns} of the original matrix:
+    Likewise, the dimensionality of the \xxx{row space} and the nullity of the \yyy{null space} must equal the \yyy{columns} of the original matrix:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \dim(\xxx{C(\bm{A}^T)}) + \dim(\yyy{N(\bm{A})}) = \yyy{n}
+      \dim{\xxx{C(\bm{A}^T)}} + \dim{\yyy{N(\bm{A})}} = \yyy{n}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item An example that illustrates the four subspaces and their dimensionality:
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,8 +108,8 @@
       \yyy{C(\bm{A})} = \left\{ 
         \begin{bmatrix} 1 \\ 3 \end{bmatrix},
         \begin{bmatrix} 2 \\ 3 \end{bmatrix}
-      \right\} &\in \mathbb{R}^2 \quad \dim(\yyy{C(\bm{A})}) = 2 \\
-      \xxx{N(\bm{A}^T)} = \left\{\hspace{60pt}\right\} &\in \mathbb{R} \quad \dim(\xxx{N(\bm{A}^T)}) = 0 \\
+      \right\} &\in \mathbb{R}^2 \quad \dim{\yyy{C(\bm{A})}} = 2 \\
+      \xxx{N(\bm{A}^T)} = \left\{\hspace{60pt}\right\} &\in \mathbb{R} \quad \dim{\xxx{N(\bm{A}^T)}} = 0 \\
       \\
       \hspace{83pt} 2 + 0 &= \xxx{2} \\
       \\
@@ -117,9 +117,9 @@
         \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}^T,
         \begin{bmatrix} 3 \\ 3 \\ -3 \end{bmatrix}^T
       \right\}
-      &\in \mathbb{R}^3 \quad \dim(\xxx{C(\bm{A}^T)}) = 2 \\
+      &\in \mathbb{R}^3 \quad \dim{\xxx{C(\bm{A}^T)}} = 2 \\
       \yyy{N(\bm{A})} = \left\{\begin{bmatrix} 2 \\ -1 \\ 1 \end{bmatrix}\right\} 
-      &\in \mathbb{R}^3 \quad \dim(\yyy{N(\bm{A})}) = 1 \\
+      &\in \mathbb{R}^3 \quad \dim{\yyy{N(\bm{A})}} = 1 \\
       \\
       2 + 1 &= \yyy{3}
     \end{align*}
