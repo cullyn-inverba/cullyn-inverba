@@ -338,18 +338,27 @@
       &\downarrow \text{Using \bbb{left inverse} to find \rrr{regression coefficients}}\\
       \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T}\rrr{\bm{x}} &= \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b} \\
       \rrr{\bm{x}} &= \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b} \\
-      \rrr{\bm{x}} &= \begin{bmatrix} -4/3 \\ 11/3 \\ 3 \end{bmatrix} \\
+      \rrr{\bm{x}} &= \begin{bmatrix} -4/3 \\ 11/3 \\ 3 \end{bmatrix} & \text{{\scriptsize{\minimal{that worked?}}}} \\
       &\downarrow \\
       a &= -\frac{4}{3},\quad b = \frac{11}{3},\quad c = 3 \\
       &\downarrow \\
       -2&=-\tfrac{4}{3}(-1)^2+\tfrac{11}{3}(-1)3  \\
       4&=-\tfrac{4}{3}(1)^2+\tfrac{11}{3}(1)+3 \\
       2&=-\tfrac{4}{3}(3)^2+\tfrac{11}{3}(3)+3 \\
-      && \text{{\scriptsize{\minimal{that worked?}}}}
+      & \quad \\
+      &\text{{\scriptsize\minimal{Wait, rref will work too, yeah?}}} \\\\
+      &\operatorname{rref}\left(\begin{bmatrix}[ccc|c]
+        1 & -1 & 1 & -2\\
+        2 & 1 & 1 & 4\\
+        9 & 3 & 1 & 2 
+      \end{bmatrix}\right) =
+      \begin{bmatrix}
+      1 & 0 & 0 & \rrr{-4/3} \\
+      0 & 1 & 0 & \rrr{11/3} \\
+      0 & 0 & 1 & \rrr{3}
+      \end{bmatrix} & \text{{\scriptsize{\minimal{cool}}}}
     \end{align*}}
-    \basec{\begin{itemize}
-      \item I didn't think that was going to work. I feel like I did something wrong, and it happened to work. I mean, I knew it would work if \tbm{A} was full rank matrix, but I don't know if \tbm{A} was defined correctly. How were we supposed to do this?
-    \end{itemize}}
+    
     
   \end{enumerate}
 \end{document}
