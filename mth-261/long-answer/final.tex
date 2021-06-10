@@ -1,6 +1,7 @@
 \documentclass[basic]{inVerba-notes}
 \usepackage{inVerba-math}
 % chktex-file 21
+% chktex-file 3
 
 \newcommand{\userName}{Cullyn Newman}
 \newcommand{\class}{MTH:\@ 256}
@@ -25,9 +26,9 @@
     \hyperlink{page.4}{\dlink{4}} & 4 & \\
     \hyperlink{page.5}{\dlink{5}} & 5 & \\
     \hyperlink{page.6}{\dlink{6}} & 6 & \\
-    \hyperlink{page.7}{\dlink{7}} &  & \\
-    \hyperlink{page.8}{\dlink{8}} &  & \\
-    \hyperlink{page.9}{\dlink{9}} &  & \\
+    \hyperlink{page.7}{\dlink{7}} & 6 & \\
+    \hyperlink{page.8}{\dlink{8}} & 2 & \\
+    \hyperlink{page.9}{\dlink{9}} & 2 & \\
     \midrule
     Total: & 30 & \\
     \bottomrule
@@ -35,6 +36,7 @@
 \end{table}\label{toc}
 
 \newpage
+
 
 \begin{enumerate}[align=left, leftmargin=0pt, labelindent=\parindent, listparindent=\parindent, labelwidth=0pt, itemindent=!]\color{minor}
   \item Use the fact to help respond to the prompts 1(a), 1(b), and 1(c) below.
@@ -75,6 +77,7 @@
       \operatorname{span}(\bm{A})=\left\lbrace\left. \sum_{i = 1}^{k} \rrr{\lambda_i}\,\yyy{\bm{a}_i} ~ \right| k \in \mathbb{N}, \yyy{\bm{a}_i} \in \bm{A}, \rrr{\lambda_i} \in K \right\rbrace
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \item Essentially, this is equivalent to asking if there exists such vector \tbm{x} such that \(\bm{A\rrr{x}}=\chap{\bm{b}}\). Part (a) showed that there is such vector \((\rrr{\bm{x}}= \begin{bmatrix} -2 & 5 \end{bmatrix})\), thus \chap{\bm{b}} is in the span of \tbm{A}. 
+      
       \item This can be confirmed by row reducing, just in case you don't trust random facts:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \operatorname{rref}\left(\begin{bmatrix}
@@ -92,7 +95,6 @@
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       
     \end{itemize}}
-    
     \item \pts{2} Recall that a set of vectors \(\{ \bm{v_1}, \bm{v_2}, \, \ldots , \bm{v_k} \}\) is linearly independent if the only solution to the equation 
     \[c_1 \bm{v_1}+ c_2 \bm{v_2} + \cdots + c_k \bm{v_k} = \bm{0}
     \]
@@ -229,7 +231,7 @@
     }
   \end{enumerate}
 
-    \newpage
+    \newpage 
 
   \item \pts{2} Is \(\begin{bmatrix}1\\1\\2\end{bmatrix}\) \((\eigv)\) an eigenvector of \(\begin{bmatrix}1 & -3 & 3\\3 & -5 & 3\\6 & -6 & 4\end{bmatrix}\) \((\basec{\bm{A}})\)?  If so, find the eigenvalue with which it associates.
   
@@ -270,7 +272,7 @@
   
   \newpage
 
-  \item \pts{2} Let \(\bm{u}=\begin{bmatrix*}[r] -2 \\ 1 \\ 1 \end{bmatrix*}\),  \(\bm{v}=\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix}\), and \(\bm{w}=\begin{bmatrix} 1 \\ 2\\ 0 \end{bmatrix}\) for 7(a), 7(b), and 7(c).
+  \item  Let \(\bm{u}=\begin{bmatrix*}[r] -2 \\ 1 \\ 1 \end{bmatrix*}\),  \(\bm{v}=\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix}\), and \(\bm{w}=\begin{bmatrix} 1 \\ 2\\ 0 \end{bmatrix}\) for 7(a), 7(b), and 7(c).
   
     \begin{enumerate}
       \item \pts{2} Determine the distance between \(\bm{u}\) and \(\bm{v}\).
@@ -306,15 +308,48 @@
     \[\bm{x}=\begin{bmatrix*}[r] x \\ y \\ z \end{bmatrix*} = \begin{bmatrix*}[r] 0 \\ 0 \\ 1 \end{bmatrix*} + t \begin{bmatrix*}[r] -1 \\ 5 \\ 0 \end{bmatrix*}
     \]
     for any real number \(t\). Do the three geometric objects share a common point of intersection? How do you know?
-    
+    \basec{\begin{itemize}
+      \item \true{Yes}, they do share a point of intersection. First, the line of intersection between the planes is simply the y-axis, so the question then becomes does the given equation intersect the y-axis at any point, if it does, then that is the point of intersection of all three objects. Solving for point of intersection:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      q = t - 5t + 1
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Setting \(t = 0\) yields point of intersection, \(\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}\)
+    \end{itemize}}
+
     \newpage
 
     \item \pts{2} Suppose \(f(x)\) is a degree two polynomial function in one variable. That is, let 
     \[ f(x)=ax^2+bx+c\]
-    Determine coefficients \(a, b\), and \(c\) so that \(f(-1)=-2\), \(f(1)=4\), and \(f(3)=2\). \par (This is called an \textit{interpolating} polynomial since it might be used to estimate values between the data points given.) \par
-
-    \textit{Hint:} The requirement that \(f(-1)=-2\) yields the equation 
-    \[-2=a(-1)^2+b(-1)+c\] % chktex 3
-    Use the other requirements to build a system of three equations in three unknowns. Then solve.
+    Determine coefficients \(a, b\), and \(c\) so that \(f(-1)=-2\), \(f(1)=4\), and \(f(3)=2\). 
+    \basec{\begin{align*}
+      -2&=a(-1)^2+b(-1)+c \\
+      4&=a(1)^2+b(1)+c \\
+      2&=a(3)^2+b(3)+c \\
+      &\downarrow \text{Translate to matrix equation form} \\
+      \begin{bmatrix}
+      1 & -1 & 1\\
+      2 & 1 & 1\\
+      9 & 3 & 1 
+      \end{bmatrix}
+      \rrr{\begin{bmatrix} a \\ b \\ c \end{bmatrix}} &=
+      \begin{bmatrix} -2 \\ 4 \\ 2 \end{bmatrix}\\
+      &\downarrow \\
+      \bm{A\rrr{x}}&=\bm{b} \\
+      &\downarrow \text{Using \bbb{left inverse} to find \rrr{regression coefficients}}\\
+      \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T}\rrr{\bm{x}} &= \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b} \\
+      \rrr{\bm{x}} &= \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b} \\
+      \rrr{\bm{x}} &= \begin{bmatrix} -4/3 \\ 11/3 \\ 3 \end{bmatrix} \\
+      &\downarrow \\
+      a &= -\frac{4}{3},\quad b = \frac{11}{3},\quad c = 3 \\
+      &\downarrow \\
+      -2&=-\tfrac{4}{3}(-1)^2+\tfrac{11}{3}(-1)3  \\
+      4&=-\tfrac{4}{3}(1)^2+\tfrac{11}{3}(1)+3 \\
+      2&=-\tfrac{4}{3}(3)^2+\tfrac{11}{3}(3)+3 \\
+      && \text{{\scriptsize{\minimal{that worked?}}}}
+    \end{align*}}
+    \basec{\begin{itemize}
+      \item I didn't think that was going to work. I feel like I did something wrong, and it happened to work. I mean, I knew it would work if \tbm{A} was full rank matrix, but I don't know if \tbm{A} was defined correctly. How were we supposed to do this?
+    \end{itemize}}
+    
   \end{enumerate}
 \end{document}
