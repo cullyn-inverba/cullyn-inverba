@@ -32,7 +32,7 @@
     \titleformat{\chapter}
     {\LARGE\centering\bfseries\color{title-color}}
     {}{0pt}
-    {}[\vspace{-1em}{\pgfornament[width=14cm]{89}}\vspace{-6pt}]
+    {}[\vspace{-1em}{\hyperlink{ToC}{\pgfornament[width=6.9cm,ydelta=10pt]{84}}}\vspace{-2pt}]
         \titlespacing*{\chapter}{0pt}{-64pt}{0pt} 
     \titleformat{\section}{\Large\bfseries\color{sec}}{}{0pt}{}
         \titlespacing*{\section}{0 em}
@@ -54,10 +54,10 @@
     \renewcommand{\contentsname}{\color{title-color}\theTitle}
     \setcounter{tocdepth}{2}
     \titlecontents{chapter}[0 em]
-        {\large\bfseries\color{title-color}}{}{}
+        {\vspace{8pt}\large\bfseries\color{title-color}}{}{}
         {\hfill}
     \titlecontents{section}[0.809 em]
-        {\bfseries}{}{}
+        {\vspace{3pt}\bfseries}{}{}
         {\hfill\contentspage}
     \titlecontents{subsection}[1.618 em]
         {\color{minor}}{}{}
