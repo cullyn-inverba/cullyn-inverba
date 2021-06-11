@@ -328,7 +328,7 @@
       &\downarrow \text{Translate to matrix equation form} \\
       \begin{bmatrix}
       1 & -1 & 1\\
-      2 & 1 & 1\\
+      1 & 1 & 1\\
       9 & 3 & 1 
       \end{bmatrix}
       \rrr{\begin{bmatrix} a \\ b \\ c \end{bmatrix}} &=
@@ -338,25 +338,25 @@
       &\downarrow \text{Using \bbb{left inverse} to find \rrr{regression coefficients}}\\
       \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T}\rrr{\bm{x}} &= \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b} \\
       \rrr{\bm{x}} &= \bbb{(\bm{A}^T \bm{A})^{-1} \bm{A}^T} \bm{b} \\
-      \rrr{\bm{x}} &= \begin{bmatrix} -4/3 \\ 11/3 \\ 3 \end{bmatrix} & \text{{\scriptsize{\minimal{that worked?}}}} \\
+      \rrr{\bm{x}} &= \begin{bmatrix} -1 \\ 3 \\ 2 \end{bmatrix} \qquad \text{{\scriptsize{\minimal{that worked?}}}} \\
       &\downarrow \\
-      a &= -\frac{4}{3},\quad b = \frac{11}{3},\quad c = 3 \\
+      a &= \rrr{-1},\quad b = \rrr{3},\quad c = \rrr{2} \\
       &\downarrow \\
-      -2&=-\tfrac{4}{3}(-1)^2+\tfrac{11}{3}(-1)3  \\
-      4&=-\tfrac{4}{3}(1)^2+\tfrac{11}{3}(1)+3 \\
-      2&=-\tfrac{4}{3}(3)^2+\tfrac{11}{3}(3)+3 \\
+      -2&=\rrr{-1}(-1)^2+\rrr{3}(-1)+\rrr{2}  \\
+      4&=\rrr{-1}(1)^2+\rrr{3}(1)+\rrr{2} \\
+      2&=\rrr{-1}(3)^2+\rrr{3}(3)+\rrr{2} \\
       & \quad \\
       &\text{{\scriptsize\minimal{Wait, rref will work too, yeah?}}} \\\\
-      &\operatorname{rref}\left(\begin{bmatrix}[ccc|c]
+      &\hspace{-70pt}\operatorname{rref}\left(\begin{bmatrix}[ccc|c]
         1 & -1 & 1 & -2\\
-        2 & 1 & 1 & 4\\
+        1 & 1 & 1 & 4\\
         9 & 3 & 1 & 2 
       \end{bmatrix}\right) =
       \begin{bmatrix}
-      1 & 0 & 0 & \rrr{-4/3} \\
-      0 & 1 & 0 & \rrr{11/3} \\
-      0 & 0 & 1 & \rrr{3}
-      \end{bmatrix} & \text{{\scriptsize{\minimal{cool}}}}
+      1 & 0 & 0 & \rrr{-1} \\
+      0 & 1 & 0 & \rrr{3} \\
+      0 & 0 & 1 & \rrr{2}
+      \end{bmatrix} \qquad \text{{\scriptsize{\minimal{cool}}}}
     \end{align*}}
     
     
