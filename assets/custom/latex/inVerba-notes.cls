@@ -102,8 +102,8 @@
     \fancyhead{}
         \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
         \renewcommand{\sectionmark}[1]{\markright{#1}{}}
-    \fancyhead[L]{\hyperlink{ToC}{\nouppercase\leftmark}}
-    \fancyhead[R]{\hyperlink{ToC}{\nouppercase\rightmark}}
+    \fancyhead[L]{\hyperlink{ToC}{{\color{title-color}\nouppercase\leftmark}}}
+    \fancyhead[R]{\hyperlink{ToC}{{\color{sec}\nouppercase\rightmark}}}
         
     \cfoot{\hyperlink{ToC}{\thepage}}
 

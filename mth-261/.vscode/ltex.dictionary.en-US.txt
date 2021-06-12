@@ -35,3 +35,4 @@ magnituded
 eigenplane
 Eigenline
 positive-semidefinite
+invertibility
