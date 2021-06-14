@@ -18,7 +18,7 @@
 
 - [Most prior content (2020&ndash;2021)](https://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing)
 - Notes worth sharing:
-  - [Linear Algebra](/prior/mth-256.pdf)
+  - [Linear Algebra](/prior/mth-261.pdf)
   - [Organic Chemistry II](/prior/ch-335.pdf)
 
 <br>
