@@ -141,7 +141,7 @@
         urlcolor=gg, 
     }
 
-\RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite}
+\RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite,pifont}
 
 \RequirePackage[justification=centering]{caption}
     \captionsetup[table]{
@@ -251,10 +251,12 @@
 % Boolean: #4cf5d9 → #f54c7f
 \definecolor{ttt}{HTML}{57d9c3}
     \newcommand{\ttt}[1]{{\color{ttt}{#1}}}
+    \newcommand{\cmark}{\ding{51}}
     \newcommand{\true}[1]{\ttt{\cmark~#1}}
 
 \definecolor{fff}{HTML}{f54c7f}
     \newcommand{\fff}[1]{{\color{fff}{#1}}}
+    \newcommand{\xmark}{\ding{56}\,}
     \newcommand{\false}[1]{\fff{\xmark~#1}}
 
 % Relative: #c88ef5#ac4cf5 → #f5e48e#f5d94c
