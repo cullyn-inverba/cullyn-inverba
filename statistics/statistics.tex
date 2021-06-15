@@ -1,15 +1,30 @@
 \documentclass{inVerba-notes}
 \usepackage{inVerba-math}
 
-\definecolor{title-color}{HTML}{f5736c}
-\newcommand{\theTitle}{\href{https://github.com/cullyn-inverba/notes/tree/master/mth-261}{Statistics}}
+\definecolor{title-color}{HTML}{f57067}
+\newcommand{\theTitle}{\href{https://github.com/cullyn-inverba/notes/tree/master/statistics}{Statistics}}
+
+% chktex-file 1
 
 \begin{document}
 
 {\pagestyle{plain}
 \hypertarget{ToC}{\tableofcontents}
 \cleardoublepage}
- 
+
+\let\oldchapter\chapter %chktex 1
+\renewcommand{\chapter}[1]{
+\oldchapter{#1}\label{Chapter: #1}
+}
+\let\oldsection\section %chktex 1
+\renewcommand{\section}[1]{
+\oldsection{#1}\label{Section: #1}
+}
+\let\oldsubsection\subsection %chktex 1
+\renewcommand{\subsection}[1]{
+\oldsubsection{#1}\label{Subsection: #1} 
+}
+
 \include{chapters/data.tex}
 \include{chapters/data-visualization.tex}
 \include{chapters/descriptive.tex}

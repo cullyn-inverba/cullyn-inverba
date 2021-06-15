@@ -42,9 +42,11 @@
         
     \titlespacing*{\chapter}{0pt}{-78pt}{0pt} 
     
+    \newcommand{\sectionbreak}{\clearpage}
     \titleformat{\section}
     {\Large\bfseries\color{sec}}
     {}{0pt}{}
+
     \titleformat{\subsection}{\large\bfseries\color{ssec}}
     {}{0pt}{}
     
@@ -61,7 +63,6 @@
     \titlecontents{chapter}[0 em]
         {\vspace{16pt}\large\bfseries\color{title-color}}{}{}
         {\hfill}
-    \newcommand{\sectionbreak}{\clearpage}
     \titlecontents{section}[0.809 em]
         {\bfseries}{}{}
         {\hfill\contentspage}
