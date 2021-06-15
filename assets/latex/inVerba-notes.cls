@@ -4,11 +4,11 @@
 % ██║╚██╗██║██║   ██║   ██║   ██╔══╝  ╚════██║
 % ██║ ╚████║╚██████╔╝   ██║   ███████╗███████║
 % ╚═╝  ╚═══╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
-%  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
-% |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
-% |::::.\::: https://github.com/cullyn-inverba/Notes ::::.\::::::::.\
-% |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
-%         `--'      `.-'      `--'      `--'      `--'      `-.'      `
+%  .--.      .-'.      .--.      .--.      .--.      .--.
+% |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+% |::::.\::: https://github.com/cullyn-inverba/Notes ::::.\
+% |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+%         `--'      `.-'      `--'      `--'      `--'      `
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{inVerba-notes}[2020/12/09 Multipurpose hierarchical structured notes]
@@ -31,21 +31,26 @@
 \RequirePackage[object=vectorian]{pgfornament}
     \titleformat{\chapter}
     {\LARGE\centering\bfseries\color{title-color}}
-    {}{0pt}
-    {}[\vspace{-1em}{\hyperlink{ToC}{\pgfornament[width=6.9cm,ydelta=10pt]{84}}}\vspace{-2pt}]
-        \titlespacing*{\chapter}{0pt}{-64pt}{0pt} 
-    \titleformat{\section}{\Large\bfseries\color{sec}}{}{0pt}{}
-        \titlespacing*{\section}{0 em}
-        {1ex plus 7ex minus 1ex}
+    {}{0pt}{}
+    [
+    \vspace{-16pt}\hspace{1pt}
+    {\hyperlink{ToC}{
+        \pgfornament[width=8cm,ydelta=10pt]{84}
+        }}
+    \vspace{-2pt}
+    ]
+        
+    \titlespacing*{\chapter}{0pt}{-78pt}{0pt} 
+    
+    \titleformat{\section}
+    {\Large\bfseries\color{sec}}
+    {}{0pt}{}
+    \titleformat{\subsection}{\large\bfseries\color{ssec}}
+    {}{0pt}{}
+    
+    \titlespacing*{\subsection}{0pt}
+        {1ex plus 8ex minus 1ex}
         {1ex plus 0ex minus 0ex}
-    \titleformat{\subsection}{\large\bfseries\color{ssec}}{}{0pt}{}
-        \titlespacing*{\subsection}{0 em}
-        {1ex plus 7ex minus 1ex}
-        {1ex plus 0ex minus 0ex}
-    % \titleformat{\subsubsection}{\bfseries\color{ssec}}{}{0pt}{}
-    %     \titlespacing*{\subsubsection}{0 em}
-    %     {1ex plus 5ex minus 1ex}
-    %     {1ex plus 0ex minus 0ex}
 
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ ││││ │ ├┤ │││ │ └─┐
@@ -56,15 +61,13 @@
     \titlecontents{chapter}[0 em]
         {\vspace{16pt}\large\bfseries\color{title-color}}{}{}
         {\hfill}
+    \newcommand{\sectionbreak}{\clearpage}
     \titlecontents{section}[0.809 em]
         {\bfseries}{}{}
         {\hfill\contentspage}
     \titlecontents{subsection}[1.618 em]
         {\color{minor}}{}{}
         {\titlerule*[0.42 em]{.}\contentspage}
-    % \titlecontents{subsubsection}[2.427  em]
-    %     {\color{minimal}}{}{}
-    %     {\titlerule*[0.42 em]{.}\thecontentspage}
     
 %  ╦  ┬┌─┐┌┬┐┌─┐
 %  ║  │└─┐ │ └─┐
@@ -102,10 +105,29 @@
     \fancyhead{}
         \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
         \renewcommand{\sectionmark}[1]{\markright{#1}{}}
-    \fancyhead[L]{\hyperlink{ToC}{{\color{title-color}\nouppercase\leftmark}}}
-    \fancyhead[R]{\hyperlink{ToC}{{\color{sec}\nouppercase\rightmark}}}
-        
-    \cfoot{\hyperlink{ToC}{\thepage}}
+
+    \fancyhead[L]{
+        \hyperlink{ToC}{{\color{title-color}\nouppercase\leftmark}}}
+    \fancyhead[R]{
+        \hyperlink{ToC}{{\color{sec}\nouppercase\rightmark}}
+        }
+    \cfoot{
+        {\color{title-color}\hyperlink{ToC}{
+        \pgfornament[width=0.42cm,ydelta=-4pt]{11}
+        \hspace{-4pt}\thepage
+        \hspace{2pt}\pgfornament[width=0.42cm,ydelta=-4pt]{14}
+    }}}
+
+    \fancypagestyle{plain}{
+    \fancyhead{}
+        \renewcommand{\headrulewidth}{0pt}
+    \cfoot{
+        {\color{title-color}\hyperlink{ToC}{
+        \pgfornament[width=0.42cm,ydelta=-4pt]{11}
+        \hspace{-4pt}\thepage
+        \hspace{2pt}\pgfornament[width=0.42cm,ydelta=-4pt]{14}
+    }}}
+    }
 
 % ╦ ╦┌┬┐┬┬  ┬┌┬┐┬ ┬
 % ║ ║ │ ││  │ │ └┬┘
@@ -114,17 +136,20 @@
     \hypersetup{
         colorlinks=false,
         linktoc=all,    
-        linkcolor=link,
-        filecolor=link,      
-        urlcolor=link, 
+        linkcolor=gg,
+        filecolor=gg,      
+        urlcolor=gg, 
     }
 
 \RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite}
+
 \RequirePackage[justification=centering]{caption}
     \captionsetup[table]{
         skip=3pt,
         labelformat=empty,
     }
+    \newcommand{\mc}[1]{\makecell[c]{#1}}
+    \newcommand{\mr}[1]{\makecell[r]{#1}}
 
 \RequirePackage{siunitx}
     \sisetup{
@@ -135,35 +160,16 @@
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ │││││││├─┤│││ ││└─┐
 % ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
-\renewcommand{\emph}[1]{{\color{emph}#1}} 
-\newcommand{\amp}[1]{{\color{amp}#1}}
-\newcommand{\str}[1]{{\color{str}#1}}
-\newcommand{\basec}[1]{{\color{text}#1}}
-\newcommand{\minor}[1]{{\color{minor}#1}}
-\newcommand{\minimal}[1]{{\color{minimal}#1}}
-
-\newcommand{\textbfl}[1]{\textbf{#1}\label{#1}}
-\newcommand{\textbfe}[1]{\textbf{#1}\label{eq:#1}}
-
-\newcommand{\ddd}[1]{{\color{jarg}\textbfl{#1}}}
-
-\newcommand{\link}[2]{\href{#1}{\color{link}{\underline{{#2}}}}}
-
-\newcommand{\ulink}[1]{{\color{ilink}{#1}\small\(\,^\uparrow\)}}
-\newcommand{\dlink}[1]{{\color{ilink}{#1}\small\(\,^\downarrow\)}}
-
-\newcommand{\mc}[1]{\makecell[c]{#1}}
-\newcommand{\mr}[1]{\makecell[r]{#1}}
-
-\newcommand{\Arrow}{\raisebox{-.5\height}{\scalebox{2}{$~\rightarrow~$}}}
-\newcommand{\Image}[2]{\raisebox{-.5\height}{\includegraphics[width=#1]{#2}}}
-
 \newcommand{\chonk}[1]{{\Large{\textbf{#1}}}}
-
 \newcommand{\pts}[1]{\textbf{[ \hspace{16pt} / #1 ]}}
 
-\newcommand{\true}[1]{\ttt{\cmark~#1}}
-\newcommand{\false}[1]{\fff{\xmark~#1}}
+\newcommand{\Image}[2]{
+    \raisebox{-.5\height}{\includegraphics[width=#1]{#2}}
+}
+\newcommand{\Arrow}{
+    \raisebox{-.5\height}{\scalebox{2}{$~\rightarrow~$}}
+}
+
 
 %  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
 % ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
@@ -175,86 +181,118 @@
 % ╠╩╗├─┤└─┐├┤ 
 % ╚═╝┴ ┴└─┘└─┘
 % Background: #1f1f1f #141414 
-\definecolor{back}{HTML}{1f1f1f} 
-\pagecolor{back} 
+\definecolor{bg}{HTML}{1f1f1f} 
+    \newcommand{\bg}[1]{{\color{bg}#1}}
+    \pagecolor{bg} % Background Color
 \definecolor{dark}{HTML}{141414}
+    \newcommand{\dark}[1]{{\color{dark}#1}}
 
-% Text: #e0e0e0 #949494 #6b6b6b 
-\definecolor{text}{HTML}{e0e0e0}  
-\color{text} 
+% Text: #ebebeb #e0e0e0 #949494 #6b6b6b #2f2f2f 
+\definecolor{light}{HTML}{ebebeb}  
+    \newcommand{\bright}[1]{{\color{bright}#1}}
+\definecolor{fg}{HTML}{e0e0e0}  
+    \newcommand{\fg}[1]{{\color{fg}#1}}
+    \color{fg} % Foreground Color
 \definecolor{minor}{HTML}{949494} 
+    \newcommand{\minor}[1]{{\color{minor}#1}}
 \definecolor{minimal}{HTML}{6b6b6b} 
+    \newcommand{\minimal}[1]{{\color{minimal}#1}}
+\definecolor{faint}{HTML}{2f2f2f} 
+    \newcommand{\faint}[1]{{\color{faint}#1}} 
 
-% Emphasis: #f5b17a #ff9e4f #f5769c
-\definecolor{emph}{HTML}{f5b17a} 
-\definecolor{str}{HTML}{ff9e4f} 
-\definecolor{amp}{HTML}{f5769c}
+% Emphasis: #f5af71 #f5984c #f58ecc #4ca9f5
+\definecolor{ooo}{HTML}{f5af71} 
+    \newcommand{\ooo}[1]{{\color{ooo}#1}} 
+\definecolor{OOO}{HTML}{f5984c} 
+    \newcommand{\OOO}[1]{{\color{OOO}#1}}
+\definecolor{ppp}{HTML}{f5769c}
+    \newcommand{\ppp}[1]{{\color{ppp}#1}}
+\definecolor{bBb}{HTML}{4ca9f5}
+    \newcommand{\bBb}[1]{{\color{bBb}#1}}
 
-% Titles: #4ca9f5 #7abef5 #b0d0eb #cedeeb
-\definecolor{chap}{HTML}{4ca9f5} 
-    \newcommand{\chap}[1]{{\color{chap}{#1}}}
+
+% Titles: #7abef5 #b0d0eb #cedeeb 
 \definecolor{sec}{HTML}{7abef5} 
     \newcommand{\tsec}[1]{{\color{sec}{#1}}}
 \definecolor{ssec}{HTML}{b0d0eb} 
     \newcommand{\ssec}[1]{{\color{ssec}{#1}}}
-\definecolor{jarg}{HTML}{cedeeb} 
-    \newcommand{\jjj}[1]{{\color{jarg}{\textbf{#1}}}}
-    \newcommand{\dd}[1]{{\color{jarg}{\textbf{#1}}}}
+\definecolor{ddd}{HTML}{cedeeb} 
+    \newcommand{\ddd}[1]{{\color{ddd}{\textbf{#1}}}}
     
 
-% Links: #99e09b #78b07a
-\definecolor{link}{HTML}{99e09b}
-\definecolor{ilink}{HTML}{78b07a}
-    \newcommand{\igg}[1]{{\color{ilink}{#1}}}
+% Links: #81de84 #66b06b
+\definecolor{ggg}{HTML}{81de84}
+    \newcommand{\link}[2]{
+        \href{#1}{\color{ggg}{\underline{{#2}}}}
+    }
+\definecolor{GGG}{HTML}{66b06b}
+    \newcommand{\GGG}[1]{{\color{GGG}{#1}}}
+    \newcommand{\ulink}[1]{
+        {\color{GGG}{#1}\small\(\,^\uparrow\)}
+    }
+    \newcommand{\dlink}[1]{
+        {\color{GGG}{#1}\small\(\,^\downarrow\)}
+    }
     
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
 %  ║║││  ├─┤│ │ │ │ ││││└┬┘
 % ═╩╝┴└─┘┴ ┴└─┘ ┴ └─┘┴ ┴ ┴ 
-% Charge: #f5736c → #5f89f5
-\definecolor{rrr}{HTML}{f5736c}
+% Charge: #678ff5#2560f5 → #f57067#f53325
+\definecolor{rrr}{HTML}{f57067}
+    \newcommand{\RRR}[1]{{\color{RRR}{#1}}}
+\definecolor{RRR}{HTML}{f53325}
     \newcommand{\rrr}[1]{{\color{rrr}{#1}}}
-\definecolor{bbb}{HTML}{5f89f5}
+\definecolor{bbb}{HTML}{678ff5}
     \newcommand{\bbb}[1]{{\color{bbb}{#1}}}
+\definecolor{BBB}{HTML}{2560f5}
+    \newcommand{\BBB}[1]{{\color{BBB}{#1}}}
 
-% Boolean: #57d9c3 → #eb4972
+% Boolean: #4cf5d9 → #f54c7f
 \definecolor{ttt}{HTML}{57d9c3}
     \newcommand{\ttt}[1]{{\color{ttt}{#1}}}
-\definecolor{fff}{HTML}{eb4972}
-    \newcommand{\fff}[1]{{\color{fff}{#1}}}
+    \newcommand{\true}[1]{\ttt{\cmark~#1}}
 
-% Relative: #c28bf0 → #f0dd86
-\definecolor{xxx}{HTML}{c28bf0}  
+\definecolor{fff}{HTML}{f54c7f}
+    \newcommand{\fff}[1]{{\color{fff}{#1}}}
+    \newcommand{\false}[1]{\fff{\xmark~#1}}
+
+% Relative: #c88ef5#ac4cf5 → #f5e48e#f5d94c
+\definecolor{xxx}{HTML}{c88ef5}  
     \newcommand{\xxx}[1]{{\color{xxx}{#1}}}
-\definecolor{yyy}{HTML}{f0dd86}  
+\definecolor{XXX}{HTML}{ac4cf5}  
+    \newcommand{\XXX}[1]{{\color{XXX}{#1}}}
+\definecolor{yyy}{HTML}{f5e48e}  
     \newcommand{\yyy}[1]{{\color{yyy}{#1}}}
+\definecolor{YYY}{HTML}{f5d94c}  
+    \newcommand{\YYY}[1]{{\color{YYY}{#1}}}
 
 %                  ╦═╗┌─┐┌─┐┌─┐┬─┐┌─┐┌┐┌┌─┐┌─┐
 %                  ╠╦╝├┤ ├┤ ├┤ ├┬┘├┤ ││││  ├┤ 
 %                  ╩╚═└─┘└  └─┘┴└─└─┘┘└┘└─┘└─┘
 
-%                 fff #eb4972       #f5736c rrr
-%           amp #f5769c
+%                 fff #eb4972       #f53325 RRR
+%            ppp #f5769c                 #f57067 rrr
 %                          ____________              
 %                         /\  ________ \         
-%    xxx #c28bf0         /  \ \______/\ \        #f5b17a  emph
-%                       / /\ \ \  / /\ \ \         #ff9e4f str
+%      xxx #c88ef5       /  \ \______/\ \        #f5af71  emph
+%    XXX #ac4cf5        / /\ \ \  / /\ \ \         #f5984c str
 %                      / / /\ \ \/ / /\ \ \
 %                     / / /__\_\/ / /__\_\ \
-%                    / /_/_______/ /________\
-%   bbb  #5f89f5     \ \ \______ \ \______  /
-%                     \ \ \  / /\ \ \  / / /
-%                      \ \ \/ / /\ \ \/ / /      #f0dd86 yyy
-%                       \ \/ / /__\_\/ / /      
-%       chap #4ca9f5     \  / /______\/ /
+%   BBB #2560f5      / /_/_______/ /________\       
+%    bbb #678ff5     \ \ \______ \ \______  /   
+%                     \ \ \  / /\ \ \  / / /        #f5e48e yyy
+%                      \ \ \/ / /\ \ \/ / /       #f5d94c YYY
+%       bBb #4ca9f5     \ \/ / /__\_\/ / /         
+%                        \  / /______\/ /
 %      sec #7abef5        \/___________/
-%    ssec #b0d0eb        
-%  jarg #cedeeb                              #99e09b link
-%                         #57d9c3 ttt          #78b07a ilink
+%    ssec #b0d0eb                              #81de84 ggg
+%  ddd  #cedeeb                             #66b06b GGG
+%                         #57d9c3 ttt      
 %                                             
-%  #ebebeb                       
+%  #ebebeb bight                     
 %    /\ 
-%   /  \ #e0e0e0 foreground 
+%   /  \ #e0e0e0 foreground (fg)
 %  / /\ \ 
 %  \ \/ / 
 %   \ \/ #b0b0b0 
@@ -268,35 +306,30 @@
 %  /\ \ \
 %  \ \/ / #4f4f4f
 %   \ \/
-%   /\ \ #404040
+%   /\ \ #404040 
 %   \ \/
-%   /\ \ #2f2f2f 
+%   /\ \ #2f2f2f faint
 %   \ \/
 %   /\ \ #262626
 %  / /\ \
 %  \ \/ / 
-%   \  / #1f1f1f background
+%   \  / #1f1f1f background (bg)
 %    \/                      
-%  #141414 
+%  #141414 dark
 
 % ╔═╗┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
 % ║ ║├─┘ │ ││ ││││└─┐
 % ╚═╝┴   ┴ ┴└─┘┘└┘└─┘
-\DeclareOption{plain}{
+\DeclareOption{light}{
     \pagecolor{white}
     \color{black}
 
     \titleformat{\chapter}{\LARGE\bfseries}{}{0pt}{\centering}
     \titleformat{\section}{\Large\bfseries}{}{0pt}{}
     \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
-    \titleformat{\subsubsection}{\large\bfseries}{}{0pt}{}
+    \titleformat{\subsubsection}{\large\bfseries}{}{0pt}{} 
 
-    % Charge: #d64242 → #225ed6
-    \definecolor{rrr}{HTML}{d64242}
-    \definecolor{bbb}{HTML}{225ed6}
-    \definecolor{text}{HTML}{000000}  
-
-    \hypersetup{colorlinks,linkcolor={bbb},citecolor={bbb},urlcolor={bbb}} 
+    \hypersetup{colorlinks,linkcolor={BBB},citecolor={BBB},urlcolor={BBB}} 
 }
 
 \DeclareOption{basic}{
@@ -307,23 +340,6 @@
     \cfoot{\textsc{\institution}}
     \rfoot{\thepage}
     \lfoot{\class}
-}
-
-\DeclareOption{quiz}{
-    \setlist[itemize,1]{
-        label=\circ, 
-        leftmargin=\dimexpr26pt -1 em
-    }
-    \setlist[itemize,2]{
-        label=\textbullet,
-        leftmargin=\dimexpr26pt -1 em
-    }
-    \setlist[itemize,3]{
-        label=\small\color{minor}\textbullet,
-        leftmargin=\dimexpr26pt -1 em
-    }
-    \color{minimal}
-    \lhead{}
 }
 
 \ProcessOptions\relax
