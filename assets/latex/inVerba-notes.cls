@@ -297,7 +297,7 @@
 %      sec #7abef5        \/___________/
 %    ssec #b0d0eb                              #81de84 ggg
 %  ddd  #cedeeb                             #66b06b GGG
-%                         #57d9c3 ttt      
+%                         #4cf5d9 ttt      
 %                                             
 %  #ebebeb bight                     
 %    /\ 
