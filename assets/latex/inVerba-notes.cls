@@ -153,6 +153,10 @@
         skip=3pt,
         labelformat=empty,
     }
+    \AtBeginDocument{
+        \let\oldcaption\caption
+        \renewcommand{\caption}[1]{\oldcaption{\ssec{\textbf{#1}}}}
+    }
     \newcommand{\mc}[1]{\makecell[c]{#1}}
     \newcommand{\mr}[1]{\makecell[r]{#1}}
 
