@@ -238,12 +238,8 @@
     }
 \definecolor{GGG}{HTML}{66b06b}
     \newcommand{\GGG}[1]{{\color{GGG}{#1}}}
-    \newcommand{\ulink}[1]{
-        {\color{GGG}{#1}\small\(\,^\uparrow\)}
-    }
-    \newcommand{\dlink}[1]{
-        {\color{GGG}{#1}\small\(\,^\downarrow\)}
-    }
+    \newcommand{\ulink}[1]{{\color{GGG}{#1}\small\(\,^\uparrow\)}}
+    \newcommand{\dlink}[1]{{\color{GGG}{#1}\small\(\,^\downarrow\)}}
     
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
