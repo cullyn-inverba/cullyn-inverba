@@ -2,7 +2,7 @@
 
 \section{Data Fundamentals}
 \begin{itemize}
-  \item \ddd{Data}: units qualitative or quantitative information about persons or objects collected via observation.
+  \item \ddd{Data}: units of qualitative or quantitative information about persons or objects collected via observation.
     \begin{itemize}
       \item Note: data is different from information---information resolves uncertainty, while data has the potential to be transformed into information post-analysis.
       \item Data as a general concept refers to the fact that some existing information or knowledge can be represented in a form suitable for processing.
@@ -18,17 +18,17 @@
       \item There are many data types, with more specific definitions than the following definitions, but for now these are frequently used and adequate for topics covered.
       \begin{table}[h]
         \centering
-        \caption{Relevant Statistical Data Types\strut}
+        \caption{Relevant Statistical Data Types}
         \begin{tabular}{clll}
           \toprule
           Category & Type & Description & Example  \\
           \midrule
-          \multirow{3}{*}{Numerical} & Interval & Degree of difference & Temperature \\
-          & Ratio & Interval + meaningful zero & Height \\
-          & Discrete & Count (integers) & Population \\
+          \multirow{3}{*}{Numerical} & \ddd{Interval} & Degree of difference & Temperature \SI{}{\celsius} \\
+          & \ddd{Ratio} & Interval + meaningful zero & Height \\
+          & \ddd{Discrete} & Count (integers) & Population \\
           \midrule
-          \multirow{2}{*}{Categorical}& Ordinal & Sortable, discrete & Educational level \\
-          & Nominal & Non-sortable, discrete & Movie genre \\
+          \multirow{2}{*}{Categorical}& \ddd{Ordinal} & Sortable, discrete & Educational level \\
+          & \ddd{Nominal} & Non-sortable, discrete & Movie genre \\
           \bottomrule
         \end{tabular}
       \end{table}
@@ -42,13 +42,59 @@
         \begin{itemize}
           \item Note: most data are sample data in practice, as generalization of populations using sample data is usually the goal of statistics.
         \end{itemize}
-      \ddd{Anecdotes}: a case study of a rare occurrence, or a sample size of only one; insights may be possible, but poor confidence in generalizations should be noted.
+      \item \ddd{Anecdotes}: a case study of a rare occurrence, or a sample size of only one; insights may be possible, but poor confidence in ability to generalize should be noted.
     \end{itemize}
-  
+
 \end{itemize}
 
-\section{Visualizing Data}
+\section{Data Visualization}
 \begin{itemize}
-  \item 
+  \item \ddd{Data visualization}: a mapping between the original data and graphic elements in order to determine how attributes of interest vary according to the data.
+    \begin{itemize}
+      \item The design of the mapping can have a significant effect on information extracted from data, in both beneficial and detrimental ways.
+    \end{itemize}
+  \item Data visualization is a core tool of statistics and is generally considered to be a branch \hyperref[Chapter: Descriptive Statistics]{\dlink{descriptive statistics.}}
+  \subsection{Visualization Techniques}
+  \begin{itemize}
+    \item Visualizing data can be an art in and of itself, leading to a wide variety of available techniques, i.e., diagram types, in order to better represent the data.
+    \item The following is a rather shallow list of commonly used techniques; in-depth exploration of data visualization will be pursued in other courses.
+    \item \ddd{Bar chart}: a representation of \emph{categorical data} with magnitudes proportional to the values they represent. 
+      \begin{itemize}
+        \item Displays comparisons among \emph{discrete categories} vs.\ a measured value.
+        \item Subcategories can be displayed in clusters within each category, with colors/patterns used to differentiate them.
+        \item Ordering of the categories (chart shape) do not typically matter, excluding aesthetic reasons.
+      \end{itemize}
+    \item \ddd{Histogram}: a representation of the \emph{distribution} of numerical data via the use of \emph{binning}.
+      \begin{itemize}
+        \item \ddd{Binning}: a form \emph{quantization of continuous data}, wherein small intervals (bins) of the data are replaced with a value representative of that interval.
+        \item The bins are usually specified as consecutive, non-overlapping intervals of a variable; they must be adjacent and are often of equal size.
+        \item Histograms of \emph{counts} are usually better for \emph{qualitative} inspection of raw data, but can be difficult to compared across datasets.
+        \item Histograms of \emph{proportion} are usually better for \emph{quantitative} analysis, easier to compare across datasets, but can take extra effort to create.
+      \end{itemize}
+    \item \ddd{Scatter plot}: a representation of the \emph{relationship between variables}, often two or three (2D/3D graphs).
+      \begin{itemize}
+        \item Points can be coded via color, shape, and/or size to display additional variables.
+        \item Often used to investigate \emph{correlations} between variables.
+      \end{itemize}
+    \item \ddd{Network graph}: a representation of data as nodes in a network via analysis of \emph{specialization} of the nodes.
+      \begin{itemize}
+        \item Used to discover bridges (information brokers) in a network, relative node influence, and outliers via analysis of how the nodes cluster.
+        \item Node and tie (connection between nodes) size and color can be used to encode additional information about variables in the data.
+      \end{itemize}
+    \item \ddd{Pie chart}: a representation of one categorical variable via the division of slices in order to illustrate \emph{numerical proportion}.
+    \item \ddd{Box plot}: a representation of numerical data via analysis of their quartiles.
+      \begin{itemize}
+        \item \ddd{Quartiles}: a quantile (division point) of data points into four parts, or quarters. 
+          \begin{itemize}
+            \item \(Q_1\): the middle number between the smallest minimum and the median of the dataset; 25\% of the data lies below this point.
+            \item \(Q_2\): the median of the data set; 50\% of the data lies below this point.
+            \item \(Q_3\): the middle value between the medium and the maximum of the data set; 75\% of the data lies below this point.
+          \end{itemize}
+        \item Often termed box and whisker plot, as the box represents the 50\% of the data, and the two whiskers represent the upper and lower 25\% of data.
+        \item Outliers may be plotted as individual points.
+        \item Useful when examining the \emph{variability of samples} without making any assumptions about underlying statistical distributions.
+      \end{itemize}
+  \end{itemize}
+  
 \end{itemize}
 
