@@ -62,9 +62,9 @@
     \setcounter{tocdepth}{2}
     \titlecontents{chapter}[0 em]
         {\vspace{16pt}\large\bfseries\color{title-color}}{}{}
-        {\hfill}
+        {\hfill}[\vspace{-3pt}]
     \titlecontents{section}[0.809 em]
-        {\bfseries}{}{}
+        {\vspace{3pt}\bfseries}{}{}
         {\hfill\contentspage}
     \titlecontents{subsection}[1.618 em]
         {\color{minor}}{}{}
@@ -204,6 +204,8 @@
 % Emphasis: #f5af71 #f5984c #f58ecc #4ca9f5
 \definecolor{ooo}{HTML}{f5af71} 
     \newcommand{\ooo}[1]{{\color{ooo}#1}} 
+    \let\oldemph\emph
+    \renewcommand{\emph}[1]{{\color{ooo}\oldemph{#1}}}
 \definecolor{OOO}{HTML}{f5984c} 
     \newcommand{\OOO}[1]{{\color{OOO}#1}}
 \definecolor{ppp}{HTML}{f5769c}
