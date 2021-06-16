@@ -47,6 +47,10 @@
     {\Large\bfseries\color{sec}}
     {}{0pt}{}
 
+    \titlespacing*{\section}{0pt}
+        {1ex plus 7ex minus 1ex}
+        {1ex plus 0ex minus 0ex}
+
     \titleformat{\subsection}{\large\bfseries\color{ssec}}
     {}{0pt}{}
     
