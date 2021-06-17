@@ -1,5 +1,5 @@
  <p align="center">
-    <a title="HTML" href="https://www.udemy.com/course/html-tutorial/">
+    <a title="Udemy course link" href="https://www.udemy.com/course/html-tutorial/">
     <img src="../assets/images/html-css.ico">
     </a>
 </p>
