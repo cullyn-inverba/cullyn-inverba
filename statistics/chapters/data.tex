@@ -69,7 +69,7 @@
         \item \ddd{Binning}: a form \emph{quantization of continuous data}, wherein small intervals (bins) of the data are replaced with a value representative of that interval.
         \item The bins are usually specified as consecutive, non-overlapping intervals of a variable; they must be adjacent and are often of equal size.
         \item Histograms of \emph{counts} are usually better for \emph{qualitative} inspection of raw data, but can be difficult to compared across datasets.
-        \item Histograms of \emph{proportion} are usually better for \emph{quantitative} analysis, easier to compare across datasets, but can take extra effort to create.
+        \item Histograms of \emph{proportion} are usually better for \emph{quantitative} analysis, as they are typically easier to compare across datasets, but can take extra effort to create.
       \end{itemize}
     \item \ddd{Scatter plot}: a representation of the \emph{relationship between variables}, often two or three (2D/3D graphs).
       \begin{itemize}
@@ -91,6 +91,9 @@
             \item \(Q_3\): the middle value between the medium and the maximum of the data set; 75\% of the data lies below this point.
           \end{itemize}
         \item Often termed box and whisker plot, as the box represents the 50\% of the data, and the two whiskers represent the upper and lower 25\% of data.
+          \begin{itemize}
+            \item \ddd{Interquartile range IQR}: the box, i.e., the difference between upper and lower quartiles; \(IQR = Q_3-Q_1\).
+          \end{itemize}
         \item Outliers may be plotted as individual points.
         \item Useful when examining the \emph{variability of samples} without making any assumptions about underlying statistical distributions.
       \end{itemize}

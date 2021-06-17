@@ -1,3 +1,5 @@
 {"rule":"PASSIVE_VOICE","sentence":"^\\QThe bins are usually specified as consecutive, non-overlapping intervals of a variable; they must be adjacent and are often of equal size.\\E$"}
 {"rule":"PASSIVE_VOICE","sentence":"^\\QBinning: a form quantization of continuous data, wherein small intervals (bins) of the data are replaced with a value representative of that interval.\\E$"}
 {"rule":"PASSIVE_VOICE","sentence":"^\\QOutliers may be plotted as individual points.\\E$"}
+{"rule":"THREE_NN","sentence":"^\\QInferential statistics: the process data analysis to deduce properties of an underlying probability distribution.\\E$"}
+{"rule":"THREE_NN","sentence":"^\\QMethods/measures of descriptive statistics: Distribution shape Mean, median, mode Variance Kurtosis, skew No relation to population.\\E$"}

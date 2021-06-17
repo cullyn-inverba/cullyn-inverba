@@ -6,14 +6,84 @@
 
   \subsection{Descriptive vs. Inferential Statistics}
   \begin{itemize}
-    \item 
+    \item \ddd{Descriptive statistics}: the processes of using and analyzing summary statistics that quantitatively describes or summarizes features of a collection of information.
+      \begin{itemize}
+        \item Methods/measures of descriptive statistics:
+          \begin{itemize}
+            \item \hyperref[Subsection: Data Distributions]{\dlink{Distribution shape}}
+            \item \hyperref[Subsection: Measures of Central Tendency]{\dlink{Mean, median, mode}}
+            \item \hyperref[Subsection: Measures of Dispersion]{\dlink{Variance}}
+            \item \hyperref[Subsection: Statistical Moments]{\dlink{Kurtosis, skew}}
+          \end{itemize}
+        \item No relation to population.
+        \item No generalization to other datasets.
+        \item Concerned only with properties of observed data.
+      \end{itemize}
+    \item \ddd{Inferential statistics}: the process data analysis to deduce properties of an underlying probability distribution.
+      \begin{itemize}
+        \item Methods/measures of inferential statistics:
+          \begin{itemize}
+            \item \hyperref[Chapter: Probability Theory]{\dlink{P-value}}
+            \item \hyperref[Chapter: Hypothesis Testing]{\dlink{Hypothesis testing}}
+            \item \hyperref[Chapter: T-Tests]{\dlink{T/F/\(\chi^2 \) value}}
+            \item \hyperref[Chapter: Confidence Intervals]{\dlink{Confidence intervals}}
+            \item And essentially all of applied statistics.
+          \end{itemize}
+        \item Assumes that the observed dataset is sampled from a larger population. 
+        \item Entire purpose is to generalize/relate features to other datasets.
+      \end{itemize}
+  \end{itemize}
+
+  \subsection{Accuracy, Precision, Resolution}
+  \begin{itemize}
+    \item \ddd{Accuracy}: the relationship between the measurement and the actual truth.
+      \begin{itemize}
+        \item Inversely related to bias; colloquially interchangeable with accuracy. 
+      \end{itemize}
+    \item \ddd{Precision}: the certainty of each measurement.
+      \begin{itemize}
+        \item Inversely related to \hyperref[Subsection: Measures of Dispersion]{\dlink{variance}}
+      \end{itemize}
+    \item \ddd{Resolution}: the number of data points per unit measurement (e.g., time, space, individual, etc).
   \end{itemize}
   
   \subsection{Data Distributions}
   \begin{itemize}
-    \item 
-  \end{itemize}
-  
+    \item The shape of data distributions are functions of \hyperref[Chapter: Probability Theory]{\dlink{probability theory}}; a more in-depth explanation will be covered later, but for now coverage distribution types might be useful.
+    \item There are two major kinds of distributions based on \hyperref[Subsection: Data Types]{\ulink{data types}}: discrete and continuous.
+    \item \ddd{Discrete distribution}:
+      \begin{itemize}
+        \item Deals with events that occur in countable sample spaces; contains finite number of outcomes.
+        \item Summation of values can be done to estimate probability of an interval.
+        \item Expressed with graphs, piece-wise functions, or tables.
+        \item Expected values might not be achievable.
+        \item Common examples:
+        \begin{multicols}{2}
+        \begin{itemize}
+          \item \link{https://en.wikipedia.org/wiki/Bernoulli_distribution}{Bernoulli}
+          \item \link{https://en.wikipedia.org/wiki/Binomial_distribution}{Binomial}
+          \item \link{https://en.wikipedia.org/wiki/Discrete_uniform_distribution}{Uniform}
+          \item \link{https://en.wikipedia.org/wiki/Poisson_distribution}{Poisson}
+        \end{itemize}
+        \end{multicols}
+      \end{itemize}
+      \item \ddd{Continuous distribution}: 
+      \begin{itemize}
+        \item Deals with events that occur in a continuous sample space; contains infinitely many consecutive values. 
+        \item Summation of values in order to determine probability of interval not possible; integrals used instead.
+        \item Expressed with continuous functions or graphs.
+        \item Common examples:
+        \begin{multicols}{2}
+          \begin{itemize}
+            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal}
+            \item \link{https://en.wikipedia.org/wiki/Chi-square_distribution}{Chi-Squared}
+            \item \link{https://en.wikipedia.org/wiki/Logistic_distribution}{Logistic}
+            \item \link{https://en.wikipedia.org/wiki/Student\%27s_t-distribution}{Student's T}
+          \end{itemize}
+        \end{multicols}
+      \end{itemize}
+      \item \link{https://en.wikipedia.org/wiki/List_of_probability_distributions}{Wikipedia's list of probability distributions}
+    \end{itemize}
 \end{itemize}
 
 \section{Descriptive Techniques}
@@ -30,9 +100,16 @@
     \item 
   \end{itemize}
 
-  \subsection{Visualizations Revisited}
+  \subsection{Statistical Moments}
   \begin{itemize}
     \item 
+  \end{itemize}
+  
+  \subsection{Visualizations Revisited}
+  \begin{itemize}
+    \item \ddd{QQ plot}:
+    \item \ddd{Histogram bin number \(k\)}:
+    \item \ddd{Violin plot}:
   \end{itemize}
   
 \end{itemize}
