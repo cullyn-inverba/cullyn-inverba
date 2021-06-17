@@ -212,8 +212,8 @@
 % Emphasis: #f5af71 #f5984c #f58ecc #4ca9f5
 \definecolor{ooo}{HTML}{f5af71} 
     \newcommand{\ooo}[1]{{\color{ooo}#1}} 
-    \let\oldemph\emph
-    \renewcommand{\emph}[1]{{\color{ooo}\oldemph{#1}}}
+    % \let\oldemph\emph
+    \renewcommand{\emph}[1]{{\color{ooo}#1}}
 \definecolor{OOO}{HTML}{f5984c} 
     \newcommand{\OOO}[1]{{\color{OOO}#1}}
 \definecolor{ppp}{HTML}{f5769c}
