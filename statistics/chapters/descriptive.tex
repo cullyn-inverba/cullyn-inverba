@@ -135,12 +135,51 @@
 
   \subsection{Statistical Moments}
   \begin{itemize}
-    \item 
+    \item \ddd{Moments}: a quantitative measure related to shape of a functions graph; relates to physics and statistics.
+      \begin{itemize}
+        \item Regarding probability distributions, the general formula can be defined as:
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        m_\emph{k} = n ^{-1} \sum_{i = 1}^{n}(x_i - \overline{x})^\emph{k}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Increments of \(k\) define particular moments, i.e.,
+          \begin{itemize}
+            \item First moment \(k=1\): expected value, or \hyperref[Subsection: Measures of Central Tendency]{\ulink{mean}}.
+            \item Second moment \(k=2\): central moment, or \hyperref[Subsection: Measures of Dispersion]{\ulink{variance}}.
+            \item Third moment \(k=3\): dispersion asymmetry, or skewness.
+            \item Fourth moment \(k=4\): tail ``thickness,'' or kurtosis.
+            \item Further moments are possible, but useful applications are less common.
+          \end{itemize}
+        \item \ddd{Skewness}: a measure of asymmetry of a probability distribution of a real-valued random variable about its mean.
+          \begin{itemize}
+            \item Can be positive, zero, negative, or undefined.
+            \item \bbb{Negative skew}: an indication that the tail is on the \bbb{left}.
+            \item \minor{Zero skew}: an indication that tails \minor{balance out}; can be true for both asymmetric and symmetric distributions depending on kurtosis.
+            \item \rrr{Positive skew}: an indication that the tail is on the \rrr{right}. 
+          \end{itemize}
+        \item \ddd{Kurtosis}: measure of the thickness/curvature of the tail of a probability distribution is; an indication of deviation/outliers.
+          \begin{itemize}
+            \item Univariate normal distributions have a kurtosis of 3, leading to a common basis.
+            \item \bbb{Platykurtic \(< 3\)}: a term for \bbb{low} kurtosis, indicating that a \bbb{lesser degree} of deviations or \bbb{outliers} is observed.
+            \item \rrr{Leptokurtic \(> 3\)}: a term for \rrr{high} kurtosis, indicating that a \rrr{greater degree} of deviations or \rrr{outliers} is observed. 
+            \item \ddd{Excess kurtosis}: kurtosis minus 3, often colloquially termed as kurtosis; an indication a greater degree outliers compared to a normal distribution. 
+          \end{itemize}
+      \end{itemize} 
   \end{itemize}
   
   \subsection{Visualizations Revisited}
   \begin{itemize}
-    \item \ddd{QQ plot}:
+    \item \ddd{Q-Q (quantile-quantile) plot}: a graphical method for comparing two probability distributions by plotting their quantiles against each other. 
+      \begin{itemize}
+        \item \ddd{Quantile}: cut points dividing the range of probability distributions into continuous intervals with equal probabilities, e.g.,
+          \begin{itemize}
+            \item Percentiles: 0--100
+            \item Quartiles: 0--4
+            \item Quantiles: 0--\(x\)
+          \end{itemize}
+        \item The points of similar distributions will lie approximately on the line \(y=x\); 
+        \item However, other linear relations are possible, meaning points may not necessarily lie on the line \(y=x\).
+        \item Provides a mean for comparing location, scale, and skewness of similarities of differences in two distributions.
+      \end{itemize}
     \item \ddd{Histogram bin number \(k\)}:
     \item \ddd{Violin plot}:
   \end{itemize}

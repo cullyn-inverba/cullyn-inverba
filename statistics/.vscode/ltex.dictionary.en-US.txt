@@ -2,3 +2,5 @@ ToC
 QQ
 Kurtosis
 Lognormal
+kurtosis
+Platykurtic
