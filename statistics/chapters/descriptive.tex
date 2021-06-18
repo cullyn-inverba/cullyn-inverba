@@ -180,8 +180,27 @@
         \item However, other linear relations are possible, meaning points may not necessarily lie on the line \(y=x\).
         \item Provides a mean for comparing location, scale, and skewness of similarities of differences in two distributions.
       \end{itemize}
-    \item \ddd{Histogram bin number \(k\)}:
-    \item \ddd{Violin plot}:
+    \item \ddd{Histogram bin number \(k\)}: the is no ``best'' number of bins, different bin sizes can reveal different features of the data, but there are several methods of determining \(k\);
+      \begin{itemize}
+        \item Determination via suggested bin width \(h\):
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        k = \left\lceil \frac{\max(x) - \min(x)}{h} \right\rceil
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Sturges' formula: derived from binomial distribution; assumes approximately normal distribution:
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        k = \left\lceil \log_2(n) \right\rceil
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Freedman-Diaconis' rule: method of determining \(h\) using interquartile range (IQR); often method of choice:
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        h = 2\frac{\operatorname{IQR}(x)}{\sqrt[3]{n}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Arbitrary \(\approx42\): often intuitive guesses are sufficient and yield useable results:
+      \end{itemize}
+    \item \ddd{Violin plot}: similar to a box plot, but rotated with addition of a kernel density plot on each side. 
+      \begin{itemize}
+        \item \ddd{Kernel density plot}: essentially a smoothing estimation based on finite data samples.
+        \item Statistical and IQR moments can be conveniently shown, sometimes with asymmetric comparisons of similar data sets (rather than a mirrored version).
+      \end{itemize}
   \end{itemize}
   
 \end{itemize}

@@ -4,3 +4,5 @@ Kurtosis
 Lognormal
 kurtosis
 Platykurtic
+Sturges
+Freedman-Diaconis
