@@ -55,8 +55,8 @@
     {}{0pt}{}
     
     \titlespacing*{\subsection}{0pt}
-        {1ex plus 8ex minus 1ex}
-        {1ex plus 0ex minus 0ex}
+        {1ex plus 6.9ex minus 1ex}
+        {1ex plus 6.9ex minus 0ex}
 
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ ││││ │ ├┤ │││ │ └─┐
@@ -197,7 +197,7 @@
     \newcommand{\dark}[1]{{\color{dark}#1}}
 
 % Text: #ebebeb #e0e0e0 #949494 #6b6b6b #2f2f2f 
-\definecolor{light}{HTML}{ebebeb}  
+\definecolor{bright}{HTML}{ebebeb}  
     \newcommand{\bright}[1]{{\color{bright}#1}}
 \definecolor{fg}{HTML}{e0e0e0}  
     \newcommand{\fg}[1]{{\color{fg}#1}}
