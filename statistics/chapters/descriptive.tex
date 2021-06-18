@@ -16,7 +16,7 @@
             \item \hyperref[Subsection: Statistical Moments]{\dlink{Kurtosis, skew}}
           \end{itemize}
         \item No relation to population.
-        \item No generalization to other datasets.
+        \item No generalization to other data sets.
         \item Concerned only with properties of observed data.
       \end{itemize}
     \item \ddd{Inferential statistics}: the process data analysis to deduce properties of an underlying probability distribution.
@@ -29,8 +29,8 @@
             \item \hyperref[Chapter: Confidence Intervals]{\dlink{Confidence intervals}}
             \item And essentially all of applied statistics.
           \end{itemize}
-        \item Assumes that the observed dataset is sampled from a larger population. 
-        \item Entire purpose is to generalize/relate features to other datasets.
+        \item Assumes that the observed data set is sampled from a larger population. 
+        \item Entire purpose is to generalize/relate features to other data sets.
       \end{itemize}
   \end{itemize}
 
@@ -49,8 +49,8 @@
   
   \subsection{Data Distributions}
   \begin{itemize}
-    \item The shape of data distributions are functions of \hyperref[Chapter: Probability Theory]{\dlink{probability theory}}; a more in-depth explanation will be covered later, but for now coverage distribution types might be useful.
-    \item There are two major kinds of distributions based on \hyperref[Subsection: Data Types]{\ulink{data types}}: discrete and continuous.
+    \item The shape of data distributions are functions of \hyperref[Chapter: Probability Theory]{\dlink{probability theory}}; a more in-depth explanation will be covered later, but for now coverage of common distribution types might be useful.
+    \item There is one major distinction of distributions based on \hyperref[Subsection: Data Types]{\ulink{data types}}, either discrete or continuous.
     \item \ddd{Discrete distribution}:
       \begin{itemize}
         \item Deals with events that occur in countable sample spaces; contains finite number of outcomes.
@@ -60,10 +60,10 @@
         \item Common examples:
         \begin{multicols}{2}
         \begin{itemize}
-          \item \link{https://en.wikipedia.org/wiki/Bernoulli_distribution}{Bernoulli}
-          \item \link{https://en.wikipedia.org/wiki/Binomial_distribution}{Binomial}
-          \item \link{https://en.wikipedia.org/wiki/Discrete_uniform_distribution}{Uniform}
-          \item \link{https://en.wikipedia.org/wiki/Poisson_distribution}{Poisson}
+          \item \link{https://en.wikipedia.org/wiki/Bernoulli_distribution}{Bernoulli}: a model for the set of possible outcomes of any single binary experiment.
+          \item \link{https://en.wikipedia.org/wiki/Binomial_distribution}{Binomial}: a sequence of \(n\) independent Bernoulli experiments; a basis for the binomial test.
+          \item \link{https://en.wikipedia.org/wiki/Discrete_uniform_distribution}{Uniform}: a known, finite number of values are equally likely to be observed.
+          \item \link{https://en.wikipedia.org/wiki/Poisson_distribution}{Poisson}: a sequence of independent events over a specified interval with a known constant mean rate.
         \end{itemize}
         \end{multicols}
       \end{itemize}
@@ -75,10 +75,10 @@
         \item Common examples:
         \begin{multicols}{2}
           \begin{itemize}
-            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal}
-            \item \link{https://en.wikipedia.org/wiki/Chi-square_distribution}{Chi-Squared}
-            \item \link{https://en.wikipedia.org/wiki/Logistic_distribution}{Logistic}
-            \item \link{https://en.wikipedia.org/wiki/Student\%27s_t-distribution}{Student's T}
+            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal}: used to represent real-valued random variables who are not known; very common.
+            \item \link{https://en.wikipedia.org/wiki/Chi-square_distribution}{Chi-Squared}: the sum of squares of \(k\) independent standard normal random variables.
+            \item \link{https://en.wikipedia.org/wiki/Log-normal_distribution}{Lognormal}: distribution of a random variable whose logarithm is normally distributed.
+            \item \link{https://en.wikipedia.org/wiki/Student\%27s_t-distribution}{Student's T}: estimations of the mean using mall sample sizes with unknown standard deviations.
           \end{itemize}
         \end{multicols}
       \end{itemize}
@@ -92,12 +92,45 @@
 
   \subsection{Measures of Central Tendency}
   \begin{itemize}
-    \item 
+    \item \ddd{Mean \(\overline{x}\)}: the sum of all measurements \(x_i\) divided by the number \(n\) of observations in the data set \(x\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \overline{x}= n ^{-1}\sum_{i=1}^{n}x_i
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Suitable for roughly normally distributed data of continuous data types.
+    \end{itemize}
+    \item \ddd{Median \(\operatorname{med}(x)\)}: the middle value of the data, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    x_i,\quad i=\frac{n+1}{2}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Suitable for unimodal distributions of continuous data types.
+      \item Odd number of observations with no distinct middle value are usually defined as the mean of the two middle values.
+    \end{itemize}
+    \item \ddd{Mode}: most common value.
+      \begin{itemize}
+        \item Suitable for any discrete distribution, usually used for nominal data types.
+      \end{itemize}
   \end{itemize}
 
   \subsection{Measures of Dispersion}
   \begin{itemize}
-    \item 
+    \item \ddd{Dispersion}: the measure of how distributed, or deviated, data are around a central value.
+    \item \ddd{Variance \(\sigma^2, s^2\)}: the primary measure of dispersion, or more explicitly, the expectation of the squared deviation of a random variable from its mean, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \sigma^2 = \frac{1}{n-1}\sum_{i = 1}^{n}(x_i-\overline{x})^2
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Suitable for any distribution; better for normally distributed data.
+      \item Mean centering, i.e., \((x_i - \overline{x})\), is done to capture the dispersion around the average, but not the magnitude of the values themselves.
+      \item The sum of a mean-centered data set would be zero, thus it is squared.
+        \begin{itemize}
+          \item \ddd{Mean absolute difference (MAD)}: when the absolute value of mean-centered data is taken instead of the square value. 
+          \item MAD is more robust to outliers, but further from Euclidean distance and less commonly used. 
+        \end{itemize}
+      \item Division by \(n-1\) is used for sample variance, as often sample sizes can be small and are considered empirical quantities; \(n ^{-1}\) is used for population variance (a theoretical quantity).
+      \item \ddd{Standard Deviation \(\sigma\)}: simply the square root of variance, \(\sqrt{\sigma^2}\)
+    \end{itemize}
   \end{itemize}
 
   \subsection{Statistical Moments}

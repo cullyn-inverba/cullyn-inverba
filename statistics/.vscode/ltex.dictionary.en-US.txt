@@ -1,3 +1,4 @@
 ToC
 QQ
 Kurtosis
+Lognormal
