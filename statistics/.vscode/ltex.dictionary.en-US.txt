@@ -6,3 +6,5 @@ kurtosis
 Platykurtic
 Sturges
 Freedman-Diaconis
+winsorization
+NaN

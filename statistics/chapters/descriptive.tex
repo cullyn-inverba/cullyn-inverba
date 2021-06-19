@@ -10,7 +10,7 @@
       \begin{itemize}
         \item Methods/measures of descriptive statistics:
           \begin{itemize}
-            \item \hyperref[Subsection: Data Distributions]{\dlink{Distribution shape}}
+            \item \hyperref[Subsection: Probability Distributions]{\dlink{Distribution shape}}
             \item \hyperref[Subsection: Measures of Central Tendency]{\dlink{Mean, median, mode}}
             \item \hyperref[Subsection: Measures of Dispersion]{\dlink{Variance}}
             \item \hyperref[Subsection: Statistical Moments]{\dlink{Kurtosis, skew}}
@@ -47,10 +47,10 @@
     \item \ddd{Resolution}: the number of data points per unit measurement (e.g., time, space, individual, etc).
   \end{itemize}
   
-  \subsection{Data Distributions}
+  \subsection{Probability Distributions}
   \begin{itemize}
-    \item The shape of data distributions are functions of \hyperref[Chapter: Probability Theory]{\dlink{probability theory}}; a more in-depth explanation will be covered later, but for now coverage of common distribution types might be useful.
-    \item There is one major distinction of distributions based on \hyperref[Subsection: Data Types]{\ulink{data types}}, either discrete or continuous.
+    \item The shapes of data distributions are functions of \hyperref[Chapter: Probability Theory]{\dlink{probability theory}}; a more in-depth explanation will be covered later, but for now coverage of common distribution types might be useful.
+    \item Overall, there is one major distinction of distribution type based on \hyperref[Subsection: Data Types]{\ulink{data types}} used, either discrete or continuous.
     \item \ddd{Discrete distribution}:
       \begin{itemize}
         \item Deals with events that occur in countable sample spaces; contains finite number of outcomes.
@@ -75,7 +75,7 @@
         \item Common examples:
         \begin{multicols}{2}
           \begin{itemize}
-            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal}: used to represent real-valued random variables who are not known; very common.
+            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal (Gaussian)}: used to represent real-valued random variables who are not known; very common.
             \item \link{https://en.wikipedia.org/wiki/Chi-square_distribution}{Chi-Squared}: the sum of squares of \(k\) independent standard normal random variables.
             \item \link{https://en.wikipedia.org/wiki/Log-normal_distribution}{Lognormal}: distribution of a random variable whose logarithm is normally distributed.
             \item \link{https://en.wikipedia.org/wiki/Student\%27s_t-distribution}{Student's T}: estimations of the mean using mall sample sizes with unknown standard deviations.
@@ -203,4 +203,84 @@
       \end{itemize}
   \end{itemize}
   
+\end{itemize}
+
+\section{Introduction to Normalization}
+\begin{itemize}
+  \item \ddd{Normalization of ratings (feature scaling)}: adjusting values measured on different scales to notionally common scale, often prior to averaging.
+    \begin{itemize}
+      \item Often in more complicated cases, the adjustments are meant to bring the entire probability distribution of adjusted values into alignment.
+    \end{itemize}
+  \item \ddd{Normalized values (normalization)}: creation of shifted and scaled versions of samples with the intention of minimizing the effect of gross \hyperref[Subsection: Outliers]{\dlink{anomalies/outliers}}.
+  \item There are many types of normalization techniques in statistics, each with their own respective applications based on data types and distribution shapes; for now, only standard score and min-max scaling will be covered, with others introduced at more appropriate times.
+
+  \subsection{Z-Score Standardization}
+  \begin{itemize}
+    \item \ddd{Z-score (standard score)}: the number of \hyperref[Subsection: Measures of Dispersion]{\ulink{standard deviations \(\sigma\)}} by which the value of a raw score \(x_i\) is above or below the \hyperref[Subsection: Measures of Central Tendency]{\ulink{mean \(\overline{x}\)}}, i.e., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    z_i = \frac{x_i - \overline{x}}{\sigma_x}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Application of z-normalization is best done on data that is roughly \hyperref[Subsection: Probability Distributions]{\ulink{Gaussian}}. 
+    \item The z-score is dimensionless, as units cancel out, leading to main application wherein data of different scales can be meaningfully compared. 
+  \end{itemize}
+
+  \subsection{Min-Max Scaling}
+  \begin{itemize}
+    \item \ddd{Rescaling (min-max normalization) \(x'\)}: the simplest method of rescaling the range of features, either from \([0,1]\) or \([\text{\textminus}1,1]\); the general formula for \([0,1]\) is given as:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    x'=\frac{x-\min(x)}{\max(x)-\min(x)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Rescaling to any arbitrary range \([\bbb{a},\rrr{b}]\):
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    x'=\bbb{a}+\frac{(x-\min(x))(\rrr{b}-\bbb{a})}{\max(x)-\min(x)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+  \end{itemize}
+  
+
+\subsection{Outliers}
+\begin{itemize}
+  \item \ddd{Outlier}: a data point that differs significantly from other observations, potentially due to a variety of reasons either, due to the cause of experimental error in observations, random noise, unexplained/surprising phenomena, or simply by natural variability.
+  \item Outliers can cause serious errors in statistical analysis, as many methods square terms, leading to potentially huge errors. 
+    \begin{itemize}
+      \item Often extremely detrimental impacts on small sample sizes are observed, as significance of the outliers decrease with increasing sample size.
+    \end{itemize}
+  \item \ddd{Leverage}: a measure of how far away the independent variable values of an observation are from those of other observations.
+    \begin{itemize}
+      \item Outliers are worse near the ``edges'' of the data, compared to the ``middle,'' as outliers further away increase the leverage.
+      \item Lower leverage has less influence on statistical analysis, and in particular, it is a large factor in \hyperref[Chapter: Regression]{\dlink{regression analysis}}.
+    \end{itemize}
+  \item There are two main strategies for dealing with outliers, either:
+    \begin{itemize}
+      \item Identify and \fff{remove outliers} prior to analysis; assuming outliers are \fff{noise or invalid}.
+      \item \ttt{Keep outliers} in and use robust methods that attenuate the negative impact of outliers; assume outliers are \ttt{unusual but valid}.
+        \begin{itemize}
+          \item Robust methods of retention will be examined when more appropriate.
+        \end{itemize}
+    \end{itemize}
+  \item Despite strategy chosen, outliers ought to be investigated; sometimes outliers might be an important aspect of the data.
+\end{itemize}
+
+  \subsection{Removing Outliers}
+  \begin{itemize}
+    \item There are many methods of removing outliers, here use of the \hyperref[Subsection: Z-Score Standardization]{\ulink{z-score}} is explained. Again, more in-depth examinations of methods will be examined when appropriate.
+    \item First, data must be converted to a \emph{normalized} metric, e.g., the z-score.
+    \item Next, a \emph{threshold} must be determined that marks data points for suspect, dealing with them either methods of truncation or winsorization.
+      \begin{itemize}
+        \item \ddd{Truncation (trimming)}: complete removal, with possible replacement of NaN placeholder to maintain indexing.
+        \item \ddd{Winsorization (clipping)}: replacement outlier with the nearest or a less suspect ``alternative'' value.
+        \item A variety of methods of determining such threshold can be used, even such methods lead to potentially arbitrary choices; 3 is often a default starting point.
+      \end{itemize}
+    \item Finally, suspect data are \emph{dealt with iteratively} until no other data pass the given threshold.
+    \item Note, the z-score is generally only useful for roughly \hyperref[Subsection: Probability Distributions]{\ulink{Gaussian distributions}}, however, a modified z-score using the median can be applied for non-normal distributions, i.e., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    z_i = \frac{0.6745(x_i-\med(x))}{\med(|x_i-\med(x)|)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item 0.6745 is a normalization factor equal the standard deviation units of \hyperref[boxplot]{\ulink{\(Q_3\)}} of a Gaussian distribution.
+    \end{itemize}
+    \item Deletion of data is generally avoided, with only clear indications of measurement error being the reason to do so. 
+    \item Multivariate data sets are dealt in similar way, where the only difference is that the mean of the data set is taken by calculating the Euclidean distance between all points in the set, then applying the method(s) described above.
+  \end{itemize}
+
 \end{itemize}
