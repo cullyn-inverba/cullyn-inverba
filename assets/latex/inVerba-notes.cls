@@ -78,20 +78,13 @@
 %  ║  │└─┐ │ └─┐
 %  ╩═╝┴└─┘ ┴ └─┘
 \RequirePackage{enumitem}
-    \setlist[itemize]{itemsep=-0.3ex,topsep=-0.3ex,partopsep=-0.3ex}
-    \setlist[itemize,1]{
-        label=\small\(\color{minor}\bullet\), 
-        leftmargin=\dimexpr1em
-    }
-    \setlist[itemize,2]{
-        label=\small\(\circ\),
-        leftmargin=\dimexpr1em
-    }
-    \setlist[itemize,3]{
-        label=\small\color{minor}\textbullet,
-        leftmargin=\dimexpr1em
-    }
-    \setlist[itemize,4]{leftmargin=\dimexpr1em}
+    \setlist[itemize]{itemsep=-0.3ex,topsep=-0.3ex,partopsep=-0.3ex,leftmargin=\dimexpr1em}
+    
+    \setlist[itemize,1]{label=\small\(\color{minor}\bullet\)}
+    \setlist[itemize,2]{label=\small\(\circ\)}
+    \setlist[itemize,3]{label=\small\color{minor}\textbullet,}
+
+    \setlist[enumerate]{itemsep=-0.3ex,topsep=-0.3ex,partopsep=-0.3ex,leftmargin=\dimexpr1.25em}
 
 % ╔═╗┌─┐┌┐┌┌┬┐┌─┐
 % ╠╣ │ ││││ │ └─┐
