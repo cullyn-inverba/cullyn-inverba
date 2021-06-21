@@ -10,7 +10,7 @@
       \begin{itemize}
         \item Methods/measures of descriptive statistics:
           \begin{itemize}
-            \item \hyperref[Subsection: Probability Distributions]{\dlink{Distribution shape}}
+            \item \hyperref[Subsection: Primer: Probability Distributions]{\dlink{Distribution shape}}
             \item \hyperref[Subsection: Measures of Central Tendency]{\dlink{Mean, median, mode}}
             \item \hyperref[Subsection: Measures of Dispersion]{\dlink{Variance}}
             \item \hyperref[Subsection: Statistical Moments]{\dlink{Kurtosis, skew}}
@@ -47,9 +47,9 @@
     \item \ddd{Resolution}: the number of data points per unit measurement (e.g., time, space, individual, etc).
   \end{itemize}
   
-  \subsection{Probability Distributions}
+  \subsection{Primer: Probability Distributions}
   \begin{itemize}
-    \item The shapes of data distributions are functions of \hyperref[Chapter: Probability Theory]{\dlink{probability theory}}; a more in-depth explanation will be covered later, but for now coverage of common distribution types might be useful.
+    \item The shapes of data distributions are \hyperref[Section: Probability Functions]{\dlink{functions of probability theory}}; a more in-depth explanation will be covered later, but for now coverage of common distribution types might be useful.
     \item Overall, there is one major distinction of distribution type based on \hyperref[Subsection: Data Types]{\ulink{data types}} used, either discrete or continuous.
     \item \ddd{Discrete distribution}:
       \begin{itemize}
@@ -75,7 +75,7 @@
         \item Common examples:
         \begin{multicols}{2}
           \begin{itemize}
-            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal (Gaussian)}: used to represent real-valued random variables who are not known; very common.
+            \item \link{https://en.wikipedia.org/wiki/Normal_distribution}{Normal (Gaussian)}: used to represent real-valued random variables who are not known.
             \item \link{https://en.wikipedia.org/wiki/Chi-square_distribution}{Chi-Squared}: the sum of squares of \(k\) independent standard normal random variables.
             \item \link{https://en.wikipedia.org/wiki/Log-normal_distribution}{Lognormal}: distribution of a random variable whose logarithm is normally distributed.
             \item \link{https://en.wikipedia.org/wiki/Student\%27s_t-distribution}{Student's T}: estimations of the mean using mall sample sizes with unknown standard deviations.
@@ -220,7 +220,7 @@
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     z_i = \frac{x_i - \overline{x}}{\sigma_x}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item Application of z-normalization is best done on data that is roughly \hyperref[Subsection: Probability Distributions]{\ulink{Gaussian}}. 
+    \item Application of z-normalization is best done on data that is roughly \hyperref[Subsection: Primer: Probability Distributions]{\ulink{Gaussian}}. 
     \item The z-score is dimensionless, as units cancel out, leading to main application wherein data of different scales can be meaningfully compared. 
   \end{itemize}
 
@@ -272,7 +272,7 @@
         \item A variety of methods of determining such threshold can be used, even such methods lead to potentially arbitrary choices; 3 is often a default starting point.
       \end{itemize}
     \item Finally, suspect data are \emph{dealt with iteratively} until no other data pass the given threshold.
-    \item Note, the z-score is generally only useful for roughly \hyperref[Subsection: Probability Distributions]{\ulink{Gaussian distributions}}, however, a modified z-score using the median can be applied for non-normal distributions, i.e., 
+    \item Note, the z-score is generally only useful for roughly \hyperref[Subsection: Primer: Probability Distributions]{\ulink{Gaussian distributions}}, however, a modified z-score using the median can be applied for non-normal distributions, i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     z_i = \frac{0.6745(x_i-\med(x))}{\med(|x_i-\med(x)|)}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
