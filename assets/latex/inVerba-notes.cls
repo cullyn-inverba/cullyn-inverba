@@ -31,12 +31,9 @@
 \RequirePackage[object=vectorian]{pgfornament}
     \titleformat{\chapter}
     {\LARGE\centering\bfseries\color{title-color}}
-    {}{0pt}{}
-    [
+    {}{0pt}{}[
     \vspace{-16pt}\hspace{1pt}
-    {\hyperlink{ToC}{
-        \pgfornament[width=8cm,ydelta=10pt]{84}
-        }}
+    {\hyperlink{ToC}{\pgfornament[width=8cm,ydelta=10pt]{84}}}
     \vspace{-2pt}
     ]
         
