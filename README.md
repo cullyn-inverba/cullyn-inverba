@@ -1,5 +1,13 @@
 ![Portland State University](assets/images/psu.jpg)
 
+<h1>Summer 2021</h1>
+
+|                                       [Cultural Ecology](/capstone)                                        |
+| :--------------------------------------------------------------------------------------------------------: |
+|                   [![UNST 421: Cultural Ecology](assets/images/capstone.ico)](/capstone)                   |
+|      [Syllabus](https://docs.google.com/document/d/1geywAoxVMRb0wuzpJfjjkg1IOPnZne1Kps4hJawJEvY/edit)      |
+| [Calendar](https://docs.google.com/spreadsheets/d/1sibCFDL0m-65j6lZbn9wwCBAsYRA8rADOwz6DuVaKuU/edit#gid=0) |
+
 <h1>Fall 2021 Class Resources</h1>
 
  <p align="center">
@@ -27,6 +35,6 @@
 
  <h1>Independent Learning</h1>
 
-|             [Golang](/golang)              |              [Statistics](/statistics)               | [HTML & CSS](/html-css)  | 
-| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------:  | 
-| [![Golang](assets/images/go.ico)](/golang) | [![Statistics](assets/images/stat.ico)](/statistics) | [![html-css](assets/images/html-css.ico)](/html-css) | 
+|             [Golang](/golang)              |              [Statistics](/statistics)               |               [HTML & CSS](/html-css)                |
+| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: |
+| [![Golang](assets/images/go.ico)](/golang) | [![Statistics](assets/images/stat.ico)](/statistics) | [![html-css](assets/images/html-css.ico)](/html-css) |

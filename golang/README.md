@@ -1,6 +1,6 @@
  <p align="center">
     <a title="Golang Training" href="https://www.udemy.com/course/learn-how-to-code/">
-    <img src="../assets/images/go.ico">
+    <img height="420" src="../assets/images/go.png">
     </a>
 </p>
 
