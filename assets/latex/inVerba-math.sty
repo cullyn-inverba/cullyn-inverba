@@ -55,3 +55,9 @@
 
 % Operator names 
 \def\med{\operatorname{med}{\hspace{-2pt}}}
+
+% Redfined with color
+\let\oldcup\cup
+\renewcommand{\cup}{\hspace{3pt}\fff{\oldcup}\hspace{2pt}}
+\let\oldcap\cap
+\renewcommand{\cap}{\hspace{3pt}\ttt{\oldcap}\hspace{2pt}}

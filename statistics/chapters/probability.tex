@@ -29,7 +29,7 @@
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     P(\Omega) = 1
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item \ddd{Third axiom}: the assumption of \(\sigma \)-additivity, wherein any \emph{countable} sequence of disjoint sets (mutually exclusive events) \(E_1,E_2,\ldots\) satisfies
+    \item \ddd{Third axiom}: the assumption of \(\sigma \)-additivity, wherein any \emph{countable} sequence of \hyperref[Subsection: Independent and Mutually Exclusive Events]{\dlink{disjoint sets}} \(E_1,E_2,\ldots\) satisfies
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     P\left(\bigcup_{i=1}^{\infty}E_i\right) = \sum_{i = 1}^{\infty}P(E_i)
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,12 +40,48 @@
 
   \subsection{Independent and Mutually Exclusive Events}
   \begin{itemize}
-    \item 
+    \item \ddd{Stochastically independent}: when an event does not affect the probability of another, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P(A~\ttt{\text{and}}~B)=P(A\cap B)=P(A)P(B)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Two random variables are independent if the realization of one does not affect the probability distribution of the other.
+      \item \ddd{Pairwise independent (weak notion)}: two specific events in a collection that are independent of each other.
+      \item \ddd{Mutually independent (strong notion)}: when each event is independent of any combination of other events in the collection.
+      \item Often the stronger notion is simply termed independence, as it implies the weaker version, but not the other way around.
+    \end{itemize}
+    \item \ddd{Mutually exclusive (disjoint)}: two events that cannot occur at the same time, i.e., 
+    \begin{itemize}
+      \item Probability of \ttt{both}:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      P(A~\text{\ttt{and}}~B) = P(A\cap B)= \minor{0} 
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Probability of \fff{either}: \(\hspace{182pt}\minor{\downarrow}\)
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      P(A~\fff{\text{or}}~B)=P(A\cup B)=  P(A)+P(B) - \minor{P(A\cap B)} = P(A)+P(B) 
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+    \item \ddd{Collectively exhaustive (jointly)}: when at least one event must occur while exhausting all other possibilities at a given time, or that their union must coverall the events within the entire sample space, i.e., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    A\cup B = \Omega
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
   \end{itemize}
   
-  \subsection{Conditional Probability}
+  \subsection{Primer: Conditional Probability}
   \begin{itemize}
-    \item 
+    \item \ddd{Conditional probability}: the probability of some event \(A\), given \(|\) the occurrence of some other event \(B\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P(A~|\iipt B)=\frac{P(A\cap B)}{P(B)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Note, \(P(A\iipt | \ipt B)\) typically differs from \(P(B \iipt | \ipt A)\), falsely equating the two often results in errors, termed the base rate fallacy.
+    \end{itemize}
+    \item \ddd{Bayes' theorem}: probability of an event based on prior knowledge of conditions that might be related to the event; inference using conditional probability, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P(A~|\iipt B)=\frac{P(B\,|\iipt A)P(A)}{P(B)}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item More on Bayesian statistics may or not be explored in greater depth in this course.
   \end{itemize}
   
 \end{itemize}
