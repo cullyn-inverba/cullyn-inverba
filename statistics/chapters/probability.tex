@@ -2,11 +2,40 @@
 
 \section{Probability Fundamentals}
 \begin{itemize}
-  \item[]
-  
-  \subsection{Probability Axioms}
+  \item \ddd{Probability}: a measure of the likelihood that an event will occur; used to quantify attitudes towards propositions whose truth are not certain.
+    \begin{itemize}
+      \item Quantitatively, probability is a number between 0 and 1, which is often expressed as a percentage.
+    \end{itemize}
+  \item \ddd{Probability theory}: the axiomatic formalization of probability; widely used in many fields of study from math to philosophy.
+  \item \ddd{Probability space \((\Omega, \F, P)\)}: a formal construct consisting of three elements that provides a model for a random process.
+    \begin{itemize}
+      \item \ddd{Sample space \(\Omega\)}: the set of all possible outcomes.
+      \item \ddd{Event space \(\F\)}: all sets of outcomes; all subsets of the sample space.
+      \item \ddd{Probability function \(P(E)\)}: the assignment of a number between 0 and 1 that represents the probability of each event \(E\) in event space.
+    \end{itemize}
+  \item \ddd{Proportion}: the measure of certainty; a fraction of a whole or the relation between two varying quantities.
+    \begin{itemize}
+      \item Proportion \textit{could} involve random variables, so depending on how the question is asked, then proportion could be the same as probability, but ultimately they are not interchangeable.
+    \end{itemize}
+  \item \ddd{Odds}: the ratio of the number of events that produce an outcome to the number of events that do not; essentially probability reframed in potentially more efficient way.
+
+  \subsection{Probability Theory Axioms}
   \begin{itemize}
-    \item 
+    \item \ddd{First axiom}: the probability of an event is a \emph{non-negative number real number}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P(E) \in \R,\quad P(E)\geq 0 \qqquad \forall E \in \F
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ddd{Second axiom}: the assumption of unit measure; the probability that \emph{at least one elementary event} in the entire sample space \emph{will occur} is 1, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P(\Omega) = 1
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ddd{Third axiom}: the assumption of \(\sigma \)-additivity, wherein any \emph{countable} sequence of disjoint sets (mutually exclusive events) \(E_1,E_2,\ldots\) satisfies
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P\left(\bigcup_{i=1}^{\infty}E_i\right) = \sum_{i = 1}^{\infty}P(E_i)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Thus, only \hyperref[Subsection: Data Types]{\ulink{discrete data}} are valid for probability; continuous data must be converted to discrete forms in order to be valid.
+    \end{itemize}
   \end{itemize}
 
   \subsection{Independent and Mutually Exclusive Events}
