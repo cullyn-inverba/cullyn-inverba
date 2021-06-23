@@ -434,3 +434,5 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/latex,python
+
+__latexindent_temp.tex
