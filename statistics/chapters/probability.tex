@@ -11,7 +11,7 @@
     \begin{itemize}
       \item \ddd{Sample space \(\Omega\)}: the set of all possible outcomes.
       \item \ddd{Event space \(\F\)}: all sets of outcomes; all subsets of the sample space.
-      \item \ddd{Probability function \(P(E)\)}: the assignment of a number between 0 and 1 that represents the probability of each event \(E\) in event space.
+      \item \ddd{Probability function \(P(E \in \F)\)}: the assignment of a number between 0 and 1 that represents the probability of each event \(E\) in event space.
     \end{itemize}
   \item \ddd{Proportion}: the measure of certainty; a fraction of a whole or the relation between two varying quantities.
     \begin{itemize}
@@ -84,22 +84,45 @@
     \item More on Bayesian statistics may or not be explored in greater depth in this course.
   \end{itemize}
   
-\end{itemize}
-
-\section{Probability Functions}
-\begin{itemize}
-  \item []
   
-  \subsection{Probability Mass vs. Density}
+  \subsection{Probability Functions}
   \begin{itemize}
-    \item 
+    \item Again, a \hyperref[Section: Probability Fundamentals]{\ulink{probability function}} is the assignment of a number of \hyperref[Section: Probability Fundamentals]{\ulink{probability space}} (sometimes denoted \(X,\mathcal{A},P\), respectively). 
+    \item \ddd{Probability distributions}: the product of  variations of the probability function based on given event space and properties of data types.
+    \begin{itemize}
+      \item As mentioned in the \hyperref[Subsection: Primer: Probability Distributions]{\ulink{primer}} to this topic, probability distributions are generally divided into two classes based on data, i.e., either \emph{discrete or continuous}.
+    \end{itemize}
+    
+    \item \ddd{Probability mass function (PMF)}: a function that gives the probability that a \emph{discrete} random variable  is exactly equal to some value. 
+    \begin{itemize}
+      \item The function \(p:\R \rightarrow [0,1]\) is defined formally as:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      p(x_i)=P(X=x_i) \qquad -\infty<x<\infty
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item The associated probability values must follow the \hyperref[Subsection: Probability Theory Axioms]{\ulink{Kolmogorov axioms}}, which means all possible values must be positive and sum up to 1, implying all other probabilities must be 0, i.e., 
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      p(x_i) > 0,\qquad
+      \sum p(x_i)=1,\qquad
+      p(x) = 0 \quad \forall x \,\neg ~x_i
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Thinking of probability as mass helps avoid mistakes since physical mass is conserved, as is total probability for all hypothetical outcomes of \(x\).
+      \item Major associated distributions include the  \hyperref[Subsection: Primer: Probability Distributions]{\ulink{previously mentioned}} Bernoulli and Binomial distributions, but geometric distributions deserve a mention as well. 
+      \item \link{https://en.wikipedia.org/wiki/Geometric_distribution}{Geometric distribution}: a description of the number of trials/failures needed to get to one/first success.
+    \end{itemize}
+    \item \ddd{Probability density function (PDF)}: a function that describes \emph{relative} probabilities for a set of \hyperref[Subsection: Independent and Mutually Exclusive Events]{\ulink{exclusive}} \emph{continuous} events, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P(a\leq X \leq b) = \int_a^b f_X(x)dx
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ddd{Cumulative density function (CDF)}: the PDF can also be described as the cumulative sum of continuous probabilities up to a particular point, i.e., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    F_X(x) = \int_{-\infty}^x f_X(u)du \quad \text{or (in practice)}\quad
+    C(x_a) = \sum_{i = 1}^{a} p(x_i)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Note: every CDF is non-decreasing and right-continuous 
+      \item Note: the sum of CDF is \(> 1\).
+    \end{itemize}
   \end{itemize}
-
-  \subsection{Cumulative Density Function}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
 \end{itemize}
 
 \section{Sample Distributions}
@@ -117,11 +140,6 @@
   \end{itemize}
   
   \subsection{Sample Variability}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Expected Value}
   \begin{itemize}
     \item 
   \end{itemize}
