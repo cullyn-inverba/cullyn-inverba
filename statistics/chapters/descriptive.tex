@@ -92,9 +92,9 @@
 
   \subsection{Measures of Central Tendency}
   \begin{itemize}
-    \item \ddd{Mean \(\overline{x}\)}: the sum of all measurements \(x_i\) divided by the number \(n\) of observations in the data set \(x\), i.e.,
+    \item \ddd{Mean \(\bar{x}\)}: the sum of all measurements \(x_i\) divided by the number \(n\) of observations in the data set \(x\), i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \overline{x}= n ^{-1}\sum_{i=1}^{n}x_i
+    \bar{x}= n ^{-1}\sum_{i=1}^{n}x_i
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Suitable for roughly normally distributed data of continuous data types.
@@ -118,11 +118,11 @@
     \item \ddd{Dispersion}: the measure of how distributed, or deviated, data are around a central value.
     \item \ddd{Variance \(\sigma^2, s^2\)}: the primary measure of dispersion, or more explicitly, the expectation of the squared deviation of a random variable from its mean, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \sigma^2 = \frac{1}{n-1}\sum_{i = 1}^{n}(x_i-\overline{x})^2
+    \sigma^2 = \frac{1}{n-1}\sum_{i = 1}^{n}(x_i-\bar{x})^2
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Suitable for any distribution; better for normally distributed data.
-      \item Mean centering, i.e., \((x_i - \overline{x})\), is done to capture the dispersion around the average, but not the magnitude of the values themselves.
+      \item Mean centering, i.e., \((x_i - \bar{x})\), is done to capture the dispersion around the average, but not the magnitude of the values themselves.
       \item The sum of a mean-centered data set would be zero, thus it is squared.
         \begin{itemize}
           \item \ddd{Mean absolute difference (MAD)}: when the absolute value of mean-centered data is taken instead of the square value. 
@@ -139,7 +139,7 @@
       \begin{itemize}
         \item Regarding probability distributions, the general formula can be defined as:
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        m_\emph{k} = n ^{-1} \sum_{i = 1}^{n}(x_i - \overline{x})^\emph{k}
+        m_\emph{k} = n ^{-1} \sum_{i = 1}^{n}(x_i - \bar{x})^\emph{k}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \item Increments of \(k\) define particular moments, i.e.,
           \begin{itemize}
@@ -216,9 +216,9 @@
 
   \subsection{Z-Score Standardization}
   \begin{itemize}
-    \item \ddd{Z-score (standard score)}: the number of \hyperref[Subsection: Measures of Dispersion]{\ulink{standard deviations \(\sigma\)}} by which the value of a raw score \(x_i\) is above or below the \hyperref[Subsection: Measures of Central Tendency]{\ulink{mean \(\overline{x}\)}}, i.e., 
+    \item \ddd{Z-score (standard score)}: the number of \hyperref[Subsection: Measures of Dispersion]{\ulink{standard deviations \(\sigma\)}} by which the value of a raw score \(x_i\) is above or below the \hyperref[Subsection: Measures of Central Tendency]{\ulink{mean \(\bar{x}\)}}, i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    z_i = \frac{x_i - \overline{x}}{\sigma_x}
+    z_i = \frac{x_i - \bar{x}}{\sigma_x}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Application of z-normalization is best done on data that is roughly \hyperref[Subsection: Primer: Probability Distributions]{\ulink{Gaussian}}. 
     \item The z-score is dimensionless, as units cancel out, leading to main application wherein data of different scales can be meaningfully compared. 

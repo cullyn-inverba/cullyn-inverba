@@ -132,7 +132,7 @@
       \item Useful to be considered as the statistic for all possible samples from the same population of a given sample size; is dependent on the underlying distribution of the population.
     \end{itemize}
   \item Sampling a subset is often an easier and faster way to estimate an entire population, providing a potentially major simplification to statistical inference.
-  \item \ddd{Expected mean value \(\mu, \bar{X}\)}: the expected mean of the \hyperref[Section: Data Fundamentals]{\ulink{population}}, or in case of random sampling, the expected mean of numerous samples, i.e.,
+  \item \ddd{Expected (mean) value \(\mu, \bar{X}\)}: the expected mean of the \hyperref[Section: Data Fundamentals]{\ulink{population}}, or in case of random sampling, the expected mean of numerous samples, i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \bar{X} = \sum_{i = 1}^{k}x_i p_i
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -157,7 +157,7 @@
       \item No elements outside the population of interest are present.
       \item The data is keep up to date, accepting new information.
   \end{itemize}
-
+  
   \subsection{Sampling Methods}
   \begin{itemize}
     \item \ddd{Probability sample}: a sample wherein every unit in the population has a chance \((P > 0)\) of being selected in the sample, and the probability can be accurately determined.
@@ -168,11 +168,9 @@
       \end{itemize}
     \item Factors that contribute to choice between methods:
       \begin{itemize}
-        \item Nature and quality of the data.
-        \item Availability of auxiliary information about units on the frame.
+        \item Nature, quality, and availability of auxiliary information of the data.
         \item Accuracy requirements, and need to measure accuracy.
-        \item Degree of expected analysis.
-        \item Cost and operational concerns.
+        \item Degree of expected analysis, cost, and operational concerns.
       \end{itemize}
     \item \ddd{Simple random sampling}: all subsets of a sampling frame have an equal probability of being selected.
       \begin{itemize}
@@ -180,17 +178,44 @@
         \item Variance between individual results within the sample is a good indicator of variance of overall population, leading to easy estimations of accuracy.
         \item Subject to sampling error, and implicit bias can go unnoticed due to data collection methods.
       \end{itemize}
-    \ddd{Systematic sampling}:
+    \item \ddd{Systematic (interval) sampling}: method of arranging the study population according to an ordering scheme, then selecting the starting element randomly and progressing at a specified interval.
+      \begin{itemize}
+        \item Useful if the arrangement of the data correlated with the variable of interest.
+        \item Some arrangements can introduce periodic biases, potentially leading to samples unrepresentative of the overall population.
+        \item Can be hard to quantify the accuracy, even if it can be more accurate and efficient than simple random sampling.
+      \end{itemize}
+    \item \ddd{Stratified sampling}: organization of data into discrete categories, or ``strata'' where each stratum is treated like an independent population and randomly sampled from.
+      \begin{itemize}
+        \item Helps avoid errors due to methods of data collection that may lead to subpopulations being overrepresented, causing to inaccurate generalizations if combined into one population. 
+        \item Can be expensive, hard to select for relevant stratification variables, and is not useful when no homogenous subgroups.
+      \end{itemize}
+     \item Other (less common?) methods of sampling include: probability proportional to size sampling, cluster sampling, multistage sampling, quota sampling, voluntary sampling, snowball sampling, accidental sampling, and panel sampling.
+     \item \ddd{Monte Carlo methods}: a broad class of computational algorithms that rely on repeated random sampling.
+      \begin{itemize}
+        \item Relies on properties of randomness to solves difficult problems that are deterministic in principle but not necessarily in practice.
+        \item Used in optimization functions, numerical integration, and generation draws from a probability distribution. 
+        \item Might be covered later, and probably will be included under Bayesian statistics, if that is covered in-depth.
+      \end{itemize}
   \end{itemize}
   
-  \subsection{Law of Large Numbers}
+  \subsection{Law of Large Numbers and Central Limit Theorem}
   \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Central Limit Theorem}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
+    \item \ddd{Law of large numbers (LLN)}: describes the result of performing the same experiment many times, wherein the \hyperref[Subsection: Measures of Central Tendency]{\ulink{average}} approaches the \hyperref[Section: Sampling]{\ulink{expected value}}.
+      \begin{itemize}
+        \item There is a weak strong law, that essentially state the same thing, but with slight difference; the strong law contains a more elaborate, but not covered proof.
+      \end{itemize}
+    \item \ddd{Weak law of large numbers}: with a sufficiently large sample size, then for any nonzero margin specified there will be a high probability that the average observations fall within the margin, i.e.,
+    \[%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lim_{n\to \infty} P\left(|\bar{x}_n-\bar{X}| > \varepsilon\right) = 0 \qqquad \varepsilon = {x\in\R~|~x > 0}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ddd{Strong law of large numbers}: as \(n \to \infty\), then the probability that the average converges to the expected value is 1, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    P\left(\lim_{n\to\infty}\bar{x}_n=\bar{X}\right)=1
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Essentially, this implies that the mean of sample means is often a useful estimate of a population mean. This helps lead to the central limit theorem, which is a critical bridge between classical and modern probability theory. 
+    \item \ddd{Central limit theorem (CLT)}: when independence random variables are added, then their properly normalized sum tends to converge towards a normal distribution even if the original variables are not normally distributed.
+      \begin{itemize}
+        \item \ddd{``All roads lead to Gauss:''} another way of stating the CLT, i.e., the distribution of sample means approaches a Gaussian distribution, regardless of the shape of the population distribution.
+      \end{itemize}
+    \end{itemize}
 \end{itemize}
