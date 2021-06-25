@@ -2,9 +2,66 @@
 
 \section{Hypothesis Testing Fundamentals}
 \begin{itemize}
-  \item []
+  \item Reviewing dependent and independent variables (parameters):
+    \begin{itemize}
+      \item \ddd{Dependent variable \(y\)}: the variable you are trying to explain; the \yyy{output} of a function.
+      \item \ddd{Independent variables \(x_n\)}: the variables that potentially explain the dependent variable; the \xxx{input(s)} to a function.
+      \item Often the assumptions about the relationship can effect what is assumed to be the independent and dependent variables; interpretations can be difficult.
+    \end{itemize}
+  \item \ddd{Models}: a simplified system made of the composition of concepts which are used to help know, understand, or simulate a subject the model represents.
+    \begin{itemize}
+      \item \ddd{Residual (error) \(\epsilon\)}: the degree that features not explained by variables that make up the composition of models. 
+      \item Residuals should be small (\emph{accurate}), but models should also be simple (\emph{useful}); finding the balance between these two goals is a major part of statistics/science.
+    \end{itemize}
+  \item \ddd{(Alternative; effect) hypothesis \(H_a\)}: a proposed explanation for a phenomenon;a falsifiable claim that requires verification, typically from experimental data, and that allows for predictions about future observations.
+    \begin{itemize}
+      \item Most formal hypotheses connect concepts by specifying the expected relationships between propositions, leading to expected differences.
+      \item Hypothesis testing is used to develop better theories via the rejection of previous theories; most progress in science is the result of hypothesis testing.
+      \item A \emph{strong hypothesis} is:
+      \begin{multicols}{2}
+        \begin{itemize}
+          \item \emph{Falsifiable}---ideally testable, makes a criticizable prediction. 
+          \item \emph{Parsimonious}---limits excessive entities; application of ``Occam's razor.''
+          \item \emph{Scoped}---clear, specific, applicable; a statement, not a question.
+          \item \emph{Fruitful}---may explain further phenomena, aids in understanding.
+        \end{itemize}
+      \end{multicols}
+    \end{itemize}
 
-  \subsection{P/Z-Values}
+  \item \ddd{Null hypothesis \(H_\nil\)}: the default hypothesis that a quantity to be measure is zero. 
+    \begin{itemize}
+      \item Typically, a quantity being measure is the difference between two situations, thus support for the alternative hypothesis is gained via \emph{rejection of the null hypothesis}.
+      \item Testing the null hypothesis is a central task in hypothesis testing and the modern practice of science; weak evidence fails to reject the null hypothesis.
+      \item Criteria for excluding the null hypothesis will be covered in more depth when discussing \hyperref[Chapter: Confidence Intervals]{\dlink{confidence intervals}}.
+    \end{itemize}
+  
+  \subsection{Basis of Inferential Statistics}
+  \begin{itemize}
+    \item Essentially, the basis of inferential statistics relies on the \emph{comparison} between \hyperref[Section: Sampling]{\ulink{sample distributions}} under the null and alternative hypotheses.
+    \item In most cases, \hyperref[Subsection: Population vs. Sample Data]{\ulink{population data}} is not attainable, instead, use of the \hyperref[Subsection: Law of Large Numbers and Central Limit Theorem]{\ulink{central limit theorem}} allows for the \hyperref[Section: Sampling]{\ulink{expected value}} to be found via use of repeated sampling.
+      \begin{itemize}
+        \item \ddd{\(H_\nil\) distribution}: the distribution created due to \hyperref[Section: Sampling]{\ulink{sampling variability}} under the null hypothesis, i.e., the differences between the expected mean value and sampled mean value, centered around \nil.
+          \begin{itemize}
+            \item Results from a formula based on assumptions, \hyperref[Subsection: Degrees of Freedom]{\dlink{degrees of freedom}}, and type/nature of particular tests being performed.
+          \end{itemize}
+        \item \ddd{\(H_a\) distribution}: the distribution of differences due to the alternative hypothesis, rejection of the null hypothesis is likely to occur if observations reflect this distribution and not the \(H_\nil\) distribution.
+          \begin{itemize}
+            \item Results from empirical observations, gathered data and \hyperref[Subsection: Sampling Methods]{\ulink{sampling methods}}.
+          \end{itemize}
+      \end{itemize}
+    \item Quantifying the differences between the \(H_\nil\) and \(H_a\) requires normalization, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \frac{\text{\ttt{Difference of centers}}}
+    {\text{\fff{Widths of distributions}}} = 
+    \frac{\text{\ttt{Central Tendency}}}
+    {\text{\fff{Dispersion}}} = 
+    \frac{\text{\ttt{Signal}}}
+    {\text{\fff{Noise}}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The investigation of the ratio between \ttt{signal}-to-\fff{noise} is essentially all of inferential statistics; fitting data into workable frameworks contains the majority of the work.
+  \end{itemize}
+    
+  \subsection{P-Value}
   \begin{itemize}
     \item 
   \end{itemize}

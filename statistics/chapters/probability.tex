@@ -106,8 +106,10 @@
       p(x) = 0 \quad \forall x \,\neg ~x_i
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \item Thinking of probability as mass helps avoid mistakes since physical mass is conserved, as is total probability for all hypothetical outcomes of \(x\).
-      \item Major associated distributions include the  \hyperref[Subsection: Primer: Probability Distributions]{\ulink{previously mentioned}} Bernoulli and Binomial distributions, but geometric distributions deserve a mention as well. 
-      \item \link{https://en.wikipedia.org/wiki/Geometric_distribution}{Geometric distribution}: a description of the number of trials/failures needed to get to one/first success.
+      \item Major associated distributions include \hyperref[Subsection: Primer: Probability Distributions]{\ulink{Bernoulli and Binomial}} distributions, but geometric distributions deserve a mention as well;
+        \begin{itemize}
+          \item \link{https://en.wikipedia.org/wiki/Geometric_distribution}{Geometric distribution}: a description of the number of trials/failures needed to get to one/first success.
+        \end{itemize}
     \end{itemize}
     \item \ddd{Probability density function (PDF)}: a function that describes \emph{relative} probabilities for a set of \hyperref[Subsection: Independent and Mutually Exclusive Events]{\ulink{exclusive}} \emph{continuous} events, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,7 +134,7 @@
       \item Useful to be considered as the statistic for all possible samples from the same population of a given sample size; is dependent on the underlying distribution of the population.
     \end{itemize}
   \item Sampling a subset is often an easier and faster way to estimate an entire population, providing a potentially major simplification to statistical inference.
-  \item \ddd{Expected (mean) value \(\mu, \bar{X}\)}: the expected mean of the \hyperref[Section: Data Fundamentals]{\ulink{population}}, or in case of random sampling, the expected mean of numerous samples, i.e.,
+  \item \ddd{Expected (mean) value \(\mu, E[X], \bar{X}\)}: the expected mean of the \hyperref[Section: Data Fundamentals]{\ulink{population}}, or in case of random sampling, the expected mean of numerous samples, i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \bar{X} = \sum_{i = 1}^{k}x_i p_i
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -212,7 +214,7 @@
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     P\left(\lim_{n\to\infty}\bar{x}_n=\bar{X}\right)=1
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item Essentially, this implies that the mean of sample means is often a useful estimate of a population mean. This helps lead to the central limit theorem, which is a critical bridge between classical and modern probability theory. 
+    \item Essentially, this implies that the mean of sample means is often a useful estimate of a population mean. This helps lead to the central limit theorem, which is a critical bridge between classical and modern probability theory.
     \item \ddd{Central limit theorem (CLT)}: when independence random variables are added, then their properly normalized sum tends to converge towards a normal distribution even if the original variables are not normally distributed.
       \begin{itemize}
         \item \ddd{``All roads lead to Gauss:''} another way of stating the CLT, i.e., the distribution of sample means approaches a Gaussian distribution, regardless of the shape of the population distribution.

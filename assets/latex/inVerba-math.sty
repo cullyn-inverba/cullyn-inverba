@@ -8,7 +8,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{inVerba-math}[My collection of math packages and commands]
 
-\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz,tikz-cd,pgfplots,array}
+\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz,tikz-cd,pgfplots,array,marvosym}
     \pgfplotsset{compat=newest}
     \numberwithin{equation}{chapter}
 
@@ -34,6 +34,9 @@
 
     \renewcommand*\varepsilon{\mathlarger{\mathlarger{\mathlarger\origEpsilon}}}
     \renewcommand*\epsilon{\mathlarger{\mathlarger{\mathlarger\origVarEpsilon}}}
+
+    % Alternative Zero Font
+    \newcommand{\nil}{\text{\MVZero}}
     
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ │││││││├─┤│││ ││└─┐
