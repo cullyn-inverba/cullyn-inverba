@@ -9,3 +9,4 @@ Freedman-Diaconis
 winsorization
 NaN
 Kolmogorov
+Nonparametric

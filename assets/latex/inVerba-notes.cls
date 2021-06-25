@@ -62,7 +62,7 @@
     \renewcommand{\contentsname}{\color{title-color}\theTitle}
     \setcounter{tocdepth}{2}
     \titlecontents{chapter}[0 em]
-        {\vspace{16pt}\large\bfseries\color{title-color}}{}{}
+        {\vspace{8pt}\large\bfseries\color{title-color}}{}{}
         {\hfill}[\vspace{-3pt}]
     \titlecontents{section}[0.809 em]
         {\vspace{3pt}\bfseries}{}{}
