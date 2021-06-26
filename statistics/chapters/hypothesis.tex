@@ -63,7 +63,56 @@
     
   \subsection{P-Value}
   \begin{itemize}
-    \item 
+    \item \ddd{\textit{p}-value}: the \hyperref[Section: Probability Fundamentals]{\ulink{probability}} of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypotheses is correct, i.e.,
+      \begin{itemize}
+        \item How likely is the \(H_a\) value to occur if \(H_\nil\) is correct?
+        \item What is the probability of observing a parameter estimate of \(H_a\) or larger, given there is no true effect?
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \emph{P(H_a~|~H_\nil)}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item \ttt{Small \(p\)-value} \to~outcome is \fff{very unlikely} to occur under the \fff{null hypothesis}.
+      \end{itemize}
+    \item \ddd{Significance level \(\alpha\)}: the somewhat arbitrary threshold whereby a study would reject the null hypothesis, typically \(\alpha \leq 0.05, 0.01,~\text{or}~0.001\)
+    \item \ddd{Statistically significant}: when \(p \leq \alpha\); significance can have \hyperref[Subsection: Interpretations of Significance]{\dlink{other interpretations}}.
+    \item Either side of a distribution is unlikely; \emph{two-tailed} distributions need to \emph{split \(\alpha\)}.
+      \begin{itemize}
+        \item Hypotheses should aim to be one-tailed, but this is often not feasible.
+      \end{itemize}
+    \item \(p\)-values are often misinterpreted, sometimes even intentionally abused, and an important topic in metascience.
+    \item Common misinterpretations of \(p\)-values:
+      \begin{itemize}
+        \item \false{Incorrect}: 
+          \begin{itemize}
+            \item ``\textit{My \(p\)-value is 0.02, so the effect is present for 2\% of the population.}''
+            \item ``\textit{My \(p\)-value is 0.02, so there is a 90\% chance that my sample statistic equals the population parameter.}''
+            \item ``\textit{My p-value is smaller than the threshold, therefore the effect is real.}''
+          \end{itemize}
+        \item \true{Correct}: 
+        \begin{itemize}
+          \item ``My \(p\)-value is 0.02, therefore there is a 2\% chance that there is no effect and my sample statistic was due to sampling variability, noise, small sample size, and/or systematic bias.''
+        \end{itemize}
+      \end{itemize}
+    \item Recall that the \hyperref[Subsection: Z-Score Standardization]{\ulink{z-score}} is a dimensionless measure of \hyperref[Subsection: Measures of Dispersion]{\ulink{standard deviations \(\sigma_x\)}} from the mean; the relation between \(p\)- and z-values can be useful to memorize.
+    \item Given a Gaussian distribution, z-proportion (above/below) values are:
+      \begin{itemize}
+        \item 68.3\% of the data are within \(\sigma_1\leftrightarrow z = \pm 1=0.683\) 
+        \item 95.5\% of the data are within \(\sigma_2\leftrightarrow z = \pm 2 = 0.955\)
+        \item 99.7\% of the data are within \(\sigma_3\leftrightarrow z = \pm 3 = 0.997\)
+      \end{itemize}
+    \item Common \(p\)-values parings with standard deviations:
+    \vspace{-6pt}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item One-tailed \(\downarrow\)
+        \item \(p=0.05 \leftrightarrow z = 1.64\)
+        \item \(p=0.01 \leftrightarrow z = 2.32\)
+        \item \(p=0.001 \leftrightarrow z = 3.09\)
+        \item \(\downarrow\) Two-tailed \(\downarrow\)
+        \item \(p=0.05 \leftrightarrow z = 1.96\)
+        \item \(p=0.01 \leftrightarrow z = 2.58\)
+        \item \(p=0.001 \leftrightarrow z = 3.29\)
+      \end{itemize}
+    \end{multicols}
   \end{itemize}
   
   \subsection{Degrees of Freedom}
