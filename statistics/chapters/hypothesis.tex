@@ -70,7 +70,7 @@
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \emph{P(H_a~|~H_\nil)}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \item \ttt{Small \(p\)-value} \to~outcome is \fff{very unlikely} to occur under the \fff{null hypothesis}.
+        \item \ttt{Small \(p\)-value} \to~outcome is \ttt{very unlikely} to occur under the \ttt{null hypothesis}.
       \end{itemize}
     \item \ddd{Significance level \(\alpha\)}: the somewhat arbitrary threshold whereby a study would reject the null hypothesis, typically \(\alpha \leq 0.05, 0.01,~\text{or}~0.001\)
     \item \ddd{Statistically significant}: when \(p \leq \alpha\); significance can have \hyperref[Subsection: Interpretations of Significance]{\dlink{other interpretations}}.
@@ -129,12 +129,30 @@
 
   \subsection{Statistical Errors}
   \begin{itemize}
-    \item Yes
-    
-    \Image{0.8\columnwidth}{chapters/images/errors.png}
-      
+    \item \ddd{False positive (type I error) \(p = \alpha\)}: an \textbf{\fff{incorrect rejection}} of a \ttt{true \(H_\nil\)}.
+      \begin{itemize}
+        \item \ddd{True positive \(p = 1-\beta\)}: a \rrr{\textbf{correct rejection}} of a \fff{false \(H_\nil\)}.
+      \end{itemize}
+    \item \ddd{False negative (type II error) \(p= \beta\)}: an \textbf{\XXX{incorrect non-rejection}} of a \fff{false \(H_\nil\)}.
+      \begin{itemize}
+        \item \ddd{True negative \(p = 1-\alpha\)}: a \bbb{\textbf{correct non-rejection}} of a \ttt{true \(H_\nil\)}.
+      \end{itemize}
+    \item \ddd{``Overlap''}: the overlap between the \(H_\nil\) and the \(H_a\) is where error of either type is found.
+      \begin{itemize}
+        \item Adjustments to the significance level \(\alpha \) can bias towards/away from either false negatives/positives, at the cost of increasing the other.
+        \item Sometimes one error is more costly than the other, however, this is a less than ideal way to minimize error.
+      \end{itemize}
+      \item The best way to minimize error is to minimize \ttt{signal}-to-\fff{noise}, i.e.,
+      \begin{itemize}
+        \item \ttt{Increase distance between} distributions (\ttt{bigger effects})
+        \item \fff{Decrease the width} of the distributions (\fff{less variability}).
+      \end{itemize}
+    \vspace{24pt}  
+    \begin{center}
+      \hspace{-26pt}\Image{\columnwidth}{chapters/images/errors.png}
+    \end{center}
   \end{itemize}
-
+  
 \end{itemize}
 
 \section{Testing Properties}

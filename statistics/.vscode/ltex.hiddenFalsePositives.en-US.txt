@@ -7,3 +7,4 @@
 {"rule":"THREE_NN","sentence":"^\\QMethods/measures of inferential statistics: Probability theory Hypothesis testing T/F/\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q value Confidence intervals And essentially all of applied statistics.\\E$"}
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q distribution: the distribution created due to sampling variability under the null hypothesis, i.e., the differences between the expected mean value and sampled mean value, centered around .\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qp-value: the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypotheses is correct, i.e., How likely is the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q value to occur if \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is correct?\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QYes yes  chapters/images/errors.png\\E$"}
