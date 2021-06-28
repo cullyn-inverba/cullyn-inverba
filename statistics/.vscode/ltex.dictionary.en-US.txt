@@ -11,3 +11,9 @@ NaN
 Kolmogorov
 Nonparametric
 metascience
+nonparametric
+Wilcoxon
+Kruskal-Wallis
+FWER
+Bonferroni
+Šidák

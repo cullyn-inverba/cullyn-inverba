@@ -68,7 +68,7 @@
         \item How likely is the \(H_a\) value to occur if \(H_\nil\) is correct?
         \item What is the probability of observing a parameter estimate of \(H_a\) or larger, given there is no true effect?
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \emph{P(H_a~|~H_\nil)}
+        \emph{\cp{a}}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \item \ttt{Small \(p\)-value} \to~outcome is \ttt{very unlikely} to occur under the \ttt{null hypothesis}.
       \end{itemize}
@@ -129,30 +129,34 @@
 
   \subsection{Statistical Errors}
   \begin{itemize}
-    \item \ddd{False positive (type I error) \(p = \alpha\)}: an \textbf{\fff{incorrect rejection}} of a \ttt{true \(H_\nil\)}.
+    \item \ddd{\fff{False positive (type I error) \(p = \alpha\)}}: an \textbf{\fff{incorrect rejection}} of a \ttt{true \(H_\nil\)}.
       \begin{itemize}
-        \item \ddd{True positive \(p = 1-\beta\)}: a \rrr{\textbf{correct rejection}} of a \fff{false \(H_\nil\)}.
+        \item \ddd{\rrr{True positive \(p = 1-\beta\)}}: a \rrr{\textbf{correct rejection}} of a \fff{false \(H_\nil\)}.
       \end{itemize}
-    \item \ddd{False negative (type II error) \(p= \beta\)}: an \textbf{\XXX{incorrect non-rejection}} of a \fff{false \(H_\nil\)}.
+    \item \ddd{\XXX{False negative (type II error) \(p= \beta\)}}: an \textbf{\XXX{incorrect non-rejection}} of a \fff{false \(H_\nil\)}.
       \begin{itemize}
-        \item \ddd{True negative \(p = 1-\alpha\)}: a \bbb{\textbf{correct non-rejection}} of a \ttt{true \(H_\nil\)}.
+        \item \ddd{\bbb{True negative \(p = 1-\alpha\)}}: a \bbb{\textbf{correct non-rejection}} of a \ttt{true \(H_\nil\)}.
       \end{itemize}
-    \item \ddd{``Overlap''}: the overlap between the \(H_\nil\) and the \(H_a\) is where error of either type is found.
+    \item \ddd{``Overlap''}: the area shared between the \(H_\nil\) and the \(H_a\).
       \begin{itemize}
         \item Adjustments to the significance level \(\alpha \) can bias towards/away from either false negatives/positives, at the cost of increasing the other.
-        \item Sometimes one error is more costly than the other, however, this is a less than ideal way to minimize error.
+        \item Sometimes one error is more costly than the other, however, changing \(\alpha\) is a less than ideal way generally arbitrary way to minimize error.
       \end{itemize}
       \item The best way to minimize error is to minimize \ttt{signal}-to-\fff{noise}, i.e.,
       \begin{itemize}
         \item \ttt{Increase distance between} distributions (\ttt{bigger effects})
         \item \fff{Decrease the width} of the distributions (\fff{less variability}).
       \end{itemize}
-    \vspace{24pt}  
     \begin{center}
-      \hspace{-26pt}\Image{\columnwidth}{chapters/images/errors.png}
+      \Image{0.8\columnwidth}{chapters/images/errors.png}
     \end{center}
   \end{itemize}
-  
+  \subsection{Interpretations of Significance}
+  \begin{itemize}
+    \item \ddd{Statistical significance}: the probability of observing a test statistic of a certain magnitude given the \(H_\nil\) is true.
+    \item \ddd{Theoretical significance}: a finding that is relevant for a theory or leads to a new experiment; not directly related to statistical significance. 
+    \item \ddd{Clinical (practical, societal, educational)}: a finding is relevant for application in a particular field of interest. 
+  \end{itemize}
 \end{itemize}
 
 \section{Testing Properties}
@@ -161,24 +165,94 @@
 
   \subsection{Parametric vs. Nonparametric}
   \begin{itemize}
-    \item 
+    \item \ddd{Parametric statistics}: based on the assumptions wherein sample data originate from a population that can be adequately modeled by a probability distribution with \bBb{a fixed set of parameters}.
+    \item \ddd{Nonparametric statistics}: based on \OOO{relaxed assumptions} surrounding of parametric tests, e.g., underlying distribution less important, presence of outliers, or lower specificity of parameters.
+    \item Generally, there is a nonparametric test related to each parametric test, with particular assumptions relaxed, e.g., 
+    \bigskip
+    \begin{table}[h]
+      \centering
+      \begin{tabular}{rl}
+        \ddd{Parametric} &  
+        \ddd{Nonparametric}  \\
+        \hyperref[Subsection: One-Sample T-Test]{\dlink{1-sample \(t\)-test}} &
+         \hyperref[Subsection: Nonparametric T-Tests]{\dlink{Wilcoxon sign-rank test}} \\
+        \hyperref[Subsection: Two-Sample T-Test]{\dlink{2-sample \(t\)-test}} &
+         \hyperref[Subsection: Nonparametric T-Tests]{\dlink{Mann-Whitney U test}} \\
+        \hyperref[Chapter: Correlation]{\dlink{Pearson correlation}} &
+         \hyperref[Chapter: Correlation]{\dlink{Spearman correlation}} \\
+        \hyperref[Chapter: Analysis of Variance]{\dlink{ANOVA}} &
+         \hyperref[Chapter: Analysis of Variance]{\dlink{Kruskal-Wallis test}}\\
+        \end{tabular}
+    \end{table}
+    \item Important applications of nonparametric statistics with no direct correlate involve \hyperref[Subsection: Primer: Permutation Testing]{\dlink{permutation testing}} and \hyperref[Section: Cross-Validation]{\dlink{cross-validation}}.
+    \item \true{\!Advantages} and \false{\!limitations (sometimes)} of \ddd{parametric statistics}:
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item \true{\! Standard, widely used}
+        \item \true{\! Computationally efficient/simple}
+        \item \true{\! Analytically proven}
+        \item \false{\! Based on assumptions}
+        \item \false{\! Assumptions can be hard to test}
+        \item \false{\! Violations can be inscrutable}
+      \end{itemize}
+    \end{multicols}
+    \item \true{\!Advantages} and \false{\!limitations (sometimes)} of \ddd{nonparametric statistics}:
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item \true{\! ``No'' assumptions necessary}
+        \item \true{\! Appropriate for non-numeric data}
+        \item \true{\! Appropriate for small sample sizes}
+        \item \false{\! Can be ``block box'' algorithms}
+        \item \false{\! Can be inefficient/slow}
+        \item \false{\! Results can vary each run}
+      \end{itemize}
+    \end{multicols}
+    \item In general, use \OOO{parametric} methods when \OOO{possible} and \bBb{nonparametric} methods when \bBb{necessary}.
   \end{itemize}
 
   \subsection{Multiple Comparisons Problem}
   \begin{itemize}
-    \item 
+    \item \ddd{Multiplicity (multiple comparison problem)}: the increase of erroneous inferences when comparing a set of statistical inferences simultaneously, or when inferring a subset of parameters based on the observed values.
+      \begin{itemize}
+        \item As more attributes are compared, the more likely it becomes that observed outcome is due to sampling error, as probabilities are additive.
+        \item E.g., despite all the alternative hypotheses have a statistical significant value individually (5\%), together they provide a high rate of \hyperref[Subsection: Statistical Errors]{\ulink{type I errors \(\alpha \)}}, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \cp{1} + \cp{2} + \cp{3} = \fff{0.15} = \fff{\alpha}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item The above is just a comparing against the \(H_\nil\), the problem becomes much worse when including pairwise comparisons between all \(H_a\) in the set (\fff{15\%\,\to\,30\% \(\alpha \)}).
+      \end{itemize}
+    \item Common conceptualizations of multiplicity problem can be done via descriptions of errors rates, e.g.,
+      \begin{itemize}
+        \item \ddd{Family-wise error rate (FWER) \(\tilde{\alpha}\)}: the probability of making \emph{at least one} \fff{false positive} when performing multiple hypotheses tests, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \tilde{\alpha} = 1 - (1-\fff{\alpha}_i)^m \leftrightarrow p(\fff{\alpha} \geq 1)
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{itemize}
+          \item \(i =\text{per comparison}\), \(m=\text{total hypotheses tested}\)
+        \end{itemize}
+        \item \ddd{False discovery rate (FDR) \(E[Q]\)}: the \emph{expected} proportion \(Q\) of \fff{false positives} relative to total number of \rrr{true positives \(1-\beta\)}, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        E[Q] = \frac{\fff{\alpha}}{(\fff{\alpha}+\rrr{(1-\XXX{\beta})})}\qquad \XXX{\beta=\text{false negative}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+    \item Each conceptualization can have a variety of relevant controlling procedures that are used to correct for multiplicity issues, e.g,
+      \begin{itemize}
+        \item \ddd{Bonferroni correction}: a conservative method, free of dependence and distributional assumptions, wherein the \fff{false positive rate per comparison} is simply divided by the total number of hypotheses \(m\) tested, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \fff{\alpha}_i = \frac{\fff{\alpha}}{m} \leftrightarrow \text{reject \(H_i\) if} \leq \frac{\fff{\alpha}}{m} 
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item \ddd{Šidák correction}: slightly more powerful than Bonferroni, but with small gain and potential to fail when tests are negatively dependent; found via solving the FWER equation, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \fff{\alpha}_i = 1 - (1-\alpha)^{1/m}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Controlling procedures for false discovery rate not described, I'm not sure relevance as of now---might revisit later.
+      \end{itemize}
   \end{itemize}
-  
-  \subsection{Interpretations of Significance}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
 \end{itemize}
 
-\section{Cross Validation}
+\section{Cross-Validation}
 \begin{itemize}
-  \item []
+  \item[]
 
   \subsection{P-Value vs. Model Accuracy}
   \begin{itemize}
@@ -211,7 +285,7 @@
     \item 
   \end{itemize}
   
-  \subsection{Permutation Testing for T-Tests}
+  \subsection{Primer: Permutation Testing}
   \begin{itemize}
     \item 
   \end{itemize}
