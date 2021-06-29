@@ -184,7 +184,7 @@
          \hyperref[Chapter: Analysis of Variance]{\dlink{Kruskal-Wallis test}}\\
         \end{tabular}
     \end{table}
-    \item Important applications of nonparametric statistics with no direct correlate involve \hyperref[Subsection: Primer: Permutation Testing]{\dlink{permutation testing}} and \hyperref[Section: Primer: Cross-Validation]{\dlink{cross-validation}}.
+    \item Important applications of nonparametric statistics with no direct correlate involve \hyperref[Subsection: Primer: Permutation Testing]{\dlink{permutation testing}} and \hyperref[Subsection: Primer: Cross-Validation]{\dlink{cross-validation}}.
     \item \true{\!Advantages} and \false{\!limitations (sometimes)} of \ddd{parametric statistics}:
     \begin{multicols}{2}
       \begin{itemize}
@@ -252,33 +252,41 @@
         \item Controlling procedures for false discovery rate not described, I'm not sure relevance as of now---might revisit later.
       \end{itemize}
   \end{itemize}
-\end{itemize}
 
-\section{Primer: Cross-Validation}
-\begin{itemize}
-  \item \ddd{Cross-validation}: a set of model validation techniques for assessing how well statistical analysis will generalize via parcelization of given data. 
+  \subsection{Primer: Cross-Validation}
     \begin{itemize}
-      \item Mainly used to estimate how accurate a predictive model might be in practice. 
-      \item \ddd{Training set (known data)}: the portion of given data that a predictive model is used to train on. 
-      \item \ddd{Testing set (unknown data)}: the portion of data set aside to later estimate accuracy of the trained model.
-    \end{itemize}
-  \item Cross-validation is used on models with one or more unknown parameters, wherein a dataset is used to fit the data to the parameter via optimization.
-    \begin{itemize}
-      \item \ddd{Optimization}: selection of the best element, with regard to some criterion, from some set of available alternatives.
-      \item \ddd{Overfitting}: when analysis \emph{corresponds too closely} to a particular dataset, leading to poor predictive performance
-      \item \ddd{Underfitting}: when analysis \emph{fails to capture} the underlying structure of the data, leading to poor predictive performance.
-    \end{itemize}
-  \item Cross-validation is of greater importance when dealing with \hyperref[Chapter: Regression]{\dlink{regression}} and \hyperref[Chapter: Confidence Intervals]{\dlink{confidence intervals}}.
-    \begin{itemize}
-      \item In-depth discussion will occur later, including distinctions between \hyperref[Subsection: Exhaustive vs. Non-Exhaustive]{\dlink{exhausting~and~non-exhaustive}} methods. 
-      \item In most methods, multiple rounds of cross-validation are performed using different partitions, with the results being combined over the rounds.
-    \end{itemize}
-
-
-  \subsection{P-Value vs. Model Accuracy}
-  \begin{itemize}
-    \item 
+    \item \ddd{Cross-validation}: a set of model validation techniques for assessing how well statistical analysis will generalize via parcelization of given data. 
+      \begin{itemize}
+        \item Mainly used to estimate how accurate a predictive model might be in practice for \hyperref[Subsection: Data Types]{\ulink{nominal and ordinal data}} (discrete is also possible).
+        \item \ddd{Training set (known data)}: the portion of given data that a predictive model is used to train on. 
+        \item \ddd{Testing set (unknown data)}: the portion of data set aside to later estimate accuracy of the trained model.
+      \end{itemize}
+    \item Cross-validation is used on models with one or more unknown parameters, wherein a dataset is used to fit the data to the parameter via optimization.
+      \begin{itemize}
+        \item \ddd{Optimization}: selection of the best element, with regard to some criterion, from some set of available alternatives.
+        \item \ddd{Overfitting}: when analysis \emph{corresponds too closely} to a particular dataset, leading to poor predictive performance
+        \item \ddd{Underfitting}: when analysis \emph{fails to capture} the underlying structure of the data, leading to poor predictive performance.
+      \end{itemize}
+    \item Cross-validation is of greater importance when dealing with \hyperref[Chapter: Regression]{\dlink{regression}} and \hyperref[Chapter: Confidence Intervals]{\dlink{confidence intervals}}.
+      \begin{itemize}
+        \item In-depth discussion will occur later, including distinctions between \hyperref[Subsection: Exhaustive vs. Non-Exhaustive]{\dlink{exhausting~and~non-exhaustive}} methods. 
+        \item In most methods, multiple rounds of cross-validation are performed using different partitions, with the results being combined over the rounds.
+      \end{itemize}
   \end{itemize}
+
+  \subsection{P-Value vs. Classification Accuracy}
+  \bigskip
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{rl}
+      \ddd{P-Value} & \ddd{Accuracy}  \\
+      Tests of probability of sample & Model outcome vs.\ observed outcome  \\
+      Parameter based scoring  & Individual parameters uncertain \\
+      Analytical solutions, theoretical & Empirically informed, inconsistent \\
+      Works for most model/variable types & Restricted by model/variable type   \\
+      Sensitive to extreme sample sizes & Robust to sample sizes \\
+      \end{tabular}
+  \end{table}
   
 \end{itemize}
 
