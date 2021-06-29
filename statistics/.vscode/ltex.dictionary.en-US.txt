@@ -17,3 +17,5 @@ Kruskal-Wallis
 FWER
 Bonferroni
 Šidák
+Underfitting
+parcelization
