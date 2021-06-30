@@ -174,9 +174,9 @@
       \begin{tabular}{rl}
         \ddd{Parametric} &  
         \ddd{Nonparametric}  \\
-        \hyperref[Subsection: One-Sample T-Test]{\dlink{1-sample \(t\)-test}} &
+        \hyperref[Subsection: One-Sample and Two-Sample T-Tests]{\dlink{1-sample \(t\)-test}} &
          \hyperref[Subsection: Nonparametric T-Tests]{\dlink{Wilcoxon sign-rank test}} \\
-        \hyperref[Subsection: Two-Sample T-Test]{\dlink{2-sample \(t\)-test}} &
+        \hyperref[Subsection: One-Sample and Two-Sample T-Tests]{\dlink{2-sample \(t\)-test}} &
          \hyperref[Subsection: Nonparametric T-Tests]{\dlink{Mann-Whitney U test}} \\
         \hyperref[Chapter: Correlation]{\dlink{Pearson correlation}} &
          \hyperref[Chapter: Correlation]{\dlink{Spearman correlation}} \\
@@ -292,31 +292,110 @@
 
 \section{T-Tests}
 \begin{itemize}
-  \item []
-  
-  \subsection{Assumptions and Uses of T-Tests}
+  \item \ddd{Student's \(t\)-test}: a test statistic that follow a \hyperref[Subsection: Primer: Probability Distributions]{\ulink{student's t-distribution}}, i.e., a test for relatively small sample sizes with unknown variance. 
+    \begin{itemize}
+      \item Common \(t\)-tests include the \hyperref[Subsection: One-Sample and Two-Sample T-Tests]{\dlink{one-sample}} and \hyperref[Subsection: One-Sample and Two-Sample T-Tests]{\dlink{two-sample}} tests, often called student's \(t\)-test or simply, \(t\)-tests.
+        \begin{itemize}
+          \item Note: usage student's \(t\)-test implies the variances are assumed near equal.
+        \end{itemize}
+      \item Fundamentally, \(t\)-tests are often used to determine if the means of two sets of data are significantly different from each other (when \(p < t\)).
+    \end{itemize}
+  \item In general, most \(t\)-tests adopt the form based on the \ttt{signal}-to-\fff{noise} ratio, i.e., 
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  t_k = \frac{\ttt{Z}}{\fff{s}} = \frac{\ttt{\bar{x}-\bar{y}}}{\fff{\sigma/\sqrt{n}}}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
-    \item 
+    \item \(\ttt{Z}\): difference in means; sensitive to \(H_a\), increasing in magnitude if \(H_a\) is not wrong.
+    \item \(\fff{s}\): scaling factor, of the standard deviations \(\sigma \) of the sample distribution. 
+    \item \(n\): number of samples. \(k\): degrees of freedom.
+    \item Thus, increasing the \(t\)-statistic can be done via increasing group differences, reducing variances, or increasing sample size.
   \end{itemize}
 
-  \subsection{One-Sample T-Test}
+  \subsection{One-Sample and Two-Sample T-Tests}
   \begin{itemize}
-    \item 
-  \end{itemize}
-  
-  \subsection{Two-Sample T-Test}
-  \begin{itemize}
-    \item 
+    \item \ddd{One-sample \(t\)-test}: a single test aimed at determining whether a \emph{single set} of numbers could have been drawn from a distribution with a specified mean, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    t_{n-1} = \frac{\bar{x}-\mu_\nil}{\sigma/\sqrt{n}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{itemize}
+        \item \(\bar{x}\): sample mean. \(\mu_{\mathsmaller\nil}\): specified mean of \(H_{\mathsmaller\nil}\). \(\sigma\): sample standard deviation. 
+        \item \(k = n-1\), as the mean is the only unknown value.
+      \end{itemize}
+    \item Assumptions for one-sample \(t\)-test:
+      \begin{itemize}
+        \item Data are numeric, ideally interval or ratio (discrete can work, sometimes).
+        \item Data are independent of each other and randomly drawn from the population.
+        \item The parent population (\(H_\nil\)) does not need to be normally distributed, but the \(\bar{x}\) is assumed to be (approximately) normally distributed.
+      \end{itemize}
+    \item \ddd{Two-sample \(t\)-test}: an extension of the one-sample \(t\)-test, whereby \emph{two sets} of numbers could have been drawn form the same distribution.
+    \begin{itemize}
+      \item The numerator stays the same, but the denominator can change based on group pairing, size, and variance.
+      \item \ddd{Paired or unpaired}: whether two groups of data are drawn form the same population, e.g.,
+        \begin{itemize}
+          \item Paired: same individuals sampled, overtime.
+          \item Unpaired: different populations sampled overtime.
+        \end{itemize}
+      \item \ddd{Equal or unequal variance}: whether two groups have roughly equal variance.
+      \item \ddd{Equal or unequal sample size}: whether the groups have the same number of values, only applied to unpaired groups.
+      \item Exact algebraic definitions of each particular case will not be discussed; selection of relevant \(t\)-test depends on various combination of above factors and can easily be done in practice using various code libraries.
+    \end{itemize}
   \end{itemize}
 
   \subsection{Nonparametric T-Tests}
   \begin{itemize}
-    \item 
+    \item \ddd{Wilcoxon signed-rank test}: a \hyperref[Subsection: Parametric vs. Nonparametric]{\ulink{nonparametric}} variation of the one-sample or two-sample (paired) \(t\)-test.
+      \begin{itemize}
+        \item Mainly used when the data are assumed to be \emph{not normally distributed}; done via \emph{testing of medians} rather than means.
+        \item Generally speaking, the test applies the following algorithm:
+          \begin{itemize}
+            \item Remove equal pairs.
+            \item Rank-transform the differences, i.e., \(r= \operatorname{rank}(|x-y|)\)
+            \item Sum ranks where \(x>y\).
+            \item Convert to a Z-score, which is normally distributed under the \(H_\nil\), allowing for \hyperref[Subsection: Degrees of Freedom]{\ulink{conversion to a p-value}}.
+          \end{itemize}
+      \end{itemize}
+      \item Note: the actual process is not covered here, again, when to use tests like these are the important factor here.
+      \item \ddd{Mann-Whitney U test (Wilcoxon rank-sum test)}: an alternative to the independent two-sample \(t\)-test, wherein the groups do \emph{not} need to have \emph{equal sample sizes}.
+        \begin{itemize}
+          \item The general algorithm:
+            \begin{itemize}
+              \item Note the samples sizes, specifically, determine dataset with \bbb{fewer} points \(\bbb{x_f}, \bbb{n_f}\) and dataset with \rrr{more} points \(\rrr{x_m}, \rrr{n_m}\).
+              \item Pool data and compute rank, i.e., \(rank(\{\bbb{x_f},\rrr{x_m}\})\)
+              \item Compute U score, i.e., \(U = \sum_{i = 1}^{\bbb{n_f}}r_i\)
+              \item Convert to a Z-score, \hyperref[Subsection: Degrees of Freedom]{\ulink{and thus}}, a p-value.
+            \end{itemize}
+        \end{itemize}
   \end{itemize}
   
   \subsection{Primer: Permutation Testing}
   \begin{itemize}
-    \item 
+    \item \ddd{Permutation (randomization) test}: a test of statistical significance wherein the \emph{\(H_\nil\)~distribution} is obtained via calculation of \emph{all possible values} of the \emph{test statistic} under \emph{all possible rearrangements} of the observed data points.
+      \begin{itemize}
+        \item I.e., methods of treatments to the subjects of an experimental design is analysis of that design---if the labels are exchangeable under the \(H_\nil\), then results should to yield equal significance.
+        \item Similar to \hyperref[Subsection: Primer: Cross-Validation]{\ulink{cross-validation}}, as they are both methods of resampling via use of nonparametric statistics.
+      \end{itemize}
+    \item Permutation tests are mainly used to provide a p-value, generally done via the following methods:
+      \begin{itemize}
+        \item \ddd{Z-score approach}: simply the difference between observed value and the expected value of the \(H_\nil\) divided by the standard deviation of the \(H_\nil\), i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        Z = \frac{obs - E[H_\nil]}{std[H_\nil]}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{itemize}
+          \item \hyperref[Subsection: Degrees of Freedom]{\ulink{Conversion}} to p-value is then easily done. 
+          \item The observed value is not contained within the \(H_\nil\), thus conversion to a Z-score is often done case-by-case.
+          \item Only works for approximately Gaussian \(H_\nil\) distributions.
+        \end{itemize}
+        \item \ddd{Counts approach}: proportion of times that the \(H_\nil\) was greater than observed value to the number of permutations ran, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        p_c = \frac{\sum(H_\nil > obs)}{N_{H_\nil}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{itemize}
+          \item Generally appropriate, distribution shape not as significant.
+          \item Gives p-value directly, must be mindful of tail. 
+          \item Can be more arbitrary than one would like.
+        \end{itemize}
+      \end{itemize}
+      \item Again, permutation tests are a subset of nonparametric tests meant for unbalanced designs, potentially with mixtures of data types.
   \end{itemize}
   
   
