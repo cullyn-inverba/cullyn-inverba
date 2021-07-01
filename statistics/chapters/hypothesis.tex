@@ -32,7 +32,7 @@
     \begin{itemize}
       \item Typically, a quantity being measure is the difference between two situations, thus support for the alternative hypothesis is gained via \emph{rejection of the null hypothesis}.
       \item Testing the null hypothesis is a central task in hypothesis testing and the modern practice of science; weak evidence fails to reject the null hypothesis.
-      \item Criteria for excluding the null hypothesis will be covered in more depth when discussing \hyperref[Chapter: Confidence Intervals]{\dlink{confidence intervals}}.
+      \item Criteria for excluding the null hypothesis will be covered in more depth when discussing \hyperref[Section: Confidence Intervals]{\dlink{confidence intervals}}.
     \end{itemize}
   
   \subsection{Basis of Inferential Statistics}
@@ -267,7 +267,7 @@
         \item \ddd{Overfitting}: when analysis \emph{corresponds too closely} to a particular dataset, leading to poor predictive performance
         \item \ddd{Underfitting}: when analysis \emph{fails to capture} the underlying structure of the data, leading to poor predictive performance.
       \end{itemize}
-    \item Cross-validation is of greater importance when dealing with \hyperref[Chapter: Regression]{\dlink{regression}} and \hyperref[Chapter: Confidence Intervals]{\dlink{confidence intervals}}.
+    \item Cross-validation is of greater importance when dealing with \hyperref[Chapter: Regression]{\dlink{regression}} and \hyperref[Section: Confidence Intervals]{\dlink{confidence intervals}}.
       \begin{itemize}
         \item In-depth discussion will occur later, including distinctions between \hyperref[Subsection: Exhaustive vs. Non-Exhaustive]{\dlink{exhausting~and~non-exhaustive}} methods. 
         \item In most methods, multiple rounds of cross-validation are performed using different partitions, with the results being combined over the rounds.
@@ -397,6 +397,31 @@
       \end{itemize}
       \item Again, permutation tests are a subset of nonparametric tests meant for unbalanced designs, potentially with mixtures of data types.
       \item Permutation testing can be computationally expensive, as it is in large part useful thanks to the exploitation of the \hyperref[Subsection: Law of Large Numbers and Central Limit Theorem]{\ulink{central limit theorem}}. 
+  \end{itemize}
+  
+\end{itemize}
+
+\section{Confidence Intervals}
+\begin{itemize}
+  \item \ddd{Confidence intervals (CI)}: the probability that an \emph{unknown population parameter \(\theta\)} falls \emph{within a range} of values in \emph{repeated samples}, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  p(L < \theta < U) = \gamma
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{itemize}
+    \item \ddd{Confidence level}: a somewhat arbitrary number between 0--1.
+      \begin{itemize}
+        \item Similar to significance levels, but instead it represents the consistency of the sampling of parameter in question, rather than the legitimacy of the \(H_\nil\).
+      \end{itemize}
+  \end{itemize}
+  
+  \subsection{Primer: Bootstrapping}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  \subsection{Confidence Intervals: Misconceptions}
+  \begin{itemize}
+    \item 
   \end{itemize}
   
   
