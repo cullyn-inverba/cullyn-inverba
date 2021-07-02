@@ -184,7 +184,7 @@
          \hyperref[Chapter: Analysis of Variance]{\dlink{Kruskal-Wallis test}}\\
         \end{tabular}
     \end{table}
-    \item Important applications of nonparametric statistics with no direct correlate involve \hyperref[Subsection: Primer: Permutation Testing]{\dlink{permutation testing}} and \hyperref[Subsection: Primer: Cross-Validation]{\dlink{cross-validation}}.
+    \item Important applications of nonparametric statistics with no direct correlate involve \hyperref[Subsection: Primer: Permutation Testing]{\dlink{permutation testing}}, \hyperref[Subsection: Primer: Cross-Validation]{\dlink{cross-validation}}, and \hyperref[Subsection: Primer: Bootstrapping]{\dlink{bootstrapping}}.
     \item \true{\!Advantages} and \false{\!limitations (sometimes)} of \ddd{parametric statistics}:
     \begin{multicols}{2}
       \begin{itemize}
@@ -260,6 +260,7 @@
         \item Mainly used to estimate how accurate a predictive model might be in practice for \hyperref[Subsection: Data Types]{\ulink{nominal and ordinal data}} (discrete is also possible).
         \item \ddd{Training set (known data)}: the portion of given data that a predictive model is used to train on. 
         \item \ddd{Testing set (unknown data)}: the portion of data set aside to later estimate accuracy of the trained model.
+        \item Falls under the category of \ddd{``resampling''} methods, which also includes \hyperref[Subsection: Primer: Permutation Testing]{\dlink{permutation testing}} and \hyperref[Subsection: Primer: Bootstrapping]{\dlink{bootstrapping}}.
       \end{itemize}
     \item Cross-validation is used on models with one or more unknown parameters, wherein a dataset is used to fit the data to the parameter via optimization.
       \begin{itemize}
@@ -372,7 +373,7 @@
     \item \ddd{Permutation (randomization) test}: a test of statistical significance wherein the \emph{\(H_\nil\)~distribution} is obtained via calculation of \emph{all possible values} of the \emph{test statistic} under \emph{all possible rearrangements} of the observed data points.
       \begin{itemize}
         \item I.e., methods of treatments to the subjects of an experimental design is analysis of that design---if the labels are exchangeable under the \(H_\nil\), then results should to yield equal significance.
-        \item Similar to \hyperref[Subsection: Primer: Cross-Validation]{\ulink{cross-validation}}, as they are both methods of resampling via use of nonparametric statistics.
+        \item Falls under the category of \ddd{``resampling''} methods, which also includes \hyperref[Subsection: Primer: Cross-Validation]{\ulink{cross-validation}} and \hyperref[Subsection: Primer: Bootstrapping]{\dlink{bootstrapping}}.
       \end{itemize}
     \item Permutation tests are mainly used to provide a p-value, generally done via the following methods:
       \begin{itemize}
@@ -408,20 +409,64 @@
   p(L < \theta < U) = \gamma
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
-    \item \ddd{Confidence level}: a somewhat arbitrary number between 0--1.
+    \item \ddd{Confidence level \(\gamma\)}: a somewhat arbitrary number between 0--1.
       \begin{itemize}
         \item Similar to significance levels, but instead it represents the consistency of the sampling of parameter in question, rather than the legitimacy of the \(H_\nil\).
+        \item Typical values range from 0.95 to 0.99.
       \end{itemize}
   \end{itemize}
-  
+  \item Confidence intervals are influenced by the sample size and variance, with \emph{larger~sample sizes} and \emph{smaller variances} leading to shorter confidence intervals.
+  \item Analytic method for computing confidence intervals:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  CI = \bar{x}\pm t^*(k)\frac{\sigma}{\sqrt{n}}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{itemize}
+    \item \(\bar{x}\): sample mean, \(\sigma\): sample standard deviation, \(n\): sample size
+    \item \(t^*\): \(t\)-value with \(k\) degrees of freedom; \(t\)-value associated with one tail of confidence interval, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    t^*(k) = \operatorname{tinv}\hspace{-3pt}\left(\frac{1-\gamma}{2},~ n-1\right)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Note: \(\sigma\) is assumed to be an appropriate \hyperref[Chapter: Analysis of Variance]{\dlink{measure of variability}}.
+    \end{itemize}
+    
+  \end{itemize}
+
   \subsection{Primer: Bootstrapping}
   \begin{itemize}
-    \item 
+    \item \ddd{Bootstrapping}: an empirical method for estimating measures of accuracy, via use of random sampling with replacement, of a given dataset.
+      \begin{itemize}
+        \item Falls under the category of methods termed \ddd{``resampling''}, which also includes \hyperref[Subsection: Primer: Cross-Validation]{\ulink{cross-validation}} and \hyperref[Subsection: Primer: Permutation Testing]{\ulink{permutation testing}}. 
+        \item Treats the sample data as pseudo-population data, with each resample being a new pseudo-sample; leads to estimation of any measure of accuracy.
+      \end{itemize}
+    \item \true{\!Advantages} and \false{\!limitations (sometimes)} of bootstrapping:
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item \true{Works for any kind of parameter}.
+        \item \true{Potentially useful for limited datasets}.
+        \item \true{Not based on assumptions of normality}
+        \item \false{Can be inconsistent}
+        \item \false{Dependent on quality of representative sample}
+        \item \false{Can be time/computationally intensive}.
+      \end{itemize}
+    \end{multicols}
   \end{itemize}
 
   \subsection{Confidence Intervals: Misconceptions}
   \begin{itemize}
-    \item 
+    \item \false{Incorrect}:
+      \begin{itemize}
+        \item \textit{``I am 95\% confident that the population mean \fff{is the sample mean}''}
+        \item \textit{``I am 95\% confident that the population mean \fff{is within the CI} in my dataset.''}
+        \item \textit{``\fff{95\% of the data} are \fff{between} the upper and lower bounds of the CI.''}
+        \item \textit{``CIs for \fff{two parameters overlap}, therefore, they \fff{cannot be significantly different}''}
+      \end{itemize}
+    \item \true{Correct}:
+      \begin{itemize}
+        \item \textit{``95\% of confidence intervals in \ttt{repeated} samples will \ttt{contain} the true population mean.''}
+        \item The confidence interval is \ttt{not based on raw data}---it's based on descriptive statistics of the sample data.
+        \item The confidence interval refers to the \ttt{estimate} of a parameter, \ttt{not the relationship between} parameters.
+      \end{itemize}
   \end{itemize}
   
   
