@@ -19,3 +19,4 @@ Bonferroni
 Šidák
 Underfitting
 parcelization
+Anscombe

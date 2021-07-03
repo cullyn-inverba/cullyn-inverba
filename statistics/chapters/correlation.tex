@@ -2,22 +2,81 @@
 
 \section{Correlation Fundamentals}
 \begin{itemize}
-  \item []
+  \item \ddd{Correlation (dependence)}: a statistical relationship between two random variables or bivariate data.
+    \begin{itemize}
+      \item Correlations can indicate a predictive relationship that can be exploited. 
+      \item Presence of correlation is not sufficient to infer a causal relationship, i.e., \emph{correlation does not imply causation}.
+    \end{itemize}
+  \item \ddd{Covariance \(\cov(x,y)\)}: a measure of the joint variability of two random variables, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \cov(\xxx{x},\yyy{y}) =  E[\xxx{(x-\bar{X})}\yyy{(y-\bar{Y})}]
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Equivocally, using discrete random variables:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \cov(\xxx{x},\yyy{y})= \frac{1}{n-1}\sum_{i = 1}^{n}(\xxx{x_i-\bar{X}})(\yyy{y_i-\bar{Y}})
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item If linearity is assumed, then can be simplified to \hyperref[Section: Sampling]{\ulink{expected values}} of their product minus the product of their expected values, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \cov(\xxx{x},\yyy{y}) = E[\xxx{x}\yyy{y}] - \xxx{\bar{X}}\yyy{\bar{Y}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item \ddd{Correlation coefficient \([\bbb{-1},\rrr{1}]\)}: a numerical measure of some type of correlation. 
+    \begin{itemize}
+      \item Correlation is the \hyperref[Section: Introduction to Normalization]{\ulink{normalized (dimensionless)}} representation of covariance.
+      \item Often, correlation refers to linear relationships via Pearson correlation, however, there are several measures of correlation based on data types. 
+        \begin{itemize}
+          \item Not all correlations will be covered, but the most common will be, i.e., the \hyperref[Subsection: Pearson Correlation]{\dlink{Pearson}}, \hyperref[Subsection: Spearman Correlation]{\dlink{Spearman}}, and \hyperref[Subsection: Kendall Correlation]{\dlink{Kendall}} correlations. 
+        \end{itemize}
+    \end{itemize}
+  \item \ddd{Covariance matrix \(K_{\bm{xx}}\)}: a square matrix giving the covariance between each pair of elements of a given random vector, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  K_{\bm{xx}} = \cov[x,x] = E[(x-\bar{X})(x-\bar{X})^T] = E[xx^T] - \bar{X}\bar{X}^T
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+    \begin{itemize}
+      \item \minor{Disclaimer: linear algebra references will not be explained, as long as it was previously covered in \href{https://github.com/cullyn-inverba/notes}{\underline{my notes}} on linear algebra.}
+      \item Any covariance is symmetric, positive semi-definite, and its main diagonal contains variances (i.e., the covariance of each element with itself).
+    \end{itemize}
   
   \subsection{Pearson Correlation}
   \begin{itemize}
-    \item 
+    \item \ddd{Pearson correlation coefficient \(\rho\)}: a measure of \emph{linear correlation} between two sets of data; simply the covariance divided by their standard deviations, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \rho_{\xxx{x},\yyy{y}} = \frac{\cov(\xxx{x},\yyy{y})}{\sigma_\xxx{x}\sigma\yyy{y}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \(\sigma_\xxx{x},~\sigma\yyy{y}\): the standard deviation of \(\xxx{x}~\text{and}~\yyy{y}\)
+    \end{itemize}
+    \item \ddd{Sample Pearson correlation coefficient \(r\)}: application of Pearson correlation to discrete random sample, assuming paired data:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    r_{\xxx{x},\yyy{y}} = \frac{\sum_{i = 1}^{n}(\xxx{x_i-\bar{x}})(\yyy{y_i-\bar{y}})}
+    {\sqrt{\sum_{i = 1}^{n}(\xxx{x_i-\bar{x}})^2}\sqrt{\sum_{i = 1}^{n}(\yyy{y_i-\bar{y}})}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The Pearson correlation generally does not completely characterize relationships, as it only emphasizes the strength of linear relationships.
+      \begin{itemize}
+        \item In particular, if the \ddd{conditional mean \(E(Y~|~X)\)} of \(Y\) given \(X\) is not linear in \(X\), then the Pearson correlation will fail to characterize the relationship.
+        \item E.g., Anscombe's quartet demonstrates this problem, show how outliers or non-linear relationships can heavily impact the \emph{linear correlation}: 
+        \begin{center}
+          \hspace{-32pt}\Image{0.6\columnwidth}{chapters/images/quartet.png}
+        \end{center}
+        \begin{itemize}
+          \item All have the same mean, variance, correlation, and regression line, but obviously have different distributions.
+        \end{itemize}
+        \item The conclusion is that Pearson correlation can only fully characterize relationships between variables drawn from \emph{multivariate normal distributions}.
+          \begin{itemize}
+            \item Note: in practice, many distributions can be accurately calculated from normal distributions (not necessarily multivariate) if it has a finite covariance matrix. 
+          \end{itemize}
+      \end{itemize}
   \end{itemize}
 
-  \subsection{Correlation Matrices}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Cosine Correlation}
-  \begin{itemize}
-    \item 
-  \end{itemize}
+  \item \ddd{Cosine Correlation \(\cos(\theta)\)}: a measure of similar between two non-zero vectors on an inner product space; represented using a dot product over magnitude, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \cos(\theta) = \frac{\bm{a}^T \bm{b}}{||\bm{a}||\,||\bm{b}||}= \frac{\sum_{i = 1}^{n}a_i b_i}{\sqrt{\sum_{i = 1}^{n}a^2_i}\sqrt{\sum_{i = 1}^{n}b^2_i}}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item If the attribute vectors are normalized (e.g., \(a-\bar{a}\)), then the measure is equivalent to the Pearson correlation coefficient.
+    \end{itemize}
   
 \end{itemize}
 
