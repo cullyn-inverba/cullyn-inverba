@@ -35,6 +35,6 @@
 
  <h1>Independent Learning</h1>
 
-|             [Golang](/golang)              |              [Statistics](/statistics)               |               [HTML & CSS](/html-css)                |
-| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: |
-| [![Golang](assets/images/go.ico)](/golang) | [![Statistics](assets/images/stat.ico)](/statistics) | [![html-css](assets/images/html-css.ico)](/html-css) |
+|             [Golang](/golang)              |              [Statistics](/statistics)               |
+| :----------------------------------------: | :--------------------------------------------------: |
+| [![Golang](assets/images/go.ico)](/golang) | [![Statistics](assets/images/stat.ico)](/statistics) |
