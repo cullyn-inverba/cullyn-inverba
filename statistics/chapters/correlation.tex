@@ -75,7 +75,7 @@
   \cos(\theta) = \frac{\bm{a}^T \bm{b}}{||\bm{a}||\,||\bm{b}||}= \frac{\sum_{i = 1}^{n}a_i b_i}{\sqrt{\sum_{i = 1}^{n}a^2_i}\sqrt{\sum_{i = 1}^{n}b^2_i}}
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item If the attribute vectors are normalized (e.g., \(a-\bar{a}\)), then the measure is equivalent to the Pearson correlation coefficient.
+      \item If the attribute vectors are normalized (e.g., \(\bm{a}-\bar{\bm{a}}\)), then the measure is equivalent to the Pearson correlation coefficient.
     \end{itemize}
   
 \end{itemize}
@@ -83,23 +83,84 @@
 
 \section{Rank Correlation}
 \begin{itemize}
-  \item []
+  \item \ddd{Rank correlation}: a series of statistical measures of \hyperref[Subsection: Data Types]{\ulink{ordinal}} association, i.e., the relationship between ranking of different ordinal values.
+    \begin{itemize}
+      \item \ddd{Rank correlation coefficient}: the degree of similarity between two rankings, whereby significance can be assessed.
+    \end{itemize}
   
   \subsection{Spearman Correlation}
   \begin{itemize}
-    \item 
+    \item \ddd{Spearman's \(\rho, r_s\)}: a \hyperref[Subsection: Parametric vs. Nonparametric]{\ulink{nonparametric}} measure of rank correlation between two variables via assessment of a \emph{monotonic relationship}.
+      \begin{itemize}
+        \item \ddd{Monotonic function}: a function between ordered sets that preserves or reverses the given order, 
+        \item I.e., the Pearson correlation tests for linear relationships, while Spearman's correlation tests for monotonic relationships (linear or not). 
+        \item Can be applied for both continuous and discrete ordinal variables. 
+      \end{itemize}
+    \item Spearman's \(\rho \) is simply defined as the Pearson correlation coefficient between rank variables \(rv_x, rv_y\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    r_s = \rho_{\xxx{rv_x},\yyy{rv_y}} = \frac{\cov(\xxx{rv_x},\yyy{rv_y})}{\sigma_{\xxx{rv_x},\yyy{rv_y}}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
 
-  \subsection{Fisher Z-Transformation}
+  \subsection{Determining Significance}
   \begin{itemize}
-    \item 
+    \item Determining significance of correlations can be done in a number of ways, using permutation testing, the Fisher Z-transformation, or the \(t\)-distribution under the \(H_\nil\).
+    \begin{itemize}
+      \item \ddd{Fisher \(z\)-transformation \(F(r)\)}: a method of transforming uniformly distributed data (\(-1 < r < 1\)) into an approximately normal distribution, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      F(r) = \frac{1}{2}\ln\left(\frac{1+r}{1-r}\right) = \arctan(r)
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{itemize}
+        \item This creates a new distribution where values near \bbb{-1} and \rrr{+1} are stretched out, creating the tails of the normal distribution, as \bbb{-1} and \rrr{+1} represent perfect monotonic relationships (typically outliers). 
+        \item Significance (\hyperref[Subsection: Z-Score Standardization]{\ulink{\(z\)-score}}) can then be tested when accounting for sample size \(n\):
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        z = \sqrt{\frac{n-3}{1.06}}F(r)
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+    \end{itemize}
+    \item One can use a \(t\)-distribution with \(n-2\) degrees of freedom under the \(H_\nil\), based on strength of correlation \(r\) and data points \(n\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      t_{n-2} = \frac{r\sqrt{n-2}}{1-r^2}        
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
-
+  
   \subsection{Kendall Correlation}
   \begin{itemize}
-    \item 
+    \item \ddd{Kendall's \(\tau\) coefficient}: a measure of ordinal data, wherein the ranks do not have meaningful relationships between levels.
+    \item Kendall \(\tau \) will be high when observations have relatively similar rank between two variables, and low when relatively not similar, compared to the rest of the data.
+    \item \ddd{Concordant}: a pair of observations (\(x_1,y_1\)), (\(x_2,y_2\)) wherein the \emph{signs} of both elements are \rrr{greater than}, \bright{equal to}, or \bbb{less than} the \emph{corresponding elements} of the \emph{other pair}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \sgn(x_2-x_1) = \sgn(y_2-y_1)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ddd{Discordant}: not concordant or inverse signs, i.e., one pair contains a higher value of \(x\) then the other pair contains a higher value of \(y\): 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \sgn(x_2-x_1) = -\sgn(y_2-y_1)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item \ddd{Tau-a}: the strength of associations of the cross tabulations, with no adjustments for ties, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \tau_a = \frac{n_c - n_d}{n_b}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \(n_c\to\) number of concordant pairs; \(n_d\to\) number of discordant pairs.
+      \item \(n_b = \binom{n}{2} = \frac{n(n-1)}{2}\to\) the binomial coefficient for numbers of ways to choose two items from \(n\) items.
+    \end{itemize}
+    \item \ddd{Tau-b}: an adjustment to \(\tau \) that takes in account ties, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \tau_b = \frac{n_c - n_d}{\sqrt{(n_b-n_1)(n_b-n_2)}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \(n_1 = \sum_{i} t_i(t_i -1)/2\), 
+        \begin{itemize}
+          \item \(t_i\to\) number of tied values in the \(i^{th}\) group of ties for the first quantity.
+        \end{itemize}
+      \item \(n_2 = \sum_{j} u_j(u_j -1)/2\)
+      \begin{itemize}
+        \item \(u_j\to\) number of tied values in the \(j^{th}\) group of ties for the second quantity.
+      \end{itemize}
+    \end{itemize}
+    \item \minor{Disclaimer: Tau-c and significance tests for Kendall's \(\tau \) not covered, as of now.}
   \end{itemize}
-
+  
 \end{itemize}
 
 \section{Partial Correlation}

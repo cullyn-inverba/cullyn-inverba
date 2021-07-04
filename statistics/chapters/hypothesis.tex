@@ -352,7 +352,7 @@
             \item Remove equal pairs.
             \item Rank-transform the differences, i.e., \(r= \operatorname{rank}(|x-y|)\)
             \item Sum ranks where \(x>y\).
-            \item Convert to a Z-score, which is normally distributed under the \(H_\nil\), allowing for \hyperref[Subsection: Degrees of Freedom]{\ulink{conversion to a p-value}}.
+            \item Convert to a \(z\)-score, which is normally distributed under the \(H_\nil\), allowing for \hyperref[Subsection: Degrees of Freedom]{\ulink{conversion to a p-value}}.
           \end{itemize}
       \end{itemize}
       \item Note: the actual process is not covered here, again, when to use tests like these are the important factor here.
@@ -363,7 +363,7 @@
               \item Note the samples sizes, specifically, determine dataset with \bbb{fewer} points \(\bbb{x_f}, \bbb{n_f}\) and dataset with \rrr{more} points \(\rrr{x_m}, \rrr{n_m}\).
               \item Pool data and compute rank, i.e., \(rank(\{\bbb{x_f},\rrr{x_m}\})\)
               \item Compute U score, i.e., \(U = \sum_{i = 1}^{\bbb{n_f}}r_i\)
-              \item Convert to a Z-score, \hyperref[Subsection: Degrees of Freedom]{\ulink{and thus}}, a p-value.
+              \item Convert to a \(z\)-score, \hyperref[Subsection: Degrees of Freedom]{\ulink{and thus}}, a p-value.
             \end{itemize}
         \end{itemize}
   \end{itemize}
@@ -383,7 +383,7 @@
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \begin{itemize}
           \item \hyperref[Subsection: Degrees of Freedom]{\ulink{Conversion}} to p-value is then easily done. 
-          \item The observed value is not contained within the \(H_\nil\), thus conversion to a Z-score is often done case-by-case.
+          \item The observed value is not contained within the \(H_\nil\), thus conversion to a \(z\)-score is often done case-by-case.
           \item Only works for approximately Gaussian \(H_\nil\) distributions.
         \end{itemize}
         \item \ddd{Counts approach}: proportion of times that the \(H_\nil\) was greater than observed value to the number of permutations ran, i.e.,
