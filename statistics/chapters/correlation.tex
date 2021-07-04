@@ -163,18 +163,40 @@
   
 \end{itemize}
 
-\section{Partial Correlation}
+\section{Primer: Partial Correlation}
 \begin{itemize}
-  \item[]
-
-  \subsection{Confounding}
-  \begin{itemize}
-    \item 
-  \end{itemize}
+  \item \ddd{Partial correlation}: measures of degree of association between two random variables, with the effect of set of \emph{controlling random variables removed}.
+  \item Correlation coefficients will give misleading results if there is another confounding variable related to both variables of interest.
+    \begin{itemize}
+      \item \ddd{Confounding}: a variable that influences both the dependent and independent variable, causing spurious associations. 
+      \item \ddd{Spurious association}: when two or more variables are associated, but \emph{not casually} related.
+    \end{itemize}
+  \item Controlling for the confounding variables are done via the computation of a partial correlation coefficients.
+    \begin{itemize}
+      \item There are a variety of methods, but most commonly \hyperref[Chapter: Regression]{\dlink{linear regression}} is used to compute partial correlations; other basic methods have significant time complexity.
+    \end{itemize}
+  \item Confounding can be defined in terms of a data generating model, where \(X,~Y\) are the dependent and independent variables respectively, and \(Z\) is extraneous variables that casually influences both.
+    \begin{itemize}
+      \item To determine this, let \(p\hspace{1pt}(y~|\,\operatorname{do}(x))\) be probability of the event \(Y=y\) under the hypothetical intervention of \(X=x\). 
+      \item If the following holds:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      p\hspace{1pt}(y~|\,\operatorname{do}(x)) = p\hspace{1pt}(y~|\,x)
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      for all values \(X=x\) and \(Y=y\), then \(X\) and \(Y\) are not confounded.
+      \item Essentially, the above is only true if an association is the same as the association measured in a controlled experiment with \(x\) randomized. 
+    \end{itemize}
 
   \subsection{Subgroup Paradox}
   \begin{itemize}
-    \item 
+    \item \ddd{Simpson's (subgroup) paradox}: a phenomenon wherein a trend \emph{appears in several groups} of data, but \emph{disappears or reverses} when groups are \emph{combined}.
+      \begin{itemize}
+        \item The paradox is resolved when confounding variables and causal relations are appropriately addressed.
+        \item This paradox is often the culprit behind one of many misuses of statistics. 
+      \end{itemize}
+    \item The issue mainly involves the significance of the subgroups.
+      \begin{itemize}
+        \item Often the determination of the subgroups is based on insignificant distinctions, leading to poor inferences due to assumed importance of subgroup correlations.
+      \end{itemize}
   \end{itemize}
   
 \end{itemize}
