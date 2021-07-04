@@ -1,6 +1,6 @@
  <p align="center">
     <a title="Golang by Todd Mcleod" href="https://www.udemy.com/course/learn-how-to-code/">
-    <img height="420" src="../assets/images/go.png">
+    <img width="420" src="../assets/images/go.jpg">
     </a>
 </p>
 
