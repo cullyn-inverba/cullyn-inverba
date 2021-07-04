@@ -1,11 +1,11 @@
  <p align="center">
-    <a title="Golang Training" href="https://www.udemy.com/course/learn-how-to-code/">
+    <a title="Statistics by Mike Cohen" href="https://www.udemy.com/course/statsml_x/">
     <img height="420" src="../assets/images/stat.jpg">
     </a>
 </p>
 
-# Statistics \& Machine Learning 
+# Statistics \& Machine Learning
 
+## **Learning Materials**
 
-## **Course Materials**
-- [Take the course yourself](https://www.udemy.com/course/statsml_x/)
+- [**Statistics** for Machine Learning w/ code by **Mike X Cohen**](https://www.udemy.com/course/statsml_x/)

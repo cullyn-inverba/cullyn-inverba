@@ -35,6 +35,6 @@
 
  <h1>Independent Learning</h1>
 
-|             [Golang](/golang)              |              [Statistics](/statistics)               |
-| :----------------------------------------: | :--------------------------------------------------: |
-| [![Golang](assets/images/go.ico)](/golang) | [![Statistics](assets/images/stat.ico)](/statistics) |
+|             [Golang](/golang)              |              [Statistics](/statistics)               |                 [Javascript](/javascript)                  |               [Pandas](/python/pandas)                |               [Python](/python)                |
+| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------: | :--------------------------------------------: |
+| [![Golang](assets/images/go.ico)](/golang) | [![Statistics](assets/images/stat.ico)](/statistics) | [![Javascript](assets/images/javascript.ico)](/javascript) | [![Pandas](assets/images/pandas.ico)](/python/pandas) | [![python](assets/images/python.ico)](/python) |

@@ -1,1 +1,2 @@
 {"rule":"PASSIVE_VOICE","sentence":"^\\QI'm taking this course in order to weed out bad habits, as most of what I know about HTML and CSS was haphazardly learned via trial and error.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QPandas\nPandas Bootcamp by Alexander Hagmann\\E$"}
