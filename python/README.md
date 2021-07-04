@@ -10,9 +10,9 @@
 
   - [Pandas Bootcamp by Alexander Hagmann](https://www.udemy.com/course/the-pandas-bootcamp/)
 
-- [Linear algebra assignments (MTH 261, PSU)](/linear-algebra)
-  - [Relevant notes](../prior/mth-261.pdf)
+- [Linear algebra assignments (MTH 261, PSU)](/python/linear-algebra)
+  - [Relevant notes](/prior/mth-261.pdf)
 
 ## Coding Challenges
 
-- [Codewars content](/codewars)
+- [Codewars content](/python/codewars)
