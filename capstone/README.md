@@ -9,5 +9,5 @@ Senior capstone, most content will be done via online discussions. I will be for
 ## **Course Materials**
 
 - [Braiding Sweetgrass (main readings)](https://1lib.us/book/2469159/540513)
-- [Weekly discussion posts](/discussions)
-- [Weekly responses](/assignments)
+- [Weekly discussion posts](/capstone/discussions)
+- [Weekly responses](/capstone/assignments)
