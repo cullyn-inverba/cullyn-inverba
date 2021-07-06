@@ -2,17 +2,79 @@
 
 \section{ANOVA Fundamentals}
 \begin{itemize}
-  \item[]
+  \item \ddd{Analysis of variance (ANOVA)}: a collection of statistical models and their associated estimates, based on the law of total variance, aimed at determining the effects of \xxx{discrete independent variables (IV, \(X_n\))} on a \yyy{continuous dependent variable (DV, \(Y\))}.
+    \begin{itemize}
+      \item \ddd{Law of total variance}: if \xxx{\(X\)} and \yyy{\(y\)} are random variables on the same probability space, and the variance of \yyy{\(Y\)} is finite, then
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \var(\yyy{Y}) = E[\var(\yyy{Y}~|\,\xxx{X})] + \var(E[\yyy{Y}~|\,\xxx{X}])
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item \ddd{Basic outline for setting up an ANOVA\@}:
+    \begin{enumerate}
+      \item Identify the \xxx{independent} and \yyy{dependent} variables.
+      \begin{itemize}
+        \item Sometimes termed the \xxx{explained} and \yyy{unexplained} components of variability.
+      \end{itemize}
+      \item Determine \emph{applicability of ANOVA} to the experimental design in question.
+        \begin{itemize}
+          \item Needs categorical factors, with two or more levels within each factor.
+            \begin{itemize}
+              \item \ddd{Factors}: the ``dimensions'' of the \xxx{IVs}.
+              \item \ddd{Levels}: the specific groups (means) or manipulations within each factor.
+            \end{itemize}
+          \item Generally used to test differences among at least three levels, as \(t\)-tests and correlations are used for two.
+        \end{itemize}
+      \item Create a table of factors and levels (if possible; when factors > 2, then it's not used).
+      \item Perform computation and \emph{interpret results}.
+        \begin{itemize}
+          \item \ddd{Main effect}: when one factor primarily influences the \yyy{dependent} variable.
+          \item \ddd{Interactions}: the effect of one factor depends on the levels or another factor.
+          \item \ddd{Intercept}: when the average of \yyy{dependent} variable is different from zero.
+        \end{itemize}
+    \end{enumerate}
+
+  \subsection{Study Designs}
+  \begin{itemize}
+    \item \ddd{One-way ANOVA}: used for testing differences of two or more levels with \emph{one factor}.
+    \item \ddd{Factorial ANOVA}: used when there is \emph{more than one} factor, e.g., \hyperref[Subsection: Two-Way ANOVA]{\dlink{two-way ANOVA}}.
+    \item \ddd{Repeated measures ANOVA}: used when the same subjects are used for each factor, e.g., in longitudinal studies.
+    \item \ddd{Multivariate ANOVA}: when there is more than one \yyy{dependent} variable.
+    \item \ddd{Balanced}: the same number of data points (sample size) in each treatment.
+      \begin{itemize}
+        \item \ddd{Unbalanced}: different number of data points; often increases complexity and reduces both robustness and statistical power. 
+      \end{itemize}
+  \end{itemize}
+    
+  \subsection{Classes of Models}
+  \begin{itemize}
+    \item \ddd{Fixed-effects (class I)}: when the number of levels of a factor is fixed, i.e., there are \emph{discrete}, and often \emph{static}, groups within each factor.
+      \begin{itemize}
+        \item Allows estimation of the ranges of \yyy{dependent} variable values that treatments would generate in the population.
+      \end{itemize}
+    \item \ddd{Random-effects (class II)}: when the levels within a factor are random in the population, i.e., there are \emph{random}, and often \emph{variable}, groups within each factor.
+      \begin{itemize}
+        \item Some levels can be discretized into discrete, fixed levels, but many cannot.
+      \end{itemize}
+    \item \ddd{Mixed-effects (class III)}: a mixture of \emph{fixed and random} effects, i.e., a factorial ANOVA wherein at least one factor is fixed and at least one other is random.
+    \item Note: defining fixed and random effects has proven to be elusive, with non-standardized definitions of each often causing confusion.
+  \end{itemize}
 
   \subsection{Assumptions of ANOVA}
   \begin{itemize}
-    \item 
+    \item The most common approaches use \emph{linear models} that relates treatments and controls to the \xxx{independent} variables on the \yyy{dependent} variables, which assume:
+      \begin{itemize}
+        \item \ddd{Independence}: the data are sampled independently of each other in the population to which you want to generalize.
+        \item \ddd{Normality}: the residuals (unexplained variance) are roughly Gaussian.
+        \item \ddd{Homoscedasticity}: the variance of the data in groups should be roughly equal.
+      \end{itemize}
+    \item Many problems which do not satisfy the assumptions of the ANOVA can often be transformed to satisfy them. 
+      \begin{itemize}
+        \item E.g., the Kruskal-Wallis test can be used on rank-transformed data, and unit-treatment additivity can be applied in some cases.
+        \item However, many uses of ANOVA are generally robust enough to deal with violations; transformation can often be inefficient, leading more work than use.
+      \end{itemize}
   \end{itemize}
   
-  \subsection{Classes or Models}
-  \begin{itemize}
-    \item 
-  \end{itemize}
+
   
 \end{itemize}
 

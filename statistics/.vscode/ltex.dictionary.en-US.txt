@@ -20,3 +20,5 @@ Bonferroni
 Underfitting
 parcelization
 Anscombe
+Homoscedasticity
+additivity
