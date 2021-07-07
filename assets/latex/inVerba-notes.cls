@@ -217,12 +217,15 @@
     \newcommand{\bBb}[1]{{\color{bBb}#1}}
 
 
-% Titles: #7abef5 #b0d0eb #cedeeb 
+% Sections: #7abef5 #b0d0eb #cedeeb
 \definecolor{sec}{HTML}{7abef5} 
     \newcommand{\tsec}[1]{{\color{sec}{#1}}}
+    \newcommand{\Tsec}[1]{{\color{sec}{\textbf{#1}}}}
 \definecolor{ssec}{HTML}{b0d0eb} 
     \newcommand{\ssec}[1]{{\color{ssec}{#1}}}
+    \newcommand{\Ssec}[1]{{\color{ssec}{\textbf{#1}}}}
 \definecolor{ddd}{HTML}{cedeeb} 
+    \newcommand{\ddD}[1]{{\color{ddd}{#1}}}
     \newcommand{\ddd}[1]{{\color{ddd}{\textbf{#1}}}}
     
 

@@ -97,7 +97,7 @@
     \sigma^2 = \ddd{SS} = \sum_{i = 1}^{n}(x_i-\bar{x})^2
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Note: this is sample variance, so the divisor (\hyperref[Subsection: Degrees of Freedom]{\ulink{degree of freedom \(df\)}}) \(\frac{1}{n-1}\) is still present, but will be partitioned along with variance in order to interpret the results.
+      \item Note: this is sample variance, so the divisor (\hyperref[Subsection: Degrees of Freedom]{\ulink{degree of freedom \(\nu\)}}) \(\frac{1}{n-1}\) is still present, but will be partitioned along with variance in order to interpret the results.
     \end{itemize}
     \item In order to interpret the dispersion, the total variation \(SS_T\) is computed from the combination of within-group variance \(SS_E\) and between-group variance \(SS_B\), i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,11 +105,11 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{align*}
       SS_T &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}\sum_{\xxx{i} = 1}^{\text{\xxx{\scriptsize{subjects}}}}(x_{\yyy{i}\xxx{j}}-\bar{x})^2  &&
-      df_T = N - 1\\
+      \nu_T = N - 1\\
       \yyy{SS_B} &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}(\yyy{\bar{x}_i} - \bar{x})^2 \yyy{n_i} &&
-      \yyy{df_B} = \yyy{k} - 1 \\
+      \yyy{\nu_B} = \yyy{k} - 1 \\
       \xxx{SS_E} &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}\sum_{\xxx{i} = 1}^{\text{\xxx{\scriptsize{subjects}}}}(x_{\yyy{i}\xxx{j}}-\yyy{\bar{x}_i})^2  &&
-      \xxx{df_E} = N-\yyy{k} 
+      \xxx{\nu_E} = N-\yyy{k} 
     \end{align*}
   \end{itemize}
 
@@ -117,7 +117,7 @@
   \begin{itemize}
     \item \ddd{\(F\)-test}: used for comparing factors of the total deviation, computed as a ratio of the errors and between-group variance, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    F = \frac{\text{\xxx{``Explained''} variance}}{\text{\yyy{``Unexplained'} variance'}} = \frac{\text{Due to \xxx{factors}}}{\text{\yyy{Natural} variance}} = \frac{\xxx{SS_E / df_E}}{\yyy{SS_B/df_B}}
+    F = \frac{\text{\xxx{``Explained''} variance}}{\text{\yyy{``Unexplained'} variance'}} = \frac{\text{Due to \xxx{factors}}}{\text{\yyy{Natural} variance}} = \frac{\xxx{SS_E / \nu_E}}{\yyy{SS_B/\nu_B}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
   \end{itemize}

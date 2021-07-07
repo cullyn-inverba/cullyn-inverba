@@ -13,7 +13,7 @@
       \item \ddd{Residual (error) \(\epsilon\)}: the degree that features not explained by variables that make up the composition of models. 
       \item Residuals should be small (\emph{accurate}), but models should also be simple (\emph{useful}); finding the balance between these two goals is a major part of statistics/science.
     \end{itemize}
-  \item \ddd{(Alternative; effect) hypothesis \(H_a\)}: a proposed explanation for a phenomenon;a falsifiable claim that requires verification, typically from experimental data, and that allows for predictions about future observations.
+  \item \ddd{Alternative (effect) hypothesis \(H_a\)}: a proposed explanation for a phenomenon;a falsifiable claim that requires verification, typically from experimental data, and that allows for predictions about future observations.
     \begin{itemize}
       \item Most formal hypotheses connect concepts by specifying the expected relationships between propositions, leading to expected differences.
       \item Hypothesis testing is used to develop better theories via the rejection of previous theories; most progress in science is the result of hypothesis testing.
@@ -83,41 +83,41 @@
       \begin{itemize}
         \item \false{Incorrect}: 
           \begin{itemize}
-            \item ``\textit{My \(p\)-value is 0.02, so the effect is present for 2\% of the population.}''
-            \item ``\textit{My \(p\)-value is 0.02, so there is a 90\% chance that my sample statistic equals the population parameter.}''
-            \item ``\textit{My p-value is smaller than the threshold, therefore the effect is real.}''
+            \item ``\textit{My \(p\)-value is \fff{0.02}, so the \fff{effect is present for 2\%} of the population.}''
+            \item ``\textit{My \(p\)-value is \fff{0.02}, so there is a \fff{98\% chance} that my sample statistic equals the population parameter.}''
+            \item ``\textit{My p-value is \fff{smaller than the threshold}, therefore the \fff{effect is real}.}''
           \end{itemize}
         \item \true{Correct}: 
         \begin{itemize}
-          \item ``My \(p\)-value is 0.02, therefore there is a 2\% chance that there is no effect and my sample statistic was due to sampling variability, noise, small sample size, and/or systematic bias.''
+          \item ``My \(p\)-value is \ttt{0.02}, therefore there is a \ttt{2\% chance} that there is \ttt{no effect} and my \ttt{sample statistic} was \ttt{due to sampling variability}, noise, small sample size, and/or systematic bias.''
         \end{itemize}
       \end{itemize}
     \item Recall that the \hyperref[Subsection: Z-Score Standardization]{\ulink{z-score}} is a dimensionless measure of \hyperref[Subsection: Measures of Dispersion]{\ulink{standard deviations \(\sigma_x\)}} from the mean; the relation between \(p\)- and z-values can be useful to memorize.
     \item Given a Gaussian distribution, z-proportion (above/below) values are:
       \begin{itemize}
-        \item 68.3\% of the data are within \(\sigma_1\leftrightarrow z = \pm 1=0.683\) 
-        \item 95.5\% of the data are within \(\sigma_2\leftrightarrow z = \pm 2 = 0.955\)
-        \item 99.7\% of the data are within \(\sigma_3\leftrightarrow z = \pm 3 = 0.997\)
+        \item \ddd{68.3\%} of the data are within \(\ddD{\sigma_1}\leftrightarrow \ddd{z = \pm 1}= \ddd{0.683}\) 
+        \item \Ssec{95.5\%} of the data are within \(\ssec{\sigma_2}\leftrightarrow \Ssec{z = \pm 2} = \Ssec{0.955}\)
+        \item \Tsec{99.7\%} of the data are within \(\tsec{\sigma_3}\leftrightarrow \Tsec{z = \pm 3} = \Tsec{0.997}\)
       \end{itemize}
     \item Common \(p\)-values parings with standard deviations:
     \vspace{-6pt}
     \begin{multicols}{2}
       \begin{itemize}
         \item One-tailed \(\downarrow\)
-        \item \(p=0.05 \leftrightarrow z = 1.64\)
-        \item \(p=0.01 \leftrightarrow z = 2.32\)
-        \item \(p=0.001 \leftrightarrow z = 3.09\)
+        \item \(p=\ddd{0.05} \leftrightarrow z = \ddd{1.64}\)
+        \item \(p=\Ssec{0.01} \leftrightarrow z = \Ssec{2.32}\)
+        \item \(p=\Tsec{0.001} \leftrightarrow z = \Tsec{3.09}\)
         \item \(\downarrow\) Two-tailed \(\downarrow\)
-        \item \(p=0.05 \leftrightarrow z = 1.96\)
-        \item \(p=0.01 \leftrightarrow z = 2.58\)
-        \item \(p=0.001 \leftrightarrow z = 3.29\)
+        \item \(p=\ddd{0.05} \leftrightarrow z = \ddd{1.96}\)
+        \item \(p=\Ssec{0.01} \leftrightarrow z = \Ssec{2.58}\)
+        \item \(p=\Tsec{0.001} \leftrightarrow z = \Tsec{3.29}\)
       \end{itemize}
     \end{multicols}
   \end{itemize}
   
   \subsection{Degrees of Freedom}
   \begin{itemize}
-    \item \ddd{Degrees of freedom (d.f. \(\nu\))}: the number of values in the final calculation of a statistic that are free to vary.
+    \item \ddd{Degrees of freedom (\(df,~\nu\))}: the number of values (\emph{parameters}) in the final calculation of a statistic that are \emph{free to vary}.
       \begin{itemize}
         \item I.e., the minimum number of independent coordinates that can specify the position of the system completely.
       \end{itemize}
