@@ -61,35 +61,65 @@
 
   \subsection{Assumptions of ANOVA}
   \begin{itemize}
-    \item The most common approaches use \emph{linear models} that relates treatments and controls to the \xxx{independent} variables on the \yyy{dependent} variables, which assume:
+    \item The most common approaches use \emph{linear models} that relate groups and controls to the \xxx{independent} variables on the \yyy{dependent} variables, which assume:
       \begin{itemize}
         \item \ddd{Independence}: the data are sampled independently of each other in the population to which you want to generalize.
         \item \ddd{Normality}: the residuals (unexplained variance) are roughly Gaussian.
         \item \ddd{Homoscedasticity}: the variance of the data in groups should be roughly equal.
       \end{itemize}
-    \item Many problems which do not satisfy the assumptions of the ANOVA can often be transformed to satisfy them. 
+    \item Many problems that do not satisfy the assumptions of the ANOVA can often be transformed to satisfy them. 
       \begin{itemize}
         \item E.g., the Kruskal-Wallis test can be used on rank-transformed data, and unit-treatment additivity can be applied in some cases.
         \item However, many uses of ANOVA are generally robust enough to deal with violations; transformation can often be inefficient, leading more work than use.
       \end{itemize}
   \end{itemize}
-  
-
-  
 \end{itemize}
 
 \section{ANOVA Methods}
 \begin{itemize}
-  \item[]
+  \item In a generic sense, ANOVA is used to compare the \(H_\nil\) to an \(H_a\);
+    \begin{itemize}
+      \item \(H_\nil\): the null hypothesis, which states the \emph{means of all groups} \(\mu_k\) are statistically \ttt{indistinguishable}, i.e,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \ttt{H_\nil} : \mu_1 = \mu_2 = \mu_{\ldots} = \mu_k
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item \(H_a\): the alternative hypothesis, which is true when \emph{at least one group mean} is statistically \fff{distinguishable} from another group mean, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \fff{H_a} = \mu_i \neq \mu_j
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item Finding out what the difference between the group means, if there is one, requires \hyperref[Subsection: Post-Hoc Comparisons]{\dlink{post-hoc comparisons}}.
 
   \subsection{Sum of Squares}
   \begin{itemize}
-    \item 
+    \item The first step in ANOVA is to compute and interpret the \hyperref[Subsection: Measures of Dispersion]{\ulink{measure of dispersion}} between groups, within groups, and in total, using \hyperref[Subsection: Measures of Dispersion]{\ulink{variance}} (\ddd{sum of squares}), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \sigma^2 = \ddd{SS} = \sum_{i = 1}^{n}(x_i-\bar{x})^2
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Note: this is sample variance, so the divisor (\hyperref[Subsection: Degrees of Freedom]{\ulink{degree of freedom \(df\)}}) \(\frac{1}{n-1}\) is still present, but will be partitioned along with variance in order to interpret the results.
+    \end{itemize}
+    \item In order to interpret the dispersion, the total variation \(SS_T\) is computed from the combination of within-group variance \(SS_E\) and between-group variance \(SS_B\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    SS_{\,\text{Total,}~T} = \xxx{SS_{\,\text{Error,}~E}} + \yyy{SS_{\,\text{Between,}~B}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{align*}
+      SS_T &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}\sum_{\xxx{i} = 1}^{\text{\xxx{\scriptsize{subjects}}}}(x_{\yyy{i}\xxx{j}}-\bar{x})^2  &&
+      df_T = N - 1\\
+      \yyy{SS_B} &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}(\yyy{\bar{x}_i} - \bar{x})^2 \yyy{n_i} &&
+      \yyy{df_B} = \yyy{k} - 1 \\
+      \xxx{SS_E} &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}\sum_{\xxx{i} = 1}^{\text{\xxx{\scriptsize{subjects}}}}(x_{\yyy{i}\xxx{j}}-\yyy{\bar{x}_i})^2  &&
+      \xxx{df_E} = N-\yyy{k} 
+    \end{align*}
   \end{itemize}
 
   \subsection{F-Test}
   \begin{itemize}
-    \item 
+    \item \ddd{\(F\)-test}: used for comparing factors of the total deviation, computed as a ratio of the errors and between-group variance, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    F = \frac{\text{\xxx{``Explained''} variance}}{\text{\yyy{``Unexplained'} variance'}} = \frac{\text{Due to \xxx{factors}}}{\text{\yyy{Natural} variance}} = \frac{\xxx{SS_E / df_E}}{\yyy{SS_B/df_B}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
   \end{itemize}
 
   \subsection{The ANOVA Table}
