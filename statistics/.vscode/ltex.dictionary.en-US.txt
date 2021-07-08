@@ -22,3 +22,4 @@ parcelization
 Anscombe
 Homoscedasticity
 additivity
+Tukey

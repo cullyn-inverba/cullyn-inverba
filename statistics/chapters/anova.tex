@@ -19,8 +19,8 @@
         \begin{itemize}
           \item Needs categorical factors, with two or more levels within each factor.
             \begin{itemize}
-              \item \ddd{Factors}: the ``dimensions'' of the \xxx{IVs}.
-              \item \ddd{Levels}: the specific groups (means) or manipulations within each factor.
+              \item \ddd{Factors \(\lambda\)}: the ``dimensions'' of the \xxx{IVs}.
+              \item \ddd{Levels \(\epsilon\)}: the specific groups (means) or manipulations within each factor.
             \end{itemize}
           \item Generally used to test differences among at least three levels, as \(t\)-tests and correlations are used for two.
         \end{itemize}
@@ -79,16 +79,16 @@
 \begin{itemize}
   \item In a generic sense, ANOVA is used to compare the \(H_\nil\) to an \(H_a\);
     \begin{itemize}
-      \item \(H_\nil\): the null hypothesis, which states the \emph{means of all groups} \(\mu_k\) are statistically \ttt{indistinguishable}, i.e,
+      \item \ttt{\(H_\nil\)}: the \ttt{null hypothesis}, which states the \emph{means of all groups} \(\mu_k\) are statistically \ttt{indistinguishable}, i.e,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \ttt{H_\nil} : \mu_1 = \mu_2 = \mu_{\ldots} = \mu_k
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \item \(H_a\): the alternative hypothesis, which is true when \emph{at least one group mean} is statistically \fff{distinguishable} from another group mean, i.e.,
+      \item \fff{\(H_a\)}: the \fff{alternative hypothesis}, which is true when \emph{at least one group mean} is statistically \fff{distinguishable} from another group mean, i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \fff{H_a} = \mu_i \neq \mu_j
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
-  \item Finding out what the difference between the group means, if there is one, requires \hyperref[Subsection: Post-Hoc Comparisons]{\dlink{post-hoc comparisons}}.
+  \item Finding out what the difference between the group means, if there is one, requires \hyperref[Subsection: Post Hoc Comparisons]{\dlink{post-hoc comparisons}}.
 
   \subsection{Sum of Squares}
   \begin{itemize}
@@ -97,44 +97,146 @@
     \sigma^2 = \ddd{SS} = \sum_{i = 1}^{n}(x_i-\bar{x})^2
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Note: this is sample variance, so the divisor (\hyperref[Subsection: Degrees of Freedom]{\ulink{degree of freedom \(\nu\)}}) \(\frac{1}{n-1}\) is still present, but will be partitioned along with variance in order to interpret the results.
+      \item Note: this is sample variance, so the divisor (\hyperref[Subsection: Degrees of Freedom]{\ulink{degree of freedom \(\nu\)}}) \(\frac{1}{n-1}\) is still present, but will be partitioned along with variance in order to interpret the results. 
     \end{itemize}
-    \item In order to interpret the dispersion, the total variation \(SS_T\) is computed from the combination of within-group variance \(SS_E\) and between-group variance \(SS_B\), i.e.,
+    \item In order to interpret the dispersion, the total variation \(SS_T\) is computed from the combination of \yyy{within-group} variance \yyy{\(SS_E\)} and \xxx{between-group} variance \xxx{\(SS_B\)}, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    SS_{\,\text{Total,}~T} = \xxx{SS_{\,\text{Error,}~E}} + \yyy{SS_{\,\text{Between,}~B}}
+    SS_{T} = \yyy{SS_{E}} + \xxx{SS_{B}} \quad ~\xxx{\epsilon}=\text{\hyperref[Section: ANOVA Fundamentals]{\ulink{levels}}}, \yyy{n}=\text{subjects in levels},~N=\text{total subjects}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{align*}
-      SS_T &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}\sum_{\xxx{i} = 1}^{\text{\xxx{\scriptsize{subjects}}}}(x_{\yyy{i}\xxx{j}}-\bar{x})^2  &&
+      SS_T &= \sum_{\xxx{i} = 1}^{\xxx{\epsilon}}\sum_{\yyy{i} = 1}^{\text{\yyy{n}}}(x_{\xxx{i}\yyy{j}}-\bar{x})^2  &&
       \nu_T = N - 1\\
-      \yyy{SS_B} &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}(\yyy{\bar{x}_i} - \bar{x})^2 \yyy{n_i} &&
-      \yyy{\nu_B} = \yyy{k} - 1 \\
-      \xxx{SS_E} &= \sum_{\yyy{i} = 1}^{\text{\yyy{\scriptsize{levels}}}}\sum_{\xxx{i} = 1}^{\text{\xxx{\scriptsize{subjects}}}}(x_{\yyy{i}\xxx{j}}-\yyy{\bar{x}_i})^2  &&
-      \xxx{\nu_E} = N-\yyy{k} 
+      \xxx{SS_B} &= \sum_{\xxx{i} = 1}^{\xxx{\epsilon}}(\xxx{\bar{x}_i} - \bar{x})^2 \yyy{n}_\xxx{i} &&
+      \xxx{\nu_B} = \xxx{\epsilon} - 1 \\
+      \yyy{SS_E} &= \sum_{\xxx{i} = 1}^{\xxx{\epsilon}}\sum_{\yyy{i} = 1}^{\text{\yyy{n}}}(x_{\xxx{i}\yyy{j}}-\xxx{\bar{x}_i})^2  &&
+      \yyy{\nu_E} = N-\xxx{\epsilon}
     \end{align*}
   \end{itemize}
 
   \subsection{F-Test}
   \begin{itemize}
-    \item \ddd{\(F\)-test}: used for comparing factors of the total deviation, computed as a ratio of the errors and between-group variance, i.e.,
+    \item \ddd{\(F\)-test}: used for comparing the factors of the total deviation, represents the mean squared \(MS\) ratio of the \xxx{between-group} variance and \yyy{within-group} variance, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    F = \frac{\text{\xxx{``Explained''} variance}}{\text{\yyy{``Unexplained'} variance'}} = \frac{\text{Due to \xxx{factors}}}{\text{\yyy{Natural} variance}} = \frac{\xxx{SS_E / \nu_E}}{\yyy{SS_B/\nu_B}}
+    F = \frac{\text{\xxx{``Explained''} variance}}{\text{\yyy{``Unexplained'} variance}} = \frac{\text{Due to \xxx{factors}}}{\text{\yyy{Natural} variance}} = \frac{\xxx{SS_B/\nu_B}} {\yyy{SS_E / \nu_E}}= \frac{\xxx{MS_B}}{\yyy{MS_E}}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
   \end{itemize}
 
   \subsection{The ANOVA Table}
   \begin{itemize}
-    \item 
+    \item Results from ANOVA are often displayed together in a table, i.e.,
+    \medskip
+    \begin{center}
+      \hspace{-24pt}\begin{tabular}{rccccc}
+        \toprule
+        Variance & \(SS\) & \(\nu\) & \(MS\) & \(F\) & \(p\)-value \\
+        \midrule
+        \xxx{Between}  & \xxx{\(SS_B\)} & \(\xxx{\epsilon}-1\) & \xxx{\(MS_B\)} & \(\frac{\xxx{MS_B}}{\yyy{MS_E}}\) & \(p\) \\
+        \yyy{Within}   & \yyy{\(SS_E\)} & \(N-\xxx{\epsilon}\) & \yyy{\(MS_E\)} & &  \\
+        Total    & \(SS_T\) & \(N-1\) & & &  \\
+        \bottomrule
+      \end{tabular}
+    \end{center}
+    \medskip
+    \item Again, the \(\fff{H_a}\) is valid when the \hyperref[Subsection: P-Value]{\ulink{p-value is significant}}, meaning at least one group mean is \fff{distinguishable} from at least one other group.
+      \begin{itemize}
+        \item I.e., the \(\ttt{H_\nil}\) is \rrr{correctly rejected} if \(p \leq \alpha\).
+        \item If the \fff{\(H_a\)} is valid, then the \(F\) statistic represents the total variability to be investigated between groups, but does not tell us which groups vary; post-hoc comparisons are required to find the source of such variability.
+        \item The \(F\)-test is known to be nearly optimal in the sense for minimizing \hyperref[Subsection: Statistical Errors]{\ulink{false~negatives}} for a fixed rate of \hyperref[Subsection: Statistical Errors]{\ulink{false positives}}.
+      \end{itemize}
   \end{itemize}
 
-  \subsection{Post-Hoc Comparisons}
+  \subsection{Post Hoc Comparisons}
   \begin{itemize}
-    \item 
+    \item \ddd{Post hoc}: analysis of results after an experiment.
+      \begin{itemize}
+        \item Often based on \hyperref[Subsection: Multiple Comparisons Problem]{\ulink{family-wise error rate}} analysis, \hyperref[Section: Data Visualization]{\ulink{data visualization}}, and \hyperref[Section: T-Tests]{\ulink{\(t\)-tests}}.
+      \end{itemize}
+    \item \ddd{Tukey's (range) test}: a single-step multiple comparison procedure to used to find means that are significantly different from each other over a specified range.
+      \begin{itemize}
+        \item Tukey's test is common post hoc approach for controlling the family-wise error rate, essentially, it is just a \(t\)-test that incorporates such control, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        q_{c,n-c} = \frac{\rrr{\bar{x}_{\max}} - \bbb{\bar{x}_{\min}}}{\sqrt{\xxx{MS_E}}\sqrt{2/n}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{itemize}
+          \item \(c\): the number of comparisons being made.
+          \item \(n\): total number of data values.
+          \item \(c,n-c = \nu\): the degrees of freedom, which depends on specified number of comparisons being made (the range) that are relevant. 
+        \end{itemize}
+      \item Similar the \(t\)-test, if \(q\) is larger than the critical value determined by the significance level \(\alpha\), then the means of the comparison are significantly different.
+      \end{itemize}
   \end{itemize}
   
   \subsection{Two-Way ANOVA}
   \begin{itemize}
-    \item 
+    \item All the methods of ANOVA discussed so far were only being applied to the \hyperref[Subsection: Study Designs]{\ulink{one-way~ANOVA}}\@, but such methods can be extended if multiple factors are present.
+    \item Total variation in the dataset is the \emph{sum of the variation across}: \yyy{subjects \(n\)} within each group  + \xxx{levels \(\epsilon\)} within each factor + interactions between the \bBb{factors \(\lambda_x\)}.
+    \item \hyperref[Subsection: Sum of Squares]{\ulink{The methods}} can be extended to any factorial ANOVA, but here extension to the two-way ANOVA will be demonstrated:
+    \begin{align*}
+      SS_T &= 
+      \rrr{\sum_{i = 1}^{\xxx{\epsilon_{\bBb{\lambda_1}}}}}
+      \emph{\sum_{j = 1}^{\xxx{\epsilon_{\bBb{\lambda_2}}}}}
+      \yyy{\sum_{k = 1}^{\yyy{n}}}
+      (x_{\rrr{i}\emph{j}\yyy{k}}-\bar{x})^2 
+      && \nu_T = N - 1 
+      \\
+      \xxx{SS_{B\bBb{\lambda_1}}} &= 
+      \xxx{\varepsilon}_\bBb{2}\yyy{n}\rrr{\sum_{i = 1}^{\xxx{\epsilon_{\bBb{\lambda_1}}}}}(\rrr{\bar{x}_i}-\bar{x})^2
+      && \xxx{\nu_{B\bBb{\lambda_1}}} = \xxx{\varepsilon}_\bBb{1} - 1
+      \\
+      \xxx{SS_{B\bBb{\lambda_2}}} &= 
+      \xxx{\varepsilon}_\bBb{1}\yyy{n}\emph{\sum_{j = 1}^{\xxx{\epsilon_{\bBb{\lambda_2}}}}}(\emph{\bar{x}_j}-\bar{x})^2
+      && \xxx{\nu_{B\bBb{\lambda_2}}} = \xxx{\varepsilon}_\bBb{2} - 1
+      \\
+      SS_{\bBb{\lambda_1} \times \bBb{\lambda_2}} &= 
+      \rrr{\sum_{i = 1}^{\xxx{\epsilon_{\bBb{\lambda_1}}}}}
+      \emph{\sum_{j = 1}^{\xxx{\epsilon_{\bBb{\lambda_2}}}}}
+      (x_{\rrr{i}\emph{j}}-\rrr{\bar{x}_i}-\emph{\bar{x}_j}-\bar{x})^2 
+      &&
+      \nu_{\bBb{\lambda_1} \times \bBb{\lambda_2}} = \xxx{\nu_{B\bBb{\lambda_1}}}\xxx{\nu_{B\bBb{\lambda_2}}}
+      \\
+      \yyy{SS_E} &= 
+      \rrr{\sum_{i = 1}^{\xxx{\epsilon_{\bBb{\lambda_1}}}}}
+      \emph{\sum_{j = 1}^{\xxx{\epsilon_{\bBb{\lambda_2}}}}}
+      \yyy{\sum_{k = 1}^{\yyy{n}}}
+      (x_{\rrr{i}\emph{j}\yyy{k}}-\bar{x}_{\rrr{i}\emph{j}})^2 
+      && \yyy{\nu_E} = N - \xxx{\varepsilon}_\bBb{1}\xxx{\varepsilon}_\bBb{2}
+    \end{align*}
+    \(\text{Where}~\xxx{\varepsilon}_\bBb{x} = \text{the number of levels within each factor, i.e.,}~\xxx{\epsilon}_n \in \bBb{\lambda_x}\)
+  \item Which can also be represented in a table:
+  \medskip
+    \begin{center}
+      \hspace{-24pt}\begin{tabular}{rccccc}
+        \toprule
+        Variance & \(SS\) & \(\nu\) & \(MS\) & \(F\) & \(p\)-value \\
+        \midrule
+        \(\bBb{\lambda_1}\) &
+        \(\xxx{SS_{B\bBb{\lambda_1}}}\) &
+        \(\xxx{\varepsilon}_\bBb{1} - 1\) &
+        \(\xxx{MS_{\bBb{\lambda_1}}}\) &
+        \(\xxx{MS_{\bBb{\lambda_1}}}/\yyy{MS_E}\)& 
+        \(p\) \\
+        \(\bBb{\lambda_2}\) &
+        \(\xxx{SS_{B\bBb{\lambda_2}}}\) &
+        \(\xxx{\varepsilon}_\bBb{2} - 1\) &
+        \(\xxx{MS_{\bBb{\lambda_2}}}\) &
+        \(\xxx{MS_{\bBb{\lambda_2}}}/\yyy{MS_E}\) &
+        \(p\) \\
+        \(\bBb{\lambda_1} \times \bBb{\lambda_2}\) &
+        \(SS_{\bBb{\lambda_1} \times \bBb{\lambda_2}}\) & 
+        \(\xxx{\nu_{B\bBb{\lambda_1}}}\xxx{\nu_{B\bBb{\lambda_2}}}\) &
+        \(\xxx{MS}_{\bBb{\lambda_1} \times \bBb{\lambda_2}}\) &
+        \(\xxx{MS}_{\bBb{\lambda_1} \times \bBb{\lambda_2}}/\yyy{MS_E}\) &
+        \(p\) \\
+        \yyy{Within}   
+        & \yyy{\(SS_E\)} & \( N - \xxx{\varepsilon}_\bBb{1}\xxx{\varepsilon}_\bBb{2}\) & \yyy{\(MS_E\)} & &  \\
+        Total    
+        & \(SS_T\) & \(N-1\) & & &  \\
+        \bottomrule
+      \end{tabular}
+    \end{center}
+    \medskip
+    \item This can be extended, with increasing time complexity.
+    \item Using values from a factorial ANOVA in data visualization is often used to interpret results, as mapping interactions can quickly get out of hand.
   \end{itemize}
-  
 \end{itemize}
