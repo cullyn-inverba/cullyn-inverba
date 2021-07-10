@@ -60,3 +60,11 @@ for (let i = 0; i < bills.length; i++) {
 console.log(`The average bill cost was ${calcAverage(bills)}, the average tip was ${calcAverage(tips)} and the average total cost was ${calcAverage(totals)}.`);
 
 console.log("----------");
+
+// -REFACTOR-
+// -TESTING-
+// -EXPLANATION-
+// -TODO-
+// -CONFUSED-
+// -CRITICAL-
+// -BROKEN-
