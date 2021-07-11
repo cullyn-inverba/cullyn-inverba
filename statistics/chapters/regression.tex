@@ -4,14 +4,33 @@
 \begin{itemize}
   \item[]
   
-  \subsection{Model Fitting}
+  \subsection{Model-Fitting}
   \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{General Linear Model}
-  \begin{itemize}
-    \item 
+    \item \ddd{Model fitting}: the combination of fixed features and free parameters in such a way that fits experimental data to a mathematical models based on adjustments to the free parameters that attempts to explain the \yyy{dependent variable}.
+      \begin{itemize}
+        \item \ddd{Fixed features \(x_n\)}: \xxx{independent variables} \emph{imposed on the model} based on previous knowledge, understanding, theories, hypotheses, or other evidence. 
+        \item \ddd{Free parameters \(\beta_n\)}: variables that cannot be predicted precisely or constrained by the model; they must be \emph{adjusted or estimated}.
+        \item \ddd{Intercept \(\beta_\nil\)}: the average when all other parameters are 0.
+        \item \ddd{Residual (error) \(\fff{\varepsilon}\)}: the \fff{residual} (innovation, error) \fff{data} which are not directly observed or fit by the model.
+      \end{itemize}
+    \item \ddd{Model interpolation}: the prediction of other experimental results given prior experimental data and a fitted model based on those data.
+    \item \ddd{The general outline of model-fitting}:
+    \begin{itemize}
+      \item \emph{Define the equation(s) underlying the model}; dependent on data availability. % chktex 36
+        \begin{itemize}
+          \item If \emph{all} the \xxx{fixed features} are \hyperref[Subsection: Data Types]{\ulink{discrete}}, then use \hyperref[Chapter: Analysis of Variance]{\ulink{ANOVA}}.
+          \item If at least \emph{some} \xxx{fixed features} are \emph{continuous}, then use regression.
+          \item E.g., height \(\yyy{h}\) is governed by numerous complex interactions, but a simplistic model can be made to estimate the importance of particular fixed features;
+          \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \yyy{h} = \beta_1 \xxx{x_n} + \beta_2 \xxx{x_n} + \beta_3  \xxx{x_n} \quad \xxx{x_1}: \text{sex},\xxx{x_2}: \text{parents' height}, \xxx{x_3}: \text{nutrition}
+          \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          
+        \end{itemize}
+      \item \emph{Map the data to the model equations}, i.e.,  take the real, or simulated, data and map them to the \xxx{fixed features},  yielding a system of equations with a series of unknown parameters. 
+      \item \emph{Convert the equations into a matrix-vector equation}, i.e., \(\xxx{\bm{X}}\bm{\beta} = \bm{\yyy{y}}\) (\(\bm{Ax}=\bm{b}\))
+      \item \emph{Convert the equations into a matrix-vector equation}, i.e., \hyperref[Subsection: Multiple Regression]{\dlink{the general linear model}}; sometimes simplified to \(\xxx{\bm{X}}\bm{\beta} = \bm{\yyy{y}}\) (linear algebra nomenclature: \(\bm{Ax}=\bm{b}\)).
+      \item \emph{Statistical evaluation of the model}, i.e., the application of inferential statistics, e.g., \hyperref[Subsection: Model Significance]{\dlink{model significance}} and \hyperref[Subsection: Standardized Coefficients]{\dlink{coefficients significance}}.
+    \end{itemize}
   \end{itemize}
 
   \subsection{Least-Squares}
@@ -42,7 +61,16 @@
   
   \subsection{Multiple Regression}
   \begin{itemize}
-    \item 
+    \item \ddd{General linear model}: a compact way of writing several multiple linear regression models using matrix algebra, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{\yyy{Y}} = \bm{\xxx{X}\beta} + \fff{\varepsilon}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \(\yyy{\bm{Y}}\): matrix with a series of multivariate measurements, where each column is a set of measurements of one of the \yyy{dependent variables}.
+      \item \(\xxx{\bm{X}}\): the \xxx{design matrix}, where each column is a set of observations on \xxx{independent variables}.
+      \item \(\bm{\beta}\): the matrix of \(\beta \) coefficients to be estimated.
+      \item \(\displaystyle\fff{\varepsilon}\): the matrix of \fff{residuals} associated with the model.
+    \end{itemize}
   \end{itemize}
   
   \subsection{Polynomial Regression}
@@ -77,34 +105,3 @@
   \end{itemize}
   
 \end{itemize}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% \section{Cross-Validation: Revisited}
-% \begin{itemize}
-%   \item[]
-
-%   \subsection{Exhaustive vs. Non-Exhaustive}
-%   \begin{itemize}
-%     \item 
-%   \end{itemize}
-  
-% \end{itemize}
-
-
