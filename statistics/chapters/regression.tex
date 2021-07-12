@@ -8,10 +8,10 @@
   \begin{itemize}
     \item \ddd{Model fitting}: the combination of fixed features and free parameters in such a way that fits experimental data to a mathematical models based on adjustments to the free parameters that attempts to explain the \yyy{dependent variable}.
       \begin{itemize}
-        \item \ddd{Fixed features \(x_n\)}: \xxx{independent variables} \emph{imposed on the model} based on previous knowledge, understanding, theories, hypotheses, or other evidence. 
-        \item \ddd{Free parameters \(\beta_n\)}: variables that cannot be predicted precisely or constrained by the model; they must be \emph{adjusted or estimated}.
+        \item \ddd{Fixed features \(\xxx{x_n}\)}: \xxx{independent variables} \emph{imposed on the model} based on previous knowledge, understanding, theories, hypotheses, or other evidence. 
+        \item \ddd{Free parameters \(\beta_n\)}: scalar variables that cannot be predicted precisely or constrained by the model; they must be \emph{adjusted or estimated}.
         \item \ddd{Intercept \(\beta_\nil\)}: the average when all other parameters are 0.
-        \item \ddd{Residual (error) \(\fff{\varepsilon}\)}: the \fff{residual} (innovation, error) \fff{data} which are not directly observed or fit by the model.
+        \item \ddd{Residual (error) \(\displaystyle\fff{\varepsilon}\)}: the data \fff{not directly observed} or fit \fff{by the model}.
       \end{itemize}
     \item \ddd{Model interpolation}: the prediction of other experimental results given prior experimental data and a fitted model based on those data.
     \item \ddd{The general outline of model-fitting}:
@@ -22,20 +22,47 @@
           \item If at least \emph{some} \xxx{fixed features} are \emph{continuous}, then use regression.
           \item E.g., height \(\yyy{h}\) is governed by numerous complex interactions, but a simplistic model can be made to estimate the importance of particular fixed features;
           \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-          \yyy{h} = \beta_1 \xxx{x_n} + \beta_2 \xxx{x_n} + \beta_3  \xxx{x_n} \quad \xxx{x_1}: \text{sex},\xxx{x_2}: \text{parents' height}, \xxx{x_3}: \text{nutrition}
+          \yyy{h} = \beta_\nil + \beta_1 \xxx{x_1} + \beta_2 \xxx{x_2} + \beta_3  \xxx{x_3} + \fff{\varepsilon}
           \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-          
+          \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \xxx{x_1}: \text{sex},\xxx{x_2}: \text{parents' height}, \xxx{x_3}: \text{nutrition}
+          \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \end{itemize}
-      \item \emph{Map the data to the model equations}, i.e.,  take the real, or simulated, data and map them to the \xxx{fixed features},  yielding a system of equations with a series of unknown parameters. 
-      \item \emph{Convert the equations into a matrix-vector equation}, i.e., \(\xxx{\bm{X}}\bm{\beta} = \bm{\yyy{y}}\) (\(\bm{Ax}=\bm{b}\))
-      \item \emph{Convert the equations into a matrix-vector equation}, i.e., \hyperref[Subsection: Multiple Regression]{\dlink{the general linear model}}; sometimes simplified to \(\xxx{\bm{X}}\bm{\beta} = \bm{\yyy{y}}\) (linear algebra nomenclature: \(\bm{Ax}=\bm{b}\)).
-      \item \emph{Statistical evaluation of the model}, i.e., the application of inferential statistics, e.g., \hyperref[Subsection: Model Significance]{\dlink{model significance}} and \hyperref[Subsection: Standardized Coefficients]{\dlink{coefficients significance}}.
+      \item \emph{Map the data to the model equations}, i.e.,  take the real, or simulated, data and map them to the \xxx{fixed features}.
+        \begin{itemize}
+          \item Yields a system of equations with a series of unknown parameters. 
+          \item \ddd{Over determined}: a set of equations with more equations than unknowns.
+        \end{itemize}
+      \item \emph{Convert the equations into a matrix-vector equation}, i.e., \hyperref[Subsection: Multiple Regression]{\dlink{the general linear model}}.
+        \begin{itemize}
+          \item Sometimes simplified to \(\xxx{\bm{X}}\bm{\beta} = \bm{\yyy{y}}\) (linear algebra nomenclature: \(\bm{Ax}=\bm{b}\)).
+        \end{itemize}
+      \item \emph{Computer the parameters}, e.g., using \hyperref[Subsection: Least-Squares]{\dlink{least-squares}}.
+      \item \emph{Statistical evaluation of the model}, i.e., the application of inferential statistics.
+        \begin{itemize}
+          \item See \hyperref[Subsection: Model Significance]{\dlink{model significance}} and \hyperref[Subsection: Standardized Coefficients]{\dlink{coefficients significance}}.
+        \end{itemize}
     \end{itemize}
   \end{itemize}
 
   \subsection{Least-Squares}
   \begin{itemize}
-    \item 
+    \item \ddd{Least-squares}: a standard approach in regression analysis to approximate the solution of over determined systems by minimizing the sum of the squares of the residuals, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \| \fff{\varepsilon} \|^2 = \| \bm{\xxx{X}\beta - \yyy{y}}\|^2
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \ddd{Residuals \(\displaystyle \fff{\varepsilon}\)}: the vector that describes the difference{} between the observed value~\(\yyy{\bm{y}}\) and the estimated value \(\bm{\xxx{X}\beta}~(\bm{\YYY{\hat{y}}})\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \fff{\varepsilon} = \bm{\YYY{\hat{y}}} - \bm{\yyy{y}} = \bm{\xxx{X}\beta - \yyy{y}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item Since the design matrix \(\bm{\xxx{X}}\) is an over determined system, then the \bbb{left inverse} can be used to isolate the regression coefficients if \(\bm{\xxx{X}}\) has \emph{full column rank}, i.e.,
+  \begin{align*}
+    \bm{\xxx{X}\beta} &= \bm{\yyy{y}} \\
+    \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\xxx{X}\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y} \\
+    \bm{\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y}
+  \end{align*}
   \end{itemize}
 
   \subsection{Model Significance}
