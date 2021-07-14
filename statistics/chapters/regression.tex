@@ -8,7 +8,7 @@
   \begin{itemize}
     \item \ddd{Model fitting}: the combination of fixed features and free parameters in such a way that fits experimental data to a mathematical models based on adjustments to the free parameters that attempts to explain the \yyy{dependent variable}.
       \begin{itemize}
-        \item \ddd{Fixed features \(\xxx{x_n}\)}: \xxx{independent variables} \emph{imposed on the model} based on previous knowledge, understanding, theories, hypotheses, or other evidence. 
+        \item \ddd{Fixed features (regressor) \(\xxx{x_n}\)}: \xxx{independent variables} \emph{imposed on the model} based on previous knowledge, understanding, theories, hypotheses, or other evidence; has several other names based on context.
         \item \ddd{Free parameters \(\beta_n\)}: scalar variables that cannot be predicted precisely or constrained by the model; they must be \emph{adjusted or estimated}.
         \item \ddd{Intercept \(\beta_\nil\)}: the average when all other parameters are 0.
         \item \ddd{Residual (error) \(\displaystyle\fff{\varepsilon}\)}: the data \fff{not directly observed} or fit \fff{by the model}.
@@ -60,14 +60,38 @@
   \item Since the design matrix \(\bm{\xxx{X}}\) is an over determined system, then the \bbb{left inverse} can be used to isolate the regression coefficients if \(\bm{\xxx{X}}\) has \emph{full column rank}, i.e.,
   \begin{align*}
     \bm{\xxx{X}\beta} &= \bm{\yyy{y}} \\
-    \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\xxx{X}\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y} \\
-    \bm{\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{y}
+    \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\xxx{X}\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\yyy{y}} \\
+    \bm{\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\yyy{y}}
   \end{align*}
   \end{itemize}
 
   \subsection{Model Significance}
   \begin{itemize}
-    \item 
+    \item \ddd{Coefficient of determination \(R^2\)}: a measure of how well observed outcomes are replicated by the models; exact definitions vary.
+      \begin{itemize}
+        \item In \hyperref[Subsection: Simple Regression]{\dlink{simple linear regression}} it's referred to as \(r^2\), and if the intercept is included, then it's simply the square of the \hyperref[Subsection: Pearson Correlation]{\ulink{sample correlation coefficient \(r\)}}.
+        \item \(R^2\) indicates that there are additional regressors, which means it is equal to the square of the coefficient of multiple correlation. 
+        \item Values range from 0 to 1, with 1 indicating a better fit.
+      \end{itemize}
+    \item \(R^2\) can be found by comparing the \hyperref[Subsection: Sum of Squares]{\ulink{sum of squares}} of the residuals over the total sum of squares, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    R^2 = 1 - \frac{SS_\fff{\varepsilon}}{SS_T} = 1 - \frac{\sum(y_i - \hat{y}_i)^2}{\sum(y_i - \bar{y})^2}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item There is no real cut-off for a ``good fit'', often it is used to compare models.
+    \end{itemize}
+  \item Further evaluation of significance is similar to the \hyperref[Subsection: F-Test]{\ulink{F-test}} used in ANOVA, whereby determination of at least one \(\beta \neq 0\) is achieved, else all regressors under \(H_\nil = 0 \).
+    \begin{itemize}
+      \item The F-test here uses a comparison \(SS_{\text{\xxx{M}odel}} = \sum(\hat{y}_i-\bar{y})^2\) over \(SS_\fff{\varepsilon}\), with degrees of freedom determined by number of parameters (+ \(\beta_\nil\)) \(\xxx{k}\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      F_{(\xxx{k}-1,N-\xxx{k})} = \frac{SS_\xxx{M}/(\xxx{k}-1)}{SS_\fff{\varepsilon}(N-\xxx{k})}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \item Each individual \(\beta \) coefficient can then be evaluated using a \(t\)-distribution:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      t_{N-\xxx{k}} = \frac{\beta}{\sigma_\beta} = \frac{\beta}{\sqrt{SS_\fff{\varepsilon}/SS_T}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+    \end{itemize}
   \end{itemize}
 
   \subsection{Standardized Coefficients}

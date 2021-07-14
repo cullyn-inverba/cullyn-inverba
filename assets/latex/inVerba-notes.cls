@@ -191,7 +191,7 @@
 \definecolor{dark}{HTML}{141414}
     \newcommand{\dark}[1]{{\color{dark}#1}}
 
-% Text: #ebebeb #e0e0e0 #949494 #6b6b6b #2f2f2f 
+% Text: #ebebeb #e0e0e0 #949494 #6b6b6b #404040 
 \definecolor{bright}{HTML}{ebebeb}  
     \newcommand{\bright}[1]{{\color{bright}#1}}
 \definecolor{fg}{HTML}{e0e0e0}  
@@ -201,7 +201,7 @@
     \newcommand{\minor}[1]{{\color{minor}#1}}
 \definecolor{minimal}{HTML}{6b6b6b} 
     \newcommand{\minimal}[1]{{\color{minimal}#1}}
-\definecolor{faint}{HTML}{2f2f2f} 
+\definecolor{faint}{HTML}{404040} 
     \newcommand{\faint}[1]{{\color{faint}#1}} 
 
 % Emphasis: #f5af71 #f5984c #f58ecc #4ca9f5
@@ -313,9 +313,9 @@
 %  /\ \ \
 %  \ \/ / #4f4f4f
 %   \ \/
-%   /\ \ #404040 
+%   /\ \ #404040 faint
 %   \ \/
-%   /\ \ #2f2f2f faint
+%   /\ \ #2f2f2f 
 %   \ \/
 %   /\ \ #262626
 %  / /\ \
