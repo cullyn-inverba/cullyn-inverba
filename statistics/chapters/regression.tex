@@ -35,7 +35,7 @@
         \end{itemize}
       \item \emph{Convert the equations into a matrix-vector equation}, i.e., \hyperref[Section: Regression Models]{\dlink{the general linear model}}.
         \begin{itemize}
-          \item Sometimes simplified to \(\xxx{\bm{X}}\bm{\beta} = \bm{\yyy{y}}\) (linear algebra nomenclature: \(\bm{Ax}=\bm{b}\)).
+          \item Sometimes simplified to \(\xxx{\bm{X}}\bm{\beta} = \bm{\y}\) (linear algebra nomenclature: \(\bm{Ax}=\bm{b}\)).
         \end{itemize}
       \item \emph{Computer the parameters}, e.g., using \hyperref[Subsection: Least-Squares]{\dlink{least-squares}}.
       \item \emph{Statistical evaluation of the model}, i.e., the application of inferential statistics.
@@ -49,19 +49,19 @@
   \begin{itemize}
     \item \ddd{Least-squares}: a standard approach in regression analysis to approximate the solution of over determined systems by minimizing the sum of the squares of the residuals, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \| \err \|^2 = \| \bm{\xxx{X}\beta - \yyy{y}}\|^2
+    \| \err \|^2 = \| \bm{\x\beta - \y}\|^2
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item \ddd{Residuals \(\displaystyle \err\)}: the vector that describes the difference{} between the observed value~\(\yyy{\bm{y}}\) and the estimated value \(\bm{\xxx{X}\beta}~(\bm{\YYY{\hat{y}}})\), i.e.,
+      \item \ddd{Residuals \(\displaystyle \err\)}: the vector that describes the difference{} between the observed value~\(\yyy{\bm{y}}\) and the estimated value \(\bm{\x\beta}~(\bm{\YYY{\hat{y}}})\), i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \err = \bm{\YYY{\hat{y}}} - \bm{\yyy{y}} = \bm{\xxx{X}\beta - \yyy{y}}
+      \err = \bm{\YYY{\hat{y}}} - \bm{\y} = \bm{\x\beta - \y}
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
-  \item Since the design matrix \(\bm{\xxx{X}}\) is an over determined system, then the \bbb{left inverse} can be used to isolate the regression coefficients if \(\bm{\xxx{X}}\) has \emph{full column rank}, i.e.,
+  \item Since the design matrix \(\bm{\x}\) is an over determined system, then the \bbb{left inverse} can be used to isolate the regression coefficients if \(\bm{\x}\) has \emph{full column rank}, i.e.,
   \begin{align*}
-    \bm{\xxx{X}\beta} &= \bm{\yyy{y}} \\
-    \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\xxx{X}\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\yyy{y}} \\
-    \bm{\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\yyy{y}}
+    \bm{\x\beta} &= \bm{\y} \\
+    \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\x\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\y} \\
+    \bm{\beta} &= \bbb{(\bm{X}^T \bm{X})^{-1} \bm{X}^T} \bm{\y}
   \end{align*}
   \end{itemize}
 
@@ -99,9 +99,20 @@
     \item \ddd{Standardized (regression) coefficient (weights)}: when the free parameters \(\beta\) of a model have been standardized so that the variances both the dependent and independent variables are equal to 1.
       \begin{itemize}
         \item Unstandardized \(\beta \) weights can change depending on the scale of the independent variables, leading to near impossible comparisons of variables and studies.
-        \item There are some cases where unstandardized \(\beta \) weights can reflect important scales of the data, potentially facilitating interpretations. 
+        \item There are some cases where unstandardized \(\beta \) weights can reflect important scales of the data, potentially facilitating interpretations.
       \end{itemize}
-    \item The, Standardized \(\beta \) weights are 
+    \item Standardized \(\beta \) weights are unitless; the measure refers to effect of one-\hyperref[Subsection: Measures of Dispersion]{\ulink{standard deviations \(\sigma \)}} of a \xxx{regressor \(\x\)} on the \yyy{dependent variable \(\y\)}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \beta^* = \beta_k\frac{\xxx{\sigma_{xk}}}{\yyy{\sigma_y}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Note: sometimes, standardization is done with only respect to the regressor.
+      \item Another method involves \hyperref[Subsection: Z-Score Standardization]{\ulink{z-normalizing}} all the variables before regression.
+    \end{itemize}
+    \item Comparisons may be easier with standardized weights, but re-scaling based simply on standard deviations may increase difficulty of analysis due to \hyperref[Section: Primer: Partial Correlation]{\ulink{confounding}}.
+      \begin{itemize}
+        \item Additionally, non-normal distributions can potentially make the method of standardization much less representative of the truth.
+      \end{itemize}
   \end{itemize}
   
 \end{itemize}
@@ -110,7 +121,7 @@
 \begin{itemize}
   \item \ddd{General linear model}: a compact way of writing several multiple linear regression models using matrix algebra, i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \bm{\yyy{Y}} = \bm{\xxx{X}\beta} + \err
+  \bm{\y} = \bm{\x\beta} + \err
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
     \item \(\yyy{\bm{Y}}\): matrix with a series of multivariate measurements, where each column is a set of measurements of one of the \yyy{dependent (response) variables}.
@@ -123,32 +134,51 @@
   \begin{itemize}
     \item \ddd{Simple linear regression}: the simplest case using a \xxx{single regressor} (plus the \hyperref[Subsection: Model-Fitting]{\ulink{intercept}}) and a \yyy{single dependent variable} over a number of observations \(i\), i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \yyy{y}_i = \beta_\nil + \beta_1\xxx{x}_i + \err_i
+    \y_i = \beta_\nil + \beta_1\x_i + \err_i
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     \item \ddd{Multiple linear regression}: the generalization of simple linear regression to the case of \xxx{more than one regressor \(X_n\)}.
       \begin{itemize}
         \item There is a special case (the basic model), where the general linear model is restricted to \yyy{one dependent variable}, i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \yyy{Y}_i = \beta_\nil + \beta_1 \xxx{X}_{i1} + \beta_2 \xxx{X}_{i2} + \cdots + \beta_n \xxx{X}_{in} + \err_{i}
+        \y_i = \beta_\nil + \beta_1 \x_{i1} + \beta_2 \x_{i2} + \cdots + \beta_n \x_{in} + \err_{i}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \item As well as the more general multivariate linear regression, where there are \yyy{more than one dependent variables} that share the \xxx{same set of regressors}, i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \yyy{Y}_{ij} = \beta_{\nil j} + \beta_{1j} \xxx{X}_{i1} + \beta_{2j} \xxx{X}_{i2} + \cdots + \beta_{nj} \xxx{X}_{in} + \err_{ij}
+        \y_{ij} = \beta_{\nil j} + \beta_{1j} \x_{i1} + \beta_{2j} \x_{i2} + \cdots + \beta_{nj} \x_{in} + \err_{ij}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \item Where all dependent variables are indexed as \(j = 1, \ldots, n\)
         \item Note: \emph{multivariate analysis} of the general linear model deals with analysis of \emph{all} the \emph{outcomes at once}.
           \begin{itemize}
             \item In contrast, multiple linear regression (\emph{multivariable analysis}) defined here deals with \emph{each outcome independently}, with respect to each dependent variable examined.
           \end{itemize}
-        \item Multiple linear regression often has \xxx{additional regressors} generated from \xxx{interactions} between various regressors in the set, as long as independence is maintained; analysis of interactions is not covered here, as of now.
+        \item Multiple linear regression often has \xxx{additional regressors} generated from \xxx{interactions} between various regressors in the set, as long as independence is maintained; for now, they can be thought of as new fixed features.
       \end{itemize}
   \end{itemize}
   
   
   \subsection{Polynomial Regression}
   \begin{itemize}
-    \item 
+    \item \ddd{Polynomial regression}: a special case of multiple linear regression wherein the relationship between the \xxx{fixed features} and the \yyy{dependent variable} is \emph{modelled as an \(n\)th degree polynomial}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \y = \beta_\nil \xxx{x^0} + \beta_1 \xxx{x^1} + \cdots + \beta_k \xxx{x^k} + \err
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{itemize}
+        \item The nonlinear relationship is fit to the values of \(\x\) and the corresponding conditional mean of \(\y\), i.e., \(E(\y~|~\x)\)
+        \item The statistical problem is still linear, despite nonlinear fixed features, since the free parameters (\(\beta \) weights) are scalars that keep the model linear. 
+      \end{itemize}
+      \item \hyperref[Subsection: Primer: Cross-Validation]{\ulink{Under and overfitting}} can easily be done using polynomial regression, with a too low or too high order polynomial leading to each case, respectively. Therefore, a method of model selection is needed.
+        \begin{itemize}
+          \item \ddd{Bayesian information criterion (BIC)}: a criterion for model selection (often used in \hyperref[Subsection: Primer: Cross-Validation]{\ulink{cross validation}}) among a finite set of models; a lower BIC score is preferred.
+          \item BIC defined in the case of model order selection:
+          \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \operatorname{BIC}_\xxx{k} = n \ln(SS_\err) + \xxx{k}\ln(n) \qquad \xxx{k}\text{: n-parameters}, n\text{: n-data points}
+          \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          \item BIC applied to various model order parameters can then be analyzed to find the lowest scoring value 
+            \begin{itemize}
+              \item Note: the lowest score is typically found after a large drop, with a slowly increasing score thereafter.
+            \end{itemize}
+        \end{itemize}
   \end{itemize}
   
   \subsection{Logistic Regression}
