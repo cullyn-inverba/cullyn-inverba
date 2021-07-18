@@ -24,3 +24,8 @@ Homoscedasticity
 additivity
 Tukey
 unitless
+logit
+Nonlinearities
+Probit
+multiplicatively
+underfitting

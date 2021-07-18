@@ -121,7 +121,7 @@
 \begin{itemize}
   \item \ddd{General linear model}: a compact way of writing several multiple linear regression models using matrix algebra, i.e.,
   \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \bm{\y} = \bm{\x\beta} + \err
+  \bm{\yyy{Y}} = \bm{\beta}\bm{\xxx{X}} + \err
   \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
     \item \(\yyy{\bm{Y}}\): matrix with a series of multivariate measurements, where each column is a set of measurements of one of the \yyy{dependent (response) variables}.
@@ -159,7 +159,7 @@
   
   \subsection{Polynomial Regression}
   \begin{itemize}
-    \item \ddd{Polynomial regression}: a special case of multiple linear regression wherein the relationship between the \xxx{fixed features} and the \yyy{dependent variable} is \emph{modelled as an \(n\)th degree polynomial}, i.e.,
+    \item \ddd{Polynomial regression}: a special case of multiple linear regression wherein the relationship between the \xxx{fixed features} and the \yyy{dependent variable} is \emph{modeled as an \(n\)th degree polynomial}, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \y = \beta_\nil \xxx{x^0} + \beta_1 \xxx{x^1} + \cdots + \beta_k \xxx{x^k} + \err
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,14 +167,14 @@
         \item The nonlinear relationship is fit to the values of \(\x\) and the corresponding conditional mean of \(\y\), i.e., \(E(\y~|~\x)\)
         \item The statistical problem is still linear, despite nonlinear fixed features, since the free parameters (\(\beta \) weights) are scalars that keep the model linear. 
       \end{itemize}
-      \item \hyperref[Subsection: Primer: Cross-Validation]{\ulink{Under and overfitting}} can easily be done using polynomial regression, with a too low or too high order polynomial leading to each case, respectively. Therefore, a method of model selection is needed.
+      \item \hyperref[Subsection: Nested Models]{\dlink{Under and overfitting}} can easily be done using polynomial regression, with a too low or too high order polynomial leading to each case, respectively. Therefore, a method of model selection is needed.
         \begin{itemize}
           \item \ddd{Bayesian information criterion (BIC)}: a criterion for model selection (often used in \hyperref[Subsection: Primer: Cross-Validation]{\ulink{cross validation}}) among a finite set of models; a lower BIC score is preferred.
           \item BIC defined in the case of model order selection:
           \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           \operatorname{BIC}_\xxx{k} = n \ln(SS_\err) + \xxx{k}\ln(n) \qquad \xxx{k}\text{: n-parameters}, n\text{: n-data points}
           \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-          \item BIC applied to various model order parameters can then be analyzed to find the lowest scoring value 
+          \item BIC applied to ordered models with increasing degree can be analyzed to find the lowest scoring value.
             \begin{itemize}
               \item Note: the lowest score is typically found after a large drop, with a slowly increasing score thereafter.
             \end{itemize}
@@ -183,14 +183,79 @@
   
   \subsection{Logistic Regression}
   \begin{itemize}
-    \item 
+    \item \ddd{Logistic regression}: used to model the \emph{probability} of a \emph{binary} \yyy{dependent variable}.
+      \begin{itemize}
+        \item Outputs with more than two values are modeled by multinomial logistic regression, or ordinal logistic regression if the categories are ordered.
+        \item Does not perform statistical classification, but can be made into a binary classifier by choosing a cutoff probability value.
+      \end{itemize}
+    \item Logistic regression involves a basic regression model the \ddd{log-odds (logit)}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \ln\left(\frac{p}{1-p}\right) = \beta_\nil + \beta_1\xxx{x_1} + \cdots + \beta_k\xxx{x_k}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{itemize}
+        \item Finding the probability that \(\y = 1\) yields the \ddd{sigmoid function \(S(x)\)}:
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        p = S(x) = \frac{1}{1+e^{-x}} \qquad x = \beta_\nil + \beta_1\xxx{x_1} + \cdots + \beta_k\xxx{x_k}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item Using the log-odds increases the dynamic range of the small values, leading to better optimization results when dealing with those smaller probability values.
+      \end{itemize}
+    \item Nonlinearities in the coefficients prevent the left-inverse from being used to find the regression coefficient.
+      \begin{itemize}
+        \item Instead, iterative methods such as gradient descent are applied to find the set of parameters that make the probabilities best match the dependent variable
+      \end{itemize}
   \end{itemize}
 
   \subsection{Nested Models}
   \begin{itemize}
-    \item 
+    \item Qualitatively, overfitting and underfitting of models occurs when the models correspond to closely or fail to capture the underlying structure, respectively.
+    \begin{itemize}
+      \item All models exist between these two measures; sometimes certain trade-offs can make one direction more favorable, i.e., \begin{table}[h]
+        \centering
+        \begin{tabular}{rl}
+          \ddd{Overfitting} & \ddd{Underfitting}  \\
+          Overly sensitive to noise & Less sensitive to noise \\
+          Increased sensitivity to subtle effects & Less likely to detect true effects \\
+          Increased estimation complexity & Decreased estimation complexity \\
+          Better results with more data & Better results with fewer data
+          \end{tabular}
+      \end{table}
+    \vspace*{-8pt}
+    \item Too far in either direction leads to reduced generalizability.
+    \item \ddd{Hidden overfitting}: or ``researchers degree of freedom'', the result of choices made in data cleaning, organizing, selection, and other choices of surrounding model us, that occur in order to get a certain model to work. 
+      \begin{itemize}
+        \item Deciding on analysis pipelines to use in advance helps avoid this problem.
+        \item Exploratory phases of the analysis pipelines should only be done on small samples of the data if needed.
+      \end{itemize}
+    \end{itemize}
+    \item Quantitatively, there are methods of detecting the fit of a model via comparisons of ``full'' and ``reduced'' models. 
+    \item \ddd{Extended (full) model}: a model that \emph{always} fits the data better than any reduced model; having more parameters (extending the model) is only justified when the model fit is significantly improved.
+    \item \ddd{Nested (reduced) model}: a model that contains a subset of identical \xxx{fixed features} to the full model, both of which explain the same \yyy{dependent variable}.
+      \begin{itemize}
+        \item Many models can be nested under the same full model.
+        \item Nested models can differ by more than one parameter, but often don't.
+      \end{itemize}
+      \item \hyperref[Subsection: Sum of Squares]{\ulink{Sum of squares}} and the \hyperref[Subsection: F-Test]{\ulink{\(F\)-test}} can be used for model comparison, similar to their usage in \hyperref[Subsection: Model Significance]{\ulink{model significance}}.
+      \item Namely, the sum of squared errors \(SS_\err\) between the \XXX{full model} and \xxx{reduced model} can be used to quantitatively measure the model fit to the data, i.e.,
+      \begin{align*}
+        SS_\err = \sum(y_i - \hat{y})^2 \qquad y_i\text{: observed}\quad  \hat{y}\text{: predicted} \\
+        F_{(\XXX{p} - \xxx{k}, n - \XXX{p} -1)} = \frac{\left(SS^{\xxx{R}}_\err - SS^{\XXX{F}}_\err\right)/(\XXX{p}-\xxx{k})}{SS^{\XXX{F}}_\err / (\XXX{p} - \xxx{k} - 1)}
+      \end{align*}
+      \begin{itemize}
+        \item \(SS^{\XXX{F}}_\err \): \XXX{full model} \(SS_\err\) with the \XXX{full model's} number of parameters \(\XXX{p}\).
+        \item \(SS^{\xxx{R}}_\err \): \xxx{reduced model} \(SS_\err\) with the \xxx{reduced model's} number of parameters \(\xxx{k}\).
+      \end{itemize}
+      \item The main point of focus is the difference between the full and reduced sum of squares \(\left(SS^{\xxx{R}}_\err - SS^{\XXX{F}}_\err\right)\).
+        \begin{itemize}
+          \item \ttt{F is statistically significant} when more parameters improves the model, i.e., the \emph{full model is preferred} when \(SS^{\XXX{F}}_\err\) is small, making \ttt{\(F\) large}.
+          \item \fff{F is not significant} when reduced model fit is nearly as good as the full model, i.e., the \emph{reduced model is preferred} when the difference is low, making \fff{\(F\) small}.
+        \end{itemize}
+      \item Formally, the \(H_\nil\) sates that all additional parameters are essentially 0, while the \(H_a\) is true if at least one is not, i.e.,
+      \begin{align*}
+        \ttt{H_\nil} = \beta_{\xxx{k}+1} = \cdots = \beta_\XXX{p} = 0 \\
+        \fff{H_a} = N\left\{\beta_{\xxx{k}+1:\XXX{p}} \neq 0\right\} \geq 1
+      \end{align*}
+      \item \hyperref[Subsection: Post Hoc Comparisons]{\ulink{Post hoc comparisons}} would need to be performed in case of \(H_a\) being true.
   \end{itemize}
-  
 \end{itemize}
 
 \section{Statistical Power and Sample Size}
