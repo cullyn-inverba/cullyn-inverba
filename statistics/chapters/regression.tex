@@ -115,6 +115,24 @@
       \end{itemize}
   \end{itemize}
   
+  \subsection{Statistical Power}
+  \begin{itemize}
+    \item \ddd{Power}: the probability to reject the \(H_\nil\), given that the \(H_\nil\) is actually false, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \text{power} = p(\text{reject}~H_\nil~|~H_\nil~\text{is false})
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item The power of the test is really just the \hyperref[Subsection: Statistical Errors]{\ulink{true positive \(1-\beta\)}}, where the type II error \(\beta\) probability of a false negative.
+    \end{itemize}
+    \item The power cannot be calculated unless the probabilities of all possible values of the parameter that violates the \(H_\nil\) are known.
+    \item Generally, power refers to a test's power against a \emph{specific \(H_a\)}.
+    \item Power \rrr{increases} with sample size, effect size, and lower \hyperref[Subsection: P-Value]{\ulink{significance level \(\alpha \)}} 
+    \item Power \bbb{decreases} with higher variability and higher \(\alpha \) levels. 
+    \item Ultimately, power is more of a useful guideline than a precise numerical value.
+    \item \ddd{A priori power}: power analysis conducted prior to a study, typically used to estimate sufficient sample sizes to adequate power; often has many subjective issues with the process, methods not covered here.
+    \item \ddd{Post hoc power}: observed power after the study has been completed, proportional to the \(p\)-value attained, no new information is gained and can easily be misleading.
+  \end{itemize}
+    
 \end{itemize}
 
 \section{Regression Models}
@@ -255,21 +273,5 @@
         \fff{H_a} = N\left\{\beta_{\xxx{k}+1:\XXX{p}} \neq 0\right\} \geq 1
       \end{align*}
       \item \hyperref[Subsection: Post Hoc Comparisons]{\ulink{Post hoc comparisons}} would need to be performed in case of \(H_a\) being true.
-  \end{itemize}
-\end{itemize}
-
-\section{Statistical Power and Sample Size}
-\begin{itemize}
-  \item []
-  
-  \subsection{Statistical Power}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Sample Size}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
+    \end{itemize}
 \end{itemize}
