@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strings"
 	"unicode"
 )
@@ -54,6 +55,39 @@ func Capitalize(s string) []string {
 	return []string{string(a), string(b)}
 }
 
+// Gps returns the *floor* of the maximum average speed over
+// a given duration s out of a range of given time intervals.
+func Gps(s int, x []float64) int {
+	// checks for empty lists (no movement)
+	if len(x) <= 1 {
+		return 0
+	}
+
+	// slice of average speeds of each interaval
+	var speed []float64
+	for i := 0; i < len(x)-1; i++ {
+		speed = append(speed, (3600*(x[i+1]-x[i]))/float64(s))
+	}
+
+	// finds max average speed
+	var max float64 = speed[0]
+	for _, v := range speed {
+		if max < v {
+			max = v
+		}
+	}
+
+	return int(math.Floor(max))
+}
+
 func main() {
-	fmt.Println(Capitalize("codewars"))
+	s := 20
+	x := []float64{0.0, 0.23, 0.46, 0.69, 0.92, 1.15, 1.38, 1.61}
+	fmt.Println(Gps(s, x))
+	x = []float64{0.0, 0.11, 0.22, 0.33, 0.44, 0.65, 1.08, 1.26, 1.68, 1.89, 2.1, 2.31, 2.52, 3.25}
+	s = 12
+	fmt.Println(Gps(s, x))
+	x = []float64{}
+	s = 12
+	fmt.Println(Gps(s, x))
 }
