@@ -2,16 +2,55 @@
 
 \section{Clustering}
 \begin{itemize}
-  \item []
+  \item \ddd{Cluster analysis}: the task or grouping a set of objects in such a way that the objects in the same group (cluster) are more similar to each other than those in other groups.
+  \item There is no one specific clustering algorithm, instead there are various algorithms that differ by what constitutes a cluster and how to efficiently find them.
+  \item Distance (\hyperref[Subsection: K-Means Clustering]{\dlink{to center}}, or \hyperref[Subsection: K-Nearest Neighbor]{\dlink{to neighbor}}) and \hyperref[Subsection: DBSCAN]{\dlink{ density}} will be the main metrics investigated here, but there are certainly more.
   
   \subsection{K-Means Clustering}
   \begin{itemize}
-    \item 
+    \item \ddd{\(k\)-means clustering}: a method of vector quantization that aims to partition \emph{\(n\)~observations} (multidimensional data) into \emph{\(k\) clusters}, wherein each observation belongs to the cluster with the \emph{nearest centroid} (mean).
+      \begin{itemize}
+        \item Cluster membership is defined using distances to the nearest center, where the aim is to \bbb{minimize within-group} and \rrr{maximizes between-group} distances.
+      \end{itemize}
+    \item Specifics (or the many alterations) of the algorithm will not be covered, instead, a general outline of the method will be described:
+      \begin{enumerate}
+        \item Select \(k\) (can be very difficult); many potential methods.
+        \item Create \(k\) centroids at random (possibly slightly informed) locations in the dataset.
+        \item Compute the sum of squared distances from all data points in the dataset.
+        \item Assign each data point to its closest centroid.
+        \item Create a new centroid at the average of all data points.
+        \item Repeat 3--5 until some measure convergence (how much mean moves each iteration, typically).
+      \end{enumerate}
+    \item Difficulties with \(k\)-means:
+      \begin{itemize}
+        \item Evaluation of proper \(k\) is often difficult.
+        \item Multidimensional clustering is often hard to visualize, making evaluation even harder sometimes.
+        \item Computation is complex (NP-hard); therefore, each result is often different.
+        \item Suboptimal when cluster sizes differ greatly.
+        \item What makes clusters similar may not be Euclidean based.
+      \end{itemize}
   \end{itemize}
 
   \subsection{DBSCAN}
   \begin{itemize}
-    \item 
+    \item \ddd{Desnity-based spatial cluster of applications with nose DBSCAN}: a \emph{density} based \hyperref[Subsection: Parametric vs. Nonparametric]{\ulink{nonparametric}} algorithm that clusters points into groups that are relatively close together.
+      \begin{itemize}
+        \item BCSCAN is one of the most common clustering algorithms used.
+      \end{itemize}
+    \item \ddd{Step size \(\epsilon\)}: the radius of a point that in combination with specified minimum nearby points \(m\) that determine the density of neighborhood of points with respect to other points.
+    \item \rrr{\textbf{Core points \(A\)}}: a point where at least \(m\) points are within distance \(\epsilon \) (+ itself).
+    \item \yyy{\textbf{Reachable points \(B\)}}: when the point is within \(\epsilon \) from a core point, but \(< m\) required to be a core point.
+    \item \bbb{\textbf{Outliers \(N\)}}: low-density regions, often considered as noise points.
+      \begin{center}
+        \Image{0.6\columnwidth}{chapters/images/DBSCAN.png}
+      \end{center}
+    \medskip
+      \begin{itemize}
+        \item \bbb{Decreasing \(\epsilon \)} \to~\rrr{increases number of clusters}, breaks up clusters.
+        \item \rrr{Increasing \(\epsilon \)} \to~\bbb{decreases number of clusters}, combines clusters.
+        \item \bbb{Decreasing \(m \)} \to~\bbb{decreases number of clusters}, true clusters may be split up.
+        \item \rrr{Increasing \(m \)} \to~\rrr{increases number of clusters}, true clusters may be ignored.
+      \end{itemize}
   \end{itemize}
 
   \subsection{K-Nearest Neighbor}
