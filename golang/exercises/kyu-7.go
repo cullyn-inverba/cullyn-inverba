@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"strings"
 	"time"
@@ -68,6 +69,29 @@ func UnluckyDays(year int) (count int) {
 	return count
 }
 
-func main() {
+// PartList returns a string that contains all possbile tuples of
+// the given slice of strings
+func PartList(arr []string) (res string) {
+	for i := 1; i < len(arr); i++ {
+		left, right := strings.Join(arr[:i], " "), strings.Join(arr[i:], " ")
+		res += fmt.Sprintf("(%s, %s)", left, right)
+	}
+	return
+}
 
+// CapitalizeIndices returns a string with specific letters by
+// respective indices given by input slice (ignores out of range indices).
+func CapitalizeIndices(st string, arr []int) string {
+	res := []rune(st)
+	for _, v := range arr {
+		if v >= 0 && v < len(res) {
+			res[v] = unicode.ToUpper(res[v])
+		}
+	}
+	return string(res)
+}
+
+func main() {
+	fmt.Println(CapitalizeIndices("abcdef", []int{-1, 1, 2, 5}))
+	fmt.Println(CapitalizeIndices("abcdef", []int{1, 2, 5, 100}))
 }
