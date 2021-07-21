@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"strings"
+	"time"
 	"unicode"
 )
 
@@ -21,28 +21,6 @@ func DNAStrand(dna string) string {
 
 // Capitalize returns an array [even, odd] of strings with
 // even and odd letter indices capitalized, respectively
-func CapitalizeOld(str string) []string {
-	ss := strings.Split(str, "")
-
-	var even []string
-	var odd []string
-
-	func(ss []string) {
-		for i := 0; i < len(ss); i++ {
-			if i%2 == 0 {
-				even = append(even, strings.ToUpper(ss[i]))
-				odd = append(odd, ss[i])
-			} else {
-				even = append(even, ss[i])
-				odd = append(odd, strings.ToUpper(ss[i]))
-			}
-		}
-	}(ss)
-
-	return []string{strings.Join(even, ""), strings.Join(odd, "")}
-}
-
-// Better version of the above function ^
 func Capitalize(s string) []string {
 	a, b := []rune(s), []rune(s)
 	for i := range a {
@@ -80,14 +58,16 @@ func Gps(s int, x []float64) int {
 	return int(math.Floor(max))
 }
 
+// UnluckyDays returns number of Friday 13th in a Gregorian year.
+func UnluckyDays(year int) (count int) {
+	for m := 1; m <= 12; m++ {
+		if time.Date(year, time.Month(m), 13, 0, 0, 0, 0, time.UTC).Weekday() == 5 {
+			count++
+		}
+	}
+	return count
+}
+
 func main() {
-	s := 20
-	x := []float64{0.0, 0.23, 0.46, 0.69, 0.92, 1.15, 1.38, 1.61}
-	fmt.Println(Gps(s, x))
-	x = []float64{0.0, 0.11, 0.22, 0.33, 0.44, 0.65, 1.08, 1.26, 1.68, 1.89, 2.1, 2.31, 2.52, 3.25}
-	s = 12
-	fmt.Println(Gps(s, x))
-	x = []float64{}
-	s = 12
-	fmt.Println(Gps(s, x))
+
 }
