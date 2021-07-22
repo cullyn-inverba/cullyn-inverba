@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math"
+	"sort"
+	"strconv"
 	"strings"
 	"time"
 	"unicode"
@@ -91,7 +93,58 @@ func CapitalizeIndices(st string, arr []int) string {
 	return string(res)
 }
 
+// SumCubes takes any positive integer n and returns the sum of
+// all cubed values from 1 to n.
+func SumCubes(n int) (v int) {
+	v = n * (n + 1) / 2
+	return v * v
+}
+
+// FizzBuzzCuckooClock returns a string that represents a desired
+// sound depending on the time.
+func FizzBuzzCuckooClock(time string) string {
+	h, _ := strconv.Atoi(time[:2])
+	m, _ := strconv.Atoi(time[3:])
+
+	switch {
+	case m == 0:
+		return strings.Repeat("Cuckoo ", (h+11)%12) + "Cuckoo"
+	case m == 30:
+		return "Cuckoo"
+	case m%15 == 0:
+		return "Fizz Buzz"
+	case m%3 == 0:
+		return "Fizz"
+	case m%5 == 0:
+		return "Buzz"
+	default:
+		return "tick"
+	}
+}
+
+// Angle returns the sum of all internal angles (in degrees) of an
+// n-sided simple polygon.
+func Angle(n int) int {
+	return (n - 2) * 180
+}
+
+// Pendulum returns an array with the smallest value in the center
+// and increasing elements alternating left to right.
+func Pendulum(values []int) (res []int) {
+	sort.Ints(values)
+
+	for i, v := range values {
+		if i%2 == 0 {
+			res = append([]int{v}, res...)
+		} else {
+			res = append(res, v)
+		}
+	}
+
+	return
+}
+
 func main() {
-	fmt.Println(CapitalizeIndices("abcdef", []int{-1, 1, 2, 5}))
-	fmt.Println(CapitalizeIndices("abcdef", []int{1, 2, 5, 100}))
+	fmt.Println(Pendulum([]int{4, 10, 9}))
+	fmt.Println(Pendulum([]int{8, 7, 10, 3}))
 }
