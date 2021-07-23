@@ -33,10 +33,7 @@
 
   \subsection{DBSCAN}
   \begin{itemize}
-    \item \ddd{Desnity-based spatial cluster of applications with nose DBSCAN}: a \emph{density} based \hyperref[Subsection: Parametric vs. Nonparametric]{\ulink{nonparametric}} algorithm that clusters points into groups that are relatively close together.
-      \begin{itemize}
-        \item BCSCAN is one of the most common clustering algorithms used.
-      \end{itemize}
+    \item \ddd{Desnity-based spatial cluster of applications with nose DBSCAN}: a \emph{density} based \hyperref[Subsection: Parametric vs. Nonparametric]{\ulink{nonparametric}} algorithm that clusters points into groups that are relatively close together; used as means to label and find clusters in data.
     \item \ddd{Step size \(\epsilon\)}: the radius of a point that in combination with specified minimum nearby points \(m\) that determine the density of neighborhood of points with respect to other points.
     \item \rrr{\textbf{Core points \(A\)}}: a point where at least \(m\) points are within distance \(\epsilon \) (+ itself).
     \item \yyy{\textbf{Reachable points \(B\)}}: when the point is within \(\epsilon \) from a core point, but \(< m\) required to be a core point.
@@ -55,23 +52,62 @@
 
   \subsection{K-Nearest Neighbor}
   \begin{itemize}
-    \item 
+    \item \ddd{\(k\)-nearest neighbor \(k\)-NN}: a nonparametric \emph{classification} method applied to points based on the \emph{distance to}, potentially and \emph{plurality of}, its neighboring points.
+      \begin{itemize}
+        \item Unlike \(k\)-means, data must be labeled; \(k\)-NN is used to classify new data points. 
+        \item If \(k=1\), then it's simply assigned to class of nearest neighbor.
+      \end{itemize}
+    \item Normalizing the training data can greatly improve accuracy of \(k\)-NN, as it relies on distance, which may come in vastly different scales.
+    \item \(k\)-NN \emph{regression} can be used in a similar sense, where out output is the property value of the object based on averages of values of \(k\) nearest neighbors.
   \end{itemize}
   
 \end{itemize}
 
 \section{Dimensionality Reduction}
 \begin{itemize}
-  \item []
-  
+  \item \ddd{Dimensionality (dimension) reduction}: the transformation of data from high-dimensional space into a lower-dimensional space, so that the low-dimensional representation retains meaningful properties of the original data.
+    \begin{itemize}
+      \item Raw data in higher dimensions are often sparse, due to the ``curse of dimensionality.''
+      \item Analysis in higher dimensions is often computationally intractable, requiring dimension reduction of some kind in order to be feasible.
+    \end{itemize}
+  \item Dimension reduction is common in fields that deal with large number of observations and/or variables, e.g., signal processing, speech recognition, neuroinformatics, bioinformatics, etc.
+  \item There are several methods, which are commonly divided into linear and non-linear approaches; for now, only primers with simplified math on principal and independent component analysis will be covered.
+
   \subsection{Primer: Principal Components Analysis}
   \begin{itemize}
-    \item []
+    \item \ddd{Principal component analysis (PCA)}: the main linear technique for dimension reduction, wherein linear mapping of the data to lower-dimensional space minimizes variance of data in the new representation.
+      \begin{itemize}
+        \item The largest eigenvalues (principal components) and corresponding eigenvectors of the data's covariance matrix is used reconstruct (change of basis) a large fraction of the variance of the original data.
+        \item Often only the first few principal components are used, as they contribute the vast majority to the systems' energy and the rest tend to be noise.
+          \begin{itemize}
+            \item These largest values together represent the lower-dimension space that the data will be compressed to.
+          \end{itemize}
+      \end{itemize}
+    \item Limitations of PCA\@:
+      \begin{itemize}
+        \item Principal components are eigenvectors, thus they are forced to be orthogonal; the dimension of key features often aren't orthogonal.
+        \item PCA maximizes variance to find distinctions between dimensions, however, sometimes this might maximize unwanted noise and miss important features within the data.
+      \end{itemize}
+    \item In conclusion: PCA is great for dimension reduction and visual exploration, especially if the data conform to assumptions, but can be suboptimal when interpreting PCs as factors (unique sources of variance).
   \end{itemize}
     
   \subsection{Primer: Independent Components Analysis}
   \begin{itemize}
-    \item 
+    \item \ddd{Independent component analysis (ICA)}: a method for separating multivariate signal into additive subcomponents.
+      \begin{itemize}
+        \item Performed by assuming that the subcomponents are \emph{non-Gaussian} signals and are statistically \emph{independent} of each other.
+      \end{itemize}
+    \item Basic outline of ICA\@:
+    \begin{itemize}
+      \item ``Whiten'' the data, or remove co/variances across different variables (using PCA)
+        \begin{itemize}
+          \item Linear dependencies are removed, but shared information is preserved.
+        \end{itemize}
+      \item Rotate axes (oblique) to minimize share information.
+        \begin{itemize}
+          \item Unlike PCA, ICA is not limited to orthogonal axes, allowing for independent non-orthogonal axes to be found.
+        \end{itemize}
+     \end{itemize}
   \end{itemize}
     
 \end{itemize}
