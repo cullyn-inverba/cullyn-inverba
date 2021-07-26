@@ -1,4 +1,6 @@
-![Portland State University](assets/images/psu.jpg)
+ <p align="center">
+    <img width="690" src="assets/images/psu.jpg">
+</p>
 
 <h1>Summer 2021</h1>
 
@@ -32,7 +34,9 @@
 
 <br>
 
-![Independent Learning](assets/images/code.jpg)
+ <p align="center">
+    <img width="690" src="assets/images/code.jpg">
+</p>
 
  <h1>Independent Learning</h1>
 
