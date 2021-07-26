@@ -26,8 +26,9 @@
 
 - [Most prior content (2020&ndash;2021)](https://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing)
 - Notes worth sharing:
-  - [Linear Algebra](/prior/mth-261.pdf)
-  - [Organic Chemistry II](/prior/ch-335.pdf)
+  - [Organic Chemistry II](https://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf)
+  - [Linear Algebra](https://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf)
+  - [Statistics](https://raw.githubusercontent.com/nosvagor/notes/master/prior/statitics.pdf)
 
 <br>
 
