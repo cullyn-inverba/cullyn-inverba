@@ -15,7 +15,7 @@
 <table align="center">
   <tr>
     <th>
-      <h2 align="center">🎓 Prior Class Resources 🎓 </h2>
+      <p align="center"><font size='+1'>🎓 Prior Class Resources 🎓 </font></p>
     </th>
   <tr>
     <td>
@@ -27,25 +27,25 @@
   </tr>
   <tr>
     <td>
-      <h3 align='center'>
-        <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> Most prior content
-          (2020&ndash;2021)
+      <p align='center'>
+        <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> <font size="+1"> Most prior content
+          (2020&ndash;2021) </font>
         </a>
-      </h3>
+      </p>
     </td>
   </tr>
   <tr>
     <td>
-      <h4 align="center">
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">📓 Organic Chemistry II
+      <p align="center">
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">📓 <strong>Organic Chemistry II</strong>
         </a>
         &nbsp; 
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf"> 📑 Linear Algebra
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf"> 📑 <strong>Linear Algebra</strong>
         </a>
         &nbsp; 
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">📑 Statistics 
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">📑 <strong>Statistics</strong>
         </a>
-      </h4>
+      </p>
     </td>
   </tr>
 </table>
