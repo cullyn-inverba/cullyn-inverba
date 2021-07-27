@@ -10,6 +10,7 @@
 | [![UNST 421: Cultural Ecology](assets/images/capstone.ico)](/capstone) | [![CS 161: Intro to CS](assets/images/c++.ico)](/c++) | [![MTH: 343 Applied Linear Algebra](assets/images/applied.ico)](/linearAlgebra) | [![MTH: 253 Cultural Ecology](assets/images/lorenz.ico)](/capstone) |
 
 <br>
+<br>
 
 <table align="center">
   <tr>
@@ -20,7 +21,7 @@
     <td>
       <p align='center'>
         <br>
-        <img width="256" src="assets/images/prior.jpg">
+        <img width="420" src="assets/images/prior.jpg">
       </p>
     </td>
   </tr>
@@ -49,6 +50,7 @@
   </tr>
 </table>
 
+<br>
 <br>
 
 <h1 align="center">Independent Learning</h1>
