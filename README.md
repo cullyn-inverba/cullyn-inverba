@@ -48,31 +48,19 @@
   </tr>
   <tr>
     <td>
-      <h4 align="center">Notes Worth Sharing</h4>
+      <h5 align="center">
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">📓 Organic Chemistry II
+        </a>
+      </h5>
     </td>
   </tr>
-  <tr>
     <td>
-      <h4 align="center">
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">Organic Chemistry II
+      <h5 align="center">
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf"> 📑 Linear Algebra
         </a>
-      </h4>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h4 align="center">
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf">Linear Algebra
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">📑 Statistics 
         </a>
-      </h4>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h4 align="center">
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">Statistics 
-        </a>
-      </h4>
+      </h5>
     </td>
   </tr>
 </table>
