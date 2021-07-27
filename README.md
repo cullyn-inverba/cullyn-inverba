@@ -15,7 +15,7 @@
 <table align="center">
   <tr>
     <th>
-      <p align="center"><font size='+1'>🎓 Prior Class Resources 🎓 </font></p>
+      <h2 align="center">🎓 Prior Class Resources 🎓 </h2>
     </th>
   <tr>
     <td>
@@ -27,11 +27,11 @@
   </tr>
   <tr>
     <td>
-      <p align='center'>
-        <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> <font size="+1"> Most prior content
-          (2020&ndash;2021) </font>
+      <h3 align='center'>
+        <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> Most prior content
+          (2020&ndash;2021)
         </a>
-      </p>
+      </h3>
     </td>
   </tr>
   <tr>
