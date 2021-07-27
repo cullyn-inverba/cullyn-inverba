@@ -41,26 +41,41 @@
     <td>
       <p align='center'>
         <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> Most prior content
-          (2020&ndash;2021)</a>
+          (2020&ndash;2021)
+        </a>
       </p>
     </td>
   </tr>
   <tr>
     <td>
-      <h3 align="center" >Notes Worth Sharing</h3>
+      <h4 align="center">Notes Worth Sharing</h4>
     </td>
   </tr>
   <tr>
     <td>
-
+      <p align="center">
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">Organic Chemistry II
+        </a>
+      </p>
     </td>
-
+  </tr>
+  <tr>
+    <td>
+      <p align="center">
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf">Linear Algebra
+        </a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p align="center">
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">Statistics 
+        </a>
+      </p>
+    </td>
   </tr>
 </table>
-
-- [Organic Chemistry II](https://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf)
-- [Linear Algebra](https://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf)
-- [Statistics](https://raw.githubusercontent.com/nosvagor/notes/master/prior/statitics.pdf)
 
 <br>
 

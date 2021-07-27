@@ -9,6 +9,6 @@
 - Udemy course content done, notes from this course can be found [here](https://raw.githubusercontent.com/nosvagor/notes/master/statistics/statistics.pdf).
 - Future classes and other content related to statistics will be integrated into this course, however, I predict that no new updates for at least ~6 months.
 
-## **Resources**
+## Resources
 
 - [**Statistics** for Machine Learning w/ code by **Mike X Cohen**](https://www.udemy.com/course/statsml_x/)
