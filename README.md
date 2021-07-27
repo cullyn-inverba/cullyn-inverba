@@ -9,16 +9,12 @@
 | :--------------------------------------------------------------------: | :---------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------: |
 | [![UNST 421: Cultural Ecology](assets/images/capstone.ico)](/capstone) | [![CS 161: Intro to CS](assets/images/c++.ico)](/c++) | [![MTH: 343 Applied Linear Algebra](assets/images/applied.ico)](/linearAlgebra) | [![MTH: 253 Cultural Ecology](assets/images/lorenz.ico)](/capstone) |
 
-<p align="center">
-  
- 
-  
-</p>
+<br>
 
 <table align="center">
   <tr>
     <th>
-      <h2 align="center">Prior Class Resources</h2>
+      <h2 align="center">🎓 Prior Class Resources 🎓 </h2>
     </th>
   <tr>
     <td>
