@@ -1,5 +1,5 @@
- <p align="center">
-    <img width="690" src="assets/images/psu.jpg">
+<p align="center">
+  <img width="690" src="assets/images/psu.jpg">
 </p>
 
 <h1>Summer 2021</h1>
@@ -12,34 +12,69 @@
 
 <h1>Fall 2021 Class Resources</h1>
 
- <p align="center">
-    <a title="Applied Linear Algebra">
+<p align="center">
+  <a title="Applied Linear Algebra">
     <img src="https://img.shields.io/badge/MTH 343-not started-orange">
-    </a>
-    <a title="Calculus III">
+  </a>
+  <a title="Calculus III">
     <img src="https://img.shields.io/badge/MTH 253-not started-orange">
-    </a>
-    <a title="Intro to Computer Science">
+  </a>
+  <a title="Intro to Computer Science">
     <img src="https://img.shields.io/badge/CS 162-not started-orange">
-    </a>
+  </a>
 </p>
 
-<h3>Prior class resources</h3>
+<table align="center">
+  <tr>
+    <th>
+      <h2 align="center">Prior Class Resources</h2>
+    </th>
+  <tr>
+    <td>
+      <p align='center'>
+        <br>
+        <img width="324" src="assets/images/prior.jpg">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p align='center'>
+        <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> Most prior content
+          (2020&ndash;2021)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3 align="center" >Notes Worth Sharing</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
 
-- [Most prior content (2020&ndash;2021)](https://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing)
-- Notes worth sharing:
-  - [Organic Chemistry II](https://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf)
-  - [Linear Algebra](https://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf)
-  - [Statistics](https://raw.githubusercontent.com/nosvagor/notes/master/prior/statitics.pdf)
+    </td>
+
+  </tr>
+</table>
+
+- [Organic Chemistry II](https://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf)
+- [Linear Algebra](https://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf)
+- [Statistics](https://raw.githubusercontent.com/nosvagor/notes/master/prior/statitics.pdf)
 
 <br>
 
- <p align="center">
-    <img width="690" src="assets/images/code.jpg">
+<h1 align="center">Independent Learning</h1>
+
+<p align="center">
+  <img width="690" src="assets/images/code.jpg">
 </p>
 
- <h1>Independent Learning</h1>
-
-|             [Golang](/golang)              |                [Solidity](/solidity)                 |              [Statistics](/statistics)               |                 [Javascript](/javascript)                  |               [Pandas](/python/pandas)                |               [Python](/python)                |
-| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------: | :--------------------------------------------: |
-| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) | [![Statistics](assets/images/stat.ico)](/statistics) | [![Javascript](assets/images/javascript.ico)](/javascript) | [![Pandas](assets/images/pandas.ico)](/python/pandas) | [![python](assets/images/python.ico)](/python) |
+| [Golang](/golang) | [Solidity](/solidity) | [Statistics](/statistics) | [Javascript](/javascript) |
+[Pandas](/python/pandas) | [Python](/python) |
+| :----------------------------------------: | :--------------------------------------------------: |
+:--------------------------------------------------: | :--------------------------------------------------------: |
+:---------------------------------------------------: | :--------------------------------------------: |
+| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) |
+[![Statistics](assets/images/stat.ico)](/statistics) | [![Javascript](assets/images/javascript.ico)](/javascript) |
+[![Pandas](assets/images/pandas.ico)](/python/pandas) | [![python](assets/images/python.ico)](/python) |
