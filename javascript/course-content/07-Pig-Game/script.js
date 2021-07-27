@@ -56,7 +56,8 @@ btnRoll.addEventListener('click', () => {
   if (diceRoll !== 1) {
     // Add dice to current score
     currentScore += diceRoll;
-    document.getElementById(`current--${activePlayer}`).textContent = currentScore;
+    document.getElementById(`current--${activePlayer}`).textContent =
+      currentScore;
   } else {
     switchPlayer();
   }
@@ -68,8 +69,12 @@ btnHold.addEventListener('click', () => {
   score0.textContent = scores[0];
   score1.textContent = scores[1];
   if (scores[activePlayer] >= 100) {
-    document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
-    document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.add('player--winner');
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.remove('player--active');
     dice.classList.add('hidden');
     document.getElementById(`name--${activePlayer}`).textContent = 'Winner!';
     btnRoll.classList.add('hidden');
