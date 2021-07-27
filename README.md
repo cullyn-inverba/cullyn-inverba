@@ -39,11 +39,11 @@
   </tr>
   <tr>
     <td>
-      <p align='center'>
+      <h3 align='center'>
         <a href="http://drive.google.com/file/d/1lhJSXIqAmNblGcTUligxWAotnxI1fASp/view?usp=sharing"> Most prior content
           (2020&ndash;2021)
         </a>
-      </p>
+      </h3>
     </td>
   </tr>
   <tr>
@@ -53,26 +53,26 @@
   </tr>
   <tr>
     <td>
-      <p align="center">
+      <h4 align="center">
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">Organic Chemistry II
         </a>
-      </p>
+      </h4>
     </td>
   </tr>
   <tr>
     <td>
-      <p align="center">
+      <h4 align="center">
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf">Linear Algebra
         </a>
-      </p>
+      </h4>
     </td>
   </tr>
   <tr>
     <td>
-      <p align="center">
+      <h4 align="center">
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">Statistics 
         </a>
-      </p>
+      </h4>
     </td>
   </tr>
 </table>
