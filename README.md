@@ -1,27 +1,18 @@
+<h1 align="center">University Resources</h1>
 <p align="center">
-  <img width="690" src="assets/images/psu.jpg">
+  <img width="512" src="assets/images/psu.jpg">
 </p>
 
-<h1>Summer 2021</h1>
+<h2>Summer / Fall 2021 Classes</h2>
 
-|                                       [Cultural Ecology](/capstone)                                        |
-| :--------------------------------------------------------------------------------------------------------: |
-|                   [![UNST 421: Cultural Ecology](assets/images/capstone.ico)](/capstone)                   |
-|      [Syllabus](https://docs.google.com/document/d/1geywAoxVMRb0wuzpJfjjkg1IOPnZne1Kps4hJawJEvY/edit)      |
-| [Calendar](https://docs.google.com/spreadsheets/d/1sibCFDL0m-65j6lZbn9wwCBAsYRA8rADOwz6DuVaKuU/edit#gid=0) |
-
-<h1>Fall 2021 Class Resources</h1>
+|                     [Cultural Ecology](/capstone)                      |                      [C++](/c++)                      |                  [Applied <br> Linear Algebra](/linearAlgebra)                  |                      [Calculus III](/calculus)                      |
+| :--------------------------------------------------------------------: | :---------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------: |
+| [![UNST 421: Cultural Ecology](assets/images/capstone.ico)](/capstone) | [![CS 161: Intro to CS](assets/images/c++.ico)](/c++) | [![MTH: 343 Applied Linear Algebra](assets/images/applied.ico)](/linearAlgebra) | [![MTH: 253 Cultural Ecology](assets/images/lorenz.ico)](/capstone) |
 
 <p align="center">
-  <a title="Applied Linear Algebra">
-    <img src="https://img.shields.io/badge/MTH 343-not started-orange">
-  </a>
-  <a title="Calculus III">
-    <img src="https://img.shields.io/badge/MTH 253-not started-orange">
-  </a>
-  <a title="Intro to Computer Science">
-    <img src="https://img.shields.io/badge/CS 162-not started-orange">
-  </a>
+  
+ 
+  
 </p>
 
 <table align="center">
@@ -33,7 +24,7 @@
     <td>
       <p align='center'>
         <br>
-        <img width="324" src="assets/images/prior.jpg">
+        <img width="256" src="assets/images/prior.jpg">
       </p>
     </td>
   </tr>
@@ -48,19 +39,16 @@
   </tr>
   <tr>
     <td>
-      <h5 align="center">
+      <h4 align="center">
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">📓 Organic Chemistry II
         </a>
-      </h5>
-    </td>
-  </tr>
-    <td>
-      <h5 align="center">
+        &nbsp; 
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf"> 📑 Linear Algebra
         </a>
+        &nbsp; 
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">📑 Statistics 
         </a>
-      </h5>
+      </h4>
     </td>
   </tr>
 </table>
@@ -70,14 +58,9 @@
 <h1 align="center">Independent Learning</h1>
 
 <p align="center">
-  <img width="690" src="assets/images/code.jpg">
+  <img width="512" src="assets/images/code.jpg">
 </p>
 
-| [Golang](/golang) | [Solidity](/solidity) | [Statistics](/statistics) | [Javascript](/javascript) |
-[Pandas](/python/pandas) | [Python](/python) |
-| :----------------------------------------: | :--------------------------------------------------: |
-:--------------------------------------------------: | :--------------------------------------------------------: |
-:---------------------------------------------------: | :--------------------------------------------: |
-| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) |
-[![Statistics](assets/images/stat.ico)](/statistics) | [![Javascript](assets/images/javascript.ico)](/javascript) |
-[![Pandas](assets/images/pandas.ico)](/python/pandas) | [![python](assets/images/python.ico)](/python) |
+|             [Golang](/golang)              |                [Solidity](/solidity)                 |              [Statistics](/statistics)               |                 [Javascript](/javascript)                  |               [Pandas](/python/pandas)                |               [Python](/python)                |
+| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------: | :--------------------------------------------: |
+| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) | [![Statistics](assets/images/stat.ico)](/statistics) | [![Javascript](assets/images/javascript.ico)](/javascript) | [![Pandas](assets/images/pandas.ico)](/python/pandas) | [![python](assets/images/python.ico)](/python) |
