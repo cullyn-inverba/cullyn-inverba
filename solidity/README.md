@@ -1,7 +1,5 @@
- <p align="center">
-    <a title="Etherum and Solidty by Stephen Grider" href="https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/">
+<p align="center">
     <img width="420" src="../assets/images/solidity.jpg">
-    </a>
 </p>
 
 # Solidity
@@ -12,4 +10,4 @@
 
 ## Coding Challenges
 
-- [Codewars content](/solidity/codewars)
+- [Codewars content](/solidity/exercises)

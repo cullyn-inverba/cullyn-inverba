@@ -1,7 +1,5 @@
- <p align="center">
-    <a title="Javscript 2021 by Jonas Scmedtmann" href="https://www.udemy.com/course/the-complete-javascript-course/">
+<p align="center">
     <img width="420" src="../assets/images/javascript.jpg">
-    </a>
 </p>
 
 # JavaScript

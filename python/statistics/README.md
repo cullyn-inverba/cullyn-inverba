@@ -1,7 +1,5 @@
- <p align="center">
-    <a title="Statistics by Mike Cohen" href="https://www.udemy.com/course/statsml_x/">
-    <img width="420" src="../assets/images/stat.jpg">
-    </a>
+<p align="center">
+    <img width="420" src="../../assets/images/stat.jpg">
 </p>
 
 # Statistics
