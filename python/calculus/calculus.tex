@@ -1,0 +1,38 @@
+\documentclass{inVerba-notes}
+\usepackage{inVerba-math}
+
+\definecolor{title-color}{HTML}{f57067}
+\newcommand{\theTitle}{\href{https://github.com/nosvagor/notes}{Calculus III}}
+
+% chktex-file 1
+% chktex-file 3
+% chktex-file 21
+% chktex-file 36
+
+\begin{document}
+
+{\pagestyle{plain}
+\hypertarget{ToC}{\tableofcontents}
+\cleardoublepage}
+
+\let\oldchapter\chapter 
+\renewcommand{\chapter}[1]{
+\oldchapter{#1}\label{c: #1}
+}
+\let\oldsection\section 
+\renewcommand{\section}[1]{
+\oldsection{#1}\label{s: #1}
+}
+\let\oldsubsection\subsection
+\renewcommand{\subsection}[1]{
+\oldsubsection{#1}\label{ss: #1} 
+}
+
+\include{chapters/differentialEquations}
+\include{chapters/pePc.tex}
+\include{chapters/sequences.tex}
+\include{chapters/partialDerivatives}
+\include{chapters/multipleIntegrals}
+\include{chapters/vectors}
+
+\end{document}
