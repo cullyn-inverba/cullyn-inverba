@@ -3,11 +3,22 @@
   <img width="512" src="assets/images/psu.jpg">
 </p>
 
-<h2>Summer / Fall 2021 Classes</h2>
+<h2 align="center">Summer / Fall 2021 Classes</h2>
 
-|                     [Cultural Ecology](/capstone)                      |                      [C++](/c++)                      |                  [Applied <br> Linear Algebra](/linearAlgebra)                  |                      [Calculus III](/calculus)                      |
-| :--------------------------------------------------------------------: | :---------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------: |
-| [![UNST 421: Cultural Ecology](assets/images/capstone.ico)](/capstone) | [![CS 161: Intro to CS](assets/images/c++.ico)](/c++) | [![MTH: 343 Applied Linear Algebra](assets/images/applied.ico)](/linearAlgebra) | [![MTH: 253 Cultural Ecology](assets/images/lorenz.ico)](/capstone) |
+<table align="center">
+  <tr>
+    <td align="center"><strong><a href="capstone/">Cultural Ecology</a></strong></td>
+    <td align="center"><strong><a href="c++/">C++</a></strong></td>
+    <td align="center"><strong><a href="python/mth-343/">Applied <br/> Linear Algebra</a></strong></td>
+    <td align="center"><strong><a href="python/calculus/">Calculus III</a></strong></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="capstone/"><img src="assets/images/capstone.ico"></a></td>
+    <td align="center"><a href="c++/"><img src="assets/images/c++.ico"></a></td>
+    <td align="center"><a href="python/mth-343/"><img src="assets/images/applied.ico"></a></td>
+    <td align="center"><a href="python/calculus/"><img src="assets/images/lorenz.ico"></a></td>
+  </tr>
+</table>
 
 <br>
 <br>
@@ -39,7 +50,7 @@
       <p align="center">
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">📓 <strong>Organic Chemistry II</strong>
         </a>
-        &nbsp; 
+        <br>
         <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf"> 📑 <strong>Linear Algebra</strong>
         </a>
         &nbsp; 
@@ -59,6 +70,6 @@
   <img width="512" src="assets/images/code.jpg">
 </p>
 
-|             [Golang](/golang)              |                [Solidity](/solidity)                 |              [Statistics](/statistics)               |                 [Javascript](/javascript)                  |               [Pandas](/python/pandas)                |               [Python](/python)                |              [Bash](/bash)               |
-| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------: | :--------------------------------------------: | :--------------------------------------: |
-| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) | [![Statistics](assets/images/stat.ico)](/statistics) | [![Javascript](assets/images/javascript.ico)](/javascript) | [![Pandas](assets/images/pandas.ico)](/python/pandas) | [![python](assets/images/python.ico)](/python) | [![Bash](assets/images/bash.ico)](/bash) |
+|             [Golang](/golang)              |                [Solidity](/solidity)                 |                 [Javascript](/javascript)                  |              [Bash](/bash)               |               [Python](/python)                |               [Statistics](python/statistics)               |               [Pandas](/python/pandas)                |
+| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------: | :--------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------: |
+| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) | [![Javascript](assets/images/javascript.ico)](/javascript) | [![Bash](assets/images/bash.ico)](/bash) | [![python](assets/images/python.ico)](/python) | [![Statistics](assets/images/stat.ico)](/python/statistics) | [![Pandas](assets/images/pandas.ico)](/python/pandas) |
