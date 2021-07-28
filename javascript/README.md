@@ -13,4 +13,4 @@
 
 ## Coding Challenges
 
-- [Codewars content](/javascript/codewars)
+- [Codewars content](/javascript/exercises)

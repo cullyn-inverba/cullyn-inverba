@@ -16,4 +16,4 @@
 
 ## Coding Challenges
 
-- [Codewars content](/golang/codewars)
+- [Codewars content](/golang/exercises)

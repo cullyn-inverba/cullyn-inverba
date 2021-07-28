@@ -7,12 +7,22 @@
 ## Learning Materials
 
 - [Pandas](/python/pandas)
+  - [Pandas bootcamp by Alexander Hagmann](https://www.udemy.com/course/the-pandas-bootcamp/)
+  - [Pandas exercises](/python/pandas/exercises)
 
-  - [Pandas Bootcamp by Alexander Hagmann](https://www.udemy.com/course/the-pandas-bootcamp/)
+<br>
 
-- [Linear algebra assignments (MTH 261, PSU)](/python/linear-algebra)
-  - [Relevant notes](/prior/mth-261.pdf)
+- [Linear algebra assignments (MTH 261, PSU)](/python/mth-261)
+- [Applied linear algebra assignments (MTH 343, PSU)](/python/mth-343)
+  - [📑 Relevant notes](http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf)
+
+<br>
+
+- [Statistics](/python/statistics)
+  - [📑 Relevant notes](http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf)
+
+<br>
 
 ## Coding Challenges
 
-- [Codewars content](/python/codewars)
+- [Codewars content](/python/exercises)
