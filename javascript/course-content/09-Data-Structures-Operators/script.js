@@ -1,9 +1,5 @@
 'use strict';
 
-// Data needed for a later exercise
-const flights =
-  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
-
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 const openingHours = {
@@ -36,9 +32,7 @@ const restaurant = {
   },
 
   orderDelivery({ startI = 0, mainI = 0, time = '20:00', address }) {
-    console.log(
-      `Order received! ${this.starterMenu[startI]} with ${this.mainMenu[mainI]} will be delivered to ${address} at ${time}`
-    );
+    console.log(`Order received! ${this.starterMenu[startI]} with ${this.mainMenu[mainI]} will be delivered to ${address} at ${time}`);
   },
 };
 
@@ -104,32 +98,8 @@ const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
   players: [
-    [
-      'Neuer',
-      'Pavard',
-      'Martinez',
-      'Alaba',
-      'Davies',
-      'Kimmich',
-      'Goretzka',
-      'Coman',
-      'Muller',
-      'Gnarby',
-      'Lewandowski',
-    ],
-    [
-      'Burki',
-      'Schulz',
-      'Hummels',
-      'Akanji',
-      'Hakimi',
-      'Weigl',
-      'Witsel',
-      'Hazard',
-      'Brandt',
-      'Sancho',
-      'Gotze',
-    ],
+    ['Neuer', 'Pavard', 'Martinez', 'Alaba', 'Davies', 'Kimmich', 'Goretzka', 'Coman', 'Muller', 'Gnarby', 'Lewandowski'],
+    ['Burki', 'Schulz', 'Hummels', 'Akanji', 'Hakimi', 'Weigl', 'Witsel', 'Hazard', 'Brandt', 'Sancho', 'Gotze'],
   ],
   score: '4:0',
   scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
@@ -280,51 +250,44 @@ const game = {
 // const staffUnique = [...new Set(staff)];
 // console.log(staffUnique);
 
-const rest = new Map();
+// const rest = new Map();
 
-rest
-  .set('name', 'Classico Italiano')
-  .set(1, 'Firenze, Italy')
-  .set(2, 'Lisbon, Portugal')
-  .set('open', 11)
-  .set('close', 23)
-  .set(true, 'We are open!')
-  .set(false, 'We are closed!');
+// rest.set('name', 'Classico Italiano').set(1, 'Firenze, Italy').set(2, 'Lisbon, Portugal').set('open', 11).set('close', 23).set(true, 'We are open!').set(false, 'We are closed!');
 
-// console.log(rest.get('name'));
-// console.log(rest.get(true));
+// // console.log(rest.get('name'));
+// // console.log(rest.get(true));
 
-const time = 24;
-console.log(rest.get(time > rest.get('open') && time < rest.get('open')));
+// const time = 24;
+// console.log(rest.get(time > rest.get('open') && time < rest.get('open')));
 
-const arr = [1, 2];
+// const arr = [1, 2];
 
-rest.set(arr, 'Test');
-console.log(rest.get(arr));
+// rest.set(arr, 'Test');
+// console.log(rest.get(arr));
 
-rest.set(document.querySelector('h1'), 'Heading');
-console.log(rest);
+// rest.set(document.querySelector('h1'), 'Heading');
+// console.log(rest);
 
-const question = new Map([
-  ['question', 'What is the best programming language?'],
-  [1, 'C++'],
-  [2, 'Python'],
-  [3, 'JavaScript'],
-  [4, 'Go'],
-  ['correct', 4],
-  [true, 'Correct!'],
-  [false, 'Try again.'],
-]);
+// const question = new Map([
+//   ['question', 'What is the best programming language?'],
+//   [1, 'C++'],
+//   [2, 'Python'],
+//   [3, 'JavaScript'],
+//   [4, 'Go'],
+//   ['correct', 4],
+//   [true, 'Correct!'],
+//   [false, 'Try again.'],
+// ]);
 
-console.log(question.get(4));
+// console.log(question.get(4));
 
-const hoursMap = new Map(Object.entries(openingHours));
-console.log(hoursMap);
+// const hoursMap = new Map(Object.entries(openingHours));
+// console.log(hoursMap);
 
-console.log(question.get('question'));
-for (const [key, value] of question) {
-  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
-}
+// console.log(question.get('question'));
+// for (const [key, value] of question) {
+//   if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+// }
 
 // const answer = Number(prompt('Your answer'));
 // console.log(answer);
@@ -335,7 +298,79 @@ for (const [key, value] of question) {
 // console.log([...question.keys()]);
 // console.log([...question.values()]);
 
+// const gameEvents = new Map([
+//   [17, '⚽ GOAL'],
+//   [36, '🔁 Substitution'],
+//   [47, '⚽ GOAL'],
+//   [61, '🔁 Substitution'],
+//   [64, '🔶 Yellow card'],
+//   [69, '🔴 Red card'],
+//   [70, '🔁 Substitution'],
+//   [72, '🔁 Substitution'],
+//   [76, '⚽ GOAL'],
+//   [80, '⚽ GOAL'],
+//   [92, '🔶 Yellow card'],
+// ]);
+
 // // Coding Challege 3
 // console.log(`Coding Challege 3 ↓`);
 
+// // 1.
+// const events = [...new Set(gameEvents.values())];
+// console.log(events);
+
+// // 2.
+// gameEvents.delete(64);
+// console.log(gameEvents);
+
+// // 3.
+// const times = [...new Set(gameEvents.keys())];
+
+// const delta = arr => {
+//   const delta = [arr[0]];
+//   for (let i = 1; i < arr.length; i++) {
+//     delta.push(arr[i] - arr[i - 1]);
+//   }
+//   return delta;
+// };
+// const average = arr => (arr.reduce((p, c) => p + c, 0) / arr.length).toFixed(1);
+
+// let dAve = average(delta(times));
+
+// console.log(`An event happend, on average, every ${dAve} minutes`);
+
+// // 4.
+
+// for (const e of gameEvents) {
+//   let period = e[0] <= 45 ? 'FIRST' : 'SECOND';
+//   console.log(`[${period} HALF] ${e[0]}: ${e[1]}`);
+// }
+
 // console.log('----------');
+
+const flights = '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(airline.lastIndexOf('Air'));
+
+console.log(airline.slice(4));
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -9));
+
+const checkSeat = seat => {
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') console.log(`${seat} is a middle seat.`);
+  else {
+    console.log(`${seat} is not a middle seat`);
+  }
+};
+
+checkSeat('3E');
+checkSeat('23C');
+checkSeat('11B');
