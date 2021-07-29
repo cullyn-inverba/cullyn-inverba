@@ -1,4 +1,4 @@
- <p align="center">
+<p align="center">
     <img width="420" src="../assets/images/capstone.jpg">
 </p>
 
