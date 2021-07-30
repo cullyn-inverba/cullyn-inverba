@@ -64,13 +64,68 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
-
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
-
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
 /////////////////////////////////////////////////
+
+// let arr = [...'abcde'];
+
+// // Slice
+// console.log(`Slice ↓`);
+
+// console.log(arr.slice(2));
+// console.log(arr);
+
+// console.log('----------');
+
+// // Splice
+// console.log(`Splice ↓`);
+
+// console.log(arr.splice(-1));
+// console.log(arr);
+// console.log(arr.splice(1, 2));
+// console.log(arr);
+
+// console.log('----------');
+
+// // Reverse
+// console.log(`Reverse ↓`);
+
+// const arr2 = [...'jihgf'];
+// console.log(arr2.reverse());
+// console.log(arr2);
+
+// console.log('----------');
+
+// // Concat
+// console.log(`Concat ↓`);
+
+// arr = [...'abcde'];
+// const letters = arr.concat(arr2);
+// console.log(letters);
+// console.log([...arr, ...arr2]);
+
+// console.log('----------');
+
+// // Join
+// console.log(`Join ↓`);
+
+// console.log(letters.join(' 👏 '));
+
+// console.log('----------');
+
+// const currencies = new Map([
+//   ['USD', 'United States dollar'],
+//   ['EUR', 'Euro'],
+//   ['GBP', 'Pound sterling'],
+// ]);
+
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// movements.forEach((move, i) => {
+//   const str = `Movement ${i + 1}: you`;
+//   console.log(move > 0 ? `${str} deposited ${move}` : `${str} withdrew ${Math.abs(move)}`);
+// });
+
+// currencies.forEach((val, key, map) => {
+//   console.log(`${key}: ${val}`);
+//   console.log(map);
+// });
