@@ -61,6 +61,45 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const displayMovements = function (movements) {
+  containerMovements.innerHTML = '';
+
+  movements.forEach((mov, i) => {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+
+    const html = `
+    <div class="movements__row">
+      <div class="movements__type movements__type--${type}">${i + 1} ${type}</div>
+      <div class="movements__value">${mov}</div>
+    </div>
+    `;
+
+    containerMovements.insertAdjacentHTML('afterbegin', html);
+  });
+};
+
+displayMovements(account1.movements);
+
+const calcDispalyBalance = movements => {
+  const balance = movements.reduce((bal, mov) => (bal += mov));
+
+  labelBalance.textContent = `${balance} EUR`;
+};
+
+calcDispalyBalance(account1.movements);
+
+const createUsernames = accounts => {
+  accounts.forEach(function (acc) {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(' ')
+      .map(name => name[0])
+      .join('');
+  });
+};
+
+createUsernames(accounts);
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -118,14 +157,50 @@ const inputClosePin = document.querySelector('.form__input--pin');
 //   ['GBP', 'Pound sterling'],
 // ]);
 
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // movements.forEach((move, i) => {
-//   const str = `Movement ${i + 1}: you`;
-//   console.log(move > 0 ? `${str} deposited ${move}` : `${str} withdrew ${Math.abs(move)}`);
-// });
+//
 
 // currencies.forEach((val, key, map) => {
 //   console.log(`${key}: ${val}`);
 //   console.log(map);
 // });
+
+// const eurToUsd = 1.19;
+
+// const movementsUSD = movements.map(mov => mov * eurToUsd);
+
+// console.log(movements);
+// console.log(movementsUSD);
+
+// const moveDescription = movements.map((move, i) => {
+//   const str = `Movement ${i + 1}: you`;
+//   return move > 0 ? `${str} deposited ${move}` : `${str} withdrew ${Math.abs(move)}`;
+// });
+
+// console.log(moveDescription);
+
+// Filter
+// console.log(`Filter ↓`);
+
+// const deposits = movements.filter(mov => mov > 0);
+// const withdrawals = movements.filter(mov => mov < 0);
+// console.log(deposits);
+// console.log(withdrawals);
+
+// console.log('----------');
+
+// Reduce
+// console.log(`Reduce ↓`);
+
+// let iBal = 60;
+// const balance = movements.reduce((sum, val) => (sum += val), iBal);
+
+// console.log(balance);
+
+// const max = movements.reduce((max, mov) => (mov > max ? (max = mov) : max));
+
+// console.log(max);
+
+// console.log('----------');
