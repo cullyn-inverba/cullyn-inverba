@@ -78,3 +78,16 @@ function Fighter(name, health, damagePerAttack) {
 const stray = numbers => numbers.reduce((a, b) => a ^ b);
 
 // console.log(stray([1, 1, 2]));
+
+// const reverseLetter = str =>
+//   [...str]
+//     .reverse()
+//     .join('')
+//     .replace(/[^a-z]/g, '');
+
+const reverseLetter = str => str.match(/[a-z]/g).reverse().join('');
+
+const isAnagram = (test, original) => {
+  const clean = str => [...str.toLowerCase()].sort().join('');
+  return clean(test) === clean(original);
+};
