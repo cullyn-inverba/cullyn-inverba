@@ -1,0 +1,72 @@
+\documentclass[basic]{inVerba-notes}
+\usepackage{inVerba-math}
+
+\newcommand{\userName}{Cullyn Newman}
+\newcommand{\class}{MTH:\@ 261}
+\newcommand{\theTitle}{There's Always Another Way}
+\newcommand{\institution}{Portland State University}
+
+\begin{document}
+
+\begin{enumerate}\color{minor}
+  \item Consider the matrix below to be the augmented matrix of a system of linear equation
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix}[ccc|c]
+  1 & 2 & 3 & 4 \\
+  5 & 6 & 7 & 8 \\
+  9 & 0 & 1 & 2 \\
+  3 & 4 & 5 & 6
+  \end{bmatrix}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{enumerate}
+    \item Write the associated system of linear equations.
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{cases}
+    1x_1+2x_2+3x_3 = 4 \\
+    5x_1+6x_2+7x_3 = 8 \\
+    9x_1+0x_2+1x_3 = 2 \\
+    3x_1+4x_2+5x_3 = 6 
+    \end{cases}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Define matrix \tbm{A} and vectors \tbm{x} and \tbm{b} so that the system of equations above can be represented as \(\bm{Ax}=\bm{b}\) 
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}=\begin{bmatrix}
+    1 & 2 & 3 \\
+    5 & 6 & 7 \\
+    9 & 0 & 1 \\
+    3 & 4 & 5
+    \end{bmatrix}
+    \quad
+    \bm{x}=\begin{bmatrix}
+    x_1 \\ x_2 \\ x_3 
+    \end{bmatrix}
+    \quad 
+    \bm{b}=\begin{bmatrix}
+    4 \\ 8 \\ 2 \\ 6 
+    \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Define vectors \tbm{a_1}, \tbm{a_2}, and \tbm{a_3} and then write the above system as a single vector equation.
+    \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{a_1} = \begin{bmatrix} 1 \\ 5 \\ 9 \\ 3 \end{bmatrix}\quad
+    \bm{a_2} = \begin{bmatrix} 2 \\ 6 \\ 0 \\ 4 \end{bmatrix}\quad
+    \bm{a_3} = \begin{bmatrix} 3 \\ 7 \\ 1 \\ 5 \end{bmatrix}
+    \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \basec{\bm{a_1}x_1 + \bm{a_2}x_2 + \bm{a_3}x_3 = \bm{b}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{enumerate}
+
+  \item Parametrize the solution set (write the general solution) to the equation \(x+2y+3z=5\) as a linear combination of vectors.
+  \basec{\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
+  =
+  \begin{bmatrix} 5 \\ 0 \\ 0 \end{bmatrix}
+  + 
+  s\begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix}
+  +
+  t\begin{bmatrix} -3 \\ 0 \\ 1 \end{bmatrix}
+  \]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\end{enumerate}
+
+\end{document}

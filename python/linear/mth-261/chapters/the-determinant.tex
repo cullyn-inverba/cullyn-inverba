@@ -1,0 +1,30 @@
+\chapter{The Determinant}\label{The Determinant}
+\section{Determinant Basics}\label{Determinant Basics}
+\begin{itemize}
+  \item \jjj{Determinant \(\det{\bm{A}}, |\bm{A}|\)}: a \emph{scalar value} that is a function of the entries of a \emph{square matrix} that allows for characterization various properties of a matrix and its linear mapping.
+    \begin{itemize}
+      \item The determinant is \emph{nonzero} if and only if the matrix is \hyperref[Matrix Inverse]{\dlink{invertible}}, and the linear map represented by the matrix is an isomorphism.
+        \begin{itemize}
+          \item \jjj{Isomorphism}: when a linear map is bijection, i.e., a function between two sets with a one-to-one mapping. 
+        \end{itemize}
+      \item I.e., \(\det{A}=0\) if the matrix contains a set of linearly dependent columns (or rows), making it \hyperref[Matrix Inverse]{\dlink{singular, or non-invertible}}. 
+    \end{itemize}
+  \item There are methods for quickly calculating the determinant of \(2\times 2\) and \(3\times 3\) matrices, as well various formulas for calculating \(n \times n\) matrices, but these are not described here (as of now).
+  
+  \item Geometrically, the determinant represents the signed (\(\pm \)) \(n\)-dimensional volume of an \(n\)-dimensional parallelepiped.
+    \begin{itemize}
+      \item If the value is degenerate (not fully \(n\)-dimensional), then it indicates that the \hyperref[Column Space]{\ulink{image}} of the matrix is less than \(n\).
+    \end{itemize}
+  \item Determinants can also be used for defining the characteristic polynomial of a matrix, whose roots are the \hyperref[Eigendecomposition]{\dlink{eigenvalues}}.
+  
+  \subsection{Properties of the Determinant}\label{Properties of the Determinant}
+  \begin{itemize}
+    \item \(\det{I}=1\), where \(I\) is an identity matrix.
+    \item \(\det{\bm{A}^T} = \det{\bm{A}}\) 
+    \item \(\det{\bm{A}^{-1}} = \dfrac{1}{\det{\bm{A}}}= [\det{\bm{A}}]^{-1} \), often used to help find the \hyperref[Matrix Inverse]{\dlink{inverse}}. % chktex 3 
+    \item \(\det{\bm{AB}}=\det{\bm{A}}\det{\bm{B}} \), if \tbm{A} and \tbm{B} are of equal size.
+    \item \(\det{c \bm{A}} = c^n \det{\bm{A}}\)
+    \item There are more properties, more of which may or may not be added later to these notes.
+  \end{itemize}
+  
+\end{itemize}

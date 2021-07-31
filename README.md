@@ -9,7 +9,7 @@
   <tr>
     <td align="center"><strong><a href="capstone/">Cultural Ecology</a></strong></td>
     <td align="center"><strong><a href="c++/">C++</a></strong></td>
-    <td align="center"><strong><a href="python/mth-343/">Applied <br/> Linear Algebra</a></strong></td>
+    <td align="center"><strong><a href="python/linear/mth-343">Applied <br/> Linear Algebra</a></strong></td>
     <td align="center"><strong><a href="python/calculus/">Calculus III</a></strong></td>
   </tr>
   <tr>

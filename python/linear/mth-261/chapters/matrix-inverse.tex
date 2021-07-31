@@ -1,0 +1,36 @@
+\chapter{Matrix Inverse}\label{Matrix Inverse}
+% chktex-file 3
+\section{Inverse Basics}\label{Inverse Basics}
+\begin{itemize}
+  \item \jjj{Invertible (nonsingular, nondegenerate) matrix \(\bm{A}^{-1}\)}: an \(n\)-by-\(n\) square \hyperref[Matrix Rank]{\ulink{full rank}} matrix whose product with another matrix (its multiplicative inverse here) yields the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}} of equal size, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{AA ^{-1}} = \bm{A ^{-1}A} = I_n
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item \jjj{Singular (degenerate, non-invertible) matrix}: a matrix that is \emph{not invertible}.
+    \begin{itemize}
+      \item A square matrix is singular if and only if its \hyperref[The Determinant]{\ulink{determinant}} is zero.
+    \end{itemize}
+  \item The matrix inverse is \emph{side-dependent}, multiplication by the inverse must be applied to the same side of the equation.
+  \item Non-square matrices do not have an inverse, however, in some cases a matrix may have a left or right inverse since a full rank square matrix \hyperref[Hadamard Multiplication]{\ulink{can be created}} via the multiplicative method if the original matrix is either \hyperref[Matrix Rank]{\ulink{full column/row rank}}.
+    \begin{itemize}
+      \item \jjj{\bbb{Left} inverse}: when \tbm{A} is a \yyy{full column rank} matrix, then \(\bbb{\bm{A}^T}\bm{A}\) will yield a full rank, square matrix---making it invertible; the resulting identity matrix is \(I_{\yyy{n}}\)
+      \item \jjj{\rrr{Right} inverse}: when \tbm{A} is a \xxx{full row rank} matrix, then \(\bm{A}\rrr{\bm{A}^T}\) will yield a full rank, square matrix---making it invertible; the resulting identity matrix is \(I_{\xxx{m}}\)
+    \end{itemize}
+  \item A rank deficient matrix does not have an inverse, however, a \hyperref[Singular Value Decomposition]{\dlink{pseudoinverse}} can be created. The pseudoinverse is widely used in and will be covered later after \hyperref[Singular Value Decomposition]{\dlink{singular value decomposition}} is discussed.
+  \subsection{Properties of Invertible Matrices}\label{Properties of Invertible Matrices}
+  \begin{itemize}
+    \item \((\bm{A}^{-1} )^{-1} = \bm{A}\)
+    \item \((\lambda \bm{A} )^{-1} = \lambda ^{-1} \bm{A} ^{-1} \) for nonzero scalar \(\lambda \)
+    \item \((\bm{Ax})^{\dagger} = \bm{x}^{\dagger} \bm{A}^{-1}\) if \tbm{A} has orthonormal columns and \(^\dagger \) denotes the Moore-Penrose inverse (pseudoinverse).
+    \item \((\bm{A}^T)^{-1} = (\bm{A}^{-1})^T \)
+    \item If \(\bm{A}_1,\ldots,\bm{A}_k \) are invertible, then \((\bm{A}_1\bm{A}_2\ldots \bm{A}_{k-1}\bm{A}_k)^{-1} = \bm{A}_1 ^{-1}\bm{A}_2 ^{-1}\ldots \bm{A}_{k-1}^{-1}\bm{A}_k ^{-1}\) 
+    \item \(\det{\bm{A} ^{-1}} = (\det{\bm{A}}) ^{-1}\)
+    \item \link{https://en.wikipedia.org/wiki/Invertible_matrix\#Properties}{Invertible matrix theorem}: a list of equivalent statements for invertible matrices. I might revisit and expand on this if my understandings of inverse matrices is failing. 
+  \end{itemize}
+
+  \subsection{Computing the Inverse}\label{Computing the Inverse}
+  \begin{itemize}
+    \item For now, the methods of how the inverse is created is not of importance to me, so only a basic overview will be discussed. Again, this subject may be revisited.
+  \end{itemize}
+  
+\end{itemize}

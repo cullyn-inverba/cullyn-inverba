@@ -1,0 +1,140 @@
+\chapter{Projections and Orthogonalization}\label{Projections and Orthogonalization}
+% chktex-file 3
+% chktex-file 21
+
+\section{Projections}\label{Projections}
+\begin{itemize}
+  \item \jjj{Projection}: an idempotent linear transformation \(P\) from a vector space to itself that results in the original transformation, i.e., 
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  P : V \to V ~|~ P^2 = P
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \jjj{Idempotent}: a property of certain operations whereby they can be applied multiple times without changing the results.
+    \end{itemize}
+  \item \jjj{Orthogonal projection}: a projection on \(V\), when \(V\) is a Hilbert space, that satisfies:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \langle P \bm{x}, \bm{y} \rangle = 
+  \langle P \bm{x}, P\bm{y} \rangle =
+  \langle \bm{x}, P\bm{y} \rangle~\forall~\bm{x,y} \in V
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+    \begin{itemize}
+      \item \jjj{Hilbert space}: a generalized notion of Euclidean space that extends methods from \(\mathbb{R}^2\) and \(\mathbb{R}^3\) to space with any finite or infinite number of dimensions.
+        \begin{itemize}
+          \item This means an \hyperref[Vector Length]{\ulink{orthogonal projection}}, with regard to vector space,  \(V\) has an \hyperref[The Dot Product]{\ulink{inner~product}} (denoted \(\langle \cdot, \cdot \rangle \) here) and has enough limits in the space (i.e., it's complete) to allow the techniques of calculus and vector algebra to be used.
+        \end{itemize}
+      \item Essentially, an orthogonal projection is one that describes a mapping of one vector to another divided by the magnitude of the vector being mapped to.
+      \item E.g., in \(\mathbb{R}^2\) a vector \(\bm{y}\) can be projected onto vector some scaled vector \(\beta\bm{x}\); the orthogonal projection occurs when the dot product between vector \(\bm{x}\) and distance \tbm{y} from the scaled vector \(\bm{x}\) \((\bm{y}-\beta\bm{x}) \) is equal to zero, i.e.,
+      \(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \bm{x}^T(\bm{y}-\beta\bm{x}) = 0
+      \)%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+      Solving for \(\beta \) results in the described mapping over magnitude:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \beta = \frac{\bm{x}^T \bm{y}}{\bm{x}^T \bm{x}}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      Which is often described as the projection of \(\bm{y} \to \bm{x}\) is a scaled version of \(\bm{x}\), which is equivocal to the generalized form above, and the common notation in \(\mathbb{R}^2\), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \proj{\bm{x}}{y} = \beta \bm{x}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item \jjj{Oblique projection}: a projection on a Hilbert space that is not orthogonal, often used to represent spatial figures in 2-D drawings or calculating the fitted value of instrumental variables in regression, though much less common than orthogonal projections. 
+    \begin{itemize}
+      \item Let vectors \(\bm{u}_1,\ldots,\bm{u}_k\) form a basis for the range of the projection, and assemble them into matrix \(\bm{A}\). 
+      \item Let \(\bm{v}_1,\ldots,\bm{v}_k\) form a basis for the orthogonal complement of the null space of the projection, and assemble them into matrix \(\bm{B}\).
+      \item Then the projection is defined by:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      P = \bm{A}(\bm{B}^T \bm{A})^{-1} \bm{B}^T
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  
+  \subsection{Finding Projections}\label{Finding Projections}
+  \begin{itemize}
+    \item The example for orthogonal projections can be generalized for \(\mathbb{R}^N\). 
+    \item Let \(V\) be a vector space spanned by orthogonal vectors \(\bm{u}_1,\bm{u}_2,\ldots,\bm{u}_p\), and let \tbm{y} be a vector.
+    \item One can now define a projection of \tbm{y} on \(V\) as:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \proj{\, V}{y}=\frac{\bm{u}^i \bm{y}}{\bm{u}^i \bm{u}^i} \bm{u}^i
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    where repeated indices\(^i\) are summed over.
+    \item The vector \tbm{y} can be written as an orthogonal sum such that:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{\hat{y}} = \proj{\, V}{y} + \bm{z} \proj{\, V}{y}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    where \bm{z} is the shortest distance from \(\bm{y} \to V\). This is commonly used in areas such as machine learning.
+  \end{itemize}
+  
+\end{itemize}
+
+
+\section{Orthogonalization}\label{Orthogonalization}
+\begin{itemize}
+  \item []
+  
+  \subsection{Orthogonal Matrices}\label{Orthogonal Matrices}
+  \begin{itemize}
+    \item \jjj{Orthogonal matrix \(\bm{Q}\)}: a matrix whose rows and columns are orthonormal vectors.
+      \begin{itemize}
+        \item \jjj{Orthonormal vectors}: two vectors that are \hyperref[Geometric Interpretation of the Dot Product]{\ulink{orthogonal}} \hyperref[Unit Vectors]{\ulink{unit vectors}}.
+        \item \jjj{Orthonormal set}: all vectors that are mutually orthogonal and all of unit length.
+        \item \jjj{Orthonormal basis}: an orthonormal set which forms a \hyperref[Basis]{\ulink{basis}}.
+      \end{itemize}
+    \item In other words, orthogonal matrices have columns that are all pairwise orthogonal, i.e., all the dot products between any two columns are orthogonal.
+    \item Additionally, each column has as magnitude of 1 since the \hyperref[Vector Length]{\ulink{norm}} = 1.
+    \item Thus, algebraically, orthogonal matrices can be defined as:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \langle \bm{Q}_i, \bm{Q}_j \rangle = 
+    \begin{cases}
+    \ttt{1}, \text{if}~\ttt{i=j} \\
+    \fff{0}, \text{if}~\fff{i\neq j}
+    \end{cases}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Which can be compacted further to express even in simpler notation:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{Q}^T \bm{Q} = \bm{Q}\bm{Q}^T = \bm{I}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    This means that \(\bm{Q}^T\) is also the inverse of \(\bm{Q}\), leading to the equivalent characterization: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bbb{\bm{Q}^T} \bm{Q} = \bbb{\bm{Q}^{-1}}\bm{Q} = \bm{Q}\rrr{\bm{Q}^T} = \bm{Q}\rrr{\bm{Q}^{-1}}  = \bm{I} 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Note: The above is true for square full rank matrices, but the \bbb{left} or \rrr{right} \hyperref[Inverse Basics]{\ulink{sided inverses}} can be applied in some cases to make those portions valid, respectively.
+  \end{itemize}
+
+  \subsection{Gram-Schmidt Process}\label{Gram-Schmidt Process}
+  \begin{itemize}
+    \item \jjj{Orthogonalization}: the process of finding a set of orthogonal vectors that span a particular subspace. 
+    \begin{itemize}
+      \item Every vector in the new set is orthogonal to every other vector in the new set; the new set and the old set have the same \hyperref[Span]{\ulink{linear span}}.
+    \end{itemize}
+    \item \jjj{Orthonormalization}: the process normalizing each vector in order to make them all unite vectors.
+    \item Orthonormalization is typically included within orthogonalization, and together they satisfy the conditions needed in order to create \hyperref[Orthogonal Matrices]{\ulink{orthogonal matrices}}.
+    \item \jjj{Gram-Schmidt process}: the method of Orthonormalizing a set of vectors in an inner product space.
+      \begin{itemize}
+        \item The process takes finite, linearly independent set of vectors \(S = \left\{v_1,\ldots,v_k \right\} \) and uses the methods of \hyperref[Finding Projections]{\ulink{finding projections}} to create an orthogonal set \(S' = \left\{u_1,\ldots,u_k \right\} \) that spans the same \(k\)-dimensional subspace of \(\mathbb{R}^n\) as \(S\). 
+        \item There are other algorithms for orthogonalization, that offer certain benifites in various cases, but the main point here is that the application of such process \emph{yields the QR decomposition}.
+      \end{itemize}
+  \end{itemize}
+
+  \subsection{QR Decomposition}\label{QR Decomposition}
+  \begin{itemize}
+    \item \jjj{QR decomposition (factorization)}: a decomposition of a matrix \tbm{A} into a product \(\bm{A}=\bm{QR}\) of an orthogonal matrix \(\bm{Q}\) and  an \hyperref[Diagonal and Triagnular Matrices]{\ulink{upper triangular matrix}} \(\bm{R}\).
+      \begin{itemize}
+        \item Any information that was lost during orthonormalization in order to create \(\bm{Q}\) is captured by \(\bm{R}\), yielding a lossless transformation.
+        \item QR decomposition is often used to solve the \hyperref[Least-Squares and Model-Fitting]{\dlink{linear least squares problem}} and is the basis for a particular \hyperref[Eigendecomposition]{\dlink{eigenvalue algorithm, the QR algorithm}}.
+      \end{itemize}
+    \item Finding \(\bm{R}\) is easy, since the orthogonal matrix \(\bm{Q}^T = \bm{Q}^{-1}\), thus:
+    \begin{align*}
+      \bm{A} &= \bm{QR} \\
+      \bm{Q}^T \bm{A} &= \bm{Q}^T \bm{Q} \bm{R} \\
+      \bm{Q}^T \bm{A} &= \bm{R}
+    \end{align*}
+    \item \tbm{Q} is always size \(m \times m\) with a rank = \(m\).
+    \item \tbm{A} is always size \(m \times n\), but whose rank depends on the rank of \tbm{A}.
+    \item Finding the inverse of A can be done with QR decomposition, since finding the inverse of an upper triangular matrix is computationaly simple, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}^{-1} = (\bm{QR})^{-1} = \bm{R}^{-1} \bm{Q}^{-1} =  \bm{R}^{-1} \bm{Q}^T
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
+  
+  
+\end{itemize}

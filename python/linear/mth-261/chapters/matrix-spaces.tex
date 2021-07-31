@@ -1,0 +1,130 @@
+% chktex-file 21
+\chapter{Matrix Spaces}\label{Matrix Spaces}
+\section{Column Space}\label{Column Space}
+\begin{itemize}
+  \item \jjj{Column space (range, image) \(C(\bm{A})\)}: the vector subspace spanned (all possible weighted linear combinations) by the columns of a matrix \tbm{A}, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  C(\bm{A})=\{\lambda_1a_1 + \lambda_2a_2 + \cdots + \lambda_n a_n\}\quad \lambda\in \mathbb{R}  
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item Can also be expressed as the span of all the columns in a matrix, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  C(\bm{A})= \operatorname{span}(\{a_1,\dots,a_n\})
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \jjj{Image}: the set of all output values of a function. 
+      \item The column space is often called the image of a matrix since the span of all columns of a corresponding linear transformation is the image of that  transformation.
+    \end{itemize}
+  \item A common and important question in applied linear algebra is determining whether a vector is in a particular column space, and if not, then how close is it.
+    \begin{itemize}
+      \item Useful tools include \hyperref[Gaussian Elimination]{\dlink{reduced row echelon form}} and \hyperref[Least-Squares and Model-Fitting]{\dlink{least squares algorithm}}.
+    \end{itemize}
+
+  \subsection{Row Space}\label{Row Space}
+  \begin{itemize}
+    \item \jjj{Row space \(R(\bm{A}), C(\bm{A}^T)\)}: the vector subspace spanned by all the rows of a matrix. 
+    \item The row space is very similar to the column space, but does have some differences.
+      \begin{itemize}
+        \item When talking about the column space of a matrix, you need to \rrr{post}-multiply by a column vector, while the row space requires \bbb{pre}-multiplication of the matrix with a row vector, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \bm{A}\rrr{\bm{x}}=\yyy{\bm{b}} \qquad \bbb{\bm{x}^T}\bm{A}=\xxx{\bm{b}}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \item The difference may be trivial at first, but row spaces and column spaces are often different when using real data; if you try to filter the data (contained in the matrix) with a vector, then the distinction here matters.
+      \end{itemize}
+    \item Using \hyperref[Elementary Operations]{\dlink{Elementary operations}} on a matrix will not change its row space, but it can (not always) change its column space.
+      \begin{itemize}
+        \item Matrices can be taken to \hyperref[Row Echelon form]{\dlink{row echelon form}} using such operations, thus it is possible to find a \hyperref[Basis]{\ulink{basis}} for the row space.
+        \item If a matrix is taken to the \hyperref[Gaussian Elimination]{\dlink{reduced row echelon form}}, then one can find a unique basis for the span of the set of vectors determined by the row space.
+      \end{itemize}
+    \item For a matrix that represents a \hyperref[Homogeneous Solution Sets]{\dlink{homogeneous system of linear equations}}, the row space consists of all linear equations that follow from those in the system. 
+  \end{itemize}  
+\end{itemize}
+
+\section{Null Space}\label{Null Space}
+\begin{itemize}
+  \item \jjj{Null space (kernel) \(N(\bm{A})\)}: the set of all vectors \tbm{x} (excluding trivial case; \(\bm{x}\neq \bm{o}\)) for which \tbm{Ax=o}, where \tbm{o} is the zero vector.
+    \begin{itemize}
+      \item \jjj{Empty set \( \{~\} \)}: when there is no vector \bm{x}, besides the trivial case, such that \(\bm{Ax} = \bm{o}\)
+    \end{itemize}
+  \item A matrix with an empty set contains \hyperref[Linear Independence]{\ulink{linearly independent columns}}, while a matrix that contains a non-empty null space must have at least two linearly dependent columns.
+  \item Any basis vector, or set of basis vectors, can be chosen for the null space, as any scalar applied to any basis can be used to represent any other vector in the null space.
+
+  \subsection{Left Null Space}\label{Left Null Space}
+  \begin{itemize}
+    \item \jjj{Left null space (cokernel) \(N(\bm{A}^T)\)}: similar to the null space (colloquially sometimes the same), except it is \bbb{pre-multiplied} (hence the name) by a row vector and yields the zero row vector, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    N(\bm{A}^T) = \bbb{\bm{x}^T} \bm{A} = \bm{o}^T  
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Typically represented as the null space of the transposed matrix (hence the notation) i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    N(\bm{A}^T) = \bm{A}^T \bm{x} = \bm{o}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}
+  \item The null space can be thought of a void, that if vector is sent to, cannot be escaped. 
+  \item Geometrically, if \(x \notin N(\bm{A}) \), then the vector can be transformed by some matrix to any non-zero length.
+    \begin{itemize}
+      \item Alternatively, if \(x \in N(\bm{A})\), then the only transformation possible is a transformation to the origin, i.e., the zero vector.
+    \end{itemize}
+\end{itemize}
+
+\section{Four Fundamental Subspaces}\label{Four Fundamental Subspaces}
+\begin{itemize}
+  \item \jjj{Four fundamental subspaces}: the four subspaces that are associated with a matrix, i.e., the column space, row space, null space, and left null space.
+  \item The \yyy{column space} and \xxx{left null space} must be \hyperref[Geometric Interpretation of the Dot Product]{\ulink{orthogonal}}, i.e., the dot product with any linear combination of the columns of matrix \bm{A} must be zero:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{x}^T\{\lambda_1 \yyy{a_1} + \cdots + \lambda_n \yyy{a_n}\} = 0
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item Likewise, the \xxx{row space} and the \yyy{null space} also must be orthogonal, i.e., the dot product with any linear combination of the rows of matrix \bm{A} must be zero:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{x}^T\{\lambda_1 \xxx{a_1^T} + \cdots + \lambda_m \xxx{a_m^T}\} = 0
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{itemize}
+    \item This implies if the \yyy{column space spans} all of \(\mathbb{R}^\xxx{m}\), then the \xxx{left null space is empty}.
+    \item Likewise, if the \xxx{row space spans} all of \(\mathbb{R}^\yyy{n}\), then the \yyy{null space is empty}.
+  \end{itemize}
+  
+  \subsection{Dimensionality of the Subspaces}\label{Dimensionality of the Subspaces}
+  \begin{itemize}
+    \item \jjj{Nullity}: the dimensionality of the null space of a matrix.
+    \item The dimensionality of the column or row space of a matrix is equal to the \hyperref[Rank Terminology]{\ulink{rank}} of the matrix.
+    \item \jjj{Rank-nullity theorem}: the dimension of the domain of a linear map is the sum of its rank and the nullity, i.e., the dimensionality of the \yyy{column space} and the nullity of the \xxx{left null space} must equal the \xxx{rows} of the original matrix: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \dim{\yyy{C(\bm{A})}} + \dim{\xxx{N(\bm{A}^T)}} = \xxx{m}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Likewise, the dimensionality of the \xxx{row space} and the nullity of the \yyy{null space} must equal the \yyy{columns} of the original matrix:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \dim{\xxx{C(\bm{A}^T)}} + \dim{\yyy{N(\bm{A})}} = \yyy{n}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item An example that illustrates the four subspaces and their dimensionality:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A} = \begin{bmatrix}
+      1 & 2 & 0 \\
+      3 & 3 & -3
+      \end{bmatrix} \quad (\xxx{2}\times\yyy{3})
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \downarrow
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{align*}
+      \yyy{C(\bm{A})} = \left\{ 
+        \begin{bmatrix} 1 \\ 3 \end{bmatrix},
+        \begin{bmatrix} 2 \\ 3 \end{bmatrix}
+      \right\} &\in \mathbb{R}^2 \quad \dim{\yyy{C(\bm{A})}} = 2 \\
+      \xxx{N(\bm{A}^T)} = \left\{\hspace{60pt}\right\} &\in \mathbb{R} \quad \dim{\xxx{N(\bm{A}^T)}} = 0 \\
+      \\
+      \hspace{83pt} 2 + 0 &= \xxx{2} \\
+      \\
+      \xxx{C(\bm{A}^T)} = \left\{ 
+        \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}^T,
+        \begin{bmatrix} 3 \\ 3 \\ -3 \end{bmatrix}^T
+      \right\}
+      &\in \mathbb{R}^3 \quad \dim{\xxx{C(\bm{A}^T)}} = 2 \\
+      \yyy{N(\bm{A})} = \left\{\begin{bmatrix} 2 \\ -1 \\ 1 \end{bmatrix}\right\} 
+      &\in \mathbb{R}^3 \quad \dim{\yyy{N(\bm{A})}} = 1 \\
+      \\
+      2 + 1 &= \yyy{3}
+    \end{align*}
+    \begin{itemize}
+      \item Here you can see the rank is the same, but the columns are linearly dependent, leading to a non-zero nullity. 
+    \end{itemize}
+  \end{itemize}
+\end{itemize}

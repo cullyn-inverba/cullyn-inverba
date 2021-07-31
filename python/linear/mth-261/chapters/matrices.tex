@@ -1,0 +1,354 @@
+\chapter{Matrices}\label{Matrices}  
+\section{Matrix Terminology}\label{Matrix Terminology}
+\begin{itemize}
+  \item \jjj{Matrix \(\bm{A}_{\xxx{r},\yyy{c}}\)}: a \emph{rectangular array} of elements arranged in \xxx{rows \(\leftrightarrow \)} and \yyy{columns \(\updownarrow \)}, e.g.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \bm{A} = \begin{bmatrix}
+  1 & 0 & 3 \\
+  5 & 4 & 2 \\
+  7 & 6 & 9 
+  \end{bmatrix}
+  \qquad \bm{A}_{\xxx{3},\yyy{2}} = 6
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \item \ddd{Block (partitioned) matrix}: a matrix that is interpreted as having been broken into sections called blocks or submatrices, e.g.,
+  \begin{align*}
+    \bm{A} = 
+    \begin{bmatrix}
+      \bbb{\bm{D}} & \fff{\bm{N}} \\
+      \ttt{\bm{Y}} & \bbb{\bm{D}} 
+    \end{bmatrix} 
+    =
+    \begin{bmatrix}
+    \bbb{4} & \bbb{2} & \fff{0} & \fff{0} \\
+    \bbb{6} & \bbb{9} & \fff{0} & \fff{0} \\
+    \ttt{1} & \ttt{1} & \bbb{4} & \bbb{2} \\
+    \ttt{1} & \ttt{1} & \bbb{6} & \bbb{9}
+    \end{bmatrix}
+    \\
+    \bm{D} = 
+    \bbb{\begin{bmatrix}
+      4 & 2 \\
+      6 & 9 
+    \end{bmatrix}}\quad
+    \bm{N} =
+    \fff{\begin{bmatrix}
+      0 & 0 \\
+      0 & 0 
+    \end{bmatrix}}\quad
+    \bm{Y} = 
+    \ttt{\begin{bmatrix}
+      1 & 1 \\
+      1 & 1 
+    \end{bmatrix}}
+  \end{align*}
+  \begin{itemize}
+    \item Can be used for large matrices with high level structure, offering convenient notation, and sometimes providing computational benefits.
+  \end{itemize}
+
+  \item \ddd{Diagonal}: the elements of matrix starting from the \emph{top~left~\(\searrow \, \)~lower~right}.
+    \begin{itemize}
+      \item \jjj{Off-diagonal}: elements not along the diagonal (0s and 1s in example below)
+      \item Works for both \hyperref[Square and Rectangular Matrices]{\dlink{square and rectangular matrices}}, e.g.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{bmatrix}
+        \emph{4} & 1 & 0 & 1\\
+        0 & \emph{2} & 0 & 1\\
+        1 & 0 & \emph{6} & 0\\
+        1 & 1 & 0 & \emph{9} 
+      \end{bmatrix}
+      \qquad
+      \begin{bmatrix}
+        \emph{4} & 1 & 0 & 1 & 1 & 0 & 0 \\
+        0 & \emph{2} & 0 & 1 & 0 & 1 & 1 \\
+        1 & 0 & \emph{6} & 0 & 1 & 0 & 1 \\
+        1 & 1 & 0 & \emph{9} & 1 & 0 & 1
+      \end{bmatrix}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  \item \ddd{Matrix size}: a matrix with \xxx{\(m\) rows} and \yyy{\(n\) columns} is called an \(\xxx{m} \times \yyy{n}\) matrix, or \(\xxx{m}\)-by-\(\yyy{n}\) matrix, while \(\xxx{m}\) and \(\yyy{n}\) are the dimensions.
+    \begin{itemize}
+      \item Order matters---the convention is rows then columns, i.e., \(\xxx{m} \times \yyy{n} \neq \yyy{n} \times \xxx{m} \).
+      \item \xxx{\textbf{MR}}. \yyy{\textbf{N}}i\yyy{\textbf{C}}e guy: a useful mnemonic to remember typical conventions.
+    \end{itemize}
+  \item \ddd{Matrix dimensionality}: 
+    \begin{itemize}
+      \item \(\mathbb{R}^{mn}\): describes the total number of elements, here the multiplication of the dimensions is commutative (order doesn't matter). 
+      \item \(\mathbb{R}^{m \times n}\): the specific matrix size using rows and columns as described above.
+      \item \(C(\bm{A}) \in \mathbb{R}^m\): a collection of column vectors, i.e., a matrix spanned by set column vectors with \(m\) elements.
+      \item \(R(\bm{A}) \in \mathbb{R}^n\): a collection of row vectors, the inverse of above; more on \hyperref[Column Space]{\dlink{row and column spaces}} later.
+    \end{itemize}
+
+  \subsection{Square and Rectangular Matrices}\label{Square and Rectangular Matrices}
+  \begin{itemize}
+    \item \ddd{Square matrix}: a matrix with the same number of rows and columns. 
+      \begin{itemize}
+        \item An \(n\times n\) matrix is known as a square matrix of order \(n\).
+        \item Any two square matrices of the same order can be added and multiplied.
+      \end{itemize}
+    \item \ddd{Rectangular matrix}: a matrix with an unequal number of rows and columns, i.e., \(m \neq n\). 
+    \item Both square and rectangular matrices have a \hyperref[Diagonal]{\ulink{diagonal}}, as described above.
+  \end{itemize}
+
+  \subsection{Symmetric and Skew-Symmetric Matrices}\label{Symmetric and Skew-Symmetric Matrices}
+  \begin{itemize}
+    \item \ddd{Symmetric matrix}: a square matrix that can be mirrored across the diagonal, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    4 & \ttt{-6} & \ttt{-1} \\
+    \ttt{-6} & 2 & \ttt{9} \\
+    \ttt{-1} & \ttt{9} &  0
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{itemize}
+        \item Algebraically, it's a square matrix \(\bm{A}\) that is equal to its \hyperref[Transposition]{\dlink{transpose}}, i.e., \\ \(\bm{A} = \bm{A}^T\).
+        \item It does not matter what is on the diagonal, as any number is equal to itself. 
+      \end{itemize}
+    \item \ddd{Skew-symmetric matrix}: a square matrix that is still symmetric, but all elements mirrored across the diagonal and inverted, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    0 & \fff{+6} & \fff{+1} \\
+    \ttt{-6} & 0 & \fff{-9} \\
+    \ttt{-1} & \ttt{9} &  0
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Algebraically, it's a square matrix \(\bm{A}\) that is equal to its negative transpose, i.e., \(\bm{A} = -\bm{A}^T\)
+      \item Here all elements on the diagonal must be zero, as zero is the only number that can be equal its inverse. 
+    \end{itemize}
+  \end{itemize}
+  
+  \subsection{Identity and Zero Matrices}\label{Identity and Zero Matrices}
+  \begin{itemize}
+    \item \jjj{Identity matrix \(\bm{I}_n\)}: a matrix with size \(n \times n\) with \emph{all elements along the diagonal = 1} and \bbb{all other elements = 0}, e.g, \(\bm{I}_3\) and \(\bm{I_n}\) (\(~\cdots~\)indicate continuation of pattern):
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    \emph{1} & \bbb{0} & \bbb{0} \\
+    \bbb{0} & \emph{1} & \bbb{0} \\
+    \bbb{0} & \bbb{0} & \emph{1} 
+    \end{bmatrix}
+    \qquad
+    \begin{bmatrix}
+    \emph{1} & \bbb{0} & \bbb{\cdots} & \bbb{0} \\
+    \bbb{0} & \emph{1} & \bbb{\cdots} & \bbb{0} \\
+    \bbb{\vdots} & \bbb{\vdots} & \emph{\ddots} & \bbb{\vdots} \\
+    \bbb{0} & \bbb{0} & \bbb{\cdots} & \emph{1}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Essentially, the identity matrix is the equivalent of the number 1 in linear algebra. 
+    \end{itemize}
+    \item \jjj{Zero matrix 0}: a matrix of \emph{all zeros}.
+  \end{itemize}
+  
+  \subsection{Diagonal and Triangular Matrices}\label{Diagonal and Triagnular Matrices}
+  \begin{itemize}
+    \item \ddd{Diagonal matrix}: when all elements \emph{outside the main diagonal} are zero, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    \emph{e_{1,1}} & 0 & \cdots & 0 \\
+    0 & \emph{e_{2,2}} & 0 & \vdots \\
+    \vdots & 0 & \emph{\ddots} & 0  \\
+    0 & \cdots & 0 & \emph{e_{i,i}}  \\
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Elements along the diagonal don't have to be the same, and they can be zero (meaning rectangular matrices still can be diagonal, technically).
+      \item \jjj{Scaled matrix} \jx{\lambda\bm{I}}: when all the elements along the main diagonal are the same and greater than 1, making it a scaled version of the \hyperref[Identity and Zero Matrices]{\ulink{identity matrix}}.
+    \end{itemize}
+    \item \ddd{Triangular matrices}: when all elements above or below the diagonal are zero, but not on both sides.
+      \begin{itemize}
+        \item \rrr{Upper triangular matrix}: when all the elements \bbb{below} the diagonal are zero. 
+        \item \bbb{Lower triangular matrix}: when all the elements \rrr{above} the diagonal are zero. 
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \rrr{\text{Upper}}=\begin{bmatrix}
+          e_{1,1} & \rrr{e_{1,2}} & \rrr{e_{1,3}} \\
+          \bbb{0} & e_{2,2} & \rrr{e_{2,3}} \\
+          \bbb{0} &  \bbb{0} & e_{3,3}  \\
+        \end{bmatrix}
+        \qquad
+        \bbb{\text{Lower}}=\begin{bmatrix}
+          e_{1,1} & \rrr{0} & \rrr{0} \\
+          \bbb{e_{2,1}} & e_{2,2} & \rrr{0} \\
+          \bbb{e_{3,1}} &  \bbb{e_{3,2}}& e_{3,3}  \\
+        \end{bmatrix}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+      \end{itemize}
+  \end{itemize}
+  
+  \subsection{Augmented and Complex Matrices}\label{Augmented and Complex Matrices}
+  \begin{itemize}
+    \item \jjj{Augmented (concatenated) matrix \(\bm{A}~\,\vline~\bm{B}\)}: a matrix obtained by appending the columns of two given matrices, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    4 & 2 & 0 \\
+    3 & 7 & 6 \\
+    1 & 6 & 9 
+    \end{bmatrix}
+    ~\vline~
+    \begin{bmatrix} \yyy{4} \\ \yyy{2} \\ \yyy{0} \end{bmatrix}
+    =
+    \begin{bmatrix}[ccc|c]
+      4 & 2 & 0 & \yyy{4} \\
+      3 & 7 & 6 & \yyy{2} \\
+      1 & 6 & 9 & \yyy{0} 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Used typically for the purpose of performing the same \hyperref[Elementary Operations]{\dlink{elementary row operations}} on each of the given matrices. 
+      \item Matrices must have the same number of rows (or columns for vertical augmentation) for the concatenation to be applied.
+    \end{itemize}
+    \item \ddd{Complex matrix}: A matrix whose elements may contain complex numbers.
+    \item The \hyperref[Conjugate Transpose]{\ulink{conjugate transpose}} discussed previously in vectors can is used here as well.
+    \item \hyperref[Transposition]{\dlink{Transposition}} will be discussed shortly, but for now, the complex conjugate still behaves the same (just imaginary numbers change sign), e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    1 & -1\yyy{+5i} & 0 \\
+    1 & -2 & -4 \\
+   \yyy{ 6i} & -4 & 5\yyy{-2i}  
+    \end{bmatrix}^H
+    =
+    \begin{bmatrix}
+    1 & 1 & \yyy{-6i} \\
+    -1\yyy{-5i} & -2 & -4 \\
+    0 & -4 & 5\yyy{+2i} 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{itemize}  
+\end{itemize}
+
+\section{Basic Matrix Operations}\label{Basic Matrix Operations}
+\begin{itemize}
+  \item []
+  
+  \subsection{Matrix Addition}\label{Matrix Addition and Subtraction}
+  \begin{itemize}
+    \item \ddd{Matrix addition}: the operation of adding two matrices of \emph{equal dimensions} \(m \times n\) by adding the corresponding elements together, e.g.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    1 & 2 & 5 \\
+    0 & 6 & 8 \\
+    9 & 6 & 4 
+    \end{bmatrix} +
+    \begin{bmatrix}
+      0 & 3 & 5 \\
+      1 & -6 & 9 \\
+      -5 & -4 & 0 
+    \end{bmatrix} 
+    = 
+    \begin{bmatrix}
+    1 & 5 & 10 \\
+    1 & 0 & 17 \\
+    4 & 2 & 4 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Note: there are other operations which could also be considered addition for matrices, such as the direct sum and the Kronecker sum (not discussed as of now).
+    \item \ttt{\cmark~Commutative}: \(\bm{A}+\bm{B} = \bm{B} + \bm{A}\)
+    \item \ttt{\cmark~Associative}: \(\bm{A} + (\bm{B}+\bm{C}) = (\bm{A}+\bm{B}+ \bm{C})\)
+  \end{itemize}
+
+  \subsection{Matrix Scalar Multiplication}\label{Matrix Scalar Multiplication}
+  \begin{itemize}
+    \item \jjj{Matrix scalar multiplication}: the same as \hyperref[Vector Scalar Multiplication]{\ulink{vector scalar multiplication}} or simply, scalar multiplication, as vectors are \(m \times 1~(\text{or}~1 \times n)\) matrices.
+    \item Scalar multiplication is true when both \bbb{left scalar} and \rrr{right scalar} are equal, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bbb{\lambda}(\bm{A})_{ij} = (\bbb{\lambda} \bm{A})_{ij} = ( \bm{A}\rrr{\lambda})_{ij}= (\bm{A})_{ij}\rrr{\lambda} % chktex 3
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item More explicitly: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    \bbb{\lambda} e & \bbb{\lambda} e & \cdots & \bbb{\lambda} e \\
+    \bbb{\lambda} e & \bbb{\lambda} e & \cdots & \bbb{\lambda} e \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \bbb{\lambda} e & \bbb{\lambda} e & \cdots & \bbb{\lambda} e
+    \end{bmatrix}
+    =
+    \left(
+      \bbb{\lambda}~\text{or}
+    \begin{bmatrix}
+    e & e & \cdots & e \\
+    e & e & \cdots & e \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e & e & \cdots & e
+    \end{bmatrix}
+      \text{or}~\rrr{\lambda}
+    \right)
+    =
+    \begin{bmatrix}
+    e\rrr{\lambda} & e\rrr{\lambda} & \cdots & e\rrr{\lambda} \\
+    e\rrr{\lambda} & e\rrr{\lambda} & \cdots & e\rrr{\lambda} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e\rrr{\lambda} & e\rrr{\lambda} & \cdots & e\rrr{\lambda}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The above is \ttt{true only} where the underlying ring (algebraic structure that generalize fields\dots I need to learn more about this\dots) \ttt{is commutative}. This fact is essential for later proofs.
+  \end{itemize}
+  
+  \subsection{Transposition}\label{Transposition}
+  \begin{itemize}
+    \item \jjj{Transpose \(^T\)}: an operation where a matrix is flipped over its \hyperref[Diagonal]{\ulink{diagonal}}, i.e., \\ it switches the row and column indices of the matrix, e.g., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+    1 & \ttt{5} & \bbb{9} \\
+    \rrr{2} & 6 & \bbb{0} \\
+    \rrr{3} & \ttt{7} & 1 \\
+    \rrr{4} & \ttt{8} & \bbb{2}
+    \end{bmatrix}^T
+    = ~
+    \begin{bmatrix}
+    1 & \rrr{2} & \rrr{3} & \rrr{4} \\
+    \ttt{5} & 6 & \ttt{7} & \ttt{8} \\
+    \bbb{9} & \bbb{0} & 1 & \bbb{2}
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Formally, the element of the \xxx{\(i\)-th row}, \yyy{\(j\)-th column} of matrix \(\bm{A}\) when transposed becomes the element of the \yyy{\(j\)-th row}, \xxx{\(i\)-th column} of matrix \(\bm{A}^T\), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \bm{A}_{\xxx{i},\yyy{j}} = \bm{A}_{\yyy{j},\xxx{i}}^T
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Alternatively, with regard to dimensionality, if \(\bm{A}\) is an \(\xxx{m} \times \yyy{n}\) matrix, then \(\bm{A}^T\) is an \(\yyy{n} \times \xxx{m}\) matrix. 
+      \begin{itemize}
+        \item Thus, a transposed matrix that is transposed again will produce the original matrix, i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \left(\bm{A}_{\yyy{j},\xxx{i}}^T\right)^T = \bm{A}_{\xxx{i},\yyy{j}} % chktex 3
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+    \item Revisiting \hyperref[Augmented and Complex Matrices]{\ulink{complex matrices}}:
+    \begin{itemize}
+      \item \ddd{Hermitian matrix}: a \emph{square} complex matrix whose transpose is equal to every entry being replaced with its \hyperref[Complex conjugate]{\ulink{complex conjugate}}. 
+        \begin{itemize}
+          \item Denoted: \(\bm{A}^T={\overline{\bm{A}\,}}\)
+        \end{itemize}
+      \item \ddd{Skew-Hermitian matrix}: a Hermitian matrix whose transpose is equal to the \emph{negation} of its complex conjugate.
+      \begin{itemize}
+        \item Denoted: \(\bm{A}^T=-{\overline{\bm{A}\,}}\)
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+
+  \subsection{Diagonal and Trace}\label{Diagonal and Trace}
+  \begin{itemize}
+    \item The \hyperref[Diagonal]{\ulink{main diagonal}} of a matrix can be extracted and turned into a vector.
+      \begin{itemize}
+        \item Not to be confused with \hyperref[Diagonalization]{\dlink{diagonalization}} of a matrix, which is a result of matrix decomposition resulting from \hyperref[Eigendecomposition]{\dlink{eigendecomposition}}.
+      \end{itemize}
+    \item \jjj{Trace \(\operatorname{tr}(\bm{A})\)}: the sum of all diagonal elements, defined only for square matrices.
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \operatorname{tr}(\bm{A}) = \sum_{i = 1}^{n} e_{i,i} = e_{1,1} + e_{2,2} + \cdots + e_{n,n}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item The trace is a \emph{linear mapping} (two vector spaces that preserves the operations of vector addition and scalar multiplication.), i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \operatorname{tr}(\bm{A + B})  =  \operatorname{tr}(\bm{A}) + \operatorname{tr}(\bm{B})  \qquad
+      \operatorname{tr}(\lambda\bm{A}) = \lambda\operatorname{tr}(\bm{A}) 
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Additionally, a matrix and its transpose have the same trace, as elements along the main diagonal are not affected, i.e., \( \operatorname{tr}(\bm{A}) = \operatorname{tr}(\bm{A}^T)\) 
+  \end{itemize}
+
+  \subsection{Broadcasting}\label{Broadcasting}
+  \begin{itemize}
+    \item \jjj{Broadcasting}: duplication of a vector so that the dimensionality matches a larger matrix, allowing for simplification of element wise addition or multiplication. 
+      \begin{itemize}
+        \item Technically not a valid operation in linear algebra at face value, but is used commonly in applied linear algebra and machine learning.
+      \end{itemize}
+  \end{itemize}
+\end{itemize}
+

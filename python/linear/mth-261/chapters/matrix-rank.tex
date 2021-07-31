@@ -1,0 +1,102 @@
+\chapter{Matrix Rank}\label{Matrix Rank}
+\section{Rank Terminology}\label{Rank Terminology}
+\begin{itemize}
+  \item \jjj{Matrix rank \(r,\operatorname{rank}(\bm{A})\)}: a non-negative integer \((\mathbb{N}_0 = 0, 1, 2, 3,\,\dots)\) that describes the dimension of the vector space \hyperref[Span]{\ulink{spanned}} by its columns.
+    \begin{itemize}
+      \item Rank can also be thought of as communicating the \emph{dimensionality of the information} in a matrix, but not the dimensionality of the matrix itself.
+      \begin{itemize}
+        \item E.g., the columns of a \(2\times 3\) matrix are in \(\mathbb{R}^3\), but one column could be embedded in a two-dimensional \hyperref[Subspace]{\ulink{subspace}}, which would make it a linearly dependent set.
+      \end{itemize}
+      \item Thus, rank can also be thought of as the maximal number of \hyperref[Linear Independence]{\ulink{linearly independent}} columns of a matrix, which also means rank is dimension of the vector space spanned by its rows  (see \hyperref[Column Space]{\dlink{column and row space of a matrix}}), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \operatorname{rank}(C(\bm{A})) = \operatorname{rank}(R(\bm{A})) = \operatorname{rank}(\bm{A})
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+  
+  \subsection{Maximum Rank}\label{Maximum Rank}
+  \begin{itemize}
+  \item The maximum possible rank is equal to the smaller of the two dimensions, either the \xxx{rows} or \yyy{columns}, i.e.,
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \max(r) = r \in \mathbb{N}_0~\,|~\,0 \leq r \leq \min(\xxx{m},\yyy{n})
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \jjj{Full rank}: a square matrix with maximum possible rank, making it \hyperref[Matrix Inverse]{\dlink{invertible}}. 
+      \item \jjj{Full column rank}: when \(\xxx{m} > \yyy{n}\) and \(\max(r) = \yyy{n}\). 
+      \item \jjj{Full row rank}: when \(\yyy{n} > \xxx{m} \) and \(\max(r) = \xxx{m}\). 
+      \item \jjj{Rank deficient (reduced rank, degenerate, low-rank, singular, non-invertible)}: when the rank is less than the maximum possible rank. 
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\section{Computing Rank}\label{Computing Rank}
+\begin{itemize}
+  \item In smaller matrices, it may be easily computed by counting the number of columns in a linearly independent set.
+  \item \hyperref[Row Echelon form]{\dlink{Row reduction}} to the row echelon form also allows for calculation of rank by counting number of pivots.
+  \item Compute the \hyperref[Singular Value Decomposition]{\dlink{singular value decomposition}} and count the number of non-zero singular values.
+  \item Compute the \hyperref[Eigendecomposition]{\dlink{eigendecomposition}} and count the number of non-zero eigenvalues.
+  
+  \item Rank after addition and multiplication:
+  \begin{itemize}
+    \item \(\rank{\bm{A}+\bm{B}} \leq \rank{\bm{A}} + \rank{\bm{B}} \)
+    \item \(\rank{\bm{A}\bm{B}} \leq \min{(\rank{\bm{A}},\rank{\bm{B}})} \)
+    \item Key point: the rank is not necessarily the same as either of the original matrices.
+  \end{itemize}
+  
+  \subsection{Rank of A\texorpdfstring{\(^T\)}{}A and AA\texorpdfstring{\(^T\)}{}}\label{Rank of ATA and AAT}
+  \begin{itemize}
+    \item The rank of a matrix when multiplied with itself is the same as the rank of the original matrix (and the transpose of said matrix), regardless of \bbb{pre}/\rrr{post}-multiplication, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \rank{\bm{A}}  = \rank{\bm{A}^T} = \rank{\bbb{\bm{A}^T}\bm{A}} = \rank{\bm{A}\rrr{\bm{A}^T}}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \item Explanation 1, using \hyperref[Column Space]{\dlink{column spaces}}:
+    \begin{itemize}
+      \item Columns \(c_j\) are combinations of columns in \(A^T\), i.e., combining rows of \tbm{A} results in column \(c_j\) of product matrix \(\rightarrow \bm{A^T}a_j=c_j \)
+      \item This means the dimensionality of the subspace spanned by the columns of \bm{C} is the same as the dimensionality subspace spanned the columns of \(\bm{A}^T\), which means the \hyperref[Rank Terminology]{\ulink{rank is the same}}, i.e., 
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      C(\bm{C})=C(\bm{A}^T)\rightarrow \rank{\bm{C}} = \rank{\bm{A}^T} 
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+    \item Explanation 2, using \hyperref[Null Space]{\dlink{null space}}:
+      \begin{itemize}
+        \item (to be explained)
+      \end{itemize}
+    \item Explanation 3, using \hyperref[Singular Value Decomposition]{\dlink{singular value decomposition}}: 
+    \begin{itemize}
+      \item (to be explained)
+    \end{itemize}
+    \item The implications of this fact show that \emph{creating symmetric full rank matrices}, via the \hyperref[Hadamard Multiplication]{\ulink{multiplicative method}}, of desired size (\bbb{pre}=\yyy{column} sized, \rrr{post}=\xxx{row} sized) can easily be done.
+  \end{itemize}
+    
+  \subsection{Full Rank via ``Shifting''}\label{Full Rank via ``Shifting''}
+  \begin{itemize}
+    \item First, ``shifting'' a matrix is different from a shift matrix, which may or may not be explicitly defined, for now. 
+    \item \jjj{``Shifting''} \jx{\tilde{\bm{A}}}: a binary operation that involves the addition of a square matrix with a \hyperref[Diagonal and Triagnular Matrices]{\ulink{scaled identity matrix}} in order to \emph{create a full rank matrix}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \tilde{\bm{A}}=\bm{A}+\lambda \bm{I}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item E.g., below is a rank deficient matrix (rank 2) that has been ``shifted'' by a slightly scaled identity matrix in order to create the full rank (3):
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{bmatrix}
+      1 & 3 & 3 \\
+      5 & -7 & -7  \\
+      -5 & 2  & 2 
+    \end{bmatrix} +
+    0.1 
+    \begin{bmatrix}
+      1 & 0 & 0 \\
+      0 & 1 & 0 \\
+      0 & 0 & 1 
+    \end{bmatrix} =
+    \begin{bmatrix}
+      1.01 & 3 & 3 \\
+      5 & -6.99 & -7  \\
+      5 & 2  & 2.01 
+    \end{bmatrix}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Determining the correct scaling factor without changing the information in the original matrix can be very difficult, but generally small shifts are better. 
+  \end{itemize}
+\end{itemize}
+  
+
+
