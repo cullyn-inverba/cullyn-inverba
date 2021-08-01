@@ -91,3 +91,57 @@ const isAnagram = (test, original) => {
   const clean = str => [...str.toLowerCase()].sort().join('');
   return clean(test) === clean(original);
 };
+
+const number = busStops => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+
+// console.log(
+//   number([
+//     [10, 0],
+//     [3, 5],
+//     [5, 8],
+//   ])
+// );
+
+// const nums = [1, 2, 3, 10, 5];
+
+const solution = nums => (nums ? nums.slice().sort((a, b) => a - b) : []);
+
+const gimme = arr => arr.indexOf(arr.slice().sort((a, b) => a - b)[1]);
+
+// console.log(gimme([2, 3, 1]));
+
+function highAndLow(numbers) {
+  numbers = numbers.split(' ').map(Number);
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
+
+// console.log(highAndLow('4 5 29 54 4 0 -214 542 -64 1 -3 6 -6'));
+
+const findSum = n => {
+  let sum = 0;
+  for (let i = 1; i < n + 1; i++) {
+    if (i % 3 === 0 || i % 5 === 0) sum += i;
+  }
+  return sum;
+};
+
+// console.log(findSum(5));
+
+const isSortedAndHow = arr => {
+  const asc = arr =>
+    arr
+      .slice()
+      .sort((a, b) => a - b)
+      .join('');
+  if (asc(arr) === [...arr].join('')) return 'yes, ascending';
+  const desc = arr =>
+    arr
+      .slice()
+      .sort((a, b) => b - a)
+      .join('');
+  if (desc(arr) === [...arr].join('')) return 'yes, descending';
+  return 'no';
+};
+
+console.log(isSortedAndHow([1, 2]));
+console.log(isSortedAndHow([15, 7, 3, -8]));
