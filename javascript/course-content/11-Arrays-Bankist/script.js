@@ -88,6 +88,24 @@ const calcDispalyBalance = movements => {
 
 calcDispalyBalance(account1.movements);
 
+const calcDispalySummary = movements => {
+  const incomes = movements.filter(mov => mov > 0).reduce((s, mov) => s + mov, 0);
+  labelSumIn.textContent = `${incomes}€`;
+
+  const out = movements.filter(mov => mov < 0).reduce((s, mov) => s - mov, 0);
+  labelSumOut.textContent = `${out}€`;
+
+  const interest = movements
+    .filter(mov => mov > 0)
+    .map(deposit => (deposit * 1.2) / 100)
+    .filter(r => r >= 1)
+    .reduce((s, r) => s + r, 0);
+
+  labelSumInterest.textContent = `${interest}€`;
+};
+
+calcDispalySummary(account1.movements);
+
 const createUsernames = accounts => {
   accounts.forEach(function (acc) {
     acc.username = acc.owner
@@ -202,5 +220,18 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const max = movements.reduce((max, mov) => (mov > max ? (max = mov) : max));
 
 // console.log(max);
+
+// console.log('----------');
+
+// Chainiing
+// console.log(`Chainiing ↓`);
+
+// const rate = 1.19;
+// const usd = movements
+//   .filter(mov => mov > 0)
+//   .map(mov => mov * rate)
+//   .reduce((bal, mov) => bal + mov, 0);
+
+// console.log(usd);
 
 // console.log('----------');
