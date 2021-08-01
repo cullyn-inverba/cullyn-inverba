@@ -104,7 +104,7 @@ const number = busStops => busStops.reduce((rem, [on, off]) => rem + on - off, 0
 
 // const nums = [1, 2, 3, 10, 5];
 
-const solution = nums => (nums ? nums.slice().sort((a, b) => a - b) : []);
+const solution1 = nums => (nums ? nums.slice().sort((a, b) => a - b) : []);
 
 const gimme = arr => arr.indexOf(arr.slice().sort((a, b) => a - b)[1]);
 
@@ -143,5 +143,40 @@ const isSortedAndHow = arr => {
   return 'no';
 };
 
-console.log(isSortedAndHow([1, 2]));
-console.log(isSortedAndHow([15, 7, 3, -8]));
+// console.log(isSortedAndHow([1, 2]));
+// console.log(isSortedAndHow([15, 7, 3, -8]));
+
+const findLongest = arr => arr.reduce((c, v) => (`${c}`.length < `${v}`.length ? v : c));
+
+// console.log(findLongest([1, 10, 100]));
+
+const solution = (str, ending) => str.endsWith(ending);
+
+// console.log(solution('abcde', 'cde'));
+// console.log(solution('abcde', 'abc'));
+// console.log(solution('abcde', ''));
+
+const capitals = str => [...str].map((e, i) => (e.toUpperCase() === e ? i : '')).filter(e => e !== '');
+
+// console.log(capitals('CodEWaRs'));
+
+const vertMirror = str => str.map(e => [...e].reverse().join(''));
+
+const horMirror = str => str.reverse();
+
+const oper = (fn, str) => fn(str.split('\n')).join('\n');
+
+// console.log(oper(vertMirror, 'hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu'));
+
+const accum = str => [...str].map((e, i) => `${e.toUpperCase()}${e.toLowerCase().repeat(i)}`).join('-');
+
+// console.log(accum('ZpglnRxqenU'));
+
+const reverseWords = str =>
+  str
+    .split(' ')
+    .map(e => [...e].reverse().join(''))
+    .join(' ');
+
+console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
+console.log(reverseWords('double  spaced  words'));
