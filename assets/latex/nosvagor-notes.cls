@@ -4,14 +4,14 @@
 % ██║╚██╗██║██║   ██║   ██║   ██╔══╝  ╚════██║
 % ██║ ╚████║╚██████╔╝   ██║   ███████╗███████║
 % ╚═╝  ╚═══╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
-%  .--.      .-'.      .--.      .--.      .--.      .--.
-% |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
-% |::::.\::: https://github.com/cullyn-inverba/Notes ::::.\
-% |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
-%         `--'      `.-'      `--'      `--'      `--'      `
+%  →-.   →  .-'.   →  .--.   →  .--.   →  .--.   →  .-→
+% →::.\::::::::.\::::::::.\::::::::.\::::::::.\:::::::→→ → 
+% → →:.\:::: https://github.com/nosvagor/notes \:::→→ →  →  → 
+% →::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::→  →
+%   → →   `--'  →   `.-'  →   `--'  →   `--'  →   `--' →  → 
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{inVerba-notes}[2020/12/09 Multipurpose hierarchical structured notes]
+\ProvidesClass{nosvagor-notes}[2021/1/08 Multipurpose hierarchical structured notes]
 \LoadClass[12pt,a4paper]{report}
 
 % ╔═╗┌─┐┌─┐┌─┐
@@ -131,9 +131,9 @@
     \hypersetup{
         colorlinks=false,
         linktoc=all,    
-        linkcolor=gg,
-        filecolor=gg,      
-        urlcolor=gg, 
+        linkcolor=ggg,
+        filecolor=ggg,      
+        urlcolor=ggg, 
     }
 
 \RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite,pifont}
