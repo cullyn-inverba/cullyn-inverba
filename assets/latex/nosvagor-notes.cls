@@ -11,7 +11,7 @@
 %   → →   `--'  →   `.-'  →   `--'  →   `--'  →   `--' →  → 
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nosvagor-notes}[2021/1/08 Multipurpose hierarchical structured notes]
+\ProvidesClass{nosvagor-notes}[2021/08/01 Multipurpose hierarchical structured notes]
 \LoadClass[12pt,a4paper]{report}
 
 % ╔═╗┌─┐┌─┐┌─┐
