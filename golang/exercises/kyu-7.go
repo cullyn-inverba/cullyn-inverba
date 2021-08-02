@@ -144,7 +144,34 @@ func Pendulum(values []int) (res []int) {
 	return
 }
 
+// HighAndLow takes a string of ints and returns the highest and
+// lowest number as a string separated by a space.
+func HighAndLow(in string) string {
+	nums := strings.Fields(in)
+	var min, max int
+
+	for i, v := range nums {
+		n, _ := strconv.Atoi(v)
+		if i == 0 || n < min {
+			min = n
+		}
+		if i == 0 || n > max {
+			max = n
+		}
+	}
+
+	return strconv.Itoa(max) + " " + strconv.Itoa(min)
+}
+
+// WordsToMarks returns the sum of all lowercase letters of a given
+// string with starting with a = 1.
+func WordsToMarks(s string) (res int) {
+	for _, i := range s {
+		res += int(i - 96)
+	}
+	return
+}
+
 func main() {
-	fmt.Println(Pendulum([]int{4, 10, 9}))
-	fmt.Println(Pendulum([]int{8, 7, 10, 3}))
+	fmt.Println(WordsToMarks("friendship"))
 }
