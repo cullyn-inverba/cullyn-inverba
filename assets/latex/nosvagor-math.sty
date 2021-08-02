@@ -14,35 +14,28 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{nosvagor-math}[My collection of math packages and commands]
 
-\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz,tikz-cd,pgfplots,array,marvosym}
-    \pgfplotsset{compat=newest}
-    \numberwithin{equation}{chapter}
+% ╔═╗┌─┐┬─┐┌┬┐┌─┐┌┬┐┌┬┐┬┌┐┌┌─┐
+% ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
+% ╚  └─┘┴└─┴ ┴┴ ┴ ┴  ┴ ┴┘└┘└─┘
+\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz,tikz-cd,array,marvosym}
 
-    \DeclareMathSizes{12}{14}{10}{8}
+  \numberwithin{equation}{chapter}
+  \DeclareMathSizes{12}{14}{10}{8}
 
-    \makeatletter
-        \renewcommand\tagform@[1]{
-            \maketag@@@{\ignorespaces#1\unskip\@@italiccorr}
-        }
-    \makeatother
+  % Augmented Matrix [ccc|c]
+  \makeatletter
+      \renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+      \hskip -\arraycolsep
+      \let\@ifnextchar\new@ifnextchar
+      \array{#1}}
+  \makeatother
 
-    % Augmented Matrix [ccc|c]
-    \makeatletter
-        \renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-        \hskip -\arraycolsep
-        \let\@ifnextchar\new@ifnextchar
-        \array{#1}}
-    \makeatother
+  % Swap epsilon fonts
+  \let\origVarEpsilon\varepsilon
+  \renewcommand*\varepsilon{\mathlarger{\mathlarge{\mathlarger\origEpsilon}}}
 
-    % Swap epsilon fonts
-    \let\origEpsilon\epsilon
-    \let\origVarEpsilon\varepsilon
-
-    \renewcommand*\varepsilon{\mathlarger{\mathlarger{\mathlarger\origEpsilon}}}
-    \renewcommand*\epsilon{\mathlarger{\mathlarger{\mathlarger\origVarEpsilon}}}
-
-    % Alternative Zero Font
-    \newcommand{\nil}{\text{\MVZero}}
+  \let\origEpsilon\epsilon
+  \renewcommand*\epsilon{\mathlarger{\mathlarge{\mathlarger\origVarEpsilon}}}
     
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ │││││││├─┤│││ ││└─┐
@@ -50,6 +43,9 @@
 
 % Inline bold math
 \newcommand{\tbm}[1]{\(\bm{#1}\)}
+
+% Alternative Zero Font
+\newcommand{\nil}{\text{\MVZero}}
 
 % ihat, jhat, khat
 \newcommand*{\ih}{
@@ -79,3 +75,19 @@
 \def\err{\fff{\varepsilon}}
 \def\y{\yyy{y}}
 \def\x{\xxx{x}}
+
+% ╔═╗┬  ┌─┐┌┬┐┌─┐
+% ╠═╝│  │ │ │ └─┐
+% ╩  ┴─┘└─┘ ┴ └─┘
+\RequirePackage{pgfplots}
+  \pgfplotsset{
+    compat=newest,
+    xlabel={$x$}, ylabel={$y$}, 
+    legend style={at={(.5,-0.25)},anchor=north},
+    minor x tick num=1,
+    minor y tick num=1,
+  }
+  
+  \pgfmathdeclarefunction{CubeRoot}{1}{
+    \pgfmathparse{ifthenelse(#1<0,-1,1)*exp((ln(abs(#1)))/3)}
+  }
