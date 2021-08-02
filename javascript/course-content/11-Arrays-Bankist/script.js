@@ -73,10 +73,12 @@ const createUsernames = acc => {
 
 createUsernames(accounts);
 
-const displayMovements = acc => {
+const displayMovements = (acc, sort = false) => {
   containerMovements.innerHTML = '';
 
-  acc.movements.forEach((mov, i) => {
+  const movs = sort ? acc.movements.slice().sort((a, b) => a - b) : acc.movements;
+
+  movs.forEach((mov, i) => {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
 
     const html = `
@@ -90,12 +92,12 @@ const displayMovements = acc => {
   });
 };
 
-const calcDispalyBalance = acc => {
+const calcDisplayBalance = acc => {
   acc.balance = acc.movements.reduce((bal, mov) => (bal += mov), 0);
   labelBalance.textContent = `${acc.balance} EUR`;
 };
 
-const calcDispalySummary = acc => {
+const calcDisplaySummary = acc => {
   const incomes = acc.movements.filter(mov => mov > 0).reduce((s, mov) => s + mov, 0);
   labelSumIn.textContent = `${incomes}€`;
 
@@ -135,8 +137,8 @@ btnLogin.addEventListener('click', e => {
 
 const updateUI = acc => {
   displayMovements(acc);
-  calcDispalyBalance(acc);
-  calcDispalySummary(acc);
+  calcDisplayBalance(acc);
+  calcDisplaySummary(acc);
 };
 
 btnTransfer.addEventListener('click', e => {
@@ -154,6 +156,19 @@ btnTransfer.addEventListener('click', e => {
   }
 });
 
+btnLoan.addEventListener('click', e => {
+  e.preventDefault();
+
+  const amount = Number(inputLoanAmount.value);
+
+  if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
+    currentAccount.movements.push(amount);
+    updateUI(currentAccount);
+  }
+
+  inputLoanAmount.value = '';
+});
+
 btnClose.addEventListener('click', e => {
   e.preventDefault();
 
@@ -169,6 +184,13 @@ btnClose.addEventListener('click', e => {
   }
 
   inputCloseUsername.value = inputClosePin.value = '';
+});
+
+let sorted = false;
+btnSort.addEventListener('click', e => {
+  e.preventDefault();
+  displayMovements(currentAccount, !sorted);
+  sorted = !sorted;
 });
 
 /////////////////////////////////////////////////
@@ -300,3 +322,42 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // console.log(account);
 
 // console.log('----------');
+
+// Includes
+// console.log(`Includes ↓`);
+
+// console.log(movements.includes(-130));
+
+// const any = movements.some(mov => mov > 1500);
+// console.log(any);
+
+// console.log('----------');
+
+// Flat
+// console.log(`Flat ↓`);
+
+// const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+// console.log(arr.flat());
+
+// const arrDeep = [[[1, 2], 3], [[4, 5, 6], 7], 7, 8];
+// console.log(arrDeep.flat(2));
+
+// console.log(accounts.flatMap(acc => acc.movements).reduce((s, e) => s + e));
+
+// console.log('----------');
+
+// Arrays
+console.log(`Arrays ↓`);
+
+let x = Array.from({ length: 7 }, () => 1);
+console.log(x);
+
+x = Array.from({ length: 7 }, (_, i) => i + 1);
+console.log(x);
+
+labelBalance.addEventListener('click', e => {
+  const movementsUI = Array.from(document.querySelectorAll('.movements__value'), el => Number(el.textContent));
+  console.log(movementsUI);
+});
+
+console.log('----------');
