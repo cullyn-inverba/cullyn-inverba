@@ -172,6 +172,35 @@ func WordsToMarks(s string) (res int) {
 	return
 }
 
+// NameValue takes a slice of strings and returns a slice of ints,
+// wherein each int represents the sum of all lowercase letters of
+// the given string.
+func NameValue(my_list []string) []int {
+	var res = make([]int, len(my_list))
+
+	for i, s := range my_list {
+
+		for _, n := range s {
+			if n != ' ' {
+				res[i] += int(n - 96)
+			}
+		}
+
+		res[i] *= i + 1
+	}
+	return res
+}
+
+func Seven(n int64) []int {
+	count := 0
+
+	for n >= 100 {
+		n = n/10 - 2*(n%10)
+		count++
+	}
+
+	return []int{int(n), count}
+}
+
 func main() {
-	fmt.Println(WordsToMarks("friendship"))
 }
