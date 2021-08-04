@@ -40,6 +40,7 @@
     \titlespacing*{\chapter}{0pt}{-78pt}{0pt} 
     
     \newcommand{\sectionbreak}{\clearpage}
+    
     \titleformat{\section}
     {\Large\bfseries\color{sec}}
     {}{0pt}{}
@@ -136,7 +137,7 @@
         urlcolor=ggg, 
     }
 
-\RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite,pifont}
+\RequirePackage{graphicx, booktabs, multirow, multicol, makecell, xcolor, pagecolor, changepage, apacite,pifont,fontawesome}
 
 \RequirePackage[justification=centering]{caption}
     \captionsetup[table]{
@@ -166,7 +167,7 @@
     \raisebox{-.5\height}{\includegraphics[width=#1]{#2}}
 }
 \newcommand{\Arrow}{
-    \raisebox{-.5\height}{\scalebox{2}{$~\rightarrow~$}}
+    \raisebox{-.5\height}{\scalebox{2}{\(~\rightarrow~\)}}
 }
 
 \newcommand{\qqquad}{\hspace{3em}}
@@ -231,13 +232,14 @@
 
 % Links: #81de84 #66b06b
 \definecolor{ggg}{HTML}{81de84}
+    \newcommand{\src}[1]{{\vspace{-6pt}\color{ggg}{{\footnotesize\faGlobe}}~}{\small{#1}}\medskip}
     \newcommand{\link}[2]{
-        \href{#1}{\color{ggg}{\underline{{#2}}}}
+        \href{#1}{\color{ggg}{{#2}\small\(\,^\text{\faChain}\)}}
     }
 \definecolor{GGG}{HTML}{66b06b}
     \newcommand{\GGG}[1]{{\color{GGG}{#1}}}
-    \newcommand{\ulink}[1]{{\color{GGG}{#1}\small\(\,^\uparrow\)}}
-    \newcommand{\dlink}[1]{{\color{GGG}{#1}\small\(\,^\downarrow\)}}
+    \newcommand{\ulink}[1]{\GGG{{#1}\small\(\,^\uparrow\)}}
+    \newcommand{\dlink}[1]{\GGG{{#1}\small\(\,^\downarrow\)}}
     
 
 % ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
