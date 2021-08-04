@@ -202,5 +202,22 @@ func Seven(n int64) []int {
 	return []int{int(n), count}
 }
 
+func Mirror(data []int) []int {
+
+	if len(data) <= 1 {
+		return data
+	}
+
+	var res = make([]int, len(data))
+	copy(res, data)
+	sort.Ints(res)
+
+	for i := len(res) - 1; i > 0; i-- {
+		res = append(res, res[i-1])
+	}
+
+	return res
+}
+
 func main() {
 }
