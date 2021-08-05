@@ -7,11 +7,36 @@
 \smallskip
 
 \begin{itemize}
-  \item \ddd{Limit}: the value of a function (or sequence) approaches as the input (or index) approaches some value. 
-
-  \subsection{Limit of a Function}
+  \item \ddd{Limit \(\lim_{x \to c}\)}: the value of a function \prn{or sequence} approaches as the input \prn{or index} approaches some value \prn{informal definition}  
   \begin{itemize}
-    \item 
+    \item Limits are used to define \hyperref[s: Continuity]{\dlink{continuity}}, \hyperref[c: Derivatives]{\dlink{derivatives}}, and \hyperref[c: Integrals]{\dlink{integrals}}
+  \end{itemize}
+
+  \subsection{Limits of a Functions and Sequences}
+  \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function (Wikipedia)} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence (Wikipedia)}}
+  \begin{itemize}
+    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(\emph{L}\) of a function near a particular input \(\yyy{p}\), i.e., 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lim_{\x \to\yyy{p}}\f(\x) = \emph{L}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Reads as ``\(\f\) of \(\x\) tends to \emph{L} as \(\x\) tends to \(\yyy{p}\)''
+    \end{itemize}
+    \item Functions do not have a limit when the function:
+      \begin{itemize}
+        \item has a unit step, i.e., it ``jumps'' at a point;
+        \item is not bounded, i.e., it approaches tends towards infinity;
+        \item or does not stay close to any single number, i.e., it oscillates too much. 
+      \end{itemize}
+    \item \ddd{Limit of a sequence}: the value that the terms of a sequence ``tends to'' as \(n\) approaches infinity \prn{or some point}, i.e.,
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lim_{\xxx{n} \to \yyy{\infty}} a_\xxx{n} x_n = c
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item \ddd{Convergent}: when a limit of a sequence \ttt{exists}.
+      \item \ddd{Divergent}: a sequence that \fff{does not} converge. 
+      \item 
+    \end{itemize}
   \end{itemize}
 
   \subsection{Limit Laws and Theorems}

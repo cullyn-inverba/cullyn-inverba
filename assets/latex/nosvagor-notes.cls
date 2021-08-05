@@ -192,12 +192,14 @@
 \definecolor{dark}{HTML}{141414}
     \newcommand{\dark}[1]{{\color{dark}#1}}
 
-% Text: #ebebeb #e0e0e0 #949494 #6b6b6b #404040 
+% Text: #ebebeb #e0e0e0 #b0b0b0 #949494 #6b6b6b #404040 
 \definecolor{bright}{HTML}{ebebeb}  
     \newcommand{\bright}[1]{{\color{bright}#1}}
 \definecolor{fg}{HTML}{e0e0e0}  
     \newcommand{\fg}[1]{{\color{fg}#1}}
     \color{fg} % Foreground Color
+\definecolor{prn}{HTML}{b0b0b0}
+    \newcommand{\prn}[1]{{\color{prn}(#1)}}
 \definecolor{minor}{HTML}{949494} 
     \newcommand{\minor}[1]{{\color{minor}#1}}
 \definecolor{minimal}{HTML}{6b6b6b} 
@@ -304,7 +306,7 @@
 %   /  \ #e0e0e0 foreground (fg)
 %  / /\ \ 
 %  \ \/ / 
-%   \ \/ #b0b0b0 
+%   \ \/ #b0b0b0 parens
 %   /\ \ 
 %   \ \/ #949494 minor
 %   /\ \ 
