@@ -32,10 +32,12 @@
 
   % Swap epsilon fonts
   \let\origVarEpsilon\varepsilon
-  \renewcommand*\varepsilon{\mathlarger{\mathlarge{\mathlarger\origEpsilon}}}
+  \renewcommand*\varepsilon{\mathlarger{\mathlarger{\mathlarger\origEpsilon}}}
+  \def\dvarepsilon{\mathsmaller{\varepsilon}}
 
   \let\origEpsilon\epsilon
-  \renewcommand*\epsilon{\mathlarger{\mathlarge{\mathlarger\origVarEpsilon}}}
+  \renewcommand*\epsilon{\mathlarger{\mathlarger{\mathlarger\origVarEpsilon}}}
+  \def\depsilon{\mathsmaller{\epsilon}}
     
 % ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 % ║  │ │││││││├─┤│││ ││└─┐
@@ -56,6 +58,7 @@
 
 % math symbols
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
 \newcommand{\F}{\mathcal{F}}
 
 % Operator names 

@@ -15,27 +15,55 @@
   \subsection{Limits of a Functions and Sequences}
   \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function (Wikipedia)} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence (Wikipedia)}}
   \begin{itemize}
-    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(\emph{L}\) of a function near a particular input \(\yyy{p}\), i.e., 
+    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(\ppp{L}\) of a function near a particular input \(\yyy{p}\), i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\x \to\yyy{p}}\f(\x) = \emph{L}
+    \lim_{\x \to\yyy{p}}\f(\x) = \ppp{L}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Reads as ``\(\f\) of \(\x\) tends to \emph{L} as \(\x\) tends to \(\yyy{p}\)''
+      \item Reads as ``\(\f\) of \(\x\) tends to \ppp{L} as \(\x\) tends to \(\yyy{p}\)''
     \end{itemize}
+    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval, except possibly at c itself, leading to above definition, \ssec{if and only if}:
+      \begin{itemize}
+        \item For every real \(\bbb{\epsilon > 0}\), there exists a corresponding real \(\rrr{\delta >0}\) such that for all real \(\x, 0 < | \x - \yyy{p} | < \delta\) implies that \(| \f(x) - \ppp{L} | < \bbb{\epsilon}\), i.e.,
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \f : \R \to \R,~ \yyy{p}, \ppp{L} \in \R \Rightarrow \lim_{\x \to\yyy{p}}\f(\x) = \ppp{L} 
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \vspace{-24pt}
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \ssec{\Updownarrow}
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \forall\bbb{\depsilon >0}\left(
+          \exists\rrr{\delta >0} : \forall \x, 0 < | \x - \yyy{p} | < \rrr{\delta} 
+          \Rightarrow 
+          | \f(\x) - \ppp{L} | < \bbb{\depsilon}
+        \right)
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+      \end{itemize}
     \item Functions do not have a limit when the function:
       \begin{itemize}
         \item has a unit step, i.e., it ``jumps'' at a point;
-        \item is not bounded, i.e., it approaches tends towards infinity;
+        \item is not bounded, i.e., it tends towards infinity;
         \item or does not stay close to any single number, i.e., it oscillates too much. 
       \end{itemize}
-    \item \ddd{Limit of a sequence}: the value that the terms of a sequence ``tends to'' as \(n\) approaches infinity \prn{or some point}, i.e.,
+    \item \ddd{Limit of a sequence}: the value that the terms of a sequence (\(x_\ppp{n}\)) ``tends to'' \prn{and not to any other} as \(\ppp{n}\) approaches infinity \prn{or some point}, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\xxx{n} \to \yyy{\infty}} a_\xxx{n} x_n = c
+    \lim_{\ppp{n} \to \yyy{\infty}} x_\ppp{n} = x
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{itemize}
+      \item \ddd{\(\epsilon \) Limit of sequence}: for every measure of closeness \(\bbb{\epsilon} \), the sequence's term eventually converge to the limit, i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \forall\bbb{\depsilon > 0} \left(
+        \exists \ppp{N} \in \N \left(
+          \forall\ppp{n} \in \N \left(
+            \ppp{n} \geq \ppp{N} \Rightarrow |x_\ppp{n}-x| < \bbb{\depsilon}
+          \right)
+        \right)
+      \right)
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}  
       \item \ddd{Convergent}: when a limit of a sequence \ttt{exists}.
       \item \ddd{Divergent}: a sequence that \fff{does not} converge. 
-      \item 
     \end{itemize}
   \end{itemize}
 
