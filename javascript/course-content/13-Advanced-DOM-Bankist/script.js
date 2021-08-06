@@ -1,6 +1,91 @@
 'use strict';
 
 ///////////////////////////////////////
+// Menu fade
+
+const nav = document.querySelector('.nav');
+
+const fade = function (e) {
+  if (e.target.classList.contains('nav__link')) {
+    const link = e.target;
+    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+    const logo = link.closest('.nav').querySelector('img');
+
+    siblings.forEach(el => {
+      if (el !== link) el.style.opacity = this;
+    });
+    logo.style.opacity = this;
+  }
+};
+
+nav.addEventListener('mouseover', fade.bind(0.42));
+nav.addEventListener('mouseout', fade.bind(1));
+
+///////////////////////////////////////
+// Sticky Nav
+
+const header = document.querySelector('.header');
+const navHeight = nav.getBoundingClientRect('').height;
+
+const stickyNav = entries => {
+  const [entry] = entries;
+
+  entry.isIntersecting ? nav.classList.remove('sticky') : nav.classList.add('sticky');
+};
+
+const headerObs = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+  // rootMargin: ,
+});
+
+headerObs.observe(header);
+
+///////////////////////////////////////
+// Revealing sections
+
+const allSections = document.querySelectorAll('.section');
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, { root: null, threshold: 0.15 });
+
+allSections.forEach(section => {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});
+
+///////////////////////////////////////
+// Lazy loading
+
+const imgTargets = document.querySelectorAll('img[data-src]');
+
+const loadImg = (entries, observer) => {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.src = entry.target.dataset.src;
+
+  entry.target.addEventListener('load', () => {
+    entry.target.classList.remove('lazy-img');
+  });
+
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, { root: null, threshold: 0, rootMargin: '200px' });
+
+imgTargets.forEach(img => imgObserver.observe(img));
+
+///////////////////////////////////////
 // Modal window
 
 const btnCloseModal = document.querySelector('.btn--close-modal');
@@ -149,3 +234,24 @@ tabsContainer.addEventListener('click', e => {
 // });
 
 // console.log('----------');
+
+// const initialCoords = section1.getBoundingClientRect();
+
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > initialCoords.top) nav.classList.add('sticky');
+//   else nav.classList.remove('sticky');
+// });
+
+// const obsCallBack = (entires, observer) => {
+//   entires.forEach(en => console.log(en));
+// };
+
+// const obsOptions = {
+//   root: null,
+//   threshold: [0, 0.2],
+// };
+
+// const observer = new IntersectionObserver(obsCallBack, obsOptions);
+// observer.observe(section1);
+
+// const section1 = document.querySelector('#section--1');
