@@ -234,7 +234,7 @@
 
 % Links: #81de84 #66b06b
 \definecolor{ggg}{HTML}{81de84}
-    \newcommand{\src}[1]{{\vspace{-6pt}\color{ggg}{{\footnotesize\faGlobe}}~}{\small{#1}}\medskip}
+    \newcommand{\src}[1]{{\vspace{-6pt}\color{ggg}{{\footnotesize\faGlobe}}~}{\small{#1}}}
     \newcommand{\link}[2]{
         \href{#1}{\color{ggg}{{#2}\small\(\,^\text{\faChain}\)}}
     }

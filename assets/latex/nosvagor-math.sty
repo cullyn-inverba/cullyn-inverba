@@ -17,7 +17,9 @@
 % ╔═╗┌─┐┬─┐┌┬┐┌─┐┌┬┐┌┬┐┬┌┐┌┌─┐
 % ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
 % ╚  └─┘┴└─┴ ┴┴ ┴ ┴  ┴ ┴┘└┘└─┘
-\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz,tikz-cd,array,marvosym}
+\RequirePackage{mathtools, amssymb, bm, relsize, esvect,tikz,tikz-cd,array,marvosym,etoolbox}
+  
+  \apptocmd{\lim}{\limits}{}{}
 
   \numberwithin{equation}{chapter}
   \DeclareMathSizes{12}{14}{10}{8}
@@ -79,6 +81,7 @@
 \def\y{\yyy{y}}
 \def\x{\xxx{x}}
 \def\f{\emph{f}}
+\def\then{\Rightarrow}
 
 % ╔═╗┬  ┌─┐┌┬┐┌─┐
 % ╠═╝│  │ │ │ └─┐
