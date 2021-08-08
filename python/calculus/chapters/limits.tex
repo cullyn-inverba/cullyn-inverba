@@ -15,28 +15,31 @@
   \subsection{Limits of a Functions and Sequences}
   \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence}}
   \begin{itemize}
-    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(\ppp{L}\) of a function near a particular input \(\yyy{c}\), i.e., 
+    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(L\) of a function near a particular input \(\yyy{c}\), i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\x \to\yyy{c}}\f(\x) = \ppp{L}
+    \lim_{\x \to\yyy{c}}\f(\x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Reads as ``\(\f\) of \(\x\) tends to \ppp{L} as \(\x\) tends to \(\yyy{c}\)''
+      \item Reads as ``\(\f\) of \(\x\) tends to L as \(\x\) tends to \(\yyy{c}\)''
     \end{itemize}
-    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval, except possibly at c itself, leading to above definition, \ssec{if and only if}:
+    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval \(\bBb{I}\), except possibly at \yyy{c} itself, leading to above definition, \ssec{if and only if}:
       \begin{itemize}
         \item For every real measure of \bbb{closeness} \(\bbb{\epsilon > 0}\), there exists a real \rrr{corresponding} \(\rrr{\delta >0}\), such that for all existing further approaches there exist a smaller \(\bbb{\epsilon}\), i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \f : \R \to \R,~ \yyy{c}, \ppp{L} \in \R \Rightarrow \lim_{\x \to\yyy{c}}\f(\x) = \ppp{L} 
+        \f : \R \to \R,~ \yyy{c}, L \in \R \Rightarrow \lim_{\x \to\yyy{c}}\f(\x) = L 
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \vspace{-24pt}
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \ssec{\Updownarrow}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \forall\bbb{\depsilon >0}\left(
-          \exists\rrr{\delta >0} : \forall \x, 0 < | \x - \yyy{c} | < \rrr{\delta} 
-          \Rightarrow 
-          | \f(\x) - \ppp{L} | < \bbb{\depsilon}
+        \forall\bbb{\depsilon >0} \left(
+          \exists\rrr{\delta >0} : 
+            \forall \x \in \bBb{I} \left(
+              0 < | \x - \yyy{c} | < \rrr{\delta} 
+              \Rightarrow 
+              | \f(\x) - L | < \bbb{\depsilon}
+            \right)
         \right)
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
@@ -70,28 +73,31 @@
   \subsection{Properties of Limits}
   \src{\link{https://en.wikipedia.org/wiki/List_of_limits}{List of limits} | \link{https://en.wikipedia.org/wiki/Squeeze_theorem}{Squeeze theorem}}
   \begin{itemize}
-    \item \ddd{Operations on a single known limit}: if \(\lim_{\x \to \yyy{c}}f(\x)=\ppp{L}\) then:
+    \item \ddd{Operations on a single known limit}: if \(\lim_{\x \to \yyy{c}}f(\x)=L\) then:
+    \vspace{-6pt}
       \begin{itemize}
-        \item \(\lim_{\x \to \yyy{c}}[f(\x)\pm \alpha] = \ppp{L} \pm \alpha\)  
-        \item \(\lim_{\x \to \yyy{c}}\alpha f(\x)= \alpha \ppp{L}\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)^{-1}=\ppp{L}^{-1}, \ppp{L}\neq 0\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)^n = \ppp{L}^n, n \in \N\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)^{n ^{-1}} = \ppp{L}^{n ^{-1}}, n \in \N,~\text{if}~n \in \N_e \then \ppp{L} > 0\) 
+        \item \(\lim_{\x \to \yyy{c}}[f(\x)\pm \alpha] = L \pm \alpha\)  
+        \item \(\lim_{\x \to \yyy{c}}\alpha f(\x)= \alpha L\)
+        \item \(\lim_{\x \to \yyy{c}}f(\x)^{-1}=L^{-1}, L\neq 0\)
+        \item \(\lim_{\x \to \yyy{c}}f(\x)^n = L^n, n \in \N\)
+        \item \(\lim_{\x \to \yyy{c}}f(\x)^{n ^{-1}} = L^{n ^{-1}}, n \in \N,~\text{if}~n \in \N_e \then L > 0\) 
       \end{itemize}
-    \item \ddd{Operations on two known limits}: if \(\lim_{\x \to \yyy{c}}f(\x)= \ppp{L_1}\) and \(\lim_{\x \to \yyy{c}}g(\x)=\ppp{L_2}\) 
+    \medskip
+    \item \ddd{Operations on two known limits}: if \(\lim_{\x \to \yyy{c}}f(\x)= L_1\) and \(\lim_{\x \to \yyy{c}}g(\x)=L_2\) 
+    \vspace{-6pt}
       \begin{itemize}
-        \item \(\lim_{\x \to \yyy{c}}[f(\x)\pm g(\x)]=\ppp{L_1}\pm\ppp{L_2}\)
-        \item \(\lim_{\x \to \yyy{c}}[f(\x)g(\x)] = \ppp{L_1 L_2}\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)g(\x)^{-1} = \ppp{L_1}\ppp{L_2}^{-1}\)
+        \item \(\lim_{\x \to \yyy{c}}[f(\x)\pm g(\x)]=L_1\pm L_2\)
+        \item \(\lim_{\x \to \yyy{c}}[f(\x)g(\x)] = L_1 L_2\)
+        \item \(\lim_{\x \to \yyy{c}}f(\x)g(\x)^{-1} = L_1L_2^{-1}\)
       \end{itemize}
-    \smallskip
+    \medskip
     \item \ddd{Squeeze theorem}: used to confirm the limit of a function via comparison with two other functions whose limits are easily known or computed.
       \begin{itemize}
         \item Let \(\bBb{I}\) be an interval having the point \(\yyy{a}\) as a limit point. 
         \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(\yyy{a}\) itself. 
         \item Suppose that \(\forall \x \in \bBb{I}~\land \neq \yyy{a} \then \bbb{g(\x)}\leq f(\x) \leq \rrr{h(\x)}\)
-        \item And suppose that \(\lim_{\x \to \yyy{a}}\bbb{g(\x)}=\lim_{\x \to \yyy{a}}\rrr{h(\x)} = \ppp{L}\)
-        \item Then, \(\lim_{\x \to \yyy{a}}f(\x) = \ppp{L}\)
+        \item And suppose that \(\lim_{\x \to \yyy{a}}\bbb{g(\x)}=\lim_{\x \to \yyy{a}}\rrr{h(\x)} = L\)
+        \item Then, \(\lim_{\x \to \yyy{a}}f(\x) = L\)
         \item Essentially, the hard to compute limit of the ``middle function'' is found by finding two other easy functions that ``squeeze'' the middle function at that point.
       \end{itemize}
   \end{itemize}
@@ -99,26 +105,65 @@
   \subsection{One-Sided Limit}
   \src{\link{https://en.wikipedia.org/wiki/One-sided_limit}{One-Sided Limit}}
   \begin{itemize}
-    \item 
+    \item \ddd{One-sided limit}: one of two limits of \(f(\x)\) as \(\x\) approaches a specified point from either the \bbb{left} or from the \rrr{right}.
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item From the \bbb{left}: \(\lim_{\x \to \bbb{c^-}} = L\)
+        \item From the \rrr{right}:  \(\lim_{\x \to \rrr{c^+}} = L\)
+      \end{itemize}
+    \end{multicols}
+    \item If the left and right limits exist and are equal, then 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lim_{\x \to \yyy{c}}f(\x) = L~\ssec{\Leftrightarrow}~ 
+    \lim_{\x \to \bbb{c^-}}f(\x) = L ~\land~
+    \lim_{\x \to \rrr{c^+}}f(\x) = L
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item Limits can still exist, even if the function is defined at a different point, as long as both one-sided limits approach the same value near the given input.
   \end{itemize}
   
 \end{itemize}
 
 \section{Continuity}
+\src{
+  \link{https://en.wikipedia.org/wiki/Continuous_function}{Continuous function} | 
+  \link{https://en.wikipedia.org/wiki/Classification_of_discontinuities}{Classification of discontinuities} | 
+  \link{https://book4you.org/s/0134438981}{Thomas' Calculus (2.5)}
+}
 \begin{itemize}
-  \item Sources:
+  \item Continuity of functions is one of the core concepts of topology, however, there are definitions in terms of limits that prove useful; the following is only a primer.
+
+  \subsection{Continuous Functions}
+  \begin{itemize}
+    \item \ddd{Continuous function}: a function that does not have any abrupt changes in value.
+      \begin{itemize}
+        \item I.e., a function is continuous if and only if arbitrarily small changes in its output can be assured by restricting to sufficiently small changes in its input.
+      \end{itemize}
+    \item \ddd{Discontinuous}: when a function is not continuous at a point in its domain, leading to a discontinuity; there are three classifications:
+      \begin{itemize}
+        \item \ddd{Removable}: when both \hyperref[ss: One-Sided Limit]{\ulink{one-sided limits}} exist, are finite, and are equal, but the actual value of \(f(\x)\) is not equal to the limit and equal to some other value.
+          \begin{itemize}
+            \item The discontinuity can be removed to regain continuity.
+            \item Sometimes the term \textit{removable discontinuity} is mistaken for \textit{removable singularity}, or a ``whole'' in the function \prn{the point is not defined elsewhere}.
+          \end{itemize}
+        \item \ddd{Jump}: when a single limit does not exist because the one-sided limits exist and are finite, but not equal. 
+        \begin{itemize}
+          \item A function may have a point defined at the discontinuity, but can not be made continuous.
+        \end{itemize}
+        \item \ddd{Essential}: when at least one of two one-sided limits doesn't exist.
+          \begin{itemize}
+            \item Can be the result of oscillating or unbounded functions.
+          \end{itemize}
+      \end{itemize}
+  \end{itemize}
   
-  \subsection{Continuity at a Point}
+  \subsection{Intermediate Value Theorem}
+  \src{\link{https://en.wikipedia.org/wiki/Intermediate_value_theorem}{Intermediate Value Theorem}}
   \begin{itemize}
     \item 
   \end{itemize}
 
-  \subsection{Continuous Functions}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
-  \subsection{Intermediate Value Theorem}
+  \subsection{Extreme Value Theorem}
+  \src{\link{https://en.wikipedia.org/wiki/Extreme_value_theorem}{Intermediate Value Theorem}}
   \begin{itemize}
     \item 
   \end{itemize}
