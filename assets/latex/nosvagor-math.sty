@@ -75,6 +75,16 @@
 \let\oldcap\cap
 \renewcommand{\cap}{\hspace{3pt}\ttt{\oldcap}\hspace{2pt}}
 
+\let\oldmin\min
+\renewcommand{\min}[1]{\bbb{\oldmin\left(\fg{#1}\right)}}
+\let\oldmax\max
+\renewcommand{\max}[1]{\rrr{\oldmax\left(\fg{#1}\right)}}
+
+\let\oldland\land
+\renewcommand{\land}{\ttt{\oldland}}
+
+
+
 % Common expressions
 \newcommand{\cp}[1]{p\hspace{1pt}(H_#1~|~H_\nil)}
 \def\err{\fff{\varepsilon}}

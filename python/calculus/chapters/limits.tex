@@ -7,17 +7,17 @@
 \smallskip
 
 \begin{itemize}
-  \item \ddd{Limit \(\lim_{x \to c}\)}: the value of a function \prn{or sequence} approaches as the input \prn{or index} approaches some value \prn{informal definition}  
+  \item \ddd{Limit \(\lim_{x \to c}\)}: the value of a function \prn{or sequence} approaches as the input \prn{or index} approaches some value \prn{informal definition}. 
   \begin{itemize}
-    \item Limits are used to define \hyperref[s: Continuity]{\dlink{continuity}}, \hyperref[c: Derivatives]{\dlink{derivatives}}, and \hyperref[c: Integrals]{\dlink{integrals}}
+    \item Limits are used to define \hyperref[s: Continuity]{\dlink{continuity}}, \hyperref[c: Derivatives]{\dlink{derivatives}}, and \hyperref[c: Integrals]{\dlink{integrals}}.
   \end{itemize}
 
   \subsection{Limits of a Functions and Sequences}
-  \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence}}
+  \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence} | \linky{https://youtu.be/kfF40MiS7zA?t=281}{Essence of Calculus, E7}}
   \begin{itemize}
     \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(L\) of a function near a particular input \(\yyy{c}\), i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\x \to\yyy{c}}\f(\x) = L
+    \lim_{\x \to\yyy{c}}f(\x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
       \item Reads as ``\(\f\) of \(\x\) tends to L as \(\x\) tends to \(\yyy{c}\)''
@@ -26,8 +26,8 @@
       \begin{itemize}
         \item For every real measure of \bbb{closeness} \(\bbb{\epsilon > 0}\), there exists a real \rrr{corresponding} \(\rrr{\delta >0}\), such that for all existing further approaches there exist a smaller \(\bbb{\epsilon}\), i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \f : \R \to \R,~ \yyy{c}, L \in \R \Rightarrow \lim_{\x \to\yyy{c}}\f(\x) = L 
-        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        f : \R \to \R,~ \yyy{c}, L \in \R \Rightarrow \lim_{\x \to\yyy{c}}f(\x) = L 
+        \]%%%%%%%%%[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \vspace{-24pt}
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \ssec{\Updownarrow}
@@ -38,7 +38,7 @@
             \forall \x \in \bBb{I} \left(
               0 < | \x - \yyy{c} | < \rrr{\delta} 
               \Rightarrow 
-              | \f(\x) - L | < \bbb{\depsilon}
+              | f(\x) - L | < \bbb{\depsilon}
             \right)
         \right)
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,7 +95,7 @@
       \begin{itemize}
         \item Let \(\bBb{I}\) be an interval having the point \(\yyy{a}\) as a limit point. 
         \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(\yyy{a}\) itself. 
-        \item Suppose that \(\forall \x \in \bBb{I}~\land \neq \yyy{a} \then \bbb{g(\x)}\leq f(\x) \leq \rrr{h(\x)}\)
+        \item Suppose that \(\forall \x \in \bBb{I}~\land~\x \neq \yyy{a} \then \bbb{g(\x)}\leq f(\x) \leq \rrr{h(\x)}\)
         \item And suppose that \(\lim_{\x \to \yyy{a}}\bbb{g(\x)}=\lim_{\x \to \yyy{a}}\rrr{h(\x)} = L\)
         \item Then, \(\lim_{\x \to \yyy{a}}f(\x) = L\)
         \item Essentially, the hard to compute limit of the ``middle function'' is found by finding two other easy functions that ``squeeze'' the middle function at that point.
@@ -115,7 +115,7 @@
     \item If the left and right limits exist and are equal, then 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \lim_{\x \to \yyy{c}}f(\x) = L~\ssec{\Leftrightarrow}~ 
-    \lim_{\x \to \bbb{c^-}}f(\x) = L ~\land~
+    \lim_{\x \to \bbb{c^-}}f(\x) = L ~\land
     \lim_{\x \to \rrr{c^+}}f(\x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Limits can still exist, even if the function is defined at a different point, as long as both one-sided limits approach the same value near the given input.
@@ -145,7 +145,10 @@
             \item The discontinuity can be removed to regain continuity.
             \item Sometimes the term \textit{removable discontinuity} is mistaken for \textit{removable singularity}, or a ``whole'' in the function \prn{the point is not defined elsewhere}.
           \end{itemize}
-        \item \ddd{Jump}: when a single limit does not exist because the one-sided limits exist and are finite, but not equal; points can be defined at the discontinuity, but the function can not be made continuous.
+        \item \ddd{Jump}: when a single limit does not exist because the one-sided limits exist and are finite, but not equal.
+          \begin{itemize}
+            \item Points can be defined at the discontinuity, but the function can not be made continuous.
+          \end{itemize}
         \item \ddd{Essential}: when at least one of two one-sided limits doesn't exist; can be the result of oscillating or unbounded functions.
       \end{itemize}
   \end{itemize}
@@ -153,20 +156,27 @@
   \subsection{Intermediate Value Theorem}
   \src{\link{https://en.wikipedia.org/wiki/Intermediate_value_theorem}{Intermediate Value Theorem}}
   \begin{itemize}
-    \item 
+    \item \ddd{Intermediate value theorem}: if \(f\) is a continuous function whose domain contains the interval \([a,b]\), then it \emph{takes on any given value between} \(f(a)\) and \(f(b)\) at some point within the intervals.
+    \item Relevant deductions, i.e., important corollaries:
+      \begin{itemize}
+        \item \ddd{Bolzano's theorem}: if a continuous function has values of opposite sign inside an interval, then it \emph{has a root} in that interval.
+        \item The image of a continuous function over an interval is itself an interval. 
+      \end{itemize}
+    \item Thus, the image set \(f(\bBb{I})\) \prn{which has no gaps} is also an interval, and it contains: 
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \left[
+      \min{f(a),f(b)},~
+      \max{f(a),f(b)}
+    \right]
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
-
-  \subsection{Extreme Value Theorem}
-  \src{\link{https://en.wikipedia.org/wiki/Extreme_value_theorem}{Intermediate Value Theorem}}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
 \end{itemize}
 
 \section{Limits Involving Infinity}
+\src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function\#Limits_involving_infinity}{Limits involving infinity} | \link{https://book4you.org/s/0134438981}{Thomas' Calculus (2.6)} }
 \begin{itemize}
-  \item Sources:
+  \item Let \(S \subseteq, \x \in S\) and \(f : S \mapsto \R\), then limits of these functions can approach arbitrarily large \prn{\(\pm\)} values, providing a connection to asymptotes, and thus, analysis.
+ 
 
   \subsection{Limits at Infinity}
   \begin{itemize}
@@ -178,7 +188,12 @@
     \item 
   \end{itemize}
   
-  
+  \subsection{Asymptotes of functions}
+  \src{\link{https://en.wikipedia.org/wiki/Asymptote}{Asymptote}}
+  \begin{itemize}
+    \item  \ddd{Asymptote}:  
+  \end{itemize}
+
 \end{itemize}
 
 

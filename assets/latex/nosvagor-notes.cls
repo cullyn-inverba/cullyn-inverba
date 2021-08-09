@@ -238,6 +238,9 @@
     \newcommand{\link}[2]{
         \href{#1}{\color{ggg}{{#2}\small\(\,^\text{\faChain}\)}}
     }
+    \newcommand{\linky}[2]{
+        \href{#1}{\color{ggg}{{#2}\small\(\,^\text{\,\faYoutubePlay}\)}}
+    }
 \definecolor{GGG}{HTML}{66b06b}
     \newcommand{\GGG}[1]{{\color{GGG}{#1}}}
     \newcommand{\ulink}[1]{\GGG{{#1}\small\(\,^\uparrow\)}}
