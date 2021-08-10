@@ -15,18 +15,18 @@
   \subsection{Limits of a Functions and Sequences}
   \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence} | \linky{https://youtu.be/kfF40MiS7zA?t=281}{Essence of Calculus, E7}}
   \begin{itemize}
-    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(L\) of a function near a particular input \(\yyy{c}\), i.e., 
+    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(\ppp{L}\) of a function near a particular input \(\yyy{c}\), i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\x \to\yyy{c}}f(\x) = L
+    \lim_{\x \to \yyy{c}}\f(\x) = \ppp{L}
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Reads as ``\(\f\) of \(\x\) tends to L as \(\x\) tends to \(\yyy{c}\)''
+      \item Reads as ``\(\f\) of \(\x\) tends to \(\ppp{L}\) as \(\x\) tends to \(\yyy{c}\)''
     \end{itemize}
-    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval \(\bBb{I}\), except possibly at \yyy{c} itself, leading to above definition, \ssec{if and only if}:
+    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval \(\bBb{I}\), except possibly at  c itself, leading to above definition, \ssec{if and only if}:
       \begin{itemize}
         \item For every real measure of \bbb{closeness} \(\bbb{\epsilon > 0}\), there exists a real \rrr{corresponding} \(\rrr{\delta >0}\), such that for all existing further approaches there exist a smaller \(\bbb{\epsilon}\), i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        f : \R \to \R,~ \yyy{c}, L \in \R \Rightarrow \lim_{\x \to\yyy{c}}f(\x) = L 
+        f : \R \to \R,~  c, L \in \R \Rightarrow \lim_{x \to c}f(x) = L 
         \]%%%%%%%%%[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \vspace{-24pt}
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,10 +35,10 @@
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \forall\bbb{\depsilon >0} \left(
           \exists\rrr{\delta >0} : 
-            \forall \x \in \bBb{I} \left(
-              0 < | \x - \yyy{c} | < \rrr{\delta} 
+            \forall x \in \bBb{I} \left(
+              0 < | x -  c | < \rrr{\delta} 
               \Rightarrow 
-              | f(\x) - L | < \bbb{\depsilon}
+              | f(x) - L | < \bbb{\depsilon}
             \right)
         \right)
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +54,7 @@
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \lim_{\ppp{n} \to \yyy{\infty}} x_\ppp{n} = x
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \item \ddd{\(\epsilon \) Limit of sequence}: for every measure of closeness \(\bbb{\epsilon} \), the sequence's term eventually converge to the limit, i.e.,
+      \item \ddd{\(\epsilon \) Limit of sequence}: for every measure of closeness \(\bbb{\epsilon} \), the sequence's \(x_\ppp{n}\) term eventually converge to the limit, i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \forall\bbb{\depsilon > 0} \left(
         \exists \ppp{N} \in \N \left(
@@ -73,31 +73,31 @@
   \subsection{Properties of Limits}
   \src{\link{https://en.wikipedia.org/wiki/List_of_limits}{List of limits} | \link{https://en.wikipedia.org/wiki/Squeeze_theorem}{Squeeze theorem}}
   \begin{itemize}
-    \item \ddd{Operations on a single known limit}: if \(\lim_{\x \to \yyy{c}}f(\x)=L\) then:
+    \item \ddd{Operations on a single known limit}: if \(\lim_{x \to c}f(x)=L\) then:
     \vspace{-6pt}
       \begin{itemize}
-        \item \(\lim_{\x \to \yyy{c}}[f(\x)\pm \alpha] = L \pm \alpha\)  
-        \item \(\lim_{\x \to \yyy{c}}\alpha f(\x)= \alpha L\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)^{-1}=L^{-1}, L\neq 0\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)^n = L^n, n \in \N\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)^{n ^{-1}} = L^{n ^{-1}}, n \in \N,~\text{if}~n \in \N_e \then L > 0\) 
+        \item \(\lim_{x \to c}[f(x)\pm \ppp{\alpha}] = L \pm \ppp{\alpha}\)  
+        \item \(\lim_{x \to c}\ppp{\alpha} f(x)= \ppp{\alpha} L\)
+        \item \(\lim_{x \to c}f(x)^{\ppp{-1}}=L^{\ppp{-1}}, L\neq 0\)
+        \item \(\lim_{x \to c}f(x)^\ppp{n} = L^\ppp{n}, \ppp{n} \in \N\)
+        \item \(\lim_{x \to c}f(x)^{\ppp{n ^{-1}}} = L^{\ppp{n ^{-1}}}, \ppp{n} \in \N,~\text{if}~\ppp{n} \in \N_\rrr{e} \then L > 0\) 
       \end{itemize}
     \medskip
-    \item \ddd{Operations on two known limits}: if \(\lim_{\x \to \yyy{c}}f(\x)= L_1\) and \(\lim_{\x \to \yyy{c}}g(\x)=L_2\) 
+    \item \ddd{Operations on two known limits}: if \(\lim_{x \to c}f(x)= L_1\) and \(\lim_{x \to c}g(x)=L_2\) 
     \vspace{-6pt}
       \begin{itemize}
-        \item \(\lim_{\x \to \yyy{c}}[f(\x)\pm g(\x)]=L_1\pm L_2\)
-        \item \(\lim_{\x \to \yyy{c}}[f(\x)g(\x)] = L_1 L_2\)
-        \item \(\lim_{\x \to \yyy{c}}f(\x)g(\x)^{-1} = L_1L_2^{-1}\)
+        \item \(\lim_{x \to c}[f(x)\pm g(x)]=L_1\pm L_2\)
+        \item \(\lim_{x \to c}[f(x)g(x)] = L_1 L_2\)
+        \item \(\lim_{x \to c}f(x)g(x)^{-1} = L_1L_2^{-1}\)
       \end{itemize}
     \medskip
     \item \ddd{Squeeze theorem}: used to confirm the limit of a function via comparison with two other functions whose limits are easily known or computed.
       \begin{itemize}
-        \item Let \(\bBb{I}\) be an interval having the point \(\yyy{a}\) as a limit point. 
-        \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(\yyy{a}\) itself. 
-        \item Suppose that \(\forall \x \in \bBb{I}~\land~\x \neq \yyy{a} \then \bbb{g(\x)}\leq f(\x) \leq \rrr{h(\x)}\)
-        \item And suppose that \(\lim_{\x \to \yyy{a}}\bbb{g(\x)}=\lim_{\x \to \yyy{a}}\rrr{h(\x)} = L\)
-        \item Then, \(\lim_{\x \to \yyy{a}}f(\x) = L\)
+        \item Let \(\bBb{I}\) be an interval having the point \(c\) as a limit point. 
+        \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(c\) itself. 
+        \item Suppose that \(\forall x \in \bBb{I}~\land~x \neq c \then \bbb{g(x)}\leq f(x) \leq \rrr{h(x)}\)
+        \item And suppose that \(\lim_{x \to c}\bbb{g(x)}=\lim_{x \to c}\rrr{h(x)} = L\)
+        \item Then, \(\lim_{x \to c}f(x) = L\)
         \item Essentially, the hard to compute limit of the ``middle function'' is found by finding two other easy functions that ``squeeze'' the middle function at that point.
       \end{itemize}
   \end{itemize}
@@ -105,18 +105,18 @@
   \subsection{One-Sided Limit}
   \src{\link{https://en.wikipedia.org/wiki/One-sided_limit}{One-Sided Limit}}
   \begin{itemize}
-    \item \ddd{One-sided limit}: one of two limits of \(f(\x)\) as \(\x\) approaches a specified point from either the \bbb{left} or from the \rrr{right}.
+    \item \ddd{One-sided limit}: one of two limits of \(f(x)\) as \(x\) approaches a specified point from either the \bbb{left} or from the \rrr{right}.
     \begin{multicols}{2}
       \begin{itemize}
-        \item From the \bbb{left}: \(\lim_{\x \to \bbb{c^-}} = L\)
-        \item From the \rrr{right}:  \(\lim_{\x \to \rrr{c^+}} = L\)
+        \item From the \bbb{left}: \(\lim_{x \to \bbb{c^-}} = L\)
+        \item From the \rrr{right}:  \(\lim_{x \to \rrr{c^+}} = L\)
       \end{itemize}
     \end{multicols}
     \item If the left and right limits exist and are equal, then 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\x \to \yyy{c}}f(\x) = L~\ssec{\Leftrightarrow}~ 
-    \lim_{\x \to \bbb{c^-}}f(\x) = L ~\land
-    \lim_{\x \to \rrr{c^+}}f(\x) = L
+    \lim_{x \to c}f(x) = L~\ssec{\Leftrightarrow}~ 
+    \lim_{x \to \bbb{c^-}}f(x) = L ~\land
+    \lim_{x \to \rrr{c^+}}f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Limits can still exist, even if the function is defined at a different point, as long as both one-sided limits approach the same value near the given input.
   \end{itemize}
@@ -140,7 +140,7 @@
       \end{itemize}
     \item \ddd{Discontinuous}: when a function is not continuous at a point in its domain, leading to a discontinuity; there are three classifications:
       \begin{itemize}
-        \item \ddd{Removable}: when both \hyperref[ss: One-Sided Limit]{\ulink{one-sided limits}} exist, are finite, and are equal, but the actual value of \(f(\x)\) is not equal to the limit and equal to some other value.
+        \item \ddd{Removable}: when both \hyperref[ss: One-Sided Limit]{\ulink{one-sided limits}} exist, are finite, and are equal, but the actual value of \(f(x)\) is not equal to the limit and equal to some other value.
           \begin{itemize}
             \item The discontinuity can be removed to regain continuity.
             \item Sometimes the term \textit{removable discontinuity} is mistaken for \textit{removable singularity}, or a ``whole'' in the function \prn{the point is not defined elsewhere}.
@@ -175,19 +175,42 @@
 \section{Limits Involving Infinity}
 \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function\#Limits_involving_infinity}{Limits involving infinity} | \link{https://book4you.org/s/0134438981}{Thomas' Calculus (2.6)} }
 \begin{itemize}
-  \item Let \(S \subseteq, \x \in S\) and \(f : S \mapsto \R\), then limits of these functions can approach arbitrarily large \prn{\(\pm\)} values, providing a connection to asymptotes, and thus, analysis.
+  \item Let \(S \subseteq \R, x \in S\) and \(f : S \mapsto \R\), then limits of these functions can approach arbitrarily large \prn{\(\pm\)} values, providing a connection to asymptotes, and thus, analysis.
  
 
-  \subsection{Limits at Infinity}
+  \subsection{Limits at Infinity and Infinite Limits}
   \begin{itemize}
-    \item 
+    \item \ddd{Limits at infinity}: limits defined as f(x) \(\pm\) infinity are defined much like normal limits:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \lim_{x \to \bbb{-\infty}}f(x) = L 
+    \qquad
+    \lim_{x \to \rrr{\infty}}f(x) = L
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{itemize}
+      \item Formally, for all measures of closeness \bbb{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \bbb{\epsilon}\) whenever \(x \bbb{<}  c\) or \(x \rrr{>} c\) (respectively), i.e.,
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \forall\bbb{\depsilon} > 0 \left(
+        \exists c \left(
+          \forall x \left\{\bbb{<}, \rrr{>}\right\}  c : |f(x)-L | < \bbb{\depsilon}
+          \right)
+        \right)
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{itemize}
+    \item Basic rules for rational functions \(f(x)= p(x)q(x)^{-1}\), where \(p\) and \(q\) are polynomials, the degree of each is denoted as \(\{p,q\}^\circ\), and the leading coefficients are denoted as \(P, Q\), then:
+      \begin{itemize}
+        \item \(p^\circ~\rrr{>}~q^\circ \then L\) is \(\{\rrr{+}, \bbb{-}\}\) depending on the sign of the leading coefficients.
+        \item \(p^\circ = q^\circ \then\) L \(PQ^{-1}\)
+        \item \(p^\circ~\bbb{<}~q^\circ \then L = 0\)
+      \end{itemize}
+    \item \ddd{Infinite limits}: the usual limit does not exist for a limit that grows out of bounds, however, limits with infinite values can be introduced:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \lim_{x \to c}f(x) = \infty,~\text{i.e.,}~ 
+      \forall n > 0 \left(
+        \exists \delta > 0 : f(x) > n \ifandif 0 < | x-a | < \delta
+      \right)
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
 
-  \subsection{Infinite Limits}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
   \subsection{Asymptotes of functions}
   \src{\link{https://en.wikipedia.org/wiki/Asymptote}{Asymptote}}
   \begin{itemize}
