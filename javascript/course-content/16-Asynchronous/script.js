@@ -67,9 +67,7 @@ const getCountryData = function (country) {
     });
 };
 
-btn.addEventListener("click", () => getCountryData("KOR"));
-
-getCountryData("AUS");
+// btn.addEventListener("click", () => getCountryData("KOR"));
 
 // const getCountryDataPlus = function (country) {
 //   // AJAX country 1
@@ -105,3 +103,111 @@ getCountryData("AUS");
 // };
 
 // getCountryDataPlus("PRT");
+
+// Coding Challenge
+// console.log(`Coding Challenge ↓`);
+
+function randomRange(lower = 0, upper = 1, fixed = 2) {
+  return (Math.random() * (lower - upper) + upper).toFixed(fixed);
+}
+
+function whereAmI(lat, lang) {
+  // countriesContainer.textContent = "";
+  // const [lat, lang] = [
+  //   randomRange(60, 15, 5),
+  //   randomRange(60, 15, 5),
+  // ];
+
+  console.log(lat, lang);
+  console.log("Fetching...");
+
+  fetch(`https://geocode.xyz/${lat},${lang}?geoit=json`)
+    .then(res => {
+      if (!res.ok) throw new Error(res.error);
+      return res.json();
+    })
+    .then(data => getCountryData(data.prov));
+}
+
+btn.addEventListener("click", whereAmI);
+// whereAmI();
+
+// console.log("Test start");
+// setTimeout(() => {
+//   console.log("0 sec timer");
+// }, 0);
+// Promise.resolve("Resolved promise 1").then(response =>
+//   console.log(response)
+// );
+// Promise.resolve("Resolved promise 2").then(res => {
+//   for (let i = 0; i < 1000000000; i++) {}
+//   console.log(res);
+// });
+
+// Lottery Example
+// console.log(`Lottery Example ↓`);
+
+// const lotteryPromise = new Promise((resolve, reject) => {
+//   const lucky = randomRange();
+
+//   console.log(lucky);
+//   setTimeout(() => {
+//     if (lucky >= 0.5) {
+//       resolve("You WIN! 🤑");
+//     }
+//     reject(new Error("Sucks to suck 💩"));
+//   }, 1000);
+// });
+
+// lotteryPromise
+//   .then(res => console.log(res))
+//   .catch(err => console.log(err));
+
+// function wait(seconds) {
+//   return new Promise(resolve => setTimeout(resolve, seconds * 1000));
+// }
+
+// let waited = 0;
+
+// wait(1)
+//   .then(() => {
+//     waited++;
+//     console.log(`I waited for ${waited} seconds`);
+//     return wait(1);
+//   })
+//   .then(() => {
+//     waited++;
+//     console.log(`I waited for ${waited} seconds`);
+//     return wait(1);
+//   })
+//   .then(() => {
+//     waited++;
+//     console.log(`I waited for ${waited} seconds`);
+//     return wait(1);
+//   })
+//   .then(() => {
+//     waited++;
+//     console.log(`I waited for ${waited} seconds`);
+//     return wait(1);
+//   })
+//   .then(() => {
+//     waited++;
+//     console.log(`I waited for ${waited} seconds`);
+//     return wait(1);
+//   });
+
+// Promise.resolve(`immediately resolved`).then(x => console.log(x));
+// Promise.reject(new Error("immediately rejected")).catch(err =>
+//   console.error(err)
+// );
+
+// function getPosition() {
+//   return new Promise((res, rej) =>
+//     navigator.geolocation.getCurrentPosition(res, rej)
+//   );
+// }
+
+// getPosition().then(pos => {
+//   const { latitude: lat, longitude: lang } = pos.coords;
+//   whereAmI(lat, lang);
+// });
