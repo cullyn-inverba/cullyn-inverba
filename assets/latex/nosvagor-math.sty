@@ -82,7 +82,12 @@
 
 \let\oldland\land
 \renewcommand{\land}{\ttt{\oldland}}
+\let\oldlor\lor
+\renewcommand{\lor}{\fff{\oldlor}}
 
+\RequirePackage{stackengine}
+\renewcommand{\pm}{\mathbin{\ensurestackMath{\abovebaseline[-4pt]{%
+  \stackunder[-4pt]{\color{rrr}\mathsmaller{+}}{\color{bbb}-}}}}}
 
 
 % Common expressions

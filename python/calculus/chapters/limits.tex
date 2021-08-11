@@ -187,18 +187,18 @@
     \lim_{x \to \rrr{\infty}}f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Formally, for all measures of closeness \bbb{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \bbb{\epsilon}\) whenever \(x \bbb{<}  c\) or \(x \rrr{>} c\) (respectively), i.e.,
+      \item Formally, for all measures of closeness \bbb{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \bbb{\epsilon}\) whenever \(x \bbb{<}  c\) \fff{or} \(x \rrr{>} c\) (respectively), i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \forall\bbb{\depsilon} > 0 \left(
         \exists c \left(
-          \forall x \left\{\bbb{<}, \rrr{>}\right\}  c : |f(x)-L | < \bbb{\depsilon}
+          \forall x \fff{\left\{\bbb{<}, \rrr{>}\right\}}  c : |f(x)-L | < \bbb{\depsilon}
           \right)
         \right)
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \end{itemize}
-    \item Basic rules for rational functions \(f(x)= p(x)q(x)^{-1}\), where \(p\) and \(q\) are polynomials, the degree of each is denoted as \(\{p,q\}^\circ\), and the leading coefficients are denoted as \(P, Q\), then:
+    \item Basic rules for rational functions \(f(x)= p(x)q(x)^{-1}\), where \(p\) and \(q\) are polynomials, the degree of each is denoted as \(\fff{\{}p\fff{,}q\fff{\}}^\circ\), and the leading coefficients are denoted as \(P, Q\), then:
       \begin{itemize}
-        \item \(p^\circ~\rrr{>}~q^\circ \then L\) is \(\{\rrr{+}, \bbb{-}\}\) depending on the sign of the leading coefficients.
+        \item \(p^\circ~\rrr{>}~q^\circ \then L\) is \(\fff{\{\rrr{+}, \bbb{-}\}}\) depending on the sign of the leading coefficients.
         \item \(p^\circ = q^\circ \then\) L \(PQ^{-1}\)
         \item \(p^\circ~\bbb{<}~q^\circ \then L = 0\)
       \end{itemize}
@@ -212,9 +212,23 @@
   \end{itemize}
 
   \subsection{Asymptotes of functions}
-  \src{\link{https://en.wikipedia.org/wiki/Asymptote}{Asymptote}}
+  \src{\link{https://en.wikipedia.org/wiki/Asymptote}{Asymptotes}}
   \begin{itemize}
-    \item  \ddd{Asymptote}:  
+    \item  \ddd{Asymptote}: a tangent line of a curve at a point at infinity; the distance between the curve and the line approaches zero as a coordinate tends to infinity.
+    \item There are three kinds of asymptotes: \textit{horizontal, vertical} and \textit{oblique}; nature of the asymptote is dependent on a function's relation to infinity.
+      \begin{itemize}
+        \item \ddd{Horizontal asymptotes}: a result of limits at infinity, i.e., when \(x\to \pm \infty\)
+        \item \ddd{Vertical asymptotes}: a result of infinite limits, i.e., when \(x\to \pm a = \pm \infty\)
+        \item \ddd{Oblique asymptotes}: when a linear asymptote is not parallel to either axis. \(f(x)\) is asymptotic to the straight line \(y=mx+n (m\neq 0)\) if:
+        \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \lim_{x \to \pm\infty} \left[
+          f(x) - \left(
+            mx + n
+          \right) 
+        \right] = 0
+        \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \end{itemize}
+    
   \end{itemize}
 
 \end{itemize}
