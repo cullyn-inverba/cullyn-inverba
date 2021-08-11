@@ -44,11 +44,11 @@
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
       \end{itemize}
-    \item Functions do not have a limit when the function:
+    \item Functions \fff{do not have} a limit when the function:
       \begin{itemize}
-        \item has a unit step, i.e., it ``jumps'' at a point;
-        \item is not bounded, i.e., it tends towards infinity;
-        \item or does not stay close to any single number, i.e., it oscillates too much. 
+        \item has a \fff{unit step}, i.e., it ``jumps'' at a point;
+        \item is \fff{not bounded}, i.e., it tends towards infinity;
+        \item or \fff{oscillates}, i.e., does not stay close to any single number. 
       \end{itemize}
     \item \ddd{Limit of a sequence}: the value that the terms of a sequence (\(x_\ppp{n}\)) ``tends to'' \prn{and not to any other} as \(\ppp{n}\) approaches infinity \prn{or some point}, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,13 +91,13 @@
         \item \(\lim_{x \to c}f(x)g(x)^{-1} = L_1L_2^{-1}\)
       \end{itemize}
     \medskip
-    \item \ddd{Squeeze theorem}: used to confirm the limit of a function via comparison with two other functions whose limits are easily known or computed.
+    \item \ddd{Squeeze theorem}: used to \emph{confirm the limit} of a \emph{difficult to compute function} via comparison with two other functions whose limits are easily known or computed.
       \begin{itemize}
         \item Let \(\bBb{I}\) be an interval having the point \(c\) as a limit point. 
         \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(c\) itself. 
-        \item Suppose that \(\forall x \in \bBb{I}~\land~x \neq c \then \bbb{g(x)}\leq f(x) \leq \rrr{h(x)}\)
+        \item Suppose that \(\forall x \in \bBb{I}~\land~x \neq c \then \bbb{g(x)}\leq \ooo{f(x)} \leq \rrr{h(x)}\)
         \item And suppose that \(\lim_{x \to c}\bbb{g(x)}=\lim_{x \to c}\rrr{h(x)} = L\)
-        \item Then, \(\lim_{x \to c}f(x) = L\)
+        \item Then, \(\lim_{x \to c}\ooo{f(x)} = L\)
         \item Essentially, the hard to compute limit of the ``middle function'' is found by finding two other easy functions that ``squeeze'' the middle function at that point.
       \end{itemize}
   \end{itemize}
