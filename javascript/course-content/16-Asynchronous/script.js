@@ -26,110 +26,110 @@ const renderCountry = function (data, className = "") {
   countriesContainer.insertAdjacentHTML("beforeend", html);
 };
 
-function renderError(msg) {
-  countriesContainer.textContent = "";
-  countriesContainer.insertAdjacentHTML("beforeend", msg);
-}
+// function renderError(msg) {
+//   countriesContainer.textContent = "";
+//   countriesContainer.insertAdjacentHTML("beforeend", msg);
+// }
 
-function getJSON(url, errorMsg = "Something went wrong") {
-  return fetch(url).then(response => {
-    if (!response.ok)
-      throw new Error(`${errorMsg} (${response.status})`);
-    return response.json();
-  });
-}
-
-const getCountryData = function (country) {
-  getJSON(
-    `https://restcountries.eu/rest/v2/alpha/${country}`,
-    "Country not found"
-  )
-    .then(data => {
-      renderCountry(data);
-
-      const neighbor = data.borders[0];
-      if (!neighbor) throw new Error("No neighbor found");
-
-      return getJSON(
-        `https://restcountries.eu/rest/v2/alpha/${neighbor}`,
-        "Country not found"
-      );
-    })
-    .then(data => renderCountry(data, "neighbour"))
-    .catch(err => {
-      console.error(`${err}💥💥💥`);
-      renderError(
-        `Something went wrong 💥💥💥\n${err.message}. Try again!`
-      );
-    })
-    .finally(() => {
-      countriesContainer.style.opacity = "1";
-    });
-};
-
-// btn.addEventListener("click", () => getCountryData("KOR"));
-
-// const getCountryDataPlus = function (country) {
-//   // AJAX country 1
-//   const request = new XMLHttpRequest();
-//   request.open(
-//     "GET",
-//     `https://restcountries.eu/rest/v2/alpha/${country}`
-//   );
-//   request.send();
-
-//   request.addEventListener("load", function () {
-//     const data = JSON.parse(this.responseText);
-
-//     // Rneder country 1
-//     renderCountry(data);
-
-//     // Get neighbor
-//     const [neighbor] = data.borders;
-
-//     if (!neighbor) return;
-
-//     const request2 = new XMLHttpRequest();
-//     request2.open(
-//       "GET",
-//       `https://restcountries.eu/rest/v2/alpha/${neighbor}`
-//     );
-//     request2.send();
-//     request2.addEventListener("load", function () {
-//       const data2 = JSON.parse(this.responseText);
-//       renderCountry(data2, "neighbour");
-//     });
+// function getJSON(url, errorMsg = "Something went wrong") {
+//   return fetch(url).then(response => {
+//     if (!response.ok)
+//       throw new Error(`${errorMsg} (${response.status})`);
+//     return response.json();
 //   });
+// }
+
+// const getCountryData = function (country) {
+//   getJSON(
+//     `https://restcountries.eu/rest/v2/alpha/${country}`,
+//     "Country not found"
+//   )
+//     .then(data => {
+//       renderCountry(data);
+
+//       const neighbor = data.borders[0];
+//       if (!neighbor) throw new Error("No neighbor found");
+
+//       return getJSON(
+//         `https://restcountries.eu/rest/v2/alpha/${neighbor}`,
+//         "Country not found"
+//       );
+//     })
+//     .then(data => renderCountry(data, "neighbour"))
+//     .catch(err => {
+//       console.error(`${err}💥💥💥`);
+//       renderError(
+//         `Something went wrong 💥💥💥\n${err.message}. Try again!`
+//       );
+//     })
+//     .finally(() => {
+//       countriesContainer.style.opacity = "1";
+//     });
 // };
 
-// getCountryDataPlus("PRT");
+// // btn.addEventListener("click", () => getCountryData("KOR"));
 
-// Coding Challenge
-// console.log(`Coding Challenge ↓`);
+// // const getCountryDataPlus = function (country) {
+// //   // AJAX country 1
+// //   const request = new XMLHttpRequest();
+// //   request.open(
+// //     "GET",
+// //     `https://restcountries.eu/rest/v2/alpha/${country}`
+// //   );
+// //   request.send();
 
-function randomRange(lower = 0, upper = 1, fixed = 2) {
-  return (Math.random() * (lower - upper) + upper).toFixed(fixed);
-}
+// //   request.addEventListener("load", function () {
+// //     const data = JSON.parse(this.responseText);
 
-function whereAmI(lat, lang) {
-  // countriesContainer.textContent = "";
-  // const [lat, lang] = [
-  //   randomRange(60, 15, 5),
-  //   randomRange(60, 15, 5),
-  // ];
+// //     // Rneder country 1
+// //     renderCountry(data);
 
-  console.log(lat, lang);
-  console.log("Fetching...");
+// //     // Get neighbor
+// //     const [neighbor] = data.borders;
 
-  fetch(`https://geocode.xyz/${lat},${lang}?geoit=json`)
-    .then(res => {
-      if (!res.ok) throw new Error(res.error);
-      return res.json();
-    })
-    .then(data => getCountryData(data.prov));
-}
+// //     if (!neighbor) return;
 
-btn.addEventListener("click", whereAmI);
+// //     const request2 = new XMLHttpRequest();
+// //     request2.open(
+// //       "GET",
+// //       `https://restcountries.eu/rest/v2/alpha/${neighbor}`
+// //     );
+// //     request2.send();
+// //     request2.addEventListener("load", function () {
+// //       const data2 = JSON.parse(this.responseText);
+// //       renderCountry(data2, "neighbour");
+// //     });
+// //   });
+// // };
+
+// // getCountryDataPlus("PRT");
+
+// // Coding Challenge
+// // console.log(`Coding Challenge ↓`);
+
+// function randomRange(lower = 0, upper = 1, fixed = 2) {
+//   return (Math.random() * (lower - upper) + upper).toFixed(fixed);
+// }
+
+// function whereAmI(lat, lang) {
+//   // countriesContainer.textContent = "";
+//   // const [lat, lang] = [
+//   //   randomRange(60, 15, 5),
+//   //   randomRange(60, 15, 5),
+//   // ];
+
+//   console.log(lat, lang);
+//   console.log("Fetching...");
+
+//   fetch(`https://geocode.xyz/${lat},${lang}?geoit=json`)
+//     .then(res => {
+//       if (!res.ok) throw new Error(res.error);
+//       return res.json();
+//     })
+//     .then(data => getCountryData(data.prov));
+// }
+
+// btn.addEventListener("click", whereAmI);
 // whereAmI();
 
 // console.log("Test start");
@@ -167,47 +167,126 @@ btn.addEventListener("click", whereAmI);
 //   return new Promise(resolve => setTimeout(resolve, seconds * 1000));
 // }
 
-// let waited = 0;
+// // let waited = 0;
 
-// wait(1)
-//   .then(() => {
-//     waited++;
-//     console.log(`I waited for ${waited} seconds`);
-//     return wait(1);
-//   })
-//   .then(() => {
-//     waited++;
-//     console.log(`I waited for ${waited} seconds`);
-//     return wait(1);
-//   })
-//   .then(() => {
-//     waited++;
-//     console.log(`I waited for ${waited} seconds`);
-//     return wait(1);
-//   })
-//   .then(() => {
-//     waited++;
-//     console.log(`I waited for ${waited} seconds`);
-//     return wait(1);
-//   })
-//   .then(() => {
-//     waited++;
-//     console.log(`I waited for ${waited} seconds`);
-//     return wait(1);
+// // wait(1)
+// //   .then(() => {
+// //     waited++;
+// //     console.log(`I waited for ${waited} seconds`);
+// //     return wait(1);
+// //   })
+// //   .then(() => {
+// //     waited++;
+// //     console.log(`I waited for ${waited} seconds`);
+// //     return wait(1);
+// //   })
+// //   .then(() => {
+// //     waited++;
+// //     console.log(`I waited for ${waited} seconds`);
+// //     return wait(1);
+// //   })
+// //   .then(() => {
+// //     waited++;
+// //     console.log(`I waited for ${waited} seconds`);
+// //     return wait(1);
+// //   })
+// //   .then(() => {
+// //     waited++;
+// //     console.log(`I waited for ${waited} seconds`);
+// //     return wait(1);
+// //   });
+
+// // Promise.resolve(`immediately resolved`).then(x => console.log(x));
+// // Promise.reject(new Error("immediately rejected")).catch(err =>
+// //   console.error(err)
+// // );
+
+// // function getPosition() {
+// //   return new Promise((res, rej) =>
+// //     navigator.geolocation.getCurrentPosition(res, rej)
+// //   );
+// // }
+
+// // getPosition().then(pos => {
+// //   const { latitude: lat, longitude: lang } = pos.coords;
+// //   whereAmI(lat, lang);
+// // });
+
+// const imgContainer = document.querySelector(".images");
+// let c = 0;
+
+// const createImage = function () {
+//   c = c > 2 ? c - 2 : c + 1;
+//   console.log(c);
+//   const path = `img/img-${c}.jpg`;
+//   return new Promise((res, rej) => {
+//     const img = document.createElement("img");
+//     img.src = path;
+
+//     img.addEventListener("load", () => {
+//       imgContainer.append(img);
+//       res(img);
+//     });
+
+//     img.addEventListener("error", () => {
+//       rej(new Error("Image not found"));
+//     });
 //   });
+// };
 
-// Promise.resolve(`immediately resolved`).then(x => console.log(x));
-// Promise.reject(new Error("immediately rejected")).catch(err =>
-//   console.error(err)
-// );
+// let currentImg;
 
-// function getPosition() {
-//   return new Promise((res, rej) =>
-//     navigator.geolocation.getCurrentPosition(res, rej)
-//   );
-// }
+// createImage()
+//   .then(img => {
+//     currentImg = img;
+//     return wait(2);
+//   })
+//   .then(() => {
+//     currentImg.style.display = "none";
+//     return createImage();
+//   })
+//   .then(img => {
+//     currentImg = img;
+//     return wait(2);
+//   })
+//   .then(() => {
+//     currentImg.style.display = "none";
+//     return createImage();
+//   })
+//   .then(img => {
+//     currentImg = img;
+//     return wait(2);
+//   })
+//   .then(() => {
+//     currentImg.style.display = "none";
+//     return createImage();
+//   })
+//   .catch(err => (imgContainer.textContent = err));
 
-// getPosition().then(pos => {
-//   const { latitude: lat, longitude: lang } = pos.coords;
-//   whereAmI(lat, lang);
-// });
+function getPosition() {
+  return new Promise((res, rej) =>
+    navigator.geolocation.getCurrentPosition(res, rej)
+  );
+}
+
+const whereAmI = async function () {
+  const pos = await getPosition();
+  const { latitude: lat, longitude: lang } = pos.coords;
+
+  const resGeo = await fetch(
+    `https://geocode.xyz/${lat},${lang}?geoit=json`
+  );
+
+  const dataGeo = await resGeo.json();
+
+  const res = await fetch(
+    `https://restcountries.eu/rest/v2/name/${dataGeo.country}`
+  );
+  const data = await res.json();
+  renderCountry(data[0]);
+  countriesContainer.style.opacity = "1";
+};
+
+whereAmI();
+
+console.log("first");
