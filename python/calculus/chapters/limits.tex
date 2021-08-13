@@ -115,8 +115,8 @@
     \item If the left and right limits exist and are equal, then 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \lim_{x \to c}f(x) = L \ifandif \hspace{-6pt}
-    \lim_{x \to \bbb{c^-}}f(x) = L \land \hspace{-6pt}
-    \lim_{x \to \rrr{c^+}}f(x) = L
+    \lim_{x \to \bbb{c^-}}\hspace{-3pt} f(x) = L \land \hspace{-6pt}
+    \lim_{x \to \rrr{c^+}}\hspace{-3pt} f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Limits can still exist, even if the function is defined at a different point, as long as both one-sided limits approach the same value near the given input.
   \end{itemize}
@@ -187,11 +187,11 @@
     \lim_{x \to \rrr{\infty}}f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Formally, for all measures of closeness \xxx{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \xxx{\epsilon}\) whenever \(x\lt c \lor x\gt c\) (respectively), i.e.,
+      \item Formally, for all measures of closeness \xxx{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \xxx{\epsilon}\) whenever \(\bbb{x < c} \lor \rrr{x > c}\) (respectively), i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \forall\xxx{\depsilon > 0} \left(
         \exists c \left(
-          \forall x \fff{\left\{\bbb{<}, \rrr{>}\right\}}  c : |f(x)-L | \lt \xxx{\depsilon}
+          \forall x~\fff{\left\{\bbb{<}, \rrr{>}\right\}}~c : |f(x)-L | < \xxx{\depsilon}
           \right)
         \right)
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
