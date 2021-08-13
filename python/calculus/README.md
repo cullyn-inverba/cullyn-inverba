@@ -7,6 +7,7 @@
 ## Resources
 
 - [Thomas' Calculus](https://1lib.us/book/3518261/0a6b3d)
+- [List of calculus topics](https://en.wikipedia.org/wiki/List_of_calculus_topics)
 
 ## Exercises
 

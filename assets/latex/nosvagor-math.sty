@@ -81,14 +81,13 @@
 \renewcommand{\max}[1]{\rrr{\oldmax\left(\fg{#1}\right)}}
 
 \let\oldland\land
-\renewcommand{\land}{\ttt{\oldland}}
+\renewcommand{\land}{~\ttt{\oldland}~}
 \let\oldlor\lor
-\renewcommand{\lor}{\fff{\oldlor}}
+\renewcommand{\lor}{~\fff{\oldlor}~}
 
 \RequirePackage{stackengine}
 \renewcommand{\pm}{\mathbin{\ensurestackMath{\abovebaseline[-4pt]{%
   \stackunder[-4pt]{\color{rrr}\mathsmaller{+}}{\color{bbb}-}}}}}
-
 
 % Common expressions
 \newcommand{\cp}[1]{p\hspace{1pt}(H_#1~|~H_\nil)}
@@ -98,6 +97,8 @@
 \def\f{\emph{f}}
 \def\then{\Rightarrow}
 \def\ifandif{~\ssec{\Leftrightarrow}~}
+\def\gt{~\rrr{>}~}
+\def\lt{~\bbb{<}~}
 
 % Annoying words to type
 \def\hopital{L'H\^{o}pital}

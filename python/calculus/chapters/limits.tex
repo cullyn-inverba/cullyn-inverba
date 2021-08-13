@@ -24,7 +24,7 @@
     \end{itemize}
     \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval \(\bBb{I}\), except possibly at  c itself, leading to above definition, \ssec{if and only if}:
       \begin{itemize}
-        \item For every real measure of \bbb{closeness} \(\bbb{\epsilon > 0}\), there exists a real \rrr{corresponding} \(\rrr{\delta >0}\), such that for all existing further approaches there exist a smaller \(\bbb{\epsilon}\), i.e.,
+        \item For every real measure of \xxx{closeness} \(\xxx{\epsilon > 0}\), there exists a real \yyy{corresponding} \(\yyy{\delta >0}\), such that for all existing further approaches there exist a smaller \(\xxx{\epsilon}\), i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         f : \R \to \R,~  c, L \in \R \Rightarrow \lim_{x \to c}f(x) = L 
         \]%%%%%%%%%[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,12 +33,12 @@
         \ssec{\Updownarrow}
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \forall\bbb{\depsilon >0} \left(
-          \exists\rrr{\delta >0} : 
+        \forall\xxx{\depsilon >0} \left(
+          \exists\yyy{\delta >0} : 
             \forall x \in \bBb{I} \left(
-              0 < | x -  c | < \rrr{\delta} 
+              0 < | x -  c | < \yyy{\delta} 
               \Rightarrow 
-              | f(x) - L | < \bbb{\depsilon}
+              | f(x) - L | < \xxx{\depsilon}
             \right)
         \right)
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,7 +48,7 @@
       \begin{itemize}
         \item has a \fff{unit step}, i.e., it ``jumps'' at a point;
         \item is \fff{not bounded}, i.e., it tends towards infinity;
-        \item or \fff{oscillates}, i.e., does not stay close to any single number. 
+        \item or it \fff{oscillates}, i.e., does not stay close to any single number. 
       \end{itemize}
     \item \ddd{Limit of a sequence}: the value that the terms of a sequence (\(x_\ppp{n}\)) ``tends to'' \prn{and not to any other} as \(\ppp{n}\) approaches infinity \prn{or some point}, i.e.,
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,10 +56,10 @@
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \item \ddd{\(\epsilon \) Limit of sequence}: for every measure of closeness \(\bbb{\epsilon} \), the sequence's \(x_\ppp{n}\) term eventually converge to the limit, i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \forall\bbb{\depsilon > 0} \left(
+      \forall\xxx{\depsilon > 0} \left(
         \exists \ppp{N} \in \N \left(
           \forall\ppp{n} \in \N \left(
-            \ppp{n} \geq \ppp{N} \Rightarrow |x_\ppp{n}-x| < \bbb{\depsilon}
+            \ppp{n} \geq \ppp{N} \Rightarrow |x_\ppp{n}-x| < \xxx{\depsilon}
           \right)
         \right)
       \right)
@@ -80,7 +80,7 @@
         \item \(\lim_{x \to c}\ppp{\alpha} f(x)= \ppp{\alpha} L\)
         \item \(\lim_{x \to c}f(x)^{\ppp{-1}}=L^{\ppp{-1}}, L\neq 0\)
         \item \(\lim_{x \to c}f(x)^\ppp{n} = L^\ppp{n}, \ppp{n} \in \N\)
-        \item \(\lim_{x \to c}f(x)^{\ppp{n ^{-1}}} = L^{\ppp{n ^{-1}}}, \ppp{n} \in \N,~\text{if}~\ppp{n} \in \N_\rrr{e} \then L > 0\) 
+        \item \(\lim_{x \to c}f(x)^{\ppp{n ^{-1}}} = L^{\ppp{n ^{-1}}}, \ppp{n} \in \N,~\text{if}~\ppp{n} \in \N_\rrr{e} \then L ~\rrr{>}~0\) 
       \end{itemize}
     \medskip
     \item \ddd{Operations on two known limits}: if \(\lim_{x \to c}f(x)= L_1\) and \(\lim_{x \to c}g(x)=L_2\) 
@@ -95,7 +95,7 @@
       \begin{itemize}
         \item Let \(\bBb{I}\) be an interval having the point \(c\) as a limit point. 
         \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(c\) itself. 
-        \item Suppose that \(\forall x \in \bBb{I}~\land~x \neq c \then \bbb{g(x)}\leq \ooo{f(x)} \leq \rrr{h(x)}\)
+        \item Suppose that \(\forall x \in \bBb{I}\land x \neq c \then \bbb{g(x)}\leq \ooo{f(x)} \leq \rrr{h(x)}\)
         \item And suppose that \(\lim_{x \to c}\bbb{g(x)}=\lim_{x \to c}\rrr{h(x)} = L\)
         \item Then, \(\lim_{x \to c}\ooo{f(x)} = L\)
         \item Essentially, the hard to compute limit of the ``middle function'' is found by finding two other easy functions that ``squeeze'' the middle function at that point.
@@ -114,8 +114,8 @@
     \end{multicols}
     \item If the left and right limits exist and are equal, then 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{x \to c}f(x) = L~\ssec{\Leftrightarrow}~ 
-    \lim_{x \to \bbb{c^-}}f(x) = L ~\land
+    \lim_{x \to c}f(x) = L \ifandif \hspace{-6pt}
+    \lim_{x \to \bbb{c^-}}f(x) = L \land \hspace{-6pt}
     \lim_{x \to \rrr{c^+}}f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item Limits can still exist, even if the function is defined at a different point, as long as both one-sided limits approach the same value near the given input.
@@ -187,11 +187,11 @@
     \lim_{x \to \rrr{\infty}}f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Formally, for all measures of closeness \bbb{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \bbb{\epsilon}\) whenever \(x \bbb{<}  c\) \fff{or} \(x \rrr{>} c\) (respectively), i.e.,
+      \item Formally, for all measures of closeness \xxx{\(\epsilon\)} there exists a point \( c\) such that \(|f(x)-L| < \xxx{\epsilon}\) whenever \(x\lt c \lor x\gt c\) (respectively), i.e.,
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \forall\bbb{\depsilon} > 0 \left(
+      \forall\xxx{\depsilon > 0} \left(
         \exists c \left(
-          \forall x \fff{\left\{\bbb{<}, \rrr{>}\right\}}  c : |f(x)-L | < \bbb{\depsilon}
+          \forall x \fff{\left\{\bbb{<}, \rrr{>}\right\}}  c : |f(x)-L | \lt \xxx{\depsilon}
           \right)
         \right)
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,9 +204,9 @@
       \end{itemize}
     \item \ddd{Infinite limits}: the usual limit does not exist for a limit that grows out of bounds, however, limits with infinite values can be introduced:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \lim_{x \to c}f(x) = \infty,~\text{i.e.,}~ 
-      \forall n > 0 \left(
-        \exists \delta > 0 : f(x) > n \ifandif 0 < | x-a | < \delta
+      \lim_{x \to c}f(x) = \infty,\quad \text{i.e.,}\quad 
+      \forall \xxx{n > 0} \left(
+        \exists \yyy{\delta > 0} : f(x) > \xxx{n} \ifandif 0 < | x-a | < \yyy{\delta}
       \right)
       \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{itemize}
