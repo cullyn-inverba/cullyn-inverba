@@ -15,14 +15,14 @@
   \subsection{Limits of a Functions and Sequences}
   \src{\link{https://en.wikipedia.org/wiki/Limit_of_a_function}{Limit of a function} | \link{https://en.wikipedia.org/wiki/Limit_of_a_sequence}{Limit of a sequence} | \linky{https://youtu.be/kfF40MiS7zA?t=281}{Essence of Calculus, E7}}
   \begin{itemize}
-    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior \(\ppp{L}\) of a function near a particular input \(\yyy{c}\), i.e., 
+    \item \ddd{Limit of a function}: a fundament concept in calculus and analysis concerning the behavior of a function near a particular input \(c\), i.e., 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \lim_{\x \to \yyy{c}}\f(\x) = \ppp{L}
+    \lim_{x \to c}f(x) = L
     \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item Reads as ``\(\f\) of \(\x\) tends to \(\ppp{L}\) as \(\x\) tends to \(\yyy{c}\)''
+      \item Reads as ``\(f\) of \(x\) tends to \(L\) as \(x\) tends to \(c\)''
     \end{itemize}
-    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval \(\bBb{I}\), except possibly at  c itself, leading to above definition, \ssec{if and only if}:
+    \item \ddd{\(\epsilon,\delta\) Limit of function}: a formalized definition, wherein \(f(x)\) is defined on an open interval \(\bBb{\mathcal{I}}\), except possibly at  c itself, leading to above definition, \ssec{if and only if}:
       \begin{itemize}
         \item For every real measure of \xxx{closeness} \(\xxx{\epsilon > 0}\), there exists a real \yyy{corresponding} \(\yyy{\delta >0}\), such that for all existing further approaches there exist a smaller \(\xxx{\epsilon}\), i.e.,
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,7 +35,7 @@
         \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \forall\xxx{\depsilon >0} \left(
           \exists\yyy{\delta >0} : 
-            \forall x \in \bBb{I} \left(
+            \forall x \in \bBb{\mathcal{I}} \left(
               0 < | x -  c | < \yyy{\delta} 
               \Rightarrow 
               | f(x) - L | < \xxx{\depsilon}
@@ -93,9 +93,9 @@
     \medskip
     \item \ddd{Squeeze theorem}: used to \emph{confirm the limit} of a \emph{difficult to compute function} via comparison with two other functions whose limits are easily known or computed.
       \begin{itemize}
-        \item Let \(\bBb{I}\) be an interval having the point \(c\) as a limit point. 
-        \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{I}\), except possibly at \(c\) itself. 
-        \item Suppose that \(\forall x \in \bBb{I}\land x \neq c \then \bbb{g(x)}\leq \ooo{f(x)} \leq \rrr{h(x)}\)
+        \item Let \(\bBb{\mathcal{I}}\) be an interval having the point \(c\) as a limit point. 
+        \item Let \(g,f\), and \(h\), be functions defined on \(\bBb{\mathcal{I}}\), except possibly at \(c\) itself. 
+        \item Suppose that \(\forall x \in \bBb{\mathcal{I}}\land x \neq c \then \bbb{g(x)}\leq \ooo{f(x)} \leq \rrr{h(x)}\)
         \item And suppose that \(\lim_{x \to c}\bbb{g(x)}=\lim_{x \to c}\rrr{h(x)} = L\)
         \item Then, \(\lim_{x \to c}\ooo{f(x)} = L\)
         \item Essentially, the hard to compute limit of the ``middle function'' is found by finding two other easy functions that ``squeeze'' the middle function at that point.
@@ -162,7 +162,7 @@
         \item \ddd{Bolzano's theorem}: if a continuous function has values of opposite sign inside an interval, then it \emph{has a root} in that interval.
         \item The image of a continuous function over an interval is itself an interval. 
       \end{itemize}
-    \item Thus, the image set \(f(\bBb{I})\) \prn{which has no gaps} is also an interval, and it contains: 
+    \item Thus, the image set \(f(\bBb{\mathcal{I}})\) \prn{which has no gaps} is also an interval, and it contains: 
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \left[
       \min{f(a),f(b)},~
@@ -199,12 +199,12 @@
     \item Basic rules for rational functions \(f(x)= p(x)q(x)^{-1}\), where \(p\) and \(q\) are polynomials, the degree of each is denoted as \(\fff{\{}p\fff{,}q\fff{\}}^\circ\), and the leading coefficients are denoted as \(P, Q\), then:
       \begin{itemize}
         \item \(p^\circ~\rrr{>}~q^\circ \then L\) is \(\fff{\{\rrr{+}, \bbb{-}\}}\) depending on the sign of the leading coefficients.
-        \item \(p^\circ = q^\circ \then\) L \(PQ^{-1}\)
+        \item \(p^\circ = q^\circ \then\) L = \(PQ^{-1}\)
         \item \(p^\circ~\bbb{<}~q^\circ \then L = 0\)
       \end{itemize}
     \item \ddd{Infinite limits}: the usual limit does not exist for a limit that grows out of bounds, however, limits with infinite values can be introduced:
       \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \lim_{x \to c}f(x) = \infty,\quad \text{i.e.,}\quad 
+      \lim_{x \to a}f(x) = \infty,\quad \text{i.e.,}\quad 
       \forall \xxx{n > 0} \left(
         \exists \yyy{\delta > 0} : f(x) > \xxx{n} \ifandif 0 < | x-a | < \yyy{\delta}
       \right)
@@ -229,5 +229,4 @@
         \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \end{itemize}
   \end{itemize}
-
-  If the \end{itemize}
+\end{itemize}
