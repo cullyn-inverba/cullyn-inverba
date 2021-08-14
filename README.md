@@ -75,7 +75,7 @@
 
 <table align="center">
   <tr>
-    <td align="center"><strong><a href="javascript/">javascript</a></strong></td>
+    <td align="center"><strong><a href="javascript/">javaScript (+)</a></strong></td>
     <td align="center"><strong><a href="solidity/">solidity</a></strong></td>
     <td align="center"><strong><a href="go/">go</a></strong></td>
     <td align="center"><strong><a href="python/">python</a></strong></td>
