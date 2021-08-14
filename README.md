@@ -1,19 +1,19 @@
 <h1 align="center">University Resources</h1>
 <p align="center">
+<kbd>
   <img width="512" src="assets/images/psu.jpg">
+</kbd>
 </p>
 
-<h2 align="center">Summer / Fall 2021 Classes</h2>
+<h2 align="center">Fall 2021 Classes</h2>
 
 <table align="center">
   <tr>
-    <td align="center"><strong><a href="capstone/">Cultural Ecology</a></strong></td>
-    <td align="center"><strong><a href="c++/">C++</a></strong></td>
-    <td align="center"><strong><a href="python/linear/mth-343">Applied <br/> Linear Algebra</a></strong></td>
-    <td align="center"><strong><a href="python/calculus/">Calculus III</a></strong></td>
+    <td align="center"><strong><a href="c++/">c++ <br> (intro cs)</a></strong></td>
+    <td align="center"><strong><a href="python/linear/mth-343">linear algebra <br> (applied) </a></strong></td>
+    <td align="center"><strong><a href="python/calculus/">calculus <br> (iii)</a></strong></td>
   </tr>
   <tr>
-    <td align="center"><a href="capstone/"><img src="assets/images/capstone.ico"></a></td>
     <td align="center"><a href="c++/"><img src="assets/images/c++.ico"></a></td>
     <td align="center"><a href="python/mth-343/"><img src="assets/images/applied.ico"></a></td>
     <td align="center"><a href="python/calculus/"><img src="assets/images/lorenz.ico"></a></td>
@@ -65,12 +65,23 @@
 <br>
 <br>
 
-<h1 align="center">Independent Learning</h1>
+<h1 align="center">Turing-Complete</h1>
 
 <p align="center">
   <img width="512" src="assets/images/code.jpg">
 </p>
 
-|             [Golang](/golang)              |                [Solidity](/solidity)                 |                 [Javascript](/javascript)                  |              [Bash](/bash)               |               [Python](/python)                |               [Statistics](python/statistics)               |               [Pandas](/python/pandas)                |
-| :----------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------: | :--------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------: |
-| [![Golang](assets/images/go.ico)](/golang) | [![Solidity](assets/images/solidity.ico)](/solidity) | [![Javascript](assets/images/javascript.ico)](/javascript) | [![Bash](assets/images/bash.ico)](/bash) | [![python](assets/images/python.ico)](/python) | [![Statistics](assets/images/stat.ico)](/python/statistics) | [![Pandas](assets/images/pandas.ico)](/python/pandas) |
+<table align="center">
+  <tr>
+    <td align="center"><strong><a href="javascript/">javascript</a></strong></td>
+    <td align="center"><strong><a href="solidity/">solidity</a></strong></td>
+    <td align="center"><strong><a href="go/">go</a></strong></td>
+    <td align="center"><strong><a href="python/">python</a></strong></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="javascript/"><img src="assets/images/javascript.ico"></a></td>
+    <td align="center"><a href="solidity/"><img src="assets/images/solidity.ico"></a></td>
+    <td align="center"><a href="go/"><img src="assets/images/go.ico"></a></td>
+    <td align="center"><a href="python/"><img src="assets/images/python.ico"></a></td>
+  </tr>
+</table>
