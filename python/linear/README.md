@@ -1,7 +1,7 @@
 <p align="center">
   <kbd>
     <img width="420" src="../../assets/images/applied.jpg">
-  <kbd>
+  </kbd>
 </p>
 
 # Linear Algebra

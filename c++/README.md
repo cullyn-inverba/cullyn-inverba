@@ -1,7 +1,7 @@
 <p align="center">
   <kbd>
     <img width="420" src="../assets/images/c++.jpg">
-  <kbd>
+  </kbd>
 </p>
 
 # C++

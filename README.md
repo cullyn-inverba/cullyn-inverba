@@ -5,14 +5,9 @@
 </kbd>
 </p>
 
+<h2 align="center">🍂 Fall 2021 🍂 </h2>
+
 <table align="center">
-  <tr>
-    <th>
-    <th>
-      <h2 align="center">🍂 Fall 2021 🍂 </h2>
-    </th>
-    <th>
-  </tr>
   <tr>
     <td align="center"><strong><a href="c++/">c++ <br> (intro cs)</a></strong></td>
     <td align="center"><strong><a href="python/linear/">linear algebra <br> (applied) </a></strong></td>
