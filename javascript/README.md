@@ -6,7 +6,7 @@
 
 ## Learning Materials
 
-- [A comprehensive **JavaScript** course by **Jonas Schmedtmann**](https://www.udemy.com/course/the-complete-javascript-course/)
+- [x] [A comprehensive **JavaScript** course by **Jonas Schmedtmann**](https://www.udemy.com/course/the-complete-javascript-course/)
   - [Course resources](https://github.com/jonasschmedtmann/complete-javascript-course)
 
 ## Coding Challenges
