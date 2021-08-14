@@ -1,14 +1,16 @@
 <p align="center">
+  <kbd>
     <img width="420" src="../assets/images/javascript.jpg">
+  </kbd>
 </p>
 
 # JavaScript
 
 ## Learning Materials
 
-- [x] [A comprehensive **JavaScript** course by **Jonas Schmedtmann**](https://www.udemy.com/course/the-complete-javascript-course/)
+- [A comprehensive **JavaScript** course by **Jonas Schmedtmann**](https://www.udemy.com/course/the-complete-javascript-course/) &rarr; completed 🏆
   - [Course resources](https://github.com/jonasschmedtmann/complete-javascript-course)
 
-## Coding Challenges
+## Exercises
 
-- [Codewars content](/javascript/exercises)
+- [codewars content](/javascript/exercises)

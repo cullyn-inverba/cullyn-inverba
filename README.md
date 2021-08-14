@@ -1,26 +1,30 @@
-<h1 align="center">University Resources</h1>
+<h1 align="center">🌲🏛️🌳 University Resources 🌳🏛️🌲</h1>
 <p align="center">
 <kbd>
   <img width="512" src="assets/images/psu.jpg">
 </kbd>
 </p>
 
-<h2 align="center">Fall 2021 Classes</h2>
-
 <table align="center">
   <tr>
+    <th>
+    <th>
+      <h2 align="center">🍂 Fall 2021 🍂 </h2>
+    </th>
+    <th>
+  </tr>
+  <tr>
     <td align="center"><strong><a href="c++/">c++ <br> (intro cs)</a></strong></td>
-    <td align="center"><strong><a href="python/linear/mth-343">linear algebra <br> (applied) </a></strong></td>
+    <td align="center"><strong><a href="python/linear/">linear algebra <br> (applied) </a></strong></td>
     <td align="center"><strong><a href="python/calculus/">calculus <br> (iii)</a></strong></td>
   </tr>
   <tr>
     <td align="center"><a href="c++/"><img src="assets/images/c++.ico"></a></td>
-    <td align="center"><a href="python/mth-343/"><img src="assets/images/applied.ico"></a></td>
+    <td align="center"><a href="python/linear/"><img src="assets/images/applied.ico"></a></td>
     <td align="center"><a href="python/calculus/"><img src="assets/images/lorenz.ico"></a></td>
   </tr>
 </table>
 
-<br>
 <br>
 
 <table align="center">
@@ -28,6 +32,7 @@
     <th>
       <h2 align="center">🎓 Prior Class Resources 🎓 </h2>
     </th>
+  </tr>
   <tr>
     <td>
       <p align='center'>
@@ -49,13 +54,13 @@
     <td>
       <p align="center">
         <br>
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/ch-335.pdf">📓 <strong>Organic Chemistry II</strong>
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/assets/prior/ch-335.pdf">📓 <strong>Organic Chemistry II</strong>
         </a>
         <br>
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/mth-261.pdf"> 📑 <strong>Linear Algebra</strong>
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/assets/prior/mth-261.pdf"> 📑 <strong>Linear Algebra</strong>
         </a>
         &nbsp; 
-        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/prior/statistics.pdf">📑 <strong>Statistics</strong>
+        <a href="http://raw.githubusercontent.com/nosvagor/notes/master/assets/prior/statistics.pdf">📑 <strong>Statistics</strong>
         </a>
       </p>
     </td>
@@ -65,10 +70,12 @@
 <br>
 <br>
 
-<h1 align="center">Turing-Complete</h1>
+<h1 align="center">🌐 Turing-Complete 🌐</h1>
 
 <p align="center">
+<kbd>
   <img width="512" src="assets/images/code.jpg">
+</kbd>
 </p>
 
 <table align="center">
