@@ -1,20 +1,38 @@
 \chapter{Derivatives}
 
 \section{Derivative Fundamentals}
+\src{\link{https://en.wikipedia.org/wiki/Derivative}{Derivative} | \thomas{3.2}}
 \begin{itemize}
-  \item []
-  
-  \subsection{Derivative as a Function}
+  \item \ddd{Derivative}: the measure of \emph{sensitivity to change} of the function \yyy{value} with respect to some change in its in \xxx{argument}.
+    \begin{itemize}
+      \item Often described as the \emph{instantaneous rate of change} of a single variable function, since it is the slope a tangent line at a particular point, when it exists. 
+        \begin{itemize}
+          \item \ddd{Tangent line}: the line through a pair of points on a curve \prn{secant line}, except the points are \emph{infinitely close}, thus, it's the rate of change at that ``instant''.
+        \end{itemize}
+    \end{itemize} 
+  \item Formally, a \emph{derivative} of the function \(f(x)\) with respect to the variable \(x\) is the function \(\fp\) whose value at \(x\) is 
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \fp(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{itemize}
-    \item 
+    \item Provided the limit exists.
+    \item Let \(z = x + h\), then \(h = z-x \land h \to 0 \ifandif z\to x\); this leads to an equivalent definition of the derivative \prn{sometimes more convenient}:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \fp(x) = \lim_{z \to x} \frac{f(z)-f(x)}{z-x}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%3
   \end{itemize}
+
+  \item \ddd{Differentiation}: the process of finding a derivative; if \(\fp\) exists at a particular point, then \(f\) is said to be differentiable at that point. 
+    \begin{itemize}
+      \item If \(\fp\) exists at every point, then \(f\) is said to be differentiable.
+    \end{itemize}
+  \item \ddd{Notation}: there are many ways to denote the derivative, I prefer Leibniz's, but other notations can be useful in various contexts; some common notations \prn{for \(y = f(x)\)}:
+  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \fp(x) = y' = \dot{y} = \dydx = \ddx f(x) = D(f)(x) = D_x f(x)
+  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
 
   \subsection{Simple Differentiation Rules}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-
-  \subsection{Instantaneous Rates of Change}
   \begin{itemize}
     \item 
   \end{itemize}
