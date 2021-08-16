@@ -2,7 +2,7 @@
   "name": "natour",
   "version": "1.0.0",
   "description": "",
-  "main": "main.scss",
+  "main": "index.html",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },

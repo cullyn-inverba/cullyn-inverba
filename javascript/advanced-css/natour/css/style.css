@@ -39,7 +39,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #1f1f1f; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -131,3 +132,32 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.row {
+  max-width: 114rem;
+  background-color: #4f4f4f;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col"] {
+    color: #fff;
+    background-color: #4c7ff5;
+    float: left; }
+    .row [class^="col"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col1Of2 {
+    width: calc((100% - 4rem) / 2); }
+  .row .col1Of3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col2Of3 {
+    width: calc( 2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col1Of4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+  .row .col2Of4 {
+    width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col3Of4 {
+    width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
