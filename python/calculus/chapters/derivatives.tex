@@ -10,61 +10,66 @@
           \item \ddd{Tangent line}: the line through a pair of points on a curve \prn{secant line}, except the points are \emph{infinitely close}, thus, it's the rate of change at that ``instant''.
         \end{itemize}
     \end{itemize} 
-  \item Formally, a \emph{derivative} of the function \(f(x)\) with respect to the variable \(x\) is the function \(\fp\) whose value at \(x\) is 
-  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \fp(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
-  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \subsection{Definition, Notation}
   \begin{itemize}
-    \item Provided the limit exists.
-    \item Let \(z = x + h\), then \(h = z-x \land h \to 0 \ifandif z\to x\); this leads to an equivalent definition of the derivative \prn{sometimes more convenient}:
+    \item Formally, a \emph{derivative} of the function \(f(x)\) with respect to the variable \(x\) is the function \(\fp\) whose value at \(x\) is \prn{provided the limit exists}
     \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \fp(x) = \lim_{z \to x} \frac{f(z)-f(x)}{z-x}
-    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%3
-  \end{itemize}
-
-  \item \ddd{Differentiation}: the process of finding a derivative; if \(\fp\) exists at a particular point, then \(f\) is said to be differentiable at that point. 
+      \fp(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{itemize}
-      \item If \(\fp\) exists at every point, then \(f\) is said to be differentiable.
+      \item Let \(z = x + h\), then \(h = z-x \land h \to 0 \ifandif z\to x\); this leads to an equivalent definition of the derivative \prn{sometimes more convenient}:
+      \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \fp(x) = \lim_{z \to x} \frac{f(z)-f(x)}{z-x}
+      \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%3
     \end{itemize}
-  \item \ddd{Notation}: there are many ways to denote the derivative, I prefer Leibniz's, but other notations can be useful in various contexts; some common notations \prn{for \(y = f(x)\)}:
-  \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \fp(x) = y' = \dot{y} = \dydx = \ddx f(x) = D(f)(x) = D_x f(x)
-  \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
-
-  \subsection{Simple Differentiation Rules}
-  \begin{itemize}
-    \item 
+    
+    \item \ddd{Notation}: there are many ways to denote the derivative, I prefer Leibniz's, but other notations can be useful in various contexts; some common notations \prn{for \(y = f(x)\)}:
+    \[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \fp(x) = y' = \dot{y} = \dydx = \ddx f(x) = D(f)(x) = D_x f(x)
+    \]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \item \ddd{Differentiation}: the process of finding a derivative; if \(\fp\) exists at a particular point, then \(f\) is said to be differentiable at that point. 
+      \begin{itemize}
+        \item If \(\fp\) exists at every point on an interval, then \(f\) is differentiable on that interval.
+        \item \(\fp\) is differentiable on a closed interval \([a,b]\) if both \hyperref[ss: One-Sided Limit]{\ulink{one-sided limits}} of the function \prn{\(\mathsmaller{h\to\{\rrr{0^+:a},~\bbb{0^-:b}\}}\)} exist at the end points  and is differentiable on the interior. 
+        \item Not all continuous functions have a derivative, but \ttt{functions with a derivative are continuous}; functions with any of following \fff{do not have derivatives}:
+          \begin{itemize}
+            \item \fff{corners} \prn{one-sided derivatives differ at a point}, 
+            \item \fff{cusps} \prn{slope approaches alternating \(\pm \infty\) on both sides of a point},
+            \item \fff{discontinuities}, or \fff{vertical tangent lines}. 
+          \end{itemize}
+      \end{itemize}
   \end{itemize}
-
-  \subsection{Derivatives of Trigonometric Functions}
-  \begin{itemize}
-    \item 
-  \end{itemize}
-  
 
 \end{itemize}
 
 \section{Differentiation Rules}
-\begin{itemize}
-  \item []
-  
-  \subsection{Chain Rule}
+  \begin{itemize}
+    \item 
+
+  \subsection{Linear, Product, Chain, Inverse}
   \begin{itemize}
     \item 
   \end{itemize}
   
-  \subsection{Product Rule}
+  \subsection{Powers, Polynomials, Quotients, Reciprocals}
   \begin{itemize}
     \item 
   \end{itemize}
 
-  \subsection{Quotient Rule}
+  \subsection{Exponential, Logarithmic}
   \begin{itemize}
     \item 
   \end{itemize}
-  
+
+  \subsection{Trigonometric, Hyperbolic}
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
 \end{itemize}
+
 
 \section{Differentials and Related Concepts}
 \begin{itemize}
