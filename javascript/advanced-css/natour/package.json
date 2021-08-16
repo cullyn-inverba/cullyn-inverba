@@ -2,10 +2,13 @@
   "name": "natour",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
