@@ -39,8 +39,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  background-color: #1f1f1f; }
+  box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -67,6 +66,26 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-in-out; }
 
+.headingSecondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-out;
+  letter-spacing: 0.2rem; }
+  .headingSecondary:hover {
+    transform: skew(-15deg, 2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(31, 31, 31, 0.2); }
+
+.u-CenterText {
+  text-align: center; }
+
+.u-marginBottom6 {
+  margin-bottom: 6rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -79,7 +98,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.8rem 2.5rem rgba(31, 31, 31, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -88,7 +107,7 @@ body {
   color: #fff;
   transform: translateY(-0.1);
   background-color: rgba(40, 180, 133, 0.8);
-  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.4rem 0.8rem rgba(31, 31, 31, 0.2); }
 
 .btn::after {
   content: "";
@@ -119,7 +138,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%); }
+  clip-path: polygon(0 0, 100vw 0, 100vw 80vh, 0 95vh); }
   .header_logo-box {
     position: absolute;
     top: 4rem;
@@ -135,8 +154,8 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #4f4f4f;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -144,8 +163,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col"] {
-    color: #fff;
-    background-color: #4c7ff5;
     float: left; }
     .row [class^="col"]:not(:last-child) {
       margin-right: 4rem; }
@@ -154,10 +171,15 @@ body {
   .row .col1Of3 {
     width: calc((100% - 2 * 4rem) / 3); }
   .row .col2Of3 {
-    width: calc( 2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+    width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem); }
   .row .col1Of4 {
     width: calc((100% - 3 * 4rem) / 4); }
   .row .col2Of4 {
-    width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+    width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
   .row .col3Of4 {
     width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+
+.sectionAbout {
+  background-color: #ebebeb;
+  padding: 27vh 0;
+  margin-top: -20vh; }

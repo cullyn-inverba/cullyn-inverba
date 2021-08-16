@@ -2,12 +2,12 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-grey-dak;
+  color: $grey-dark-1;
   padding: 1.8rem;
 }
 
 .headingPrimary {
-  color: $color-white;
+  color: $white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -28,5 +28,26 @@ body {
     letter-spacing: 1.75rem;
 
     animation: moveInRight 1s ease-in-out;
+  }
+}
+
+.headingSecondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $primary-light,
+    $primary-dark
+  );
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-out;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    transform: skew(-15deg, 2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
   }
 }

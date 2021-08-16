@@ -13,7 +13,7 @@
 
   &:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 0.8rem 2.5rem rgba($color-black, 0.2);
+    box-shadow: 0 0.8rem 2.5rem rgba($black, 0.2);
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -22,10 +22,10 @@
   }
 
   &:active {
-    color: $color-white;
+    color: $white;
     transform: translateY(-0.1);
-    background-color: rgba($color-primary-dark, 0.8);
-    box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.2);
+    background-color: rgba($primary-dark, 0.8);
+    box-shadow: 0 0.4rem 0.8rem rgba($black, 0.2);
   }
 
   &::after {
@@ -47,12 +47,12 @@
   }
 
   &-white {
-    background-color: $color-white;
-    color: #1f1f1f;
-    columns: $color-grey-dak;
+    background-color: $white;
+    color: $black;
+    columns: $grey-dark-1;
 
     &::after {
-      background-color: $color-white;
+      background-color: $white;
     }
   }
 }
