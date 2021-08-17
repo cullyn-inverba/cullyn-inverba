@@ -95,17 +95,20 @@
 \def\y{\yyy{y}}
 \def\x{\xxx{x}}
 \def\fp{\emph{f'}}
-\def\then{\Rightarrow}
+\def\gp{\ppp{g'}}
+\def\then{~\ssec{\Rightarrow}~}
 \def\ifandif{~\ssec{\Leftrightarrow}~}
 \def\gt{~\rrr{>}~}
 \def\lt{~\bbb{<}~}
 \def\dydx{\frac{dy}{dx}}
-\def\ddx{\frac{d}{dx}}
+\newcommand{\ddx}[1]{\frac{d#1}{dx}}
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
 
-\newcommand{\thomas}[1]{
+
+\newcommand{\thomas}[1]{\bBb{
   Thomas's Calculus\(^{14\text{\tiny{th}}}\)
   {(#1)}\small\(~^\text{\faBook}\)
-  }
+  }}
 
 % Annoying words to type
 \def\hopital{L'H\^{o}pital}
