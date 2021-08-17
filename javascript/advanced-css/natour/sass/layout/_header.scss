@@ -1,5 +1,6 @@
 .header {
-  height: 95vh;
+  height: 100vh;
+  margin-top: -7%;
   background-image: linear-gradient(
       to right bottom,
       rgba($primary-light, 0.8),
@@ -9,12 +10,11 @@
   background-size: cover;
   background-position: top;
   position: relative;
-
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  transform: skewY(-7deg);
 
   &_logo-box {
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     left: 4rem;
   }
 
@@ -22,11 +22,15 @@
     height: 3.5rem;
   }
 
+  & > * {
+    transform: skewY(7deg);
+  }
+
   &_textBox {
     position: absolute;
     top: 24%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) skewY(7deg);
     text-align: center;
   }
 }

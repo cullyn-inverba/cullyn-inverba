@@ -93,7 +93,7 @@ body {
   text-align: center; }
 
 .u-marginBottomBig {
-  margin-bottom: 6rem; }
+  margin-bottom: 8rem; }
 
 .u-marginBottomMed {
   margin-bottom: 3rem; }
@@ -197,6 +197,36 @@ body {
   .composition:hover .composition_photo:not(:hover) {
     transform: scale(0.95); }
 
+.card {
+  perspective: 142rem;
+  position: relative;
+  height: 50rem; }
+  .card_side {
+    font-size: 3rem;
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(31, 31, 31, 0.15); }
+    .card_side-front {
+      background-color: #fff; }
+    .card_side-back {
+      transform: rotateY(180deg); }
+      .card_side-back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card_side-back-2 {
+        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+      .card_side-back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card:hover .card_side-front {
+    transform: rotateY(180deg); }
+  .card:hover .card_side-back {
+    transform: rotateY(0deg); }
+
 .featureBox {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
@@ -216,23 +246,26 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .header {
-  height: 95vh;
+  height: 100vh;
+  margin-top: -7%;
   background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  transform: skewY(-7deg); }
   .header_logo-box {
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     left: 4rem; }
   .header_logo {
     height: 3.5rem; }
+  .header > * {
+    transform: skewY(7deg); }
   .header_textBox {
     position: absolute;
     top: 24%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) skewY(7deg);
     text-align: center; }
 
 .row {
@@ -263,14 +296,19 @@ body {
 
 .sectionAbout {
   background-color: #ebebeb;
-  padding: 28vh 0;
+  padding: 35vh 0;
   margin-top: -20vh; }
 
 .sectionFeatures {
-  padding: 20rem 0;
-  margin-top: -11rem;
+  padding: 15vh 0;
+  margin-top: -15vh;
   background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-6.5deg); }
+  transform: skewY(-7deg); }
   .sectionFeatures > * {
-    transform: skewY(6.5deg); }
+    transform: skewY(7deg); }
+
+.sectionTours {
+  background-color: #ebebeb;
+  padding: 35vh 0;
+  margin-top: -20vh; }
