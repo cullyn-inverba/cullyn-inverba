@@ -51,6 +51,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-top: 15rem;
   margin-bottom: 6rem; }
   .headingPrimary-main {
     display: block;
@@ -89,8 +90,11 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-.u-CenterText {
+.u-centerText {
   text-align: center; }
+
+.u-marginTopBig {
+  margin-top: 8rem; }
 
 .u-marginBottomBig {
   margin-bottom: 8rem; }
@@ -313,6 +317,52 @@ body {
   .featureBox:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.story {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(31, 31, 31, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5rem;
+  padding-left: 6rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+  position: relative; }
+  .story_shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: #1f1f1f;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(45% at 50% 50%);
+    transform: translate(-1rem) skewX(12deg); }
+  .story_img {
+    height: 100%;
+    transform: translateX(-2rem) scale(1.4);
+    transition: all 0.4s ease; }
+  .story_text {
+    transform: skewX(12deg); }
+  .story_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+    backface-visibility: hidden; }
+  .story:hover .story_caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story_img {
+    transform: translateX(-2rem) scale(1);
+    filter: blur(3px) brightness(69%);
+    text-shadow: 0 0.5rem 1.5rem rgba(31, 31, 31, 0.2); }
+
 .header {
   height: 100vh;
   margin-top: -7%;
@@ -379,4 +429,9 @@ body {
 .sectionTours {
   background-color: #ebebeb;
   padding: 35vh 0;
+  margin-top: -20vh; }
+
+.sectionStories {
+  background-color: #ebebeb;
+  padding: 25vh 0;
   margin-top: -20vh; }
